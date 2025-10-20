@@ -1,0 +1,41 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "A split background with a white left side and a bright green right side.",
+  "nodes": [
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 36,
+      "text": "Digital Marketing Agency"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 16,
+      "text": "\"Your Partner in Digital Success\""
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "get started"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "123-456-7890"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "www.reallygreatsite.com"
+    },
+    {
+      "type": "image",
+      "asset_description": "A smiling man with a beard and glasses working on a laptop."
+    }
+  ]
+}

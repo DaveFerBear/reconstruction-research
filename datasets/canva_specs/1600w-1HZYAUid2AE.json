@@ -1,0 +1,47 @@
+{
+  "background_color": "#5c4d9d",
+  "has_background_image": true,
+  "background_image_description": "A purple gradient background with abstract shapes and light effects.",
+  "nodes": [
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 24,
+      "text": "DIGITAL MARKETING AGENCY"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "Super fast support and real time updates wherever you are."
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "LEARN MORE"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "+91 9865 784512"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "/digitalmarketing"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "www.digitalmarketing.com"
+    },
+    {
+      "type": "image",
+      "asset_description": "A person sitting cross-legged with a laptop, giving a thumbs up, framed by a smartphone."
+    }
+  ]
+}

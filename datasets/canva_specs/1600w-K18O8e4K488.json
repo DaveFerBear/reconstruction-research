@@ -1,0 +1,59 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "A blurred office background with documents and a person working on a tablet.",
+  "nodes": [
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 36,
+      "text": "LIVE WEBINAR"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "The Best Solution For Growing Your Business"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 18,
+      "text": "FRIDAY"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 18,
+      "text": "08 JUNE 2025"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 18,
+      "text": "8.00 PM"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 14,
+      "text": "+1234 5678 910"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 16,
+      "text": "ROSSA SMITH (GRAPHIC DESIGN)"
+    },
+    {
+      "type": "image",
+      "asset_description": "A portrait of a woman with long hair, smiling, set in a circular frame."
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "LIVE STREAMING"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Abstract swirling shapes in shades of purple and blue",
+  "nodes": [
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 24,
+      "text": "podcast"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 48,
+      "text": "tech talk"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 16,
+      "text": "Let's discuss technology!"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "The first episode is now live!"
+    },
+    {
+      "type": "text",
+      "font_family": "Arial",
+      "font_size": 12,
+      "text": "@reallygreatsite"
+    },
+    {
+      "type": "image",
+      "asset_description": "Icons for video and chat"
+    }
+  ]
+}
