@@ -2,3 +2,4 @@ datasets_secret/
 
 .DS_Store
 .env
+*.pyc
