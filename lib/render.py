@@ -8,6 +8,32 @@ from .types import Spec, TextNode, ImageNode
 def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600) -> str:
     """Generate HTML from a spec."""
 
+    # Collect unique fonts from the spec
+    fonts_needed = set()
+    for node in spec.nodes:
+        if isinstance(node, TextNode):
+            fonts_needed.add(node.font_family)
+
+    # Map to Google Fonts (skip system fonts)
+    google_fonts = {
+        'Anton': 'family=Anton',
+        'Dancing Script': 'family=Dancing+Script:wght@400;700',
+        'Great Vibes': 'family=Great+Vibes',
+        'Montserrat': 'family=Montserrat:wght@100;400;700;900',
+        'Poppins': 'family=Poppins:wght@100;400;700;900',
+    }
+
+    font_imports = []
+    for font in fonts_needed:
+        if font in google_fonts:
+            font_imports.append(google_fonts[font])
+
+    # Build Google Fonts URL
+    if font_imports:
+        fonts_url = f"https://fonts.googleapis.com/css2?{'&'.join(font_imports)}&display=swap"
+    else:
+        fonts_url = None
+
     # Build node HTML
     nodes_html = []
     for node in spec.nodes:
@@ -66,10 +92,18 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
         # In a real implementation, you'd generate or fetch the background image
         pass
 
+    # Build font link tag if needed
+    font_link = ''
+    if fonts_url:
+        font_link = f'''<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="{fonts_url}" rel="stylesheet">'''
+
     html = f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
+    {font_link}
     <style>
         * {{
             margin: 0;
@@ -127,6 +161,10 @@ def render_image(
 
     # Generate HTML
     html_content = _generate_html(spec, canvas_width, canvas_height)
+
+    # Save HTML file alongside the image
+    html_path = output_path.with_suffix('.html')
+    html_path.write_text(html_content, encoding='utf-8')
 
     # Render with Playwright
     with sync_playwright() as p:

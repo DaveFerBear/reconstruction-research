@@ -11,15 +11,18 @@ class TextNode(BaseModel):
     height: int
     rotation: int = 0
 
-    # CSS Properties
-    font_family: str = 'Arial'
-    font_size: int = 12
+    # CSS Properties (with aliases for hyphenated JSON keys)
+    font_family: str = Field(default='Arial', alias='font-family')
+    font_size: int = Field(default=12, alias='font-size')
     color: str = '#000000'
-    text_align: str = 'left'
-    font_weight: str = 'normal'
-    font_style: str = 'normal'
-    text_decoration: str = 'none'
-    text_transform: str = 'none'
+    text_align: str = Field(default='left', alias='text-align')
+    font_weight: str = Field(default='normal', alias='font-weight')
+    font_style: str = Field(default='normal', alias='font-style')
+    text_decoration: str = Field(default='none', alias='text-decoration')
+    text_transform: str = Field(default='none', alias='text-transform')
+
+    class Config:
+        populate_by_name = True  # Accept both font_family and font-family
 
 
 class ImageNode(BaseModel):
