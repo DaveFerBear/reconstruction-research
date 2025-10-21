@@ -36,6 +36,8 @@ Node = Union[TextNode, ImageNode]
 
 
 class Spec(BaseModel):
+    canvas_width: int
+    canvas_height: int
     background_color: str
     has_background_image: bool
     background_image_description: Optional[str] = None
