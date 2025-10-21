@@ -1,1 +1,1 @@
-Model did not return valid JSON
+litellm.BadRequestError: OpenAIException - Unknown parameter: 'reasoning'.

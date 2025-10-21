@@ -1,0 +1,78 @@
+{
+  "background_color": "#cfc3b6",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Tall torn light-gray paper texture occupying the right side of the canvas, with a rough, ripped vertical edge on its left and subtle paper grain across the surface.",
+      "x": 760,
+      "y": 0,
+      "width": 840,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Cutout photograph of a woman with a short blonde bob wearing a white textured button-up shirt and light beige pants, seated with her head resting on her left hand; neutral, soft lighting against the beige background.",
+      "x": 100,
+      "y": 120,
+      "width": 740,
+      "height": 1350,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "ABOUT ME",
+      "x": 960,
+      "y": 330,
+      "width": 600,
+      "height": 120,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 108,
+      "color": "#5a4a45",
+      "text-align": "left",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Aliquam viverra nibh varius, condimentum elit eget, bibendum mi.Proin vitae nibh in quam euismod luctus. Nullam justo justo, elementum elementum pharetra nec, dapibus id nisi",
+      "x": 920,
+      "y": 520,
+      "width": 650,
+      "height": 580,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 30,
+      "color": "#5c5b5a",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Alexa Wilson",
+      "x": 1100,
+      "y": 1270,
+      "width": 400,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Dancing Script",
+      "font-size": 54,
+      "color": "#3e3e3e",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}
