@@ -83,7 +83,7 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                     image_src = _to_data_url(asset_path)
 
             if image_src:
-                # Use actual image
+                # Use actual image with object-fit to prevent stretching
                 style = (
                     f"position: absolute; "
                     f"left: {node.x}px; "
@@ -91,6 +91,8 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                     f"width: {node.width}px; "
                     f"height: {node.height}px; "
                     f"transform: rotate({node.rotation}deg); "
+                    f"object-fit: contain; "
+                    # f"object-position: top left; "
                 )
                 nodes_html.append(f'<img src="{image_src}" style="{style}" alt="{node.asset_description}" />')
             else:
