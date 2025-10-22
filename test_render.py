@@ -53,6 +53,39 @@ async def flux_generate_async(prompt: str, session: aiohttp.ClientSession) -> di
                         raise RuntimeError(f"FAL job failed: {data}")
 
 
+async def remove_background_async(image_url: str, session: aiohttp.ClientSession) -> dict:
+    """Async version of background removal."""
+    fal_api_key = os.getenv("FAL_API_KEY")
+
+    headers = {"Authorization": f"Key {fal_api_key}"}
+    payload = {"image_url": image_url}
+
+    async with session.post("https://fal.run/fal-ai/imageutils/rembg", json=payload, headers=headers) as response:
+        if response.status == 422:
+            error_text = await response.text()
+            raise Exception(f"API Error: {error_text}")
+        response.raise_for_status()
+
+        if response.status == 200:
+            return await response.json()
+        elif response.status == 202:
+            job = await response.json()
+            status_url = job.get("status_url") or job.get("response_url")
+
+            # Poll for completion
+            while True:
+                await asyncio.sleep(2)
+                async with session.get(status_url, headers=headers) as status_response:
+                    status_response.raise_for_status()
+                    data = await status_response.json()
+                    state = (data.get("status") or data.get("state") or "").lower()
+
+                    if state in ("completed", "success", "succeeded"):
+                        return data
+                    if state in ("failed", "error"):
+                        raise RuntimeError(f"FAL job failed: {data}")
+
+
 async def download_image(url: str, path: Path, session: aiohttp.ClientSession):
     """Download image to path."""
     async with session.get(url) as response:
@@ -62,19 +95,28 @@ async def download_image(url: str, path: Path, session: aiohttp.ClientSession):
 
 
 async def generate_single_asset(idx: int, description: str, source_url: str, output_path: Path, session: aiohttp.ClientSession):
-    """Generate a single asset using Kontext extraction."""
+    """Generate a single asset using Kontext extraction + background removal."""
     description = description.replace('"', "'")
     print(f"  Generating asset-{idx}: {description[:60]}...")
 
     try:
-        # Use Kontext to extract from the source design
-        prompt = f"Extract the following image from this design: {description}"
+        # Use improved prompt for better isolation
+        prompt = f"Isolate and cut out just this element on a transparent background, remove everything else: {description}"
         result = await kontext_edit_async(prompt, source_url, session)
 
         if 'images' in result and result['images']:
             image_url = result['images'][0]['url']
-            await download_image(image_url, output_path, session)
-            print(f"  ✓ Saved {output_path.name}")
+
+            # Remove background to add transparency
+            print(f"    Removing background for asset-{idx}...")
+            bg_removed = await remove_background_async(image_url, session)
+
+            if 'image' in bg_removed and 'url' in bg_removed['image']:
+                final_url = bg_removed['image']['url']
+                await download_image(final_url, output_path, session)
+                print(f"  ✓ Saved {output_path.name}")
+            else:
+                print(f"  ✗ No transparent image returned for asset-{idx}")
         else:
             print(f"  ✗ No image returned for asset-{idx}")
     except Exception as e:

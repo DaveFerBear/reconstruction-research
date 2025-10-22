@@ -90,6 +90,49 @@ def flux_generate(prompt: str, timeout: int = 120) -> dict:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
 
 
+def remove_background(image_url: str, timeout: int = 120) -> dict:
+    """
+    Remove background from an image to create transparency.
+
+    Args:
+        image_url: URL of the image to process.
+        timeout: Max request time in seconds.
+
+    Returns:
+        dict: JSON result from FAL API containing the image with removed background.
+    """
+
+    headers = {"Authorization": f"Key {FAL_API_KEY}"}
+    payload = {"image_url": image_url}
+
+    response = requests.post("https://fal.run/fal-ai/imageutils/rembg", json=payload, headers=headers, timeout=timeout)
+
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        print(f"API Error Response: {response.text}")
+        raise e
+
+    if response.status_code == 200:
+        return response.json()
+    elif response.status_code == 202:
+        job = response.json()
+        status_url = job.get("status_url") or job.get("response_url")
+
+        while True:
+            r = requests.get(status_url, headers=headers, timeout=timeout)
+            r.raise_for_status()
+            data = r.json()
+            state = (data.get("status") or data.get("state") or "").lower()
+
+            if state in ("completed", "success", "succeeded"):
+                return data
+            if state in ("failed", "error"):
+                raise RuntimeError(f"FAL job failed: {data}")
+    else:
+        raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
+
+
 def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: int = 120) -> dict:
     """
     Context-aware image editing using FAL flux-pro/kontext model.
