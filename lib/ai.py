@@ -1,6 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
+import fal_client
 
 load_dotenv()
 
@@ -44,3 +45,34 @@ def edit_image(prompt: str, image_urls: list[str], timeout: int = 120) -> dict:
                 raise RuntimeError(f"FAL job failed: {data}")
     else:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
+
+
+def kontext_edit(prompt: str, image_url: str, with_logs: bool = True) -> dict:
+    """
+    Context-aware image editing using FAL flux-pro/kontext model.
+
+    Args:
+        prompt: The edit instruction, e.g. "Put a donut next to the flour."
+        image_url: URL of the image to edit.
+        with_logs: Whether to print progress logs.
+
+    Returns:
+        dict: JSON result from FAL API containing the edited image.
+    """
+
+    def on_queue_update(update):
+        if isinstance(update, fal_client.InProgress):
+            for log in update.logs:
+                print(log["message"])
+
+    result = fal_client.subscribe(
+        "fal-ai/flux-pro/kontext",
+        arguments={
+            "prompt": prompt,
+            "image_url": image_url
+        },
+        with_logs=with_logs,
+        on_queue_update=on_queue_update if with_logs else None,
+    )
+
+    return result
