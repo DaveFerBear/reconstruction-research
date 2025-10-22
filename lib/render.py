@@ -5,8 +5,16 @@ from playwright.sync_api import sync_playwright
 from .types import Spec, TextNode, ImageNode
 
 
-def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600) -> str:
-    """Generate HTML from a spec."""
+def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600, asset_dir: Path = None) -> str:
+    """Generate HTML from a spec.
+
+    Args:
+        spec: The design spec
+        canvas_width: Canvas width in pixels
+        canvas_height: Canvas height in pixels
+        asset_dir: Directory containing generated asset images (asset-1.png, asset-2.png, etc.)
+    """
+    from .utils import _to_data_url
 
     # Collect unique fonts from the spec
     fonts_needed = set()
@@ -36,6 +44,7 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
 
     # Build node HTML
     nodes_html = []
+    image_node_idx = 0
     for node in spec.nodes:
         if isinstance(node, TextNode):
             style = (
@@ -64,26 +73,47 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
             nodes_html.append(f'<div style="{style}">{text_content}</div>')
 
         elif isinstance(node, ImageNode):
-            style = (
-                f"position: absolute; "
-                f"left: {node.x}px; "
-                f"top: {node.y}px; "
-                f"width: {node.width}px; "
-                f"height: {node.height}px; "
-                f"transform: rotate({node.rotation}deg); "
-                f"background: #ddd; "
-                f"display: flex; "
-                f"align-items: center; "
-                f"justify-content: center; "
-                f"font-size: 12px; "
-                f"color: #666; "
-                f"text-align: center; "
-                f"padding: 10px; "
-                f"box-sizing: border-box; "
-            )
-            # For now, show placeholder with description
-            desc = node.asset_description[:100]  # Truncate long descriptions
-            nodes_html.append(f'<div style="{style}" title="{node.asset_description}">[Image: {desc}]</div>')
+            image_node_idx += 1
+
+            # Check if we have a generated asset for this image
+            image_src = None
+            if asset_dir:
+                asset_path = asset_dir / f"asset-{image_node_idx}.png"
+                if asset_path.exists():
+                    image_src = _to_data_url(asset_path)
+
+            if image_src:
+                # Use actual image
+                style = (
+                    f"position: absolute; "
+                    f"left: {node.x}px; "
+                    f"top: {node.y}px; "
+                    f"width: {node.width}px; "
+                    f"height: {node.height}px; "
+                    f"transform: rotate({node.rotation}deg); "
+                )
+                nodes_html.append(f'<img src="{image_src}" style="{style}" alt="{node.asset_description}" />')
+            else:
+                # Show placeholder
+                style = (
+                    f"position: absolute; "
+                    f"left: {node.x}px; "
+                    f"top: {node.y}px; "
+                    f"width: {node.width}px; "
+                    f"height: {node.height}px; "
+                    f"transform: rotate({node.rotation}deg); "
+                    f"background: #ddd; "
+                    f"display: flex; "
+                    f"align-items: center; "
+                    f"justify-content: center; "
+                    f"font-size: 12px; "
+                    f"color: #666; "
+                    f"text-align: center; "
+                    f"padding: 10px; "
+                    f"box-sizing: border-box; "
+                )
+                desc = node.asset_description[:100]
+                nodes_html.append(f'<div style="{style}" title="{node.asset_description}">[Image: {desc}]</div>')
 
     # Build background style
     bg_style = f"background-color: {spec.background_color};"
@@ -138,6 +168,7 @@ def render_image(
     output_path: Path,
     canvas_width: int = 800,
     canvas_height: int = 600,
+    asset_dir: Path = None,
 ) -> Path:
     """
     Render an image from a spec using a headless browser.
@@ -147,6 +178,7 @@ def render_image(
         output_path: Path where the rendered image will be saved
         canvas_width: Width of the canvas in pixels (default: 800)
         canvas_height: Height of the canvas in pixels (default: 600)
+        asset_dir: Optional directory containing generated asset images
 
     Returns:
         Path: The output path where the image was saved
@@ -160,7 +192,7 @@ def render_image(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Generate HTML
-    html_content = _generate_html(spec, canvas_width, canvas_height)
+    html_content = _generate_html(spec, canvas_width, canvas_height, asset_dir=asset_dir)
 
     # Save HTML file alongside the image
     html_path = output_path.with_suffix('.html')

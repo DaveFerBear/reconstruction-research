@@ -79,7 +79,8 @@ if '--all' in sys.argv:
 
         render_image(spec_data, output_path,
                     canvas_width=spec_data.get('canvas_width', 800),
-                    canvas_height=spec_data.get('canvas_height', 600))
+                    canvas_height=spec_data.get('canvas_height', 600),
+                    asset_dir=design_output_dir if gen_images else None)
 else:
     # Render single test
     spec_path = Path('datasets/canva_specs/1600w-1HZYAUid2AE/spec.json')
