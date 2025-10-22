@@ -1,7 +1,6 @@
 import os
 import requests
 from dotenv import load_dotenv
-import fal_client
 
 load_dotenv()
 
@@ -47,7 +46,7 @@ def edit_image(prompt: str, image_urls: list[str], timeout: int = 120) -> dict:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
 
 
-def kontext_edit(prompt: str, image_url: str, with_logs: bool = True) -> dict:
+def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: int = 120) -> dict:
     """
     Context-aware image editing using FAL flux-pro/kontext model.
 
@@ -55,24 +54,43 @@ def kontext_edit(prompt: str, image_url: str, with_logs: bool = True) -> dict:
         prompt: The edit instruction, e.g. "Put a donut next to the flour."
         image_url: URL of the image to edit.
         with_logs: Whether to print progress logs.
+        timeout: Max request time in seconds.
 
     Returns:
         dict: JSON result from FAL API containing the edited image.
     """
 
-    def on_queue_update(update):
-        if isinstance(update, fal_client.InProgress):
-            for log in update.logs:
-                print(log["message"])
+    headers = {"Authorization": f"Key {FAL_API_KEY}"}
+    payload = {"prompt": prompt, "image_url": image_url}
 
-    result = fal_client.subscribe(
-        "fal-ai/flux-pro/kontext",
-        arguments={
-            "prompt": prompt,
-            "image_url": image_url
-        },
-        with_logs=with_logs,
-        on_queue_update=on_queue_update if with_logs else None,
-    )
+    response = requests.post("https://fal.run/fal-ai/flux-pro/kontext", json=payload, headers=headers, timeout=timeout)
 
-    return result
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        # Print the response body for debugging
+        print(f"API Error Response: {response.text}")
+        raise e
+
+    if response.status_code == 200:
+        return response.json()
+    elif response.status_code == 202:
+        job = response.json()
+        status_url = job.get("status_url") or job.get("response_url")
+
+        while True:
+            r = requests.get(status_url, headers=headers, timeout=timeout)
+            r.raise_for_status()
+            data = r.json()
+            state = (data.get("status") or data.get("state") or "").lower()
+
+            if with_logs and "logs" in data:
+                for log in data["logs"]:
+                    print(log.get("message", ""))
+
+            if state in ("completed", "success", "succeeded"):
+                return data
+            if state in ("failed", "error"):
+                raise RuntimeError(f"FAL job failed: {data}")
+    else:
+        raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
