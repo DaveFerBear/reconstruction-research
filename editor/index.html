@@ -67,6 +67,72 @@
             color: red;
             padding: 20px;
         }
+
+        .draggable {
+            cursor: move;
+        }
+
+        .draggable:hover {
+            outline: 2px solid #2196f3;
+            outline-offset: 2px;
+        }
+
+        .draggable.dragging {
+            opacity: 0.7;
+            z-index: 9999;
+        }
+
+        .draggable.selected {
+            outline: 2px solid #2196f3;
+        }
+
+        .resize-handle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #2196f3;
+            border: 1px solid white;
+            z-index: 10000;
+            display: none;
+        }
+
+        .draggable.selected .resize-handle {
+            display: block;
+        }
+
+        .resize-handle.nw { top: -5px; left: -5px; cursor: nw-resize; }
+        .resize-handle.ne { top: -5px; right: -5px; cursor: ne-resize; }
+        .resize-handle.sw { bottom: -5px; left: -5px; cursor: sw-resize; }
+        .resize-handle.se { bottom: -5px; right: -5px; cursor: se-resize; }
+
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        #controls button {
+            padding: 8px 16px;
+            background: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #controls button:hover {
+            background: #1976d2;
+        }
+
+        #controls button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,9 +148,17 @@
         <div id="canvas-container"></div>
     </div>
 
+    <div id="controls">
+        <button id="save-btn" disabled>Save Spec</button>
+    </div>
+
     <script>
         const SPECS_DIR = '../datasets/canva_specs';
         const RECONSTRUCTIONS_DIR = '../datasets/reconstructions';
+
+        let currentSpec = null;
+        let currentSpecName = null;
+        let hasChanges = false;
 
         // Google Fonts mapping
         const GOOGLE_FONTS = {
@@ -136,6 +210,12 @@
                 const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json`);
                 const spec = await specResponse.json();
 
+                // Store current spec
+                currentSpec = spec;
+                currentSpecName = specName;
+                hasChanges = false;
+                document.getElementById('save-btn').disabled = true;
+
                 // Render the spec
                 renderSpec(spec, specName);
 
@@ -154,7 +234,9 @@
             let nodesHtml = '';
             let imageNodeIdx = 0;
 
-            for (const node of spec.nodes || []) {
+            for (let i = 0; i < (spec.nodes || []).length; i++) {
+                const node = spec.nodes[i];
+
                 if (node.type === 'text') {
                     const style = `
                         position: absolute;
@@ -178,7 +260,15 @@
                         align-items: center;
                     `;
                     const textContent = escapeHtml(node.text);
-                    nodesHtml += `<div style="${style}">${textContent}</div>`;
+                    nodesHtml += `
+                        <div class="draggable" data-node-idx="${i}" style="${style}">
+                            ${textContent}
+                            <div class="resize-handle nw" data-corner="nw"></div>
+                            <div class="resize-handle ne" data-corner="ne"></div>
+                            <div class="resize-handle sw" data-corner="sw"></div>
+                            <div class="resize-handle se" data-corner="se"></div>
+                        </div>
+                    `;
 
                 } else if (node.type === 'image') {
                     imageNodeIdx++;
@@ -198,14 +288,20 @@
 
                     // Try to load the asset, fallback to placeholder
                     nodesHtml += `
-                        <img
-                            src="${assetPath}"
-                            style="${style}"
-                            alt="${node.asset_description}"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                        />
-                        <div style="${style} background: #ddd; display: none; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; padding: 10px;">
-                            [Image: ${node.asset_description?.substring(0, 100) || ''}]
+                        <div class="draggable" data-node-idx="${i}" style="${style}">
+                            <img
+                                src="${assetPath}"
+                                style="width: 100%; height: 100%; object-fit: contain;"
+                                alt="${node.asset_description}"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            />
+                            <div style="width: 100%; height: 100%; background: #ddd; display: none; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; padding: 10px;">
+                                [Image: ${node.asset_description?.substring(0, 100) || ''}]
+                            </div>
+                            <div class="resize-handle nw" data-corner="nw"></div>
+                            <div class="resize-handle ne" data-corner="ne"></div>
+                            <div class="resize-handle sw" data-corner="sw"></div>
+                            <div class="resize-handle se" data-corner="se"></div>
                         </div>
                     `;
                 }
@@ -232,6 +328,172 @@
             `;
 
             document.getElementById('canvas-container').innerHTML = html;
+
+            // Add drag-and-drop functionality
+            setupDraggable();
+        }
+
+        function setupDraggable() {
+            const draggables = document.querySelectorAll('.draggable');
+            let draggedElement = null;
+            let resizingElement = null;
+            let resizeCorner = null;
+            let startX, startY, offsetX, offsetY;
+            let startWidth, startHeight, startLeft, startTop;
+
+            draggables.forEach(el => {
+                // Click to select
+                el.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('resize-handle')) return;
+
+                    document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
+                    el.classList.add('selected');
+                    e.stopPropagation();
+                });
+
+                // Drag to move
+                el.addEventListener('mousedown', (e) => {
+                    if (e.target.classList.contains('resize-handle')) {
+                        // Start resizing
+                        resizingElement = el;
+                        resizeCorner = e.target.getAttribute('data-corner');
+
+                        const rect = el.getBoundingClientRect();
+                        const canvas = document.getElementById('canvas').getBoundingClientRect();
+
+                        startX = e.clientX;
+                        startY = e.clientY;
+                        startWidth = parseInt(el.style.width);
+                        startHeight = parseInt(el.style.height);
+                        startLeft = parseInt(el.style.left);
+                        startTop = parseInt(el.style.top);
+
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return;
+                    }
+
+                    draggedElement = el;
+                    draggedElement.classList.add('dragging');
+
+                    const rect = el.getBoundingClientRect();
+                    const canvas = document.getElementById('canvas').getBoundingClientRect();
+
+                    offsetX = e.clientX - rect.left;
+                    offsetY = e.clientY - rect.top;
+
+                    e.preventDefault();
+                });
+            });
+
+            // Click canvas to deselect
+            document.getElementById('canvas').addEventListener('click', (e) => {
+                if (e.target.id === 'canvas') {
+                    document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
+                }
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (resizingElement) {
+                    const deltaX = e.clientX - startX;
+                    const deltaY = e.clientY - startY;
+
+                    let newWidth = startWidth;
+                    let newHeight = startHeight;
+                    let newLeft = startLeft;
+                    let newTop = startTop;
+
+                    if (resizeCorner.includes('e')) {
+                        newWidth = startWidth + deltaX;
+                    }
+                    if (resizeCorner.includes('w')) {
+                        newWidth = startWidth - deltaX;
+                        newLeft = startLeft + deltaX;
+                    }
+                    if (resizeCorner.includes('s')) {
+                        newHeight = startHeight + deltaY;
+                    }
+                    if (resizeCorner.includes('n')) {
+                        newHeight = startHeight - deltaY;
+                        newTop = startTop + deltaY;
+                    }
+
+                    resizingElement.style.width = `${Math.max(10, newWidth)}px`;
+                    resizingElement.style.height = `${Math.max(10, newHeight)}px`;
+                    resizingElement.style.left = `${newLeft}px`;
+                    resizingElement.style.top = `${newTop}px`;
+
+                    return;
+                }
+
+                if (!draggedElement) return;
+
+                const canvas = document.getElementById('canvas').getBoundingClientRect();
+                const newX = e.clientX - canvas.left - offsetX;
+                const newY = e.clientY - canvas.top - offsetY;
+
+                draggedElement.style.left = `${newX}px`;
+                draggedElement.style.top = `${newY}px`;
+            });
+
+            document.addEventListener('mouseup', (e) => {
+                if (resizingElement) {
+                    const nodeIdx = parseInt(resizingElement.getAttribute('data-node-idx'));
+                    currentSpec.nodes[nodeIdx].width = Math.round(parseInt(resizingElement.style.width));
+                    currentSpec.nodes[nodeIdx].height = Math.round(parseInt(resizingElement.style.height));
+                    currentSpec.nodes[nodeIdx].x = Math.round(parseInt(resizingElement.style.left));
+                    currentSpec.nodes[nodeIdx].y = Math.round(parseInt(resizingElement.style.top));
+
+                    hasChanges = true;
+                    document.getElementById('save-btn').disabled = false;
+
+                    resizingElement = null;
+                    resizeCorner = null;
+                    return;
+                }
+
+                if (!draggedElement) return;
+
+                draggedElement.classList.remove('dragging');
+
+                // Update the spec
+                const nodeIdx = parseInt(draggedElement.getAttribute('data-node-idx'));
+                const canvas = document.getElementById('canvas').getBoundingClientRect();
+                const newX = e.clientX - canvas.left - offsetX;
+                const newY = e.clientY - canvas.top - offsetY;
+
+                currentSpec.nodes[nodeIdx].x = Math.round(newX);
+                currentSpec.nodes[nodeIdx].y = Math.round(newY);
+
+                hasChanges = true;
+                document.getElementById('save-btn').disabled = false;
+
+                draggedElement = null;
+            });
+        }
+
+        async function saveSpec() {
+            if (!currentSpec || !currentSpecName) return;
+
+            try {
+                const specJson = JSON.stringify(currentSpec, null, 2);
+                const blob = new Blob([specJson], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+
+                // Download the file
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${currentSpecName}_spec.json`;
+                a.click();
+
+                URL.revokeObjectURL(url);
+
+                alert('Spec downloaded! Replace the file in datasets/canva_specs/' + currentSpecName + '/spec.json');
+                hasChanges = false;
+                document.getElementById('save-btn').disabled = true;
+            } catch (error) {
+                alert('Error saving spec: ' + error.message);
+            }
         }
 
         function escapeHtml(text) {
@@ -241,6 +503,7 @@
         }
 
         // Initialize
+        document.getElementById('save-btn').addEventListener('click', saveSpec);
         loadSpecList();
     </script>
 </body>
