@@ -118,9 +118,12 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
     # Build background style
     bg_style = f"background-color: {spec.background_color};"
     if spec.has_background_image and spec.background_image_description:
-        # For now, just show the background color since we don't have actual images
-        # In a real implementation, you'd generate or fetch the background image
-        pass
+        # Check if we have a generated background image
+        if asset_dir:
+            bg_image_path = asset_dir / "background.png"
+            if bg_image_path.exists():
+                bg_data_url = _to_data_url(bg_image_path)
+                bg_style = f"background-image: url('{bg_data_url}'); background-size: cover; background-position: center;"
 
     # Build font link tag if needed
     font_link = ''

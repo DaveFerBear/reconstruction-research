@@ -17,17 +17,41 @@ gen_images = '--gen-images' in sys.argv
 
 def generate_assets(spec_data: dict, source_image_path: Path, output_dir: Path):
     """Generate image assets from the spec using kontext model."""
+    # Convert source image to data URL
+    print(f"  Converting source image from {source_image_path.name}...")
+    source_url = _to_data_url(source_image_path)
+    print(f"  ✓ Ready (data URL)")
+
+    # Generate background image if needed
+    if spec_data.get('has_background_image') and spec_data.get('background_image_description'):
+        bg_description = spec_data['background_image_description']
+        bg_description = bg_description.replace('"', "'")
+
+        print(f"  Generating background: {bg_description[:60]}...")
+        try:
+            prompt = f"Extract the following image from this design: {bg_description}"
+            result = kontext_edit(prompt, source_url, with_logs=False)
+
+            if 'images' in result and result['images']:
+                image_url = result['images'][0]['url']
+                bg_path = output_dir / "background.png"
+
+                img_response = requests.get(image_url)
+                img_response.raise_for_status()
+                bg_path.write_bytes(img_response.content)
+                print(f"  ✓ Saved background.png")
+            else:
+                print(f"  ✗ No image returned for background")
+        except Exception as e:
+            print(f"  ✗ Error generating background: {e}")
+
+    # Generate node assets
     nodes = spec_data.get('nodes', [])
     image_nodes = [n for n in nodes if n.get('type') == 'image']
 
     if not image_nodes:
         print("  No image nodes to generate")
         return
-
-    # Convert source image to data URL
-    print(f"  Converting source image from {source_image_path.name}...")
-    source_url = _to_data_url(source_image_path)
-    print(f"  ✓ Ready (data URL)")
 
     for idx, node in enumerate(image_nodes, start=1):
         description = node.get('asset_description', '')
