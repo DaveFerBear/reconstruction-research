@@ -20,15 +20,14 @@ output_dir.mkdir(parents=True, exist_ok=True)
 gen_images = '--gen-images' in sys.argv
 
 
-async def kontext_edit_async(prompt: str, image_url: str, session: aiohttp.ClientSession) -> dict:
-    """Async version of kontext_edit."""
-    import os
+async def flux_generate_async(prompt: str, session: aiohttp.ClientSession) -> dict:
+    """Async version of flux_generate for text-to-image generation."""
     fal_api_key = os.getenv("FAL_API_KEY")
 
     headers = {"Authorization": f"Key {fal_api_key}"}
-    payload = {"prompt": prompt, "image_url": image_url}
+    payload = {"prompt": prompt}
 
-    async with session.post("https://fal.run/fal-ai/flux-pro/kontext", json=payload, headers=headers) as response:
+    async with session.post("https://fal.run/fal-ai/flux-pro/v1.1", json=payload, headers=headers) as response:
         if response.status == 422:
             error_text = await response.text()
             raise Exception(f"API Error: {error_text}")
@@ -63,11 +62,12 @@ async def download_image(url: str, path: Path, session: aiohttp.ClientSession):
 
 
 async def generate_single_asset(idx: int, description: str, source_url: str, output_path: Path, session: aiohttp.ClientSession):
-    """Generate a single asset."""
+    """Generate a single asset using Kontext extraction."""
     description = description.replace('"', "'")
     print(f"  Generating asset-{idx}: {description[:60]}...")
 
     try:
+        # Use Kontext to extract from the source design
         prompt = f"Extract the following image from this design: {description}"
         result = await kontext_edit_async(prompt, source_url, session)
 
@@ -81,6 +81,39 @@ async def generate_single_asset(idx: int, description: str, source_url: str, out
         print(f"  ✗ Error generating asset-{idx}: {e}")
 
 
+async def kontext_edit_async(prompt: str, image_url: str, session: aiohttp.ClientSession) -> dict:
+    """Async version of kontext_edit for context-aware extraction."""
+    fal_api_key = os.getenv("FAL_API_KEY")
+
+    headers = {"Authorization": f"Key {fal_api_key}"}
+    payload = {"prompt": prompt, "image_url": image_url}
+
+    async with session.post("https://fal.run/fal-ai/flux-pro/kontext", json=payload, headers=headers) as response:
+        if response.status == 422:
+            error_text = await response.text()
+            raise Exception(f"API Error: {error_text}")
+        response.raise_for_status()
+
+        if response.status == 200:
+            return await response.json()
+        elif response.status == 202:
+            job = await response.json()
+            status_url = job.get("status_url") or job.get("response_url")
+
+            # Poll for completion
+            while True:
+                await asyncio.sleep(2)
+                async with session.get(status_url, headers=headers) as status_response:
+                    status_response.raise_for_status()
+                    data = await status_response.json()
+                    state = (data.get("status") or data.get("state") or "").lower()
+
+                    if state in ("completed", "success", "succeeded"):
+                        return data
+                    if state in ("failed", "error"):
+                        raise RuntimeError(f"FAL job failed: {data}")
+
+
 async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: Path):
     """Generate image assets from the spec using kontext model (async)."""
     print(f"  Converting source image from {source_image_path.name}...")
@@ -90,15 +123,15 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
     async with aiohttp.ClientSession() as session:
         tasks = []
 
-        # Generate background image if needed
+        # Generate background image if needed (use FLUX for clean generation)
         if spec_data.get('has_background_image') and spec_data.get('background_image_description'):
             bg_description = spec_data['background_image_description'].replace('"', "'")
             print(f"  Generating background: {bg_description[:60]}...")
 
             async def gen_background():
                 try:
-                    prompt = f"Extract the following image from this design: {bg_description}"
-                    result = await kontext_edit_async(prompt, source_url, session)
+                    # Use FLUX for background generation (not extraction)
+                    result = await flux_generate_async(bg_description, session)
 
                     if 'images' in result and result['images']:
                         bg_path = output_dir / "background.png"

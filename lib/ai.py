@@ -46,6 +46,50 @@ def edit_image(prompt: str, image_urls: list[str], timeout: int = 120) -> dict:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
 
 
+def flux_generate(prompt: str, timeout: int = 120) -> dict:
+    """
+    Generate an image using FLUX.1 Pro text-to-image model.
+
+    Args:
+        prompt: The image description to generate.
+        timeout: Max request time in seconds.
+
+    Returns:
+        dict: JSON result from FAL API containing the generated image.
+    """
+
+    headers = {"Authorization": f"Key {FAL_API_KEY}"}
+    payload = {"prompt": prompt}
+
+    response = requests.post("https://fal.run/fal-ai/flux-pro/v1.1", json=payload, headers=headers, timeout=timeout)
+
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        # Print the response body for debugging
+        print(f"API Error Response: {response.text}")
+        raise e
+
+    if response.status_code == 200:
+        return response.json()
+    elif response.status_code == 202:
+        job = response.json()
+        status_url = job.get("status_url") or job.get("response_url")
+
+        while True:
+            r = requests.get(status_url, headers=headers, timeout=timeout)
+            r.raise_for_status()
+            data = r.json()
+            state = (data.get("status") or data.get("state") or "").lower()
+
+            if state in ("completed", "success", "succeeded"):
+                return data
+            if state in ("failed", "error"):
+                raise RuntimeError(f"FAL job failed: {data}")
+    else:
+        raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
+
+
 def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: int = 120) -> dict:
     """
     Context-aware image editing using FAL flux-pro/kontext model.
