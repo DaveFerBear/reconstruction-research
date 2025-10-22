@@ -14,8 +14,11 @@ if '--all' in sys.argv:
     # Render all specs
     for spec_path in specs_dir.glob('*/spec.json'):
         spec_data = json.load(spec_path.open())
-        output_path = output_dir / f"{spec_path.parent.name}.png"
-        print(f"Rendering {spec_path.parent.name}...")
+        design_name = spec_path.parent.name
+        design_output_dir = output_dir / design_name
+        design_output_dir.mkdir(parents=True, exist_ok=True)
+        output_path = design_output_dir / "render.png"
+        print(f"Rendering {design_name}...")
         render_image(spec_data, output_path,
                     canvas_width=spec_data.get('canvas_width', 800),
                     canvas_height=spec_data.get('canvas_height', 600))
