@@ -713,6 +713,30 @@
             return div.innerHTML;
         }
 
+        // Delete key handler
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Delete' || e.key === 'Backspace') {
+                const selected = document.querySelector('.draggable.selected');
+                if (selected) {
+                    const nodeIdx = parseInt(selected.getAttribute('data-node-idx'));
+
+                    // Remove from spec
+                    currentSpec.nodes.splice(nodeIdx, 1);
+
+                    hasChanges = true;
+                    document.getElementById('save-btn').disabled = false;
+
+                    // Hide properties panel
+                    hideProperties();
+
+                    // Re-render
+                    renderSpec(currentSpec, currentSpecName);
+
+                    e.preventDefault();
+                }
+            }
+        });
+
         // Initialize
         document.getElementById('copy-btn').addEventListener('click', copySpec);
         document.getElementById('save-btn').addEventListener('click', saveSpec);
