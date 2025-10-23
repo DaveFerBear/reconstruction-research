@@ -30,6 +30,61 @@
             font-size: 18px;
         }
 
+        #properties {
+            width: 300px;
+            background: #f5f5f5;
+            border-left: 1px solid #ddd;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        #properties h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        #properties.hidden {
+            display: none;
+        }
+
+        .property-group {
+            margin-bottom: 20px;
+        }
+
+        .property-group h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        .property-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .property-row label {
+            flex: 0 0 100px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .property-row input,
+        .property-row select {
+            flex: 1;
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .property-row input:focus,
+        .property-row select:focus {
+            outline: none;
+            border-color: #2196f3;
+        }
+
         .spec-item {
             padding: 10px;
             margin-bottom: 5px;
@@ -146,6 +201,10 @@
     <div id="preview">
         <div id="error"></div>
         <div id="canvas-container"></div>
+    </div>
+    <div id="properties" class="hidden">
+        <h2>Properties</h2>
+        <div id="properties-content"></div>
     </div>
 
     <div id="controls">
@@ -348,6 +407,10 @@
 
                     document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
                     el.classList.add('selected');
+
+                    const nodeIdx = parseInt(el.getAttribute('data-node-idx'));
+                    showProperties(nodeIdx);
+
                     e.stopPropagation();
                 });
 
@@ -390,6 +453,7 @@
             document.getElementById('canvas').addEventListener('click', (e) => {
                 if (e.target.id === 'canvas') {
                     document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
+                    hideProperties();
                 }
             });
 
@@ -494,6 +558,134 @@
             } catch (error) {
                 alert('Error saving spec: ' + error.message);
             }
+        }
+
+        function showProperties(nodeIdx) {
+            const node = currentSpec.nodes[nodeIdx];
+            const propertiesPanel = document.getElementById('properties');
+            const propertiesContent = document.getElementById('properties-content');
+
+            propertiesPanel.classList.remove('hidden');
+
+            let html = `
+                <div class="property-group">
+                    <h3>Transform</h3>
+                    <div class="property-row">
+                        <label>X</label>
+                        <input type="number" data-prop="x" data-node-idx="${nodeIdx}" value="${node.x}" />
+                    </div>
+                    <div class="property-row">
+                        <label>Y</label>
+                        <input type="number" data-prop="y" data-node-idx="${nodeIdx}" value="${node.y}" />
+                    </div>
+                    <div class="property-row">
+                        <label>Width</label>
+                        <input type="number" data-prop="width" data-node-idx="${nodeIdx}" value="${node.width}" />
+                    </div>
+                    <div class="property-row">
+                        <label>Height</label>
+                        <input type="number" data-prop="height" data-node-idx="${nodeIdx}" value="${node.height}" />
+                    </div>
+                    <div class="property-row">
+                        <label>Rotation</label>
+                        <input type="number" data-prop="rotation" data-node-idx="${nodeIdx}" value="${node.rotation}" />
+                    </div>
+                </div>
+            `;
+
+            if (node.type === 'text') {
+                html += `
+                    <div class="property-group">
+                        <h3>Text</h3>
+                        <div class="property-row">
+                            <label>Content</label>
+                            <input type="text" data-prop="text" data-node-idx="${nodeIdx}" value="${escapeHtml(node.text)}" />
+                        </div>
+                        <div class="property-row">
+                            <label>Font Family</label>
+                            <input type="text" data-prop="font-family" data-node-idx="${nodeIdx}" value="${node['font-family'] || node.font_family}" />
+                        </div>
+                        <div class="property-row">
+                            <label>Font Size</label>
+                            <input type="number" data-prop="font-size" data-node-idx="${nodeIdx}" value="${node['font-size'] || node.font_size}" />
+                        </div>
+                        <div class="property-row">
+                            <label>Color</label>
+                            <input type="text" data-prop="color" data-node-idx="${nodeIdx}" value="${node.color}" />
+                        </div>
+                        <div class="property-row">
+                            <label>Text Align</label>
+                            <select data-prop="text-align" data-node-idx="${nodeIdx}">
+                                <option value="left" ${(node['text-align'] || node.text_align) === 'left' ? 'selected' : ''}>Left</option>
+                                <option value="center" ${(node['text-align'] || node.text_align) === 'center' ? 'selected' : ''}>Center</option>
+                                <option value="right" ${(node['text-align'] || node.text_align) === 'right' ? 'selected' : ''}>Right</option>
+                            </select>
+                        </div>
+                        <div class="property-row">
+                            <label>Font Weight</label>
+                            <select data-prop="font-weight" data-node-idx="${nodeIdx}">
+                                <option value="normal" ${(node['font-weight'] || node.font_weight) === 'normal' ? 'selected' : ''}>Normal</option>
+                                <option value="bold" ${(node['font-weight'] || node.font_weight) === 'bold' ? 'selected' : ''}>Bold</option>
+                                <option value="100" ${(node['font-weight'] || node.font_weight) === '100' ? 'selected' : ''}>100</option>
+                                <option value="200" ${(node['font-weight'] || node.font_weight) === '200' ? 'selected' : ''}>200</option>
+                                <option value="300" ${(node['font-weight'] || node.font_weight) === '300' ? 'selected' : ''}>300</option>
+                                <option value="400" ${(node['font-weight'] || node.font_weight) === '400' ? 'selected' : ''}>400</option>
+                                <option value="500" ${(node['font-weight'] || node.font_weight) === '500' ? 'selected' : ''}>500</option>
+                                <option value="600" ${(node['font-weight'] || node.font_weight) === '600' ? 'selected' : ''}>600</option>
+                                <option value="700" ${(node['font-weight'] || node.font_weight) === '700' ? 'selected' : ''}>700</option>
+                                <option value="800" ${(node['font-weight'] || node.font_weight) === '800' ? 'selected' : ''}>800</option>
+                                <option value="900" ${(node['font-weight'] || node.font_weight) === '900' ? 'selected' : ''}>900</option>
+                            </select>
+                        </div>
+                        <div class="property-row">
+                            <label>Font Style</label>
+                            <select data-prop="font-style" data-node-idx="${nodeIdx}">
+                                <option value="normal" ${(node['font-style'] || node.font_style) === 'normal' ? 'selected' : ''}>Normal</option>
+                                <option value="italic" ${(node['font-style'] || node.font_style) === 'italic' ? 'selected' : ''}>Italic</option>
+                            </select>
+                        </div>
+                        <div class="property-row">
+                            <label>Text Decoration</label>
+                            <select data-prop="text-decoration" data-node-idx="${nodeIdx}">
+                                <option value="none" ${(node['text-decoration'] || node.text_decoration) === 'none' ? 'selected' : ''}>None</option>
+                                <option value="underline" ${(node['text-decoration'] || node.text_decoration) === 'underline' ? 'selected' : ''}>Underline</option>
+                            </select>
+                        </div>
+                        <div class="property-row">
+                            <label>Text Transform</label>
+                            <select data-prop="text-transform" data-node-idx="${nodeIdx}">
+                                <option value="none" ${(node['text-transform'] || node.text_transform) === 'none' ? 'selected' : ''}>None</option>
+                                <option value="uppercase" ${(node['text-transform'] || node.text_transform) === 'uppercase' ? 'selected' : ''}>Uppercase</option>
+                                <option value="lowercase" ${(node['text-transform'] || node.text_transform) === 'lowercase' ? 'selected' : ''}>Lowercase</option>
+                                <option value="capitalize" ${(node['text-transform'] || node.text_transform) === 'capitalize' ? 'selected' : ''}>Capitalize</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+            }
+
+            propertiesContent.innerHTML = html;
+
+            // Add event listeners to update spec on change
+            propertiesContent.querySelectorAll('input, select').forEach(input => {
+                input.addEventListener('input', (e) => {
+                    const nodeIdx = parseInt(e.target.getAttribute('data-node-idx'));
+                    const prop = e.target.getAttribute('data-prop');
+                    const value = e.target.type === 'number' ? parseFloat(e.target.value) : e.target.value;
+
+                    currentSpec.nodes[nodeIdx][prop] = value;
+
+                    hasChanges = true;
+                    document.getElementById('save-btn').disabled = false;
+
+                    // Re-render to see changes
+                    renderSpec(currentSpec, currentSpecName);
+                });
+            });
+        }
+
+        function hideProperties() {
+            document.getElementById('properties').classList.add('hidden');
         }
 
         function escapeHtml(text) {
