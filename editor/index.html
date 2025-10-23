@@ -178,6 +178,9 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
+            margin-bottom: 8px;
+            display: block;
+            width: 100%;
         }
 
         #controls button:hover {
@@ -208,6 +211,7 @@
     </div>
 
     <div id="controls">
+        <button id="copy-btn" disabled>Copy Spec</button>
         <button id="save-btn" disabled>Save Spec</button>
     </div>
 
@@ -274,6 +278,7 @@
                 currentSpecName = specName;
                 hasChanges = false;
                 document.getElementById('save-btn').disabled = true;
+                document.getElementById('copy-btn').disabled = false;
 
                 // Render the spec
                 renderSpec(spec, specName);
@@ -510,6 +515,7 @@
 
                     hasChanges = true;
                     document.getElementById('save-btn').disabled = false;
+                    document.getElementById('copy-btn').disabled = false;
 
                     resizingElement = null;
                     resizeCorner = null;
@@ -534,6 +540,18 @@
 
                 draggedElement = null;
             });
+        }
+
+        async function copySpec() {
+            if (!currentSpec || !currentSpecName) return;
+
+            try {
+                const specJson = JSON.stringify(currentSpec, null, 2);
+                await navigator.clipboard.writeText(specJson);
+                alert('Spec copied to clipboard!');
+            } catch (error) {
+                alert('Error copying spec: ' + error.message);
+            }
         }
 
         async function saveSpec() {
@@ -677,6 +695,7 @@
 
                     hasChanges = true;
                     document.getElementById('save-btn').disabled = false;
+                    document.getElementById('copy-btn').disabled = false;
 
                     // Re-render to see changes
                     renderSpec(currentSpec, currentSpecName);
@@ -695,6 +714,7 @@
         }
 
         // Initialize
+        document.getElementById('copy-btn').addEventListener('click', copySpec);
         document.getElementById('save-btn').addEventListener('click', saveSpec);
         loadSpecList();
     </script>
