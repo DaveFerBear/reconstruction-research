@@ -317,6 +317,7 @@
                         font-style: ${node['font-style'] || node.font_style};
                         text-decoration: ${node['text-decoration'] || node.text_decoration};
                         text-transform: ${node['text-transform'] || node.text_transform};
+                        line-height: ${node['line-height'] || node.line_height || 1.2};
                         margin: 0;
                         padding: 0;
                         box-sizing: border-box;
@@ -677,6 +678,10 @@
                                 <option value="lowercase" ${(node['text-transform'] || node.text_transform) === 'lowercase' ? 'selected' : ''}>Lowercase</option>
                                 <option value="capitalize" ${(node['text-transform'] || node.text_transform) === 'capitalize' ? 'selected' : ''}>Capitalize</option>
                             </select>
+                        </div>
+                        <div class="property-row">
+                            <label>Line Height</label>
+                            <input type="number" step="0.1" data-prop="line-height" data-node-idx="${nodeIdx}" value="${node['line-height'] || node.line_height || 1.2}" />
                         </div>
                     </div>
                 `;
