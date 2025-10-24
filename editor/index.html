@@ -318,6 +318,7 @@
                         text-decoration: ${node['text-decoration'] || node.text_decoration};
                         text-transform: ${node['text-transform'] || node.text_transform};
                         line-height: ${node['line-height'] || node.line_height || 1.2};
+                        opacity: ${node.opacity !== undefined ? node.opacity : 1};
                         margin: 0;
                         padding: 0;
                         box-sizing: border-box;
@@ -348,6 +349,7 @@
                         width: ${node.width}px;
                         height: ${node.height}px;
                         transform: rotate(${node.rotation}deg);
+                        opacity: ${node.opacity !== undefined ? node.opacity : 1};
                         object-fit: contain;
                     `;
 
@@ -356,7 +358,7 @@
                         <div class="draggable" data-node-idx="${i}" style="${style}">
                             <img
                                 src="${assetPath}"
-                                style="width: 100%; height: 100%; object-fit: contain;"
+                                style="width: 100%; height: 100%; object-fit: fill;"
                                 alt="${node.asset_description}"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                             />
@@ -608,6 +610,10 @@
                     <div class="property-row">
                         <label>Rotation</label>
                         <input type="number" data-prop="rotation" data-node-idx="${nodeIdx}" value="${node.rotation}" />
+                    </div>
+                    <div class="property-row">
+                        <label>Opacity</label>
+                        <input type="number" step="0.1" min="0" max="1" data-prop="opacity" data-node-idx="${nodeIdx}" value="${node.opacity !== undefined ? node.opacity : 1}" />
                     </div>
                 </div>
             `;

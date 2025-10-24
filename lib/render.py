@@ -47,6 +47,7 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
     image_node_idx = 0
     for node in spec.nodes:
         if isinstance(node, TextNode):
+            opacity = getattr(node, 'opacity', 1)
             style = (
                 f"position: absolute; "
                 f"left: {node.x}px; "
@@ -54,6 +55,7 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                 f"width: {node.width}px; "
                 f"height: {node.height}px; "
                 f"transform: rotate({node.rotation}deg); "
+                f"opacity: {opacity}; "
                 f"font-family: {node.font_family}; "
                 f"font-size: {node.font_size}px; "
                 f"color: {node.color}; "
@@ -83,7 +85,8 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                     image_src = _to_data_url(asset_path)
 
             if image_src:
-                # Use actual image with object-fit to prevent stretching
+                # Use actual image with object-fit to stretch to dimensions
+                opacity = getattr(node, 'opacity', 1)
                 style = (
                     f"position: absolute; "
                     f"left: {node.x}px; "
@@ -91,12 +94,13 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                     f"width: {node.width}px; "
                     f"height: {node.height}px; "
                     f"transform: rotate({node.rotation}deg); "
-                    f"object-fit: contain; "
-                    # f"object-position: top left; "
+                    f"opacity: {opacity}; "
+                    f"object-fit: fill; "
                 )
                 nodes_html.append(f'<img src="{image_src}" style="{style}" alt="{node.asset_description}" />')
             else:
                 # Show placeholder
+                opacity = getattr(node, 'opacity', 1)
                 style = (
                     f"position: absolute; "
                     f"left: {node.x}px; "
@@ -104,6 +108,7 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                     f"width: {node.width}px; "
                     f"height: {node.height}px; "
                     f"transform: rotate({node.rotation}deg); "
+                    f"opacity: {opacity}; "
                     f"background: #ddd; "
                     f"display: flex; "
                     f"align-items: center; "

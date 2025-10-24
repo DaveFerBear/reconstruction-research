@@ -10,6 +10,7 @@ class TextNode(BaseModel):
     width: int
     height: int
     rotation: int = 0
+    opacity: float = 1
 
     # CSS Properties (with aliases for hyphenated JSON keys)
     font_family: str = Field(default='Arial', alias='font-family')
@@ -33,6 +34,7 @@ class ImageNode(BaseModel):
     width: int
     height: int
     rotation: int = 0
+    opacity: float = 1
 
 
 Node = Union[TextNode, ImageNode]
