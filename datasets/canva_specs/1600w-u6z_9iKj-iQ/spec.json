@@ -1,7 +1,7 @@
 {
   "background_color": "#0b2a37",
   "has_background_image": true,
-  "background_image_description": "Moody, shallow–depth-of-field photo: a dark teal-blue backdrop with large bokeh circles in cyan, blue, and soft pink near the top; foreground shows five terracotta oil lamps (diyas) on a dark textured surface, the central diya in sharp focus with a tall yellow-orange flame and small glowing embers, the other four lamps receding left and right with softer focus.",
+  "background_image_description": "Moody, shallow\u2013depth-of-field photo: a dark teal-blue backdrop with large bokeh circles in cyan, blue, and soft pink near the top; foreground shows five terracotta oil lamps (diyas) on a dark textured surface, the central diya in sharp focus with a tall yellow-orange flame and small glowing embers, the other four lamps receding left and right with softer focus.",
   "nodes": [
     {
       "type": "text",

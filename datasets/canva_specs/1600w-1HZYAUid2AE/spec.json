@@ -5,11 +5,11 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Right-side composite: a large vertical black-framed smartphone with rounded corners (bezel nearly black #0E0E12, small centered camera hole). Screen shows a pale blue gradient (#DFF1FF to #A9CCF3). A smiling man with medium complexion and locs, wearing a light blue sweatshirt and dark pants, sits cross‑legged in front of the phone, giving two thumbs up, with a silver laptop on his lap. Soft white vapor clouds escape from the phone edges. Floating 3D social elements surround: a red/white like/heart bubble on the far right, a blue share-arrow bubble near lower right, a yellow face with heart eyes near center-left, and a surprised emoji near lower right. Overall soft shadow under the phone.",
+      "asset_description": "Right-side composite: a large vertical black-framed smartphone with rounded corners (bezel nearly black #0E0E12, small centered camera hole). Screen shows a pale blue gradient (#DFF1FF to #A9CCF3). A smiling man with medium complexion and locs, wearing a light blue sweatshirt and dark pants, sits cross\u2011legged in front of the phone, giving two thumbs up, with a silver laptop on his lap. Soft white vapor clouds escape from the phone edges. Floating 3D social elements surround: a red/white like/heart bubble on the far right, a blue share-arrow bubble near lower right, a yellow face with heart eyes near center-left, and a surprised emoji near lower right. Overall soft shadow under the phone.",
       "x": 900,
       "y": 260,
-      "width": 640,
-      "height": 1050,
+      "width": 552,
+      "height": 700,
       "rotation": 0
     },
     {
@@ -17,8 +17,8 @@
       "asset_description": "Footer bar: wide rounded rectangle spanning near the bottom with dark translucent purple fill (#3A1A57) and slight inner gradient, containing small white phone icon on the left and vertical dividers between sections.",
       "x": 80,
       "y": 1440,
-      "width": 1440,
-      "height": 100,
+      "width": 789,
+      "height": 630,
       "rotation": 0
     },
     {
@@ -26,8 +26,8 @@
       "asset_description": "Rounded rectangle CTA button background filled mustard yellow #FFC72E with soft drop shadow.",
       "x": 120,
       "y": 900,
-      "width": 260,
-      "height": 74,
+      "width": 726,
+      "height": 663,
       "rotation": 0
     },
     {
@@ -35,8 +35,8 @@
       "asset_description": "Minimal white geometric brand mark resembling a stylized house/monogram icon.",
       "x": 120,
       "y": 86,
-      "width": 44,
-      "height": 44,
+      "width": 406,
+      "height": 547,
       "rotation": 0
     },
     {

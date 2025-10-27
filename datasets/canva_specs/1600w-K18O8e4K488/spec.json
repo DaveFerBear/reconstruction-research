@@ -1,15 +1,15 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Desaturated grayscale photo covering the full canvas of a business workspace: a person’s hands writing on paper with graphs and charts, a tablet, and documents on a desk. The image is soft and low-contrast, serving as a subtle background.",
+  "background_image_description": "Desaturated grayscale photo covering the full canvas of a business workspace: a person\u2019s hands writing on paper with graphs and charts, a tablet, and documents on a desk. The image is soft and low-contrast, serving as a subtle background.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Transparent PNG of decorative orange elements: a partial orange circle peeking from the top-left corner, a large orange gradient abstract base filling the lower-right corner, a thick orange circular ring (with soft inner beige fill) positioned right-center, and a small orange gradient accent circle overlapping the ring’s upper-right edge with a soft shadow.",
+      "asset_description": "Transparent PNG of decorative orange elements: a partial orange circle peeking from the top-left corner, a large orange gradient abstract base filling the lower-right corner, a thick orange circular ring (with soft inner beige fill) positioned right-center, and a small orange gradient accent circle overlapping the ring\u2019s upper-right edge with a soft shadow.",
       "x": 0,
       "y": 0,
-      "width": 1600,
-      "height": 1600,
+      "width": 827,
+      "height": 819,
       "rotation": 0
     },
     {
@@ -17,8 +17,8 @@
       "asset_description": "Rounded red pill badge background (no text) with soft inner shadow and highlights.",
       "x": 1160,
       "y": 120,
-      "width": 300,
-      "height": 68,
+      "width": 754,
+      "height": 754,
       "rotation": 0
     },
     {
@@ -26,8 +26,8 @@
       "asset_description": "Circular portrait photo of a smiling young woman with shoulder-length brown hair, wearing a sleeveless light beige top, on a neutral taupe background. Cropped to a perfect circle.",
       "x": 1000,
       "y": 740,
-      "width": 460,
-      "height": 460,
+      "width": 686,
+      "height": 873,
       "rotation": 0
     },
     {
@@ -154,8 +154,8 @@
       "asset_description": "Dark teal circular button with a white phone handset icon centered.",
       "x": 140,
       "y": 1290,
-      "width": 84,
-      "height": 84,
+      "width": 692,
+      "height": 691,
       "rotation": 0
     },
     {
