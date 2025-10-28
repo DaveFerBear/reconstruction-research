@@ -1,0 +1,52 @@
+{
+  "background_color": "#CFEFF2",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Large centered white circle (approximately 1200x1200 px) on a light cyan background. Inside the lower center of the circle is a simple right-pointing arrow colored #F2A24B composed of a short rectangular shaft and a triangular head. No shadows or additional effects.",
+      "x": 200,
+      "y": 200,
+      "width": 1200,
+      "height": 1200,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "QUICK TIPS",
+      "x": 300,
+      "y": 330,
+      "width": 1000,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 60,
+      "color": "#4FA5A5",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "MAKE THE\nMOST OF YOUR\nWORKOUTS",
+      "x": 280,
+      "y": 500,
+      "width": 1040,
+      "height": 560,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 170,
+      "color": "#FF7DBD",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

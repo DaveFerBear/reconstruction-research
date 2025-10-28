@@ -1,0 +1,43 @@
+{
+  "background_color": "#F4F1E7",
+  "has_background_image": true,
+  "background_image_description": "Soft, cloud-like radial gradient across the 1600x1600 canvas blending warm off‑white (#F4F1E7) at the corners into saturated sky blues (#2F73C7 and #3E88D8) concentrated on the right-center and lower-left; strong feathered vignetting. Over the gradient are three small four-point star sparkles (#FFFFFF) near the quote (one above-left of the first line, two below-right), and a very thin, slightly counter‑clockwise tilted elliptical orbit line (#FFFFFF at ~40% opacity) encircling the second line of text.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Every day is",
+      "x": 200,
+      "y": 560,
+      "width": 1200,
+      "height": 200,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 160,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "a new chance",
+      "x": 200,
+      "y": 760,
+      "width": 1200,
+      "height": 160,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 128,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

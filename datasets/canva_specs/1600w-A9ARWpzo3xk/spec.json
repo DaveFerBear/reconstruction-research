@@ -1,0 +1,52 @@
+{
+  "background_color": "#F4F2EE",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Large black logotype reading 'ego' drawn as a single high-contrast Didone-style mark. The letters have tall vertical oval counters, thick stems, and very thin hairlines. The 'g' features a teardrop terminal that rises above the x-height like a droplet, and a sweeping lower loop that curls rightward into a near-circle with a small white notch. All shapes are merged into one solid black graphic.",
+      "x": 300,
+      "y": 430,
+      "width": 1000,
+      "height": 520,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "CREATIVE\nSTUDIO",
+      "x": 420,
+      "y": 1030,
+      "width": 220,
+      "height": 80,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 28,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "SINCE\n2025",
+      "x": 960,
+      "y": 1030,
+      "width": 220,
+      "height": 80,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 28,
+      "color": "#111111",
+      "text-align": "right",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

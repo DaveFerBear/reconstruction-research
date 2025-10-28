@@ -1,0 +1,113 @@
+{
+  "background_color": "#e9e9ec",
+  "has_background_image": true,
+  "background_image_description": "Subtle light-gray canvas with thin lavender (#b895f0) squiggly contour lines along the top-left edge and the lower-left edge.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Tall vertical pill-shaped panel filled with solid purple (#7c3aed); top corners fully rounded, bottom corners squared. A thin white horizontal separator near the top with a gentle white wavy line spanning the width just below it.",
+      "x": 1030,
+      "y": 120,
+      "width": 360,
+      "height": 880,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Hand-drawn elliptical scribble highlight in purple (#7c3aed) encircling the word 'handle'; strokes vary in thickness and overlap slightly on the right.",
+      "x": 300,
+      "y": 308,
+      "width": 420,
+      "height": 96,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "let us\nhandle\nyour next",
+      "x": 140,
+      "y": 220,
+      "width": 720,
+      "height": 330,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 110,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "marketing\nproject",
+      "x": 140,
+      "y": 560,
+      "width": 640,
+      "height": 220,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 120,
+      "color": "#7c3aed",
+      "text-align": "left",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Rounded pill outline button with 3px stroke in purple (#7c3aed) and transparent fill.",
+      "x": 180,
+      "y": 860,
+      "width": 280,
+      "height": 86,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "contact us",
+      "x": 180,
+      "y": 880,
+      "width": 280,
+      "height": 48,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 38,
+      "color": "#7c3aed",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Rimberio",
+      "x": 1060,
+      "y": 180,
+      "width": 300,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 44,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Cutout photo of a man lounging in a cushioned chair, wearing a purple sweatshirt and rust-colored pants, smiling while using a silver laptop; white sole of one sneaker faces the viewer. The subject overlaps the right purple panel and sits near the lower-right of the canvas.",
+      "x": 560,
+      "y": 780,
+      "width": 980,
+      "height": 720,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

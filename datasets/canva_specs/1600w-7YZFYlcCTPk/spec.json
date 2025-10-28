@@ -1,0 +1,69 @@
+{
+  "background_color": "#d41414",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Thin black cord descending from the top center to a small glossy black socket holding a bright white bulb that emits a soft radial white glow against the red background.",
+      "x": 620,
+      "y": 60,
+      "width": 360,
+      "height": 640,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "STAY TUNED",
+      "x": 300,
+      "y": 520,
+      "width": 1000,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 64,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "COMING\nSOON",
+      "x": 200,
+      "y": 640,
+      "width": 1200,
+      "height": 520,
+      "rotation": 0,
+      "font-family": "Arial Black",
+      "font-size": 240,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "@REALLYGREATSITE",
+      "x": 400,
+      "y": 1390,
+      "width": 800,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 36,
+      "color": "#e0e0e0",
+      "text-align": "center",
+      "font-weight": "500",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

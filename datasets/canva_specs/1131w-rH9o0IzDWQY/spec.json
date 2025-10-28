@@ -1,0 +1,69 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Four-photo collage with a large white diamond shape at center formed by thick white diagonal bands. Top-left quadrant: soft pink background with white cosmetic containers (two squeeze tubes, a small jar, and a clear glass dropper bottle). Top-right quadrant: split yellow and orange background with two dark amber glass dropper bottles with white droppers and metallic gold collars casting shadows. Bottom-left quadrant: tan and cream angled papers with a white pump bottle, a white bath bomb, and a lip balm stick. Bottom-right quadrant: gray surface above white marble surface with a beige bowl holding two small clear bottles of amber/pink liquid wrapped in a white textured cloth.",
+      "x": 0,
+      "y": 0,
+      "width": 1131,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "PRODUCT",
+      "x": 91,
+      "y": 744,
+      "width": 950,
+      "height": 150,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 132,
+      "color": "#2b1b16",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "New",
+      "x": 91,
+      "y": 590,
+      "width": 950,
+      "height": 170,
+      "rotation": 0,
+      "font-family": "Allura",
+      "font-size": 150,
+      "color": "#2b1b16",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "PREMIUM PRODUCT",
+      "x": 91,
+      "y": 915,
+      "width": 950,
+      "height": 70,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 48,
+      "color": "#2b1b16",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

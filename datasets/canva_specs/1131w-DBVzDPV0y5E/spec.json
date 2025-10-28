@@ -1,0 +1,52 @@
+{
+  "background_color": "#7FA3D8",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Centered white rounded-rectangle panel with large corner radii on a periwinkle-blue background. On the panel are playful, outlined science illustrations: near the top center-left a tilted glass beaker containing blue liquid with measurement marks; top-right an angled yellow test tube with a cream stopper and small bubbles; mid-left a pink-and-yellow cylindrical battery showing plus and minus icons; bottom-left a dropper with a pink bulb, beige stem, blue liquid inside and a falling blue droplet; bottom center gray/blue safety goggles with highlights; bottom-right a molecular model of connected spheres in yellow, orange, and light green with thin rods. All drawings have thin dark outlines and flat fills.",
+      "x": 86,
+      "y": 78,
+      "width": 959,
+      "height": 1444,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "SCIENCE\nLAB",
+      "x": 156,
+      "y": 520,
+      "width": 820,
+      "height": 470,
+      "rotation": 0,
+      "font-family": "Amatic SC",
+      "font-size": 170,
+      "color": "#D84B5C",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "2022",
+      "x": 466,
+      "y": 1180,
+      "width": 200,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Arial",
+      "font-size": 48,
+      "color": "#222222",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

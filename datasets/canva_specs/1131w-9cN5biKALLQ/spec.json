@@ -1,0 +1,43 @@
+{
+  "background_color": "#cfeaf9",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "ICE\nFOR\nSALE",
+      "x": 0,
+      "y": 230,
+      "width": 1131,
+      "height": 900,
+      "rotation": 0,
+      "font-family": "Arial Rounded MT Bold",
+      "font-size": 240,
+      "color": "#1657a8",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "₱3.00 ONLY",
+      "x": 0,
+      "y": 1245,
+      "width": 1131,
+      "height": 140,
+      "rotation": 0,
+      "font-family": "Arial Rounded MT Bold",
+      "font-size": 110,
+      "color": "#1657a8",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

@@ -1,0 +1,60 @@
+{
+  "background_color": "#77736D",
+  "has_background_image": true,
+  "background_image_description": "Cozy cafe scene with a gray textured wall and a wooden table in the foreground. On the table sits a small rectangular wooden tray holding a dark glass of coffee, a folded white napkin, and silverware. To the right is a plate with a pastry. A slim, open laptop with a dark keyboard is angled toward the wall. A curved black chair and upholstered seat are partially visible on the left. Soft, natural light creates gentle shadows and a calm atmosphere.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Clean girl",
+      "x": 160,
+      "y": 420,
+      "width": 960,
+      "height": 190,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 162,
+      "color": "#FFFFFF",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "healthy habits",
+      "x": 160,
+      "y": 600,
+      "width": 960,
+      "height": 160,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 132,
+      "color": "#FFFFFF",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "@reallygreatsite",
+      "x": 0,
+      "y": 880,
+      "width": 1280,
+      "height": 40,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 34,
+      "color": "#D9D9D9",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1280,
+  "canvas_height": 1600
+}

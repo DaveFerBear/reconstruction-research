@@ -1,0 +1,52 @@
+{
+  "background_color": "#f3efe9",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Wide landscape photo of a barren desert plain under a pale gray-blue sky with low rocky mounds on the horizon. A person in a long beige trench coat walks away from the camera at center. A thin white oval outline is centered over the figure.",
+      "x": 24,
+      "y": 24,
+      "width": 1552,
+      "height": 560,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "BORCELLE",
+      "x": 600,
+      "y": 280,
+      "width": 400,
+      "height": 48,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 36,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "BRAND PROPOSAL",
+      "x": 60,
+      "y": 598,
+      "width": 1480,
+      "height": 280,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 280,
+      "color": "#b0191a",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

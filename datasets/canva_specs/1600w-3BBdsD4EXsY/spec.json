@@ -1,0 +1,35 @@
+{
+  "background_color": "#F7D9B5",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Flat vector illustration of a terracotta-orange wooden easel (#C85B3E) with two splayed legs and a central support. A pale pink rectangular paper/canvas (#F3B3AD) sits centered on the easel with a matching terracotta top and bottom clamp; the top clamp has a small circular hole detail. All shapes are simple, solid fills without outlines or gradients.",
+      "x": 300,
+      "y": 230,
+      "width": 1000,
+      "height": 1080,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "DO THINGS AT YOUR\nOWN PACE. LIFE'S NOT\nA RACE.",
+      "x": 420,
+      "y": 560,
+      "width": 760,
+      "height": 240,
+      "rotation": 0,
+      "font-family": "Comic Sans MS",
+      "font-size": 52,
+      "color": "#5B3A2E",
+      "text-align": "center",
+      "font-weight": "bold",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

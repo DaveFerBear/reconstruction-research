@@ -1,0 +1,52 @@
+{
+  "background_color": "#3f4a6d",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Compact vertical logo mark composed of distressed, hand-drawn shapes: a cream eye with radiating lashes at top-left, a pink rounded arch shape at top-right, a blue wavy rectangular 'M'-like form centered beneath the eye, a small horizontal pink bar at the bottom-left, and a mustard-yellow rounded square with an inward spiral at mid-right. All shapes have speckled, grunge texture and soft rounded corners.",
+      "x": 620,
+      "y": 480,
+      "width": 360,
+      "height": 420,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 620,
+      "y": 940,
+      "width": 360,
+      "height": 140,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 118,
+      "color": "#f3e6d1",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 620,
+      "y": 1090,
+      "width": 360,
+      "height": 80,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 58,
+      "color": "#f39db4",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

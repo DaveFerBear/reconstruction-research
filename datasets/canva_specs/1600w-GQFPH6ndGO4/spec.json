@@ -1,0 +1,60 @@
+{
+  "background_color": "#ffcc00",
+  "has_background_image": true,
+  "background_image_description": "Full-bleed composite background. Left two-thirds features a portrait of a smiling young woman with long straight blonde hair wearing a green shirt, holding her right hand up making an OK gesture. The backdrop behind her is a soft pink (#f4a1b2) that blends into a bright yellow (#ffcc00) gradient toward the right side. Bottom half has a bold yellow overlay with a left-to-right halftone dot pattern in a slightly darker yellow/orange (#f7b500) fading toward the center-right. Near the lower-right area sits a wide black rounded-rectangle button and, to its immediate right, a small right-pointing black triangular arrow; the button itself is part of this background image (text will be overlaid).",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "HOW TO",
+      "x": 1080,
+      "y": 880,
+      "width": 420,
+      "height": 80,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 60,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "IMPROVE\nYOURSELF",
+      "x": 380,
+      "y": 980,
+      "width": 1120,
+      "height": 420,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 180,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "EVERY DAY",
+      "x": 720,
+      "y": 1360,
+      "width": 520,
+      "height": 88,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 48,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

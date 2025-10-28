@@ -1,0 +1,43 @@
+{
+  "background_color": "#f4f2ed",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "she\nsaid\nyes",
+      "x": 500,
+      "y": 330,
+      "width": 600,
+      "height": 780,
+      "rotation": 0,
+      "font-family": "Arial Rounded MT Bold",
+      "font-size": 260,
+      "color": "#b90d0d",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "FASHiON\nSTORE\nEST.2025",
+      "x": 690,
+      "y": 1220,
+      "width": 220,
+      "height": 160,
+      "rotation": 0,
+      "font-family": "Arial Rounded MT Bold",
+      "font-size": 56,
+      "color": "#b90d0d",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}
