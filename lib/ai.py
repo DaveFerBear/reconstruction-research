@@ -8,6 +8,7 @@ FAL_API_KEY = os.getenv("FAL_API_KEY")
 FAL_EDIT_URL = "https://fal.run/fal-ai/nano-banana/edit"
 
 
+
 def edit_image(prompt: str, image_urls: list[str], timeout: int = 120) -> dict:
     """
     Stateless image edit using FAL nano-banana model.
@@ -181,3 +182,73 @@ def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: i
                 raise RuntimeError(f"FAL job failed: {data}")
     else:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
+
+
+def gemini_score_aesthetic(image_path: str, timeout: int = 120) -> float:
+    """
+    Score the aesthetic quality of a design using Gemini vision API via litellm.
+
+    Args:
+        image_path: Path to the image file.
+        timeout: Max request time in seconds.
+
+    Returns:
+        float: Aesthetic score out of 100.
+    """
+    import base64
+    from pathlib import Path
+    import litellm
+
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    if not GEMINI_API_KEY:
+        raise ValueError("GEMINI_API_KEY environment variable not set")
+
+    # Read and encode image
+    image_path = Path(image_path)
+    with open(image_path, 'rb') as f:
+        image_data = base64.b64encode(f.read()).decode('utf-8')
+
+    # Determine mime type
+    mime_types = {
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.png': 'image/png',
+        '.webp': 'image/webp',
+    }
+    mime_type = mime_types.get(image_path.suffix.lower(), 'image/jpeg')
+
+    # Call Gemini via litellm
+    response = litellm.completion(
+        model="gemini/gemini-2.5-pro",
+        messages=[{
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Rate the aesthetic quality of this graphic design on a scale from 0 to 100. Consider factors like visual balance, color harmony, typography, composition, and overall design quality. Respond with ONLY a number between 0 and 100, nothing else."
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{mime_type};base64,{image_data}"}
+                }
+            ]
+        }],
+        api_key=GEMINI_API_KEY,
+        timeout=timeout
+    )
+
+    # Extract score from response
+    try:
+        text = response.choices[0].message.content.strip()
+        # Try to extract just the number
+        import re
+        match = re.search(r'\b(\d+(?:\.\d+)?)\b', text)
+        if match:
+            score = float(match.group(1))
+            # Ensure score is in 0-100 range
+            return min(max(score, 0), 100)
+        else:
+            raise ValueError(f"Could not extract score from response: {text}")
+    except (KeyError, IndexError, AttributeError, ValueError) as e:
+        print(f"Error parsing Gemini response: {response}")
+        raise e
