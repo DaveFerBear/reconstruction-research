@@ -1,6 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
+from .prompts import ENUM_CRITIC_PROMPT
 
 load_dotenv()
 
@@ -225,7 +226,7 @@ def gemini_score_aesthetic(image_path: str, timeout: int = 120) -> float:
             "content": [
                 {
                     "type": "text",
-                    "text": "Rate the aesthetic quality of this graphic design on a scale from 0 to 100. Consider factors like visual balance, color harmony, typography, composition, and overall design quality. Respond with ONLY a number between 0 and 100, nothing else."
+                    "text": ENUM_CRITIC_PROMPT
                 },
                 {
                     "type": "image_url",
