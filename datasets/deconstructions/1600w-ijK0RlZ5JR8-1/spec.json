@@ -1,0 +1,45 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "QUICK TIPS",
+      "x": 611,
+      "y": 368,
+      "width": 378,
+      "height": 64,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#46a094",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "MAKE THE MOST OF YOUR WORKOUTS",
+      "x": 408,
+      "y": 504,
+      "width": 885,
+      "height": 584,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#f472b6",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}

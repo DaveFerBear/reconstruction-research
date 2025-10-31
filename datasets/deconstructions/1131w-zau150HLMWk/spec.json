@@ -1,0 +1,45 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "you're my",
+      "x": 309,
+      "y": 133,
+      "width": 518,
+      "height": 131,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#20398f",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "lobster",
+      "x": 363,
+      "y": 1330,
+      "width": 434,
+      "height": 128,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#20398f",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}

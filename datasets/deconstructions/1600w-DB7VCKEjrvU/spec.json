@@ -1,0 +1,45 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 584,
+      "y": 934,
+      "width": 434,
+      "height": 138,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#f0e6d0",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 597,
+      "y": 1110,
+      "width": 408,
+      "height": 42,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#f09cb0",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}

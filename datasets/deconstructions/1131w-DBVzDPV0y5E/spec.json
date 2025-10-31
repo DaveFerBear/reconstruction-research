@@ -1,0 +1,63 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "SCIENCE",
+      "x": 275,
+      "y": 526,
+      "width": 577,
+      "height": 224,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#e54f6d",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "LAB",
+      "x": 448,
+      "y": 797,
+      "width": 241,
+      "height": 213,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#e54f6d",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "2022",
+      "x": 518,
+      "y": 1166,
+      "width": 94,
+      "height": 74,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#000000",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}

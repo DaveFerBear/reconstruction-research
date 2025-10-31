@@ -1,0 +1,27 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Every day is a new chance",
+      "x": 360,
+      "y": 616,
+      "width": 880,
+      "height": 304,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}

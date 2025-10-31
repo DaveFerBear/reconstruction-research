@@ -1,0 +1,63 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Original poster with text removed via image edit.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "ABOUT ME",
+      "x": 933,
+      "y": 453,
+      "width": 473,
+      "height": 93,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#59524c",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra nibh varius, condimentum elit eget, bibendum mi.Proin vitae nibh in quam euismod luctus. Nullam justo justo, elementum elementum pharetra nec, dapibus id nisi",
+      "x": 822,
+      "y": 683,
+      "width": 700,
+      "height": 579,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#59524c",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Olivia Wilson",
+      "x": 1134,
+      "y": 1354,
+      "width": 340,
+      "height": 96,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font-family": "Arial",
+      "font-size": 24,
+      "color": "#59524c",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ]
+}
