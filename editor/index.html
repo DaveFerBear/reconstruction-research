@@ -324,11 +324,12 @@
                         box-sizing: border-box;
                         display: flex;
                         align-items: center;
+                        justify-content: ${node['text-align'] === 'right' ? 'flex-end' : node['text-align'] === 'center' ? 'center' : 'flex-start'};
                     `;
                     const textContent = escapeHtml(node.text);
                     nodesHtml += `
                         <div class="draggable" data-node-idx="${i}" style="${style}">
-                            ${textContent}
+                            <div style="width: 100%;">${textContent}</div>
                             <div class="resize-handle nw" data-corner="nw"></div>
                             <div class="resize-handle ne" data-corner="ne"></div>
                             <div class="resize-handle sw" data-corner="sw"></div>

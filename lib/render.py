@@ -48,6 +48,13 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
     for node in spec.nodes:
         if isinstance(node, TextNode):
             opacity = getattr(node, 'opacity', 1)
+            # Map text-align to justify-content for flexbox
+            justify_content = 'flex-start'
+            if node.text_align == 'center':
+                justify_content = 'center'
+            elif node.text_align == 'right':
+                justify_content = 'flex-end'
+
             style = (
                 f"position: absolute; "
                 f"left: {node.x}px; "
@@ -69,10 +76,12 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                 f"box-sizing: border-box; "
                 f"display: flex; "
                 f"align-items: center; "
+                f"justify-content: {justify_content}; "
             )
             # Escape HTML in text content
             text_content = node.text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-            nodes_html.append(f'<div style="{style}">{text_content}</div>')
+            # Wrap text in inner div to ensure text-align works
+            nodes_html.append(f'<div style="{style}"><div style="width: 100%;">{text_content}</div></div>')
 
         elif isinstance(node, ImageNode):
             image_node_idx += 1
