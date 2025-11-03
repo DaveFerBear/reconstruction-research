@@ -1,0 +1,73 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#e8eaf6",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Transparent PNG overlay containing two realistic eucalyptus branches with deep green leaves: one large cluster entering from the top-right corner curving leftward, and another smaller branch entering from the bottom-left corner extending diagonally toward the center. Subtle natural shadows; no background.",
+      "x": 0,
+      "y": 0,
+      "width": 1131,
+      "height": 1600,
+      "rotation": 0,
+      "opacity": 0.75
+    },
+    {
+      "type": "text",
+      "text": "Daily Motivation",
+      "x": 0,
+      "y": 210,
+      "width": 1131,
+      "height": 48,
+      "rotation": 0,
+      "opacity": 0.9,
+      "font_family": "Georgia",
+      "font_size": 34,
+      "color": "#556B5A",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "\"Stay\ninspired\nnever stop\ncreating\"",
+      "x": 0,
+      "y": 450,
+      "width": 1131,
+      "height": 680,
+      "rotation": 0,
+      "opacity": 0.9,
+      "font_family": "Brush Script MT",
+      "font_size": 148,
+      "color": "#556B5A",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "\u2014 @reallygreatsite",
+      "x": 0,
+      "y": 1230,
+      "width": 1131,
+      "height": 44,
+      "rotation": 0,
+      "opacity": 0.9,
+      "font_family": "Georgia",
+      "font_size": 32,
+      "color": "#556B5A",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}

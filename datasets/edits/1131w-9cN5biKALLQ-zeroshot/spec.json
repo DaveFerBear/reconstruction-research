@@ -1,0 +1,45 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#1a183e",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Dream\nA\nLittle\nDream",
+      "x": 0,
+      "y": 280,
+      "width": 1131,
+      "height": 800,
+      "rotation": 0,
+      "opacity": 0.9,
+      "font_family": "Georgia",
+      "font_size": 190,
+      "color": "#dcd0ff",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "capitalize"
+    },
+    {
+      "type": "text",
+      "text": "...and drift away",
+      "x": 0,
+      "y": 1200,
+      "width": 1131,
+      "height": 100,
+      "rotation": 5,
+      "opacity": 1.0,
+      "font_family": "Georgia",
+      "font_size": 70,
+      "color": "#dcd0ff",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "lowercase"
+    }
+  ]
+}
