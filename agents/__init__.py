@@ -2,5 +2,6 @@
 
 from .base import Agent
 from .zeroshot import ZeroShotAgent
+from .singleshot import SingleShotAgent
 
-__all__ = ['Agent', 'ZeroShotAgent']
+__all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent']

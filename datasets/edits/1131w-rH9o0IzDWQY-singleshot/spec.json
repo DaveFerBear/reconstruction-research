@@ -1,0 +1,73 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#ffffff",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A dreamy, ethereal background with soft, swirling pastel colors of pink, purple, and light blue, resembling clouds or gentle smoke.",
+      "x": 0,
+      "y": 0,
+      "width": 1131,
+      "height": 1600,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "text",
+      "text": "PRODUCT",
+      "x": 91,
+      "y": 744,
+      "width": 950,
+      "height": 150,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Montserrat",
+      "font_size": 132,
+      "color": "#ffffff",
+      "text_align": "center",
+      "font_weight": "300",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "New",
+      "x": 91,
+      "y": 590,
+      "width": 950,
+      "height": 170,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Allura",
+      "font_size": 150,
+      "color": "#ffffff",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "PREMIUM PRODUCT",
+      "x": 91,
+      "y": 915,
+      "width": 950,
+      "height": 70,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Montserrat",
+      "font_size": 48,
+      "color": "#ffffff",
+      "text_align": "center",
+      "font_weight": "300",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}
