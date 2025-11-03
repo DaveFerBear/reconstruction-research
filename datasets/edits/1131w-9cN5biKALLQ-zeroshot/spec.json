@@ -1,10 +1,30 @@
 {
   "canvas_width": 1131,
   "canvas_height": 1600,
-  "background_color": "#d9d2e9",
+  "background_color": "#e6e6fa",
   "has_background_image": false,
   "background_image_description": "",
   "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A large, soft, translucent glowing orb in a pastel pink color.",
+      "x": 50,
+      "y": 300,
+      "width": 400,
+      "height": 400,
+      "rotation": 15,
+      "opacity": 0.2
+    },
+    {
+      "type": "image",
+      "asset_description": "A small, soft, translucent glowing orb in a light blue color.",
+      "x": 700,
+      "y": 800,
+      "width": 250,
+      "height": 250,
+      "rotation": -20,
+      "opacity": 0.25
+    },
     {
       "type": "text",
       "text": "ICE\nFOR\nSALE",
@@ -13,15 +33,15 @@
       "width": 1131,
       "height": 900,
       "rotation": -5,
-      "opacity": 0.9,
+      "opacity": 0.95,
       "font_family": "Playfair Display",
       "font_size": 240,
-      "color": "#f8f8ff",
+      "color": "#483d8b",
       "text_align": "center",
-      "font_weight": "400",
-      "font_style": "italic",
+      "font_weight": "normal",
+      "font_style": "normal",
       "text_decoration": "none",
-      "text_transform": "capitalize"
+      "text_transform": "uppercase"
     },
     {
       "type": "text",
@@ -30,16 +50,16 @@
       "y": 1245,
       "width": 1131,
       "height": 140,
-      "rotation": 3,
-      "opacity": 0.9,
+      "rotation": 5,
+      "opacity": 0.95,
       "font_family": "Playfair Display",
       "font_size": 110,
-      "color": "#f8f8ff",
+      "color": "#483d8b",
       "text_align": "center",
-      "font_weight": "400",
-      "font_style": "italic",
+      "font_weight": "normal",
+      "font_style": "normal",
       "text_decoration": "none",
-      "text_transform": "capitalize"
+      "text_transform": "uppercase"
     }
   ]
 }
