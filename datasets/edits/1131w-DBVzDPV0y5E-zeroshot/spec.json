@@ -1,0 +1,37 @@
+{
+  "canvas_width": 1131,
+  "canvas_height": 1600,
+  "background_color": "#C9C5E4",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Abstract, watercolor-style illustrations of scientific concepts like nebulae, swirling liquids, and glowing particles. The colors are a soft pastel palette of lavender, mint green, and baby pink. The shapes are soft and blended, without hard outlines, seemingly floating on the canvas.",
+      "x": 86,
+      "y": 78,
+      "width": 959,
+      "height": 1444,
+      "rotation": 0,
+      "opacity": 0.9
+    },
+    {
+      "type": "text",
+      "text": "SCIENCE\nLAB",
+      "x": 156,
+      "y": 520,
+      "width": 820,
+      "height": 470,
+      "rotation": 0,
+      "opacity": 0.85,
+      "font_family": "Playfair Display",
+      "font_size": 170,
+      "color": "#6A5A99",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}

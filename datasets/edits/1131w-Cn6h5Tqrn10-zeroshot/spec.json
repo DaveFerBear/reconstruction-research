@@ -1,7 +1,7 @@
 {
   "canvas_width": 1131,
   "canvas_height": 1600,
-  "background_color": "#e8eaf6",
+  "background_color": "#e6e0e9",
   "has_background_image": false,
   "background_image_description": "",
   "nodes": [
@@ -13,7 +13,7 @@
       "width": 1131,
       "height": 1600,
       "rotation": 0,
-      "opacity": 0.75
+      "opacity": 0.5
     },
     {
       "type": "text",
@@ -26,7 +26,7 @@
       "opacity": 0.9,
       "font_family": "Georgia",
       "font_size": 34,
-      "color": "#556B5A",
+      "color": "#5c5461",
       "text_align": "center",
       "font_weight": "normal",
       "font_style": "italic",
@@ -44,7 +44,7 @@
       "opacity": 0.9,
       "font_family": "Brush Script MT",
       "font_size": 148,
-      "color": "#556B5A",
+      "color": "#5c5461",
       "text_align": "center",
       "font_weight": "normal",
       "font_style": "normal",
@@ -62,7 +62,7 @@
       "opacity": 0.9,
       "font_family": "Georgia",
       "font_size": 32,
-      "color": "#556B5A",
+      "color": "#5c5461",
       "text_align": "center",
       "font_weight": "normal",
       "font_style": "italic",
