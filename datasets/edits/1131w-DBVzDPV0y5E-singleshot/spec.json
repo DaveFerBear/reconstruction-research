@@ -1,7 +1,7 @@
 {
   "canvas_width": 1131,
   "canvas_height": 1600,
-  "background_color": "#C4B5E2",
+  "background_color": "#C3B1E1",
   "has_background_image": false,
   "background_image_description": "",
   "nodes": [
@@ -13,7 +13,7 @@
       "width": 959,
       "height": 1444,
       "rotation": 0,
-      "opacity": 0.6
+      "opacity": 0.5
     },
     {
       "type": "text",
@@ -23,10 +23,10 @@
       "width": 820,
       "height": 470,
       "rotation": -5,
-      "opacity": 1.0,
+      "opacity": 0.8,
       "font_family": "Amatic SC",
       "font_size": 170,
-      "color": "#F0F0F0",
+      "color": "#FFFFFF",
       "text_align": "center",
       "font_weight": "700",
       "font_style": "normal",
@@ -41,10 +41,10 @@
       "width": 200,
       "height": 60,
       "rotation": 0,
-      "opacity": 0.7,
+      "opacity": 0.6,
       "font_family": "Arial",
       "font_size": 48,
-      "color": "#666666",
+      "color": "#FFFFFF",
       "text_align": "center",
       "font_weight": "400",
       "font_style": "normal",

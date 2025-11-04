@@ -1,9 +1,9 @@
 {
   "canvas_width": 1131,
   "canvas_height": 1600,
-  "background_color": "#e9dce5",
+  "background_color": "#e6e0f8",
   "has_background_image": true,
-  "background_image_description": "A dreamy, soft-focus, ethereal cloudscape at sunrise with pastel pink, purple, and blue hues.",
+  "background_image_description": "A soft, ethereal, blurry background with a pastel gradient of pink, purple, and blue, resembling a dream-like sky.",
   "nodes": [
     {
       "type": "image",
@@ -13,7 +13,7 @@
       "width": 1131,
       "height": 1600,
       "rotation": 0,
-      "opacity": 0.8
+      "opacity": 0.4
     },
     {
       "type": "text",

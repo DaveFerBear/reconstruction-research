@@ -3,47 +3,47 @@
   "canvas_height": 1600,
   "background_color": "#e6e6fa",
   "has_background_image": true,
-  "background_image_description": "Soft, ethereal cloud-like texture with pastel pink and blue hues covering the entire 1131x1600 canvas.",
+  "background_image_description": "A soft, ethereal background with swirling pastel clouds in shades of lavender and light blue.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Soft, dreamy purple banner (#b39ddb) spanning the full width at the top.",
+      "asset_description": "Soft, translucent lavender banner (#b19cd9) with a gentle gradient, spanning the full width at the top.",
       "x": 0,
       "y": 0,
       "width": 1131,
       "height": 210,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 0.85
     },
     {
       "type": "image",
-      "asset_description": "Soft, dreamy purple banner (#b39ddb) spanning the full width at the bottom.",
+      "asset_description": "Soft, translucent lavender banner (#b19cd9) with a gentle gradient, spanning the full width at the bottom.",
       "x": 0,
       "y": 1370,
       "width": 1131,
       "height": 230,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 0.85
     },
     {
       "type": "image",
-      "asset_description": "Dreamy, softly focused portrait of a fluffy brown tabby cat with yellow-green eyes lying on a surface, contained within a thin black rectangular border; the photo has a white margin around it inside the border.",
+      "asset_description": "Framed photo area with a thin, soft gray border containing a portrait of a fluffy brown tabby cat with glowing yellow\u2011green eyes, surrounded by a soft, ethereal glow; the photo has a white margin around it inside the border.",
       "x": 120,
       "y": 320,
       "width": 891,
       "height": 870,
-      "rotation": -1,
-      "opacity": 0.9
+      "rotation": -2,
+      "opacity": 1.0
     },
     {
       "type": "image",
-      "asset_description": "Faded, dream-like purple stamp (#b39ddb) with white bold uppercase text 'REWARD', rotated slightly and overlapping the lower-right of the cat photo.",
+      "asset_description": "A translucent, glowing, light pink seal (#ffb6c1) with soft white text 'REWARD', floating over the lower-right of the cat photo.",
       "x": 675,
       "y": 735,
       "width": 400,
       "height": 160,
-      "rotation": 16,
-      "opacity": 0.8
+      "rotation": 14,
+      "opacity": 0.7
     },
     {
       "type": "text",
@@ -52,13 +52,13 @@
       "y": 26,
       "width": 1131,
       "height": 168,
-      "rotation": -2,
+      "rotation": 0,
       "opacity": 1.0,
       "font_family": "Georgia",
       "font_size": 160,
-      "color": "#f5f5f5",
+      "color": "#ffffff",
       "text_align": "center",
-      "font_weight": "900",
+      "font_weight": "700",
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "uppercase"
@@ -74,9 +74,9 @@
       "opacity": 1.0,
       "font_family": "Georgia",
       "font_size": 72,
-      "color": "#4a235a",
+      "color": "#483d8b",
       "text_align": "center",
-      "font_weight": "900",
+      "font_weight": "700",
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "uppercase"
@@ -90,24 +90,24 @@
       "height": 180,
       "rotation": 0,
       "opacity": 1.0,
-      "font_family": "Arial",
+      "font_family": "Georgia",
       "font_size": 36,
-      "color": "#4a235a",
+      "color": "#483d8b",
       "text_align": "center",
       "font_weight": "400",
-      "font_style": "normal",
+      "font_style": "italic",
       "text_decoration": "none",
       "text_transform": "none"
     },
     {
       "type": "image",
-      "asset_description": "Soft, glowing golden-yellow highlight bar (#fff59d) shaped like a rounded rectangle pill.",
+      "asset_description": "A soft, glowing, rounded rectangular bar with a pastel yellow fill (#fffacd).",
       "x": 246,
       "y": 1210,
       "width": 639,
       "height": 110,
       "rotation": 0,
-      "opacity": 0.85
+      "opacity": 0.9
     },
     {
       "type": "text",
@@ -118,11 +118,11 @@
       "height": 90,
       "rotation": 0,
       "opacity": 1.0,
-      "font_family": "Arial",
+      "font_family": "Georgia",
       "font_size": 36,
-      "color": "#4a235a",
+      "color": "#483d8b",
       "text_align": "center",
-      "font_weight": "400",
+      "font_weight": "700",
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "none"
@@ -138,9 +138,9 @@
       "opacity": 1.0,
       "font_family": "Georgia",
       "font_size": 48,
-      "color": "#f5f5f5",
+      "color": "#ffffff",
       "text_align": "center",
-      "font_weight": "900",
+      "font_weight": "700",
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "uppercase"
@@ -156,9 +156,9 @@
       "opacity": 1.0,
       "font_family": "Georgia",
       "font_size": 96,
-      "color": "#f5f5f5",
+      "color": "#ffffff",
       "text_align": "center",
-      "font_weight": "900",
+      "font_weight": "700",
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "none"
