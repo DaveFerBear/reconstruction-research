@@ -1,115 +1,129 @@
-const SPECS_DIR = '../datasets/canva_specs';
-const RECONSTRUCTIONS_DIR = '../datasets/reconstructions';
+const SPECS_DIR = "../datasets/canva_specs";
+const RECONSTRUCTIONS_DIR = "../datasets/reconstructions";
 
 let currentSpec = null;
 let currentSpecName = null;
 let hasChanges = false;
 
+const API_URL = "http://localhost:5001";
+
 // Google Fonts mapping
 const GOOGLE_FONTS = {
-    'Anton': 'Anton',
-    'Dancing Script': 'Dancing Script',
-    'Great Vibes': 'Great Vibes',
-    'Montserrat': 'Montserrat',
-    'Poppins': 'Poppins'
+  Anton: "Anton",
+  "Dancing Script": "Dancing Script",
+  "Great Vibes": "Great Vibes",
+  Montserrat: "Montserrat",
+  Poppins: "Poppins",
 };
 
 async function loadSpecList() {
-    try {
-        const response = await fetch(SPECS_DIR);
-        const text = await response.text();
+  try {
+    const response = await fetch(SPECS_DIR);
+    const text = await response.text();
 
-        // Parse directory listing (this assumes a simple file server)
-        // If you're using a different setup, you might need to provide a manifest
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(text, 'text/html');
-        const links = Array.from(doc.querySelectorAll('a'))
-            .map(a => a.getAttribute('href'))
-            .filter(href => href && href !== '../' && !href.includes('.'));
+    // Parse directory listing (this assumes a simple file server)
+    // If you're using a different setup, you might need to provide a manifest
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, "text/html");
+    const links = Array.from(doc.querySelectorAll("a"))
+      .map((a) => a.getAttribute("href"))
+      .filter((href) => href && href !== "../" && !href.includes("."));
 
-        const specList = document.getElementById('spec-list');
+    const specList = document.getElementById("spec-list");
 
-        for (const dir of links) {
-            const specName = dir.replace('/', '');
-            const item = document.createElement('div');
-            item.className = 'spec-item';
-            item.textContent = specName;
-            item.onclick = () => loadSpec(specName);
-            specList.appendChild(item);
-        }
-    } catch (error) {
-        document.getElementById('error').textContent =
-            'Error loading spec list. Please ensure you\'re running a local server.';
-        console.error('Error loading spec list:', error);
+    for (const dir of links) {
+      const specName = dir.replace("/", "");
+      const item = document.createElement("div");
+      item.className = "spec-item";
+      item.textContent = specName;
+      item.onclick = () => loadSpec(specName);
+      specList.appendChild(item);
     }
+  } catch (error) {
+    document.getElementById("error").textContent =
+      "Error loading spec list. Please ensure you're running a local server.";
+    console.error("Error loading spec list:", error);
+  }
 }
 
 async function loadSpec(specName) {
-    try {
-        // Update active state
-        document.querySelectorAll('.spec-item').forEach(item => {
-            item.classList.toggle('active', item.textContent === specName);
-        });
+  try {
+    // Update active state
+    document.querySelectorAll(".spec-item").forEach((item) => {
+      item.classList.toggle("active", item.textContent === specName);
+    });
 
-        // Load spec JSON
-        const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json`);
-        const spec = await specResponse.json();
+    // Load spec JSON
+    const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json`);
+    const spec = await specResponse.json();
 
-        // Store current spec
-        currentSpec = spec;
-        currentSpecName = specName;
-        hasChanges = false;
-        document.getElementById('save-btn').disabled = true;
-        document.getElementById('copy-btn').disabled = false;
+    // Store current spec
+    currentSpec = spec;
+    currentSpecName = specName;
+    hasChanges = false;
+    document.getElementById("save-btn").disabled = true;
+    document.getElementById("copy-btn").disabled = false;
 
-        // Render the spec
-        renderSpec(spec, specName);
+    // Render the spec
+    renderSpec(spec, specName);
 
-        document.getElementById('error').textContent = '';
-    } catch (error) {
-        document.getElementById('error').textContent = `Error loading spec: ${error.message}`;
-        console.error('Error loading spec:', error);
-    }
+    document.getElementById("error").textContent = "";
+  } catch (error) {
+    document.getElementById(
+      "error"
+    ).textContent = `Error loading spec: ${error.message}`;
+    console.error("Error loading spec:", error);
+  }
 }
 
 function renderSpec(spec, specName) {
-    const canvasWidth = spec.canvas_width || 800;
-    const canvasHeight = spec.canvas_height || 600;
+  const canvasWidth = spec.canvas_width || 800;
+  const canvasHeight = spec.canvas_height || 600;
 
-    // Build nodes HTML
-    let nodesHtml = '';
-    let imageNodeIdx = 0;
+  // Build nodes HTML
+  let nodesHtml = "";
+  let imageNodeIdx = 0;
 
-    for (let i = 0; i < (spec.nodes || []).length; i++) {
-        const node = spec.nodes[i];
+  for (let i = 0; i < (spec.nodes || []).length; i++) {
+    const node = spec.nodes[i];
 
-        if (node.type === 'text') {
-            const style = `
+    if (node.type === "text") {
+      const style = `
                 position: absolute;
                 left: ${node.x}px;
                 top: ${node.y}px;
                 width: ${node.width}px;
                 height: ${node.height}px;
                 transform: rotate(${node.rotation}deg);
-                font-family: ${node['font-family'] || node.font_family};
-                font-size: ${node['font-size'] || node.font_size}px;
+                font-family: ${node["font-family"] || node.font_family};
+                font-size: ${node["font-size"] || node.font_size}px;
                 color: ${node.color};
-                text-align: ${node['text-align'] || node.text_align};
-                font-weight: ${node['font-weight'] || node.font_weight};
-                font-style: ${node['font-style'] || node.font_style};
-                text-decoration: ${node['text-decoration'] || node.text_decoration};
-                text-transform: ${node['text-transform'] || node.text_transform};
-                line-height: ${node['line-height'] || node.line_height || 1.2};
+                text-align: ${node["text-align"] || node.text_align};
+                font-weight: ${node["font-weight"] || node.font_weight};
+                font-style: ${node["font-style"] || node.font_style};
+                text-decoration: ${
+                  node["text-decoration"] || node.text_decoration
+                };
+                text-transform: ${
+                  node["text-transform"] || node.text_transform
+                };
+                line-height: ${node["line-height"] || node.line_height || 1.2};
                 opacity: ${node.opacity !== undefined ? node.opacity : 1};
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
                 display: flex;
                 align-items: center;
-                justify-content: ${node['text-align'] === 'right' ? 'flex-end' : node['text-align'] === 'center' ? 'center' : 'flex-start'};
+                justify-content: ${
+                  node["text-align"] === "right"
+                    ? "flex-end"
+                    : node["text-align"] === "center"
+                    ? "center"
+                    : "flex-start"
+                };
             `;
-            const textContent = escapeHtml(node.text);
-            nodesHtml += `
+      const textContent = escapeHtml(node.text);
+      nodesHtml += `
                 <div class="draggable" data-node-idx="${i}" style="${style}">
                     <div style="width: 100%;">${textContent}</div>
                     <div class="resize-handle nw" data-corner="nw"></div>
@@ -118,14 +132,13 @@ function renderSpec(spec, specName) {
                     <div class="resize-handle se" data-corner="se"></div>
                 </div>
             `;
+    } else if (node.type === "image") {
+      imageNodeIdx++;
 
-        } else if (node.type === 'image') {
-            imageNodeIdx++;
+      // Check if asset exists
+      const assetPath = `${RECONSTRUCTIONS_DIR}/${specName}/asset-${imageNodeIdx}.png`;
 
-            // Check if asset exists
-            const assetPath = `${RECONSTRUCTIONS_DIR}/${specName}/asset-${imageNodeIdx}.png`;
-
-            const style = `
+      const style = `
                 position: absolute;
                 left: ${node.x}px;
                 top: ${node.y}px;
@@ -136,8 +149,8 @@ function renderSpec(spec, specName) {
                 object-fit: contain;
             `;
 
-            // Try to load the asset, fallback to placeholder
-            nodesHtml += `
+      // Try to load the asset, fallback to placeholder
+      nodesHtml += `
                 <div class="draggable" data-node-idx="${i}" style="${style}">
                     <img
                         src="${assetPath}"
@@ -146,7 +159,9 @@ function renderSpec(spec, specName) {
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                     />
                     <div style="width: 100%; height: 100%; background: #ddd; display: none; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; padding: 10px;">
-                        [Image: ${node.asset_description?.substring(0, 100) || ''}]
+                        [Image: ${
+                          node.asset_description?.substring(0, 100) || ""
+                        }]
                     </div>
                     <div class="resize-handle nw" data-corner="nw"></div>
                     <div class="resize-handle ne" data-corner="ne"></div>
@@ -154,18 +169,18 @@ function renderSpec(spec, specName) {
                     <div class="resize-handle se" data-corner="se"></div>
                 </div>
             `;
-        }
     }
+  }
 
-    // Build background style
-    let bgStyle = `background-color: ${spec.background_color};`;
-    if (spec.has_background_image) {
-        const bgPath = `${RECONSTRUCTIONS_DIR}/${specName}/background.png`;
-        bgStyle = `background-image: url('${bgPath}'); background-size: cover; background-position: center;`;
-    }
+  // Build background style
+  let bgStyle = `background-color: ${spec.background_color};`;
+  if (spec.has_background_image) {
+    const bgPath = `${RECONSTRUCTIONS_DIR}/${specName}/background.png`;
+    bgStyle = `background-image: url('${bgPath}'); background-size: cover; background-position: center;`;
+  }
 
-    // Generate HTML
-    const html = `
+  // Generate HTML
+  const html = `
         <div id="canvas" style="
             position: relative;
             width: ${canvasWidth}px;
@@ -177,361 +192,501 @@ function renderSpec(spec, specName) {
         </div>
     `;
 
-    document.getElementById('canvas-container').innerHTML = html;
+  document.getElementById("canvas-container").innerHTML = html;
 
-    // Add drag-and-drop functionality
-    setupDraggable();
+  // Add drag-and-drop functionality
+  setupDraggable();
 }
 
 function setupDraggable() {
-    const draggables = document.querySelectorAll('.draggable');
-    let draggedElement = null;
-    let resizingElement = null;
-    let resizeCorner = null;
-    let startX, startY, offsetX, offsetY;
-    let startWidth, startHeight, startLeft, startTop;
+  const draggables = document.querySelectorAll(".draggable");
+  let draggedElement = null;
+  let resizingElement = null;
+  let resizeCorner = null;
+  let startX, startY, offsetX, offsetY;
+  let startWidth, startHeight, startLeft, startTop;
 
-    draggables.forEach(el => {
-        // Click to select
-        el.addEventListener('click', (e) => {
-            if (e.target.classList.contains('resize-handle')) return;
+  draggables.forEach((el) => {
+    // Click to select
+    el.addEventListener("click", (e) => {
+      if (e.target.classList.contains("resize-handle")) return;
 
-            document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
-            el.classList.add('selected');
+      document
+        .querySelectorAll(".draggable")
+        .forEach((d) => d.classList.remove("selected"));
+      el.classList.add("selected");
 
-            const nodeIdx = parseInt(el.getAttribute('data-node-idx'));
-            showProperties(nodeIdx);
+      const nodeIdx = parseInt(el.getAttribute("data-node-idx"));
+      showProperties(nodeIdx);
 
-            e.stopPropagation();
-        });
-
-        // Drag to move
-        el.addEventListener('mousedown', (e) => {
-            if (e.target.classList.contains('resize-handle')) {
-                // Start resizing
-                resizingElement = el;
-                resizeCorner = e.target.getAttribute('data-corner');
-
-                const rect = el.getBoundingClientRect();
-                const canvas = document.getElementById('canvas').getBoundingClientRect();
-
-                startX = e.clientX;
-                startY = e.clientY;
-                startWidth = parseInt(el.style.width);
-                startHeight = parseInt(el.style.height);
-                startLeft = parseInt(el.style.left);
-                startTop = parseInt(el.style.top);
-
-                e.preventDefault();
-                e.stopPropagation();
-                return;
-            }
-
-            draggedElement = el;
-            draggedElement.classList.add('dragging');
-
-            const rect = el.getBoundingClientRect();
-            const canvas = document.getElementById('canvas').getBoundingClientRect();
-
-            offsetX = e.clientX - rect.left;
-            offsetY = e.clientY - rect.top;
-
-            e.preventDefault();
-        });
+      e.stopPropagation();
     });
 
-    // Click canvas to deselect
-    document.getElementById('canvas').addEventListener('click', (e) => {
-        if (e.target.id === 'canvas') {
-            document.querySelectorAll('.draggable').forEach(d => d.classList.remove('selected'));
-            hideProperties();
-        }
+    // Drag to move
+    el.addEventListener("mousedown", (e) => {
+      if (e.target.classList.contains("resize-handle")) {
+        // Start resizing
+        resizingElement = el;
+        resizeCorner = e.target.getAttribute("data-corner");
+
+        const rect = el.getBoundingClientRect();
+        const canvas = document
+          .getElementById("canvas")
+          .getBoundingClientRect();
+
+        startX = e.clientX;
+        startY = e.clientY;
+        startWidth = parseInt(el.style.width);
+        startHeight = parseInt(el.style.height);
+        startLeft = parseInt(el.style.left);
+        startTop = parseInt(el.style.top);
+
+        e.preventDefault();
+        e.stopPropagation();
+        return;
+      }
+
+      draggedElement = el;
+      draggedElement.classList.add("dragging");
+
+      const rect = el.getBoundingClientRect();
+      const canvas = document.getElementById("canvas").getBoundingClientRect();
+
+      offsetX = e.clientX - rect.left;
+      offsetY = e.clientY - rect.top;
+
+      e.preventDefault();
     });
+  });
 
-    document.addEventListener('mousemove', (e) => {
-        if (resizingElement) {
-            const deltaX = e.clientX - startX;
-            const deltaY = e.clientY - startY;
+  // Click canvas to deselect
+  document.getElementById("canvas").addEventListener("click", (e) => {
+    if (e.target.id === "canvas") {
+      document
+        .querySelectorAll(".draggable")
+        .forEach((d) => d.classList.remove("selected"));
+      hideProperties();
+    }
+  });
 
-            let newWidth = startWidth;
-            let newHeight = startHeight;
-            let newLeft = startLeft;
-            let newTop = startTop;
+  document.addEventListener("mousemove", (e) => {
+    if (resizingElement) {
+      const deltaX = e.clientX - startX;
+      const deltaY = e.clientY - startY;
 
-            if (resizeCorner.includes('e')) {
-                newWidth = startWidth + deltaX;
-            }
-            if (resizeCorner.includes('w')) {
-                newWidth = startWidth - deltaX;
-                newLeft = startLeft + deltaX;
-            }
-            if (resizeCorner.includes('s')) {
-                newHeight = startHeight + deltaY;
-            }
-            if (resizeCorner.includes('n')) {
-                newHeight = startHeight - deltaY;
-                newTop = startTop + deltaY;
-            }
+      let newWidth = startWidth;
+      let newHeight = startHeight;
+      let newLeft = startLeft;
+      let newTop = startTop;
 
-            resizingElement.style.width = `${Math.max(10, newWidth)}px`;
-            resizingElement.style.height = `${Math.max(10, newHeight)}px`;
-            resizingElement.style.left = `${newLeft}px`;
-            resizingElement.style.top = `${newTop}px`;
+      if (resizeCorner.includes("e")) {
+        newWidth = startWidth + deltaX;
+      }
+      if (resizeCorner.includes("w")) {
+        newWidth = startWidth - deltaX;
+        newLeft = startLeft + deltaX;
+      }
+      if (resizeCorner.includes("s")) {
+        newHeight = startHeight + deltaY;
+      }
+      if (resizeCorner.includes("n")) {
+        newHeight = startHeight - deltaY;
+        newTop = startTop + deltaY;
+      }
 
-            return;
-        }
+      resizingElement.style.width = `${Math.max(10, newWidth)}px`;
+      resizingElement.style.height = `${Math.max(10, newHeight)}px`;
+      resizingElement.style.left = `${newLeft}px`;
+      resizingElement.style.top = `${newTop}px`;
 
-        if (!draggedElement) return;
+      return;
+    }
 
-        const canvas = document.getElementById('canvas').getBoundingClientRect();
-        const newX = e.clientX - canvas.left - offsetX;
-        const newY = e.clientY - canvas.top - offsetY;
+    if (!draggedElement) return;
 
-        draggedElement.style.left = `${newX}px`;
-        draggedElement.style.top = `${newY}px`;
-    });
+    const canvas = document.getElementById("canvas").getBoundingClientRect();
+    const newX = e.clientX - canvas.left - offsetX;
+    const newY = e.clientY - canvas.top - offsetY;
 
-    document.addEventListener('mouseup', (e) => {
-        if (resizingElement) {
-            const nodeIdx = parseInt(resizingElement.getAttribute('data-node-idx'));
-            currentSpec.nodes[nodeIdx].width = Math.round(parseInt(resizingElement.style.width));
-            currentSpec.nodes[nodeIdx].height = Math.round(parseInt(resizingElement.style.height));
-            currentSpec.nodes[nodeIdx].x = Math.round(parseInt(resizingElement.style.left));
-            currentSpec.nodes[nodeIdx].y = Math.round(parseInt(resizingElement.style.top));
+    draggedElement.style.left = `${newX}px`;
+    draggedElement.style.top = `${newY}px`;
+  });
 
-            hasChanges = true;
-            document.getElementById('save-btn').disabled = false;
-            document.getElementById('copy-btn').disabled = false;
+  document.addEventListener("mouseup", (e) => {
+    if (resizingElement) {
+      const nodeIdx = parseInt(resizingElement.getAttribute("data-node-idx"));
+      currentSpec.nodes[nodeIdx].width = Math.round(
+        parseInt(resizingElement.style.width)
+      );
+      currentSpec.nodes[nodeIdx].height = Math.round(
+        parseInt(resizingElement.style.height)
+      );
+      currentSpec.nodes[nodeIdx].x = Math.round(
+        parseInt(resizingElement.style.left)
+      );
+      currentSpec.nodes[nodeIdx].y = Math.round(
+        parseInt(resizingElement.style.top)
+      );
 
-            resizingElement = null;
-            resizeCorner = null;
-            return;
-        }
+      hasChanges = true;
+      document.getElementById("save-btn").disabled = false;
+      document.getElementById("copy-btn").disabled = false;
 
-        if (!draggedElement) return;
+      resizingElement = null;
+      resizeCorner = null;
+      return;
+    }
 
-        draggedElement.classList.remove('dragging');
+    if (!draggedElement) return;
 
-        // Update the spec
-        const nodeIdx = parseInt(draggedElement.getAttribute('data-node-idx'));
-        const canvas = document.getElementById('canvas').getBoundingClientRect();
-        const newX = e.clientX - canvas.left - offsetX;
-        const newY = e.clientY - canvas.top - offsetY;
+    draggedElement.classList.remove("dragging");
 
-        currentSpec.nodes[nodeIdx].x = Math.round(newX);
-        currentSpec.nodes[nodeIdx].y = Math.round(newY);
+    // Update the spec
+    const nodeIdx = parseInt(draggedElement.getAttribute("data-node-idx"));
+    const canvas = document.getElementById("canvas").getBoundingClientRect();
+    const newX = e.clientX - canvas.left - offsetX;
+    const newY = e.clientY - canvas.top - offsetY;
 
-        hasChanges = true;
-        document.getElementById('save-btn').disabled = false;
+    currentSpec.nodes[nodeIdx].x = Math.round(newX);
+    currentSpec.nodes[nodeIdx].y = Math.round(newY);
 
-        draggedElement = null;
-    });
+    hasChanges = true;
+    document.getElementById("save-btn").disabled = false;
+
+    draggedElement = null;
+  });
 }
 
 async function copySpec() {
-    if (!currentSpec || !currentSpecName) return;
+  if (!currentSpec || !currentSpecName) return;
 
-    try {
-        const specJson = JSON.stringify(currentSpec, null, 2);
-        await navigator.clipboard.writeText(specJson);
-        alert('Spec copied to clipboard!');
-    } catch (error) {
-        alert('Error copying spec: ' + error.message);
-    }
+  try {
+    const specJson = JSON.stringify(currentSpec, null, 2);
+    await navigator.clipboard.writeText(specJson);
+    alert("Spec copied to clipboard!");
+  } catch (error) {
+    alert("Error copying spec: " + error.message);
+  }
 }
 
 async function saveSpec() {
-    if (!currentSpec || !currentSpecName) return;
+  if (!currentSpec || !currentSpecName) return;
 
-    try {
-        const specJson = JSON.stringify(currentSpec, null, 2);
-        const blob = new Blob([specJson], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
+  try {
+    // Save via API endpoint
+    const response = await fetch(`${API_URL}/api/save-spec`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        specName: currentSpecName,
+        spec: currentSpec,
+      }),
+    });
 
-        // Download the file
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${currentSpecName}_spec.json`;
-        a.click();
+    const result = await response.json();
 
-        URL.revokeObjectURL(url);
-
-        alert('Spec downloaded! Replace the file in datasets/canva_specs/' + currentSpecName + '/spec.json');
-        hasChanges = false;
-        document.getElementById('save-btn').disabled = true;
-    } catch (error) {
-        alert('Error saving spec: ' + error.message);
+    if (response.ok) {
+      alert("Spec saved successfully!");
+      hasChanges = false;
+      document.getElementById("save-btn").disabled = true;
+    } else {
+      throw new Error(result.error || "Failed to save spec");
     }
+  } catch (error) {
+    alert("Error saving spec: " + error.message);
+    console.error("Save error:", error);
+  }
 }
 
 function showProperties(nodeIdx) {
-    const node = currentSpec.nodes[nodeIdx];
-    const propertiesPanel = document.getElementById('properties');
-    const propertiesContent = document.getElementById('properties-content');
+  const node = currentSpec.nodes[nodeIdx];
+  const propertiesPanel = document.getElementById("properties");
+  const propertiesContent = document.getElementById("properties-content");
 
-    propertiesPanel.classList.remove('hidden');
+  propertiesPanel.classList.remove("hidden");
 
-    let html = `
+  let html = `
         <div class="property-group">
             <h3>Transform</h3>
             <div class="property-row">
                 <label>X</label>
-                <input type="number" data-prop="x" data-node-idx="${nodeIdx}" value="${node.x}" />
+                <input type="number" data-prop="x" data-node-idx="${nodeIdx}" value="${
+    node.x
+  }" />
             </div>
             <div class="property-row">
                 <label>Y</label>
-                <input type="number" data-prop="y" data-node-idx="${nodeIdx}" value="${node.y}" />
+                <input type="number" data-prop="y" data-node-idx="${nodeIdx}" value="${
+    node.y
+  }" />
             </div>
             <div class="property-row">
                 <label>Width</label>
-                <input type="number" data-prop="width" data-node-idx="${nodeIdx}" value="${node.width}" />
+                <input type="number" data-prop="width" data-node-idx="${nodeIdx}" value="${
+    node.width
+  }" />
             </div>
             <div class="property-row">
                 <label>Height</label>
-                <input type="number" data-prop="height" data-node-idx="${nodeIdx}" value="${node.height}" />
+                <input type="number" data-prop="height" data-node-idx="${nodeIdx}" value="${
+    node.height
+  }" />
             </div>
             <div class="property-row">
                 <label>Rotation</label>
-                <input type="number" data-prop="rotation" data-node-idx="${nodeIdx}" value="${node.rotation}" />
+                <input type="number" data-prop="rotation" data-node-idx="${nodeIdx}" value="${
+    node.rotation
+  }" />
             </div>
             <div class="property-row">
                 <label>Opacity</label>
-                <input type="number" step="0.1" min="0" max="1" data-prop="opacity" data-node-idx="${nodeIdx}" value="${node.opacity !== undefined ? node.opacity : 1}" />
+                <input type="number" step="0.1" min="0" max="1" data-prop="opacity" data-node-idx="${nodeIdx}" value="${
+    node.opacity !== undefined ? node.opacity : 1
+  }" />
             </div>
         </div>
     `;
 
-    if (node.type === 'text') {
-        html += `
+  if (node.type === "text") {
+    html += `
             <div class="property-group">
                 <h3>Text</h3>
                 <div class="property-row">
                     <label>Content</label>
-                    <input type="text" data-prop="text" data-node-idx="${nodeIdx}" value="${escapeHtml(node.text)}" />
+                    <input type="text" data-prop="text" data-node-idx="${nodeIdx}" value="${escapeHtml(
+      node.text
+    )}" />
                 </div>
                 <div class="property-row">
                     <label>Font Family</label>
-                    <input type="text" data-prop="font-family" data-node-idx="${nodeIdx}" value="${node['font-family'] || node.font_family}" />
+                    <input type="text" data-prop="font-family" data-node-idx="${nodeIdx}" value="${
+      node["font-family"] || node.font_family
+    }" />
                 </div>
                 <div class="property-row">
                     <label>Font Size</label>
-                    <input type="number" data-prop="font-size" data-node-idx="${nodeIdx}" value="${node['font-size'] || node.font_size}" />
+                    <input type="number" data-prop="font-size" data-node-idx="${nodeIdx}" value="${
+      node["font-size"] || node.font_size
+    }" />
                 </div>
                 <div class="property-row">
                     <label>Color</label>
-                    <input type="text" data-prop="color" data-node-idx="${nodeIdx}" value="${node.color}" />
+                    <input type="text" data-prop="color" data-node-idx="${nodeIdx}" value="${
+      node.color
+    }" />
                 </div>
                 <div class="property-row">
                     <label>Text Align</label>
                     <select data-prop="text-align" data-node-idx="${nodeIdx}">
-                        <option value="left" ${(node['text-align'] || node.text_align) === 'left' ? 'selected' : ''}>Left</option>
-                        <option value="center" ${(node['text-align'] || node.text_align) === 'center' ? 'selected' : ''}>Center</option>
-                        <option value="right" ${(node['text-align'] || node.text_align) === 'right' ? 'selected' : ''}>Right</option>
+                        <option value="left" ${
+                          (node["text-align"] || node.text_align) === "left"
+                            ? "selected"
+                            : ""
+                        }>Left</option>
+                        <option value="center" ${
+                          (node["text-align"] || node.text_align) === "center"
+                            ? "selected"
+                            : ""
+                        }>Center</option>
+                        <option value="right" ${
+                          (node["text-align"] || node.text_align) === "right"
+                            ? "selected"
+                            : ""
+                        }>Right</option>
                     </select>
                 </div>
                 <div class="property-row">
                     <label>Font Weight</label>
                     <select data-prop="font-weight" data-node-idx="${nodeIdx}">
-                        <option value="normal" ${(node['font-weight'] || node.font_weight) === 'normal' ? 'selected' : ''}>Normal</option>
-                        <option value="bold" ${(node['font-weight'] || node.font_weight) === 'bold' ? 'selected' : ''}>Bold</option>
-                        <option value="100" ${(node['font-weight'] || node.font_weight) === '100' ? 'selected' : ''}>100</option>
-                        <option value="200" ${(node['font-weight'] || node.font_weight) === '200' ? 'selected' : ''}>200</option>
-                        <option value="300" ${(node['font-weight'] || node.font_weight) === '300' ? 'selected' : ''}>300</option>
-                        <option value="400" ${(node['font-weight'] || node.font_weight) === '400' ? 'selected' : ''}>400</option>
-                        <option value="500" ${(node['font-weight'] || node.font_weight) === '500' ? 'selected' : ''}>500</option>
-                        <option value="600" ${(node['font-weight'] || node.font_weight) === '600' ? 'selected' : ''}>600</option>
-                        <option value="700" ${(node['font-weight'] || node.font_weight) === '700' ? 'selected' : ''}>700</option>
-                        <option value="800" ${(node['font-weight'] || node.font_weight) === '800' ? 'selected' : ''}>800</option>
-                        <option value="900" ${(node['font-weight'] || node.font_weight) === '900' ? 'selected' : ''}>900</option>
+                        <option value="normal" ${
+                          (node["font-weight"] || node.font_weight) === "normal"
+                            ? "selected"
+                            : ""
+                        }>Normal</option>
+                        <option value="bold" ${
+                          (node["font-weight"] || node.font_weight) === "bold"
+                            ? "selected"
+                            : ""
+                        }>Bold</option>
+                        <option value="100" ${
+                          (node["font-weight"] || node.font_weight) === "100"
+                            ? "selected"
+                            : ""
+                        }>100</option>
+                        <option value="200" ${
+                          (node["font-weight"] || node.font_weight) === "200"
+                            ? "selected"
+                            : ""
+                        }>200</option>
+                        <option value="300" ${
+                          (node["font-weight"] || node.font_weight) === "300"
+                            ? "selected"
+                            : ""
+                        }>300</option>
+                        <option value="400" ${
+                          (node["font-weight"] || node.font_weight) === "400"
+                            ? "selected"
+                            : ""
+                        }>400</option>
+                        <option value="500" ${
+                          (node["font-weight"] || node.font_weight) === "500"
+                            ? "selected"
+                            : ""
+                        }>500</option>
+                        <option value="600" ${
+                          (node["font-weight"] || node.font_weight) === "600"
+                            ? "selected"
+                            : ""
+                        }>600</option>
+                        <option value="700" ${
+                          (node["font-weight"] || node.font_weight) === "700"
+                            ? "selected"
+                            : ""
+                        }>700</option>
+                        <option value="800" ${
+                          (node["font-weight"] || node.font_weight) === "800"
+                            ? "selected"
+                            : ""
+                        }>800</option>
+                        <option value="900" ${
+                          (node["font-weight"] || node.font_weight) === "900"
+                            ? "selected"
+                            : ""
+                        }>900</option>
                     </select>
                 </div>
                 <div class="property-row">
                     <label>Font Style</label>
                     <select data-prop="font-style" data-node-idx="${nodeIdx}">
-                        <option value="normal" ${(node['font-style'] || node.font_style) === 'normal' ? 'selected' : ''}>Normal</option>
-                        <option value="italic" ${(node['font-style'] || node.font_style) === 'italic' ? 'selected' : ''}>Italic</option>
+                        <option value="normal" ${
+                          (node["font-style"] || node.font_style) === "normal"
+                            ? "selected"
+                            : ""
+                        }>Normal</option>
+                        <option value="italic" ${
+                          (node["font-style"] || node.font_style) === "italic"
+                            ? "selected"
+                            : ""
+                        }>Italic</option>
                     </select>
                 </div>
                 <div class="property-row">
                     <label>Text Decoration</label>
                     <select data-prop="text-decoration" data-node-idx="${nodeIdx}">
-                        <option value="none" ${(node['text-decoration'] || node.text_decoration) === 'none' ? 'selected' : ''}>None</option>
-                        <option value="underline" ${(node['text-decoration'] || node.text_decoration) === 'underline' ? 'selected' : ''}>Underline</option>
+                        <option value="none" ${
+                          (node["text-decoration"] || node.text_decoration) ===
+                          "none"
+                            ? "selected"
+                            : ""
+                        }>None</option>
+                        <option value="underline" ${
+                          (node["text-decoration"] || node.text_decoration) ===
+                          "underline"
+                            ? "selected"
+                            : ""
+                        }>Underline</option>
                     </select>
                 </div>
                 <div class="property-row">
                     <label>Text Transform</label>
                     <select data-prop="text-transform" data-node-idx="${nodeIdx}">
-                        <option value="none" ${(node['text-transform'] || node.text_transform) === 'none' ? 'selected' : ''}>None</option>
-                        <option value="uppercase" ${(node['text-transform'] || node.text_transform) === 'uppercase' ? 'selected' : ''}>Uppercase</option>
-                        <option value="lowercase" ${(node['text-transform'] || node.text_transform) === 'lowercase' ? 'selected' : ''}>Lowercase</option>
-                        <option value="capitalize" ${(node['text-transform'] || node.text_transform) === 'capitalize' ? 'selected' : ''}>Capitalize</option>
+                        <option value="none" ${
+                          (node["text-transform"] || node.text_transform) ===
+                          "none"
+                            ? "selected"
+                            : ""
+                        }>None</option>
+                        <option value="uppercase" ${
+                          (node["text-transform"] || node.text_transform) ===
+                          "uppercase"
+                            ? "selected"
+                            : ""
+                        }>Uppercase</option>
+                        <option value="lowercase" ${
+                          (node["text-transform"] || node.text_transform) ===
+                          "lowercase"
+                            ? "selected"
+                            : ""
+                        }>Lowercase</option>
+                        <option value="capitalize" ${
+                          (node["text-transform"] || node.text_transform) ===
+                          "capitalize"
+                            ? "selected"
+                            : ""
+                        }>Capitalize</option>
                     </select>
                 </div>
                 <div class="property-row">
                     <label>Line Height</label>
-                    <input type="number" step="0.1" data-prop="line-height" data-node-idx="${nodeIdx}" value="${node['line-height'] || node.line_height || 1.2}" />
+                    <input type="number" step="0.1" data-prop="line-height" data-node-idx="${nodeIdx}" value="${
+      node["line-height"] || node.line_height || 1.2
+    }" />
                 </div>
             </div>
         `;
-    }
+  }
 
-    propertiesContent.innerHTML = html;
+  propertiesContent.innerHTML = html;
 
-    // Add event listeners to update spec on change
-    propertiesContent.querySelectorAll('input, select').forEach(input => {
-        input.addEventListener('input', (e) => {
-            const nodeIdx = parseInt(e.target.getAttribute('data-node-idx'));
-            const prop = e.target.getAttribute('data-prop');
-            const value = e.target.type === 'number' ? parseFloat(e.target.value) : e.target.value;
+  // Add event listeners to update spec on change
+  propertiesContent.querySelectorAll("input, select").forEach((input) => {
+    input.addEventListener("input", (e) => {
+      const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
+      const prop = e.target.getAttribute("data-prop");
+      const value =
+        e.target.type === "number"
+          ? parseFloat(e.target.value)
+          : e.target.value;
 
-            currentSpec.nodes[nodeIdx][prop] = value;
+      currentSpec.nodes[nodeIdx][prop] = value;
 
-            hasChanges = true;
-            document.getElementById('save-btn').disabled = false;
-            document.getElementById('copy-btn').disabled = false;
+      hasChanges = true;
+      document.getElementById("save-btn").disabled = false;
+      document.getElementById("copy-btn").disabled = false;
 
-            // Re-render to see changes
-            renderSpec(currentSpec, currentSpecName);
-        });
+      // Re-render to see changes
+      renderSpec(currentSpec, currentSpecName);
     });
+  });
 }
 
 function hideProperties() {
-    document.getElementById('properties').classList.add('hidden');
+  document.getElementById("properties").classList.add("hidden");
 }
 
 function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
 }
 
 // Delete key handler
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Delete' || e.key === 'Backspace') {
-        const selected = document.querySelector('.draggable.selected');
-        if (selected) {
-            const nodeIdx = parseInt(selected.getAttribute('data-node-idx'));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Delete" || e.key === "Backspace") {
+    const selected = document.querySelector(".draggable.selected");
+    if (selected) {
+      const nodeIdx = parseInt(selected.getAttribute("data-node-idx"));
 
-            // Remove from spec
-            currentSpec.nodes.splice(nodeIdx, 1);
+      // Remove from spec
+      currentSpec.nodes.splice(nodeIdx, 1);
 
-            hasChanges = true;
-            document.getElementById('save-btn').disabled = false;
+      hasChanges = true;
+      document.getElementById("save-btn").disabled = false;
 
-            // Hide properties panel
-            hideProperties();
+      // Hide properties panel
+      hideProperties();
 
-            // Re-render
-            renderSpec(currentSpec, currentSpecName);
+      // Re-render
+      renderSpec(currentSpec, currentSpecName);
 
-            e.preventDefault();
-        }
+      e.preventDefault();
     }
+  }
 });
 
 // Initialize
-document.getElementById('copy-btn').addEventListener('click', copySpec);
-document.getElementById('save-btn').addEventListener('click', saveSpec);
+document.getElementById("copy-btn").addEventListener("click", copySpec);
+document.getElementById("save-btn").addEventListener("click", saveSpec);
 loadSpecList();

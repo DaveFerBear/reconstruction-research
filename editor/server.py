@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Simple local server for the spec editor with save functionality."""
+
+from flask import Flask, send_from_directory, request, jsonify
+from flask_cors import CORS
+from pathlib import Path
+import json
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for local development
+
+# Base directory (parent of editor/)
+BASE_DIR = Path(__file__).parent.parent
+
+# Save spec endpoint (must be before catch-all route)
+@app.route('/api/save-spec', methods=['POST'])
+def save_spec():
+    try:
+        data = request.json
+        spec_name = data.get('specName')
+        spec_content = data.get('spec')
+
+        if not spec_name or not spec_content:
+            return jsonify({'error': 'Missing specName or spec'}), 400
+
+        # Construct the path to the spec file
+        spec_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / 'spec.json'
+
+        # Ensure the directory exists
+        spec_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write the spec file
+        with open(spec_path, 'w') as f:
+            json.dump(spec_content, f, indent=2)
+
+        return jsonify({'success': True, 'path': str(spec_path)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Serve static files from editor directory
+@app.route('/')
+def index():
+    return send_from_directory('.', 'index.html')
+
+@app.route('/<path:path>')
+def static_files(path):
+    # Serve files from editor directory or parent datasets directory
+    if path.startswith('datasets/'):
+        # Serve from parent directory for datasets
+        return send_from_directory(BASE_DIR, path)
+    else:
+        # Serve from editor directory
+        return send_from_directory('.', path)
+
+if __name__ == '__main__':
+    print("Starting spec editor server...")
+    print("Open http://localhost:5001 in your browser")
+    print("Press Ctrl+C to stop")
+    # Disable reloader to avoid path issues
+    app.run(host='localhost', port=5001, debug=False)
