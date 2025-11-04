@@ -1,5 +1,6 @@
 const SPECS_DIR = "../datasets/canva_specs";
 const RECONSTRUCTIONS_DIR = "../datasets/reconstructions";
+const CANVA_DIR = "../datasets/canva";
 
 let currentSpec = null;
 let currentSpecName = null;
@@ -76,9 +77,19 @@ async function loadSpec(specName) {
   }
 }
 
+function loadOriginalImage(specName) {
+  const originalImage = document.getElementById("original-image");
+  const imagePath = `${CANVA_DIR}/${specName}.webp`;
+
+  originalImage.innerHTML = `<img src="${imagePath}" alt="${specName}" onerror="this.parentElement.innerHTML='<div style=\\'padding: 20px; color: #999;\\'>Original image not found</div>'" />`;
+}
+
 function renderSpec(spec, specName) {
   const canvasWidth = spec.canvas_width || 800;
   const canvasHeight = spec.canvas_height || 600;
+
+  // Load the original image for comparison
+  loadOriginalImage(specName);
 
   // Build nodes HTML
   let nodesHtml = "";
