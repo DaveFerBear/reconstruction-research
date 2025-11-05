@@ -102,6 +102,10 @@ async function loadSpec(specName) {
     document.getElementById("save-btn").disabled = true;
     document.getElementById("copy-btn").disabled = false;
 
+    // Update URL without reloading page
+    const newUrl = `${window.location.pathname}?design=${encodeURIComponent(specName)}`;
+    history.pushState({ specName }, "", newUrl);
+
     // Render the spec
     renderSpec(spec, specName);
 
@@ -830,7 +834,26 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+// Handle browser back/forward buttons
+window.addEventListener("popstate", (event) => {
+  if (event.state && event.state.specName) {
+    loadSpec(event.state.specName);
+  }
+});
+
+// Check URL for design parameter and auto-load
+function loadFromUrl() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const designId = urlParams.get("design");
+  if (designId) {
+    loadSpec(designId);
+  }
+}
+
 // Initialize
 document.getElementById("copy-btn").addEventListener("click", copySpec);
 document.getElementById("save-btn").addEventListener("click", saveSpec);
-loadSpecList();
+loadSpecList().then(() => {
+  // After spec list loads, check if URL has a design parameter
+  loadFromUrl();
+});
