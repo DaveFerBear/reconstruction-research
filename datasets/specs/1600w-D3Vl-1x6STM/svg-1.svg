@@ -1,0 +1,39 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Main Ellipse: cx=50, cy=50, rx=40, ry=25, stroke-width=14
+    Outer edge of main ellipse stroke: rx=40+7=47, ry=25+7=32
+    Inner edge of main ellipse stroke (fill boundary): rx=40, ry=25
+
+    Shadow parameters:
+    Offset center for shadow: cx_offset=53, cy_offset=53 (shifted 3 units down-right from main ellipse center)
+    Outer shadow ellipse radii: rx_out=52, ry_out=37 (extends 5 units beyond main ellipse's outer stroke edge)
+    Inner shadow ellipse radii: rx_in=40, ry_in=25 (aligned with main ellipse's fill boundary)
+    This creates a shadow thickness of 12 units at its widest points.
+
+    Points for outer shadow arc (210° to 330°) based on cx=53, cy=53, rx=52, ry=37:
+    210°: x = 53 + 52*cos(210°) ≈ 7.968, y = 53 + 37*sin(210°) ≈ 34.5
+    330°: x = 53 + 52*cos(330°) ≈ 98.032, y = 53 + 37*sin(330°) ≈ 34.5
+
+    Points for inner shadow arc (210° to 330°) based on cx=53, cy=53, rx=40, ry=25:
+    210°: x = 53 + 40*cos(210°) ≈ 18.36, y = 53 + 25*sin(210°) ≈ 40.5
+    330°: x = 53 + 40*cos(330°) ≈ 87.64, y = 53 + 25*sin(330°) ≈ 40.5
+  -->
+  <path
+    d="M 7.968 34.5
+       A 52 37 0 0 1 98.032 34.5
+       L 87.64 40.5
+       A 40 25 0 0 0 18.36 40.5
+       Z"
+    fill="#2a2a2a"
+  />
+
+  <ellipse
+    cx="50"
+    cy="50"
+    rx="40"
+    ry="25"
+    fill="#ffffff"
+    stroke="#1f1f1f"
+    stroke-width="14"
+  />
+</svg>

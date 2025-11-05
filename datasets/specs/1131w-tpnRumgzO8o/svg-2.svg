@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 20">
+  <!-- Define colors for clarity and potential reuse, though direct fill is also clean for just two. -->
+  <!-- <defs>
+    <style type="text/css"><![CDATA[
+      .red { fill: #C21A17; }
+      .cream { fill: #FFFDD0; }
+    ]]></style>
+  </defs> -->
+
+  <!-- Row 1 -->
+  <rect x="0" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="10" y="0" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="20" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="30" y="0" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="40" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="50" y="0" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="60" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="70" y="0" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="80" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="90" y="0" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="100" y="0" width="10" height="10" fill="#C21A17"/>
+  <rect x="110" y="0" width="10" height="10" fill="#FFFDD0"/>
+
+  <!-- Row 2 -->
+  <rect x="0" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="10" y="10" width="10" height="10" fill="#C21A17"/>
+  <rect x="20" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="30" y="10" width="10" height="10" fill="#C21A17"/>
+  <rect x="40" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="50" y="10" width="10" height="10" fill="#C21A17"/>
+  <rect x="60" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="70" y="10" width="10" height="10" fill="#C21A17"/>
+  <rect x="80" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="90" y="10" width="10" height="10" fill="#C21A17"/>
+  <rect x="100" y="10" width="10" height="10" fill="#FFFDD0"/>
+  <rect x="110" y="10" width="10" height="10" fill="#C21A17"/>
+</svg>

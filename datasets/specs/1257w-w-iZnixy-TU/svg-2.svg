@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outlined horizontal bar with 2px white stroke and slight rounded corners -->
+  <rect x="0" y="12" width="200" height="8" rx="2" ry="2" stroke="white" stroke-width="2" fill="none"/>
+
+  <!-- Left segment: filled solid white -->
+  <!-- Positioned inside the outline, accounting for 2px stroke. Width 57px. -->
+  <!-- The outer rect's rounded corners will visually round this segment's left corners. -->
+  <rect x="1" y="13" width="57" height="6" fill="white"/>
+
+  <!-- Vertical divider 1 (between left and middle segments) -->
+  <!-- Centered at x=59, creating a 2px wide line from x=58 to x=60. -->
+  <line x1="59" y1="13" x2="59" y2="19" stroke="white" stroke-width="2"/>
+
+  <!-- Vertical divider 2 (between middle and right segments) -->
+  <!-- Middle segment spans from x=60 to x=160 (width 100px). -->
+  <!-- Divider 2 is centered at x=161, creating a 2px wide line from x=160 to x=162. -->
+  <line x1="161" y1="13" x2="161" y2="19" stroke="white" stroke-width="2"/>
+
+  <!-- Middle and Right segments are transparent because the main rect has fill="none". -->
+  <!-- Middle segment: x=60 to x=160 (width 100px). -->
+  <!-- Right segment (narrow for date): x=162 to x=199 (width 37px). -->
+</svg>

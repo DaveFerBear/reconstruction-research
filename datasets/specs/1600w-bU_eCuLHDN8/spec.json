@@ -1,0 +1,90 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "Full-canvas black-and-white checkerboard made of large, even squares (approx. 230–260 px each). Alternating black (#000000) squares on a white (#ffffff) base, forming vertical and horizontal bands that continue uniformly behind the central lime rectangle.",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Large solid rectangle with no stroke, filled with neon lime green (#CDFA3F). It sits inset from the canvas edges, forming the central panel.",
+      "filename": "svg-1.svg",
+      "x": 86,
+      "y": 120,
+      "width": 1428,
+      "height": 1101,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Six-petal rounded flower shape (cartoon asterisk-like) filled with bright pink (#F15BB5). Positioned near the top-right corner of the lime panel.",
+      "filename": "svg-2.svg",
+      "x": 1390,
+      "y": 140,
+      "width": 140,
+      "height": 140,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Smaller six-petal rounded flower shape filled with the same bright pink (#F15BB5). It overlaps the bottom-left edge of the lime panel so part of it extends below the panel.",
+      "filename": "svg-3.svg",
+      "x": 110,
+      "y": 1185,
+      "width": 120,
+      "height": 120,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "A LITTLE HEADS UP",
+      "x": 160,
+      "y": 270,
+      "width": 1280,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 40,
+      "color": "#000000",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "OUT OF",
+      "x": 160,
+      "y": 430,
+      "width": 1280,
+      "height": 210,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 180,
+      "color": "#F15BB5",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "OFFICE",
+      "x": 160,
+      "y": 700,
+      "width": 1280,
+      "height": 210,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 180,
+      "color": "#F15BB5",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}

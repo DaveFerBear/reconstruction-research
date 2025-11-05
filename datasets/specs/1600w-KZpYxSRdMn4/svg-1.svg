@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D36A"/>
+      <stop offset="100%" stop-color="#B8862C"/>
+    </linearGradient>
+  </defs>
+  <!-- Bottom band: medium teal-green -->
+  <path fill="#178D6D" d="M 0 160 C 150 140, 350 180, 500 160 C 650 140, 850 180, 1000 160 L 1000 200 L 0 200 Z"/>
+  <!-- Middle band: deep green -->
+  <path fill="#0F6B53" d="M 0 140 C 150 120, 350 160, 500 140 C 650 120, 850 160, 1000 140 L 1000 200 L 0 200 Z"/>
+  <!-- Top band: gold with gradient -->
+  <path fill="url(#goldGradient)" d="M 0 120 C 150 100, 350 140, 500 120 C 650 100, 850 140, 1000 120 L 1000 200 L 0 200 Z"/>
+</svg>

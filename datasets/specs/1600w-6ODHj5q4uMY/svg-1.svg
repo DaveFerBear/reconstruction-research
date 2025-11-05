@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <defs>
+    <style>
+      .quote-color {
+        fill: #4a372d;
+      }
+      .line-style {
+        stroke: #4a372d;
+        stroke-width: 9;
+        stroke-linecap: round;
+      }
+    </style>
+    <!-- Define a single opening quote mark shape -->
+    <path id="open-quote" class="quote-color" d="M 0,0 C 0,8 8,8 8,0 C 8,-8 0,-8 0,0 Z M 0,0 Q 0,10 -5,15 Q -10,20 -10,10 Q -10,0 -5,-5 Q 0,-10 0,0 Z"/>
+    <!-- Define a single closing quote mark shape (mirrored open quote) -->
+    <path id="close-quote" class="quote-color" d="M 0,0 C 0,-8 -8,-8 -8,0 C -8,8 0,8 0,0 Z M 0,0 Q 0,-10 5,-15 Q 10,-20 10,-10 Q 10,0 5,5 Q 0,10 0,0 Z"/>
+  </defs>
+
+  <!-- Top-left: Opening quotation marks and horizontal line -->
+  <g transform="translate(20, 20)">
+    <use href="#open-quote" transform="scale(0.6) translate(0, 0)"/>
+    <use href="#open-quote" transform="scale(0.6) translate(10, 0)"/>
+    <line x1="25" y1="0" x2="75" y2="0" class="line-style"/>
+  </g>
+
+  <!-- Top-left: Vertical line (left bracket) -->
+  <line x1="20" y1="20" x2="20" y2="130" class="line-style"/>
+
+  <!-- Bottom-right: Vertical line (right bracket) -->
+  <line x1="180" y1="20" x2="180" y2="130" class="line-style"/>
+
+  <!-- Bottom-right: Horizontal line and closing quotation marks -->
+  <g transform="translate(180, 130)">
+    <line x1="-75" y1="0" x2="-25" y2="0" class="line-style"/>
+    <use href="#close-quote" transform="scale(0.6) translate(-10, 0)"/>
+    <use href="#close-quote" transform="scale(0.6) translate(0, 0)"/>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "Full-bleed photograph across the canvas showing four people seated around a low table in a bright studio: at left a man in a color-block light gray and pale blue sweater, center-left a blonde woman in a black sweatshirt, center-right a man with long dark curly hair in a navy jacket over a white shirt, and far right a woman in glasses wearing a bright cobalt knit with orange-and-blue striped sleeves. White wall backdrop; scene cropped by a large off-white card overlay in the lower half.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Top-to-mid canvas lifestyle photo of a collaborative meeting with four people as described; bright flash lighting, clean white wall background, table edges and hands visible near the bottom; vivid cobalt accents in clothing on the right.",
+      "filename": "asset-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 1600,
+      "height": 900,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Off-white rectangular card with sharp corners covering the lower portion of the canvas; solid fill (#F7F7F7). Inside the card, a thin horizontal cobalt blue rule (#0A44FF) runs the full width about 24 px above the card’s bottom edge.",
+      "filename": "svg-1.svg",
+      "x": 44,
+      "y": 420,
+      "width": 1512,
+      "height": 420,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "VIVID MARKETING",
+      "x": 44,
+      "y": 464,
+      "width": 1512,
+      "height": 36,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 22,
+      "color": "#0A44FF",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "CAMPAIGN HUB",
+      "x": 44,
+      "y": 556,
+      "width": 1512,
+      "height": 260,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 180,
+      "color": "#0A44FF",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

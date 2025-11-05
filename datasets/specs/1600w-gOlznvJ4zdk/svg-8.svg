@@ -1,0 +1,11 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bubble -->
+  <circle cx="50" cy="50" r="40" fill="#98b892" stroke="#2f4f46" stroke-width="7"/>
+
+  <!-- Number "3" -->
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="65" font-weight="bold" fill="#2f4f46" text-anchor="middle" dominant-baseline="middle">3</text>
+
+  <!-- White Highlight Dots -->
+  <circle cx="30" cy="30" r="5" fill="white"/>
+  <circle cx="40" cy="20" r="3" fill="white"/>
+</svg>

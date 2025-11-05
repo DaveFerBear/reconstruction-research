@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a single lightning bolt path. It's roughly 20 units wide and 80 units tall. -->
+    <path id="lightningBolt" d="M 10 0 L 0 40 L 8 40 L 0 80 L 10 80 L 20 40 L 12 40 L 20 0 Z" />
+  </defs>
+
+  <!-- Large, central lightning bolt -->
+  <!-- Scaled to 0.75 (15w x 60h), rotated 5 degrees around its center (7.5, 30), then translated to position -->
+  <use href="#lightningBolt" fill="black" transform="translate(42.5 20) rotate(5 7.5 30) scale(0.75)" />
+
+  <!-- Smaller left lightning bolt -->
+  <!-- Scaled to 0.5 (10w x 40h), then translated to position -->
+  <use href="#lightningBolt" fill="black" transform="translate(20 30) scale(0.5)" />
+
+  <!-- Smaller right lightning bolt -->
+  <!-- Scaled to 0.5 (10w x 40h), then translated to position -->
+  <use href="#lightningBolt" fill="black" transform="translate(70 30) scale(0.5)" />
+</svg>

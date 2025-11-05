@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="circleGradient" cx="75%" cy="75%" r="70%" fx="25%" fy="25%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </radialGradient>
+
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Erode the alpha channel slightly to create a smaller inner shape -->
+      <feMorphology in="SourceAlpha" operator="erode" radius="1" result="erodedAlpha"/>
+      <!-- Blur this eroded alpha -->
+      <feGaussianBlur in="erodedAlpha" stdDeviation="2" result="innerBlur"/>
+      <!-- Create a solid color for the glow (white with transparency) -->
+      <feFlood flood-color="#FFFFFF" flood-opacity="0.6" result="glowColor"/>
+      <!-- Composite the glow color with the inner blur, keeping only the part that overlaps -->
+      <feComposite in="glowColor" in2="innerBlur" operator="in" result="coloredInnerBlur"/>
+      <!-- Merge the original graphic with the colored inner blur -->
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="coloredInnerBlur"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="50" cy="50" r="40" fill="url(#circleGradient)" filter="url(#innerGlow)"/>
+</svg>

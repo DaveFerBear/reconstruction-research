@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lime Panel -->
+  <rect x="10" y="10" width="80" height="80" fill="#BFFF00"/>
+
+  <!-- Six-petal rounded flower -->
+  <g fill="#F15BB5">
+    <!-- Central circle -->
+    <circle cx="15" cy="85" r="5"/>
+    <!-- Petals positioned around the center (15, 85) -->
+    <circle cx="24" cy="85" r="7"/>
+    <circle cx="19.5" cy="92.79" r="7"/>
+    <circle cx="10.5" cy="92.79" r="7"/>
+    <circle cx="6" cy="85" r="7"/>
+    <circle cx="10.5" cy="77.21" r="7"/>
+    <circle cx="19.5" cy="77.21" r="7"/>
+  </g>
+</svg>

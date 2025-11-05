@@ -1,0 +1,9 @@
+<svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid yellow rectangle banner, slightly rotated clockwise -->
+  <rect x="50" y="70" width="500" height="60" fill="#FFD700" transform="rotate(3 300 100)" />
+
+  <!-- 'NEWS' text -->
+  <text x="300" y="115" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="black">
+    NEWS
+  </text>
+</svg>

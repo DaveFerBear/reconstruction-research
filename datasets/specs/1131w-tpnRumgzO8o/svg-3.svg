@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cream line starburst 1 (left-mid) -->
+  <path d="M 28 50 H 32 M 30 48 V 52" stroke="#FFFDD0" stroke-width="1" fill="none"/>
+  
+  <!-- Cream line starburst 2 (right-mid) -->
+  <path d="M 63 50 H 67 M 65 48 V 52" stroke="#FFFDD0" stroke-width="1" fill="none"/>
+  
+  <!-- Solid red diamond (near right-mid) -->
+  <polygon points="78,48.5 79.5,50 78,51.5 76.5,50" fill="#C21A17"/>
+</svg>

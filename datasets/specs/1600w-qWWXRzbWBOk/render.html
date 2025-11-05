@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1600px;
+            height: 1600px;
+            background-image: url('background.png'); background-size: cover; background-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div style="position: absolute; left: 420px; top: 520px; width: 760px; height: 380px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <ellipse cx="400" cy="200" rx="380" ry="190" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.45" transform="rotate(12 400 200)"/>
+</svg></div><div style="position: absolute; left: 200px; top: 590px; width: 1200px; height: 200px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 150px; color: #ffffff; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Every day is</div></div><div style="position: absolute; left: 200px; top: 760px; width: 1200px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 130px; color: #ffffff; text-align: center; font-weight: 400; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">a new chance</div></div><div style="position: absolute; left: 520px; top: 460px; width: 560px; height: 520px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <symbol id="sparkleStar" viewBox="0 0 100 100">
+      <g transform="rotate(45 50 50)">
+        <rect x="40" y="15" width="20" height="70" rx="10" ry="10" fill="#ffffff"/>
+        <rect x="15" y="40" width="70" height="20" rx="10" ry="10" fill="#ffffff"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Larger star (approx 34x34px) above-left -->
+  <use href="#sparkleStar" x="50" y="50" width="34" height="34"/>
+
+  <!-- Smaller star (approx 22x22px) lower-right -->
+  <use href="#sparkleStar" x="350" y="200" width="22" height="22"/>
+
+  <!-- Even smaller star (approx 16x16px) lower-right, ~60px below the previous one -->
+  <use href="#sparkleStar" x="350" y="260" width="16" height="16"/>
+</svg></div>
+    </div>
+</body>
+</html>

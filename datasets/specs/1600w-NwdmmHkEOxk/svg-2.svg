@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- Pastel yellow circle -->
+  <circle cx="50" cy="50" r="45" fill="#f4c45a" />
+
+  <!-- Hand-drawn black outlined five-point star -->
+  <polygon
+    points="50,20 58.81,37.87 78.53,40.73 64.26,54.63 67.63,74.27 50,65 32.37,74.27 35.74,54.63 21.47,40.73 41.19,37.87"
+    fill="none"
+    stroke="black"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#sketch)"
+  />
+</svg>

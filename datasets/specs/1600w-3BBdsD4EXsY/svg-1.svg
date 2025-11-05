@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sign Panel -->
+  <rect x="25" y="20" width="50" height="55" rx="6" ry="6" fill="#F3BBB1"/>
+
+  <!-- Easel Elements -->
+  <g fill="#C95E3E">
+    <!-- Central Vertical Post -->
+    <rect x="48" y="10" width="4" height="75"/>
+
+    <!-- Top Shelf -->
+    <rect x="35" y="25" width="30" height="3"/>
+
+    <!-- Bottom Shelf -->
+    <rect x="30" y="70" width="40" height="5"/>
+
+    <!-- Triangular Head with Circular Cut-out -->
+    <path d="M 40 10 L 60 10 L 50 0 Z M 50 5 m -3 0 a 3 3 0 1 0 6 0 a 3 3 0 1 0 -6 0 Z" fill-rule="evenodd"/>
+
+    <!-- Left Leg -->
+    <path d="M 48 85 L 28 95 C 28 98 32 98 32 95 L 48 88 Z"/>
+
+    <!-- Right Leg -->
+    <path d="M 52 85 L 72 95 C 72 98 68 98 68 95 L 52 88 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <symbol id="sparkleStar" viewBox="0 0 100 100">
+      <g transform="rotate(45 50 50)">
+        <rect x="40" y="15" width="20" height="70" rx="10" ry="10" fill="#ffffff"/>
+        <rect x="15" y="40" width="70" height="20" rx="10" ry="10" fill="#ffffff"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Larger star (approx 34x34px) above-left -->
+  <use href="#sparkleStar" x="50" y="50" width="34" height="34"/>
+
+  <!-- Smaller star (approx 22x22px) lower-right -->
+  <use href="#sparkleStar" x="350" y="200" width="22" height="22"/>
+
+  <!-- Even smaller star (approx 16x16px) lower-right, ~60px below the previous one -->
+  <use href="#sparkleStar" x="350" y="260" width="16" height="16"/>
+</svg>

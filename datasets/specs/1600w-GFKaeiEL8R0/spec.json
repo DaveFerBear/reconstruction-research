@@ -1,0 +1,90 @@
+{
+  "background_color": "#000000",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Cluster of glossy 3D abstract shapes centered near the top: three pill/pebble-like forms in cyan-to-teal gradients and one six-lobed asterisk/flower shape. Colors range from light aqua (#AEEBEE) and icy cyan (#B9F2FF) to magenta-violet (#A33BFF) with soft studio lighting and subtle cast shadows. The forms are arranged in a gentle diagonal arc from left to right.",
+      "filename": "asset-1.png",
+      "x": 514,
+      "y": 148,
+      "width": 572,
+      "height": 318,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "STUDIO ✦ AGATHO",
+      "x": 636,
+      "y": 70,
+      "width": 328,
+      "height": 36,
+      "rotation": 0,
+      "font-family": "Helvetica Neue",
+      "font-size": 28,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "Branding",
+      "x": 400,
+      "y": 468,
+      "width": 860,
+      "height": 182,
+      "rotation": 0,
+      "font-family": "Helvetica Neue",
+      "font-size": 170,
+      "color": "#FFFFFF",
+      "text-align": "left",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "&",
+      "x": 400,
+      "y": 640,
+      "width": 120,
+      "height": 170,
+      "rotation": 0,
+      "font-family": "Helvetica Neue",
+      "font-size": 170,
+      "color": "#FFFFFF",
+      "text-align": "left",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "The word \"Design\" set in bold rounded sans-serif, filled with a left-to-right gradient transitioning from soft lavender (#C7A9FF) through light purple (#B68CFF) to vivid violet (#7D3CFF). Slight soft drop shadow; baseline aligned to the ampersand on the left.",
+      "filename": "asset-2.png",
+      "x": 526,
+      "y": 612,
+      "width": 700,
+      "height": 190,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Pill-shaped CTA button centered near the bottom. Background has a horizontal gradient from deep violet (#3A0B8C) at left through near-black (#0B0B12) to bright purple (#7C3CF2) at right, with a subtle inner glow. White uppercase label \"READ MORE\" centered-left in Helvetica Neue Medium. On the right end, a small circular purple capsule with a white downward chevron/arrow icon.",
+      "filename": "asset-3.png",
+      "x": 640,
+      "y": 780,
+      "width": 320,
+      "height": 70,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" fill="none" stroke="#3f5361" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Envelope body and flap -->
+  <path d="M2 6h20v12H2z M2 6l10 6 10-6"/>
+  <!-- Notification bell -->
+  <path d="M20 3c0-1-2-1-2 0 M18 3v2h4v-2 M17.5 5h5 M20 5.5v.5"/>
+</svg>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1600px;
+            height: 900px;
+            background-color: #f3f3f3;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div style="position: absolute; left: 0px; top: 0px; width: 1600px; height: 210px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+  <defs>
+    <linearGradient id="bannerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f6c189"/>
+      <stop offset="100%" stop-color="#e7782e"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="100" height="10" fill="url(#bannerGradient)" stroke="none"/>
+</svg></div><div style="position: absolute; left: 110px; top: 300px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><rect width="150" height="150" fill="#f28c57"/></svg></div><div style="position: absolute; left: 290px; top: 330px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><rect width="150" height="150" fill="#d9d6c6"/></svg></div><div style="position: absolute; left: 520px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#cfe3f1"/></svg></div><div style="position: absolute; left: 775px; top: 230px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#f28c57"/></svg></div><div style="position: absolute; left: 980px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <rect x="0" y="0" width="150" height="150" fill="#f6d68a"/>
+</svg></div><div style="position: absolute; left: 1180px; top: 270px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#ffffff"/></svg></div><div style="position: absolute; left: 1400px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <rect x="0" y="0" width="150" height="150" fill="#f6d68a"/>
+</svg></div><div style="position: absolute; left: 1260px; top: 420px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <rect width="150" height="150" fill="#6fa8dc"/>
+</svg></div><div style="position: absolute; left: 1440px; top: 560px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#f28c57"/></svg></div><div style="position: absolute; left: 1240px; top: 700px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150"><rect x="0" y="0" width="150" height="150" fill="#d9d6c6"/></svg></div><div style="position: absolute; left: 1060px; top: 560px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#FFFFFF"/></svg></div><div style="position: absolute; left: 720px; top: 580px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><rect width="150" height="150" fill="#6fa8dc"/></svg></div><div style="position: absolute; left: 880px; top: 620px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#cfe3f1"/></svg></div><div style="position: absolute; left: 520px; top: 700px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#f28c57"/></svg></div><div style="position: absolute; left: 260px; top: 540px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="150" fill="#ffffff"/></svg></div><div style="position: absolute; left: 80px; top: 600px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; "><svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="150" height="150" fill="#f6d68a"/>
+</svg></div><div style="position: absolute; left: 620px; top: 400px; width: 360px; height: 130px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 130">
+  <defs>
+    <linearGradient id="diagonalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6c189"/>
+      <stop offset="100%" stop-color="#f0864c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="360" height="130" rx="24" ry="24" fill="url(#diagonalGradient)" stroke="none"/>
+</svg></div><div style="position: absolute; left: 60px; top: 240px; width: 1480px; height: 560px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="black" />
+    </marker>
+  </defs>
+
+  <!-- Central Rounded Rectangle -->
+  <rect x="300" y="200" width="200" height="100" rx="15" ry="15" stroke="black" stroke-width="2" fill="none" />
+
+  <!-- Colored Squares -->
+  <rect x="100" y="50" width="80" height="80" fill="red" stroke="black" stroke-width="1" />
+  <rect x="620" y="50" width="80" height="80" fill="blue" stroke="black" stroke-width="1" />
+  <rect x="100" y="470" width="80" height="80" fill="green" stroke="black" stroke-width="1" />
+  <rect x="620" y="470" width="80" height="80" fill="yellow" stroke="black" stroke-width="1" />
+  <rect x="360" y="50" width="80" height="80" fill="purple" stroke="black" stroke-width="1" />
+  <rect x="360" y="470" width="80" height="80" fill="orange" stroke="black" stroke-width="1" />
+
+  <!-- Connector Lines with Arrowheads -->
+  <!-- Line to Top-Left (Red) -->
+  <line x1="350" y1="200" x2="180" y2="90" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <!-- Line to Top-Right (Blue) -->
+  <line x1="450" y1="200" x2="620" y2="90" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <!-- Line to Bottom-Left (Green) -->
+  <line x1="350" y1="300" x2="180" y2="510" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <!-- Line to Bottom-Right (Yellow) -->
+  <line x1="450" y1="300" x2="620" y2="510" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <!-- Line to Top-Center (Purple) -->
+  <line x1="380" y1="200" x2="400" y2="130" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+  <!-- Line to Bottom-Center (Orange) -->
+  <line x1="420" y1="300" x2="400" y2="470" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)" />
+</svg></div><div style="position: absolute; left: 60px; top: 26px; width: 900px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 160px; color: #000000; text-align: left; font-weight: bold; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Mind Map</div></div><div style="position: absolute; left: 1000px; top: 58px; width: 560px; height: 100px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 32px; color: #000000; text-align: left; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Explore ideas and information around a main idea or topic</div></div><div style="position: absolute; left: 620px; top: 400px; width: 360px; height: 130px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 64px; color: #000000; text-align: center; font-weight: bold; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Topic</div></div><div style="position: absolute; left: 110px; top: 300px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add your idea here</div></div><div style="position: absolute; left: 290px; top: 330px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add some insights</div></div><div style="position: absolute; left: 520px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Your awesome idea goes here.</div></div><div style="position: absolute; left: 775px; top: 230px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add another idea here</div></div><div style="position: absolute; left: 980px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add some insights</div></div><div style="position: absolute; left: 1180px; top: 270px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Your awesome idea goes here.</div></div><div style="position: absolute; left: 1400px; top: 250px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add a related idea here</div></div><div style="position: absolute; left: 1260px; top: 420px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add another idea here</div></div><div style="position: absolute; left: 1440px; top: 560px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add some insights</div></div><div style="position: absolute; left: 1240px; top: 700px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add a related idea here</div></div><div style="position: absolute; left: 1060px; top: 560px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Your awesome idea goes here.</div></div><div style="position: absolute; left: 720px; top: 580px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Your awesome idea goes here.</div></div><div style="position: absolute; left: 880px; top: 620px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add some insights</div></div><div style="position: absolute; left: 520px; top: 700px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add another idea here</div></div><div style="position: absolute; left: 260px; top: 540px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Your awesome idea goes here.</div></div><div style="position: absolute; left: 80px; top: 600px; width: 150px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 20px; color: #000000; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Add a related idea here</div></div>
+    </div>
+</body>
+</html>

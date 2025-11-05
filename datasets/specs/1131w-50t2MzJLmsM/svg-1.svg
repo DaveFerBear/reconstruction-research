@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="30" x2="370" y2="30"
+        stroke="#007bff"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-dasharray="20 10 10 10" />
+  <line x1="20" y1="70" x2="370" y2="70"
+        stroke="#007bff"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-dasharray="20 10 10 10" />
+</svg>

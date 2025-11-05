@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g fill="white">
+    <!-- Vertical arm of the sparkle -->
+    <path d="M 50,0 C 53,25 53,75 50,100 C 47,75 47,25 50,0 Z"/>
+    <!-- Horizontal arm of the sparkle -->
+    <path d="M 0,50 C 25,53 75,53 100,50 C 75,47 25,47 0,50 Z"/>
+  </g>
+</svg>

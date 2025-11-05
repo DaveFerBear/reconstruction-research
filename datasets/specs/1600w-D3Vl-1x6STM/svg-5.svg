@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(-15 35 80)">
+    <!-- Main lightning bolt shape: white fill with black outline -->
+    <path
+      d="M 30 80 L 50 40 L 70 60 L 90 20 L 80 40 L 60 70 L 40 75 Z"
+      fill="#ffffff"
+      stroke="#1f1f1f"
+      stroke-width="3"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+    <!-- Narrow brick red accent stroke along the right edge -->
+    <path
+      d="M 77 43 L 63 67 L 43 72"
+      fill="none"
+      stroke="#c95543"
+      stroke-width="2"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>

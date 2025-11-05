@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 20">
+  <!-- Light lavender rail (background) -->
+  <rect x="0" y="0" width="100" height="20" rx="10" ry="10" fill="#E0D9ED"/>
+  <!-- Royal-blue fill at ~65% -->
+  <rect x="0" y="0" width="65" height="20" rx="10" ry="10" fill="#4169E1"/>
+</svg>

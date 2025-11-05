@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Notepad Sheet: Irregular off-white sheet with rounded corners and an organic outline -->
+  <path d="M 22 17 C 20 15, 25 15, 30 15 L 70 15 C 75 15, 80 15, 78 17 C 80 20, 80 25, 80 30 C 81 40, 79 50, 80 60 C 80 70, 80 75, 78 83 C 75 85, 70 85, 60 85 L 30 85 C 25 85, 20 85, 22 83 C 20 80, 20 75, 20 70 C 19 60, 21 50, 20 40 C 20 30, 20 25, 22 17 Z"
+        fill="#faf7f3" stroke="#9b7a56" stroke-width="0.5" stroke-linejoin="round"/>
+
+  <!-- Coil Tabs: Evenly spaced rounded rectangles across the top edge -->
+  <rect x="25" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="29.8" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="34.6" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="39.4" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="44.2" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="49.0" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="53.8" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="58.6" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="63.4" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="68.2" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+  <rect x="73.0" y="10" width="2" height="5" rx="1" ry="1" fill="#9b7a56" stroke="#9b7a56" stroke-width="0.2"/>
+
+  <!-- Stacked Page Edges: Several short, curved horizontal accent lines at the bottom -->
+  <path d="M 30 86 Q 50 87, 70 86" fill="none" stroke="#9b7a56" stroke-width="0.3" stroke-linecap="round"/>
+  <path d="M 32 87.5 Q 50 88.5, 68 87.5" fill="none" stroke="#9b7a56" stroke-width="0.3" stroke-linecap="round"/>
+  <path d="M 34 89 Q 50 90, 66 89" fill="none" stroke="#9b7a56" stroke-width="0.3" stroke-linecap="round"/>
+
+  <!-- Folded-Corner-like Flare: Small shape at the lower-left -->
+  <path d="M 20 83 Q 19 84, 18 85 L 22 87 Q 21 85, 20 83 Z" fill="#9b7a56"/>
+</svg>

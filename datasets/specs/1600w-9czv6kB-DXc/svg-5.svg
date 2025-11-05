@@ -1,0 +1,29 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yellow Sleeve -->
+  <path d="M 90 155 L 80 165 L 70 150 L 75 130 L 95 135 Z" fill="#ffc107"/>
+
+  <!-- Black Cuff -->
+  <path d="M 120 150 L 110 160 L 90 155 L 95 135 L 125 135 Z" fill="black"/>
+
+  <!-- Black Buttons on Cuff -->
+  <circle cx="105" cy="150" r="3" fill="black"/>
+  <circle cx="95" cy="145" r="3" fill="black"/>
+
+  <!-- Red Megaphone Body -->
+  <path d="M 180 160 L 190 140 L 110 60 L 100 80 Z" fill="#d32f2f"/>
+
+  <!-- Yellow Megaphone Handle (under the hand) -->
+  <path d="M 150 130 Q 140 150 160 160 L 170 140 Q 160 120 150 130 Z" fill="#ffc107"/>
+
+  <!-- Light Gray Hand (holding the handle) -->
+  <path d="M 155 155 C 145 170 125 165 120 150 C 125 135 145 140 155 155 Z" fill="#e6e6e6"/>
+
+  <!-- Yellow Megaphone Rim -->
+  <path d="M 180 160 L 190 140 L 185 135 L 175 155 Z" fill="#ffc107"/>
+
+  <!-- Gray Cone Interior Edge -->
+  <path d="M 170 150 L 180 130" stroke="#808080" stroke-width="2" fill="none"/>
+
+  <!-- Red Megaphone Back Cap -->
+  <circle cx="105" cy="70" r="5" fill="#d32f2f"/>
+</svg>

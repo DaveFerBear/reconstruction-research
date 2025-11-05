@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60">
-  <defs>
-    <filter id="softShadow">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-  </defs>
-  <ellipse cx="60" cy="30" rx="40" ry="15" fill="#93ad91" filter="url(#softShadow)"/>
-</svg>

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <polygon
+    points="0,0 20,-10 15,-5 30,5 15,10 20,15"
+    fill="white"
+    stroke="#333"
+    stroke-width="0.75"
+    stroke-linejoin="round"
+    transform="translate(70,50) rotate(-20)"
+  />
+</svg>

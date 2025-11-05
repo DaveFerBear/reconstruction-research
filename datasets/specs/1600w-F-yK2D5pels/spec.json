@@ -1,0 +1,100 @@
+{
+  "background_color": "#D6FF79",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Photograph of a marble-top desk with a space gray laptop showing a slide that reads 'Kick-off Meeting' with an orange theme, an orange desk lamp on a stack of books, orange earbuds, and a black turntable with a bright blue vinyl record in the foreground.",
+      "filename": "asset-1.png",
+      "x": 48,
+      "y": 140,
+      "width": 480,
+      "height": 360,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Photo of a smiling person in glasses and a backwards cap, wearing a red jacket, seated at a wooden desk using a laptop that displays a presentation slide. A small red dome lamp, a few stacked books, a small plant, and taped-up wall photos sit against a white textured wall.",
+      "filename": "asset-2.png",
+      "x": 560,
+      "y": 140,
+      "width": 480,
+      "height": 360,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Close-up photo of a person in a green corduroy jacket and blue jeans typing on a dark laptop resting on their lap. A red cabinet and wooden floor appear in the background.",
+      "filename": "asset-3.png",
+      "x": 1072,
+      "y": 140,
+      "width": 480,
+      "height": 360,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Solid black rounded-rectangle (pill) button.",
+      "filename": "svg-1.svg",
+      "x": 1252,
+      "y": 40,
+      "width": 300,
+      "height": 64,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Collaborate with us",
+      "x": 1252,
+      "y": 40,
+      "width": 300,
+      "height": 64,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 24,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "COLLAB STUDIO",
+      "x": 60,
+      "y": 48,
+      "width": 360,
+      "height": 44,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 36,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "MEDIA KIT",
+      "x": 60,
+      "y": 560,
+      "width": 1480,
+      "height": 300,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 280,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

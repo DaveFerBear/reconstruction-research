@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oval at the upper-left -->
+  <ellipse cx="30" cy="30" rx="20" ry="15"
+           fill="#c95543"
+           stroke="#1f1f1f"
+           stroke-width="1"/>
+
+  <!-- Four-pointed diamond burst (cartoon star) -->
+  <!-- Points are calculated for a star centered at (50,50) with outer radius 40 and inner radius 20,
+       oriented with main points at 45, 135, 225, 315 degrees. -->
+  <polygon points="78.28,78.28 70,50 78.28,21.72 50,30 21.72,21.72 30,50 21.72,78.28 50,70"
+           fill="#c95543"
+           stroke="#1f1f1f"
+           stroke-width="1"
+           stroke-linejoin="round"/>
+</svg>

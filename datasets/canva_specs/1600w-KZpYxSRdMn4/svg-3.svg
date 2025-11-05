@@ -1,6 +1,0 @@
-<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-  <g transform="rotate(-5 200 75)">
-    <rect x="50" y="35" width="300" height="80" rx="18" ry="18" fill="#0F6B53"/>
-    <text x="200" y="75" font-family="Arial, sans-serif" font-size="48" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">DIGITAL</text>
-  </g>
-</svg>

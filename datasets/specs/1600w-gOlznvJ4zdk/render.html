@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1600px;
+            height: 1600px;
+            background-image: url('background.png'); background-size: cover; background-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div style="position: absolute; left: 80px; top: 980px; width: 1440px; height: 500px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <path fill="#ffffff" stroke="none" d="M 20 40 L 70 40 Q 100 50 130 40 L 180 40 A 10 10 0 0 1 190 50 L 190 90 A 10 10 0 0 1 180 100 L 20 100 A 10 10 0 0 1 10 90 L 10 50 A 10 10 0 0 1 20 40 Z"/>
+</svg></div><div style="position: absolute; left: 520px; top: 820px; width: 560px; height: 140px; transform: rotate(0deg); opacity: 1; "><svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadowBlur" x="0" y="0" width="200" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#93ad91" flood-opacity="1" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feBlend in="shadow" in2="SourceGraphic" result="blended"/>
+    </filter>
+  </defs>
+  <ellipse cx="100" cy="80" rx="60" ry="15" fill="#93ad91" filter="url(#shadowBlur)"/>
+</svg></div><div style="position: absolute; left: 650px; top: 470px; width: 300px; height: 420px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Reusable doodle heart path, centered at its bottom tip -->
+    <path id="doodle-heart" d="M 0 0 C -3 -6, -9 0, 0 9 C 9 0, 3 -6, 0 0 Z" />
+  </defs>
+
+  <!-- Jar elements -->
+  <g id="jar">
+    <!-- Jar body and thick dark green outline -->
+    <path d="M 35 20 C 30 10, 20 10, 20 30 L 20 70 C 20 90, 30 90, 50 90 C 70 90, 80 90, 80 70 L 80 30 C 80 10, 70 10, 65 20 Z"
+          fill="#ffffff" stroke="#2f4f46" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- Warm yellow-orange lid/top fill -->
+    <path d="M 35 20 C 38 15, 62 15, 65 20 L 65 25 C 62 30, 38 30, 35 25 Z"
+          fill="#f7c56d" stroke="none"/>
+
+    <!-- Subtle interior dark-green accent lines (stroke-width="0.5") -->
+    <!-- Stacked rim lines for lid area -->
+    <path d="M 35 25 C 38 28, 62 28, 65 25" fill="none" stroke="#2f4f46" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M 36 28 C 39 31, 61 31, 64 28" fill="none" stroke="#2f4f46" stroke-width="0.5" stroke-linecap="round"/>
+    <!-- Interior body accents -->
+    <path d="M 40 40 C 42 45, 42 55, 40 60" fill="none" stroke="#2f4f46" stroke-width="0.5" stroke-linecap="round"/>
+    <path d="M 60 40 C 58 45, 58 55, 60 60" fill="none" stroke="#2f4f46" stroke-width="0.5" stroke-linecap="round"/>
+    <!-- Short squiggle near the base -->
+    <path d="M 40 80 Q 50 78, 60 80" fill="none" stroke="#2f4f46" stroke-width="0.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Doodle hearts inside the jar, with dark green outline -->
+  <g id="hearts" stroke="#2f4f46" stroke-width="1">
+    <!-- Two red hearts (#d24b40) -->
+    <use href="#doodle-heart" fill="#d24b40" transform="translate(35 45)"/>
+    <use href="#doodle-heart" fill="#d24b40" transform="translate(55 65)"/>
+    <!-- Two golden hearts (#f0b562) -->
+    <use href="#doodle-heart" fill="#f0b562" transform="translate(40 55)"/>
+    <use href="#doodle-heart" fill="#f0b562" transform="translate(60 75)"/>
+  </g>
+</svg></div><div style="position: absolute; left: 300px; top: 330px; width: 70px; height: 40px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+    <line x1="20" y1="50" x2="30" y2="50" transform="rotate(5 25 50)"/>
+    <line x1="25" y1="40" x2="35" y2="40" transform="rotate(-10 30 40)"/>
+    <line x1="22" y1="60" x2="32" y2="60" transform="rotate(15 27 60)"/>
+  </g>
+</svg></div><div style="position: absolute; left: 1370px; top: 210px; width: 140px; height: 180px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 75 35 C 65 30, 60 18, 70 15 C 75 10, 80 10, 85 15 C 90 18, 85 30, 75 35 Z"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg></div><div style="position: absolute; left: 380px; top: 140px; width: 840px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial Rounded MT Bold; font-size: 120px; color: #2f4f46; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Self-Care Jar</div></div><div style="position: absolute; left: 150px; top: 1060px; width: 70px; height: 100px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160">
+  <path d="M 35 40 C 40 30, 50 30, 55 40 C 60 50, 60 60, 55 70 L 55 140 C 55 150, 45 150, 45 140 L 45 70 C 40 60, 40 50, 35 40 Z"
+        fill="#98b892"
+        stroke="#2f4f46"
+        stroke-width="10"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+  <circle cx="48" cy="45" r="3" fill="#ffffff"/>
+  <circle cx="48" cy="80" r="3" fill="#ffffff"/>
+  <circle cx="48" cy="115" r="3" fill="#ffffff"/>
+</svg></div><div style="position: absolute; left: 260px; top: 1080px; width: 420px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Comic Sans MS; font-size: 44px; color: #2f4f46; text-align: left; font-weight: normal; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Get an empty jar</div></div><div style="position: absolute; left: 150px; top: 1210px; width: 74px; height: 100px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M 20 25 C 20 5, 80 5, 80 25 C 80 45, 60 65, 40 65 C 20 65, 20 85, 50 85 C 80 85, 80 65, 60 65"
+    fill="#98b892"
+    stroke="#2f4f46"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="35" cy="35" r="8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="60" cy="55" r="4" fill="#ffffff" opacity="0.6"/>
+</svg></div><div style="position: absolute; left: 260px; top: 1220px; width: 520px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Comic Sans MS; font-size: 44px; color: #2f4f46; text-align: left; font-weight: normal; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Write down your favorite self-care ideas on strips of paper.</div></div><div style="position: absolute; left: 820px; top: 1060px; width: 80px; height: 100px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bubble -->
+  <circle cx="50" cy="50" r="40" fill="#98b892" stroke="#2f4f46" stroke-width="7"/>
+
+  <!-- Number "3" -->
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="65" font-weight="bold" fill="#2f4f46" text-anchor="middle" dominant-baseline="middle">3</text>
+
+  <!-- White Highlight Dots -->
+  <circle cx="30" cy="30" r="5" fill="white"/>
+  <circle cx="40" cy="20" r="3" fill="white"/>
+</svg></div><div style="position: absolute; left: 930px; top: 1080px; width: 580px; height: 240px; transform: rotate(0deg); opacity: 1; font-family: Comic Sans MS; font-size: 44px; color: #2f4f46; text-align: left; font-weight: normal; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Whenever you're feeling down, stressed out, or drained – pull out a strip of paper and then do that activity.</div></div><div style="position: absolute; left: 1000px; top: 1380px; width: 380px; height: 26px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 0 12 C 25 10, 75 10, 100 8 L 99.5 7.5 C 75 6, 25 6, 0.5 11.5 Z" fill="#93ad91"/>
+</svg></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Coral Shape 1: From top edge, slightly right of center, curving downward -->
+  <path d="M 230 0 C 260 50, 220 150, 250 220 C 240 230, 210 230, 200 220 C 180 150, 210 50, 200 0 C 210 -10, 240 -10, 230 0 Z" fill="#ee8d72" stroke="#d26b53" stroke-width="8"/>
+  <path d="M 235 5 C 255 55, 225 155, 245 215 C 235 225, 215 225, 205 215 C 185 155, 205 55, 205 5 C 215 -5, 235 -5, 235 5 Z" fill="white"/>
+
+  <!-- Coral Shape 2: From bottom-left corner, curving upward -->
+  <path d="M 10 300 C 50 270, 20 170, 60 80 C 50 70, 20 70, 10 80 C 0 170, 20 270, 10 300 Z" fill="#ee8d72" stroke="#d26b53" stroke-width="8"/>
+  <path d="M 15 295 C 45 275, 25 175, 55 85 C 45 75, 25 75, 15 85 C 5 175, 25 275, 15 295 Z" fill="white"/>
+</svg>

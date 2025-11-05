@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Outer black circle forming the base of the ring -->
+  <circle cx="50" cy="50" r="45" fill="black"/>
+  <!-- Inner white circle to create the ring shape and provide background for the 'c' -->
+  <circle cx="50" cy="50" r="35" fill="white"/>
+  <!-- Simple lowercase 'c' glyph, centered and black -->
+  <text x="50" y="50" font-family="sans-serif" font-size="60" text-anchor="middle" dominant-baseline="middle" fill="black">c</text>
+</svg>

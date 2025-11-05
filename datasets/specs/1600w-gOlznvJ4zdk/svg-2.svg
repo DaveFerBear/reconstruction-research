@@ -1,0 +1,11 @@
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadowBlur" x="0" y="0" width="200" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#93ad91" flood-opacity="1" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feBlend in="shadow" in2="SourceGraphic" result="blended"/>
+    </filter>
+  </defs>
+  <ellipse cx="100" cy="80" rx="60" ry="15" fill="#93ad91" filter="url(#shadowBlur)"/>
+</svg>

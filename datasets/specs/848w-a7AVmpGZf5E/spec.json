@@ -1,0 +1,90 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Solid black rounded rectangle (pill) with fully rounded ends, centered near the bottom; serves as a simple decorative bar/button shape.",
+      "filename": "svg-1.svg",
+      "x": 244,
+      "y": 1002,
+      "width": 360,
+      "height": 44,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "High-contrast product photo of matte black over-ear headphones on a white background. The headband arcs across the top; two thin silver sliders connect to large oval earcups with textured fabric pads. The right earcup shows a subtle geometric lattice pattern on the inner grille. Controls and a small port are visible on the left cup. A soft shadow sits beneath the headphones.",
+      "filename": "asset-1.png",
+      "x": 44,
+      "y": 318,
+      "width": 760,
+      "height": 560,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Sound Haven",
+      "x": 40,
+      "y": 34,
+      "width": 220,
+      "height": 28,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 20,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "Small black geometric monogram icon composed of two interlocking angular loops forming a tilted diamond/knot shape.",
+      "filename": "svg-2.svg",
+      "x": 784,
+      "y": 40,
+      "width": 24,
+      "height": 24,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Turn Up the Savings",
+      "x": 0,
+      "y": 120,
+      "width": 848,
+      "height": 78,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 64,
+      "color": "#000000",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "12/2030",
+      "x": 0,
+      "y": 196,
+      "width": 848,
+      "height": 36,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 28,
+      "color": "#000000",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 848,
+  "canvas_height": 1097
+}
