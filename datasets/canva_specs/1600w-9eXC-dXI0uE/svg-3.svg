@@ -1,8 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
-  <text x="150" y="80" font-family="sans-serif" font-size="40" text-anchor="middle" fill="#0b0b0b">handle</text>
-  <ellipse cx="150" cy="70" rx="70" ry="45" stroke="#6f2dbd" stroke-width="8" fill="none"/>
-  <!-- Rough, overlapping black hand-drawn oval strokes for scribble emphasis -->
-  <path d="M 190 20 Q 205 5 225 20 Q 210 40 190 20 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M 195 30 Q 210 15 230 30 Q 215 50 195 30 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M 185 35 Q 200 20 220 35 Q 205 55 185 35 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <style>
+    text {
+      font-family: sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      fill: #0b0b0b;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+  </style>
+
+  <text x="200" y="100">handle</text>
+
+  <ellipse cx="200" cy="100" rx="100" ry="45"
+           fill="none" stroke="#6f2dbd" stroke-width="8"/>
+
+  <path d="M 230 40 C 250 20 280 30 295 55 C 310 80 290 100 260 95 C 230 90 215 65 230 40 Z"
+        fill="none" stroke="#0b0b0b" stroke-width="3"/>
+  <path d="M 245 50 C 265 30 295 40 310 65 C 325 90 305 110 275 105 C 245 100 230 75 245 50 Z"
+        fill="none" stroke="#0b0b0b" stroke-width="3"/>
+  <path d="M 220 60 C 240 40 270 50 285 75 C 300 100 280 120 250 115 C 220 110 205 85 220 60 Z"
+        fill="none" stroke="#0b0b0b" stroke-width="3"/>
 </svg>

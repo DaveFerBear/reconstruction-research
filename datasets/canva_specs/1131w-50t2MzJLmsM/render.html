@@ -27,110 +27,97 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 70px; top: 360px; width: 991px; height: 1120px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .royal-blue {
-        stroke: #243EB6;
-        stroke-width: 1.5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-      .filled-hatch {
-        stroke: #243EB6;
-        stroke-width: 0.7; /* Thinner lines for hatching */
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none; /* Hatching lines themselves are not filled */
-      }
-    </style>
-    <!-- Clip path for the first hatched star -->
-    <clipPath id="star-clip-1">
-      <path d="M 20 50 L 25 65 L 40 67 L 30 75 L 33 90 L 20 80 L 7 90 L 10 75 L 0 67 L 15 65 Z" />
-    </clipPath>
-    <!-- Clip path for the second hatched star -->
-    <clipPath id="star-clip-2">
-      <path d="M 20 10 L 25 25 L 40 27 L 30 35 L 33 50 L 20 40 L 7 50 L 10 35 L 0 27 L 15 25 Z" />
-    </clipPath>
-  </defs>
+        <div style="position: absolute; left: 70px; top: 360px; width: 991px; height: 1120px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="sketchyTexture" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
 
-  <!-- Coffee cup on saucer on large oval serving tray (upper-right) -->
-  <!-- Tray (large oval, slightly irregular for hand-drawn feel) -->
-  <path class="royal-blue" d="M 75 30 Q 85 25 90 35 Q 95 45 85 50 Q 75 55 70 45 Q 65 35 75 30 Z" />
-  <!-- Saucer (smaller oval on tray, slightly irregular) -->
-  <path class="royal-blue" d="M 78 35 Q 82 33 85 37 Q 88 41 84 43 Q 80 45 76 41 Q 74 37 78 35 Z" />
-  <!-- Coffee Cup (irregular shape) -->
-  <path class="royal-blue" d="M 80 37 L 81 30 Q 82 25 85 25 Q 88 25 89 30 L 90 37" />
-  <!-- Cup Handle (irregular) -->
-  <path class="royal-blue" d="M 90 32 Q 92 30 92 34 Q 92 38 90 36" />
-  <!-- Steam (wavy lines above the cup) -->
-  <path class="royal-blue" d="M 83 24 Q 84 22 85 23 Q 86 21 87 22" />
-  <path class="royal-blue" d="M 84 22 Q 85 20 86 21" />
+        <!-- Clip paths for hatching stars -->
+        <clipPath id="starClip1">
+            <polygon points="100,360 110,390 140,390 115,410 125,440 100,420 75,440 85,410 60,390 90,390" />
+        </clipPath>
+        <clipPath id="starClip2">
+            <polygon points="250,460 260,490 290,490 265,510 275,540 250,520 225,540 235,510 210,490 240,490" />
+        </clipPath>
+    </defs>
 
-  <!-- Female server (lower-right) -->
-  <!-- Head (irregular circle) -->
-  <path class="royal-blue" d="M 80 70 Q 82 68 84 70 Q 86 72 84 74 Q 82 76 80 74 Q 78 72 80 70 Z" />
-  <!-- Hair in a bun (irregular small circle) -->
-  <path class="royal-blue" d="M 84 69 Q 85 68 86 70 Q 85 71 84 70 Z" />
-  <!-- Body (simple, irregular shape) -->
-  <path class="royal-blue" d="M 80 74 L 78 85 L 79 90 L 81 90 L 82 85 L 80 74 Z" />
-  <!-- Arm holding the tray aloft with one hand (curved line) -->
-  <path class="royal-blue" d="M 78 80 Q 70 70 70 50" />
-  <!-- Apron (irregular trapezoid-like shape) -->
-  <path class="royal-blue" d="M 78 80 Q 79 78 81 78 Q 82 80 81 82 L 80 85 L 79 85 L 78 82 Z" />
-  <!-- Boots (irregular shapes) -->
-  <path class="royal-blue" d="M 78 90 L 77 92 L 78 94 L 79 92 L 78 90 Z" />
-  <path class="royal-blue" d="M 81 90 L 80 92 L 81 94 L 82 92 L 81 90 Z" />
+    <g stroke="#243EB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#sketchyTexture)">
 
-  <!-- Five star doodles of varying sizes scattered on the left half -->
-  <!-- One large outlined star (irregular path for hand-drawn feel) -->
-  <path class="royal-blue" d="M 25 20 L 32 40 L 50 42 L 35 55 L 40 75 L 25 65 L 10 75 L 15 55 L 0 42 L 18 40 Z" />
+        <!-- Coffee Cup Scene (Upper-Right) -->
+        <ellipse cx="650" cy="350" rx="120" ry="60" /> <!-- Tray -->
+        <ellipse cx="650" cy="320" rx="60" ry="20" /> <!-- Saucer -->
+        <!-- Cup body: bottom ellipse, then lines up, then top ellipse -->
+        <path d="M 620 315 A 30 15 0 1 0 680 315 L 680 285 A 30 15 0 1 0 620 285 Z" />
+        <!-- Cup handle -->
+        <path d="M 680 295 C 695 285, 695 305, 680 315" />
+        <!-- Steam -->
+        <path d="M 640 270 C 630 260, 640 250, 650 240" />
+        <path d="M 660 270 C 670 260, 660 250, 650 240" />
 
-  <!-- Two smaller filled-with-hatching stars -->
-  <!-- Star 1 (smaller, hatched) -->
-  <g clip-path="url(#star-clip-1)">
-    <!-- Star outline -->
-    <path class="royal-blue" d="M 20 50 L 25 65 L 40 67 L 30 75 L 33 90 L 20 80 L 7 90 L 10 75 L 0 67 L 15 65 Z" />
-    <!-- Hatching lines (clipped by the star-clip-1 path) -->
-    <line class="filled-hatch" x1="10" y1="55" x2="30" y2="75" />
-    <line class="filled-hatch" x1="10" y1="60" x2="30" y2="80" />
-    <line class="filled-hatch" x1="10" y1="65" x2="30" y2="85" />
-    <line class="filled-hatch" x1="10" y1="70" x2="30" y2="90" />
-    <line class="filled-hatch" x1="5" y1="60" x2="25" y2="80" />
-    <line class="filled-hatch" x1="15" y1="60" x2="35" y2="80" />
-  </g>
+        <!-- Female Server (Lower-Right) -->
+        <circle cx="650" cy="450" r="25" /> <!-- Head -->
+        <circle cx="665" cy="445" r="10" /> <!-- Bun -->
+        <line x1="650" y1="475" x2="650" y2="485" /> <!-- Neck -->
+        <path d="M 640 485 L 630 510 L 670 510 L 660 485 Z" /> <!-- Torso -->
+        <path d="M 635 510 L 630 540 L 670 540 L 665 510 Z" /> <!-- Apron -->
+        <path d="M 655 485 C 670 400, 680 360, 680 350" /> <!-- Arm holding tray -->
+        <line x1="635" y1="540" x2="635" y2="570" /> <!-- Left Leg -->
+        <line x1="665" y1="540" x2="665" y2="570" /> <!-- Right Leg -->
+        <path d="M 625 570 L 625 585 L 645 585 L 645 570 Z" /> <!-- Left Boot -->
+        <path d="M 655 570 L 655 585 L 675 585 L 675 570 Z" /> <!-- Right Boot -->
 
-  <!-- Star 2 (smaller, hatched) -->
-  <g clip-path="url(#star-clip-2)">
-    <!-- Star outline -->
-    <path class="royal-blue" d="M 20 10 L 25 25 L 40 27 L 30 35 L 33 50 L 20 40 L 7 50 L 10 35 L 0 27 L 15 25 Z" />
-    <!-- Hatching lines (clipped by the star-clip-2 path) -->
-    <line class="filled-hatch" x1="15" y1="15" x2="30" y2="30" />
-    <line class="filled-hatch" x1="15" y1="20" x2="30" y2="35" />
-    <line class="filled-hatch" x1="15" y1="25" x2="30" y2="40" />
-    <line class="filled-hatch" x1="15" y1="30" x2="30" y2="45" />
-    <line class="filled-hatch" x1="10" y1="20" x2="25" y2="35" />
-    <line class="filled-hatch" x1="20" y1="20" x2="35" y2="35" />
-  </g>
+        <!-- Stars (Left Half) -->
 
-  <!-- Two medium stars with sketchy linework (irregular paths) -->
-  <!-- Star 1 (medium, sketchy) -->
-  <path class="royal-blue" d="M 40 75 L 45 85 L 55 87 L 48 93 L 50 100 L 40 93 L 30 100 L 32 93 L 25 87 L 35 85 Z" />
-  <!-- Star 2 (medium, sketchy) -->
-  <path class="royal-blue" d="M 55 5 L 60 15 L 70 17 L 63 23 L 65 30 L 55 23 L 45 30 L 47 23 L 40 17 L 50 15 Z" />
+        <!-- One large outlined star -->
+        <polygon points="150,70 170,130 230,130 180,170 200,230 150,190 100,230 120,170 70,130 130,130" />
 
-</svg></div><div style="position: absolute; left: 58px; top: 46px; width: 1015px; height: 270px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 240px; color: #243EB6; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">GRAND</div></div><div style="position: absolute; left: 86px; top: 302px; width: 400px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 110px; color: #243EB6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">OPENING</div></div><div style="position: absolute; left: 86px; top: 1125px; width: 960px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">AT 10:00 AM, SATURDAY</div></div><div style="position: absolute; left: 86px; top: 1190px; width: 520px; height: 24px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
-  <line x1="0" y1="5" x2="100" y2="5"
-        stroke="#4169E1"
+        <!-- Two smaller filled-with-hatching stars -->
+        <!-- Star 1: Outline -->
+        <polygon points="100,360 110,390 140,390 115,410 125,440 100,420 75,440 85,410 60,390 90,390" />
+        <!-- Star 1: Hatching -->
+        <g clip-path="url(#starClip1)">
+            <line x1="80" y1="350" x2="120" y2="450" />
+            <line x1="70" y1="360" x2="110" y2="460" />
+            <line x1="90" y1="340" x2="130" y2="440" />
+            <line x1="75" y1="370" x2="115" y2="470" />
+            <line x1="85" y1="330" x2="125" y2="430" />
+        </g>
+        <!-- Star 2: Outline -->
+        <polygon points="250,460 260,490 290,490 265,510 275,540 250,520 225,540 235,510 210,490 240,490" />
+        <!-- Star 2: Hatching -->
+        <g clip-path="url(#starClip2)">
+            <line x1="230" y1="450" x2="270" y2="550" />
+            <line x1="220" y1="460" x2="260" y2="560" />
+            <line x1="240" y1="440" x2="280" y2="540" />
+            <line x1="235" y1="470" x2="275" y2="570" />
+            <line x1="245" y1="430" x2="285" y2="530" />
+        </g>
+
+        <!-- Two medium stars with sketchy linework -->
+        <!-- Star 1 -->
+        <g>
+            <polygon points="200,190 215,235 260,235 225,265 240,310 200,280 160,310 175,265 130,235 170,235" />
+            <polygon points="201,191 216,236 261,236 226,266 241,311 201,281 161,311 176,266 131,236 171,236" />
+            <polygon points="199,189 214,234 259,234 224,264 239,309 199,279 159,309 174,264 129,234 169,234" />
+        </g>
+        <!-- Star 2 -->
+        <g>
+            <polygon points="350,40 365,85 410,85 375,115 390,160 350,130 310,160 325,115 280,85 320,85" />
+            <polygon points="351,41 366,86 411,86 376,116 391,161 351,131 311,161 326,116 281,86 321,86" />
+            <polygon points="349,39 364,84 409,84 374,114 389,159 349,129 309,159 324,114 279,84 319,84" />
+        </g>
+
+    </g>
+</svg></div><div style="position: absolute; left: 58px; top: 46px; width: 1015px; height: 270px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 240px; color: #243EB6; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">GRAND</div></div><div style="position: absolute; left: 86px; top: 302px; width: 400px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 110px; color: #243EB6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">OPENING</div></div><div style="position: absolute; left: 86px; top: 1125px; width: 960px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">AT 10:00 AM, SATURDAY</div></div><div style="position: absolute; left: 86px; top: 1190px; width: 520px; height: 24px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg">
+  <line x1="0" y1="2.5" x2="100" y2="2.5"
+        stroke="royalblue"
         stroke-width="3"
-        stroke-dasharray="6 6"
-        stroke-linecap="square"/>
+        stroke-dasharray="5 7"
+        stroke-linecap="butt" />
 </svg></div><div style="position: absolute; left: 86px; top: 1240px; width: 900px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">DECEMBER 15TH, 2025</div></div><div style="position: absolute; left: 86px; top: 1305px; width: 520px; height: 24px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="5" x2="100" y2="5"
-        stroke="#4169E1"
-        stroke-width="2"
-        stroke-dasharray="2 3" />
+  <line x1="0" y1="5" x2="100" y2="5" stroke="#4169E1" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="butt"/>
 </svg></div><div style="position: absolute; left: 86px; top: 1360px; width: 960px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">123 ANYWHERE ST., ANY CITY</div></div>
     </div>
 </body>

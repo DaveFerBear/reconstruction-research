@@ -1,18 +1,19 @@
-<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
   <style>
     .headline-text {
-      font-family: "Montserrat", sans-serif; /* Bold, rounded sans-serif */
-      font-weight: 900; /* Extra bold */
-      font-size: 160; /* Scalable font size relative to viewBox */
-      text-anchor: middle; /* Center text horizontally */
-      fill: #F33CAB; /* Magenta-pink fill */
-      stroke: #FFD24F; /* Yellow outline */
-      stroke-width: 22; /* Thick outline, scales with viewBox */
-      paint-order: stroke; /* Ensures stroke is drawn behind fill for the outline effect */
+      font-family: "Arial Black", "Impact", sans-serif;
+      font-weight: 900;
+      font-size: 150px;
+      fill: #F33CAB;
+      stroke: #FFD24F;
+      stroke-width: 22px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      text-anchor: middle;
+      dominant-baseline: central;
     }
   </style>
-  <!-- Lines are tightly tracked and slightly overlapping, centered vertically and horizontally -->
-  <text x="500" y="130" class="headline-text">DON'T</text>
-  <text x="500" y="250" class="headline-text">MISS</text>
-  <text x="500" y="370" class="headline-text">OUT</text>
+  <text x="500" y="180" class="headline-text">DON'T</text>
+  <text x="500" y="300" class="headline-text">MISS</text>
+  <text x="500" y="420" class="headline-text">OUT</text>
 </svg>

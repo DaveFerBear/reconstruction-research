@@ -1,4 +1,6 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="45" fill="white" stroke="#0e3a44" stroke-width="5"/>
-  <path d="M 40 25 A 5 5 0 0 1 45 20 L 55 20 A 5 5 0 0 1 60 25 L 60 75 A 5 5 0 0 1 55 80 L 45 80 A 5 5 0 0 1 40 75 Z" fill="#0e3a44" transform="rotate(45 50 50)"/>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="11" fill="white" stroke="#0e3a44" stroke-width="1.5"/>
+  <g transform="rotate(45 12 12)">
+    <path d="M16.5 9.5c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1h-9c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h9z" fill="#0e3a44"/>
+  </g>
 </svg>

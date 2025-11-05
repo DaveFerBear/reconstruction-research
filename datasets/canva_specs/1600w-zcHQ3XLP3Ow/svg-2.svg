@@ -1,22 +1,18 @@
-<svg viewBox="0 0 184 28" xmlns="http://www.w3.org/2000/svg">
-  <g fill="#FFFFFF">
-    <!-- Icon 1: Video Camera -->
-    <g transform="translate(0 2)">
-      <rect x="0" y="5" width="18" height="14" />
-      <rect x="18" y="8" width="6" height="8" />
-    </g>
-    <!-- Icon 2: Chat Bubble -->
-    <g transform="translate(52 2)">
-      <rect x="2" y="0" width="20" height="16" rx="3" />
-      <path d="M5 16 L2 20 L8 16 Z" />
-    </g>
-    <!-- Icon 3: Heart Glyph -->
-    <g transform="translate(104 2)">
-      <path d="M12 4.24C8.76 0.99 3.5 4.24 3.5 8.5C3.5 12.76 12 20 12 20C12 20 20.5 12.76 20.5 8.5C20.5 4.24 15.24 0.99 12 4.24Z" />
-    </g>
-    <!-- Icon 4: Phone Handset -->
-    <g transform="translate(156 2)">
-      <path d="M20.5 18.5c-2.2 0-4.3-.4-6.3-1.2l-2.4-2.4c-.6-.6-.6-1.5 0-2.1l2.4-2.4c.6-.6.6-1.5 0-2.1l-2.4-2.4c-.6-.6-1.5-.6-2.1 0l-2.4 2.4c-.8 2-1.2 4.1-1.2 6.3 0 4.4 3.6 8 8 8 2.2 0 4.3-.4 6.3-1.2l2.4-2.4c.6-.6.6-1.5 0-2.1l-2.4-2.4c-.6-.6-1.5-.6-2.1 0z" />
-    </g>
+<svg viewBox="0 0 184 28" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+  <!-- Video Camera Icon -->
+  <g transform="translate(2, 2)">
+    <path d="M2 6h18a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V8a2 2 0 012-2z M22 9h2v6h-2z"/>
+  </g>
+  <!-- Chat Bubble Icon -->
+  <g transform="translate(54, 2)">
+    <path d="M2 2h20a2 2 0 012 2v14a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2z"/>
+  </g>
+  <!-- Heart Glyph Icon -->
+  <g transform="translate(106, 2)">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.43L12 21.35z"/>
+  </g>
+  <!-- Phone Handset Icon -->
+  <g transform="translate(158, 2)">
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
   </g>
 </svg>

@@ -6,7 +6,7 @@
     {
       "type": "svg",
       "svg_description": "Thin rectangular date box with 1.5px stroke in dark gray (#222222), no fill. Positioned at top-right of the header.",
-      "filename": null,
+      "filename": "svg-1.svg",
       "x": 865,
       "y": 58,
       "width": 226,
@@ -16,7 +16,7 @@
     {
       "type": "svg",
       "svg_description": "Large thin-stroke rectangular frame (about 2px, #222222) surrounding the central artwork and small corner texts.",
-      "filename": null,
+      "filename": "svg-2.svg",
       "x": 38,
       "y": 420,
       "width": 1055,
@@ -26,7 +26,7 @@
     {
       "type": "svg",
       "svg_description": "Bottom grid: a thin-stroke rectangle (2px, #222222) with two internal vertical dividers creating three equal columns; aligned with the main frame above.",
-      "filename": null,
+      "filename": "svg-3.svg",
       "x": 38,
       "y": 1370,
       "width": 1055,
@@ -36,7 +36,7 @@
     {
       "type": "image",
       "asset_description": "3D glossy cartoon face centered in the framed area: two large white spherical eyes with deep, reflective dark-brown almost-black oval pupils, subtle soft shadows and specular highlights; beneath them a thick, inflated, shiny coral-pink tubular smile curving upward with a recessed darker groove; smooth studio lighting on a neutral light-gray background.",
-      "filename": null,
+      "filename": "asset-1.png",
       "x": 145,
       "y": 590,
       "width": 841,

@@ -144,16 +144,20 @@ async def generate_single_asset(idx: int, description: str, source_url: str, out
         if 'images' in result and result['images']:
             image_url = result['images'][0]['url']
 
-            # Remove background to add transparency
-            print(f"    Removing background for asset-{idx}...")
-            bg_removed = await remove_background_async(image_url, session)
+            # Skip background removal - no longer needed with SVG support
+            # print(f"    Removing background for asset-{idx}...")
+            # bg_removed = await remove_background_async(image_url, session)
+            #
+            # if 'image' in bg_removed and 'url' in bg_removed['image']:
+            #     final_url = bg_removed['image']['url']
+            #     await download_image(final_url, output_path, session)
+            #     print(f"  ✓ Saved {output_path.name}")
+            # else:
+            #     print(f"  ✗ No transparent image returned for asset-{idx}")
 
-            if 'image' in bg_removed and 'url' in bg_removed['image']:
-                final_url = bg_removed['image']['url']
-                await download_image(final_url, output_path, session)
-                print(f"  ✓ Saved {output_path.name}")
-            else:
-                print(f"  ✗ No transparent image returned for asset-{idx}")
+            # Use kontext result directly
+            await download_image(image_url, output_path, session)
+            print(f"  ✓ Saved {output_path.name}")
         else:
             print(f"  ✗ No image returned for asset-{idx}")
     except Exception as e:

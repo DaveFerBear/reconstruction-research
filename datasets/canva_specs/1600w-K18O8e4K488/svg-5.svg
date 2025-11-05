@@ -1,27 +1,19 @@
-<svg width="250" height="80" viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
   <defs>
     <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <!-- Blur the alpha channel of the source graphic -->
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-      <!-- Offset the blurred alpha slightly -->
-      <feOffset in="blur" dx="0" dy="1" result="offsetBlur"/>
-      <!-- Create the inner shadow mask: subtract original alpha from offset blurred alpha -->
-      <feComposite in="SourceAlpha" in2="offsetBlur" operator="arithmetic" k2="-1" k3="1" result="shadowAlpha"/>
-      <!-- Flood with shadow color (dark gray with opacity) -->
-      <feFlood flood-color="#000000" flood-opacity="0.3" result="shadowColor"/>
-      <!-- Apply shadow color to the shadow alpha mask -->
-      <feComposite in="shadowColor" in2="shadowAlpha" operator="in" result="shadow"/>
-      <!-- Merge the shadow with the original graphic -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset dx="0" dy="2" result="offsetBlur"/>
+      <feComposite in="SourceAlpha" in2="offsetBlur" operator="arithmetic" k2="-1" k3="1" result="shadowMap"/>
+      <feFlood flood-color="#000" flood-opacity="0.3"/>
+      <feComposite in2="shadowMap" operator="in"/>
       <feMerge>
-        <feMergeNode in="shadow"/>
         <feMergeNode in="SourceGraphic"/>
+        <feMergeNode/>
       </feMerge>
     </filter>
   </defs>
 
-  <rect x="0" y="0" width="250" height="80" rx="40" ry="40" fill="#ff4b5f" filter="url(#innerShadow)"/>
+  <rect x="10" y="10" width="280" height="80" rx="40" ry="40" fill="#ff4b5f" filter="url(#innerShadow)"/>
 
-  <text x="125" y="40" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
-    LIVE STREAMING
-  </text>
+  <text x="150" y="50" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">LIVE STREAMING</text>
 </svg>

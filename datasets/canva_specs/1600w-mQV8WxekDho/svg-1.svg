@@ -5,25 +5,32 @@
       <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#667BDC" stroke-width="1.5"/>
     </pattern>
 
-    <!-- 8-point starburst shape (outer radius 10 units, inner radius 4 units) -->
-    <path id="starburst8" fill="white" d="M 10 0 L 3.7 1.5 L 7.1 7.1 L 1.5 3.7 L 0 10 L -1.5 3.7 L -7.1 7.1 L -3.7 1.5 L -10 0 L -3.7 -1.5 L -7.1 -7.1 L -1.5 -3.7 L 0 -10 L 1.5 -3.7 L 7.1 -7.1 L 3.7 -1.5 Z"/>
+    <!-- Eight-point starburst shape (base size, outer radius 1, inner radius 0.4) -->
+    <path id="starburstShape" d="M 1 0 L 0.37 0.15 L 0.71 0.71 L 0.15 0.37 L 0 1 L -0.15 0.37 L -0.71 0.71 L -0.37 0.15 L -1 0 L -0.37 -0.15 L -0.71 -0.71 L -0.15 -0.37 L 0 -1 L 0.15 -0.37 L 0.71 -0.71 L 0.37 -0.15 Z"/>
   </defs>
 
   <!-- Periwinkle background -->
-  <rect width="100%" height="100%" fill="#D0D8F0"/>
+  <rect width="100%" height="100%" fill="#C3CDE6"/>
 
-  <!-- Apply the grid pattern over the background -->
+  <!-- Full-canvas grid overlay -->
   <rect width="100%" height="100%" fill="url(#gridPattern)"/>
 
   <!-- White eight-point starbursts -->
-  <!-- Top-right area, size 90px (scale 4.5, as base starburst has 20px diameter) -->
-  <use href="#starburst8" transform="translate(1000, 150) scale(4.5)"/>
-  <!-- Left-center area, size 50px (scale 2.5) -->
-  <use href="#starburst8" transform="translate(250, 400) scale(2.5)"/>
-  <!-- Mid-right area, size 70px (scale 3.5) -->
-  <use href="#starburst8" transform="translate(950, 550) scale(3.5)"/>
-  <!-- Lower-left area, size 28px (scale 1.4) -->
-  <use href="#starburst8" transform="translate(200, 700) scale(1.4)"/>
-  <!-- Additional starburst for "several", mid-top area, size 60px (scale 3.0) -->
-  <use href="#starburst8" transform="translate(500, 250) scale(3.0)"/>
+  <g fill="white">
+    <!-- Top-right area, size 90px (radius 45) -->
+    <use href="#starburstShape" transform="translate(1000 100) scale(45)"/>
+    <!-- Left-center area, size 50px (radius 25) -->
+    <use href="#starburstShape" transform="translate(200 400) scale(25)"/>
+    <!-- Mid-right area, size 70px (radius 35) -->
+    <use href="#starburstShape" transform="translate(950 550) scale(35)"/>
+    <!-- Lower-left area, size 28px (radius 14) -->
+    <use href="#starburstShape" transform="translate(150 700) scale(14)"/>
+    <!-- Additional starbursts for variety -->
+    <!-- Mid-top area, size 60px (radius 30) -->
+    <use href="#starburstShape" transform="translate(500 150) scale(30)"/>
+    <!-- Bottom-right area, size 40px (radius 20) -->
+    <use href="#starburstShape" transform="translate(1100 750) scale(20)"/>
+    <!-- Mid-left area, size 35px (radius 17.5) -->
+    <use href="#starburstShape" transform="translate(300 250) scale(17.5)"/>
+  </g>
 </svg>

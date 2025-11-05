@@ -1,8 +1,8 @@
-<svg viewBox="0 0 106 48" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 59">
   <defs>
-    <filter id="buttonShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="black" flood-opacity="0.2"/>
+    <filter id="s" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
     </filter>
   </defs>
-  <rect x="3" y="3" width="100" height="40" rx="12" ry="12" fill="#FFC73A" filter="url(#buttonShadow)"/>
+  <rect x="3" y="3" width="200" height="50" rx="12" fill="#FFC73A" filter="url(#s)"/>
 </svg>

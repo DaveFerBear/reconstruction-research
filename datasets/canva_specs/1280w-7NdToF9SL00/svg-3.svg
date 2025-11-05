@@ -1,52 +1,41 @@
-<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#222222" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Turntable Deck -->
+    <rect x="30" y="70" width="140" height="60" rx="10" ry="10"/>
 
-    <!-- Turntable Deck: rectangular with rounded corners -->
-    <rect x="50" y="100" width="300" height="150" rx="15" ry="15"/>
+    <!-- Feet -->
+    <rect x="45" y="130" width="15" height="10" rx="3" ry="3"/>
+    <rect x="140" y="130" width="15" height="10" rx="3" ry="3"/>
 
-    <!-- Two short feet beneath the deck -->
-    <rect x="80" y="250" width="20" height="15"/>
-    <rect x="300" y="250" width="20" height="15"/>
+    <!-- Knobs (filled) -->
+    <circle cx="55" cy="90" r="4" fill="#222222"/>
+    <circle cx="70" cy="90" r="4" fill="#222222"/>
+    <circle cx="85" cy="90" r="4" fill="#222222"/>
 
-    <!-- Three small circular knobs at the front-left -->
-    <!-- Knob 1 -->
-    <circle cx="90" cy="130" r="10"/>
-    <circle cx="90" cy="130" r="4" fill="#222222"/>
-    <!-- Knob 2 -->
-    <circle cx="120" cy="130" r="10"/>
-    <circle cx="120" cy="130" r="4" fill="#222222"/>
-    <!-- Knob 3 -->
-    <circle cx="150" cy="130" r="10"/>
-    <circle cx="150" cy="130" r="4" fill="#222222"/>
+    <!-- Record -->
+    <circle cx="125" cy="100" r="35"/>
+    <!-- Record Center (filled) -->
+    <circle cx="125" cy="100" r="8" fill="#222222"/>
 
-    <!-- Circular record -->
-    <circle cx="270" cy="175" r="60"/> <!-- Outer record -->
-    <circle cx="270" cy="175" r="30"/> <!-- Inner label area -->
-    <circle cx="270" cy="175" r="5" fill="#222222"/> <!-- Spindle hole (solid black area) -->
+    <!-- Smiling Face on Record -->
+    <circle cx="118" cy="95" r="2"/> <!-- Left Eye -->
+    <circle cx="132" cy="95" r="2"/> <!-- Right Eye -->
+    <path d="M118 105 Q125 109 132 105"/> <!-- Smile -->
 
-    <!-- Smiling face drawn in the center of the record -->
-    <!-- Eyes (solid black areas) -->
-    <circle cx="260" cy="165" r="3" fill="#222222"/>
-    <circle cx="280" cy="165" r="3" fill="#222222"/>
-    <!-- Mouth (stroke) -->
-    <path d="M 260 185 Q 270 195 280 185" stroke-width="4"/>
+    <!-- Tonearm and Cartridge -->
+    <rect x="150" y="75" width="10" height="15" rx="3" ry="3"/> <!-- Tonearm Base -->
+    <path d="M155 85 L135 95"/> <!-- Tonearm -->
+    <rect x="130" y="92" width="8" height="6" rx="2" ry="2"/> <!-- Cartridge -->
 
-    <!-- Cartridge at top-right over a circular record -->
-    <!-- Tonearm -->
-    <path d="M 320 120 Q 290 130 275 165" />
-    <!-- Cartridge head -->
-    <rect x="265" y="158" width="15" height="10" transform="rotate(-15 272.5 163)" />
-
-    <!-- Two raised cartoon hands/arms appear above the turntable as if cheering -->
+    <!-- Cheering Hands/Arms -->
     <!-- Left Arm -->
-    <path d="M 100 80 Q 120 40 140 60"/>
+    <path d="M60 60 Q50 40 70 30"/>
     <!-- Left Hand -->
-    <path d="M 135 55 Q 145 35 165 50 C 170 55 165 65 155 70 Q 145 75 135 55 Z"/>
+    <circle cx="70" cy="25" r="8"/>
 
     <!-- Right Arm -->
-    <path d="M 300 80 Q 280 40 260 60"/>
+    <path d="M140 60 Q150 40 130 30"/>
     <!-- Right Hand -->
-    <path d="M 265 55 Q 255 35 235 50 C 230 55 235 65 245 70 Q 255 75 265 55 Z"/>
-
+    <circle cx="130" cy="25" r="8"/>
   </g>
 </svg>

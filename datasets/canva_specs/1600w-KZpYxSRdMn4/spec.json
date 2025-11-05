@@ -6,7 +6,7 @@
     {
       "type": "svg",
       "svg_description": "Layered wavy ribbons spanning the bottom: backmost deep green wave, a mid green wave, and a metallic-gold wave (gold uses a subtle left-to-right gradient from #F7D26A to #C8973A). Waves sweep upward toward the right with soft, smooth bezier curves.",
-      "filename": null,
+      "filename": "svg-1.svg",
       "x": 0,
       "y": 1320,
       "width": 1600,
@@ -16,7 +16,7 @@
     {
       "type": "svg",
       "svg_description": "Two dark-green (#0B5D3C) rounded rectangles (pill banners) stacked with slight counterclockwise tilt (~-5°). Top pill approx 520x120px positioned near the upper-left; bottom pill slightly wider (~620x120px) and offset lower-right. These serve as title backers.",
-      "filename": null,
+      "filename": "svg-2.svg",
       "x": 150,
       "y": 150,
       "width": 700,
@@ -26,7 +26,7 @@
     {
       "type": "image",
       "asset_description": "Circular portrait photo of a young woman with long wavy brown hair wearing a forest-green knit sweater over a white-collared shirt, smiling toward camera while seated at a desk. Soft indoor lighting, pale bluish wall background, shallow depth of field. Lower foreground shows the edge of a notebook and desk.",
-      "filename": null,
+      "filename": "asset-1.png",
       "x": 930,
       "y": 430,
       "width": 600,
@@ -36,7 +36,7 @@
     {
       "type": "svg",
       "svg_description": "Thin circular ring (stroke ~6px) in medium green (#1E7A5A) outlining the portrait image; ring diameter matches the photo circle.",
-      "filename": null,
+      "filename": "svg-3.svg",
       "x": 920,
       "y": 420,
       "width": 620,
@@ -131,7 +131,7 @@
     {
       "type": "svg",
       "svg_description": "Rounded rectangle button with 20px corner radius filled in dark green (#0B5D3C).",
-      "filename": null,
+      "filename": "svg-4.svg",
       "x": 160,
       "y": 960,
       "width": 360,
@@ -158,7 +158,7 @@
     {
       "type": "svg",
       "svg_description": "Two small circular line icons in dark green (#0B5D3C): 1) globe icon (latitude-longitude grid) inside a thin circle; 2) classic phone handset icon inside a thin circle. Icons stacked vertically with ~60px spacing, aligned left of corresponding text.",
-      "filename": null,
+      "filename": "svg-5.svg",
       "x": 160,
       "y": 1112,
       "width": 52,
