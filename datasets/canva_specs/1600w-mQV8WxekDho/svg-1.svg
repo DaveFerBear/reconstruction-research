@@ -1,0 +1,29 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Grid pattern: thin horizontal and vertical lines every 80px -->
+    <pattern id="gridPattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#667BDC" stroke-width="1.5"/>
+    </pattern>
+
+    <!-- 8-point starburst shape (outer radius 10 units, inner radius 4 units) -->
+    <path id="starburst8" fill="white" d="M 10 0 L 3.7 1.5 L 7.1 7.1 L 1.5 3.7 L 0 10 L -1.5 3.7 L -7.1 7.1 L -3.7 1.5 L -10 0 L -3.7 -1.5 L -7.1 -7.1 L -1.5 -3.7 L 0 -10 L 1.5 -3.7 L 7.1 -7.1 L 3.7 -1.5 Z"/>
+  </defs>
+
+  <!-- Periwinkle background -->
+  <rect width="100%" height="100%" fill="#D0D8F0"/>
+
+  <!-- Apply the grid pattern over the background -->
+  <rect width="100%" height="100%" fill="url(#gridPattern)"/>
+
+  <!-- White eight-point starbursts -->
+  <!-- Top-right area, size 90px (scale 4.5, as base starburst has 20px diameter) -->
+  <use href="#starburst8" transform="translate(1000, 150) scale(4.5)"/>
+  <!-- Left-center area, size 50px (scale 2.5) -->
+  <use href="#starburst8" transform="translate(250, 400) scale(2.5)"/>
+  <!-- Mid-right area, size 70px (scale 3.5) -->
+  <use href="#starburst8" transform="translate(950, 550) scale(3.5)"/>
+  <!-- Lower-left area, size 28px (scale 1.4) -->
+  <use href="#starburst8" transform="translate(200, 700) scale(1.4)"/>
+  <!-- Additional starburst for "several", mid-top area, size 60px (scale 3.0) -->
+  <use href="#starburst8" transform="translate(500, 250) scale(3.0)"/>
+</svg>

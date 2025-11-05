@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1600px;
+            height: 1600px;
+            background-image: url('background.png'); background-size: cover; background-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div style="position: absolute; left: 360px; top: 460px; width: 880px; height: 560px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a single four-point sparkle star path centered at (0,0) -->
+    <path id="sparkle" fill="#FFFFFF" d="M 0 -10 L 1 -5 L 5 0 L 1 5 L 0 10 L -1 5 L -5 0 L -1 -5 Z"/>
+  </defs>
+
+  <!-- Single thin, translucent white elliptical stroke, tilted 15 degrees counterclockwise -->
+  <ellipse cx="200" cy="100" rx="150" ry="70"
+           fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"
+           transform="rotate(-15 200 100)"/>
+
+  <!-- Three small four-point sparkle stars -->
+  <!-- 1. One above-left of the first line (positioned in the top-left area) -->
+  <use href="#sparkle" transform="translate(80 40) scale(0.5)"/>
+
+  <!-- 2. One small sparkle just below-right of the ellipse center -->
+  <use href="#sparkle" transform="translate(230 120) scale(0.3)"/>
+
+  <!-- 3. One larger sparkle below-right near the end of the second line (positioned in the bottom-right area) -->
+  <use href="#sparkle" transform="translate(320 160) scale(0.7)"/>
+</svg></div><div style="position: absolute; left: 0px; top: 620px; width: 1600px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 150px; color: #FFFFFF; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Every day is</div></div><div style="position: absolute; left: 0px; top: 800px; width: 1600px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 120px; color: #FFFFFF; text-align: center; font-weight: 400; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">a new chance</div></div>
+    </div>
+</body>
+</html>

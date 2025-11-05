@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a single four-point sparkle star path centered at (0,0) -->
+    <path id="sparkle" fill="#FFFFFF" d="M 0 -10 L 1 -5 L 5 0 L 1 5 L 0 10 L -1 5 L -5 0 L -1 -5 Z"/>
+  </defs>
+
+  <!-- Single thin, translucent white elliptical stroke, tilted 15 degrees counterclockwise -->
+  <ellipse cx="200" cy="100" rx="150" ry="70"
+           fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"
+           transform="rotate(-15 200 100)"/>
+
+  <!-- Three small four-point sparkle stars -->
+  <!-- 1. One above-left of the first line (positioned in the top-left area) -->
+  <use href="#sparkle" transform="translate(80 40) scale(0.5)"/>
+
+  <!-- 2. One small sparkle just below-right of the ellipse center -->
+  <use href="#sparkle" transform="translate(230 120) scale(0.3)"/>
+
+  <!-- 3. One larger sparkle below-right near the end of the second line (positioned in the bottom-right area) -->
+  <use href="#sparkle" transform="translate(320 160) scale(0.7)"/>
+</svg>

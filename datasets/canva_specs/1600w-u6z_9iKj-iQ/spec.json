@@ -1,0 +1,70 @@
+{
+  "background_color": "#0c2330",
+  "has_background_image": true,
+  "background_image_description": "Moody, shallow‑depth‑of‑field photograph of five terracotta oil lamps (diyas) with bright orange flames on a dark, textured stone surface. The central foreground diya is largest and sharpest, with small glowing ember sparks rising above its flame. Two diyas sit left and two right, progressively more out of focus. The upper half shows large teal, blue, and cyan bokeh circles with a few soft magenta and off‑white highlights, creating a dark teal night ambience.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Full-bleed photo background of lit clay diyas on a dark surface with blue/teal bokeh lights; central diya in sharp focus with ember sparks; warm orange flames illuminating nearby surface; edges vignetted and cool-toned.",
+      "filename": "asset-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 1600,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Happy",
+      "x": 0,
+      "y": 290,
+      "width": 1600,
+      "height": 120,
+      "rotation": 0,
+      "font-family": "Brush Script MT",
+      "font-size": 96,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "DIWALI",
+      "x": 0,
+      "y": 380,
+      "width": 1600,
+      "height": 260,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 220,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "FESTIVAL OF LIGHTS",
+      "x": 0,
+      "y": 635,
+      "width": 1600,
+      "height": 70,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 40,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "300",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

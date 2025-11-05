@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+  <line x1="0" y1="5" x2="100" y2="5"
+        stroke="#4169E1"
+        stroke-width="3"
+        stroke-dasharray="6 6"
+        stroke-linecap="square"/>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "background_color": "#f4f3ef",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Single-word logotype reading 'ego' rendered as a custom high-contrast Didone-style vector mark in solid black (#111111). The letters are lowercase with very thick vertical stems and narrow hairlines: the 'e' has a vertical almond-shaped counter with a horizontal crossbar that meets a heavy bowl; the 'g' features a teardrop terminal above the x-height and a bold descending swash that curves leftward into a near-circle loop, ending with a small rounded terminal; the final 'o' is an oval with a vertically oriented almond-shaped counter. All shapes are smooth, with no strokes—only filled paths.",
+      "filename": "svg-1.svg",
+      "x": 300,
+      "y": 470,
+      "width": 1000,
+      "height": 560,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "CREATIVE\nSTUDIO",
+      "x": 360,
+      "y": 1120,
+      "width": 240,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 28,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "SINCE\n2025",
+      "x": 1120,
+      "y": 1120,
+      "width": 200,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 28,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

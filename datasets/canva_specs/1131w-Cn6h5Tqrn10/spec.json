@@ -1,0 +1,80 @@
+{
+  "background_color": "#f5f5f2",
+  "has_background_image": true,
+  "background_image_description": "Subtle warm off‑white paper texture with fine horizontal fiber lines and light noise uniformly across the entire canvas.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Photographic eucalyptus branch cluster entering from the upper-right corner, with multiple elongated oval leaves in gradients of medium to dark green and lighter lime highlights on the edges. Thin brown-green stems curve diagonally toward the center; the foliage overlaps slightly into the canvas while the rightmost edges are cropped.",
+      "filename": "asset-1.png",
+      "x": 651,
+      "y": 0,
+      "width": 480,
+      "height": 580,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Photographic eucalyptus sprig arrangement anchored at the lower-left corner. Several long matte leaves in muted blue‑green tones with slimmer bright green young leaves extend diagonally toward the center-right. Stems are thin and branching; the bottom and left edges are cropped by the canvas.",
+      "filename": "asset-2.png",
+      "x": 0,
+      "y": 1000,
+      "width": 600,
+      "height": 600,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Daily Motivation",
+      "x": 0,
+      "y": 220,
+      "width": 1131,
+      "height": 50,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 36,
+      "color": "#2b3f34",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "\"Stay\ninspired\nnever stop\ncreating\"",
+      "x": 0,
+      "y": 420,
+      "width": 1131,
+      "height": 700,
+      "rotation": 0,
+      "font-family": "Dancing Script",
+      "font-size": 120,
+      "color": "#2b3f34",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "— @reallygreatsite",
+      "x": 0,
+      "y": 1200,
+      "width": 1131,
+      "height": 48,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 34,
+      "color": "#2b3f34",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

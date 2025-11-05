@@ -1,0 +1,70 @@
+{
+  "background_color": "#d0021b",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A black electrical cord hangs vertically from the top center, ending in a small glossy black socket holding a white glowing light bulb. The bulb emits a soft white radial glow that fades into the red background.",
+      "filename": "asset-1.png",
+      "x": 650,
+      "y": 0,
+      "width": 300,
+      "height": 460,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "STAY TUNED",
+      "x": 0,
+      "y": 520,
+      "width": 1600,
+      "height": 80,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 60,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "COMING\nSOON",
+      "x": 0,
+      "y": 660,
+      "width": 1600,
+      "height": 440,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 220,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "@REALLYGREATSITE",
+      "x": 0,
+      "y": 1360,
+      "width": 1600,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Montserrat",
+      "font-size": 34,
+      "color": "#d9d9d9",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

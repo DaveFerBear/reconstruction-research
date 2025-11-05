@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- White rounded-rectangle dialog card -->
+  <rect x="70" y="40" width="360" height="480" rx="36" fill="#ffffff" filter="url(#shadow)"/>
+
+  <!-- Thin horizontal divider line -->
+  <line x1="70" y1="400" x2="430" y2="400" stroke="#edd6d6" stroke-width="1"/>
+
+  <!-- Thin vertical divider line -->
+  <line x1="250" y1="400" x2="250" y2="520" stroke="#edd6d6" stroke-width="1"/>
+</svg>

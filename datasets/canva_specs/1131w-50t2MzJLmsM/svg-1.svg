@@ -1,0 +1,94 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .royal-blue {
+        stroke: #243EB6;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .filled-hatch {
+        stroke: #243EB6;
+        stroke-width: 0.7; /* Thinner lines for hatching */
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none; /* Hatching lines themselves are not filled */
+      }
+    </style>
+    <!-- Clip path for the first hatched star -->
+    <clipPath id="star-clip-1">
+      <path d="M 20 50 L 25 65 L 40 67 L 30 75 L 33 90 L 20 80 L 7 90 L 10 75 L 0 67 L 15 65 Z" />
+    </clipPath>
+    <!-- Clip path for the second hatched star -->
+    <clipPath id="star-clip-2">
+      <path d="M 20 10 L 25 25 L 40 27 L 30 35 L 33 50 L 20 40 L 7 50 L 10 35 L 0 27 L 15 25 Z" />
+    </clipPath>
+  </defs>
+
+  <!-- Coffee cup on saucer on large oval serving tray (upper-right) -->
+  <!-- Tray (large oval, slightly irregular for hand-drawn feel) -->
+  <path class="royal-blue" d="M 75 30 Q 85 25 90 35 Q 95 45 85 50 Q 75 55 70 45 Q 65 35 75 30 Z" />
+  <!-- Saucer (smaller oval on tray, slightly irregular) -->
+  <path class="royal-blue" d="M 78 35 Q 82 33 85 37 Q 88 41 84 43 Q 80 45 76 41 Q 74 37 78 35 Z" />
+  <!-- Coffee Cup (irregular shape) -->
+  <path class="royal-blue" d="M 80 37 L 81 30 Q 82 25 85 25 Q 88 25 89 30 L 90 37" />
+  <!-- Cup Handle (irregular) -->
+  <path class="royal-blue" d="M 90 32 Q 92 30 92 34 Q 92 38 90 36" />
+  <!-- Steam (wavy lines above the cup) -->
+  <path class="royal-blue" d="M 83 24 Q 84 22 85 23 Q 86 21 87 22" />
+  <path class="royal-blue" d="M 84 22 Q 85 20 86 21" />
+
+  <!-- Female server (lower-right) -->
+  <!-- Head (irregular circle) -->
+  <path class="royal-blue" d="M 80 70 Q 82 68 84 70 Q 86 72 84 74 Q 82 76 80 74 Q 78 72 80 70 Z" />
+  <!-- Hair in a bun (irregular small circle) -->
+  <path class="royal-blue" d="M 84 69 Q 85 68 86 70 Q 85 71 84 70 Z" />
+  <!-- Body (simple, irregular shape) -->
+  <path class="royal-blue" d="M 80 74 L 78 85 L 79 90 L 81 90 L 82 85 L 80 74 Z" />
+  <!-- Arm holding the tray aloft with one hand (curved line) -->
+  <path class="royal-blue" d="M 78 80 Q 70 70 70 50" />
+  <!-- Apron (irregular trapezoid-like shape) -->
+  <path class="royal-blue" d="M 78 80 Q 79 78 81 78 Q 82 80 81 82 L 80 85 L 79 85 L 78 82 Z" />
+  <!-- Boots (irregular shapes) -->
+  <path class="royal-blue" d="M 78 90 L 77 92 L 78 94 L 79 92 L 78 90 Z" />
+  <path class="royal-blue" d="M 81 90 L 80 92 L 81 94 L 82 92 L 81 90 Z" />
+
+  <!-- Five star doodles of varying sizes scattered on the left half -->
+  <!-- One large outlined star (irregular path for hand-drawn feel) -->
+  <path class="royal-blue" d="M 25 20 L 32 40 L 50 42 L 35 55 L 40 75 L 25 65 L 10 75 L 15 55 L 0 42 L 18 40 Z" />
+
+  <!-- Two smaller filled-with-hatching stars -->
+  <!-- Star 1 (smaller, hatched) -->
+  <g clip-path="url(#star-clip-1)">
+    <!-- Star outline -->
+    <path class="royal-blue" d="M 20 50 L 25 65 L 40 67 L 30 75 L 33 90 L 20 80 L 7 90 L 10 75 L 0 67 L 15 65 Z" />
+    <!-- Hatching lines (clipped by the star-clip-1 path) -->
+    <line class="filled-hatch" x1="10" y1="55" x2="30" y2="75" />
+    <line class="filled-hatch" x1="10" y1="60" x2="30" y2="80" />
+    <line class="filled-hatch" x1="10" y1="65" x2="30" y2="85" />
+    <line class="filled-hatch" x1="10" y1="70" x2="30" y2="90" />
+    <line class="filled-hatch" x1="5" y1="60" x2="25" y2="80" />
+    <line class="filled-hatch" x1="15" y1="60" x2="35" y2="80" />
+  </g>
+
+  <!-- Star 2 (smaller, hatched) -->
+  <g clip-path="url(#star-clip-2)">
+    <!-- Star outline -->
+    <path class="royal-blue" d="M 20 10 L 25 25 L 40 27 L 30 35 L 33 50 L 20 40 L 7 50 L 10 35 L 0 27 L 15 25 Z" />
+    <!-- Hatching lines (clipped by the star-clip-2 path) -->
+    <line class="filled-hatch" x1="15" y1="15" x2="30" y2="30" />
+    <line class="filled-hatch" x1="15" y1="20" x2="30" y2="35" />
+    <line class="filled-hatch" x1="15" y1="25" x2="30" y2="40" />
+    <line class="filled-hatch" x1="15" y1="30" x2="30" y2="45" />
+    <line class="filled-hatch" x1="10" y1="20" x2="25" y2="35" />
+    <line class="filled-hatch" x1="20" y1="20" x2="35" y2="35" />
+  </g>
+
+  <!-- Two medium stars with sketchy linework (irregular paths) -->
+  <!-- Star 1 (medium, sketchy) -->
+  <path class="royal-blue" d="M 40 75 L 45 85 L 55 87 L 48 93 L 50 100 L 40 93 L 30 100 L 32 93 L 25 87 L 35 85 Z" />
+  <!-- Star 2 (medium, sketchy) -->
+  <path class="royal-blue" d="M 55 5 L 60 15 L 70 17 L 63 23 L 65 30 L 55 23 L 45 30 L 47 23 L 40 17 L 50 15 Z" />
+
+</svg>

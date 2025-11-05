@@ -1,0 +1,22 @@
+<svg viewBox="0 0 184 28" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#FFFFFF">
+    <!-- Icon 1: Video Camera -->
+    <g transform="translate(0 2)">
+      <rect x="0" y="5" width="18" height="14" />
+      <rect x="18" y="8" width="6" height="8" />
+    </g>
+    <!-- Icon 2: Chat Bubble -->
+    <g transform="translate(52 2)">
+      <rect x="2" y="0" width="20" height="16" rx="3" />
+      <path d="M5 16 L2 20 L8 16 Z" />
+    </g>
+    <!-- Icon 3: Heart Glyph -->
+    <g transform="translate(104 2)">
+      <path d="M12 4.24C8.76 0.99 3.5 4.24 3.5 8.5C3.5 12.76 12 20 12 20C12 20 20.5 12.76 20.5 8.5C20.5 4.24 15.24 0.99 12 4.24Z" />
+    </g>
+    <!-- Icon 4: Phone Handset -->
+    <g transform="translate(156 2)">
+      <path d="M20.5 18.5c-2.2 0-4.3-.4-6.3-1.2l-2.4-2.4c-.6-.6-.6-1.5 0-2.1l2.4-2.4c.6-.6.6-1.5 0-2.1l-2.4-2.4c-.6-.6-1.5-.6-2.1 0l-2.4 2.4c-.8 2-1.2 4.1-1.2 6.3 0 4.4 3.6 8 8 8 2.2 0 4.3-.4 6.3-1.2l2.4-2.4c.6-.6.6-1.5 0-2.1l-2.4-2.4c-.6-.6-1.5-.6-2.1 0z" />
+    </g>
+  </g>
+</svg>

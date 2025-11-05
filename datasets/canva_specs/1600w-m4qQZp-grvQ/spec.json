@@ -1,0 +1,63 @@
+{
+  "background_color": "#f4efe9",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Wide cinematic photo of an arid desert plain under a pale gray-blue sky with low sandy ridges on the horizon. Center frame is a person walking away from camera wearing a long beige trench coat, white pants peeking underneath, and black boots. The ground is textured with small pebbles and footprints; lighting is soft and even.",
+      "filename": "asset-1.png",
+      "x": 26,
+      "y": 26,
+      "width": 1548,
+      "height": 560,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Thin white elliptical outline (no fill), centered on the figure's torso. Stroke ~4px, smooth geometry.",
+      "filename": "svg-1.svg",
+      "x": 540,
+      "y": 290,
+      "width": 520,
+      "height": 150,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "BORCELLE",
+      "x": 540,
+      "y": 345,
+      "width": 520,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 42,
+      "color": "#ffffff",
+      "text-align": "center",
+      "font-weight": "500",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "BRAND PROPOSAL",
+      "x": 60,
+      "y": 590,
+      "width": 1480,
+      "height": 300,
+      "rotation": 0,
+      "font-family": "Didot",
+      "font-size": 300,
+      "color": "#b21f1f",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

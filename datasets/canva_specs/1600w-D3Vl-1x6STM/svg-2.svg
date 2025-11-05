@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- Large central white ellipse panel with thick black outline -->
+  <ellipse cx="500" cy="500" rx="350" ry="250" fill="white" stroke="#1f1f1f" stroke-width="8"/>
+
+  <!-- Exaggerated heavier shadowed stroke along the lower-left edge -->
+  <!-- This path traces the lower-left arc of the main ellipse -->
+  <path d="M 150 500 A 350 250 0 0 1 500 750" fill="none" stroke="#1f1f1f" stroke-width="18" transform="translate(-5, 5)"/>
+
+  <!-- Decorative Elements Group -->
+  <g>
+    <!-- Lightning Bolt 1 (Top-right, leaning slightly right) -->
+    <!-- Shadow element (brick red, offset) -->
+    <path d="M0,0 L20,60 L10,60 L30,120 L20,120 L40,180 L60,120 L50,120 L70,60 L60,60 Z" 
+          fill="#c95646" 
+          transform="translate(780, 180) scale(0.4) rotate(15) translate(8, 8)"/>
+    <!-- Main lightning bolt (white with black outline) -->
+    <path d="M0,0 L20,60 L10,60 L30,120 L20,120 L40,180 L60,120 L50,120 L70,60 L60,60 Z" 
+          fill="white" 
+          stroke="#1f1f1f" 
+          stroke-width="4" 
+          transform="translate(780, 180) scale(0.4) rotate(15)"/>
+
+    <!-- Lightning Bolt 2 (Bottom-left, leaning slightly left) -->
+    <!-- Shadow element (brick red, offset) -->
+    <path d="M0,0 L20,60 L10,60 L30,120 L20,120 L40,180 L60,120 L50,120 L70,60 L60,60 Z" 
+          fill="#c95646" 
+          transform="translate(220, 820) scale(0.4) rotate(-15) translate(-8, 8)"/>
+    <!-- Main lightning bolt (white with black outline) -->
+    <path d="M0,0 L20,60 L10,60 L30,120 L20,120 L40,180 L60,120 L50,120 L70,60 L60,60 Z" 
+          fill="white" 
+          stroke="#1f1f1f" 
+          stroke-width="4" 
+          transform="translate(220, 820) scale(0.4) rotate(-15)"/>
+  </g>
+
+  <g>
+    <!-- Diamond Starburst 1 (Upper-left, partly tucked into ellipse) -->
+    <path d="M 50 0 L 70 30 L 100 50 L 70 70 L 50 100 L 30 70 L 0 50 L 30 30 Z" 
+          fill="#c95646" 
+          stroke="#1f1f1f" 
+          stroke-width="4" 
+          transform="translate(100, 100) scale(0.7)"/>
+
+    <!-- Diamond Starburst 2 (Lower-right edge) -->
+    <path d="M 50 0 L 70 30 L 100 50 L 70 70 L 50 100 L 30 70 L 0 50 L 30 30 Z" 
+          fill="#c95646" 
+          stroke="#1f1f1f" 
+          stroke-width="4" 
+          transform="translate(750, 750) scale(0.7)"/>
+  </g>
+</svg>

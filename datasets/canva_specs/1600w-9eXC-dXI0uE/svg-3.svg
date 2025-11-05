@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <text x="150" y="80" font-family="sans-serif" font-size="40" text-anchor="middle" fill="#0b0b0b">handle</text>
+  <ellipse cx="150" cy="70" rx="70" ry="45" stroke="#6f2dbd" stroke-width="8" fill="none"/>
+  <!-- Rough, overlapping black hand-drawn oval strokes for scribble emphasis -->
+  <path d="M 190 20 Q 205 5 225 20 Q 210 40 190 20 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 195 30 Q 210 15 230 30 Q 215 50 195 30 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 185 35 Q 200 20 220 35 Q 205 55 185 35 Z" stroke="#0b0b0b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

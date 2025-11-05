@@ -1,0 +1,53 @@
+{
+  "background_color": "#39476a",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Playful, distressed emblem composed of five hand-drawn, textured shapes stacked in a loose 2x3 grid, each with speckled/grunge cutouts revealing the blue background (#39476a). Top-left: a cream eye icon (#f2e6d0) with an oval pupil and 10 short lash ticks radiating around the top and bottom. Top-right: a tall rounded pink arch block (#f39fb2) resembling an inverted U. Center-left: a vertical wavy blue blob (#4aa0bf) shaped like a squishy letter M with three humps. Center-right: a mustard-yellow rounded square (#efc05a) containing a single-line spiral resembling a stylized lowercase e, centered within the square. Bottom-left: a short horizontal pink bar (#f39fb2) aligned under the blue blob. All shapes have uneven edges and a vintage, stamped texture with random darker flecks.",
+      "filename": "svg-1.svg",
+      "x": 520,
+      "y": 470,
+      "width": 360,
+      "height": 430,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 520,
+      "y": 940,
+      "width": 360,
+      "height": 140,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 120,
+      "color": "#f2e6d0",
+      "text-align": "left",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 520,
+      "y": 1080,
+      "width": 360,
+      "height": 70,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 56,
+      "color": "#f39fb2",
+      "text-align": "left",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

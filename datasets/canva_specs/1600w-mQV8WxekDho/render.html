@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1600px;
+            height: 1600px;
+            background-color: #7186E7;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div style="position: absolute; left: 0px; top: 0px; width: 1600px; height: 1600px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Grid pattern: thin horizontal and vertical lines every 80px -->
+    <pattern id="gridPattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#667BDC" stroke-width="1.5"/>
+    </pattern>
+
+    <!-- 8-point starburst shape (outer radius 10 units, inner radius 4 units) -->
+    <path id="starburst8" fill="white" d="M 10 0 L 3.7 1.5 L 7.1 7.1 L 1.5 3.7 L 0 10 L -1.5 3.7 L -7.1 7.1 L -3.7 1.5 L -10 0 L -3.7 -1.5 L -7.1 -7.1 L -1.5 -3.7 L 0 -10 L 1.5 -3.7 L 7.1 -7.1 L 3.7 -1.5 Z"/>
+  </defs>
+
+  <!-- Periwinkle background -->
+  <rect width="100%" height="100%" fill="#D0D8F0"/>
+
+  <!-- Apply the grid pattern over the background -->
+  <rect width="100%" height="100%" fill="url(#gridPattern)"/>
+
+  <!-- White eight-point starbursts -->
+  <!-- Top-right area, size 90px (scale 4.5, as base starburst has 20px diameter) -->
+  <use href="#starburst8" transform="translate(1000, 150) scale(4.5)"/>
+  <!-- Left-center area, size 50px (scale 2.5) -->
+  <use href="#starburst8" transform="translate(250, 400) scale(2.5)"/>
+  <!-- Mid-right area, size 70px (scale 3.5) -->
+  <use href="#starburst8" transform="translate(950, 550) scale(3.5)"/>
+  <!-- Lower-left area, size 28px (scale 1.4) -->
+  <use href="#starburst8" transform="translate(200, 700) scale(1.4)"/>
+  <!-- Additional starburst for "several", mid-top area, size 60px (scale 3.0) -->
+  <use href="#starburst8" transform="translate(500, 250) scale(3.0)"/>
+</svg></div><div style="position: absolute; left: 245px; top: 300px; width: 1110px; height: 720px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blocky offset drop-shadows -->
+  <text x="74" y="124" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">HEADLINE</text>
+  <text x="74" y="209" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">TEXT</text>
+  <text x="74" y="294" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">EXAMPLE</text>
+
+  <!-- Main headline words -->
+  <text x="50" y="100" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">HEADLINE</text>
+  <text x="50" y="185" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">TEXT</text>
+  <text x="50" y="270" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">EXAMPLE</text>
+</svg></div><div style="position: absolute; left: 220px; top: 270px; width: 1160px; height: 740px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .headline-text {
+      font-family: "Montserrat", sans-serif; /* Bold, rounded sans-serif */
+      font-weight: 900; /* Extra bold */
+      font-size: 160; /* Scalable font size relative to viewBox */
+      text-anchor: middle; /* Center text horizontally */
+      fill: #F33CAB; /* Magenta-pink fill */
+      stroke: #FFD24F; /* Yellow outline */
+      stroke-width: 22; /* Thick outline, scales with viewBox */
+      paint-order: stroke; /* Ensures stroke is drawn behind fill for the outline effect */
+    }
+  </style>
+  <!-- Lines are tightly tracked and slightly overlapping, centered vertically and horizontally -->
+  <text x="500" y="130" class="headline-text">DON'T</text>
+  <text x="500" y="250" class="headline-text">MISS</text>
+  <text x="500" y="370" class="headline-text">OUT</text>
+</svg></div><div style="position: absolute; left: 0px; top: 110px; width: 1600px; height: 90px; transform: rotate(0deg); opacity: 1; font-family: Montserrat; font-size: 64px; color: #FFFFFF; text-align: center; font-weight: 800; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">YOUR LOGO</div></div><div style="position: absolute; left: 0px; top: 1040px; width: 1600px; height: 90px; transform: rotate(0deg); opacity: 1; font-family: Montserrat; font-size: 58px; color: #FFFFFF; text-align: center; font-weight: 800; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">OUR EXCLUSIVE SALE PROMOTION EVENT IS HERE!</div></div><div style="position: absolute; left: 120px; top: 1270px; width: 1360px; height: 30px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 1600 1300" xmlns="http://www.w3.org/2000/svg">
+  <line x1="120" y1="1280" x2="1480" y2="1280" stroke="white" stroke-width="1.5" />
+  <line x1="540" y1="1268" x2="540" y2="1292" stroke="white" stroke-width="1.5" />
+  <line x1="1040" y1="1268" x2="1040" y2="1292" stroke="white" stroke-width="1.5" />
+</svg></div><div style="position: absolute; left: 140px; top: 1306px; width: 380px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Montserrat; font-size: 42px; color: #FFFFFF; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">AUG – NOV 2099</div></div><div style="position: absolute; left: 550px; top: 1306px; width: 500px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Montserrat; font-size: 42px; color: #FFFFFF; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">123 ANYWHERE ST., ANY CITY, ST 12345</div></div><div style="position: absolute; left: 1110px; top: 1306px; width: 350px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Montserrat; font-size: 42px; color: #FFFFFF; text-align: right; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end; "><div style="width: 100%;">@REALLYGREATSITE    WWW.REALLYGREATSITE.COM</div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "background_color": "#FFD11A",
+  "has_background_image": true,
+  "background_image_description": "Soft left-to-right gradient background transitioning from pastel pink (#F2A3B3) on the left 0–55% into vivid warm yellow (#FFD11A) on the right 55–100%, with a subtle warm glow centered slightly right of middle.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Studio photo of a young woman with long straight blonde hair wearing a green button-up shirt, smiling and holding her right hand up making an 'OK' gesture. She is framed from chest up, slightly left of center. The photo includes a soft pink backdrop behind her that blends into the overall gradient on the right.",
+      "filename": "asset-1.png",
+      "x": 80,
+      "y": 70,
+      "width": 980,
+      "height": 1180,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Yellow halftone dot field overlay: circular dots (#FFC61A, ~85% opacity) arranged on a grid with dot size increasing toward the bottom-left corner, fading to transparent toward the top-right. The cluster forms a diagonal sweep from left-bottom toward center-right.",
+      "filename": "svg-1.svg",
+      "x": 0,
+      "y": 860,
+      "width": 1120,
+      "height": 420,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "HOW TO",
+      "x": 1040,
+      "y": 640,
+      "width": 480,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 72,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "500",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "IMPROVE\nYOURSELF",
+      "x": 420,
+      "y": 860,
+      "width": 1160,
+      "height": 340,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 200,
+      "color": "#111111",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "Rounded rectangle button filled with near-black (#111111) with approximately 12 px corner radius.",
+      "filename": "svg-2.svg",
+      "x": 560,
+      "y": 1290,
+      "width": 580,
+      "height": 96,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "EVERY DAY",
+      "x": 560,
+      "y": 1296,
+      "width": 580,
+      "height": 84,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 48,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "Right-pointing isosceles triangle arrow, filled #111111, aligned to the vertical center of the button and placed slightly to its right.",
+      "filename": "svg-3.svg",
+      "x": 1164,
+      "y": 1312,
+      "width": 72,
+      "height": 60,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

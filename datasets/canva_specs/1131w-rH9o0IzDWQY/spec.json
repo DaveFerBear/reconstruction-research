@@ -1,0 +1,60 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "Full-canvas collage split into four photographic quadrants by thick white diagonal bands forming a central white rotated square (diamond). Top-left quadrant: pastel peach-pink backdrop with assorted white cosmetic containers (tubes, jar, dropper bottle) lit with hard shadows. Top-right quadrant: two-tone yellow and orange background with two dark amber glass dropper bottles with gold collars angled toward the center. Bottom-left quadrant: tan and pale cream paper surfaces with a white pump bottle, a white bath bomb, and a lip balm tube casting long shadows. Bottom-right quadrant: gray wall above a white marble surface holding a small light-beige basket with a textured cloth and two small clear bottles filled with pink liquid, black caps. White bands converge to the center, creating a clean white diamond where text sits.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "New",
+      "x": 200,
+      "y": 610,
+      "width": 731,
+      "height": 180,
+      "rotation": 0,
+      "font-family": "Brush Script MT",
+      "font-size": 150,
+      "color": "#2b1a16",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "PRODUCT",
+      "x": 116,
+      "y": 770,
+      "width": 900,
+      "height": 140,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 120,
+      "color": "#2b1a16",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "PREMIUM PRODUCT",
+      "x": 116,
+      "y": 910,
+      "width": 900,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 46,
+      "color": "#2b1a16",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

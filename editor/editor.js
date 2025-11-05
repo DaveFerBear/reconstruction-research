@@ -35,8 +35,29 @@ async function loadSpecList() {
       const specName = dir.replace("/", "");
       const item = document.createElement("div");
       item.className = "spec-item";
-      item.textContent = `${index + 1}. ${specName}`;
-      item.onclick = () => loadSpec(specName);
+      item.dataset.specName = specName;
+
+      const textSpan = document.createElement("span");
+      textSpan.className = "spec-item-text";
+      textSpan.textContent = `${index + 1}. ${specName}`;
+      textSpan.onclick = () => loadSpec(specName);
+
+      const copyBtn = document.createElement("button");
+      copyBtn.className = "spec-copy-btn";
+      copyBtn.innerHTML = "📋";
+      copyBtn.title = "Copy spec ID";
+      copyBtn.onclick = (e) => {
+        e.stopPropagation();
+        navigator.clipboard.writeText(specName).then(() => {
+          copyBtn.innerHTML = "✓";
+          setTimeout(() => {
+            copyBtn.innerHTML = "📋";
+          }, 1000);
+        });
+      };
+
+      item.appendChild(textSpan);
+      item.appendChild(copyBtn);
       specList.appendChild(item);
     });
   } catch (error) {
@@ -50,7 +71,7 @@ async function loadSpec(specName) {
   try {
     // Update active state
     document.querySelectorAll(".spec-item").forEach((item) => {
-      item.classList.toggle("active", item.textContent.endsWith(specName));
+      item.classList.toggle("active", item.dataset.specName === specName);
     });
 
     // Load spec JSON

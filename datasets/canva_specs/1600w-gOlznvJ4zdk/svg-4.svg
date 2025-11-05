@@ -1,40 +1,21 @@
-<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Step 1 Numeral -->
-  <g>
-    <path d="M 120 100 C 105 105 95 125 95 145 L 98 275 C 103 290 115 298 125 298 L 135 298 C 145 295 150 280 150 265 L 145 105 C 140 95 125 95 120 100 Z"
-          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="115" cy="160" r="6" fill="#FFFFFF"/>
-    <circle cx="130" cy="190" r="6" fill="#FFFFFF"/>
-    <circle cx="110" cy="220" r="6" fill="#FFFFFF"/>
-    <circle cx="135" cy="250" r="6" fill="#FFFFFF"/>
-    <circle cx="120" cy="120" r="6" fill="#FFFFFF"/>
-  </g>
+<svg width="100%" height="100%" viewBox="0 0 750 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Polka dot pattern: small white circles on a #A9C7A7 background -->
+    <pattern id="polkaDotPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="10" height="10" fill="#A9C7A7"/>
+      <circle cx="5" cy="5" r="1.5" fill="white"/>
+    </pattern>
+  </defs>
 
-  <!-- Step 2 Numeral -->
-  <g>
-    <path d="M 110 370 C 100 350 130 340 150 350 C 170 360 180 380 170 400 C 160 420 130 440 100 460 L 105 480 C 115 490 140 495 160 490 L 180 480 C 190 470 195 450 190 430 L 180 400 C 175 380 160 360 140 350 C 120 340 100 350 90 370 Z"
-          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="130" cy="380" r="6" fill="#FFFFFF"/>
-    <circle cx="160" cy="410" r="6" fill="#FFFFFF"/>
-    <circle cx="120" cy="440" r="6" fill="#FFFFFF"/>
-    <circle cx="150" cy="470" r="6" fill="#FFFFFF"/>
-    <circle cx="105" cy="400" r="6" fill="#FFFFFF"/>
-  </g>
+  <!-- Numeral 1: Left column top -->
+  <text x="80" y="180" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="bold" fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8">1</text>
 
-  <!-- Step 3 Numeral -->
-  <g>
-    <path d="M 520 100 C 500 105 490 125 490 145 C 490 165 500 185 520 195 C 500 205 490 225 490 245 C 490 265 500 285 520 295 L 530 295 C 540 290 545 275 545 260 C 545 245 540 230 530 220 C 540 210 545 195 545 180 C 545 165 540 150 530 140 C 540 130 545 115 545 100 Z"
-          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="515" cy="130" r="6" fill="#FFFFFF"/>
-    <circle cx="535" cy="160" r="6" fill="#FFFFFF"/>
-    <circle cx="505" cy="190" r="6" fill="#FFFFFF"/>
-    <circle cx="530" cy="220" r="6" fill="#FFFFFF"/>
-    <circle cx="510" cy="250" r="6" fill="#FFFFFF"/>
-    <circle cx="530" cy="105" r="6" fill="#FFFFFF"/>
-    <circle cx="530" cy="285" r="6" fill="#FFFFFF"/>
-  </g>
+  <!-- Numeral 2: Below Numeral 1 -->
+  <text x="80" y="380" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="bold" fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8">2</text>
 
-  <!-- Underline for Step 3 paragraph -->
-  <path d="M 480 350 C 520 340 560 360 600 350 C 640 340 680 360 720 350"
-        fill="none" stroke="#8EA993" stroke-width="18" stroke-linecap="round"/>
+  <!-- Numeral 3: Right column top -->
+  <text x="480" y="180" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="bold" fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8">3</text>
+
+  <!-- Brush-like underline sweep under Step 3 (below Numeral 3) -->
+  <path d="M430 280 Q600 310 770 280" stroke="#8EA993" stroke-width="30" stroke-linecap="round" fill="none"/>
 </svg>

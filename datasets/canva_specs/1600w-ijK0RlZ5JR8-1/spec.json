@@ -1,0 +1,63 @@
+{
+  "background_color": "#CFEFF1",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Large white perfect circle centered on the canvas, smooth edges, no stroke.",
+      "filename": "svg-1.svg",
+      "x": 140,
+      "y": 140,
+      "width": 1320,
+      "height": 1320,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "QUICK TIPS",
+      "x": 140,
+      "y": 300,
+      "width": 1320,
+      "height": 90,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 64,
+      "color": "#5FA6A9",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "MAKE THE\nMOST OF YOUR\nWORKOUTS",
+      "x": 140,
+      "y": 460,
+      "width": 1320,
+      "height": 600,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 170,
+      "color": "#FF7CB6",
+      "text-align": "center",
+      "font-weight": "800",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "Flat right-pointing arrow with a short rectangular shaft and a triangular head, solid fill, no stroke, centered near the lower part of the circle.",
+      "filename": "svg-2.svg",
+      "x": 710,
+      "y": 1120,
+      "width": 180,
+      "height": 120,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

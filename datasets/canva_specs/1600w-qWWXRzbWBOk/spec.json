@@ -1,0 +1,53 @@
+{
+  "background_color": "#F7F3E6",
+  "has_background_image": true,
+  "background_image_description": "Soft, large-scale airbrushed gradient filling the 1600x1600 canvas: warm ivory (#F7F3E6) in the top-left and bottom-left corners blending smoothly into vivid sky blue (#2E72C8) across the right-center, with deeper cobalt-blue core (#1F5EAE) and a pale misty light in the bottom-right transitioning back toward off‑white (#EEF3F2). Edges are vignetted and feathered; no hard shapes or texture.",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Single thin, translucent white elliptical stroke (no fill) tilted about 15 degrees counterclockwise, loosely encircling the two text lines; accompanied by three small four-point sparkle stars (diamond-tipped cross with short arms) in solid white: one above-left of the first line, one small sparkle just below-right of the ellipse center, and one larger sparkle below-right near the end of the second line.",
+      "filename": "svg-1.svg",
+      "x": 360,
+      "y": 460,
+      "width": 880,
+      "height": 560,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "Every day is",
+      "x": 0,
+      "y": 620,
+      "width": 1600,
+      "height": 180,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 150,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "a new chance",
+      "x": 0,
+      "y": 800,
+      "width": 1600,
+      "height": 160,
+      "rotation": 0,
+      "font-family": "Georgia",
+      "font-size": 120,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

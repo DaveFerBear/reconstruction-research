@@ -92,9 +92,12 @@ body {
   background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
-  cursor: pointer;
   transition: background 0.2s;
   font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .spec-item:hover {
@@ -104,6 +107,37 @@ body {
 .spec-item.active {
   background: #2196f3;
   color: white;
+}
+
+.spec-item-text {
+  flex: 1;
+  cursor: pointer;
+}
+
+.spec-copy-btn {
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.spec-copy-btn:hover {
+  background: rgba(33, 150, 243, 0.1);
+  border-color: #2196f3;
+}
+
+.spec-item.active .spec-copy-btn {
+  border-color: white;
+  color: white;
+}
+
+.spec-item.active .spec-copy-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #preview {

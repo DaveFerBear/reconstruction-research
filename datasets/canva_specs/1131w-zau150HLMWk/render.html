@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #canvas {
+            position: relative;
+            width: 1131px;
+            height: 1600px;
+            background-image: url('background.png'); background-size: cover; background-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <img src="asset-1.png" style="position: absolute; left: 0px; top: 0px; width: 1131px; height: 1600px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Seamless off-white paper with vertical pale-gray pinstripes; gentle fiber/grain texture and very soft lighting variations across the entire canvas." /><div style="position: absolute; left: 171px; top: 260px; width: 789px; height: 1040px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cobalt-blue { stroke: #1f3f93; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .cobalt-blue-fill { fill: #1f3f93; stroke: none; }
+      .white-highlight { stroke: #ffffff; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Plate -->
+  <!-- Outer border (hand-drawn oval) -->
+  <path d="M 200,50 C 350,50 380,150 380,200 C 380,250 350,350 200,350 C 50,350 20,250 20,200 C 20,150 50,50 200,50 Z" class="cobalt-blue" stroke-width="3"/>
+  <!-- Inner border (hand-drawn oval) -->
+  <path d="M 200,60 C 340,60 370,155 370,200 C 370,245 340,340 200,340 C 60,340 30,245 30,200 C 30,155 60,60 200,60 Z" class="cobalt-blue" stroke-width="2"/>
+
+  <!-- Inner ring of evenly spaced dots -->
+  <circle cx="200" cy="75" r="2" class="cobalt-blue-fill"/>
+  <circle cx="230" cy="78" r="2" class="cobalt-blue-fill"/>
+  <circle cx="260" cy="88" r="2" class="cobalt-blue-fill"/>
+  <circle cx="285" cy="105" r="2" class="cobalt-blue-fill"/>
+  <circle cx="305" cy="125" r="2" class="cobalt-blue-fill"/>
+  <circle cx="320" cy="150" r="2" class="cobalt-blue-fill"/>
+  <circle cx="328" cy="175" r="2" class="cobalt-blue-fill"/>
+  <circle cx="330" cy="200" r="2" class="cobalt-blue-fill"/>
+  <circle cx="328" cy="225" r="2" class="cobalt-blue-fill"/>
+  <circle cx="320" cy="250" r="2" class="cobalt-blue-fill"/>
+  <circle cx="305" cy="275" r="2" class="cobalt-blue-fill"/>
+  <circle cx="285" cy="295" r="2" class="cobalt-blue-fill"/>
+  <circle cx="260" cy="312" r="2" class="cobalt-blue-fill"/>
+  <circle cx="230" cy="322" r="2" class="cobalt-blue-fill"/>
+  <circle cx="200" cy="325" r="2" class="cobalt-blue-fill"/>
+  <circle cx="170" cy="322" r="2" class="cobalt-blue-fill"/>
+  <circle cx="140" cy="312" r="2" class="cobalt-blue-fill"/>
+  <circle cx="115" cy="295" r="2" class="cobalt-blue-fill"/>
+  <circle cx="95" cy="275" r="2" class="cobalt-blue-fill"/>
+  <circle cx="80" cy="250" r="2" class="cobalt-blue-fill"/>
+  <circle cx="72" cy="225" r="2" class="cobalt-blue-fill"/>
+  <circle cx="70" cy="200" r="2" class="cobalt-blue-fill"/>
+  <circle cx="72" cy="175" r="2" class="cobalt-blue-fill"/>
+  <circle cx="80" cy="150" r="2" class="cobalt-blue-fill"/>
+  <circle cx="95" cy="125" r="2" class="cobalt-blue-fill"/>
+  <circle cx="115" cy="105" r="2" class="cobalt-blue-fill"/>
+  <circle cx="140" cy="88" r="2" class="cobalt-blue-fill"/>
+  <circle cx="170" cy="78" r="2" class="cobalt-blue-fill"/>
+
+  <!-- Lobster -->
+  <!-- Head/Carapace -->
+  <path d="M 200,120 C 185,130 180,150 190,165 C 200,175 210,175 220,165 C 220,150 215,130 200,120" class="cobalt-blue" stroke-width="4"/>
+  <!-- Body segments -->
+  <path d="M 190,165 C 185,175 185,185 190,195 C 200,205 210,205 215,195 C 215,185 215,175 210,165" class="cobalt-blue" stroke-width="3"/>
+  <path d="M 190,195 C 185,205 185,215 190,225 C 200,235 210,235 215,225 C 215,215 215,205 210,195" class="cobalt-blue" stroke-width="3"/>
+  <path d="M 190,225 C 185,235 185,245 190,255 C 200,265 210,265 215,255 C 215,245 215,235 210,225" class="cobalt-blue" stroke-width="3"/>
+  <!-- Tail segments -->
+  <path d="M 190,255 C 185,265 185,275 190,285 C 200,295 210,295 215,285 C 215,275 215,265 210,255" class="cobalt-blue" stroke-width="3"/>
+  <!-- Tail fan -->
+  <path d="M 200,290 L 180,305 L 200,310 L 220,305 L 200,290 Z" class="cobalt-blue" stroke-width="2" fill="#1f3f93"/>
+
+  <!-- Claws (raised) -->
+  <!-- Left claw arm -->
+  <path d="M 190,140 C 160,110 130,110 110,140 C 100,150 100,170 110,180 C 120,170 120,150 110,140" class="cobalt-blue" stroke-width="4"/>
+  <!-- Left pincer -->
+  <path d="M 110,140 C 95,130 80,135 75,145" class="cobalt-blue" stroke-width="3"/>
+  <path d="M 110,140 C 95,150 80,145 75,135" class="cobalt-blue" stroke-width="3"/>
+
+  <!-- Right claw arm -->
+  <path d="M 210,140 C 240,110 270,110 290,140 C 300,150 300,170 290,180 C 280,170 280,150 290,140" class="cobalt-blue" stroke-width="4"/>
+  <!-- Right pincer -->
+  <path d="M 290,140 C 305,130 320,135 325,145" class="cobalt-blue" stroke-width="3"/>
+  <path d="M 290,140 C 305,150 320,145 325,135" class="cobalt-blue" stroke-width="3"/>
+
+  <!-- Antennae -->
+  <path d="M 195,115 C 180,90 160,80 140,90" class="cobalt-blue" stroke-width="1.5"/>
+  <path d="M 205,115 C 220,90 240,80 260,90" class="cobalt-blue" stroke-width="1.5"/>
+
+  <!-- Eyes -->
+  <circle cx="190" cy="125" r="2" class="cobalt-blue-fill"/>
+  <circle cx="210" cy="125" r="2" class="cobalt-blue-fill"/>
+
+  <!-- White highlight streaks -->
+  <!-- Plate highlights -->
+  <path d="M 200,55 C 250,55 270,80 270,100" class="white-highlight" stroke-width="2"/>
+  <path d="M 370,200 C 360,180 340,170 320,175" class="white-highlight" stroke-width="2"/>
+  <!-- Lobster shell highlights -->
+  <path d="M 200,125 C 210,130 215,140 210,150" class="white-highlight" stroke-width="2"/>
+  <path d="M 190,135 C 185,145 180,155 185,165" class="white-highlight" stroke-width="2"/>
+  <path d="M 200,210 C 205,215 205,220 200,225" class="white-highlight" stroke-width="1.5"/>
+  <path d="M 120,140 C 115,145 110,150 115,155" class="white-highlight" stroke-width="1.5"/>
+  <path d="M 280,140 C 285,145 290,150 285,155" class="white-highlight" stroke-width="1.5"/>
+</svg></div><div style="position: absolute; left: 196px; top: 120px; width: 740px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Brush Script MT; font-size: 96px; color: #1f3f93; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">You're my</div></div><div style="position: absolute; left: 256px; top: 1380px; width: 620px; height: 140px; transform: rotate(0deg); opacity: 1; font-family: Brush Script MT; font-size: 120px; color: #1f3f93; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">lobster</div></div>
+    </div>
+</body>
+</html>

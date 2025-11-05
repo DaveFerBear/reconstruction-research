@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sleeve -->
+  <path d="M 10 60 L 25 60 L 25 65 L 10 65 Z" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Sleeve Cuff (background) -->
+  <rect x="25" y="55" width="8" height="10" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Cuff Checker Pattern (solid black squares) -->
+  <rect x="27" y="57" width="2" height="2" fill="black" stroke="none"/>
+  <rect x="30" y="57" width="2" height="2" fill="black" stroke="none"/>
+  <rect x="27" y="60" width="2" height="2" fill="black" stroke="none"/>
+  <rect x="30" y="60" width="2" height="2" fill="black" stroke="none"/>
+  <rect x="27" y="63" width="2" height="2" fill="black" stroke="none"/>
+  <rect x="30" y="63" width="2" height="2" fill="black" stroke="none"/>
+
+  <!-- Hand (gripping the stem) -->
+  <path d="M 33 60 C 38 55, 43 50, 48 50 C 50 52, 50 58, 48 60 C 43 65, 38 65, 33 65 Z" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Wine Glass (Bowl and Stem) -->
+  <path d="M 50 60 L 50 30 C 40 20, 40 10, 50 5 C 60 10, 60 20, 50 30 Z" fill="white" stroke="black" stroke-width="2"/>
+
+  <!-- Wine (half-filled, solid black) -->
+  <path d="M 44 20 C 46 18, 54 18, 56 20 L 56 30 L 44 30 Z" fill="black" stroke="none"/>
+</svg>

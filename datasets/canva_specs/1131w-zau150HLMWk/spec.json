@@ -1,0 +1,63 @@
+{
+  "background_color": "#f3f3f0",
+  "has_background_image": true,
+  "background_image_description": "Full-canvas vertical pinstripe pattern on a subtle off-white textured paper. Alternating stripes of very light gray (#ececec) and near-white (#f9f9f7), each ~36 px wide, extend the full height. The surface shows faint watercolor-paper grain and soft shadowing.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Seamless off-white paper with vertical pale-gray pinstripes; gentle fiber/grain texture and very soft lighting variations across the entire canvas.",
+      "filename": "asset-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 1131,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Hand-drawn cobalt-blue (#1f3f93) ink illustration of a large oval serving plate with a double-line border and an inner ring of evenly spaced dots; inside the plate is a sketch of a lobster oriented vertically with raised claws, segmented body and tail, long antennae, and expressive, variable-width brush strokes. The drawing includes a few white highlight streaks suggesting gloss on the plate and shell.",
+      "filename": "svg-1.svg",
+      "x": 171,
+      "y": 260,
+      "width": 789,
+      "height": 1040,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "You're my",
+      "x": 196,
+      "y": 120,
+      "width": 740,
+      "height": 120,
+      "rotation": 0,
+      "font-family": "Brush Script MT",
+      "font-size": 96,
+      "color": "#1f3f93",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "lobster",
+      "x": 256,
+      "y": 1380,
+      "width": 620,
+      "height": 140,
+      "rotation": 0,
+      "font-family": "Brush Script MT",
+      "font-size": 120,
+      "color": "#1f3f93",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

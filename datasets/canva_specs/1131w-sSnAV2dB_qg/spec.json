@@ -1,0 +1,60 @@
+{
+  "background_color": "#f2f2f2",
+  "has_background_image": true,
+  "background_image_description": "Full-canvas photocomposite on a misty white-to-light-gray backdrop (#f7f7f7 to #e6e6e6) with soft cloud-like smudges at the corners. Foreground subject: a stylish man in a gray overcoat and black leather glove, wearing tortoiseshell sunglasses, turned three-quarters left. His silhouette contains a double-exposure of a modern city at sunset: a glowing orange-yellow light source around the chest area (#f5a33b to #ffd266), a skyline with a very tall central tower and darker building silhouettes (#1c1c1c to #3a3a3a), and a road leading toward the city. The right side of the figure and city dissolves into hundreds of flying debris shards and particles ranging from orange (#f7a047) to brown (#7a4a2e) to dark gray/black (#121212), thinning toward the right edge. Bottom area shows darker city blocks and streets fading into shadow.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "AGENT",
+      "x": 186,
+      "y": 120,
+      "width": 760,
+      "height": 200,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 180,
+      "color": "#111111",
+      "text-align": "center",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "A FILM BY NEIL TRAN",
+      "x": 256,
+      "y": 340,
+      "width": 620,
+      "height": 70,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 48,
+      "color": "#111111",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "LARS PEETERS | DREW FEIG | SAMIRA HADID",
+      "x": 146,
+      "y": 410,
+      "width": 840,
+      "height": 56,
+      "rotation": 0,
+      "font-family": "Helvetica",
+      "font-size": 34,
+      "color": "#111111",
+      "text-align": "center",
+      "font-weight": "700",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

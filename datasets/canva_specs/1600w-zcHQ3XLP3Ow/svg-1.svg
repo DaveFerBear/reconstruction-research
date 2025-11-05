@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 350">
+  <defs>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a24480" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2d3e4c" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <filter id="glassFilter" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Subtle blur for the frosted glass effect on the panel's surface -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="frostedSurface"/>
+      <!-- Faint outer drop shadow -->
+      <feDropShadow in="frostedSurface" dx="0" dy="18" stdDeviation="30" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect
+    x="90"
+    y="50"
+    width="400"
+    height="250"
+    rx="38"
+    ry="38"
+    fill="url(#glassGradient)"
+    stroke="#ffffff26"
+    stroke-width="1"
+    filter="url(#glassFilter)"
+  />
+</svg>

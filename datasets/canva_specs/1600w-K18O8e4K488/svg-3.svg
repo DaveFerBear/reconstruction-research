@@ -1,0 +1,9 @@
+<svg viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#ffb24a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="340" cy="340" r="320" stroke="url(#ringGradient)" stroke-width="40" fill="none"/>
+</svg>

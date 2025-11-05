@@ -1,0 +1,11 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blocky offset drop-shadows -->
+  <text x="74" y="124" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">HEADLINE</text>
+  <text x="74" y="209" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">TEXT</text>
+  <text x="74" y="294" fill="#284ACB" font-size="72" font-family="sans-serif" font-weight="bold">EXAMPLE</text>
+
+  <!-- Main headline words -->
+  <text x="50" y="100" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">HEADLINE</text>
+  <text x="50" y="185" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">TEXT</text>
+  <text x="50" y="270" fill="black" font-size="72" font-family="sans-serif" font-weight="bold">EXAMPLE</text>
+</svg>

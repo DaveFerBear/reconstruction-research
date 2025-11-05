@@ -1,0 +1,80 @@
+{
+  "background_color": "#7ea0d6",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Centered white rounded-rectangle card (corner radius ~40px) with no stroke.",
+      "filename": "svg-1.svg",
+      "x": 86,
+      "y": 74,
+      "width": 959,
+      "height": 1452,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Set of playful hand-drawn science doodles arranged around the inner edges of the white card: top-center tilted translucent blue beaker with measurement ticks and bubbles; top-right yellow test tube with beige stopper and pale foam; left side vertical battery split pink upper half with plus sign and orange lower half with minus sign; lower-left beige dropper with pink bulb dispensing a blue droplet; bottom spanning left area safety goggles in light gray with dark blue outline and white reflections; bottom-right cluster of molecule spheres (yellow and light green) connected by red rods with small highlights. All illustrations have dark blue outlines and soft flat fills.",
+      "filename": "asset-1.png",
+      "x": 100,
+      "y": 110,
+      "width": 931,
+      "height": 1310,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "SCIENCE",
+      "x": 150,
+      "y": 520,
+      "width": 831,
+      "height": 190,
+      "rotation": 0,
+      "font-family": "Amatic SC",
+      "font-size": 160,
+      "color": "#e04a59",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "LAB",
+      "x": 150,
+      "y": 760,
+      "width": 831,
+      "height": 200,
+      "rotation": 0,
+      "font-family": "Amatic SC",
+      "font-size": 180,
+      "color": "#e04a59",
+      "text-align": "center",
+      "font-weight": "600",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "2022",
+      "x": 150,
+      "y": 1160,
+      "width": 831,
+      "height": 60,
+      "rotation": 0,
+      "font-family": "Amatic SC",
+      "font-size": 48,
+      "color": "#222222",
+      "text-align": "center",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}
