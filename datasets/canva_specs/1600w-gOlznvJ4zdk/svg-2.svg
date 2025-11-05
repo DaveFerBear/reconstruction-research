@@ -1,14 +1,10 @@
-<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Open-outline heart, 200x240px, tilted 10° clockwise, positioned at right -->
-  <path
-    d="M 100 240 C 100 200, 200 100, 200 60 C 200 20, 160 0, 100 0 C 40 0, 0 20, 0 60 C 0 100, 100 200, 100 240"
-    fill="none"
-    stroke="#FFFFFF"
-    stroke-width="6"
-    transform="translate(250 30) rotate(10 100 120)"
-  />
-  <!-- Three short accent dashes, radiating slightly upward, positioned at left -->
-  <line x1="100" y1="150" x2="70" y2="120" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
-  <line x1="100" y1="150" x2="100" y2="110" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
-  <line x1="100" y1="150" x2="130" y2="120" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heart doodle -->
+  <path d="M 450 270 C 400 230, 350 180, 350 130 C 350 80, 405 30, 450 80 C 495 35, 545 80, 545 130 C 545 180, 500 230, 450 270"
+        fill="none" stroke="#FFFFFF" stroke-width="6" transform="rotate(10 450 150)"/>
+
+  <!-- Accent dashes -->
+  <line x1="100" y1="180" x2="130" y2="160" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="185" x2="140" y2="170" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <line x1="100" y1="190" x2="135" y2="180" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
 </svg>

@@ -1,36 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
-  <defs>
-    <pattern id="polkaDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="5" cy="5" r="2" fill="white"/>
-      <circle cx="15" cy="15" r="2" fill="white"/>
-    </pattern>
-  </defs>
-
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <!-- Step 1 Numeral -->
-  <path d="M 150 100 L 190 105 L 185 250 L 145 245 Z"
-        fill="url(#polkaDots)"
-        stroke="#2B4E43"
-        stroke-width="8"
-        stroke-linejoin="round"/>
+  <g>
+    <path d="M 120 100 C 105 105 95 125 95 145 L 98 275 C 103 290 115 298 125 298 L 135 298 C 145 295 150 280 150 265 L 145 105 C 140 95 125 95 120 100 Z"
+          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="115" cy="160" r="6" fill="#FFFFFF"/>
+    <circle cx="130" cy="190" r="6" fill="#FFFFFF"/>
+    <circle cx="110" cy="220" r="6" fill="#FFFFFF"/>
+    <circle cx="135" cy="250" r="6" fill="#FFFFFF"/>
+    <circle cx="120" cy="120" r="6" fill="#FFFFFF"/>
+  </g>
 
   <!-- Step 2 Numeral -->
-  <path d="M 150 300 C 250 280 270 340 250 380 C 230 420 150 420 150 450 L 270 450 L 270 480 L 150 480 Z"
-        fill="url(#polkaDots)"
-        stroke="#2B4E43"
-        stroke-width="8"
-        stroke-linejoin="round"/>
+  <g>
+    <path d="M 110 370 C 100 350 130 340 150 350 C 170 360 180 380 170 400 C 160 420 130 440 100 460 L 105 480 C 115 490 140 495 160 490 L 180 480 C 190 470 195 450 190 430 L 180 400 C 175 380 160 360 140 350 C 120 340 100 350 90 370 Z"
+          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="130" cy="380" r="6" fill="#FFFFFF"/>
+    <circle cx="160" cy="410" r="6" fill="#FFFFFF"/>
+    <circle cx="120" cy="440" r="6" fill="#FFFFFF"/>
+    <circle cx="150" cy="470" r="6" fill="#FFFFFF"/>
+    <circle cx="105" cy="400" r="6" fill="#FFFFFF"/>
+  </g>
 
   <!-- Step 3 Numeral -->
-  <path d="M 700 100 C 800 80 820 140 800 180 C 780 220 700 220 700 250 C 800 250 820 280 800 320 C 780 360 700 360 700 320 Z"
-        fill="url(#polkaDots)"
-        stroke="#2B4E43"
-        stroke-width="8"
-        stroke-linejoin="round"/>
+  <g>
+    <path d="M 520 100 C 500 105 490 125 490 145 C 490 165 500 185 520 195 C 500 205 490 225 490 245 C 490 265 500 285 520 295 L 530 295 C 540 290 545 275 545 260 C 545 245 540 230 530 220 C 540 210 545 195 545 180 C 545 165 540 150 530 140 C 540 130 545 115 545 100 Z"
+          fill="#A9C7A7" stroke="#2B4E43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="515" cy="130" r="6" fill="#FFFFFF"/>
+    <circle cx="535" cy="160" r="6" fill="#FFFFFF"/>
+    <circle cx="505" cy="190" r="6" fill="#FFFFFF"/>
+    <circle cx="530" cy="220" r="6" fill="#FFFFFF"/>
+    <circle cx="510" cy="250" r="6" fill="#FFFFFF"/>
+    <circle cx="530" cy="105" r="6" fill="#FFFFFF"/>
+    <circle cx="530" cy="285" r="6" fill="#FFFFFF"/>
+  </g>
 
-  <!-- Underline for Step 3 -->
-  <path d="M 320 500 C 420 520 520 480 680 500"
-        fill="none"
-        stroke="#8EA993"
-        stroke-width="25"
-        stroke-linecap="round"/>
+  <!-- Underline for Step 3 paragraph -->
+  <path d="M 480 350 C 520 340 560 360 600 350 C 640 340 680 360 720 350"
+        fill="none" stroke="#8EA993" stroke-width="18" stroke-linecap="round"/>
 </svg>

@@ -268,7 +268,9 @@ def render_image(
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(viewport={'width': canvas_width, 'height': canvas_height})
-        page.set_content(html_content)
+
+        # Load HTML from file URL so relative paths work
+        page.goto(f'file://{html_path.resolve()}')
 
         # Wait for any fonts to load
         page.wait_for_timeout(500)

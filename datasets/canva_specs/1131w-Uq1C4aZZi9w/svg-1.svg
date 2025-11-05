@@ -1,26 +1,20 @@
-<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#1f1f1f" stroke-width="2" fill="transparent">
-    <!-- Main Frame -->
-    <rect x="1" y="1" width="998" height="998"/>
-
-    <!-- Inner Horizontal Divider (creating top band and bottom section) -->
-    <line x1="1" y1="200" x2="999" y2="200"/>
-
-    <!-- Bottom Section Vertical Divider (splitting bottom into two columns) -->
-    <line x1="500" y1="200" x2="500" y2="999"/>
-
-    <!-- Top Band: Left Short Horizontal Rule -->
-    <line x1="100" y1="100" x2="200" y2="100"/>
-
-    <!-- Top Band: Right Short Horizontal Rule -->
-    <line x1="800" y1="100" x2="900" y2="100"/>
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#1f1f1f" stroke-width="2">
+    <!-- Main Frame (outer edge at 0,0, inner edge at 2,2) -->
+    <rect x="1" y="1" width="398" height="298" fill="none"/>
+    <!-- Inner Horizontal Divider (top band height 60px, from inner top edge) -->
+    <line x1="2" y1="62" x2="398" y2="62"/>
+    <!-- Inner Vertical Divider (splits bottom section, from inner horizontal divider to inner bottom edge) -->
+    <line x1="200" y1="62" x2="200" y2="298"/>
+    <!-- Top Band Left Horizontal Rule (aligned with inner left edge) -->
+    <line x1="2" y1="32" x2="119" y2="32"/>
+    <!-- Top Band Right Horizontal Rule (aligned with inner right edge) -->
+    <line x1="279" y1="32" x2="398" y2="32"/>
   </g>
-
-  <!-- Top Band: Centered Color Swatches -->
-  <!-- Swatches are 50x50, with 20 unit spacing, centered vertically at y=75 within the 200-unit high top band -->
-  <rect x="335" y="75" width="50" height="50" fill="#f7d1c3"/>
-  <rect x="405" y="75" width="50" height="50" fill="#f7b2c0"/>
-  <rect x="475" y="75" width="50" height="50" fill="#f38aa3"/>
-  <rect x="545" y="75" width="50" height="50" fill="#e66a84"/>
-  <rect x="615" y="75" width="50" height="50" fill="#b21f3e"/>
+  <!-- Color Swatches (centered vertically in top band, no stroke) -->
+  <rect x="129" y="22" width="20" height="20" fill="#f7d1c3"/>
+  <rect x="159" y="22" width="20" height="20" fill="#f7b2c0"/>
+  <rect x="189" y="22" width="20" height="20" fill="#f38aa3"/>
+  <rect x="219" y="22" width="20" height="20" fill="#e66a84"/>
+  <rect x="249" y="22" width="20" height="20" fill="#b21f3e"/>
 </svg>
