@@ -16,8 +16,7 @@ Research project for deconstructing and reconstructing graphic designs using AI.
 │
 ├── datasets/              # Design datasets
 │   ├── canva/            # Original Canva design images
-│   ├── canva_specs/      # JSON specifications for each design
-│   ├── reconstructions/  # Rendered reconstructions + assets
+│   ├── canva_specs/      # JSON specifications + assets + renders
 │   └── aesthetic_scores/ # Evaluation results (JSON)
 │
 ├── editor/               # Web-based design editor

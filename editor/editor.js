@@ -1,5 +1,4 @@
 const SPECS_DIR = "../datasets/canva_specs";
-const RECONSTRUCTIONS_DIR = "../datasets/reconstructions";
 const CANVA_DIR = "../datasets/canva";
 
 let currentSpec = null;
@@ -146,8 +145,8 @@ function renderSpec(spec, specName) {
     } else if (node.type === "image") {
       imageNodeIdx++;
 
-      // Check if asset exists
-      const assetPath = `${RECONSTRUCTIONS_DIR}/${specName}/asset-${imageNodeIdx}.png`;
+      // Check if asset exists (now in spec directory)
+      const assetPath = `${SPECS_DIR}/${specName}/asset-${imageNodeIdx}.png`;
 
       const style = `
                 position: absolute;
@@ -186,7 +185,7 @@ function renderSpec(spec, specName) {
   // Build background style
   let bgStyle = `background-color: ${spec.background_color};`;
   if (spec.has_background_image) {
-    const bgPath = `${RECONSTRUCTIONS_DIR}/${specName}/background.png`;
+    const bgPath = `${SPECS_DIR}/${specName}/background.png`;
     bgStyle = `background-image: url('${bgPath}'); background-size: cover; background-position: center;`;
   }
 

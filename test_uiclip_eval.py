@@ -8,7 +8,7 @@ from lib.uiclip import score_image
 
 def main():
     canva_dir = Path('datasets/canva')
-    reconstructions_dir = Path('datasets/reconstructions')
+    specs_dir = Path('datasets/canva_specs')
 
     print("Evaluating UI quality scores...")
     print("=" * 80)
@@ -29,8 +29,8 @@ def main():
         original_score = score_image(img_path, description="graphic design")
         print(f"  Original:        {original_score:.4f}")
 
-        # Score reconstruction if it exists
-        reconstruction_path = reconstructions_dir / design_name / "render.png"
+        # Score reconstruction if it exists (now in spec directory)
+        reconstruction_path = specs_dir / design_name / "render.png"
         if reconstruction_path.exists():
             print(f"  Scoring reconstruction...")
             reconstruction_score = score_image(reconstruction_path, description="graphic design")

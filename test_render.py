@@ -14,8 +14,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 specs_dir = Path('datasets/canva_specs')
-output_dir = Path('datasets/reconstructions')
-output_dir.mkdir(parents=True, exist_ok=True)
 
 gen_images = '--gen-images' in sys.argv
 
@@ -208,15 +206,15 @@ async def generate_all_assets():
     for spec_path in specs_dir.glob('*/spec.json'):
         spec_data = json.load(spec_path.open())
         design_name = spec_path.parent.name
-        design_output_dir = output_dir / design_name
-        design_output_dir.mkdir(parents=True, exist_ok=True)
+        # Save assets directly in the spec directory
+        asset_output_dir = spec_path.parent
 
         print(f"Processing {design_name}...")
 
         # Find the original source image
         source_images = list(Path('datasets/canva').glob(f'**/{design_name}.*'))
         if source_images:
-            tasks.append(generate_assets(spec_data, source_images[0], design_output_dir))
+            tasks.append(generate_assets(spec_data, source_images[0], asset_output_dir))
         else:
             print(f"  Warning: No source image found for {design_name}")
 
@@ -229,14 +227,16 @@ def render_all_designs():
     for spec_path in specs_dir.glob('*/spec.json'):
         spec_data = json.load(spec_path.open())
         design_name = spec_path.parent.name
-        design_output_dir = output_dir / design_name
-        output_path = design_output_dir / "render.png"
+        # Save render.png directly in the spec directory
+        output_path = spec_path.parent / "render.png"
 
         print(f"Rendering {design_name}...")
+        # Assets are in the same directory
+        asset_dir = spec_path.parent if gen_images else None
         render_image(spec_data, output_path,
                     canvas_width=spec_data.get('canvas_width', 800),
                     canvas_height=spec_data.get('canvas_height', 600),
-                    asset_dir=design_output_dir if gen_images else None)
+                    asset_dir=asset_dir)
 
 
 if __name__ == '__main__':
@@ -250,7 +250,7 @@ if __name__ == '__main__':
     else:
         # Render single test
         spec_path = Path('datasets/canva_specs/1600w-1HZYAUid2AE/spec.json')
-        output_path = Path('datasets/reconstructions/test_render.png')
+        output_path = spec_path.parent / 'test_render.png'
 
         print(f"Loading spec from: {spec_path}")
         spec_data = json.load(spec_path.open())

@@ -15,7 +15,7 @@ import json
 
 def main():
     canva_dir = Path('datasets/canva')
-    reconstructions_dir = Path('datasets/reconstructions')
+    specs_dir = Path('datasets/canva_specs')
     output_dir = Path('datasets/aesthetic_scores')
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -42,8 +42,8 @@ def main():
         print(f"  Getting expert scores...")
         original_expert_scores, original_expert_texts = get_expert_scores(img_path)
 
-        # Score reconstruction if it exists
-        reconstruction_path = reconstructions_dir / design_name / "render.png"
+        # Score reconstruction if it exists (now in spec directory)
+        reconstruction_path = specs_dir / design_name / "render.png"
         if reconstruction_path.exists():
             print(f"  Scoring reconstruction...")
             reconstruction_score = score_image(reconstruction_path, question="Rate the aesthetics of this graphic design.")
