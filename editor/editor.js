@@ -761,6 +761,14 @@ function showProperties(nodeIdx) {
     )}</textarea>
                 </div>
             </div>
+            <div class="property-group">
+                <h3>SVG Content</h3>
+                <div class="property-row" style="display: block;">
+                    <label>Edit SVG Markup</label>
+                    <textarea id="svg-editor" rows="15" style="font-family: monospace; font-size: 14px; width: 100%; margin-top: 8px;" placeholder="Loading SVG content..."></textarea>
+                    <button id="save-svg-btn" style="margin-top: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">Save SVG</button>
+                </div>
+            </div>
         `;
   } else if (node.type === "image") {
     html += `
@@ -780,6 +788,9 @@ function showProperties(nodeIdx) {
 
   // Add event listeners to update spec on change
   propertiesContent.querySelectorAll("input, select, textarea").forEach((input) => {
+    // Skip the SVG editor textarea - it has its own save button
+    if (input.id === "svg-editor") return;
+
     input.addEventListener("input", (e) => {
       const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
       const prop = e.target.getAttribute("data-prop");
@@ -798,6 +809,71 @@ function showProperties(nodeIdx) {
       renderSpec(currentSpec, currentSpecName);
     });
   });
+
+  // Handle SVG editing
+  if (node.type === "svg" && node.filename) {
+    loadSvgContent(nodeIdx, node.filename);
+  }
+}
+
+async function loadSvgContent(nodeIdx, filename) {
+  const svgEditor = document.getElementById("svg-editor");
+  if (!svgEditor) return;
+
+  try {
+    const response = await fetch(
+      `${API_URL}/api/read-svg?specName=${encodeURIComponent(
+        currentSpecName
+      )}&filename=${encodeURIComponent(filename)}`
+    );
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      svgEditor.value = result.content;
+    } else {
+      svgEditor.value = `<!-- Error loading SVG: ${result.error} -->`;
+    }
+  } catch (error) {
+    svgEditor.value = `<!-- Error loading SVG: ${error.message} -->`;
+  }
+
+  // Add save button handler
+  const saveSvgBtn = document.getElementById("save-svg-btn");
+  if (saveSvgBtn) {
+    saveSvgBtn.onclick = async () => {
+      await saveSvgContent(nodeIdx, filename, svgEditor.value);
+    };
+  }
+}
+
+async function saveSvgContent(nodeIdx, filename, content) {
+  try {
+    const response = await fetch(`${API_URL}/api/save-svg`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        specName: currentSpecName,
+        filename: filename,
+        content: content,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      showToast("✓ SVG saved successfully!");
+
+      // Reload the SVG in the canvas
+      renderSpec(currentSpec, currentSpecName);
+    } else {
+      throw new Error(result.error || "Failed to save SVG");
+    }
+  } catch (error) {
+    showToast("Error saving SVG: " + error.message, true);
+    console.error("Save SVG error:", error);
+  }
 }
 
 function hideProperties() {

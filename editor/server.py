@@ -38,6 +38,58 @@ def save_spec():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Read SVG file
+@app.route('/api/read-svg', methods=['GET'])
+def read_svg():
+    try:
+        spec_name = request.args.get('specName')
+        filename = request.args.get('filename')
+
+        if not spec_name or not filename:
+            return jsonify({'error': 'Missing specName or filename'}), 400
+
+        # Construct the path to the SVG file
+        svg_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / filename
+
+        if not svg_path.exists():
+            return jsonify({'error': 'SVG file not found'}), 404
+
+        # Read the SVG file
+        with open(svg_path, 'r', encoding='utf-8') as f:
+            svg_content = f.read()
+
+        return jsonify({'success': True, 'content': svg_content})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Write SVG file
+@app.route('/api/save-svg', methods=['POST'])
+def save_svg():
+    try:
+        data = request.json
+        spec_name = data.get('specName')
+        filename = data.get('filename')
+        content = data.get('content')
+
+        if not spec_name or not filename or content is None:
+            return jsonify({'error': 'Missing specName, filename, or content'}), 400
+
+        # Construct the path to the SVG file
+        svg_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / filename
+
+        # Ensure the directory exists
+        svg_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write the SVG file
+        with open(svg_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+
+        return jsonify({'success': True, 'path': str(svg_path)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Serve static files from editor directory
 @app.route('/')
 def index():
