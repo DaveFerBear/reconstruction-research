@@ -11,7 +11,7 @@ body {
 }
 
 #sidebar {
-  width: 360px;
+  width: 440px;
   background: #f5f5f5;
   border-right: 1px solid #ddd;
   overflow-y: auto;
@@ -24,7 +24,7 @@ body {
 }
 
 #properties {
-  width: 300px;
+  width: 600px;
   background: #f5f5f5;
   border-left: 1px solid #ddd;
   overflow-y: auto;
@@ -64,16 +64,24 @@ body {
 }
 
 .property-row input,
-.property-row select {
+.property-row select,
+.property-row textarea {
   flex: 1;
   padding: 6px 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 26px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.property-row textarea {
+  resize: vertical;
+  min-height: 80px;
 }
 
 .property-row input:focus,
-.property-row select:focus {
+.property-row select:focus,
+.property-row textarea:focus {
   outline: none;
   border-color: #2196f3;
 }

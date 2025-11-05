@@ -32,14 +32,14 @@ async function loadSpecList() {
 
     const specList = document.getElementById("spec-list");
 
-    for (const dir of links) {
+    links.forEach((dir, index) => {
       const specName = dir.replace("/", "");
       const item = document.createElement("div");
       item.className = "spec-item";
-      item.textContent = specName;
+      item.textContent = `${index + 1}. ${specName}`;
       item.onclick = () => loadSpec(specName);
       specList.appendChild(item);
-    }
+    });
   } catch (error) {
     document.getElementById("error").textContent =
       "Error loading spec list. Please ensure you're running a local server.";
@@ -51,7 +51,7 @@ async function loadSpec(specName) {
   try {
     // Update active state
     document.querySelectorAll(".spec-item").forEach((item) => {
-      item.classList.toggle("active", item.textContent === specName);
+      item.classList.toggle("active", item.textContent.endsWith(specName));
     });
 
     // Load spec JSON
@@ -466,9 +466,9 @@ function showProperties(nodeIdx) {
                 <h3>Text</h3>
                 <div class="property-row">
                     <label>Content</label>
-                    <input type="text" data-prop="text" data-node-idx="${nodeIdx}" value="${escapeHtml(
+                    <textarea data-prop="text" data-node-idx="${nodeIdx}" rows="3">${escapeHtml(
       node.text
-    )}" />
+    )}</textarea>
                 </div>
                 <div class="property-row">
                     <label>Font Family</label>
@@ -642,7 +642,7 @@ function showProperties(nodeIdx) {
   propertiesContent.innerHTML = html;
 
   // Add event listeners to update spec on change
-  propertiesContent.querySelectorAll("input, select").forEach((input) => {
+  propertiesContent.querySelectorAll("input, select, textarea").forEach((input) => {
     input.addEventListener("input", (e) => {
       const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
       const prop = e.target.getAttribute("data-prop");
