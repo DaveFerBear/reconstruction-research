@@ -1,55 +1,23 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .outline {
-        stroke: black;
-        stroke-width: 2;
-        fill: white; /* Default fill for hand/glass, overridden for wine/cuff */
-      }
-      .wine-fill {
-        fill: black;
-        stroke: none;
-      }
-      .cuff-alt {
-        fill: #f0f0f0; /* Light gray for checker pattern */
-      }
-    </style>
-  </defs>
-
-  <!-- Sleeve (background element) -->
-  <path d="M 15 85 L 25 70 L 70 70 L 80 85 Z" class="outline"/>
-
-  <!-- Cuff (square-checker pattern on sleeve) -->
-  <g class="outline">
-    <rect x="25" y="70" width="10" height="10" /> <!-- Default fill: white -->
-    <rect x="35" y="70" width="10" height="10" class="cuff-alt"/>
-    <rect x="45" y="70" width="10" height="10" />
-    <rect x="55" y="70" width="10" height="10" class="cuff-alt"/>
-    <rect x="65" y="70" width="5" height="10" />
-
-    <rect x="25" y="60" width="10" height="10" class="cuff-alt"/>
-    <rect x="35" y="60" width="10" height="10" />
-    <rect x="45" y="60" width="10" height="10" class="cuff-alt"/>
-    <rect x="55" y="60" width="10" height="10" />
-    <rect x="65" y="60" width="5" height="10" class="cuff-alt"/>
-  </g>
-
-  <!-- Wine Glass Base and Stem (drawn before the hand, so hand can overlap stem) -->
-  <g>
-    <!-- Glass Base -->
-    <ellipse cx="50" cy="82" rx="10" ry="3" class="outline"/>
-    <!-- Glass Stem -->
-    <rect x="48" y="60" width="4" height="20" class="outline"/>
-  </g>
-
-  <!-- Hand (gripping the stem, drawn after the stem) -->
-  <path d="M 25 70 C 20 60, 30 50, 40 50 Q 38 45, 45 45 Q 48 50, 48 55 L 48 60 L 52 60 C 55 55, 60 50, 65 55 C 60 60, 50 65, 25 70 Z" class="outline"/>
-
-  <!-- Wine Glass Bowl and Wine (drawn after the hand, as the bowl is above the hand) -->
-  <g>
-    <!-- Glass Bowl -->
-    <path d="M 48 60 C 40 55, 35 45, 35 35 C 35 20, 65 20, 65 35 C 65 45, 60 55, 52 60 Z" class="outline"/>
-    <!-- Wine (half-filled) -->
-    <path d="M 35 40 C 35 45, 40 55, 48 60 L 52 60 C 60 55, 65 45, 65 40 Z" class="wine-fill"/>
-  </g>
+  <!-- Sleeve -->
+  <path d="M 10 65 C 25 60 40 60 45 65 L 45 80 C 40 85 25 85 10 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Cuff -->
+  <path d="M 45 65 L 55 65 L 55 80 L 45 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Square-checker pattern on cuff -->
+  <rect x="45" y="65" width="5" height="7.5" fill="black"/>
+  <rect x="50" y="72.5" width="5" height="7.5" fill="black"/>
+  
+  <!-- Wine Glass Bowl -->
+  <path d="M 60 30 C 70 20 80 20 90 30 L 85 60 C 80 70 70 70 65 60 L 60 30 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Wine Glass Stem -->
+  <path d="M 74 60 L 76 60 L 76 80 L 74 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Solid black wine, half-filled -->
+  <path d="M 65 50 L 85 50 C 80 70 70 70 65 60 Z" fill="black"/>
+  
+  <!-- Hand with curved fingers gripping the stem -->
+  <path d="M 55 65 C 60 60 65 60 70 65 C 72 63 74 63 75 65 L 75 70 C 73 72 70 72 68 70 C 65 75 60 75 58 78 L 55 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
 </svg>

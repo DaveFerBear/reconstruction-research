@@ -1,10 +1,10 @@
 <svg width="380" height="1000" viewBox="0 0 380 1000" xmlns="http://www.w3.org/2000/svg">
   <!-- Tall vertical pill-shaped panel -->
-  <rect x="0" y="0" width="380" height="1000" fill="#6f2dbd" rx="190"/>
+  <rect x="0" y="0" width="380" height="1000" rx="190" ry="190" fill="#6f2dbd"/>
 
   <!-- Thin white horizontal rule -->
-  <line x1="0" y1="110" x2="380" y2="110" stroke="white" stroke-width="2"/>
+  <line x1="20" y1="110" x2="360" y2="110" stroke="white" stroke-width="2"/>
 
-  <!-- Single white wavy line -->
-  <path d="M 0,250 C 95,210 190,290 285,250 S 380,210 380,250" fill="none" stroke="white" stroke-width="3"/>
+  <!-- White wavy line sweeping left-to-right across the upper third -->
+  <path d="M 20 150 C 120 80, 260 220, 360 150" stroke="white" fill="none" stroke-width="4"/>
 </svg>

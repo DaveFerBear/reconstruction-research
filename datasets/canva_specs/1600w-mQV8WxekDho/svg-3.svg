@@ -1,19 +1,19 @@
-<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
   <style>
     .headline-text {
-      font-family: "Arial Black", "Impact", sans-serif;
+      font-family: 'Arial Black', 'Impact', 'Poppins Black', sans-serif;
       font-weight: 900;
-      font-size: 150px;
+      font-size: 120px;
       fill: #F33CAB;
       stroke: #FFD24F;
       stroke-width: 22px;
       stroke-linejoin: round;
       stroke-linecap: round;
       text-anchor: middle;
-      dominant-baseline: central;
     }
   </style>
-  <text x="500" y="180" class="headline-text">DON'T</text>
-  <text x="500" y="300" class="headline-text">MISS</text>
-  <text x="500" y="420" class="headline-text">OUT</text>
+
+  <text x="400" y="160" class="headline-text">DON'T</text>
+  <text x="400" y="260" class="headline-text">MISS</text>
+  <text x="400" y="360" class="headline-text">OUT</text>
 </svg>

@@ -1,28 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460">
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#a24480" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#2d3e4c" stop-opacity="0.35"/>
     </linearGradient>
 
-    <filter id="panelFilter" x="-50%" y="-50%" width="200%" height="200%">
-      <!-- Subtle inner-background blur effect (applied to the panel itself for a frosted look) -->
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blurredPanel"/>
-      <!-- Faint outer drop shadow (applied to the blurred panel) -->
-      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="black" flood-opacity="0.24" in="blurredPanel"/>
+    <filter id="frostedGlassEffect" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Faint outer drop shadow (0, 18, 60, 24% opacity) -->
+      <feDropShadow dx="0" dy="18" stdDeviation="60" flood-color="#000000" flood-opacity="0.24" result="shadow"/>
+      <!-- Subtle inner-background blur effect (applied to the element's own fill for a frosted look) -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blurEffect"/>
+      <!-- Merge shadow and blurred element -->
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="blurEffect"/>
+      </feMerge>
     </filter>
   </defs>
 
   <rect
-    x="110"
-    y="80"
-    width="500"
-    height="300"
+    x="70" y="80"
+    width="380" height="240"
     rx="38"
-    ry="38"
-    fill="url(#panelGradient)"
+    fill="url(#glassGradient)"
     stroke="#ffffff26"
     stroke-width="1"
-    filter="url(#panelFilter)"
+    filter="url(#frostedGlassEffect)"
   />
 </svg>

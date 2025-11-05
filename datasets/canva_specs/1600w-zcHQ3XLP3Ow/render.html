@@ -25,50 +25,48 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 210px; top: 140px; width: 1180px; height: 1300px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460">
+        <div style="position: absolute; left: 210px; top: 140px; width: 1180px; height: 1300px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#a24480" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#2d3e4c" stop-opacity="0.35"/>
     </linearGradient>
 
-    <filter id="panelFilter" x="-50%" y="-50%" width="200%" height="200%">
-      <!-- Subtle inner-background blur effect (applied to the panel itself for a frosted look) -->
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blurredPanel"/>
-      <!-- Faint outer drop shadow (applied to the blurred panel) -->
-      <feDropShadow dx="0" dy="18" stdDeviation="30" flood-color="black" flood-opacity="0.24" in="blurredPanel"/>
+    <filter id="frostedGlassEffect" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- Faint outer drop shadow (0, 18, 60, 24% opacity) -->
+      <feDropShadow dx="0" dy="18" stdDeviation="60" flood-color="#000000" flood-opacity="0.24" result="shadow"/>
+      <!-- Subtle inner-background blur effect (applied to the element's own fill for a frosted look) -->
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blurEffect"/>
+      <!-- Merge shadow and blurred element -->
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="blurEffect"/>
+      </feMerge>
     </filter>
   </defs>
 
   <rect
-    x="110"
-    y="80"
-    width="500"
-    height="300"
+    x="70" y="80"
+    width="380" height="240"
     rx="38"
-    ry="38"
-    fill="url(#panelGradient)"
+    fill="url(#glassGradient)"
     stroke="#ffffff26"
     stroke-width="1"
-    filter="url(#panelFilter)"
+    filter="url(#frostedGlassEffect)"
   />
 </svg></div><div style="position: absolute; left: 300px; top: 210px; width: 300px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 52px; color: #FFFFFF; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">podcast</div></div><div style="position: absolute; left: 1030px; top: 205px; width: 330px; height: 90px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 40px; color: #FFFFFF; text-align: right; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end; "><div style="width: 100%;">The first episode is</div></div><div style="position: absolute; left: 1030px; top: 280px; width: 330px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 40px; color: #FFFFFF; text-align: right; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-end; "><div style="width: 100%;">now live!</div></div><div style="position: absolute; left: 300px; top: 470px; width: 860px; height: 250px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 220px; color: #FFFFFF; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">tech</div></div><div style="position: absolute; left: 300px; top: 720px; width: 860px; height: 250px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 220px; color: #FFFFFF; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">talk</div></div><div style="position: absolute; left: 300px; top: 1000px; width: 700px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 58px; color: #FFFFFF; text-align: left; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">Let's discuss
-technology!</div></div><div style="position: absolute; left: 300px; top: 1290px; width: 320px; height: 40px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 26px; color: #D6D6D9; text-align: left; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">@reallygreatsite</div></div><div style="position: absolute; left: 1126px; top: 1290px; width: 184px; height: 28px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 184 28" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-  <!-- Video Camera Icon -->
-  <g transform="translate(2, 2)">
-    <path d="M2 6h18a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V8a2 2 0 012-2z M22 9h2v6h-2z"/>
+technology!</div></div><div style="position: absolute; left: 300px; top: 1290px; width: 320px; height: 40px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 26px; color: #D6D6D9; text-align: left; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">@reallygreatsite</div></div><div style="position: absolute; left: 1126px; top: 1290px; width: 184px; height: 28px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 184 28" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 0)">
+    <path fill="#FFFFFF" d="M4 8h16v12H4z M20 12h4v4h-4z"/>
   </g>
-  <!-- Chat Bubble Icon -->
-  <g transform="translate(54, 2)">
-    <path d="M2 2h20a2 2 0 012 2v14a2 2 0 01-2 2H6l-4 4V4a2 2 0 012-2z"/>
+  <g transform="translate(52, 0)">
+    <path fill="#FFFFFF" d="M4 4C2.895 4 2 4.895 2 6V20C2 21.105 2.895 22 4 22H18L22 26V22H24C25.105 22 26 21.105 26 20V6C26 4.895 25.105 4 24 4H4Z"/>
   </g>
-  <!-- Heart Glyph Icon -->
-  <g transform="translate(106, 2)">
-    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.43L12 21.35z"/>
+  <g transform="translate(104, 0)">
+    <path fill="#FFFFFF" d="M14 4C8 4 4 8 4 14C4 20 14 26 14 26C14 26 24 20 24 14C24 8 20 4 14 4Z"/>
   </g>
-  <!-- Phone Handset Icon -->
-  <g transform="translate(158, 2)">
-    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+  <g transform="translate(156, 0)">
+    <path fill="#FFFFFF" d="M22 2C20 2 18 4 18 6V10C18 12 20 14 22 14H24C26 14 28 12 28 10V6C28 4 26 2 24 2ZM6 14C4 14 2 16 2 18V22C2 24 4 26 6 26H8C10 26 12 24 12 22V18C12 16 10 14 8 14ZM18 6L10 22"/>
   </g>
 </svg></div>
     </div>

@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
   <defs>
     <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F7D26A" />
-      <stop offset="100%" stop-color="#C8973A" />
+      <stop offset="0%" stop-color="#F7D26A"/>
+      <stop offset="100%" stop-color="#C8973A"/>
     </linearGradient>
   </defs>
 
-  <!-- Deep green wave (backmost) -->
-  <path fill="#005000" d="M 0,250 L 0,200 C 200,100 400,220 600,160 C 800,100 900,180 1000,120 L 1000,250 Z" />
+  <!-- Backmost deep green wave -->
+  <path fill="#0A6A5B" d="M 0 300 C 200 290, 600 220, 1000 250 L 1000 300 Z"/>
 
   <!-- Mid green wave -->
-  <path fill="#3CB371" d="M 0,250 L 0,180 C 200,80 400,200 600,140 C 800,80 900,160 1000,100 L 1000,250 Z" />
+  <path fill="#4CAF50" d="M 0 300 C 200 270, 600 180, 1000 210 L 1000 300 Z"/>
 
-  <!-- Metallic gold wave (frontmost) -->
-  <path fill="url(#goldGradient)" d="M 0,250 L 0,160 C 200,60 400,180 600,120 C 800,60 900,140 1000,80 L 1000,250 Z" />
+  <!-- Metallic gold wave -->
+  <path fill="url(#goldGradient)" d="M 0 300 C 200 230, 600 140, 1000 170 L 1000 300 Z"/>
 </svg>

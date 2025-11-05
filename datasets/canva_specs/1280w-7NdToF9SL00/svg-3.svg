@@ -1,41 +1,50 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#222222" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Turntable Deck -->
-    <rect x="30" y="70" width="140" height="60" rx="10" ry="10"/>
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Turntable Deck -->
+  <rect x="50" y="150" width="400" height="150" rx="15" ry="15"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Feet -->
-    <rect x="45" y="130" width="15" height="10" rx="3" ry="3"/>
-    <rect x="140" y="130" width="15" height="10" rx="3" ry="3"/>
+  <!-- Feet -->
+  <rect x="80" y="300" width="30" height="20" rx="5" ry="5"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="390" y="300" width="30" height="20" rx="5" ry="5"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Knobs (filled) -->
-    <circle cx="55" cy="90" r="4" fill="#222222"/>
-    <circle cx="70" cy="90" r="4" fill="#222222"/>
-    <circle cx="85" cy="90" r="4" fill="#222222"/>
+  <!-- Knobs (solid black with thick black stroke) -->
+  <circle cx="100" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
+  <circle cx="130" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
+  <circle cx="160" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
 
-    <!-- Record -->
-    <circle cx="125" cy="100" r="35"/>
-    <!-- Record Center (filled) -->
-    <circle cx="125" cy="100" r="8" fill="#222222"/>
+  <!-- Record -->
+  <circle cx="220" cy="220" r="60"
+          stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Smiling Face on Record -->
-    <circle cx="118" cy="95" r="2"/> <!-- Left Eye -->
-    <circle cx="132" cy="95" r="2"/> <!-- Right Eye -->
-    <path d="M118 105 Q125 109 132 105"/> <!-- Smile -->
+  <!-- Record Center (solid black with thick black stroke) -->
+  <circle cx="220" cy="220" r="15"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
 
-    <!-- Tonearm and Cartridge -->
-    <rect x="150" y="75" width="10" height="15" rx="3" ry="3"/> <!-- Tonearm Base -->
-    <path d="M155 85 L135 95"/> <!-- Tonearm -->
-    <rect x="130" y="92" width="8" height="6" rx="2" ry="2"/> <!-- Cartridge -->
+  <!-- Smiling Face on Record -->
+  <!-- Eyes (solid black, no stroke as they are small filled dots) -->
+  <circle cx="205" cy="210" r="4" fill="#222222"/>
+  <circle cx="235" cy="210" r="4" fill="#222222"/>
+  <!-- Mouth (thinner stroke for detail) -->
+  <path d="M205 230 Q220 245 235 230"
+        stroke="#222222" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Cheering Hands/Arms -->
-    <!-- Left Arm -->
-    <path d="M60 60 Q50 40 70 30"/>
-    <!-- Left Hand -->
-    <circle cx="70" cy="25" r="8"/>
+  <!-- Tonearm and Cartridge -->
+  <path d="M300 170 C320 180 280 210 260 220"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cartridge (simple rectangle) -->
+  <rect x="250" y="210" width="20" height="15" rx="3" ry="3"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Right Arm -->
-    <path d="M140 60 Q150 40 130 30"/>
-    <!-- Right Hand -->
-    <circle cx="130" cy="25" r="8"/>
-  </g>
+  <!-- Cheering Hands/Arms -->
+  <!-- Left Arm/Hand -->
+  <path d="M150 150 L130 100 Q140 70 170 60 Q200 50 210 80 L190 120"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right Arm/Hand -->
+  <path d="M350 150 L370 100 Q360 70 330 60 Q300 50 290 80 L310 120"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

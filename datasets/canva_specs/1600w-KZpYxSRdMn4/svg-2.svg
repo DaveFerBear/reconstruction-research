@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <rect x="50" y="50" width="520" height="120" rx="60" fill="#0B5D3C" transform="rotate(-5 310 110)"/>
-  <rect x="100" y="200" width="620" height="120" rx="60" fill="#0B5D3C" transform="rotate(-5 410 260)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
+  <g transform="rotate(-5 385 175)">
+    <!-- Top pill: approx 520x120px, near upper-left -->
+    <rect x="50" y="50" width="520" height="120" rx="60" ry="60" fill="#0B5D3C"/>
+    <!-- Bottom pill: approx 620x120px, offset lower-right -->
+    <rect x="100" y="180" width="620" height="120" rx="60" ry="60" fill="#0B5D3C"/>
+  </g>
 </svg>

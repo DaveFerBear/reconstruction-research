@@ -1,37 +1,8 @@
-<svg viewBox="0 0 200 150">
-  <defs>
-    <!-- Define one irregular, hand-drawn spike path -->
-    <path id="starburst-spike" d="M 0 0 L 10 3 L 20 -2 L 30 5"
-          stroke="black" stroke-width="6" fill="none"
-          stroke-linecap="round" stroke-linejoin="round"/>
-  </defs>
-
-  <!-- First hand-drawn black starburst with eight irregular spikes -->
-  <g transform="translate(50, 75)">
-    <use href="#starburst-spike" transform="rotate(0)"/>
-    <use href="#starburst-spike" transform="rotate(45)"/>
-    <use href="#starburst-spike" transform="rotate(90)"/>
-    <use href="#starburst-spike" transform="rotate(135)"/>
-    <use href="#starburst-spike" transform="rotate(180)"/>
-    <use href="#starburst-spike" transform="rotate(225)"/>
-    <use href="#starburst-spike" transform="rotate(270)"/>
-    <use href="#starburst-spike" transform="rotate(315)"/>
-  </g>
-
-  <!-- Mirrored counterpart on the upper-right -->
-  <!-- The scale(-0.6, 0.6) transforms it:
-       - Scales it down to 60% of its original size.
-       - Flips it horizontally (due to -0.6 in x-scale), creating the "mirrored" effect for each spike.
-       - The translate(150, 40) positions the center of this transformed starburst.
-  -->
-  <g transform="translate(150, 40) scale(-0.6, 0.6)">
-    <use href="#starburst-spike" transform="rotate(0)"/>
-    <use href="#starburst-spike" transform="rotate(45)"/>
-    <use href="#starburst-spike" transform="rotate(90)"/>
-    <use href="#starburst-spike" transform="rotate(135)"/>
-    <use href="#starburst-spike" transform="rotate(180)"/>
-    <use href="#starburst-spike" transform="rotate(225)"/>
-    <use href="#starburst-spike" transform="rotate(270)"/>
-    <use href="#starburst-spike" transform="rotate(315)"/>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- First hand-drawn starburst (positioned in lower-left quadrant) -->
+    <path d="M 30 70 Q 34 66 38 62 M 30 70 Q 36 70 42 70 M 30 70 Q 32 74 35 79 M 30 70 Q 29 76 28 82 M 30 70 Q 25 72 20 75 M 30 70 Q 24 69 18 68 M 30 70 Q 28 65 25 60 M 30 70 Q 31 64 32 58"/>
+    <!-- Mirrored counterpart (positioned in upper-right quadrant) -->
+    <path d="M 70 30 Q 66 34 62 38 M 70 30 Q 64 30 58 30 M 70 30 Q 68 26 65 21 M 70 30 Q 71 24 72 18 M 70 30 Q 75 28 80 25 M 70 30 Q 76 31 82 32 M 70 30 Q 72 35 75 40 M 70 30 Q 69 36 68 42"/>
   </g>
 </svg>

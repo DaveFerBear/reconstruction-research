@@ -26,142 +26,92 @@
 <body>
     <div id="canvas">
         <div style="position: absolute; left: 120px; top: 200px; width: 110px; height: 110px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 40 25 L 32 28 L 38 40 L 28 35 L 25 42 L 20 35 L 12 38 L 18 28 L 8 25 L 18 20 L 10 12 L 20 15 L 25 7 L 30 15 L 37 10 L 34 20 Z"
-        fill="none"
-        stroke="black"
-        stroke-width="5"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-</svg></div><div style="position: absolute; left: 1048px; top: 200px; width: 110px; height: 110px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 200 150">
-  <defs>
-    <!-- Define one irregular, hand-drawn spike path -->
-    <path id="starburst-spike" d="M 0 0 L 10 3 L 20 -2 L 30 5"
-          stroke="black" stroke-width="6" fill="none"
-          stroke-linecap="round" stroke-linejoin="round"/>
-  </defs>
-
-  <!-- First hand-drawn black starburst with eight irregular spikes -->
-  <g transform="translate(50, 75)">
-    <use href="#starburst-spike" transform="rotate(0)"/>
-    <use href="#starburst-spike" transform="rotate(45)"/>
-    <use href="#starburst-spike" transform="rotate(90)"/>
-    <use href="#starburst-spike" transform="rotate(135)"/>
-    <use href="#starburst-spike" transform="rotate(180)"/>
-    <use href="#starburst-spike" transform="rotate(225)"/>
-    <use href="#starburst-spike" transform="rotate(270)"/>
-    <use href="#starburst-spike" transform="rotate(315)"/>
+  <path
+    d="M 43 25 L 29.5 27 L 37 37.5 L 27 30.5 L 25.5 44 L 23 28.5 L 13.5 36.5 L 20 27 L 7 25 L 19.5 22.5 L 13 13 L 23 20 L 25 6 L 26.5 21 L 36.5 13.5 L 29.5 23 Z"
+    fill="none"
+    stroke="black"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg></div><div style="position: absolute; left: 1048px; top: 200px; width: 110px; height: 110px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- First hand-drawn starburst (positioned in lower-left quadrant) -->
+    <path d="M 30 70 Q 34 66 38 62 M 30 70 Q 36 70 42 70 M 30 70 Q 32 74 35 79 M 30 70 Q 29 76 28 82 M 30 70 Q 25 72 20 75 M 30 70 Q 24 69 18 68 M 30 70 Q 28 65 25 60 M 30 70 Q 31 64 32 58"/>
+    <!-- Mirrored counterpart (positioned in upper-right quadrant) -->
+    <path d="M 70 30 Q 66 34 62 38 M 70 30 Q 64 30 58 30 M 70 30 Q 68 26 65 21 M 70 30 Q 71 24 72 18 M 70 30 Q 75 28 80 25 M 70 30 Q 76 31 82 32 M 70 30 Q 72 35 75 40 M 70 30 Q 69 36 68 42"/>
   </g>
+</svg></div><div style="position: absolute; left: 710px; top: 630px; width: 440px; height: 340px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Turntable Deck -->
+  <rect x="50" y="150" width="400" height="150" rx="15" ry="15"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Mirrored counterpart on the upper-right -->
-  <!-- The scale(-0.6, 0.6) transforms it:
-       - Scales it down to 60% of its original size.
-       - Flips it horizontally (due to -0.6 in x-scale), creating the "mirrored" effect for each spike.
-       - The translate(150, 40) positions the center of this transformed starburst.
-  -->
-  <g transform="translate(150, 40) scale(-0.6, 0.6)">
-    <use href="#starburst-spike" transform="rotate(0)"/>
-    <use href="#starburst-spike" transform="rotate(45)"/>
-    <use href="#starburst-spike" transform="rotate(90)"/>
-    <use href="#starburst-spike" transform="rotate(135)"/>
-    <use href="#starburst-spike" transform="rotate(180)"/>
-    <use href="#starburst-spike" transform="rotate(225)"/>
-    <use href="#starburst-spike" transform="rotate(270)"/>
-    <use href="#starburst-spike" transform="rotate(315)"/>
-  </g>
-</svg></div><div style="position: absolute; left: 710px; top: 630px; width: 440px; height: 340px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#222222" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Turntable Deck -->
-    <rect x="30" y="70" width="140" height="60" rx="10" ry="10"/>
+  <!-- Feet -->
+  <rect x="80" y="300" width="30" height="20" rx="5" ry="5"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="390" y="300" width="30" height="20" rx="5" ry="5"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Feet -->
-    <rect x="45" y="130" width="15" height="10" rx="3" ry="3"/>
-    <rect x="140" y="130" width="15" height="10" rx="3" ry="3"/>
+  <!-- Knobs (solid black with thick black stroke) -->
+  <circle cx="100" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
+  <circle cx="130" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
+  <circle cx="160" cy="270" r="10"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
 
-    <!-- Knobs (filled) -->
-    <circle cx="55" cy="90" r="4" fill="#222222"/>
-    <circle cx="70" cy="90" r="4" fill="#222222"/>
-    <circle cx="85" cy="90" r="4" fill="#222222"/>
+  <!-- Record -->
+  <circle cx="220" cy="220" r="60"
+          stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Record -->
-    <circle cx="125" cy="100" r="35"/>
-    <!-- Record Center (filled) -->
-    <circle cx="125" cy="100" r="8" fill="#222222"/>
+  <!-- Record Center (solid black with thick black stroke) -->
+  <circle cx="220" cy="220" r="15"
+          stroke="#222222" stroke-width="8" fill="#222222"/>
 
-    <!-- Smiling Face on Record -->
-    <circle cx="118" cy="95" r="2"/> <!-- Left Eye -->
-    <circle cx="132" cy="95" r="2"/> <!-- Right Eye -->
-    <path d="M118 105 Q125 109 132 105"/> <!-- Smile -->
+  <!-- Smiling Face on Record -->
+  <!-- Eyes (solid black, no stroke as they are small filled dots) -->
+  <circle cx="205" cy="210" r="4" fill="#222222"/>
+  <circle cx="235" cy="210" r="4" fill="#222222"/>
+  <!-- Mouth (thinner stroke for detail) -->
+  <path d="M205 230 Q220 245 235 230"
+        stroke="#222222" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Tonearm and Cartridge -->
-    <rect x="150" y="75" width="10" height="15" rx="3" ry="3"/> <!-- Tonearm Base -->
-    <path d="M155 85 L135 95"/> <!-- Tonearm -->
-    <rect x="130" y="92" width="8" height="6" rx="2" ry="2"/> <!-- Cartridge -->
+  <!-- Tonearm and Cartridge -->
+  <path d="M300 170 C320 180 280 210 260 220"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cartridge (simple rectangle) -->
+  <rect x="250" y="210" width="20" height="15" rx="3" ry="3"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <!-- Cheering Hands/Arms -->
-    <!-- Left Arm -->
-    <path d="M60 60 Q50 40 70 30"/>
-    <!-- Left Hand -->
-    <circle cx="70" cy="25" r="8"/>
-
-    <!-- Right Arm -->
-    <path d="M140 60 Q150 40 130 30"/>
-    <!-- Right Hand -->
-    <circle cx="130" cy="25" r="8"/>
-  </g>
+  <!-- Cheering Hands/Arms -->
+  <!-- Left Arm/Hand -->
+  <path d="M150 150 L130 100 Q140 70 170 60 Q200 50 210 80 L190 120"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right Arm/Hand -->
+  <path d="M350 150 L370 100 Q360 70 330 60 Q300 50 290 80 L310 120"
+        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></div><div style="position: absolute; left: 160px; top: 980px; width: 390px; height: 260px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .outline {
-        stroke: black;
-        stroke-width: 2;
-        fill: white; /* Default fill for hand/glass, overridden for wine/cuff */
-      }
-      .wine-fill {
-        fill: black;
-        stroke: none;
-      }
-      .cuff-alt {
-        fill: #f0f0f0; /* Light gray for checker pattern */
-      }
-    </style>
-  </defs>
-
-  <!-- Sleeve (background element) -->
-  <path d="M 15 85 L 25 70 L 70 70 L 80 85 Z" class="outline"/>
-
-  <!-- Cuff (square-checker pattern on sleeve) -->
-  <g class="outline">
-    <rect x="25" y="70" width="10" height="10" /> <!-- Default fill: white -->
-    <rect x="35" y="70" width="10" height="10" class="cuff-alt"/>
-    <rect x="45" y="70" width="10" height="10" />
-    <rect x="55" y="70" width="10" height="10" class="cuff-alt"/>
-    <rect x="65" y="70" width="5" height="10" />
-
-    <rect x="25" y="60" width="10" height="10" class="cuff-alt"/>
-    <rect x="35" y="60" width="10" height="10" />
-    <rect x="45" y="60" width="10" height="10" class="cuff-alt"/>
-    <rect x="55" y="60" width="10" height="10" />
-    <rect x="65" y="60" width="5" height="10" class="cuff-alt"/>
-  </g>
-
-  <!-- Wine Glass Base and Stem (drawn before the hand, so hand can overlap stem) -->
-  <g>
-    <!-- Glass Base -->
-    <ellipse cx="50" cy="82" rx="10" ry="3" class="outline"/>
-    <!-- Glass Stem -->
-    <rect x="48" y="60" width="4" height="20" class="outline"/>
-  </g>
-
-  <!-- Hand (gripping the stem, drawn after the stem) -->
-  <path d="M 25 70 C 20 60, 30 50, 40 50 Q 38 45, 45 45 Q 48 50, 48 55 L 48 60 L 52 60 C 55 55, 60 50, 65 55 C 60 60, 50 65, 25 70 Z" class="outline"/>
-
-  <!-- Wine Glass Bowl and Wine (drawn after the hand, as the bowl is above the hand) -->
-  <g>
-    <!-- Glass Bowl -->
-    <path d="M 48 60 C 40 55, 35 45, 35 35 C 35 20, 65 20, 65 35 C 65 45, 60 55, 52 60 Z" class="outline"/>
-    <!-- Wine (half-filled) -->
-    <path d="M 35 40 C 35 45, 40 55, 48 60 L 52 60 C 60 55, 65 45, 65 40 Z" class="wine-fill"/>
-  </g>
+  <!-- Sleeve -->
+  <path d="M 10 65 C 25 60 40 60 45 65 L 45 80 C 40 85 25 85 10 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Cuff -->
+  <path d="M 45 65 L 55 65 L 55 80 L 45 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Square-checker pattern on cuff -->
+  <rect x="45" y="65" width="5" height="7.5" fill="black"/>
+  <rect x="50" y="72.5" width="5" height="7.5" fill="black"/>
+  
+  <!-- Wine Glass Bowl -->
+  <path d="M 60 30 C 70 20 80 20 90 30 L 85 60 C 80 70 70 70 65 60 L 60 30 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Wine Glass Stem -->
+  <path d="M 74 60 L 76 60 L 76 80 L 74 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Solid black wine, half-filled -->
+  <path d="M 65 50 L 85 50 C 80 70 70 70 65 60 Z" fill="black"/>
+  
+  <!-- Hand with curved fingers gripping the stem -->
+  <path d="M 55 65 C 60 60 65 60 70 65 C 72 63 74 63 75 65 L 75 70 C 73 72 70 72 68 70 C 65 75 60 75 58 78 L 55 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
 </svg></div><div style="position: absolute; left: 0px; top: 120px; width: 1280px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Caveat; font-size: 52px; color: #222222; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Cafe Rimberio</div></div><div style="position: absolute; left: 0px; top: 260px; width: 1280px; height: 330px; transform: rotate(0deg); opacity: 1; font-family: Permanent Marker; font-size: 120px; color: #222222; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">MUSIC
 AND WINE
 PARTY</div></div><div style="position: absolute; left: 140px; top: 560px; width: 420px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Permanent Marker; font-size: 72px; color: #222222; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">STARTS AT

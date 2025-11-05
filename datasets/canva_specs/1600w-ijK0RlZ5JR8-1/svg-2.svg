@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-  <path d="M4 16h10v-2l6 4-6 4v-2H4z"/>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="16" width="8" height="4" fill="currentColor"/>
+  <polygon points="14 16 18 18 14 20" fill="currentColor"/>
 </svg>

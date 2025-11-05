@@ -2,44 +2,35 @@
   <rect x="0" y="0" width="100" height="100" fill="#f5efdc"/>
   <defs>
     <!--
-      Path for a single ray:
-      - Starts at an inner-left point (P_IL)
-      - Curves to an outer-left point (P_OL) using a Quadratic Bezier (Q) with control point (C_L)
-      - Arcs along the outer edge to an outer-right point (P_OR) using an Arc (A)
-      - Curves back to an inner-right point (P_IR) using a Quadratic Bezier (Q) with control point (C_R)
-      - Closes the path (Z)
-      
-      Calculated points for a ray centered at 90 degrees (pointing upwards):
-      R_inner = 10, R_outer = 70, R_control = 40
-      Ray angular width = 15 degrees
-      Control point angular offset = 2 degrees (for slight curve/twist)
-      
-      P_IL: (51.305, 59.914)  (50 + 10*cos(82.5), 50 + 10*sin(82.5))
-      P_IR: (48.695, 59.914)  (50 + 10*cos(97.5), 50 + 10*sin(97.5))
-      P_OL: (59.135, 119.398) (50 + 70*cos(82.5), 50 + 70*sin(82.5))
-      P_OR: (40.865, 119.398) (50 + 70*cos(97.5), 50 + 70*sin(97.5))
-      C_L:  (56.600, 89.452)  (50 + 40*cos(80.5), 50 + 40*sin(80.5))
-      C_R:  (43.400, 89.452)  (50 + 40*cos(99.5), 50 + 40*sin(99.5))
-      Arc flags: rx=70, ry=70, x-axis-rotation=0, large-arc-flag=0 (angle < 180), sweep-flag=0 (counter-clockwise)
+      Defines a single ray shape:
+      - Starts at the origin (0,0), which will be the center of rotation.
+      - Moves to an inner point (20,5).
+      - Draws a line to an outer point (100,15).
+      - Creates a quadratic bezier curve (Q) to another outer point (100,-15),
+        using (110,0) as the control point to create an outward curve.
+      - Draws a line to an inner point (20,-5).
+      - Closes the path back to the origin (0,0).
     -->
-    <path id="ray" d="M 51.305 59.914 Q 56.600 89.452 59.135 119.398 A 70 70 0 0 0 40.865 119.398 Q 43.400 89.452 48.695 59.914 Z"/>
+    <path id="retro-ray" d="M 0 0 L 20 5 L 100 15 Q 110 0 100 -15 L 20 -5 Z"/>
   </defs>
 
-  <!-- Create 16 rays, alternating colors, rotated around the center (50,50) -->
-  <use href="#ray" fill="#3a8f8c" transform="rotate(0 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(22.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(45 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(67.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(90 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(112.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(135 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(157.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(180 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(202.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(225 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(247.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(270 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(292.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(315 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(337.5 50 50)"/>
+  <!--
+    Each ray uses the defined path and applies a transform:
+    - scale(1 0.7): Squashes the ray vertically to create an oval perspective.
+    - rotate(angle): Rotates the ray around its origin (0,0).
+    - translate(50 50): Moves the ray's origin to the center of the viewBox (50,50).
+    The transforms are applied in order: scale, then rotate, then translate.
+  -->
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(0) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(30) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(60) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(90) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(120) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(150) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(180) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(210) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(240) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(270) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(300) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(330) scale(1 0.7)"/>
 </svg>

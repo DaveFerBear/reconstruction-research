@@ -1,11 +1,15 @@
-<svg viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
-  <!-- Blocky offset drop-shadows (dark-blue, shifted 24px down-right) -->
-  <text x="20" y="60" fill="#284ACB" transform="translate(24 24)" font-family="Impact, sans-serif" font-size="60">BLOCKY</text>
-  <text x="20" y="130" fill="#284ACB" transform="translate(24 24)" font-family="Impact, sans-serif" font-size="60">SHADOW</text>
-  <text x="20" y="200" fill="#284ACB" transform="translate(24 24)" font-family="Impact, sans-serif" font-size="60">EFFECT</text>
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blocky offset drop-shadows -->
+  <g fill="#284ACB" transform="translate(24 24)" font-family="sans-serif" font-size="48" font-weight="bold">
+    <text x="20" y="60">HEADLINE</text>
+    <text x="20" y="110">WORDS</text>
+    <text x="20" y="160">HERE</text>
+  </g>
 
-  <!-- Headline words (white, on top for contrast) -->
-  <text x="20" y="60" fill="white" font-family="Impact, sans-serif" font-size="60">BLOCKY</text>
-  <text x="20" y="130" fill="white" font-family="Impact, sans-serif" font-size="60">SHADOW</text>
-  <text x="20" y="200" fill="white" font-family="Impact, sans-serif" font-size="60">EFFECT</text>
+  <!-- Headline words (on top) -->
+  <g fill="white" font-family="sans-serif" font-size="48" font-weight="bold">
+    <text x="20" y="60">HEADLINE</text>
+    <text x="20" y="110">WORDS</text>
+    <text x="20" y="160">HERE</text>
+  </g>
 </svg>

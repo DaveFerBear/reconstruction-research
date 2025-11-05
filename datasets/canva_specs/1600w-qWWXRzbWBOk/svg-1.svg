@@ -1,17 +1,29 @@
 <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Single thin, translucent white elliptical stroke, tilted 15 degrees counterclockwise -->
-  <ellipse cx="200" cy="100" rx="180" ry="80" fill="none" stroke="white" stroke-width="2" stroke-opacity="0.4" transform="rotate(-15 200 100)" />
-
-  <!-- Sparkle star definition -->
   <defs>
-    <path id="sparkle" fill="white" d="M0,-5 L1,-2 L5,0 L2,1 L0,5 L-1,2 L-5,0 L-2,-1 Z" />
+    <symbol id="sparkle" viewBox="-5 -5 10 10">
+      <path d="M 0 -5 L 1 -1 L 5 0 L 1 1 L 0 5 L -1 1 L -5 0 L -1 -1 Z" />
+    </symbol>
   </defs>
 
-  <!-- Three small four-point sparkle stars -->
-  <!-- One above-left of the first line (assuming text starts around 50, 70) -->
-  <use href="#sparkle" x="40" y="60" transform="scale(0.8)" />
-  <!-- One small sparkle just below-right of the ellipse center -->
-  <use href="#sparkle" x="220" y="120" transform="scale(0.6)" />
-  <!-- One larger sparkle below-right near the end of the second line (assuming text ends around 350, 130) -->
-  <use href="#sparkle" x="360" y="140" transform="scale(1.0)" />
+  <!-- Placeholder Text (adjust content, position, and color as needed) -->
+  <text x="50" y="80" font-family="sans-serif" font-size="24" fill="white">Your First Line Here</text>
+  <text x="50" y="120" font-family="sans-serif" font-size="24" fill="white">Your Second Line Here</text>
+
+  <!-- Single thin, translucent white elliptical stroke -->
+  <ellipse
+    cx="200" cy="100" rx="150" ry="70"
+    fill="none"
+    stroke="white"
+    stroke-width="1.5"
+    opacity="0.5"
+    transform="rotate(-15 200 100)"
+  />
+
+  <!-- Three small four-point sparkle stars in solid white -->
+  <!-- Sparkle 1: above-left of the first line -->
+  <use href="#sparkle" transform="translate(30 60) scale(0.8)" fill="white" />
+  <!-- Sparkle 2: small, just below-right of the ellipse center -->
+  <use href="#sparkle" transform="translate(220 120) scale(0.6)" fill="white" />
+  <!-- Sparkle 3: larger, below-right near the end of the second line -->
+  <use href="#sparkle" transform="translate(270 140) scale(1.2)" fill="white" />
 </svg>

@@ -1,9 +1,13 @@
-<svg width="680" height="680" viewBox="0 0 680 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
   <defs>
-    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ff7a00"/>
       <stop offset="100%" stop-color="#ffb24a"/>
     </linearGradient>
   </defs>
-  <circle cx="340" cy="340" r="320" stroke="url(#ringGradient)" stroke-width="40"/>
+  <path
+    d="M 680,340 A 340,340 0 1 1 0,340 A 340,340 0 1 1 680,340 Z M 640,340 A 300,300 0 1 0 40,340 A 300,300 0 1 0 640,340 Z"
+    fill="url(#gradient)"
+    fill-rule="evenodd"
+  />
 </svg>

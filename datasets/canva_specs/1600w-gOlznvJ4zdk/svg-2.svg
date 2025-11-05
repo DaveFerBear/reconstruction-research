@@ -1,25 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <style>
-      .doodle-stroke {
-        stroke: #FFFFFF;
-        stroke-width: 6px;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 310">
+  <g stroke="#FFFFFF" stroke-width="6" fill="none">
+    <!-- Open-outline heart, ~200x240px, tilted 10° clockwise -->
+    <path d="M 250 20 C 330 20 350 100 350 140 C 350 180 250 260 250 260 C 250 260 150 180 150 140 C 150 100 170 20 250 20 Z"
+          transform="rotate(10 250 140)" stroke-linejoin="round"/>
 
-  <!-- Open-outline heart doodle (approx 200x250px, tilted 10° clockwise) -->
-  <g transform="translate(650, 200) rotate(10) scale(5)">
-    <path class="doodle-stroke" d="M -20 -5 C -20 -15, -10 -25, 0 -25 C 10 -25, 20 -15, 20 -5 C 20 5, 0 15, 0 25 C 0 15, -20 5, -20 -5"/>
-  </g>
-
-  <!-- Three short accent dashes doodle (each ~30-50px, radiating slightly upward) -->
-  <g transform="translate(150, 250)">
-    <line class="doodle-stroke" x1="0" y1="0" x2="-20" y2="-30"/>
-    <line class="doodle-stroke" x1="20" y1="0" x2="20" y2="-40"/>
-    <line class="doodle-stroke" x1="40" y1="0" x2="60" y2="-30"/>
+    <!-- Three short accent dashes, radiating slightly upward -->
+    <line x1="50" y1="120" x2="80" y2="110" stroke-linecap="round"/>
+    <line x1="50" y1="140" x2="80" y2="130" stroke-linecap="round"/>
+    <line x1="50" y1="160" x2="80" y2="150" stroke-linecap="round"/>
   </g>
 </svg>

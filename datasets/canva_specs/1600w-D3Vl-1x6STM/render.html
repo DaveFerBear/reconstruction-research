@@ -29,59 +29,102 @@
   <rect x="0" y="0" width="100" height="100" fill="#f5efdc"/>
   <defs>
     <!--
-      Path for a single ray:
-      - Starts at an inner-left point (P_IL)
-      - Curves to an outer-left point (P_OL) using a Quadratic Bezier (Q) with control point (C_L)
-      - Arcs along the outer edge to an outer-right point (P_OR) using an Arc (A)
-      - Curves back to an inner-right point (P_IR) using a Quadratic Bezier (Q) with control point (C_R)
-      - Closes the path (Z)
-      
-      Calculated points for a ray centered at 90 degrees (pointing upwards):
-      R_inner = 10, R_outer = 70, R_control = 40
-      Ray angular width = 15 degrees
-      Control point angular offset = 2 degrees (for slight curve/twist)
-      
-      P_IL: (51.305, 59.914)  (50 + 10*cos(82.5), 50 + 10*sin(82.5))
-      P_IR: (48.695, 59.914)  (50 + 10*cos(97.5), 50 + 10*sin(97.5))
-      P_OL: (59.135, 119.398) (50 + 70*cos(82.5), 50 + 70*sin(82.5))
-      P_OR: (40.865, 119.398) (50 + 70*cos(97.5), 50 + 70*sin(97.5))
-      C_L:  (56.600, 89.452)  (50 + 40*cos(80.5), 50 + 40*sin(80.5))
-      C_R:  (43.400, 89.452)  (50 + 40*cos(99.5), 50 + 40*sin(99.5))
-      Arc flags: rx=70, ry=70, x-axis-rotation=0, large-arc-flag=0 (angle < 180), sweep-flag=0 (counter-clockwise)
+      Defines a single ray shape:
+      - Starts at the origin (0,0), which will be the center of rotation.
+      - Moves to an inner point (20,5).
+      - Draws a line to an outer point (100,15).
+      - Creates a quadratic bezier curve (Q) to another outer point (100,-15),
+        using (110,0) as the control point to create an outward curve.
+      - Draws a line to an inner point (20,-5).
+      - Closes the path back to the origin (0,0).
     -->
-    <path id="ray" d="M 51.305 59.914 Q 56.600 89.452 59.135 119.398 A 70 70 0 0 0 40.865 119.398 Q 43.400 89.452 48.695 59.914 Z"/>
+    <path id="retro-ray" d="M 0 0 L 20 5 L 100 15 Q 110 0 100 -15 L 20 -5 Z"/>
   </defs>
 
-  <!-- Create 16 rays, alternating colors, rotated around the center (50,50) -->
-  <use href="#ray" fill="#3a8f8c" transform="rotate(0 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(22.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(45 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(67.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(90 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(112.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(135 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(157.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(180 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(202.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(225 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(247.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(270 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(292.5 50 50)"/>
-  <use href="#ray" fill="#3a8f8c" transform="rotate(315 50 50)"/>
-  <use href="#ray" fill="#c95646" transform="rotate(337.5 50 50)"/>
-</svg></div><div style="position: absolute; left: 120px; top: 80px; width: 1360px; height: 970px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Large central white ellipse panel with thick black outline -->
-  <ellipse cx="100" cy="100" rx="60" ry="40" fill="white" stroke="#1f1f1f" stroke-width="2"/>
-  
-  <!-- Exaggerated heavier shadowed stroke along the lower-left edge -->
-  <!-- This is achieved by drawing a thicker arc segment -->
-  <path d="M 100 140 A 60 40 0 0 1 40 100" fill="none" stroke="#1f1f1f" stroke-width="6"/>
+  <!--
+    Each ray uses the defined path and applies a transform:
+    - scale(1 0.7): Squashes the ray vertically to create an oval perspective.
+    - rotate(angle): Rotates the ray around its origin (0,0).
+    - translate(50 50): Moves the ray's origin to the center of the viewBox (50,50).
+    The transforms are applied in order: scale, then rotate, then translate.
+  -->
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(0) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(30) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(60) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(90) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(120) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(150) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(180) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(210) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(240) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(270) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#3a8f8c" transform="translate(50 50) rotate(300) scale(1 0.7)"/>
+  <use href="#retro-ray" fill="#c95646" transform="translate(50 50) rotate(330) scale(1 0.7)"/>
+</svg></div><div style="position: absolute; left: 120px; top: 80px; width: 1360px; height: 970px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Filter for the exaggerated heavier shadowed stroke on the ellipse -->
+    <filter id="ellipse-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <!-- dx and dy negative/positive for lower-left offset, stdDeviation for blur/heaviness -->
+      <feDropShadow dx="-10" dy="10" stdDeviation="8" flood-color="#1f1f1f" />
+    </filter>
 
-  <!-- Decorative elements -->
-  <!-- Lightning Bolt 1: Top-right, leaning slightly right -->
-  <g transform="translate(140, 50) rotate(15)">
-    <!-- Offset shadow -->
-    <path d="M 0 0 L 10 20 L 5 20 L 15 40 L 10 40 L 20 60 L 15 60 L 25 80 L 20 80 L 30 100 L 25 100 L 35 120 L 30 120 L 40 140 L 35 140 L 45 160 L 40 160 L 50 180 L 45 180 L 55 200 L 50 200 L 60 220 L 55 220 L 65 240 L 60 240 L 70 260 L 65 260 L 75 280 L 70 280 L 80 300 L 75 300 L 85 320 L 80 320 L 90 340 L 85 340 L 95 360 L 90 360 L 100 380 L 95 380 L 105 400 L 100 400 L 110 420 L 105 420 L 115 440 L 110 440 L 120 460 L 115 460 L 125 480 L 120 480 L 130 500 L 125 500 L 135 520 L 130 520 L 140 540 L 135 540 L 145 560 L 140 560 L 150 580 L 145 580 L 155 600 L 150 600 L 160 620 L 155 620 L 165 640 L 160 640 L 170 660 L 165 660 L 175 680 L 170 680 L 180 700 L 175 700 L 185 720 L 180 720 L 190 740 L 185 740 L 195 760 L 190 760 L 200 780 L 195 780 L 205 800 L 200 800 L 210 820 L 205 820 L 215 840 L 210 840 L 220 860 L 215 860 L 225 880 L 220 880 L 230 900 L 225 900 L 235 920 L 230 920 L 240 940 L 235 940 L 245 960 L 240 960 L 250 980 L 245 980 L 255 1000 L 250 1000 L 260 1020 L 255 1020 L 265 1040 L 260 1040 L 270 1060 L 265 1060 L 275 1080 L 270 1080 L 280 1100 L 275 1100 L 285 1120 L 280 1120 L 290 1140 L 285 1140 L 295 1160 L 290 1160 L 300 1180 L 295 1180 L 305 1200 L 300 1200 L 310 1220 L 305 1220 L 315 1240 L 310 1240 L 320 1260 L 315 1260 L 325 1280 L 320 1280 L 330 1300 L 325 1300 L 335 1320 L 330 1320 L 340 1340 L 335 1340 L 345 1360 L 340 1360 L 350 1380 L 345 1380 L 355 1400 L 350 1400 L 360 1420 L 355 1420 L 365 1440 L 360 1440 L 370 1460 L 365 1460 L 375 1480 L 370 1480 L 380 1500 L 375 1500 L 385 1520 L 380 1520 L 390 1540 L 385 1540 L 395 1560 L 390 1560 L 400 1580 L 395 1580 L 405 1600 L 400 1600 L 410 1620 L 405 1620 L 415 1640 L 410 1640 L 420 1660 L 415 1660 L 425 1680 L 420 1680 L 430 1700 L 425 1700 L 435 1720 L 430 1720 L 440 1740 L 435 1740 L 445 1760 L 440 1760 L 450 1780 L 445 1780 L 455 1800 L 450 1800 L 460 1820 L 455 1820 L 465 1840 L 460 1840 L 470 1860 L 465 1860 L 475 1880 L 470 1880 L 480 1900 L 475 1900 L 485 1920 L 480 1920 L 490 1940 L 485 1940 L 495 1960 L 490 1960 L 500 1980 L 495 1980 L 505 2000 L 500 2000 L 510 2020 L 505 2020 L 515 2040 L 510 2040 L 520 2060 L 515 2060 L 525 2080 L 520 2080 L 530 2100 L 525 2100 L 535 2120 L 530 2120 L 540 2140 L 535 2140 L 545 2160 L 540 2160 L 550 2180 L 545 2180 L 555 2200 L 550 2200 L 560 2220 L 555 2220 L 565 2240 L 560 2240 L 570 2260 L 565 2260 L 575 2280 L 570 2280 L 580 2300 L 575 2300 L 585 2320 L 580 2320 L 590 2340 L 585 2340 L 595 2360 L 590 2360 L 600 2380 L 595 2380 L 605 2400 L 600 2400 L 610 2420 L 605 2420 L 615 2440 L 610 2440 L 620 2460 L 615 2460 L 625 2480 L 620 2480 L 630 2500 L 625 2500 L 635 2520 L 630 2520 L 640</div><div style="position: absolute; left: 170px; top: 190px; width: 1260px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 38px; color: #2f7f7a; text-align: center; font-weight: 700; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Larana, Inc.</div></div><div style="position: absolute; left: 170px; top: 300px; width: 1260px; height: 110px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 84px; color: #c95646; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">28.09.2028</div></div><div style="position: absolute; left: 170px; top: 410px; width: 1260px; height: 220px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 160px; color: #2f7f7a; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">COMING SOON</div></div><div style="position: absolute; left: 170px; top: 620px; width: 1260px; height: 140px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 110px; color: #c95646; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">-STAY TUNED-</div></div><div style="position: absolute; left: 170px; top: 740px; width: 1260px; height: 80px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 54px; color: #2f7f7a; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">www.reallygreatsite.com</div></div>
+    <!-- Path for a lightning bolt (base shape) -->
+    <path id="lightning-bolt-shape" d="M 0 0 L 15 30 L 5 30 L 20 60 L 10 60 L 25 90"
+          stroke-linejoin="miter" stroke-linecap="round"/>
+
+    <!-- Path for a four-point diamond starburst (base shape) -->
+    <path id="starburst-shape" d="M 0 -20 L 20 0 L 0 20 L -20 0 Z"
+          stroke-linejoin="miter" stroke-linecap="round"/>
+  </defs>
+
+  <!-- Large central white ellipse panel with thick black outline and exaggerated heavier shadowed stroke -->
+  <ellipse cx="400" cy="300" rx="250" ry="150"
+           fill="white"
+           stroke="#1f1f1f"
+           stroke-width="5"
+           filter="url(#ellipse-shadow)" />
+
+  <!-- Decorative Elements -->
+
+  <!-- Lightning Bolt 1 (Top-right, leaning slightly right) -->
+  <!-- Shadow (brick red, offset slightly) -->
+  <use href="#lightning-bolt-shape"
+       fill="#c95646"
+       transform="translate(550, 150) rotate(10) translate(3, 3)" />
+  <!-- Main Bolt (white with black outline) -->
+  <use href="#lightning-bolt-shape"
+       fill="white"
+       stroke="#1f1f1f"
+       stroke-width="2"
+       transform="translate(550, 150) rotate(10)" />
+
+  <!-- Lightning Bolt 2 (Bottom-left, leaning slightly left) -->
+  <!-- Shadow (brick red, offset slightly) -->
+  <use href="#lightning-bolt-shape"
+       fill="#c95646"
+       transform="translate(200, 400) rotate(-10) translate(3, 3)" />
+  <!-- Main Bolt (white with black outline) -->
+  <use href="#lightning-bolt-shape"
+       fill="white"
+       stroke="#1f1f1f"
+       stroke-width="2"
+       transform="translate(200, 400) rotate(-10)" />
+
+  <!-- Starburst 1 (Upper-left, partly tucked into the ellipse) -->
+  <use href="#starburst-shape"
+       fill="#E74C3C" <!-- A distinct red for starbursts -->
+       stroke="#1f1f1f"
+       stroke-width="2"
+       transform="translate(250, 180)" />
+
+  <!-- Starburst 2 (Lower-right edge) -->
+  <use href="#starburst-shape"
+       fill="#E74C3C"
+       stroke="#1f1f1f"
+       stroke-width="2"
+       transform="translate(580, 420)" />
+
+</svg></div><div style="position: absolute; left: 170px; top: 190px; width: 1260px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 38px; color: #2f7f7a; text-align: center; font-weight: 700; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Larana, Inc.</div></div><div style="position: absolute; left: 170px; top: 300px; width: 1260px; height: 110px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 84px; color: #c95646; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">28.09.2028</div></div><div style="position: absolute; left: 170px; top: 410px; width: 1260px; height: 220px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 160px; color: #2f7f7a; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">COMING SOON</div></div><div style="position: absolute; left: 170px; top: 620px; width: 1260px; height: 140px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 110px; color: #c95646; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">-STAY TUNED-</div></div><div style="position: absolute; left: 170px; top: 740px; width: 1260px; height: 80px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 54px; color: #2f7f7a; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">www.reallygreatsite.com</div></div>
     </div>
 </body>
 </html>

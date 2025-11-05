@@ -1,10 +1,9 @@
-<svg viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 650">
   <defs>
-    <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
       <feOffset dx="0" dy="20"/>
-      <feGaussianBlur stdDeviation="20"/>
-      <feFlood flood-color="black" flood-opacity="0.12"/>
-      <feComposite in2="SourceAlpha" operator="in"/>
+      <feGaussianBlur stdDeviation="30"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
       <feMerge>
         <feMergeNode/>
         <feMergeNode in="SourceGraphic"/>
@@ -12,9 +11,12 @@
     </filter>
   </defs>
 
-  <rect x="50" y="50" width="400" height="500" rx="36" fill="#ffffff" filter="url(#soft-shadow)"/>
+  <!-- White rounded-rectangle dialog card -->
+  <rect x="90" y="90" width="400" height="450" rx="34" fill="#ffffff" filter="url(#shadow)"/>
 
-  <line x1="50" y1="410" x2="450" y2="410" stroke="#edd6d6" stroke-width="1"/>
+  <!-- Thin horizontal divider line -->
+  <line x1="90" y1="450" x2="490" y2="450" stroke="#edd6d6" stroke-width="1"/>
 
-  <line x1="250" y1="410" x2="250" y2="550" stroke="#edd6d6" stroke-width="1"/>
+  <!-- Thin vertical divider line -->
+  <line x1="290" y1="450" x2="290" y2="540" stroke="#edd6d6" stroke-width="1"/>
 </svg>

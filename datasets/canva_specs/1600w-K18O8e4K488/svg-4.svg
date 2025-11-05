@@ -1,12 +1,12 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+    <radialGradient id="circleGradient" cx="30%" cy="30%" r="70%" fx="30%" fy="30%">
       <stop offset="0%" stop-color="#ffb24a"/>
       <stop offset="100%" stop-color="#ff7a00"/>
     </radialGradient>
-    <filter id="circleShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.2"/>
     </filter>
   </defs>
-  <circle cx="50" cy="50" r="40" fill="url(#circleGradient)" filter="url(#circleShadow)"/>
+  <circle cx="50" cy="50" r="40" fill="url(#circleGradient)" filter="url(#dropShadow)"/>
 </svg>

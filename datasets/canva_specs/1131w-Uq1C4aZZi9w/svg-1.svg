@@ -1,24 +1,25 @@
-<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#1f1f1f" stroke-width="2" fill="none">
+<svg viewBox="0 0 100 75" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#1f1f1f" stroke-width="1" fill="none">
     <!-- Main Frame -->
-    <rect x="0" y="0" width="300" height="200"/>
+    <rect x="0" y="0" width="100" height="75"/>
 
-    <!-- Inner Horizontal Divider (creating top band of 40px height) -->
-    <line x1="0" y1="40" x2="300" y2="40"/>
+    <!-- Inner Horizontal Divider (creating top band of height 15) -->
+    <line x1="0" y1="15" x2="100" y2="15"/>
 
-    <!-- Inner Vertical Divider (splitting bottom section from y=40 to y=200) -->
-    <line x1="150" y1="40" x2="150" y2="200"/>
+    <!-- Bottom Section Vertical Divider (centered horizontally) -->
+    <line x1="50" y1="15" x2="50" y2="75"/>
 
-    <!-- Top Band: Left short horizontal rule -->
-    <line x1="10" y1="20" x2="30" y2="20"/>
-    <!-- Top Band: Right short horizontal rule -->
-    <line x1="270" y1="20" x2="290" y2="20"/>
+    <!-- Top Band Content -->
+    <!-- Color Swatches (centered vertically at y=3.5, each 8x8, with 2 unit gap) -->
+    <!-- Total swatch block width: 5*8 + 4*2 = 48. Centered: (100-48)/2 = 26 -->
+    <rect x="26" y="3.5" width="8" height="8" fill="#f7d1c3" stroke="none"/>
+    <rect x="36" y="3.5" width="8" height="8" fill="#f7b2c0" stroke="none"/>
+    <rect x="46" y="3.5" width="8" height="8" fill="#f38aa3" stroke="none"/>
+    <rect x="56" y="3.5" width="8" height="8" fill="#e66a84" stroke="none"/>
+    <rect x="66" y="3.5" width="8" height="8" fill="#b21f3e" stroke="none"/>
+
+    <!-- Two Short Horizontal Rules (aligned with the vertical center of swatches, y=7.5) -->
+    <line x1="10" y1="7.5" x2="20" y2="7.5"/>
+    <line x1="80" y1="7.5" x2="90" y2="7.5"/>
   </g>
-
-  <!-- Top Band: Five small color swatches -->
-  <rect x="102.5" y="12.5" width="15" height="15" fill="#f7d1c3"/>
-  <rect x="122.5" y="12.5" width="15" height="15" fill="#f7b2c0"/>
-  <rect x="142.5" y="12.5" width="15" height="15" fill="#f38aa3"/>
-  <rect x="162.5" y="12.5" width="15" height="15" fill="#e66a84"/>
-  <rect x="182.5" y="12.5" width="15" height="15" fill="#b21f3e"/>
 </svg>
