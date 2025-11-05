@@ -1,0 +1,110 @@
+{
+  "background_color": "#0b72b5",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Large white speech bubble: a solid white rectangular panel with sharp corners and a triangular tail pointing downward at the lower-left area (tail base centered around the panel's lower third).",
+      "filename": null,
+      "x": 90,
+      "y": 100,
+      "width": 1400,
+      "height": 945,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Three black lightning-bolt symbols (zigzag shapes) indicating sound: one large bolt angled slightly right, flanked by two smaller bolts.",
+      "filename": null,
+      "x": 1110,
+      "y": 210,
+      "width": 230,
+      "height": 210,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "Solid yellow rectangle banner behind 'NEWS', slightly rotated clockwise.",
+      "filename": null,
+      "x": 180,
+      "y": 80,
+      "width": 520,
+      "height": 200,
+      "rotation": 6
+    },
+    {
+      "type": "svg",
+      "svg_description": "Solid red rectangle banner behind 'UPDATE', slightly rotated counter-clockwise and overlapping the yellow banner.",
+      "filename": null,
+      "x": 150,
+      "y": 260,
+      "width": 680,
+      "height": 200,
+      "rotation": -6
+    },
+    {
+      "type": "text",
+      "text": "NEWS",
+      "x": 205,
+      "y": 100,
+      "width": 480,
+      "height": 170,
+      "rotation": 6,
+      "font-family": "Impact",
+      "font-size": 170,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "UPDATE",
+      "x": 178,
+      "y": 278,
+      "width": 620,
+      "height": 170,
+      "rotation": -6,
+      "font-family": "Impact",
+      "font-size": 170,
+      "color": "#ffffff",
+      "text-align": "left",
+      "font-weight": "900",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "See our update on our earlier story.",
+      "x": 210,
+      "y": 620,
+      "width": 980,
+      "height": 250,
+      "rotation": 0,
+      "font-family": "Arial",
+      "font-size": 84,
+      "color": "#000000",
+      "text-align": "left",
+      "font-weight": "400",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "Vector illustration of a hand holding a loudspeaker. The megaphone body is red (#d32f2f) with a yellow (#ffc107) rim and handle, a small red circular back cap, and a gray cone interior edge; the hand is light gray (#e6e6e6) with a black cuff and two black buttons, attached to a yellow sleeve. The megaphone points up-left, overlapping the white panel's bottom-right corner.",
+      "filename": null,
+      "x": 1115,
+      "y": 895,
+      "width": 420,
+      "height": 330,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}

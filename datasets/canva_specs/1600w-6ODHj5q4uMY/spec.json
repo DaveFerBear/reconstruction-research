@@ -1,0 +1,36 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": true,
+  "background_image_description": "Full-bleed photographic backdrop: soft-focus green-yellow bokeh foliage filling the upper ~70% with bright highlights toward the top-right and deeper green toward the lower-right; bottom ~30% is a warm brown wooden plank tabletop in perspective with visible grain, seams between boards, and subtle specular highlights.",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Dark brown decorative quote-and-line frame: at top-left, a pair of solid opening quotation marks (rounded teardrop shapes) followed by a short horizontal line extending right; directly below, a thin vertical line drops down forming a left bracket. At bottom-right, a mirrored thin vertical line rises up forming a right bracket with a short horizontal line extending left terminating in a pair of solid closing quotation marks. All strokes/marks share the same color (#4a372d) with rounded ends; stroke thickness of lines ~8–10 px.",
+      "filename": null,
+      "x": 220,
+      "y": 470,
+      "width": 1160,
+      "height": 420,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "LET HIM THAT WOULD MOVE THE\nWORLD FIRST MOVE HIMSELF.",
+      "x": 360,
+      "y": 560,
+      "width": 960,
+      "height": 180,
+      "rotation": 0,
+      "font-family": "Trebuchet MS",
+      "font-size": 64,
+      "color": "#4a372d",
+      "text-align": "left",
+      "font-weight": "normal",
+      "font-style": "italic",
+      "text-decoration": "none",
+      "text-transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}
