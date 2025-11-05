@@ -98,6 +98,50 @@ def save_svg():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Create new SVG file
+@app.route('/api/create-svg', methods=['POST'])
+def create_svg():
+    try:
+        data = request.json
+        spec_name = data.get('specName')
+
+        if not spec_name:
+            return jsonify({'error': 'Missing specName'}), 400
+
+        # Get existing SVG files to determine next index
+        spec_dir = BASE_DIR / 'datasets' / 'specs' / spec_name
+        spec_dir.mkdir(parents=True, exist_ok=True)
+
+        # Find next available SVG number
+        existing_svgs = list(spec_dir.glob('svg-*.svg'))
+        if existing_svgs:
+            indices = []
+            for svg in existing_svgs:
+                try:
+                    idx = int(svg.stem.split('-')[1])
+                    indices.append(idx)
+                except:
+                    pass
+            next_idx = max(indices) + 1 if indices else 1
+        else:
+            next_idx = 1
+
+        # Create default SVG content
+        default_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#3498db" rx="10"/>
+  <text x="50" y="55" font-size="24" fill="white" text-anchor="middle" font-family="Arial">SVG</text>
+</svg>'''
+
+        # Save with next available filename
+        filename = f'svg-{next_idx}.svg'
+        file_path = spec_dir / filename
+        file_path.write_text(default_svg, encoding='utf-8')
+
+        return jsonify({'success': True, 'filename': filename, 'path': str(file_path)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Upload image file
 @app.route('/api/upload-image', methods=['POST'])
 def upload_image():

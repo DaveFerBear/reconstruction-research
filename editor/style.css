@@ -283,6 +283,14 @@ body {
   cursor: not-allowed;
 }
 
+#add-svg-btn {
+  background: #4caf50;
+}
+
+#add-svg-btn:hover:not(:disabled) {
+  background: #45a049;
+}
+
 /* Toast notifications */
 .toast {
   position: fixed;

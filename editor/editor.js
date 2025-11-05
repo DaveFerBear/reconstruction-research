@@ -103,6 +103,7 @@ async function loadSpec(specName) {
     hasChanges = false;
     document.getElementById("save-btn").disabled = true;
     document.getElementById("copy-btn").disabled = false;
+    document.getElementById("add-svg-btn").disabled = false;
 
     // Update URL without reloading page
     const newUrl = `${window.location.pathname}?design=${encodeURIComponent(specName)}`;
@@ -612,6 +613,59 @@ async function uploadAndAddImage(file, x, y) {
   } catch (error) {
     showToast("Error adding image: " + error.message, true);
     console.error("Upload error:", error);
+  }
+}
+
+async function addNewSVG() {
+  if (!currentSpec || !currentSpecName) return;
+
+  try {
+    // Call API to create SVG file
+    const response = await fetch(`${API_URL}/api/create-svg`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        specName: currentSpecName,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to create SVG");
+    }
+
+    // Add new SVG node to spec (default position: center of canvas)
+    const canvasWidth = currentSpec.canvas_width || 800;
+    const canvasHeight = currentSpec.canvas_height || 600;
+
+    const newNode = {
+      type: "svg",
+      svg_description: "Default blue square with SVG text",
+      filename: result.filename,
+      x: Math.round(canvasWidth / 2 - 50),
+      y: Math.round(canvasHeight / 2 - 50),
+      width: 100,
+      height: 100,
+      rotation: 0,
+      opacity: 1,
+    };
+
+    currentSpec.nodes.push(newNode);
+
+    // Save the updated spec
+    hasChanges = true;
+    await saveSpec();
+
+    // Re-render to show the new SVG
+    renderSpec(currentSpec, currentSpecName);
+
+    showToast("✓ SVG added successfully!");
+  } catch (error) {
+    showToast("Error adding SVG: " + error.message, true);
+    console.error("Add SVG error:", error);
   }
 }
 
@@ -1193,6 +1247,7 @@ function loadFromUrl() {
 }
 
 // Initialize
+document.getElementById("add-svg-btn").addEventListener("click", addNewSVG);
 document.getElementById("copy-btn").addEventListener("click", copySpec);
 document.getElementById("save-btn").addEventListener("click", saveSpec);
 loadSpecList().then(() => {
