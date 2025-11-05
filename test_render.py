@@ -219,17 +219,27 @@ async def kontext_edit_async(prompt: str, image_url: str, session: aiohttp.Clien
 async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: Path):
     """Generate image assets from the spec using kontext model (async)."""
 
-    # Clean out old assets before regenerating
+    # Reset all filename fields in spec to null
+    for node in spec_data.get('nodes', []):
+        if 'filename' in node:
+            node['filename'] = None
+
+    # Save spec with null filenames before cleanup
+    spec_path = output_dir / "spec.json"
+    with spec_path.open('w', encoding='utf-8') as f:
+        json.dump(spec_data, f, ensure_ascii=False, indent=2)
+    print(f"  ✓ Reset filenames in spec.json")
+
+    # Clean out old generated files before regenerating
     if output_dir.exists():
         import shutil
         for item in output_dir.iterdir():
-            if item.name in ['asset-', 'svg-', 'background.', 'render.']:
-                # Only delete generated files, keep spec.json
-                if item.name.startswith('asset-') or item.name.startswith('svg-') or \
-                   item.name.startswith('background.') or item.name.startswith('render.'):
-                    if item.is_file():
-                        item.unlink()
-                        print(f"  Deleted old: {item.name}")
+            # Delete all generated files, keep only spec.json and source images
+            if item.name.startswith('asset-') or item.name.startswith('svg-') or \
+               item.name.startswith('background.') or item.name.startswith('render.'):
+                if item.is_file():
+                    item.unlink()
+                    print(f"  Deleted old: {item.name}")
 
     print(f"  Converting source image from {source_image_path.name}...")
     source_url = _to_data_url(source_image_path)
