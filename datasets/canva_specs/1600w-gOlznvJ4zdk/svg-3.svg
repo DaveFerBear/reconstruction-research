@@ -1,3 +1,33 @@
-<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="200" height="100" rx="24" ry="24" fill="#FFFFFF" />
+<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Hand-drawn heart shape, roughly 10x10 units, centered around (5,5) -->
+    <path id="heart" d="M 5 0 C 5 -2.5 2.5 -5 0 -2.5 C -2.5 0 -2.5 2.5 0 5 L 5 10 L 10 5 C 12.5 2.5 12.5 0 10 -2.5 C 7.5 -5 5 -2.5 5 0 Z"
+          stroke="#2f4f46" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  </defs>
+
+  <!-- Jar Lid/Top Fill (warm yellow-orange) -->
+  <path d="M 30 15 C 35 10 65 10 70 15 L 70 25 C 65 20 35 20 30 25 Z" fill="#f7c56d"/>
+
+  <!-- Jar Body Fill (white) -->
+  <path d="M 30 25 C 25 30 25 40 30 45 L 30 130 C 30 145 70 145 70 130 L 70 45 C 75 40 75 30 70 25 Z" fill="#ffffff"/>
+
+  <!-- Jar Outline (thick dark green) -->
+  <path d="M 30 15 C 25 10 75 10 70 15 L 70 25 C 75 30 75 40 70 45 L 70 130 C 70 145 30 145 30 130 L 30 45 C 25 40 25 30 30 25 Z"
+        fill="none" stroke="#2f4f46" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Subtle interior dark-green accent lines -->
+  <!-- Stacked rim lines -->
+  <path d="M 35 35 L 65 35 M 35 38 L 65 38 M 35 41 L 65 41"
+        fill="none" stroke="#2f4f46" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round"/>
+  <!-- Short squiggle near the base -->
+  <path d="M 35 120 Q 45 115 50 120 T 65 120"
+        fill="none" stroke="#2f4f46" stroke-width="1" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Doodle hearts inside the jar, arranged diagonally -->
+  <!-- Two red hearts -->
+  <use href="#heart" x="35" y="60" fill="#d24b40"/>
+  <use href="#heart" x="55" y="95" fill="#d24b40"/>
+  <!-- Two golden hearts -->
+  <use href="#heart" x="35" y="90" fill="#f0b562"/>
+  <use href="#heart" x="55" y="65" fill="#f0b562"/>
 </svg>

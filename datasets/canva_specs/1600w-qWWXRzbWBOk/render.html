@@ -25,35 +25,46 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 360px; top: 460px; width: 880px; height: 560px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+        <div style="position: absolute; left: 420px; top: 520px; width: 760px; height: 380px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <ellipse
+    cx="450"
+    cy="250"
+    rx="380"
+    ry="190"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="2"
+    stroke-opacity="0.45"
+    transform="rotate(12 450 250)" />
+</svg></div><div style="position: absolute; left: 200px; top: 590px; width: 1200px; height: 200px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 150px; color: #ffffff; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Every day is</div></div><div style="position: absolute; left: 200px; top: 760px; width: 1200px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 130px; color: #ffffff; text-align: center; font-weight: 400; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">a new chance</div></div><div style="position: absolute; left: 520px; top: 460px; width: 560px; height: 520px; transform: rotate(0deg); opacity: 1; "><svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="sparkle" viewBox="-5 -5 10 10">
-      <path d="M 0 -5 L 1 -1 L 5 0 L 1 1 L 0 5 L -1 1 L -5 0 L -1 -1 Z" />
-    </symbol>
+    <!--
+      Path for a 1x1 rounded diamond star, centered at (0.5, 0.5).
+      This shape represents a "diamond cross with rounded points" in a clean, minimal way.
+      It's a square rotated 45 degrees with rounded corners.
+      The quadratic Bezier curves (Q) create the rounded points.
+    -->
+    <path id="starPath" fill-rule="evenodd" clip-rule="evenodd" d="M0.5 0 Q0.875 0.125 1 0.5 Q0.875 0.875 0.5 1 Q0.125 0.875 0 0.5 Q0.125 0.125 0.5 0Z"/>
   </defs>
 
-  <!-- Placeholder Text (adjust content, position, and color as needed) -->
-  <text x="50" y="80" font-family="sans-serif" font-size="24" fill="white">Your First Line Here</text>
-  <text x="50" y="120" font-family="sans-serif" font-size="24" fill="white">Your Second Line Here</text>
+  <!-- Large star: ~34x34px, positioned above-left of a conceptual text block area (e.g., 100,100 to 300,200) -->
+  <!-- Placed at (56, 56) within the 400x400 viewBox. -->
+  <g transform="translate(56 56) scale(34)">
+    <use href="#starPath" fill="#ffffff"/>
+  </g>
 
-  <!-- Single thin, translucent white elliptical stroke -->
-  <ellipse
-    cx="200" cy="100" rx="150" ry="70"
-    fill="none"
-    stroke="white"
-    stroke-width="1.5"
-    opacity="0.5"
-    transform="rotate(-15 200 100)"
-  />
+  <!-- Small star 1: ~22x22px, positioned lower-right of the conceptual text block -->
+  <!-- Placed at (310, 210) within the 400x400 viewBox. -->
+  <g transform="translate(310 210) scale(22)">
+    <use href="#starPath" fill="#ffffff"/>
+  </g>
 
-  <!-- Three small four-point sparkle stars in solid white -->
-  <!-- Sparkle 1: above-left of the first line -->
-  <use href="#sparkle" transform="translate(30 60) scale(0.8)" fill="white" />
-  <!-- Sparkle 2: small, just below-right of the ellipse center -->
-  <use href="#sparkle" transform="translate(220 120) scale(0.6)" fill="white" />
-  <!-- Sparkle 3: larger, below-right near the end of the second line -->
-  <use href="#sparkle" transform="translate(270 140) scale(1.2)" fill="white" />
-</svg></div><div style="position: absolute; left: 0px; top: 620px; width: 1600px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 150px; color: #FFFFFF; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Every day is</div></div><div style="position: absolute; left: 0px; top: 800px; width: 1600px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Georgia; font-size: 120px; color: #FFFFFF; text-align: center; font-weight: 400; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">a new chance</div></div>
+  <!-- Small star 2: ~16x16px, positioned lower-right of the conceptual text block, ~60px below Small star 1 -->
+  <!-- Placed at (310, 292) within the 400x400 viewBox (210 + 22px_height_of_star1 + 60px_spacing = 292). -->
+  <g transform="translate(310 292) scale(16)">
+    <use href="#starPath" fill="#ffffff"/>
+  </g>
+</svg></div>
     </div>
 </body>
 </html>

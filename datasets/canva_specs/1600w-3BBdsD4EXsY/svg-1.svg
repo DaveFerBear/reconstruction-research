@@ -1,32 +1,26 @@
-<svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Terracotta color for easel parts -->
-  <defs>
-    <style>
-      .terracotta { fill: #c95f3b; }
-      .pale-pink { fill: #efb0a6; }
-      .background-color { fill: #f7dcb8; }
-    </style>
-  </defs>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sign Panel (blush-pink rounded rectangle, sits behind the easel) -->
+  <rect x="30" y="30" width="40" height="40" rx="5" ry="5" fill="#F3BBB1"/>
 
-  <!-- Easel Legs (behind the board) -->
-  <rect x="30" y="30" width="8" height="60" rx="4" transform="rotate(-5 34 90)" class="terracotta"/>
-  <rect x="62" y="30" width="8" height="60" rx="4" transform="rotate(5 66 90)" class="terracotta"/>
+  <!-- Easel Elements (terracotta-orange) -->
+  <g fill="#C95E3E">
+    <!-- Central Vertical Post -->
+    <rect x="47" y="10" width="6" height="70" rx="2" ry="2"/>
 
-  <!-- Easel Center Support (behind the board) -->
-  <rect x="48" y="10" width="4" height="70" class="terracotta"/>
+    <!-- Top Shelf -->
+    <rect x="40" y="25" width="20" height="4" rx="1" ry="1"/>
 
-  <!-- Pale Pink Poster/Board (main canvas) -->
-  <rect x="25" y="15" width="50" height="60" class="pale-pink"/>
+    <!-- Bottom Shelf -->
+    <rect x="35" y="60" width="30" height="4" rx="1" ry="1"/>
 
-  <!-- Horizontal Shelf Bar (in front of the board) -->
-  <rect x="23" y="73" width="54" height="4" rx="2" class="terracotta"/>
+    <!-- Triangular Head with Circular Cut-out -->
+    <!-- The path combines the outer triangle and inner circle using fill-rule="evenodd" for the cut-out -->
+    <path d="M 45 10 L 55 10 L 50 0 Z M 50 3 A 2 2 0 1 0 50 7 A 2 2 0 1 0 50 3 Z" fill-rule="evenodd"/>
 
-  <!-- Horizontal Top Clamp Bar (in front of the board) -->
-  <rect x="23" y="13" width="54" height="4" rx="2" class="terracotta"/>
+    <!-- Left Splayed Leg with Softly Rounded End -->
+    <path d="M 47 30 L 40 30 L 30 85 Q 35 92 40 85 L 47 30 Z"/>
 
-  <!-- Rounded Triangular Head Piece (in front, above clamp) -->
-  <path d="M 40 13 A 5 5 0 0 1 50 8 A 5 5 0 0 1 60 13 Z" class="terracotta"/>
-
-  <!-- Circular Hole in Head Piece (shows background color) -->
-  <circle cx="50" cy="10.5" r="2.5" class="background-color"/>
+    <!-- Right Splayed Leg with Softly Rounded End -->
+    <path d="M 53 30 L 60 30 L 70 85 Q 65 92 60 85 L 53 30 Z"/>
+  </g>
 </svg>

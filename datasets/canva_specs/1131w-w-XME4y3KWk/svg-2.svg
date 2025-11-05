@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
   <defs>
-    <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    <filter id="soft-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
     </filter>
   </defs>
-  <rect x="10" y="10" width="280" height="180" rx="24" ry="24" fill="white" filter="url(#soft-shadow)"/>
+  <rect x="8" y="8" width="284" height="180" rx="24" ry="24" fill="#FFFFFF" filter="url(#soft-shadow)"/>
 </svg>

@@ -1,9 +1,9 @@
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="cornerGradient" cx="100" cy="100" r="100" fx="100" fy="100" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ff7a00"/>
-      <stop offset="100%" stop-color="#ffb24a"/>
+    <radialGradient id="cornerGradient" cx="1" cy="1" r="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFB347" />
     </radialGradient>
   </defs>
-  <path d="M 100 100 L 100 0 A 100 100 0 0 1 0 100 Z" fill="url(#cornerGradient)"/>
+  <path d="M 0 100 A 100 100 0 0 1 100 0 L 100 100 Z" fill="url(#cornerGradient)" />
 </svg>

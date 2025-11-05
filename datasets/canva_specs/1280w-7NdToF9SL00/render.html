@@ -18,105 +18,38 @@
             position: relative;
             width: 1280px;
             height: 1600px;
-            background-color: #f5f1e6;
+            background-color: #f5f1e8;
             overflow: hidden;
         }
     </style>
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 120px; top: 200px; width: 110px; height: 110px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M 43 25 L 29.5 27 L 37 37.5 L 27 30.5 L 25.5 44 L 23 28.5 L 13.5 36.5 L 20 27 L 7 25 L 19.5 22.5 L 13 13 L 23 20 L 25 6 L 26.5 21 L 36.5 13.5 L 29.5 23 Z"
-    fill="none"
-    stroke="black"
-    stroke-width="3"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg></div><div style="position: absolute; left: 1048px; top: 200px; width: 110px; height: 110px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <!-- First hand-drawn starburst (positioned in lower-left quadrant) -->
-    <path d="M 30 70 Q 34 66 38 62 M 30 70 Q 36 70 42 70 M 30 70 Q 32 74 35 79 M 30 70 Q 29 76 28 82 M 30 70 Q 25 72 20 75 M 30 70 Q 24 69 18 68 M 30 70 Q 28 65 25 60 M 30 70 Q 31 64 32 58"/>
-    <!-- Mirrored counterpart (positioned in upper-right quadrant) -->
-    <path d="M 70 30 Q 66 34 62 38 M 70 30 Q 64 30 58 30 M 70 30 Q 68 26 65 21 M 70 30 Q 71 24 72 18 M 70 30 Q 75 28 80 25 M 70 30 Q 76 31 82 32 M 70 30 Q 72 35 75 40 M 70 30 Q 69 36 68 42"/>
-  </g>
-</svg></div><div style="position: absolute; left: 710px; top: 630px; width: 440px; height: 340px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Turntable Deck -->
-  <rect x="50" y="150" width="400" height="150" rx="15" ry="15"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Feet -->
-  <rect x="80" y="300" width="30" height="20" rx="5" ry="5"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="390" y="300" width="30" height="20" rx="5" ry="5"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Knobs (solid black with thick black stroke) -->
-  <circle cx="100" cy="270" r="10"
-          stroke="#222222" stroke-width="8" fill="#222222"/>
-  <circle cx="130" cy="270" r="10"
-          stroke="#222222" stroke-width="8" fill="#222222"/>
-  <circle cx="160" cy="270" r="10"
-          stroke="#222222" stroke-width="8" fill="#222222"/>
-
-  <!-- Record -->
-  <circle cx="220" cy="220" r="60"
-          stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Record Center (solid black with thick black stroke) -->
-  <circle cx="220" cy="220" r="15"
-          stroke="#222222" stroke-width="8" fill="#222222"/>
-
-  <!-- Smiling Face on Record -->
-  <!-- Eyes (solid black, no stroke as they are small filled dots) -->
-  <circle cx="205" cy="210" r="4" fill="#222222"/>
-  <circle cx="235" cy="210" r="4" fill="#222222"/>
-  <!-- Mouth (thinner stroke for detail) -->
-  <path d="M205 230 Q220 245 235 230"
-        stroke="#222222" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Tonearm and Cartridge -->
-  <path d="M300 170 C320 180 280 210 260 220"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Cartridge (simple rectangle) -->
-  <rect x="250" y="210" width="20" height="15" rx="3" ry="3"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Cheering Hands/Arms -->
-  <!-- Left Arm/Hand -->
-  <path d="M150 150 L130 100 Q140 70 170 60 Q200 50 210 80 L190 120"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Right Arm/Hand -->
-  <path d="M350 150 L370 100 Q360 70 330 60 Q300 50 290 80 L310 120"
-        stroke="#222222" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></div><div style="position: absolute; left: 160px; top: 980px; width: 390px; height: 260px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Sleeve -->
-  <path d="M 10 65 C 25 60 40 60 45 65 L 45 80 C 40 85 25 85 10 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
-  
-  <!-- Cuff -->
-  <path d="M 45 65 L 55 65 L 55 80 L 45 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
-  
-  <!-- Square-checker pattern on cuff -->
-  <rect x="45" y="65" width="5" height="7.5" fill="black"/>
-  <rect x="50" y="72.5" width="5" height="7.5" fill="black"/>
-  
-  <!-- Wine Glass Bowl -->
-  <path d="M 60 30 C 70 20 80 20 90 30 L 85 60 C 80 70 70 70 65 60 L 60 30 Z" fill="white" stroke="black" stroke-width="2.5"/>
-  
-  <!-- Wine Glass Stem -->
-  <path d="M 74 60 L 76 60 L 76 80 L 74 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
-  
-  <!-- Solid black wine, half-filled -->
-  <path d="M 65 50 L 85 50 C 80 70 70 70 65 60 Z" fill="black"/>
-  
-  <!-- Hand with curved fingers gripping the stem -->
-  <path d="M 55 65 C 60 60 65 60 70 65 C 72 63 74 63 75 65 L 75 70 C 73 72 70 72 68 70 C 65 75 60 75 58 78 L 55 80 Z" fill="white" stroke="black" stroke-width="2.5"/>
-</svg></div><div style="position: absolute; left: 0px; top: 120px; width: 1280px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Caveat; font-size: 52px; color: #222222; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Cafe Rimberio</div></div><div style="position: absolute; left: 0px; top: 260px; width: 1280px; height: 330px; transform: rotate(0deg); opacity: 1; font-family: Permanent Marker; font-size: 120px; color: #222222; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">MUSIC
+        <div style="position: absolute; left: 120px; top: 180px; width: 140px; height: 140px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#333" d="M 50 10 
+    Q 55 20 60 30 
+    Q 70 25 78 22 
+    Q 75 40 70 50 
+    Q 85 45 90 50 
+    Q 80 60 70 70 
+    Q 75 75 78 78 
+    Q 60 85 50 85 
+    Q 40 85 50 90 
+    Q 25 75 30 70 
+    Q 20 60 22 78 
+    Q 15 45 30 50 
+    Q 20 30 10 50 
+    Q 25 15 30 30 
+    Q 40 15 22 22 
+    Q 35 10 50 15 
+    Q 45 10 50 10 Z"/>
+</svg></div><div style="position: absolute; left: 1040px; top: 160px; width: 140px; height: 140px; transform: rotate(0deg); opacity: 1; "><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#333" d="M50 5 L58 23 L82 16 L70 37 L94 48 L73 60 L85 83 L60 75 L49 94 L40 76 L15 83 L27 61 L6 50 L29 38 L17 17 L42 25 Z"/>
+</svg></div><div style="position: absolute; left: 390px; top: 120px; width: 500px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Kalam; font-size: 44px; color: #1f1f1f; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Cafe Rimberio</div></div><div style="position: absolute; left: 250px; top: 220px; width: 780px; height: 330px; transform: rotate(0deg); opacity: 1; font-family: Kalam; font-size: 118px; color: #1f1f1f; text-align: center; font-weight: bold; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">MUSIC
 AND WINE
-PARTY</div></div><div style="position: absolute; left: 140px; top: 560px; width: 420px; height: 180px; transform: rotate(0deg); opacity: 1; font-family: Permanent Marker; font-size: 72px; color: #222222; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">STARTS AT
-6PM</div></div><div style="position: absolute; left: 730px; top: 980px; width: 480px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Permanent Marker; font-size: 64px; color: #222222; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">LIVE MUSIC BY
-OLIVIA WILSON</div></div><div style="position: absolute; left: 0px; top: 1460px; width: 1280px; height: 70px; transform: rotate(0deg); opacity: 1; font-family: Caveat; font-size: 52px; color: #222222; text-align: center; font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">123 Anywhere St., Any City</div></div>
+PARTY</div></div><div style="position: absolute; left: 120px; top: 500px; width: 330px; height: 140px; transform: rotate(0deg); opacity: 1; font-family: Kalam; font-size: 64px; color: #1f1f1f; text-align: left; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">STARTS AT
+6PM</div></div><img src="asset-1.png" style="position: absolute; left: 720px; top: 560px; width: 540px; height: 430px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Playful monochrome illustration of a vinyl turntable with a smiling record at center and two raised cartoon hands behind it; thick black outlines and simple details, flat fill on cream background." /><img src="asset-2.png" style="position: absolute; left: 170px; top: 980px; width: 440px; height: 360px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Hand-drawn illustration of a hand in a checkered cuff holding a wine glass half filled; bold black outlines and simple shapes, flat style." /><div style="position: absolute; left: 730px; top: 1000px; width: 480px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Kalam; font-size: 60px; color: #1f1f1f; text-align: left; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">LIVE MUSIC BY
+OLIVIA WILSON</div></div><div style="position: absolute; left: 260px; top: 1490px; width: 760px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Kalam; font-size: 46px; color: #1f1f1f; text-align: center; font-weight: normal; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">123 Anywhere St, Any City</div></div>
     </div>
 </body>
 </html>

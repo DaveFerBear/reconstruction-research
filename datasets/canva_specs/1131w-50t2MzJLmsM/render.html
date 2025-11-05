@@ -2,9 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -27,79 +25,34 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 70px; top: 360px; width: 991px; height: 1120px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-    <defs>
-        <filter id="sketchyFilter">
-            <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise"/>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
-        </filter>
-        <!-- Reusable star shape -->
-        <path id="starShape" d="M0 -50 L11.76 -16.18 L47.55 -15.45 L19.02 6.18 L29.39 40.45 L0 20 L-29.39 40.45 L-19.02 6.18 L-47.55 -15.45 L-11.76 -16.18 Z" />
-    </defs>
-    <g filter="url(#sketchyFilter)" stroke="#243EB6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <img src="asset-1.png" style="position: absolute; left: 70px; top: 340px; width: 990px; height: 1080px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Monochrome cobalt-blue hand-drawn line illustration: multiple sketchy five-pointed stars of varying sizes scattered on the left and center; a steaming teacup with three rising steam squiggles sitting on an oval saucer/tray; on the right, a woman wearing an apron and boots with one arm raised holding the tray above her head and the other hand on her hip. All elements are outlined with rough pencil-like strokes and no fills." /><div style="position: absolute; left: 96px; top: 1240px; width: 580px; height: 140px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect id="long-dash" width="10" height="3" rx="1.5" ry="1.5" fill="#007bff" />
+    <rect id="short-dash" width="5" height="3" rx="1.5" ry="1.5" fill="#007bff" />
+  </defs>
 
-        <!-- Female server (lower-right) -->
-        <g transform="translate(300 200)">
-            <!-- Head -->
-            <circle cx="0" cy="-50" r="15" />
-            <!-- Hair bun -->
-            <circle cx="10" cy="-55" r="5" />
-            <!-- Body -->
-            <path d="M-15 0 C-25 20, -25 60, -15 80 L-10 100 L10 100 L15 80 C25 60, 25 20, 15 0 Z" />
-            <!-- Apron -->
-            <path d="M-10 20 L-10 70 L10 70 L10 20 Z" />
-            <!-- Arm holding tray -->
-            <path d="M15 -10 Q30 -60, 0 -120" />
-            <!-- Boots -->
-            <path d="M-15 90 C-20 100, -10 105, -5 100 L-5 90 Z" />
-            <path d="M15 90 C20 100, 10 105, 5 100 L5 90 Z" />
-        </g>
+  <!-- First row of dashes, positioned at y=5 -->
+  <g transform="translate(0 5)">
+    <use href="#long-dash" x="7.5" />
+    <use href="#short-dash" x="22.5" />
+    <use href="#long-dash" x="32.5" />
+    <use href="#short-dash" x="47.5" />
+    <use href="#long-dash" x="57.5" />
+    <use href="#short-dash" x="72.5" />
+    <use href="#long-dash" x="82.5" />
+  </g>
 
-        <!-- Steaming coffee cup on a saucer, sitting on a large oval serving tray (upper-right) -->
-        <g transform="translate(300 80)">
-            <!-- Tray -->
-            <ellipse cx="0" cy="0" rx="70" ry="30" />
-            <!-- Saucer -->
-            <ellipse cx="0" cy="-20" rx="30" ry="10" />
-            <!-- Coffee cup -->
-            <path d="M-20 -25 C-25 -45, 25 -45, 20 -25 L20 -20 C25 -10, -25 -10, -20 -20 Z" />
-            <!-- Cup Handle -->
-            <path d="M20 -35 Q30 -30, 25 -20" />
-            <!-- Steam -->
-            <path d="M-10 -50 Q-5 -60, 0 -55 Q5 -65, 10 -60" />
-            <path d="M-5 -55 Q0 -65, 5 -60 Q10 -70, 15 -65" />
-        </g>
-
-        <!-- Five star doodles (left half) -->
-        <!-- One large outlined star -->
-        <use href="#starShape" transform="translate(80 100) scale(1.2)" fill="none" />
-
-        <!-- Two smaller filled-with-hatching stars -->
-        <g transform="translate(50 250) scale(0.6)" fill="#243EB6" stroke="none">
-            <use href="#starShape" />
-            <!-- Hatching lines -->
-            <line x1="-30" y1="30" x2="30" y2="-30" stroke="#243EB6" stroke-width="1" />
-            <line x1="-35" y1="0" x2="35" y2="0" stroke="#243EB6" stroke-width="1" />
-        </g>
-        <use href="#starShape" transform="translate(150 300) scale(0.5)" fill="#243EB6" stroke="none" />
-
-        <!-- Two medium stars with sketchy linework -->
-        <use href="#starShape" transform="translate(180 180) scale(0.8)" fill="none" />
-        <use href="#starShape" transform="translate(100 350) scale(0.7)" fill="none" />
-
-    </g>
-</svg></div><div style="position: absolute; left: 58px; top: 46px; width: 1015px; height: 270px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 240px; color: #243EB6; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">GRAND</div></div><div style="position: absolute; left: 86px; top: 302px; width: 400px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 110px; color: #243EB6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">OPENING</div></div><div style="position: absolute; left: 86px; top: 1125px; width: 960px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">AT 10:00 AM, SATURDAY</div></div><div style="position: absolute; left: 86px; top: 1190px; width: 520px; height: 24px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="5" x2="100" y2="5"
-        stroke="#4169E1"
-        stroke-width="1"
-        stroke-dasharray="5 10" />
-</svg></div><div style="position: absolute; left: 86px; top: 1240px; width: 900px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">DECEMBER 15TH, 2025</div></div><div style="position: absolute; left: 86px; top: 1305px; width: 520px; height: 24px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="5" x2="100" y2="5"
-        stroke="royalblue"
-        stroke-width="3"
-        stroke-dasharray="6 6"
-        stroke-linecap="butt" />
-</svg></div><div style="position: absolute; left: 86px; top: 1360px; width: 960px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Poppins; font-size: 48px; color: #243EB6; text-align: left; font-weight: 700; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">123 ANYWHERE ST., ANY CITY</div></div>
+  <!-- Second row of dashes, positioned at y=20 -->
+  <g transform="translate(0 20)">
+    <use href="#long-dash" x="7.5" />
+    <use href="#short-dash" x="22.5" />
+    <use href="#long-dash" x="32.5" />
+    <use href="#short-dash" x="47.5" />
+    <use href="#long-dash" x="57.5" />
+    <use href="#short-dash" x="72.5" />
+    <use href="#long-dash" x="82.5" />
+  </g>
+</svg></div><div style="position: absolute; left: 32px; top: 38px; width: 1067px; height: 270px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 260px; color: #1f3db6; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">GRAND</div></div><div style="position: absolute; left: 132px; top: 330px; width: 650px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 110px; color: #1f3db6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">OPENING</div></div><div style="position: absolute; left: 96px; top: 1188px; width: 940px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 48px; color: #1f3db6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">AT 10:00 AM, SATURDAY</div></div><div style="position: absolute; left: 96px; top: 1288px; width: 940px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 48px; color: #1f3db6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">DECEMBER 15TH, 2025</div></div><div style="position: absolute; left: 96px; top: 1388px; width: 940px; height: 64px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 48px; color: #1f3db6; text-align: left; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">123 ANYWHERE ST., ANY CITY</div></div>
     </div>
 </body>
 </html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <filter id="dropshadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow stdDeviation="5" dx="0" dy="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Main card rectangle with rounded corners and subtle drop shadow -->
+  <rect x="20" y="20" width="360" height="260" rx="44" ry="44" fill="white" filter="url(#dropshadow)"/>
+
+  <!-- Thin horizontal divider line in pale pink -->
+  <line x1="20" y1="220" x2="380" y2="220" stroke="#efd9dc" stroke-width="2"/>
+
+  <!-- Thin vertical line splitting the bottom area into two buttons -->
+  <line x1="200" y1="220" x2="200" y2="280" stroke="#efd9dc" stroke-width="2"/>
+</svg>

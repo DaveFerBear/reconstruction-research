@@ -1,8 +1,3 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <!-- First hand-drawn starburst (positioned in lower-left quadrant) -->
-    <path d="M 30 70 Q 34 66 38 62 M 30 70 Q 36 70 42 70 M 30 70 Q 32 74 35 79 M 30 70 Q 29 76 28 82 M 30 70 Q 25 72 20 75 M 30 70 Q 24 69 18 68 M 30 70 Q 28 65 25 60 M 30 70 Q 31 64 32 58"/>
-    <!-- Mirrored counterpart (positioned in upper-right quadrant) -->
-    <path d="M 70 30 Q 66 34 62 38 M 70 30 Q 64 30 58 30 M 70 30 Q 68 26 65 21 M 70 30 Q 71 24 72 18 M 70 30 Q 75 28 80 25 M 70 30 Q 76 31 82 32 M 70 30 Q 72 35 75 40 M 70 30 Q 69 36 68 42"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#333" d="M50 5 L58 23 L82 16 L70 37 L94 48 L73 60 L85 83 L60 75 L49 94 L40 76 L15 83 L27 61 L6 50 L29 38 L17 17 L42 25 Z"/>
 </svg>

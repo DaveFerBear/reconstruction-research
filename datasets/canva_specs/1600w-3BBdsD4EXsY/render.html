@@ -18,45 +18,39 @@
             position: relative;
             width: 1600px;
             height: 1600px;
-            background-color: #f7dcb8;
+            background-color: #F5D8B2;
             overflow: hidden;
         }
     </style>
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 360px; top: 240px; width: 880px; height: 1120px; transform: rotate(0deg); opacity: 1; "><svg width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Terracotta color for easel parts -->
-  <defs>
-    <style>
-      .terracotta { fill: #c95f3b; }
-      .pale-pink { fill: #efb0a6; }
-      .background-color { fill: #f7dcb8; }
-    </style>
-  </defs>
+        <div style="position: absolute; left: 330px; top: 220px; width: 940px; height: 1160px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sign Panel (blush-pink rounded rectangle, sits behind the easel) -->
+  <rect x="30" y="30" width="40" height="40" rx="5" ry="5" fill="#F3BBB1"/>
 
-  <!-- Easel Legs (behind the board) -->
-  <rect x="30" y="30" width="8" height="60" rx="4" transform="rotate(-5 34 90)" class="terracotta"/>
-  <rect x="62" y="30" width="8" height="60" rx="4" transform="rotate(5 66 90)" class="terracotta"/>
+  <!-- Easel Elements (terracotta-orange) -->
+  <g fill="#C95E3E">
+    <!-- Central Vertical Post -->
+    <rect x="47" y="10" width="6" height="70" rx="2" ry="2"/>
 
-  <!-- Easel Center Support (behind the board) -->
-  <rect x="48" y="10" width="4" height="70" class="terracotta"/>
+    <!-- Top Shelf -->
+    <rect x="40" y="25" width="20" height="4" rx="1" ry="1"/>
 
-  <!-- Pale Pink Poster/Board (main canvas) -->
-  <rect x="25" y="15" width="50" height="60" class="pale-pink"/>
+    <!-- Bottom Shelf -->
+    <rect x="35" y="60" width="30" height="4" rx="1" ry="1"/>
 
-  <!-- Horizontal Shelf Bar (in front of the board) -->
-  <rect x="23" y="73" width="54" height="4" rx="2" class="terracotta"/>
+    <!-- Triangular Head with Circular Cut-out -->
+    <!-- The path combines the outer triangle and inner circle using fill-rule="evenodd" for the cut-out -->
+    <path d="M 45 10 L 55 10 L 50 0 Z M 50 3 A 2 2 0 1 0 50 7 A 2 2 0 1 0 50 3 Z" fill-rule="evenodd"/>
 
-  <!-- Horizontal Top Clamp Bar (in front of the board) -->
-  <rect x="23" y="13" width="54" height="4" rx="2" class="terracotta"/>
+    <!-- Left Splayed Leg with Softly Rounded End -->
+    <path d="M 47 30 L 40 30 L 30 85 Q 35 92 40 85 L 47 30 Z"/>
 
-  <!-- Rounded Triangular Head Piece (in front, above clamp) -->
-  <path d="M 40 13 A 5 5 0 0 1 50 8 A 5 5 0 0 1 60 13 Z" class="terracotta"/>
-
-  <!-- Circular Hole in Head Piece (shows background color) -->
-  <circle cx="50" cy="10.5" r="2.5" class="background-color"/>
-</svg></div><div style="position: absolute; left: 420px; top: 620px; width: 760px; height: 260px; transform: rotate(0deg); opacity: 1; font-family: Arial Rounded MT Bold; font-size: 56px; color: #4b2c26; text-align: center; font-weight: bold; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">DO THINGS AT YOUR
+    <!-- Right Splayed Leg with Softly Rounded End -->
+    <path d="M 53 30 L 60 30 L 70 85 Q 65 92 60 85 L 53 30 Z"/>
+  </g>
+</svg></div><div style="position: absolute; left: 420px; top: 620px; width: 760px; height: 260px; transform: rotate(0deg); opacity: 1; font-family: Comic Sans MS; font-size: 56px; color: #4A2B25; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">DO THINGS AT YOUR
 OWN PACE. LIFE'S NOT
 A RACE.</div></div>
     </div>

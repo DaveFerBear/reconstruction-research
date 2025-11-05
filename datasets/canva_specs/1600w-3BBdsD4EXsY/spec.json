@@ -1,16 +1,16 @@
 {
-  "background_color": "#f7dcb8",
+  "background_color": "#F5D8B2",
   "has_background_image": false,
   "background_image_description": "",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Flat vector easel centered on the canvas in terracotta (#c95f3b) holding a pale pink poster/board (#efb0a6). The easel includes: two wide, rounded-corner legs splayed outward; a narrow vertical center support; a horizontal shelf bar across the bottom edge of the board (in front of it); a horizontal top clamp bar overlapping the top edge of the board (in front); and a small, rounded triangular head piece above the clamp with a circular hole punched through (the hole shows the background color #f7dcb8). The legs and center support sit behind the pink board; the clamp and shelf sit in front. All shapes are simple, solid fills without strokes or shadows.",
+      "svg_description": "Centered flat vector easel and sign: a blush-pink rounded-rectangle sign panel sits behind a terracotta-orange wooden easel. The easel has a triangular head with a small circular cut-out, a short horizontal top shelf, a matching bottom shelf, a central vertical post, and two wide splayed legs with softly rounded ends. Colors: easel elements #C95E3E; sign panel #F3BBB1; cut-out shows background through.",
       "filename": "svg-1.svg",
-      "x": 360,
-      "y": 240,
-      "width": 880,
-      "height": 1120,
+      "x": 330,
+      "y": 220,
+      "width": 940,
+      "height": 1160,
       "rotation": 0
     },
     {
@@ -21,14 +21,14 @@
       "width": 760,
       "height": 260,
       "rotation": 0,
-      "font-family": "Arial Rounded MT Bold",
+      "font-family": "Comic Sans MS",
       "font-size": 56,
-      "color": "#4b2c26",
+      "color": "#4A2B25",
       "text-align": "center",
-      "font-weight": "bold",
+      "font-weight": "700",
       "font-style": "normal",
       "text-decoration": "none",
-      "text-transform": "uppercase"
+      "text-transform": "none"
     }
   ],
   "canvas_width": 1600,

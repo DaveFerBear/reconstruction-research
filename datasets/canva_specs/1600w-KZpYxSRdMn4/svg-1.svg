@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
+<svg viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F7D26A"/>
-      <stop offset="100%" stop-color="#C8973A"/>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D36A"/>
+      <stop offset="100%" stop-color="#B8862C"/>
     </linearGradient>
   </defs>
 
-  <!-- Backmost deep green wave -->
-  <path fill="#0A6A5B" d="M 0 300 C 200 290, 600 220, 1000 250 L 1000 300 Z"/>
+  <!-- Bottom band: medium teal-green -->
+  <path fill="#178D6D" d="M 0 120 C 80 105, 220 105, 300 120 C 380 135, 520 135, 600 120 C 680 105, 820 105, 900 120 L 1000 130 L 1000 150 L 0 150 Z"/>
 
-  <!-- Mid green wave -->
-  <path fill="#4CAF50" d="M 0 300 C 200 270, 600 180, 1000 210 L 1000 300 Z"/>
+  <!-- Middle band: deep green -->
+  <path fill="#0F6B53" d="M 0 105 C 80 90, 220 90, 300 105 C 380 120, 520 120, 600 105 C 680 90, 820 90, 900 105 L 1000 115 L 1000 150 L 0 150 Z"/>
 
-  <!-- Metallic gold wave -->
-  <path fill="url(#goldGradient)" d="M 0 300 C 200 230, 600 140, 1000 170 L 1000 300 Z"/>
+  <!-- Top band: gold gradient -->
+  <path fill="url(#goldGradient)" d="M 0 90 C 80 75, 220 75, 300 90 C 380 105, 520 105, 600 90 C 680 75, 820 75, 900 90 L 1000 100 L 1000 150 L 0 150 Z"/>
 </svg>

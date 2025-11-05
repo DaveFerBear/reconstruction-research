@@ -1,12 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 310">
-  <g stroke="#FFFFFF" stroke-width="6" fill="none">
-    <!-- Open-outline heart, ~200x240px, tilted 10° clockwise -->
-    <path d="M 250 20 C 330 20 350 100 350 140 C 350 180 250 260 250 260 C 250 260 150 180 150 140 C 150 100 170 20 250 20 Z"
-          transform="rotate(10 250 140)" stroke-linejoin="round"/>
-
-    <!-- Three short accent dashes, radiating slightly upward -->
-    <line x1="50" y1="120" x2="80" y2="110" stroke-linecap="round"/>
-    <line x1="50" y1="140" x2="80" y2="130" stroke-linecap="round"/>
-    <line x1="50" y1="160" x2="80" y2="150" stroke-linecap="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60">
+  <defs>
+    <filter id="softShadow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <ellipse cx="60" cy="30" rx="40" ry="15" fill="#93ad91" filter="url(#softShadow)"/>
 </svg>

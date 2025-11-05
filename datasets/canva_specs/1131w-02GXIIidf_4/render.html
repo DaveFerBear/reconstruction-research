@@ -25,30 +25,37 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 0px; top: 0px; width: 1131px; height: 220px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100" height="10" fill="red"/></svg></div><div style="position: absolute; left: 0px; top: 1390px; width: 1131px; height: 210px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect x="0" y="80" width="100" height="20" fill="red" />
-</svg></div><div style="position: absolute; left: 110px; top: 300px; width: 911px; height: 860px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="100" height="100" fill="none" stroke="black" stroke-width="4"/>
-</svg></div><img src="asset-1.png" style="position: absolute; left: 170px; top: 350px; width: 791px; height: 610px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Close-up photo of a long-haired tabby cat with brown, black, and white fur, yellow-green eyes, and pointy ears, lying on a light-colored surface. Background is softly blurred in white/cream tones." /><div style="position: absolute; left: 720px; top: 820px; width: 330px; height: 170px; transform: rotate(14deg); opacity: 1; "><svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <div style="position: absolute; left: 0px; top: 0px; width: 1131px; height: 206px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 1">
+  <rect width="100" height="1" fill="#e31e24"/>
+</svg></div><div style="position: absolute; left: 0px; top: 1308px; width: 1131px; height: 292px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 10">
+  <rect x="0" y="0" width="100" height="10" fill="#e31e24"/>
+</svg></div><img src="asset-1.png" style="position: absolute; left: 166px; top: 316px; width: 799px; height: 566px; transform: rotate(0deg); opacity: 1; object-fit: fill; " alt="Close-up photo of a long-haired tabby cat with brown, white, and black fur and greenish eyes, lying on a surface. Background is softly blurred in white to warm beige tones." /><div style="position: absolute; left: 660px; top: 740px; width: 380px; height: 170px; transform: rotate(-17deg); opacity: 1; "><svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="roughEdges" x="-20%" y="-20%" width="140%" height="140%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    <filter id="grungeFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
     </filter>
   </defs>
 
-  <g transform="rotate(3 100 50)">
-    <rect x="10" y="10" width="180" height="80" fill="#C0392B" filter="url(#roughEdges)"/>
-    <path d="M30 25 L150 35 M40 70 L160 60 M80 15 L90 85 M120 20 L130 70 M60 80 L100 20" 
-          stroke="#A02C2C" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <g transform="rotate(-5 100 50)">
+    <!-- Main stamp shape -->
+    <rect x="20" y="10" width="160" height="80" rx="10" ry="10" fill="#e31e24" filter="url(#grungeFilter)" />
+
+    <!-- Inner border line -->
+    <rect x="25" y="15" width="150" height="70" rx="8" ry="8" fill="none" stroke="white" stroke-width="2" filter="url(#grungeFilter)" />
+
+    <!-- Text 'REWARD' -->
+    <text x="100" y="50" text-anchor="middle" dominant-baseline="central" fill="white" font-family="sans-serif" font-size="30" font-weight="bold">REWARD</text>
   </g>
-</svg></div><div style="position: absolute; left: 742px; top: 865px; width: 290px; height: 90px; transform: rotate(14deg); opacity: 1; font-family: Arial Black; font-size: 64px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">REWARD</div></div><div style="position: absolute; left: 205px; top: 990px; width: 721px; height: 170px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 36px; color: #111111; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Female, 2 years old.
+</svg></div><div style="position: absolute; left: 100px; top: 278px; width: 931px; height: 760px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="2" y="2" width="96" height="96" fill="none" stroke="black" stroke-width="4"/>
+</svg></div><div style="position: absolute; left: 0px; top: 28px; width: 1131px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 150px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">MISSING</div></div><div style="position: absolute; left: 0px; top: 224px; width: 1131px; height: 72px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 72px; color: #000000; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">DONNA</div></div><div style="position: absolute; left: 170px; top: 905px; width: 791px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 36px; color: #000000; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Female, 2 years old.
 Brown, white and black.
 Necklace with her name on it.
-Characteristic: Tail all black.</div></div><div style="position: absolute; left: 255px; top: 1215px; width: 621px; height: 104px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50">
-  <rect x="0" y="0" width="200" height="50" rx="20" ry="20" fill="#ffea00"/>
-</svg></div><div style="position: absolute; left: 270px; top: 1235px; width: 591px; height: 70px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 36px; color: #000000; text-align: center; font-weight: 800; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Last seen at Borcelle Yard
-on June 08, 2022</div></div><div style="position: absolute; left: 0px; top: 36px; width: 1131px; height: 160px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 150px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">MISSING</div></div><div style="position: absolute; left: 0px; top: 232px; width: 1131px; height: 70px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 64px; color: #000000; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">DONNA</div></div><div style="position: absolute; left: 0px; top: 1410px; width: 1131px; height: 56px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 48px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">PLEASE CALL</div></div><div style="position: absolute; left: 0px; top: 1470px; width: 1131px; height: 110px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 96px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">123-456-7890</div></div>
+Characteristic: Tail all black.</div></div><div style="position: absolute; left: 240px; top: 1090px; width: 651px; height: 94px; transform: rotate(0deg); opacity: 1; "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48">
+  <rect width="120" height="48" rx="24" ry="24" fill="#ffeb3b"/>
+</svg></div><div style="position: absolute; left: 240px; top: 1103px; width: 651px; height: 72px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 34px; color: #000000; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Last seen at Borcelle Yard
+on June 08, 2022</div></div><div style="position: absolute; left: 0px; top: 1336px; width: 1131px; height: 54px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 48px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">PLEASE CALL</div></div><div style="position: absolute; left: 0px; top: 1408px; width: 1131px; height: 120px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 108px; color: #ffffff; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">123-456-7890</div></div>
     </div>
 </body>
 </html>

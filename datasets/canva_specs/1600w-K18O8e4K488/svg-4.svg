@@ -1,12 +1,21 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <radialGradient id="circleGradient" cx="30%" cy="30%" r="70%" fx="30%" fy="30%">
-      <stop offset="0%" stop-color="#ffb24a"/>
-      <stop offset="100%" stop-color="#ff7a00"/>
+    <radialGradient id="circleGradient" fx="0%" fy="0%" cx="100%" cy="100%" r="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
     </radialGradient>
-    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.2"/>
+
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="arithmetic" k2="-1" k3="1" k4="0" result="innerShadowMask"/>
+      <feFlood flood-color="#FFFFFF" flood-opacity="0.6" result="glowColor"/>
+      <feComposite in="glowColor" in2="innerShadowMask" operator="in" result="innerGlowEffect"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="innerGlowEffect"/>
+      </feMerge>
     </filter>
   </defs>
-  <circle cx="50" cy="50" r="40" fill="url(#circleGradient)" filter="url(#dropShadow)"/>
+
+  <circle cx="75" cy="25" r="15" fill="url(#circleGradient)" filter="url(#innerGlow)"/>
 </svg>

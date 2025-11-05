@@ -1,8 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
-  <g transform="rotate(-5 385 175)">
-    <!-- Top pill: approx 520x120px, near upper-left -->
-    <rect x="50" y="50" width="520" height="120" rx="60" ry="60" fill="#0B5D3C"/>
-    <!-- Bottom pill: approx 620x120px, offset lower-right -->
-    <rect x="100" y="180" width="620" height="120" rx="60" ry="60" fill="#0B5D3C"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124">
+  <circle cx="62" cy="62" r="60" stroke="#2E7D62" stroke-width="4" fill="none" />
 </svg>

@@ -1,27 +1,5 @@
-<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="polkaDotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="20" height="20" fill="#A9C7A7"/>
-      <circle cx="5" cy="5" r="2" fill="white"/>
-      <circle cx="15" cy="15" r="2" fill="white"/>
-      <circle cx="5" cy="15" r="2" fill="white"/>
-      <circle cx="15" cy="5" r="2" fill="white"/>
-    </pattern>
-  </defs>
-
-  <!-- Decorative Step Numerals -->
-  <text x="100" y="200" font-family="cursive, sans-serif" font-size="180" font-weight="bold"
-        fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8"
-        stroke-linejoin="round" stroke-linecap="round">1</text>
-
-  <text x="100" y="450" font-family="cursive, sans-serif" font-size="180" font-weight="bold"
-        fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8"
-        stroke-linejoin="round" stroke-linecap="round">2</text>
-
-  <text x="600" y="200" font-family="cursive, sans-serif" font-size="180" font-weight="bold"
-        fill="url(#polkaDotPattern)" stroke="#2B4E43" stroke-width="8"
-        stroke-linejoin="round" stroke-linecap="round">3</text>
-
-  <!-- Underline for Step 3 -->
-  <path d="M 500 280 Q 700 295 860 275" fill="none" stroke="#8EA993" stroke-width="18" stroke-linecap="round"/>
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <line x1="10" y1="15" x2="15" y2="18" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="12" y1="22" x2="17" y2="19" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="8" y1="28" x2="13" y2="26" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
 </svg>

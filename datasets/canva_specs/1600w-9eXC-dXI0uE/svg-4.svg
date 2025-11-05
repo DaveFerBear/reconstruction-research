@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 84">
-  <rect x="2" y="2" width="200" height="80" rx="40" ry="40" fill="none" stroke="#6f2dbd" stroke-width="4"/>
+<svg viewBox="0 0 250 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(-3 125 50)">
+    <path d="M 125 20 C 180 10, 240 30, 220 50 C 200 70, 170 85, 125 80 C 80 85, 50 70, 30 50 C 10 30, 70 10, 125 20 Z"
+          stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+          transform="translate(2 2)"/>
+    <path d="M 125 20 C 180 10, 240 30, 220 50 C 200 70, 170 85, 125 80 C 80 85, 50 70, 30 50 C 10 30, 70 10, 125 20 Z"
+          stroke="#7c3aed" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>
