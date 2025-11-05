@@ -280,6 +280,9 @@ function renderSpec(spec, specName) {
 
   // Add drag-and-drop functionality
   setupDraggable();
+
+  // Setup image drop zone
+  setupImageDropZone();
 }
 
 async function loadSVGs() {
@@ -479,6 +482,114 @@ function setupDraggable() {
 
     draggedElement = null;
   });
+}
+
+function setupImageDropZone() {
+  const canvas = document.getElementById("canvas");
+  if (!canvas) return;
+
+  // Prevent default drag behaviors
+  ["dragenter", "dragover", "dragleave", "drop"].forEach((eventName) => {
+    canvas.addEventListener(eventName, preventDefaults, false);
+    document.body.addEventListener(eventName, preventDefaults, false);
+  });
+
+  function preventDefaults(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  // Highlight drop zone when item is dragged over it
+  ["dragenter", "dragover"].forEach((eventName) => {
+    canvas.addEventListener(eventName, () => {
+      canvas.style.outline = "3px dashed #2196f3";
+      canvas.style.outlineOffset = "5px";
+    });
+  });
+
+  ["dragleave", "drop"].forEach((eventName) => {
+    canvas.addEventListener(eventName, () => {
+      canvas.style.outline = "";
+      canvas.style.outlineOffset = "";
+    });
+  });
+
+  // Handle dropped files
+  canvas.addEventListener("drop", handleDrop);
+
+  async function handleDrop(e) {
+    const dt = e.dataTransfer;
+    const files = dt.files;
+
+    if (files.length === 0) return;
+
+    // Only handle image files
+    const imageFile = Array.from(files).find((file) =>
+      file.type.startsWith("image/")
+    );
+
+    if (!imageFile) {
+      showToast("Please drop an image file", true);
+      return;
+    }
+
+    await uploadAndAddImage(imageFile, e.offsetX, e.offsetY);
+  }
+}
+
+async function uploadAndAddImage(file, x, y) {
+  try {
+    // Upload the image
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("specName", currentSpecName);
+
+    const uploadResponse = await fetch(`${API_URL}/api/upload-image`, {
+      method: "POST",
+      body: formData,
+    });
+
+    const uploadResult = await uploadResponse.json();
+
+    if (!uploadResponse.ok) {
+      throw new Error(uploadResult.error || "Failed to upload image");
+    }
+
+    // Get image dimensions
+    const img = new Image();
+    const imageLoaded = new Promise((resolve) => {
+      img.onload = resolve;
+    });
+    img.src = URL.createObjectURL(file);
+    await imageLoaded;
+
+    // Add new image node to spec
+    const newNode = {
+      type: "image",
+      asset_description: `Uploaded image: ${file.name}`,
+      filename: uploadResult.filename,
+      x: Math.round(x),
+      y: Math.round(y),
+      width: img.width,
+      height: img.height,
+      rotation: 0,
+      opacity: 1,
+    };
+
+    currentSpec.nodes.push(newNode);
+
+    // Save the updated spec
+    hasChanges = true;
+    await saveSpec();
+
+    // Re-render to show the new image
+    renderSpec(currentSpec, currentSpecName);
+
+    showToast("✓ Image added successfully!");
+  } catch (error) {
+    showToast("Error adding image: " + error.message, true);
+    console.error("Upload error:", error);
+  }
 }
 
 async function copySpec() {

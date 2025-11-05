@@ -90,6 +90,51 @@ def save_svg():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Upload image file
+@app.route('/api/upload-image', methods=['POST'])
+def upload_image():
+    try:
+        spec_name = request.form.get('specName')
+
+        if not spec_name:
+            return jsonify({'error': 'Missing specName'}), 400
+
+        if 'file' not in request.files:
+            return jsonify({'error': 'No file provided'}), 400
+
+        file = request.files['file']
+
+        if file.filename == '':
+            return jsonify({'error': 'No file selected'}), 400
+
+        # Get existing asset files to determine next index
+        spec_dir = BASE_DIR / 'datasets' / 'canva_specs' / spec_name
+        spec_dir.mkdir(parents=True, exist_ok=True)
+
+        # Find next available asset number
+        existing_assets = list(spec_dir.glob('asset-*.png'))
+        if existing_assets:
+            indices = []
+            for asset in existing_assets:
+                try:
+                    idx = int(asset.stem.split('-')[1])
+                    indices.append(idx)
+                except:
+                    pass
+            next_idx = max(indices) + 1 if indices else 1
+        else:
+            next_idx = 1
+
+        # Save with next available filename
+        filename = f'asset-{next_idx}.png'
+        file_path = spec_dir / filename
+        file.save(str(file_path))
+
+        return jsonify({'success': True, 'filename': filename, 'path': str(file_path)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Serve static files from editor directory
 @app.route('/')
 def index():
