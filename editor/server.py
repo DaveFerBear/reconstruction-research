@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """Simple local server for the spec editor with save functionality."""
 
-from flask import Flask, send_from_directory, request, jsonify
+from flask import Flask, send_from_directory, request, jsonify, make_response
 from flask_cors import CORS
 from pathlib import Path
 import json
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for local development
+
+# Disable caching for all responses
+@app.after_request
+def add_no_cache_headers(response):
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '-1'
+    return response
 
 # Base directory (parent of editor/)
 BASE_DIR = Path(__file__).parent.parent
