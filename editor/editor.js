@@ -122,9 +122,30 @@ async function loadSpec(specName) {
 
 function loadOriginalImage(specName) {
   const originalImage = document.getElementById("original-image");
-  const imagePath = `${CANVA_DIR}/${specName}.webp`;
 
-  originalImage.innerHTML = `<img src="${imagePath}" alt="${specName}" onerror="this.parentElement.innerHTML='<div style=\\'padding: 20px; color: #999;\\'>Original image not found</div>'" />`;
+  // Try multiple extensions since files could be .webp, .jpg, .png, etc.
+  const extensions = ['webp', 'jpg', 'jpeg', 'png'];
+  let attemptIndex = 0;
+
+  function tryNextExtension(img) {
+    attemptIndex++;
+    if (attemptIndex < extensions.length) {
+      const ext = extensions[attemptIndex];
+      img.src = `${CANVA_DIR}/${specName}.${ext}`;
+    } else {
+      // All extensions failed
+      originalImage.innerHTML = '<div style="padding: 20px; color: #999;">Original image not found</div>';
+    }
+  }
+
+  // Start with the first extension
+  const img = document.createElement('img');
+  img.src = `${CANVA_DIR}/${specName}.${extensions[0]}`;
+  img.alt = specName;
+  img.onerror = function() { tryNextExtension(this); };
+
+  originalImage.innerHTML = '';
+  originalImage.appendChild(img);
 }
 
 function renderSpec(spec, specName) {
