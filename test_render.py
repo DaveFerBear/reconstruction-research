@@ -18,6 +18,23 @@ specs_dir = Path('datasets/canva_specs')
 gen_images = '--gen-images' in sys.argv
 
 
+async def retry_async(func, max_retries=3, initial_delay=2):
+    """Retry an async function with exponential backoff."""
+    last_error = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            return await func()
+        except Exception as e:
+            last_error = e
+            if attempt < max_retries:
+                wait_time = initial_delay * attempt
+                print(f"    Attempt {attempt} failed: {e}. Retrying in {wait_time}s...")
+                await asyncio.sleep(wait_time)
+            else:
+                print(f"    All {max_retries} attempts failed")
+                raise last_error
+
+
 async def flux_generate_async(prompt: str, session: aiohttp.ClientSession) -> dict:
     """Async version of flux_generate for text-to-image generation."""
     fal_api_key = os.getenv("FAL_API_KEY")
@@ -139,7 +156,9 @@ async def generate_single_asset(idx: int, description: str, source_url: str, out
     try:
         # Use improved prompt for better isolation
         prompt = f"Isolate and cut out just this element on a transparent background, remove everything else: {description}"
-        result = await kontext_edit_async(prompt, source_url, session)
+
+        # Wrap in retry logic
+        result = await retry_async(lambda: kontext_edit_async(prompt, source_url, session))
 
         if 'images' in result and result['images']:
             image_url = result['images'][0]['url']
@@ -155,8 +174,8 @@ async def generate_single_asset(idx: int, description: str, source_url: str, out
             # else:
             #     print(f"  ✗ No transparent image returned for asset-{idx}")
 
-            # Use kontext result directly
-            await download_image(image_url, output_path, session)
+            # Use kontext result directly with retry
+            await retry_async(lambda: download_image(image_url, output_path, session))
             print(f"  ✓ Saved {output_path.name}")
         else:
             print(f"  ✗ No image returned for asset-{idx}")
@@ -216,7 +235,10 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
     source_url = _to_data_url(source_image_path)
     print(f"  ✓ Ready (data URL)")
 
-    async with aiohttp.ClientSession() as session:
+    # Configure session with proper timeouts
+    timeout = aiohttp.ClientTimeout(total=300, connect=60, sock_read=60)
+    connector = aiohttp.TCPConnector(limit=10, limit_per_host=5)
+    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
         tasks = []
 
         # Generate background image if needed (use FLUX for clean generation)
@@ -226,12 +248,12 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
 
             async def gen_background():
                 try:
-                    # Use FLUX for background generation (not extraction)
-                    result = await flux_generate_async(bg_description, session)
+                    # Use FLUX for background generation (not extraction) with retry
+                    result = await retry_async(lambda: flux_generate_async(bg_description, session))
 
                     if 'images' in result and result['images']:
                         bg_path = output_dir / "background.png"
-                        await download_image(result['images'][0]['url'], bg_path, session)
+                        await retry_async(lambda: download_image(result['images'][0]['url'], bg_path, session))
                         print(f"  ✓ Saved background.png")
                     else:
                         print(f"  ✗ No image returned for background")
@@ -274,7 +296,7 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
                 async def gen_svg(idx, desc, out_path):
                     try:
                         print(f"  Generating svg-{idx}: {desc[:60]}...")
-                        svg_content = await generate_svg_from_description(desc, session)
+                        svg_content = await retry_async(lambda: generate_svg_from_description(desc, session))
                         out_path.write_text(svg_content, encoding='utf-8')
                         print(f"  ✓ Saved svg-{idx}.svg")
                     except Exception as e:
