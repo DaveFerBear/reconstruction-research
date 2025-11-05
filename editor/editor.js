@@ -1028,6 +1028,17 @@ function escapeHtml(text) {
 // Delete key handler
 document.addEventListener("keydown", (e) => {
   if (e.key === "Delete" || e.key === "Backspace") {
+    // Don't delete if user is typing in an input field
+    const activeElement = document.activeElement;
+    if (
+      activeElement &&
+      (activeElement.tagName === "INPUT" ||
+        activeElement.tagName === "TEXTAREA" ||
+        activeElement.tagName === "SELECT")
+    ) {
+      return;
+    }
+
     const selected = document.querySelector(".draggable.selected");
     if (selected) {
       const nodeIdx = parseInt(selected.getAttribute("data-node-idx"));
