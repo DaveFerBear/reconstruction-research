@@ -765,7 +765,7 @@ function showProperties(nodeIdx) {
                 <h3>SVG Content</h3>
                 <div class="property-row" style="display: block;">
                     <label>Edit SVG Markup</label>
-                    <textarea id="svg-editor" rows="15" style="font-family: monospace; font-size: 14px; width: 100%; margin-top: 8px;" placeholder="Loading SVG content..."></textarea>
+                    <textarea id="svg-editor" rows="15" style="font-family: monospace; font-size: 24px; width: 100%; margin-top: 8px;" placeholder="Loading SVG content..."></textarea>
                     <button id="save-svg-btn" style="margin-top: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">Save SVG</button>
                 </div>
             </div>
@@ -780,6 +780,13 @@ function showProperties(nodeIdx) {
       node.asset_description || ""
     )}</textarea>
                 </div>
+                ${
+                  node.filename
+                    ? `<div class="property-row" style="display: block;">
+                    <button id="download-image-btn" style="margin-top: 10px; padding: 10px 20px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">Download Image</button>
+                </div>`
+                    : ""
+                }
             </div>
         `;
   }
@@ -814,6 +821,27 @@ function showProperties(nodeIdx) {
   if (node.type === "svg" && node.filename) {
     loadSvgContent(nodeIdx, node.filename);
   }
+
+  // Handle image download
+  if (node.type === "image" && node.filename) {
+    const downloadBtn = document.getElementById("download-image-btn");
+    if (downloadBtn) {
+      downloadBtn.onclick = () => {
+        downloadImage(node.filename);
+      };
+    }
+  }
+}
+
+function downloadImage(filename) {
+  const imagePath = `${SPECS_DIR}/${currentSpecName}/${filename}`;
+  const link = document.createElement("a");
+  link.href = imagePath;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast("✓ Downloading image...");
 }
 
 async function loadSvgContent(nodeIdx, filename) {
