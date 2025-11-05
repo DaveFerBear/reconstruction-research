@@ -15,8 +15,8 @@ Research project for deconstructing and reconstructing graphic designs using AI.
 │   └── prompts.py         # LLM prompts for evaluation
 │
 ├── datasets/              # Design datasets
-│   ├── canva/            # Original Canva design images
-│   ├── canva_specs/      # JSON specifications + assets + renders
+│   ├── original/         # Original Canva design images
+│   ├── specs/            # JSON specifications + assets + renders
 │   └── aesthetic_scores/ # Evaluation results (JSON)
 │
 ├── editor/               # Web-based design editor
@@ -94,7 +94,7 @@ Each design is represented as a JSON spec with:
 - **Nodes**: text and image elements with positioning, styling, and opacity
 - **Assets**: extracted images stored separately
 
-See `datasets/canva_specs/` for examples.
+See `datasets/specs/` for examples.
 
 ### Rendering Pipeline
 

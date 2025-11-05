@@ -14,8 +14,8 @@ import json
 
 
 def main():
-    canva_dir = Path('datasets/canva')
-    specs_dir = Path('datasets/canva_specs')
+    canva_dir = Path('datasets/original')
+    specs_dir = Path('datasets/specs')
     output_dir = Path('datasets/aesthetic_scores')
     output_dir.mkdir(parents=True, exist_ok=True)
 

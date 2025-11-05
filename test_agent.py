@@ -7,7 +7,7 @@ from agents import ZeroShotAgent
 
 def main():
     # Example usage
-    spec_path = Path("datasets/canva_specs/1600w-zcHQ3XLP3Ow/spec.json")
+    spec_path = Path("datasets/specs/1600w-zcHQ3XLP3Ow/spec.json")
     output_path = Path("outputs/test_agent/spec.json")
     instruction = "Make the main title text blue and increase its font size by 20%"
 

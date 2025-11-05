@@ -7,8 +7,8 @@ from lib.uiclip import score_image
 
 
 def main():
-    canva_dir = Path('datasets/canva')
-    specs_dir = Path('datasets/canva_specs')
+    canva_dir = Path('datasets/original')
+    specs_dir = Path('datasets/specs')
 
     print("Evaluating UI quality scores...")
     print("=" * 80)

@@ -1,7 +1,7 @@
 import FONTS from "./fonts.js";
 
-const SPECS_DIR = "../datasets/canva_specs";
-const CANVA_DIR = "../datasets/canva";
+const SPECS_DIR = "../datasets/specs";
+const CANVA_DIR = "../datasets/original";
 
 let currentSpec = null;
 let currentSpecName = null;

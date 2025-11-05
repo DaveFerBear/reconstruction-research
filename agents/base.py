@@ -77,7 +77,7 @@ class Agent(ABC):
         Example:
             >>> agent = SomeAgent()
             >>> agent.edit(
-            ...     spec_path="datasets/canva_specs/design1/spec.json",
+            ...     spec_path="datasets/specs/design1/spec.json",
             ...     instruction="Make the title text larger and blue",
             ...     output_path="outputs/design1_edited/spec.json"
             ... )

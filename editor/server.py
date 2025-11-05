@@ -32,7 +32,7 @@ def save_spec():
             return jsonify({'error': 'Missing specName or spec'}), 400
 
         # Construct the path to the spec file
-        spec_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / 'spec.json'
+        spec_path = BASE_DIR / 'datasets' / 'specs' / spec_name / 'spec.json'
 
         # Ensure the directory exists
         spec_path.parent.mkdir(parents=True, exist_ok=True)
@@ -57,7 +57,7 @@ def read_svg():
             return jsonify({'error': 'Missing specName or filename'}), 400
 
         # Construct the path to the SVG file
-        svg_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / filename
+        svg_path = BASE_DIR / 'datasets' / 'specs' / spec_name / filename
 
         if not svg_path.exists():
             return jsonify({'error': 'SVG file not found'}), 404
@@ -84,7 +84,7 @@ def save_svg():
             return jsonify({'error': 'Missing specName, filename, or content'}), 400
 
         # Construct the path to the SVG file
-        svg_path = BASE_DIR / 'datasets' / 'canva_specs' / spec_name / filename
+        svg_path = BASE_DIR / 'datasets' / 'specs' / spec_name / filename
 
         # Ensure the directory exists
         svg_path.parent.mkdir(parents=True, exist_ok=True)
@@ -116,7 +116,7 @@ def upload_image():
             return jsonify({'error': 'No file selected'}), 400
 
         # Get existing asset files to determine next index
-        spec_dir = BASE_DIR / 'datasets' / 'canva_specs' / spec_name
+        spec_dir = BASE_DIR / 'datasets' / 'specs' / spec_name
         spec_dir.mkdir(parents=True, exist_ok=True)
 
         # Find next available asset number

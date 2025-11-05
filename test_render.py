@@ -10,12 +10,19 @@ from lib import render_image, Spec
 from lib.utils import _to_data_url
 import aiohttp
 from dotenv import load_dotenv
+from tqdm.asyncio import tqdm as atqdm
+from tqdm import tqdm
 
 load_dotenv()
 
-specs_dir = Path('datasets/canva_specs')
+specs_dir = Path('datasets/specs')
 
 gen_images = '--gen-images' in sys.argv
+
+# Concurrency settings
+MAX_CONCURRENT_DESIGNS = 3   # How many designs to process in parallel
+MAX_CONCURRENT_ASSETS = 10   # How many assets to generate in parallel per design
+# Total max concurrent operations: ~30 (3 designs × 10 assets)
 
 
 async def retry_async(func, max_retries=3, initial_delay=2):
@@ -148,39 +155,40 @@ async def download_image(url: str, path: Path, session: aiohttp.ClientSession):
         path.write_bytes(content)
 
 
-async def generate_single_asset(idx: int, description: str, source_url: str, output_path: Path, session: aiohttp.ClientSession):
+async def generate_single_asset(idx: int, description: str, source_url: str, output_path: Path, session: aiohttp.ClientSession, semaphore: asyncio.Semaphore):
     """Generate a single asset using Kontext extraction + background removal."""
-    description = description.replace('"', "'")
-    print(f"  Generating asset-{idx}: {description[:60]}...")
+    async with semaphore:
+        description = description.replace('"', "'")
+        print(f"  Generating asset-{idx}: {description[:60]}...")
 
-    try:
-        # Use improved prompt for better isolation
-        prompt = f"Isolate and cut out just this element on a transparent background, remove everything else: {description}"
+        try:
+            # Use improved prompt for better isolation
+            prompt = f"Isolate and cut out just this element on a transparent background, remove everything else: {description}"
 
-        # Wrap in retry logic
-        result = await retry_async(lambda: kontext_edit_async(prompt, source_url, session))
+            # Wrap in retry logic
+            result = await retry_async(lambda: kontext_edit_async(prompt, source_url, session))
 
-        if 'images' in result and result['images']:
-            image_url = result['images'][0]['url']
+            if 'images' in result and result['images']:
+                image_url = result['images'][0]['url']
 
-            # Skip background removal - no longer needed with SVG support
-            # print(f"    Removing background for asset-{idx}...")
-            # bg_removed = await remove_background_async(image_url, session)
-            #
-            # if 'image' in bg_removed and 'url' in bg_removed['image']:
-            #     final_url = bg_removed['image']['url']
-            #     await download_image(final_url, output_path, session)
-            #     print(f"  ✓ Saved {output_path.name}")
-            # else:
-            #     print(f"  ✗ No transparent image returned for asset-{idx}")
+                # Skip background removal - no longer needed with SVG support
+                # print(f"    Removing background for asset-{idx}...")
+                # bg_removed = await remove_background_async(image_url, session)
+                #
+                # if 'image' in bg_removed and 'url' in bg_removed['image']:
+                #     final_url = bg_removed['image']['url']
+                #     await download_image(final_url, output_path, session)
+                #     print(f"  ✓ Saved {output_path.name}")
+                # else:
+                #     print(f"  ✗ No transparent image returned for asset-{idx}")
 
-            # Use kontext result directly with retry
-            await retry_async(lambda: download_image(image_url, output_path, session))
-            print(f"  ✓ Saved {output_path.name}")
-        else:
-            print(f"  ✗ No image returned for asset-{idx}")
-    except Exception as e:
-        print(f"  ✗ Error generating asset-{idx}: {e}")
+                # Use kontext result directly with retry
+                await retry_async(lambda: download_image(image_url, output_path, session))
+                print(f"  ✓ Saved {output_path.name}")
+            else:
+                print(f"  ✗ No image returned for asset-{idx}")
+        except Exception as e:
+            print(f"  ✗ Error generating asset-{idx}: {e}")
 
 
 async def kontext_edit_async(prompt: str, image_url: str, session: aiohttp.ClientSession) -> dict:
@@ -245,10 +253,12 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
     source_url = _to_data_url(source_image_path)
     print(f"  ✓ Ready (data URL)")
 
-    # Configure session with proper timeouts
+    # Configure session with reasonable timeouts
     timeout = aiohttp.ClientTimeout(total=300, connect=60, sock_read=60)
-    connector = aiohttp.TCPConnector(limit=10, limit_per_host=5)
+    connector = aiohttp.TCPConnector(limit=50, limit_per_host=20)
     async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
+        # Limit concurrent asset generation
+        semaphore = asyncio.Semaphore(MAX_CONCURRENT_ASSETS)
         tasks = []
 
         # Generate background image if needed (use FLUX for clean generation)
@@ -257,18 +267,19 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
             print(f"  Generating background: {bg_description[:60]}...")
 
             async def gen_background():
-                try:
-                    # Use FLUX for background generation (not extraction) with retry
-                    result = await retry_async(lambda: flux_generate_async(bg_description, session))
+                async with semaphore:
+                    try:
+                        # Use FLUX for background generation (not extraction) with retry
+                        result = await retry_async(lambda: flux_generate_async(bg_description, session))
 
-                    if 'images' in result and result['images']:
-                        bg_path = output_dir / "background.png"
-                        await retry_async(lambda: download_image(result['images'][0]['url'], bg_path, session))
-                        print(f"  ✓ Saved background.png")
-                    else:
-                        print(f"  ✗ No image returned for background")
-                except Exception as e:
-                    print(f"  ✗ Error generating background: {e}")
+                        if 'images' in result and result['images']:
+                            bg_path = output_dir / "background.png"
+                            await retry_async(lambda: download_image(result['images'][0]['url'], bg_path, session))
+                            print(f"  ✓ Saved background.png")
+                        else:
+                            print(f"  ✗ No image returned for background")
+                    except Exception as e:
+                        print(f"  ✗ Error generating background: {e}")
 
             tasks.append(gen_background())
 
@@ -290,7 +301,7 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
                     node['filename'] = filename
 
                 asset_path = output_dir / filename
-                tasks.append(generate_single_asset(image_idx, description, source_url, asset_path, session))
+                tasks.append(generate_single_asset(image_idx, description, source_url, asset_path, session, semaphore))
 
             elif node.get('type') == 'svg':
                 svg_idx += 1
@@ -304,20 +315,21 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
                     node['filename'] = filename
 
                 async def gen_svg(idx, desc, out_path):
-                    try:
-                        print(f"  Generating svg-{idx}: {desc[:60]}...")
-                        svg_content = await retry_async(lambda: generate_svg_from_description(desc, session))
-                        out_path.write_text(svg_content, encoding='utf-8')
-                        print(f"  ✓ Saved svg-{idx}.svg")
-                    except Exception as e:
-                        print(f"  ✗ Error generating svg-{idx}: {e}")
+                    async with semaphore:
+                        try:
+                            print(f"  Generating svg-{idx}: {desc[:60]}...")
+                            svg_content = await retry_async(lambda: generate_svg_from_description(desc, session))
+                            out_path.write_text(svg_content, encoding='utf-8')
+                            print(f"  ✓ Saved svg-{idx}.svg")
+                        except Exception as e:
+                            print(f"  ✗ Error generating svg-{idx}: {e}")
 
                 svg_path = output_dir / filename
                 tasks.append(gen_svg(svg_idx, description, svg_path))
 
-        # Run all generations in parallel
+        # Run all asset generations in parallel (limited by semaphore)
         if tasks:
-            await asyncio.gather(*tasks)
+            await atqdm.gather(*tasks, desc=f"  Assets for {output_dir.name}")
 
     # Save updated spec with filenames
     spec_path = output_dir / "spec.json"
@@ -326,36 +338,38 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
     print(f"  ✓ Updated spec.json with asset filenames")
 
 async def generate_all_assets():
-    """Generate assets for all designs (async)."""
-    tasks = []
-    for spec_path in specs_dir.glob('*/spec.json'):
-        spec_data = json.load(spec_path.open())
-        design_name = spec_path.parent.name
-        # Save assets directly in the spec directory
-        asset_output_dir = spec_path.parent
+    """Generate assets for all designs (parallel designs, parallel assets within each)."""
+    semaphore = asyncio.Semaphore(MAX_CONCURRENT_DESIGNS)
 
-        print(f"Processing {design_name}...")
+    async def process_design(spec_path):
+        async with semaphore:
+            spec_data = json.load(spec_path.open())
+            design_name = spec_path.parent.name
+            asset_output_dir = spec_path.parent
 
-        # Find the original source image
-        source_images = list(Path('datasets/canva').glob(f'**/{design_name}.*'))
-        if source_images:
-            tasks.append(generate_assets(spec_data, source_images[0], asset_output_dir))
-        else:
-            print(f"  Warning: No source image found for {design_name}")
+            print(f"Processing {design_name}...")
 
+            # Find the original source image
+            source_images = list(Path('datasets/original').glob(f'**/{design_name}.*'))
+            if source_images:
+                await generate_assets(spec_data, source_images[0], asset_output_dir)
+            else:
+                print(f"  Warning: No source image found for {design_name}")
+
+    tasks = [process_design(spec_path) for spec_path in specs_dir.glob('*/spec.json')]
     if tasks:
-        await asyncio.gather(*tasks)
+        await atqdm.gather(*tasks, desc="Processing designs")
 
 
 def render_all_designs():
     """Render all designs (sync, after assets are generated)."""
-    for spec_path in specs_dir.glob('*/spec.json'):
+    spec_paths = list(specs_dir.glob('*/spec.json'))
+    for spec_path in tqdm(spec_paths, desc="Rendering designs"):
         spec_data = json.load(spec_path.open())
         design_name = spec_path.parent.name
         # Save render.png directly in the spec directory
         output_path = spec_path.parent / "render.png"
 
-        print(f"Rendering {design_name}...")
         # Assets are in the same directory
         asset_dir = spec_path.parent if gen_images else None
         render_image(spec_data, output_path,
@@ -374,7 +388,7 @@ if __name__ == '__main__':
         render_all_designs()
     else:
         # Render single test
-        spec_path = Path('datasets/canva_specs/1600w-1HZYAUid2AE/spec.json')
+        spec_path = Path('datasets/specs/1600w-1HZYAUid2AE/spec.json')
         output_path = spec_path.parent / 'test_render.png'
 
         print(f"Loading spec from: {spec_path}")
