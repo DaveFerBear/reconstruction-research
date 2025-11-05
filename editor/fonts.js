@@ -1,0 +1,36 @@
+// Available fonts for the editor
+// These are loaded via Google Fonts in index.html
+const FONTS = [
+  "Arial",
+  "Helvetica",
+  "Times New Roman",
+  "Georgia",
+  "Courier New",
+  "Verdana",
+  "Anton",
+  "Dancing Script",
+  "Great Vibes",
+  "Montserrat",
+  "Poppins",
+  "Roboto",
+  "Open Sans",
+  "Lato",
+  "Oswald",
+  "Raleway",
+  "PT Sans",
+  "Merriweather",
+  "Nunito",
+  "Playfair Display",
+  "Ubuntu",
+  "Bebas Neue",
+  "Crimson Text",
+  "Pacifico",
+  "Righteous",
+  "Permanent Marker",
+  "Lobster",
+  "Source Sans Pro",
+  "Cabin",
+  "Indie Flower",
+];
+
+export default FONTS;

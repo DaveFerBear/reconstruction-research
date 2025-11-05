@@ -1,3 +1,5 @@
+import FONTS from "./fonts.js";
+
 const SPECS_DIR = "../datasets/canva_specs";
 const CANVA_DIR = "../datasets/canva";
 
@@ -696,9 +698,21 @@ function showProperties(nodeIdx) {
                 </div>
                 <div class="property-row">
                     <label>Font Family</label>
-                    <input type="text" data-prop="font-family" data-node-idx="${nodeIdx}" value="${
-      node["font-family"] || node.font_family
-    }" />
+                    <div class="font-picker" data-node-idx="${nodeIdx}">
+                        <input type="text"
+                               class="font-picker-input"
+                               data-prop="font-family"
+                               data-node-idx="${nodeIdx}"
+                               value="${node["font-family"] || node.font_family}"
+                               readonly
+                               placeholder="Select font..."/>
+                        <div class="font-picker-dropdown" style="display: none;">
+                            <input type="text"
+                                   class="font-picker-search"
+                                   placeholder="Search fonts..." />
+                            <div class="font-picker-list"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="property-row">
                     <label>Font Size</label>
@@ -908,6 +922,8 @@ function showProperties(nodeIdx) {
   propertiesContent.querySelectorAll("input, select, textarea").forEach((input) => {
     // Skip the SVG editor textarea - it has its own save button
     if (input.id === "svg-editor") return;
+    // Skip the font picker inputs - they have their own handlers
+    if (input.classList.contains("font-picker-input") || input.classList.contains("font-picker-search")) return;
 
     input.addEventListener("input", (e) => {
       const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
@@ -942,6 +958,85 @@ function showProperties(nodeIdx) {
       };
     }
   }
+
+  // Setup font picker for text nodes
+  if (node.type === "text") {
+    setupFontPicker(nodeIdx);
+  }
+}
+
+function setupFontPicker(nodeIdx) {
+  const fontPicker = document.querySelector(`.font-picker[data-node-idx="${nodeIdx}"]`);
+  if (!fontPicker) return;
+
+  const pickerInput = fontPicker.querySelector(".font-picker-input");
+  const dropdown = fontPicker.querySelector(".font-picker-dropdown");
+  const searchInput = fontPicker.querySelector(".font-picker-search");
+  const fontList = fontPicker.querySelector(".font-picker-list");
+
+  // Populate font list
+  function renderFontList(filter = "") {
+    const filteredFonts = FONTS.filter((font) =>
+      font.toLowerCase().includes(filter.toLowerCase())
+    );
+
+    fontList.innerHTML = filteredFonts
+      .map(
+        (font) => `
+      <div class="font-option" data-font="${font}" style="font-family: '${font}';">
+        ${font}
+      </div>
+    `
+      )
+      .join("");
+
+    // Add click handlers
+    fontList.querySelectorAll(".font-option").forEach((option) => {
+      option.addEventListener("click", () => {
+        const selectedFont = option.getAttribute("data-font");
+        pickerInput.value = selectedFont;
+
+        // Update spec
+        currentSpec.nodes[nodeIdx]["font-family"] = selectedFont;
+        hasChanges = true;
+        document.getElementById("save-btn").disabled = false;
+        document.getElementById("copy-btn").disabled = false;
+
+        // Re-render to see changes
+        renderSpec(currentSpec, currentSpecName);
+
+        // Close dropdown
+        dropdown.style.display = "none";
+      });
+    });
+  }
+
+  // Initial render
+  renderFontList();
+
+  // Toggle dropdown
+  pickerInput.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isVisible = dropdown.style.display === "block";
+    dropdown.style.display = isVisible ? "none" : "block";
+    if (!isVisible) {
+      searchInput.value = "";
+      renderFontList();
+      searchInput.focus();
+    }
+  });
+
+  // Filter fonts on search
+  searchInput.addEventListener("input", (e) => {
+    renderFontList(e.target.value);
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!fontPicker.contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
 }
 
 function downloadImage(filename) {

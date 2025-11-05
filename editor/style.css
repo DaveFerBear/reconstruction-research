@@ -308,3 +308,67 @@ body {
 .toast.toast-error {
   background: #f44336;
 }
+
+/* Font Picker */
+.font-picker {
+  position: relative;
+  width: 100%;
+}
+
+.font-picker-input {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.font-picker-input:hover {
+  border-color: #2196f3;
+  background: #f5f9ff;
+}
+
+.font-picker-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  overflow: hidden;
+  z-index: 1000;
+  margin-top: 4px;
+}
+
+.font-picker-search {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 28px;
+  outline: none;
+}
+
+.font-picker-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.font-option {
+  padding: 14px 12px;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.font-option:hover {
+  background: #e3f2fd;
+  border-left-color: #2196f3;
+  padding-left: 15px;
+  transform: translateX(2px);
+}
+
+.font-option:active {
+  background: #bbdefb;
+}
