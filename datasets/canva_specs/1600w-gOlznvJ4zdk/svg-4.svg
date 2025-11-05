@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <defs>
+    <pattern id="polkaDots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="2" fill="white"/>
+      <circle cx="15" cy="15" r="2" fill="white"/>
+    </pattern>
+  </defs>
+
+  <!-- Step 1 Numeral -->
+  <path d="M 150 100 L 190 105 L 185 250 L 145 245 Z"
+        fill="url(#polkaDots)"
+        stroke="#2B4E43"
+        stroke-width="8"
+        stroke-linejoin="round"/>
+
+  <!-- Step 2 Numeral -->
+  <path d="M 150 300 C 250 280 270 340 250 380 C 230 420 150 420 150 450 L 270 450 L 270 480 L 150 480 Z"
+        fill="url(#polkaDots)"
+        stroke="#2B4E43"
+        stroke-width="8"
+        stroke-linejoin="round"/>
+
+  <!-- Step 3 Numeral -->
+  <path d="M 700 100 C 800 80 820 140 800 180 C 780 220 700 220 700 250 C 800 250 820 280 800 320 C 780 360 700 360 700 320 Z"
+        fill="url(#polkaDots)"
+        stroke="#2B4E43"
+        stroke-width="8"
+        stroke-linejoin="round"/>
+
+  <!-- Underline for Step 3 -->
+  <path d="M 320 500 C 420 520 520 480 680 500"
+        fill="none"
+        stroke="#8EA993"
+        stroke-width="25"
+        stroke-linecap="round"/>
+</svg>

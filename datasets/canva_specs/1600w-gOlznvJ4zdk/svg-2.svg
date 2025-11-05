@@ -1,0 +1,14 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Open-outline heart, 200x240px, tilted 10° clockwise, positioned at right -->
+  <path
+    d="M 100 240 C 100 200, 200 100, 200 60 C 200 20, 160 0, 100 0 C 40 0, 0 20, 0 60 C 0 100, 100 200, 100 240"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="6"
+    transform="translate(250 30) rotate(10 100 120)"
+  />
+  <!-- Three short accent dashes, radiating slightly upward, positioned at left -->
+  <line x1="100" y1="150" x2="70" y2="120" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  <line x1="100" y1="150" x2="100" y2="110" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+  <line x1="100" y1="150" x2="130" y2="120" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+</svg>

@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Union
 import json
 from playwright.sync_api import sync_playwright
-from .types import Spec, TextNode, ImageNode
+from .types import Spec, TextNode, ImageNode, SVGNode
 
 
 def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600, asset_dir: Path = None) -> str:
@@ -44,7 +44,6 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
 
     # Build node HTML
     nodes_html = []
-    image_node_idx = 0
     for node in spec.nodes:
         if isinstance(node, TextNode):
             opacity = getattr(node, 'opacity', 1)
@@ -84,14 +83,13 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
             nodes_html.append(f'<div style="{style}"><div style="width: 100%;">{text_content}</div></div>')
 
         elif isinstance(node, ImageNode):
-            image_node_idx += 1
-
             # Check if we have a generated asset for this image
             image_src = None
-            if asset_dir:
-                asset_path = asset_dir / f"asset-{image_node_idx}.png"
+            if asset_dir and node.filename:
+                asset_path = asset_dir / node.filename
                 if asset_path.exists():
-                    image_src = _to_data_url(asset_path)
+                    # Use relative path instead of data URL
+                    image_src = node.filename
 
             if image_src:
                 # Use actual image with object-fit to stretch to dimensions
@@ -131,6 +129,55 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
                 desc = node.asset_description[:100]
                 nodes_html.append(f'<div style="{style}" title="{node.asset_description}">[Image: {desc}]</div>')
 
+        elif isinstance(node, SVGNode):
+            opacity = getattr(node, 'opacity', 1)
+
+            # Check if we have a generated SVG for this node
+            svg_content = None
+            if asset_dir and node.filename:
+                svg_path = asset_dir / node.filename
+                if svg_path.exists():
+                    svg_content = svg_path.read_text(encoding='utf-8')
+
+            if svg_content:
+                # Embed actual SVG with positioning
+                style = (
+                    f"position: absolute; "
+                    f"left: {node.x}px; "
+                    f"top: {node.y}px; "
+                    f"width: {node.width}px; "
+                    f"height: {node.height}px; "
+                    f"transform: rotate({node.rotation}deg); "
+                    f"opacity: {opacity}; "
+                )
+                # Ensure SVG has proper dimensions
+                if '<svg' in svg_content and 'width=' not in svg_content and 'height=' not in svg_content:
+                    svg_content = svg_content.replace('<svg', '<svg width="100%" height="100%"', 1)
+                nodes_html.append(f'<div style="{style}">{svg_content}</div>')
+            else:
+                # Show placeholder for SVG (to be generated from description)
+                style = (
+                    f"position: absolute; "
+                    f"left: {node.x}px; "
+                    f"top: {node.y}px; "
+                    f"width: {node.width}px; "
+                    f"height: {node.height}px; "
+                    f"transform: rotate({node.rotation}deg); "
+                    f"opacity: {opacity}; "
+                    f"background: #e8f5e9; "
+                    f"border: 2px dashed #4caf50; "
+                    f"display: flex; "
+                    f"align-items: center; "
+                    f"justify-content: center; "
+                    f"font-size: 12px; "
+                    f"color: #2e7d32; "
+                    f"text-align: center; "
+                    f"padding: 10px; "
+                    f"box-sizing: border-box; "
+                )
+                desc = node.svg_description[:100]
+                nodes_html.append(f'<div style="{style}" title="{node.svg_description}">[SVG: {desc}]</div>')
+
     # Build background style
     bg_style = f"background-color: {spec.background_color};"
     if spec.has_background_image and spec.background_image_description:
@@ -138,8 +185,8 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
         if asset_dir:
             bg_image_path = asset_dir / "background.png"
             if bg_image_path.exists():
-                bg_data_url = _to_data_url(bg_image_path)
-                bg_style = f"background-image: url('{bg_data_url}'); background-size: cover; background-position: center;"
+                # Use relative path instead of data URL
+                bg_style = f"background-image: url('background.png'); background-size: cover; background-position: center;"
 
     # Build font link tag if needed
     font_link = ''

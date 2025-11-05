@@ -29,6 +29,7 @@ class TextNode(BaseModel):
 class ImageNode(BaseModel):
     type: Literal['image'] = 'image'
     asset_description: str
+    filename: Optional[str] = None  # Explicit filename for the asset (e.g., "asset-1.png")
     x: int
     y: int
     width: int
@@ -37,7 +38,19 @@ class ImageNode(BaseModel):
     opacity: float = 1
 
 
-Node = Union[TextNode, ImageNode]
+class SVGNode(BaseModel):
+    type: Literal['svg'] = 'svg'
+    svg_description: str  # Description of the vector graphic to generate
+    filename: Optional[str] = None  # Explicit filename for the SVG (e.g., "svg-1.svg")
+    x: int
+    y: int
+    width: int
+    height: int
+    rotation: int = 0
+    opacity: float = 1
+
+
+Node = Union[TextNode, ImageNode, SVGNode]
 
 
 class Spec(BaseModel):

@@ -92,7 +92,6 @@ function renderSpec(spec, specName) {
 
   // Build nodes HTML
   let nodesHtml = "";
-  let imageNodeIdx = 0;
 
   for (let i = 0; i < (spec.nodes || []).length; i++) {
     const node = spec.nodes[i];
@@ -143,10 +142,10 @@ function renderSpec(spec, specName) {
                 </div>
             `;
     } else if (node.type === "image") {
-      imageNodeIdx++;
-
-      // Check if asset exists (now in spec directory)
-      const assetPath = `${SPECS_DIR}/${specName}/asset-${imageNodeIdx}.png`;
+      // Use explicit filename from spec, fallback to placeholder
+      const assetPath = node.filename
+        ? `${SPECS_DIR}/${specName}/${node.filename}`
+        : "";
 
       const style = `
                 position: absolute;
@@ -171,6 +170,36 @@ function renderSpec(spec, specName) {
                     <div style="width: 100%; height: 100%; background: #ddd; display: none; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; padding: 10px;">
                         [Image: ${
                           node.asset_description?.substring(0, 100) || ""
+                        }]
+                    </div>
+                    <div class="resize-handle nw" data-corner="nw"></div>
+                    <div class="resize-handle ne" data-corner="ne"></div>
+                    <div class="resize-handle sw" data-corner="sw"></div>
+                    <div class="resize-handle se" data-corner="se"></div>
+                </div>
+            `;
+    } else if (node.type === "svg") {
+      // Use explicit filename from spec, fallback to placeholder
+      const svgPath = node.filename
+        ? `${SPECS_DIR}/${specName}/${node.filename}`
+        : "";
+
+      const style = `
+                position: absolute;
+                left: ${node.x}px;
+                top: ${node.y}px;
+                width: ${node.width}px;
+                height: ${node.height}px;
+                transform: rotate(${node.rotation}deg);
+                opacity: ${node.opacity !== undefined ? node.opacity : 1};
+            `;
+
+      nodesHtml += `
+                <div class="draggable svg-container" data-node-idx="${i}" data-svg-path="${svgPath}" style="${style}">
+                    <div class="svg-content" style="width: 100%; height: 100%;"></div>
+                    <div class="svg-placeholder" style="width: 100%; height: 100%; background: #e8f5e9; border: 2px dashed #4caf50; display: none; align-items: center; justify-content: center; font-size: 12px; color: #2e7d32; text-align: center; padding: 10px; box-sizing: border-box;">
+                        [SVG: ${
+                          node.svg_description?.substring(0, 100) || ""
                         }]
                     </div>
                     <div class="resize-handle nw" data-corner="nw"></div>
@@ -204,8 +233,51 @@ function renderSpec(spec, specName) {
 
   document.getElementById("canvas-container").innerHTML = html;
 
+  // Load SVG files for SVG nodes
+  loadSVGs();
+
   // Add drag-and-drop functionality
   setupDraggable();
+}
+
+async function loadSVGs() {
+  const svgContainers = document.querySelectorAll(".svg-container");
+
+  for (const container of svgContainers) {
+    const svgPath = container.getAttribute("data-svg-path");
+    const svgContent = container.querySelector(".svg-content");
+    const svgPlaceholder = container.querySelector(".svg-placeholder");
+
+    try {
+      const response = await fetch(svgPath);
+      if (response.ok) {
+        const svgText = await response.text();
+        // Inject SVG with proper sizing
+        let svgMarkup = svgText;
+        if (
+          svgMarkup.includes("<svg") &&
+          !svgMarkup.includes("width=") &&
+          !svgMarkup.includes("height=")
+        ) {
+          svgMarkup = svgMarkup.replace(
+            "<svg",
+            '<svg width="100%" height="100%"'
+          );
+        }
+        svgContent.innerHTML = svgMarkup;
+        svgContent.style.display = "block";
+        svgPlaceholder.style.display = "none";
+      } else {
+        // Show placeholder if SVG not found
+        svgContent.style.display = "none";
+        svgPlaceholder.style.display = "flex";
+      }
+    } catch (error) {
+      // Show placeholder on error
+      svgContent.style.display = "none";
+      svgPlaceholder.style.display = "flex";
+    }
+  }
 }
 
 function setupDraggable() {
@@ -633,6 +705,30 @@ function showProperties(nodeIdx) {
                     <input type="number" step="0.1" data-prop="line-height" data-node-idx="${nodeIdx}" value="${
       node["line-height"] || node.line_height || 1.2
     }" />
+                </div>
+            </div>
+        `;
+  } else if (node.type === "svg") {
+    html += `
+            <div class="property-group">
+                <h3>SVG</h3>
+                <div class="property-row">
+                    <label>Description</label>
+                    <textarea data-prop="svg_description" data-node-idx="${nodeIdx}" rows="3">${escapeHtml(
+      node.svg_description || ""
+    )}</textarea>
+                </div>
+            </div>
+        `;
+  } else if (node.type === "image") {
+    html += `
+            <div class="property-group">
+                <h3>Image</h3>
+                <div class="property-row">
+                    <label>Description</label>
+                    <textarea data-prop="asset_description" data-node-idx="${nodeIdx}" rows="3">${escapeHtml(
+      node.asset_description || ""
+    )}</textarea>
                 </div>
             </div>
         `;

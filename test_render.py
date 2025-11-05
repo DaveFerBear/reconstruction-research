@@ -84,6 +84,45 @@ async def remove_background_async(image_url: str, session: aiohttp.ClientSession
                         raise RuntimeError(f"FAL job failed: {data}")
 
 
+async def generate_svg_from_description(description: str, session: aiohttp.ClientSession) -> str:
+    """Generate SVG markup from a text description using Gemini."""
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
+    if not gemini_api_key:
+        raise ValueError("GEMINI_API_KEY not set")
+
+    import litellm
+
+    prompt = f"""Generate clean, minimal SVG markup for: {description}
+
+Requirements:
+- Return ONLY the SVG markup, no explanations or code fences
+- Use viewBox for scalability
+- Keep it simple and clean
+- Use appropriate colors mentioned in the description
+- Make it production-ready
+
+SVG:"""
+
+    # Use litellm's async completion
+    response = await litellm.acompletion(
+        model="gemini/gemini-2.5-flash",
+        messages=[{"role": "user", "content": prompt}],
+        api_key=gemini_api_key,
+        temperature=0.3,
+        drop_params=True,
+    )
+
+    svg_content = response.choices[0].message.content.strip()
+
+    # Clean up if model added code fences
+    if svg_content.startswith("```"):
+        lines = svg_content.split('\n')
+        svg_content = '\n'.join(lines[1:-1]) if len(lines) > 2 else svg_content
+        svg_content = svg_content.replace("```svg", "").replace("```", "").strip()
+
+    return svg_content
+
+
 async def download_image(url: str, path: Path, session: aiohttp.ClientSession):
     """Download image to path."""
     async with session.get(url) as response:
@@ -156,6 +195,19 @@ async def kontext_edit_async(prompt: str, image_url: str, session: aiohttp.Clien
 
 async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: Path):
     """Generate image assets from the spec using kontext model (async)."""
+
+    # Clean out old assets before regenerating
+    if output_dir.exists():
+        import shutil
+        for item in output_dir.iterdir():
+            if item.name in ['asset-', 'svg-', 'background.', 'render.']:
+                # Only delete generated files, keep spec.json
+                if item.name.startswith('asset-') or item.name.startswith('svg-') or \
+                   item.name.startswith('background.') or item.name.startswith('render.'):
+                    if item.is_file():
+                        item.unlink()
+                        print(f"  Deleted old: {item.name}")
+
     print(f"  Converting source image from {source_image_path.name}...")
     source_url = _to_data_url(source_image_path)
     print(f"  ✓ Ready (data URL)")
@@ -184,21 +236,58 @@ async def generate_assets(spec_data: dict, source_image_path: Path, output_dir: 
 
             tasks.append(gen_background())
 
-        # Generate node assets
+        # Generate node assets - separate counters for images and SVGs
         nodes = spec_data.get('nodes', [])
-        image_nodes = [n for n in nodes if n.get('type') == 'image']
+        image_idx = 0
+        svg_idx = 0
 
-        for idx, node in enumerate(image_nodes, start=1):
-            description = node.get('asset_description', '')
-            if not description:
-                continue
+        for node in nodes:
+            if node.get('type') == 'image':
+                image_idx += 1
+                description = node.get('asset_description', '')
+                if not description:
+                    continue
 
-            asset_path = output_dir / f"asset-{idx}.png"
-            tasks.append(generate_single_asset(idx, description, source_url, asset_path, session))
+                # Set filename in spec if not already set
+                filename = f"asset-{image_idx}.png"
+                if node.get('filename') != filename:
+                    node['filename'] = filename
+
+                asset_path = output_dir / filename
+                tasks.append(generate_single_asset(image_idx, description, source_url, asset_path, session))
+
+            elif node.get('type') == 'svg':
+                svg_idx += 1
+                description = node.get('svg_description', '')
+                if not description:
+                    continue
+
+                # Set filename in spec if not already set
+                filename = f"svg-{svg_idx}.svg"
+                if node.get('filename') != filename:
+                    node['filename'] = filename
+
+                async def gen_svg(idx, desc, out_path):
+                    try:
+                        print(f"  Generating svg-{idx}: {desc[:60]}...")
+                        svg_content = await generate_svg_from_description(desc, session)
+                        out_path.write_text(svg_content, encoding='utf-8')
+                        print(f"  ✓ Saved svg-{idx}.svg")
+                    except Exception as e:
+                        print(f"  ✗ Error generating svg-{idx}: {e}")
+
+                svg_path = output_dir / filename
+                tasks.append(gen_svg(svg_idx, description, svg_path))
 
         # Run all generations in parallel
         if tasks:
             await asyncio.gather(*tasks)
+
+    # Save updated spec with filenames
+    spec_path = output_dir / "spec.json"
+    with spec_path.open('w', encoding='utf-8') as f:
+        json.dump(spec_data, f, ensure_ascii=False, indent=2)
+    print(f"  ✓ Updated spec.json with asset filenames")
 
 async def generate_all_assets():
     """Generate assets for all designs (async)."""
