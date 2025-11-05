@@ -7,6 +7,23 @@ let hasChanges = false;
 
 const API_URL = "http://localhost:5001";
 
+// Simple toast notification
+function showToast(message, isError = false) {
+  const toast = document.createElement("div");
+  toast.className = `toast ${isError ? "toast-error" : "toast-success"}`;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  // Trigger animation
+  setTimeout(() => toast.classList.add("show"), 10);
+
+  // Remove after 2 seconds
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 300);
+  }, 2000);
+}
+
 // Google Fonts mapping
 const GOOGLE_FONTS = {
   Anton: "Anton",
@@ -466,9 +483,9 @@ async function copySpec() {
   try {
     const specJson = JSON.stringify(currentSpec, null, 2);
     await navigator.clipboard.writeText(specJson);
-    alert("Spec copied to clipboard!");
+    showToast("✓ Spec copied to clipboard!");
   } catch (error) {
-    alert("Error copying spec: " + error.message);
+    showToast("Error copying spec: " + error.message, true);
   }
 }
 
@@ -491,14 +508,14 @@ async function saveSpec() {
     const result = await response.json();
 
     if (response.ok) {
-      alert("Spec saved successfully!");
+      showToast("✓ Spec saved successfully!");
       hasChanges = false;
       document.getElementById("save-btn").disabled = true;
     } else {
       throw new Error(result.error || "Failed to save spec");
     }
   } catch (error) {
-    alert("Error saving spec: " + error.message);
+    showToast("Error saving spec: " + error.message, true);
     console.error("Save error:", error);
   }
 }
