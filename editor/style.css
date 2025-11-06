@@ -45,38 +45,40 @@ body {
 }
 
 .property-group h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 12px;
   color: #666;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .property-row {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .property-row label {
-  flex: 0 0 150px;
-  font-size: 26px;
+  flex: 0 0 180px;
+  font-size: 28px;
   color: #333;
+  font-weight: 500;
 }
 
 .property-row input,
 .property-row select,
 .property-row textarea {
   flex: 1;
-  padding: 6px 8px;
+  padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 26px;
+  font-size: 28px;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
 .property-row textarea {
   resize: vertical;
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .property-row input:focus,
@@ -380,4 +382,34 @@ body {
 
 .font-option:active {
   background: #bbdefb;
+}
+
+/* Layer ordering buttons */
+.layer-btn {
+  flex: 1;
+  padding: 18px 14px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layer-btn:hover:not(:disabled) {
+  background: #1976d2;
+  transform: translateY(-1px);
+}
+
+.layer-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.layer-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.5;
 }

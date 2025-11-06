@@ -725,7 +725,21 @@ function showProperties(nodeIdx) {
 
   propertiesPanel.classList.remove("hidden");
 
+  const totalNodes = currentSpec.nodes.length;
+  const isFirst = nodeIdx === 0;
+  const isLast = nodeIdx === totalNodes - 1;
+
   let html = `
+        <div class="property-group">
+            <h3>Layer Order</h3>
+            <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+                <button class="layer-btn" onclick="window.sendToBack(${nodeIdx})" ${isFirst ? 'disabled' : ''}>⬇️ To Back</button>
+                <button class="layer-btn" onclick="window.sendBackward(${nodeIdx})" ${isFirst ? 'disabled' : ''}>↓ Backward</button>
+                <button class="layer-btn" onclick="window.bringForward(${nodeIdx})" ${isLast ? 'disabled' : ''}>↑ Forward</button>
+                <button class="layer-btn" onclick="window.bringToFront(${nodeIdx})" ${isLast ? 'disabled' : ''}>⬆️ To Front</button>
+            </div>
+            <div style="font-size: 30px; color: #666; font-weight: 600; margin-top: 4px;">Layer ${nodeIdx + 1} of ${totalNodes}</div>
+        </div>
         <div class="property-group">
             <h3>Transform</h3>
             <div class="property-row">
@@ -971,8 +985,8 @@ function showProperties(nodeIdx) {
                 <h3>SVG Content</h3>
                 <div class="property-row" style="display: block;">
                     <label>Edit SVG Markup</label>
-                    <textarea id="svg-editor" rows="15" style="font-family: monospace; font-size: 24px; width: 100%; margin-top: 8px;" placeholder="Loading SVG content..."></textarea>
-                    <button id="save-svg-btn" style="margin-top: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">Save SVG</button>
+                    <textarea id="svg-editor" rows="15" style="font-family: monospace; font-size: 28px; width: 100%; margin-top: 8px; padding: 10px;" placeholder="Loading SVG content..."></textarea>
+                    <button id="save-svg-btn" style="margin-top: 12px; padding: 16px 24px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Save SVG</button>
                 </div>
             </div>
         `;
@@ -989,7 +1003,7 @@ function showProperties(nodeIdx) {
                 ${
                   node.filename
                     ? `<div class="property-row" style="display: block;">
-                    <button id="download-image-btn" style="margin-top: 10px; padding: 10px 20px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%;">Download Image</button>
+                    <button id="download-image-btn" style="margin-top: 12px; padding: 16px 24px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Download Image</button>
                 </div>`
                     : ""
                 }
@@ -1252,6 +1266,49 @@ function loadFromUrl() {
     loadSpec(designId);
   }
 }
+
+// Layer reordering functions (exposed globally for onclick handlers)
+window.sendToBack = function(nodeIdx) {
+  if (nodeIdx === 0) return;
+  const node = currentSpec.nodes.splice(nodeIdx, 1)[0];
+  currentSpec.nodes.unshift(node);
+  hasChanges = true;
+  document.getElementById("save-btn").disabled = false;
+  renderSpec(currentSpec, currentSpecName);
+  showProperties(0); // New index is 0
+};
+
+window.sendBackward = function(nodeIdx) {
+  if (nodeIdx === 0) return;
+  const node = currentSpec.nodes[nodeIdx];
+  currentSpec.nodes[nodeIdx] = currentSpec.nodes[nodeIdx - 1];
+  currentSpec.nodes[nodeIdx - 1] = node;
+  hasChanges = true;
+  document.getElementById("save-btn").disabled = false;
+  renderSpec(currentSpec, currentSpecName);
+  showProperties(nodeIdx - 1); // New index is nodeIdx - 1
+};
+
+window.bringForward = function(nodeIdx) {
+  if (nodeIdx === currentSpec.nodes.length - 1) return;
+  const node = currentSpec.nodes[nodeIdx];
+  currentSpec.nodes[nodeIdx] = currentSpec.nodes[nodeIdx + 1];
+  currentSpec.nodes[nodeIdx + 1] = node;
+  hasChanges = true;
+  document.getElementById("save-btn").disabled = false;
+  renderSpec(currentSpec, currentSpecName);
+  showProperties(nodeIdx + 1); // New index is nodeIdx + 1
+};
+
+window.bringToFront = function(nodeIdx) {
+  if (nodeIdx === currentSpec.nodes.length - 1) return;
+  const node = currentSpec.nodes.splice(nodeIdx, 1)[0];
+  currentSpec.nodes.push(node);
+  hasChanges = true;
+  document.getElementById("save-btn").disabled = false;
+  renderSpec(currentSpec, currentSpecName);
+  showProperties(currentSpec.nodes.length - 1); // New index is last
+};
 
 // Initialize
 document.getElementById("add-svg-btn").addEventListener("click", addNewSVG);
