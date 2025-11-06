@@ -98,6 +98,33 @@ def save_svg():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Convert image to background
+@app.route('/api/make-background', methods=['POST'])
+def make_background():
+    try:
+        data = request.json
+        spec_name = data.get('specName')
+        filename = data.get('filename')
+
+        if not spec_name or not filename:
+            return jsonify({'error': 'Missing specName or filename'}), 400
+
+        spec_dir = BASE_DIR / 'datasets' / 'specs' / spec_name
+        source_path = spec_dir / filename
+        dest_path = spec_dir / 'background.png'
+
+        if not source_path.exists():
+            return jsonify({'error': 'Source image not found'}), 404
+
+        # Copy the image to background.png
+        import shutil
+        shutil.copy2(source_path, dest_path)
+
+        return jsonify({'success': True, 'path': str(dest_path)})
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Create new SVG file
 @app.route('/api/create-svg', methods=['POST'])
 def create_svg():

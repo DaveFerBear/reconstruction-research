@@ -1003,7 +1003,10 @@ function showProperties(nodeIdx) {
                 ${
                   node.filename
                     ? `<div class="property-row" style="display: block;">
-                    <button id="download-image-btn" style="margin-top: 12px; padding: 16px 24px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Download Image</button>
+                    <button id="make-background-btn" style="margin-top: 12px; padding: 16px 24px; background: #ff9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Make Background</button>
+                </div>
+                <div class="property-row" style="display: block;">
+                    <button id="download-image-btn" style="margin-top: 8px; padding: 16px 24px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Download Image</button>
                 </div>`
                     : ""
                 }
@@ -1050,6 +1053,14 @@ function showProperties(nodeIdx) {
     if (downloadBtn) {
       downloadBtn.onclick = () => {
         downloadImage(node.filename);
+      };
+    }
+
+    // Handle make background
+    const makeBackgroundBtn = document.getElementById("make-background-btn");
+    if (makeBackgroundBtn) {
+      makeBackgroundBtn.onclick = async () => {
+        await makeBackground(nodeIdx, node.filename);
       };
     }
   }
@@ -1144,6 +1155,45 @@ function downloadImage(filename) {
   link.click();
   document.body.removeChild(link);
   showToast("✓ Downloading image...");
+}
+
+async function makeBackground(nodeIdx, filename) {
+  if (!currentSpec || !currentSpecName) return;
+
+  try {
+    // Call API to copy image to background.png
+    const response = await fetch(`${API_URL}/api/make-background`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        specName: currentSpecName,
+        filename: filename,
+      }),
+    });
+
+    const result = await response.json();
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to make background");
+    }
+
+    // Update spec to use background image
+    currentSpec.has_background_image = true;
+    currentSpec.background_image_description = currentSpec.nodes[nodeIdx].asset_description || "Background image";
+
+    // Remove the image node since it's now the background
+    currentSpec.nodes.splice(nodeIdx, 1);
+
+    // Save and re-render
+    hasChanges = true;
+    await saveSpec();
+    renderSpec(currentSpec, currentSpecName);
+    hideProperties();
+
+    showToast("✓ Background set successfully!");
+  } catch (error) {
+    showToast("Error making background: " + error.message, true);
+    console.error("Make background error:", error);
+  }
 }
 
 async function loadSvgContent(nodeIdx, filename) {
