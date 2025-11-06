@@ -71,19 +71,27 @@ jupyter notebook notebooks/explore.ipynb
 
 ### Editor
 
-Preview and edit designs in your browser:
+Preview and edit designs in your browser with the interactive editor.
 
-1. Start a local server:
+**Quick Start:**
+
 ```bash
-python -m http.server 8000
+cd editor
+python3 launch.py
 ```
 
-2. Open in browser:
-```
-http://localhost:8000/editor/
-```
+Or double-click: `editor/launch.sh` (Mac/Linux) or `editor/launch.bat` (Windows)
 
-Click any spec in the sidebar to preview it. Edit properties like text, colors, positions, and opacity in real-time.
+The launcher auto-installs dependencies, starts the server on port 5001, and opens your browser.
+
+See [editor/README.md](editor/README.md) for detailed instructions.
+
+**Features:**
+- View and compare original vs reconstructed designs
+- Edit text, images, and SVG elements
+- Drag, resize, and reorder layers
+- Remove backgrounds from images (AI-powered)
+- Save changes directly to spec files
 
 ## Key Components
 
