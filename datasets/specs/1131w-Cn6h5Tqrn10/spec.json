@@ -1,27 +1,27 @@
 {
   "background_color": "#f5f5f2",
   "has_background_image": true,
-  "background_image_description": "Subtle light gray off‑white paper texture covering the entire canvas with fine horizontal and vertical fiber grain; no distinct shapes, just a soft linen-like pattern.",
+  "background_image_description": "Subtle light gray off\u2011white paper texture covering the entire canvas with fine horizontal and vertical fiber grain; no distinct shapes, just a soft linen-like pattern.",
   "nodes": [
     {
       "type": "image",
       "asset_description": "Top-right botanical cluster of realistic green eucalyptus-style leaves on thin stems, glossy surfaces with light-to-dark gradients, angled from the top-right corner toward the center-left. Cut-out with transparent background.",
       "filename": "asset-1.png",
-      "x": 735,
-      "y": 0,
+      "x": 785,
+      "y": -1,
       "width": 396,
       "height": 486,
-      "rotation": 0
+      "rotation": -60
     },
     {
       "type": "image",
       "asset_description": "Bottom-left botanical cluster of realistic green eucalyptus-style leaves and slender buds on branching stems, extending diagonally toward the center. Cut-out with transparent background.",
       "filename": "asset-2.png",
-      "x": 0,
-      "y": 1090,
+      "x": -90,
+      "y": 1118,
       "width": 600,
       "height": 510,
-      "rotation": 0
+      "rotation": 90
     },
     {
       "type": "text",
@@ -59,7 +59,7 @@
     },
     {
       "type": "text",
-      "text": "—@reallygreatsite",
+      "text": "\u2014@reallygreatsite",
       "x": 271,
       "y": 1168,
       "width": 590,
