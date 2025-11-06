@@ -1003,7 +1003,10 @@ function showProperties(nodeIdx) {
                 ${
                   node.filename
                     ? `<div class="property-row" style="display: block;">
-                    <button id="make-background-btn" style="margin-top: 12px; padding: 16px 24px; background: #ff9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Make Background</button>
+                    <button id="remove-background-btn" style="margin-top: 12px; padding: 16px 24px; background: #9c27b0; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Remove Background</button>
+                </div>
+                <div class="property-row" style="display: block;">
+                    <button id="make-background-btn" style="margin-top: 8px; padding: 16px 24px; background: #ff9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Make Background</button>
                 </div>
                 <div class="property-row" style="display: block;">
                     <button id="download-image-btn" style="margin-top: 8px; padding: 16px 24px; background: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 28px; font-weight: 600; width: 100%;">Download Image</button>
@@ -1047,7 +1050,7 @@ function showProperties(nodeIdx) {
     loadSvgContent(nodeIdx, node.filename);
   }
 
-  // Handle image download
+  // Handle image buttons
   if (node.type === "image" && node.filename) {
     const downloadBtn = document.getElementById("download-image-btn");
     if (downloadBtn) {
@@ -1056,11 +1059,17 @@ function showProperties(nodeIdx) {
       };
     }
 
-    // Handle make background
     const makeBackgroundBtn = document.getElementById("make-background-btn");
     if (makeBackgroundBtn) {
       makeBackgroundBtn.onclick = async () => {
         await makeBackground(nodeIdx, node.filename);
+      };
+    }
+
+    const removeBackgroundBtn = document.getElementById("remove-background-btn");
+    if (removeBackgroundBtn) {
+      removeBackgroundBtn.onclick = async () => {
+        await removeBackground(nodeIdx, node.filename);
       };
     }
   }
@@ -1193,6 +1202,40 @@ async function makeBackground(nodeIdx, filename) {
   } catch (error) {
     showToast("Error making background: " + error.message, true);
     console.error("Make background error:", error);
+  }
+}
+
+async function removeBackground(nodeIdx, filename) {
+  if (!currentSpec || !currentSpecName) return;
+
+  try {
+    showToast("Removing background... (this may take a few seconds)");
+
+    // Call API to remove background using Bria RMBG
+    const response = await fetch(`${API_URL}/api/remove-background`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        specName: currentSpecName,
+        filename: filename,
+      }),
+    });
+
+    const result = await response.json();
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to remove background");
+    }
+
+    // Re-render to show the updated image (with cache-busting)
+    renderSpec(currentSpec, currentSpecName);
+
+    // Keep properties panel open to show the updated image
+    showProperties(nodeIdx);
+
+    showToast("✓ Background removed successfully!");
+  } catch (error) {
+    showToast("Error removing background: " + error.message, true);
+    console.error("Remove background error:", error);
   }
 }
 

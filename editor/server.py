@@ -5,6 +5,11 @@ from flask import Flask, send_from_directory, request, jsonify, make_response
 from flask_cors import CORS
 from pathlib import Path
 import json
+import os
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for local development
@@ -123,6 +128,101 @@ def make_background():
         return jsonify({'success': True, 'path': str(dest_path)})
 
     except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Remove background from image
+@app.route('/api/remove-background', methods=['POST'])
+def remove_background():
+    try:
+        data = request.json
+        spec_name = data.get('specName')
+        filename = data.get('filename')
+
+        if not spec_name or not filename:
+            return jsonify({'error': 'Missing specName or filename'}), 400
+
+        spec_dir = BASE_DIR / 'datasets' / 'specs' / spec_name
+        image_path = spec_dir / filename
+
+        if not image_path.exists():
+            return jsonify({'error': 'Image not found'}), 404
+
+        # Get FAL API key
+        fal_api_key = os.getenv('FAL_API_KEY')
+        if not fal_api_key:
+            return jsonify({'error': 'FAL_API_KEY not configured'}), 500
+
+        # Convert image to data URL
+        import base64
+        with open(image_path, 'rb') as f:
+            image_data = base64.b64encode(f.read()).decode('utf-8')
+
+        # Determine mime type
+        mime_types = {
+            '.jpg': 'image/jpeg',
+            '.jpeg': 'image/jpeg',
+            '.png': 'image/png',
+            '.webp': 'image/webp',
+        }
+        mime_type = mime_types.get(image_path.suffix.lower(), 'image/png')
+        image_url = f"data:{mime_type};base64,{image_data}"
+
+        # Call Bria RMBG API
+        headers = {'Authorization': f'Key {fal_api_key}'}
+        payload = {'image_url': image_url}
+
+        response = requests.post(
+            'https://fal.run/fal-ai/bria/background/remove',
+            json=payload,
+            headers=headers,
+            timeout=120
+        )
+        response.raise_for_status()
+
+        # Handle async job or immediate response
+        if response.status_code == 200:
+            result = response.json()
+        elif response.status_code == 202:
+            job = response.json()
+            status_url = job.get('status_url') or job.get('response_url')
+
+            # Poll for completion
+            while True:
+                import time
+                time.sleep(2)
+                status_response = requests.get(status_url, headers=headers, timeout=120)
+                status_response.raise_for_status()
+                result = status_response.json()
+                state = (result.get('status') or result.get('state') or '').lower()
+
+                if state in ('completed', 'success', 'succeeded'):
+                    break
+                if state in ('failed', 'error'):
+                    return jsonify({'error': f'Background removal failed: {result}'}), 500
+        else:
+            return jsonify({'error': f'Unexpected response: {response.status_code}'}), 500
+
+        # Download the result image
+        if 'image' in result and 'url' in result['image']:
+            result_url = result['image']['url']
+        elif 'images' in result and len(result['images']) > 0:
+            result_url = result['images'][0]['url']
+        else:
+            return jsonify({'error': 'No output image in result'}), 500
+
+        # Download and save
+        image_response = requests.get(result_url, timeout=60)
+        image_response.raise_for_status()
+
+        # Save back to the same file
+        with open(image_path, 'wb') as f:
+            f.write(image_response.content)
+
+        return jsonify({'success': True, 'path': str(image_path)})
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
         return jsonify({'error': str(e)}), 500
 
 # Create new SVG file
