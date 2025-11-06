@@ -4,6 +4,17 @@
   "background_image_description": "",
   "nodes": [
     {
+      "type": "image",
+      "asset_description": "Uploaded image: I9yhBvc2KdHvy26C82cGf.jpg",
+      "filename": "asset-3.png",
+      "x": 280,
+      "y": 6,
+      "width": 943,
+      "height": 1570,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
       "type": "svg",
       "svg_description": "Solid white circle badge (fill #FFFFFF) with no stroke or shadow.",
       "filename": "svg-1.svg",
@@ -11,16 +22,6 @@
       "y": 1000,
       "width": 420,
       "height": 420,
-      "rotation": 0
-    },
-    {
-      "type": "image",
-      "asset_description": "Photograph of a kraft-paper cup filled with vanilla ice cream scoops, thick caramel sauce being poured from above forming a vertical stream, and caramel drips over the scoops. Soft studio lighting on a cream background.",
-      "filename": "asset-1.png",
-      "x": 520,
-      "y": 100,
-      "width": 560,
-      "height": 1220,
       "rotation": 0
     },
     {
@@ -37,10 +38,10 @@
       "type": "svg",
       "svg_description": "Rounded rectangle info card with 24px corner radius, fill #FFFFFF, very soft drop shadow (black at ~10% opacity).",
       "filename": "svg-2.svg",
-      "x": 785,
+      "x": 786,
       "y": 300,
-      "width": 300,
-      "height": 210,
+      "width": 299,
+      "height": 223,
       "rotation": 0
     },
     {
@@ -80,25 +81,26 @@
     {
       "type": "text",
       "text": "Sweet\nPromo\nIs Here!",
-      "x": 84,
-      "y": 146,
-      "width": 520,
-      "height": 620,
+      "x": 32,
+      "y": 26,
+      "width": 679,
+      "height": 582,
       "rotation": 0,
-      "font-family": "Georgia",
-      "font-size": 170,
+      "font-family": "Playfair Display",
+      "font-size": 194,
       "color": "#000000",
       "text-align": "left",
       "font-weight": "400",
       "font-style": "normal",
       "text-decoration": "none",
-      "text-transform": "none"
+      "text-transform": "none",
+      "line-height": 0.8
     },
     {
       "type": "text",
       "text": "Liceria & Co.",
       "x": 930,
-      "y": 70,
+      "y": 87,
       "width": 170,
       "height": 36,
       "rotation": 0,
