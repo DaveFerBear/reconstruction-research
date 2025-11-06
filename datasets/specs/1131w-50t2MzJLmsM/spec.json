@@ -4,16 +4,6 @@
   "background_image_description": "Full-canvas light beige crumpled paper texture with soft folds and shadows, giving a wrinkled kraft-paper appearance.",
   "nodes": [
     {
-      "type": "image",
-      "asset_description": "Monochrome cobalt-blue hand-drawn line illustration: multiple sketchy five-pointed stars of varying sizes scattered on the left and center; a steaming teacup with three rising steam squiggles sitting on an oval saucer/tray; on the right, a woman wearing an apron and boots with one arm raised holding the tray above her head and the other hand on her hip. All elements are outlined with rough pencil-like strokes and no fills.",
-      "filename": "asset-1.png",
-      "x": 70,
-      "y": 340,
-      "width": 990,
-      "height": 1080,
-      "rotation": 0
-    },
-    {
       "type": "svg",
       "svg_description": "Two rows of evenly spaced rounded blue dash marks (alternating long and short) acting as decorative separators; first row positioned below the first info line, second row below the second info line.",
       "filename": "svg-1.svg",
@@ -107,6 +97,17 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "uppercase"
+    },
+    {
+      "type": "image",
+      "asset_description": "A blue hand-drawn crayon picture of a woman carrying coffee with blue stars to her left",
+      "filename": "asset-7.png",
+      "x": 148,
+      "y": 440,
+      "width": 891,
+      "height": 1133,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1131,
