@@ -93,8 +93,8 @@ async function loadSpec(specName) {
       item.classList.toggle("active", item.dataset.specName === specName);
     });
 
-    // Load spec JSON
-    const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json`);
+    // Load spec JSON with cache-busting
+    const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json?t=${Date.now()}`);
     const spec = await specResponse.json();
 
     // Store current spec
@@ -127,12 +127,13 @@ function loadOriginalImage(specName) {
   // Try multiple extensions since files could be .webp, .jpg, .png, etc.
   const extensions = ['webp', 'jpg', 'jpeg', 'png'];
   let attemptIndex = 0;
+  const cacheBuster = `?t=${Date.now()}`;
 
   function tryNextExtension(img) {
     attemptIndex++;
     if (attemptIndex < extensions.length) {
       const ext = extensions[attemptIndex];
-      img.src = `${CANVA_DIR}/${specName}.${ext}`;
+      img.src = `${CANVA_DIR}/${specName}.${ext}${cacheBuster}`;
     } else {
       // All extensions failed
       originalImage.innerHTML = '<div style="padding: 20px; color: #999;">Original image not found</div>';
@@ -141,7 +142,7 @@ function loadOriginalImage(specName) {
 
   // Start with the first extension
   const img = document.createElement('img');
-  img.src = `${CANVA_DIR}/${specName}.${extensions[0]}`;
+  img.src = `${CANVA_DIR}/${specName}.${extensions[0]}${cacheBuster}`;
   img.alt = specName;
   img.onerror = function() { tryNextExtension(this); };
 
@@ -209,8 +210,9 @@ function renderSpec(spec, specName) {
             `;
     } else if (node.type === "image") {
       // Use explicit filename from spec, fallback to placeholder
+      // Add cache-busting parameter
       const assetPath = node.filename
-        ? `${SPECS_DIR}/${specName}/${node.filename}`
+        ? `${SPECS_DIR}/${specName}/${node.filename}?t=${Date.now()}`
         : "";
 
       const style = `
@@ -246,6 +248,7 @@ function renderSpec(spec, specName) {
             `;
     } else if (node.type === "svg") {
       // Use explicit filename from spec, fallback to placeholder
+      // Note: cache-busting is added when loading the SVG in loadSVGs()
       const svgPath = node.filename
         ? `${SPECS_DIR}/${specName}/${node.filename}`
         : "";
@@ -280,7 +283,8 @@ function renderSpec(spec, specName) {
   // Build background style
   let bgStyle = `background-color: ${spec.background_color};`;
   if (spec.has_background_image) {
-    const bgPath = `${SPECS_DIR}/${specName}/background.png`;
+    // Add cache-busting parameter
+    const bgPath = `${SPECS_DIR}/${specName}/background.png?t=${Date.now()}`;
     bgStyle = `background-image: url('${bgPath}'); background-size: cover; background-position: center;`;
   }
 
@@ -318,7 +322,9 @@ async function loadSVGs() {
     const svgPlaceholder = container.querySelector(".svg-placeholder");
 
     try {
-      const response = await fetch(svgPath);
+      // Add cache-busting parameter to force fresh load
+      const cacheBuster = `?t=${Date.now()}`;
+      const response = await fetch(svgPath + cacheBuster);
       if (response.ok) {
         const svgText = await response.text();
         // Inject SVG with proper sizing
@@ -1115,7 +1121,8 @@ function setupFontPicker(nodeIdx) {
 }
 
 function downloadImage(filename) {
-  const imagePath = `${SPECS_DIR}/${currentSpecName}/${filename}`;
+  // Add cache-busting to ensure we download the latest version
+  const imagePath = `${SPECS_DIR}/${currentSpecName}/${filename}?t=${Date.now()}`;
   const link = document.createElement("a");
   link.href = imagePath;
   link.download = filename;
