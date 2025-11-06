@@ -4,20 +4,10 @@
   "background_image_description": "",
   "nodes": [
     {
-      "type": "image",
-      "asset_description": "Composite cutout of fashion items arranged on a light beige background: top-center black oversized cat-eye sunglasses; left mid a blue denim jacket on a thin silver hanger with button details; right mid a white short-sleeve polo shirt with thin orange-red horizontal stripes and a light gray collar; lower-right a pair of light-blue distressed jeans crossing at the ankles with ripped patches; lower-left a white handbag with tan leather handles/trim and gold hardware; bottom-left a pair of beige suede chunky-sole derby shoes with thick black rubber tread, one shoe angled with visible outsole lugs. Items are evenly spaced forming a loose grid.",
-      "filename": "asset-1.png",
-      "x": 120,
-      "y": 260,
-      "width": 827,
-      "height": 930,
-      "rotation": 0
-    },
-    {
       "type": "text",
       "text": "FASHIONABLE WARDROBE",
       "x": 0,
-      "y": 118,
+      "y": 161,
       "width": 1067,
       "height": 92,
       "rotation": 0,
@@ -46,6 +36,72 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 65d1ee69-d8b6-4bd3-861b-11059ce95f46.png",
+      "filename": "asset-6.png",
+      "x": 142,
+      "y": 524,
+      "width": 1024,
+      "height": 1024,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 558239ab-ac25-4807-a908-561a03a558a3.png",
+      "filename": "asset-7.png",
+      "x": 176,
+      "y": 353,
+      "width": 543,
+      "height": 442,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 11b78cb7-5d46-4b07-a6b4-d652a59ffd1e.png",
+      "filename": "asset-8.png",
+      "x": 501,
+      "y": 354,
+      "width": 457,
+      "height": 645,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: be47dad2-69a5-4f16-8ffb-7cfacd98e575.png",
+      "filename": "asset-9.png",
+      "x": 371,
+      "y": 770,
+      "width": 416,
+      "height": 573,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 648986bf-1911-4220-9acc-0c3ffef7002d.png",
+      "filename": "asset-10.png",
+      "x": 86,
+      "y": 821,
+      "width": 285,
+      "height": 364,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: c4d7ada0-0326-419c-b017-696ee3d1ecfe.png",
+      "filename": "asset-11.png",
+      "x": 554,
+      "y": 1120,
+      "width": 509,
+      "height": 747,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1067,
