@@ -15,7 +15,7 @@
     },
     {
       "type": "text",
-      "text": "STUDIO ✦ AGATHO",
+      "text": "STUDIO \u2726 AGATHO",
       "x": 636,
       "y": 70,
       "width": 328,
@@ -83,6 +83,17 @@
       "width": 320,
       "height": 70,
       "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 1600w-K18O8e4K488.webp",
+      "filename": "asset-4.png",
+      "x": 1086,
+      "y": 407,
+      "width": 1600,
+      "height": 1600,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1600,
