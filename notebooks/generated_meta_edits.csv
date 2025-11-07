@@ -1,0 +1,971 @@
+design,template_id,template_name,categories,instruction
+1131w-eRlpDg4f0K8,1,Color Palette Variation,"color,global","Convert the monochrome lavender/purple palette to warm cream background with navy text and muted ochre accents, retaining the cozy mood and readability."
+1131w-eRlpDg4f0K8,2,Element Recolor,"color,local",Recolor the scalloped border to muted ochre (#C3A65A) to shift emphasis outward while harmonizing with the navy line art.
+1131w-eRlpDg4f0K8,3,Layout Swap,"layout,global","Move the central books illustration to the top and place 'JOIN OUR Book Club!' directly beneath it, keeping both centered."
+1131w-eRlpDg4f0K8,4,Scale and Spacing Adjustment,"layout,local",Increase the books illustration by 20% and add 16px top and bottom padding to maintain breathing room.
+1131w-eRlpDg4f0K8,5,Copy Rewrite,"copy,local",Join Our Reading Circle!
+1131w-eRlpDg4f0K8,6,Copy Expansion,"copy,global","Replace 'Let’s get reading!' with 'Let’s get reading together—discover new favorites, share thoughtful conversation, and meet fellow book lovers every month.'"
+1131w-eRlpDg4f0K8,7,Image Replacement,"image,global",Replace the floral book stack illustration with a cozy armchair-and-books line illustration in the same single-color style.
+1131w-eRlpDg4f0K8,8,Visual Addition or Removal,"image,local",Remove the faint script 'Book Club!' behind the headline to reduce visual clutter and improve readability.
+1131w-eRlpDg4f0K8,9,Typography or Style Shift,"style,global","Switch all headings to Source Sans Pro Bold to create a friendlier, modern tone."
+1131w-eRlpDg4f0K8,10,Structural Enhancement,"structure,local",Add a subtle navy drop shadow to the main headline to lift it from the background and strengthen hierarchy.
+1131w-Uq1C4aZZi9w,1,Color Palette Variation,"color,global","Current palette: blush pinks and crimson; shift to mint-teal with apricot accents for backgrounds and rays, retaining dark text to preserve soft mood and readability."
+1131w-Uq1C4aZZi9w,2,Element Recolor,"color,local",Recolor the “DAIQUIRI” headline from crimson to deep emerald (#006A4E) to redirect emphasis and complement the strawberry illustration.
+1131w-Uq1C4aZZi9w,3,Layout Swap,"layout,global","Swap positions of the headline and cocktail illustration, placing the glass above and the “Strawberry Daiquiri” title below to balance the page."
+1131w-Uq1C4aZZi9w,4,Scale and Spacing Adjustment,"layout,local",Enlarge the cocktail glass illustration by 15% and increase top and bottom padding around it by 24px to prevent crowding adjacent text.
+1131w-Uq1C4aZZi9w,5,Copy Rewrite,"copy,local",Change the headline to “Strawberry Rum Daiquiri.”
+1131w-Uq1C4aZZi9w,6,Copy Expansion,"copy,global","Expand the history paragraph to 2–3× length, adding brief origin context, taste notes, and serving suggestions while maintaining the same serif styling and alignment."
+1131w-Uq1C4aZZi9w,7,Image Replacement,"image,global","Replace the strawberry cocktail illustration with a mojito glass illustration of similar size and angle to test a fresh, mint-themed version."
+1131w-Uq1C4aZZi9w,8,Visual Addition or Removal,"image,local",Add a small mint leaf icon near the Ingredients header to increase visual rhythm without cluttering the layout.
+1131w-Uq1C4aZZi9w,9,Typography or Style Shift,"style,global","Switch the “DAIQUIRI” font to a high-contrast Didone (e.g., Bodoni) in small caps to shift tone from playful to elegant."
+1131w-Uq1C4aZZi9w,10,Structural Enhancement,"structure,local",Add a subtle 2px charcoal drop shadow to the “1902” numeral to slightly increase hierarchy without altering content.
+1131w-zau150HLMWk,1,Color Palette Variation,"color,global","Switch the navy-on-light-gray scheme to coral orange graphics on soft seafoam stripes, maintaining the nautical mood and clear contrast."
+1131w-zau150HLMWk,2,Element Recolor,"color,local",Recolor the lobster illustration from navy to deep coral (#FF6F61).
+1131w-zau150HLMWk,3,Layout Swap,"layout,global","Swap the positions of the top 'You're my' and bottom 'lobster' texts, placing 'lobster' above the oval and 'You're my' below."
+1131w-zau150HLMWk,4,Scale and Spacing Adjustment,"layout,local",Enlarge the oval lobster illustration by 12% and increase vertical spacing from both headlines to maintain balance.
+1131w-zau150HLMWk,5,Copy Rewrite,"copy,local",Replace the headline 'You're my lobster' with 'You're my catch'.
+1131w-zau150HLMWk,6,Copy Expansion,"copy,global","Expand the headline to: 'You’re my lobster—my steadfast partner through every tide, season, and storm'."
+1131w-zau150HLMWk,7,Image Replacement,"image,global",Replace the lobster sketch with a blue anchor illustration centered in the same oval frame.
+1131w-zau150HLMWk,8,Visual Addition or Removal,"image,local",Add a small navy starfish icon inside the oval’s lower-left to enrich rhythm.
+1131w-zau150HLMWk,9,Typography or Style Shift,"style,global",Change the handwritten script to Playfair Display Semibold in title case for a more elegant tone.
+1131w-zau150HLMWk,10,Structural Enhancement,"structure,local",Add a thin navy double-line border inset around the canvas to frame the composition.
+1131w-9cN5biKALLQ,1,Color Palette Variation,"color,global",The design uses light blue background and deep blue text; switch to a warm contrast palette with pale cream background and bold coral-orange text while maintaining readability.
+1131w-9cN5biKALLQ,2,Element Recolor,"color,local",Change the price '₱3.00 ONLY' color from deep blue to bright cyan (#15D1FF) to draw emphasis while matching the cool scheme.
+1131w-9cN5biKALLQ,3,Layout Swap,"layout,global","Swap positions: place '₱3.00 ONLY' at the top center and move 'ICE FOR SALE' downward to the middle-lower area, preserving balanced margins."
+1131w-9cN5biKALLQ,4,Scale and Spacing Adjustment,"layout,local",Increase 'ICE FOR SALE' size by 20% and add 24px extra top and bottom padding around it to maintain breathing room.
+1131w-9cN5biKALLQ,5,Copy Rewrite,"copy,local",Replace 'ICE FOR SALE' with 'ICE SOLD HERE'.
+1131w-9cN5biKALLQ,6,Copy Expansion,"copy,global","Expand the price line to: 'Only ₱3.00 per pack—crystal-clear ice for drinks, coolers, and parties; refreshing and ready whenever you need it today'."
+1131w-9cN5biKALLQ,7,Image Replacement,"image,global","Replace the flat light-blue background with a close-up photo of frosty ice cubes, keeping the centered text overlay."
+1131w-9cN5biKALLQ,8,Visual Addition or Removal,"image,local","Add a small white snowflake icon above the price, aligned center, to subtly enrich the cold theme."
+1131w-9cN5biKALLQ,9,Typography or Style Shift,"style,global","Switch the headline and price to a clean geometric sans like Futura Bold, all uppercase, for a crisper, more modern tone."
+1131w-9cN5biKALLQ,10,Structural Enhancement,"structure,local",Add a dark-blue rounded pill banner behind '₱3.00 ONLY' with 12px padding to elevate its hierarchy.
+1131w-w-XME4y3KWk,1,Color Palette Variation,"color,global","Switch the warm cream background to pale teal (#E6F0EE) and recolor all black typography to deep navy (#12243A) for a cool, contrasting palette while preserving readability."
+1131w-w-XME4y3KWk,2,Element Recolor,"color,local",Recolor the discount circle fill to soft mint (#E9FFF2) to shift emphasis while maintaining strong contrast with the black text.
+1131w-w-XME4y3KWk,3,Layout Swap,"layout,global","Swap the positions of the headline and the ice-cream cup, moving the cup left and the headline right to maintain visual balance."
+1131w-w-XME4y3KWk,4,Scale and Spacing Adjustment,"layout,local",Increase the discount badge diameter by 20% and add 16px spacing between the badge and the cup to prevent overlap.
+1131w-w-XME4y3KWk,5,Copy Rewrite,"copy,local",Change the headline to: Sweet Deals Are Here!
+1131w-w-XME4y3KWk,6,Copy Expansion,"copy,global","Replace the body under 'Vanilla Ice Cream' with: Each creamy scoop bursts with rich, velvety flavor, crafted from real vanilla beans; smooth, comforting, and indulgent—perfect solo or with favorite toppings."
+1131w-w-XME4y3KWk,7,Image Replacement,"image,global","Replace the ice-cream cup photo with a mixed-berry sorbet cup topped with raspberry drizzle, matching the same angle and light, neutral background."
+1131w-w-XME4y3KWk,8,Visual Addition or Removal,"image,local",Remove the scattered almonds at the bottom to reduce visual noise and keep focus on the cup and discount badge.
+1131w-w-XME4y3KWk,9,Typography or Style Shift,"style,global","Switch the headline to Montserrat Black, uppercase, tightening tracking by -10 to shift the tone from playful serif to modern bold."
+1131w-w-XME4y3KWk,10,Structural Enhancement,"structure,local",Add a 1px charcoal (#333) stroke and a soft 8px blur shadow to the discount circle to elevate it in the hierarchy.
+1131w-w2bliFOwlfc,1,Color Palette Variation,"color,global","Recolor all coral reds (type, accents, phone tint) to deep teal (#0D5E5E) and shift the blush background to warm cream (#FFF3E7) to preserve nostalgic contrast."
+1131w-w2bliFOwlfc,2,Element Recolor,"color,local",Change the 'Please?' wordmark to deep teal (#0F5F63) to shift emphasis downward while harmonizing with the blush background and red phone.
+1131w-w2bliFOwlfc,3,Layout Swap,"layout,global","Swap the central phone image with the 'Call Me' headline, placing the phone upper-left and the headline where the phone currently sits."
+1131w-w2bliFOwlfc,4,Scale and Spacing Adjustment,"layout,local",Increase the phone image size by 15% and add 24px bottom padding above 'Please?' to prevent overlap.
+1131w-w2bliFOwlfc,5,Copy Rewrite,"copy,local","Replace the 'Call Me' headline with 'Ring Me' to keep the playful, nostalgic tone."
+1131w-w2bliFOwlfc,6,Copy Expansion,"copy,global","Expand the top-right blurb to: ""Rediscover the magic of simpler times with this nostalgic rotary phone—its charming ring, sturdy handset, and deliberate dial invite slower conversations and warm memories that brighten shelves, desks, and everyday moments."""
+1131w-w2bliFOwlfc,7,Image Replacement,"image,global","Replace the red rotary phone photo with a mint-green typewriter shot, front-facing on the same soft background."
+1131w-w2bliFOwlfc,8,Visual Addition or Removal,"image,local",Remove the red asterisk near the cord to simplify the composition.
+1131w-w2bliFOwlfc,9,Typography or Style Shift,"style,global",Switch all display headlines to Baskerville Semibold Italic to shift tone from playful to refined.
+1131w-w2bliFOwlfc,10,Structural Enhancement,"structure,local","Add a soft elliptical drop shadow beneath the phone (30% opacity, 8px blur) to anchor it on the page."
+1131w-tpnRumgzO8o,1,Color Palette Variation,"color,global","With dominant red, yellow, and cream, switch to teal and coral accents while retaining the cream background for equal contrast and a similarly vibrant mood."
+1131w-tpnRumgzO8o,2,Element Recolor,"color,local",Recolor the left starburst date badge background from yellow to teal to draw focus while complementing the cream and red.
+1131w-tpnRumgzO8o,3,Layout Swap,"layout,global","Swap the burger illustration to the left and move the stacked 'SUMMER' headline to the right, keeping badges aligned near their respective edges for balance."
+1131w-tpnRumgzO8o,4,Scale and Spacing Adjustment,"layout,local",Increase the stacked 'SUMMER' typography by 10% and add a 20px left margin to the burger illustration to maintain separation.
+1131w-tpnRumgzO8o,5,Copy Rewrite,"copy,local",Change 'OPEN DAILY 08AM-10PM' to 'OPEN EVERY DAY 8AM–10PM'.
+1131w-tpnRumgzO8o,6,Copy Expansion,"copy,global","Replace 'Ginyard International Co. Present' with 'Ginyard International Co. proudly presents a community celebration of flavors, music, and sunshine' to test multi-line wrapping."
+1131w-tpnRumgzO8o,7,Image Replacement,"image,global",Replace the burger drawing with a line-art ice cream sundae illustration of similar scale and right-side placement.
+1131w-tpnRumgzO8o,8,Visual Addition or Removal,"image,local",Add a subtle 10% opacity radial burst behind the '15-20 JUNE' starburst to create gentle depth.
+1131w-tpnRumgzO8o,9,Typography or Style Shift,"style,global","Switch the headline and subheads to a condensed sans-serif (e.g., Futura Condensed) to shift the vibe from playful diner to sleek modern."
+1131w-tpnRumgzO8o,10,Structural Enhancement,"structure,local",Add a 2px red keyline border around the poster canvas to subtly frame and strengthen hierarchy.
+1131w-rH9o0IzDWQY,1,Color Palette Variation,"color,global","Replace the dominant warm pink, yellow, and tan backgrounds with a complementary cool palette of teal, navy, and slate to maintain premium mood and clear contrast against the white center."
+1131w-rH9o0IzDWQY,2,Element Recolor,"color,local",Change the 'New' script color to rich gold (#C8A45D) to elevate emphasis while harmonizing with the warm backgrounds.
+1131w-rH9o0IzDWQY,3,Layout Swap,"layout,global","Swap the central headline with the top-right dropper-bottle photo, placing the headline in the top-right wedge and the photo in the central diamond."
+1131w-rH9o0IzDWQY,4,Scale and Spacing Adjustment,"layout,local",Increase 'PRODUCT' wordmark size by 20% and add 12px top/bottom padding inside the central diamond to preserve balance.
+1131w-rH9o0IzDWQY,5,Copy Rewrite,"copy,local",Replace the main headline 'New Product' with 'New Arrival'.
+1131w-rH9o0IzDWQY,6,Copy Expansion,"copy,global","Expand 'PREMIUM PRODUCT' to 'Premium product crafted with clean ingredients, elevated packaging, and everyday performance for a polished routine'."
+1131w-rH9o0IzDWQY,7,Image Replacement,"image,global",Replace the top-right dropper-bottle photo with a similar two-object composition featuring amber candles on a warm backdrop.
+1131w-rH9o0IzDWQY,8,Visual Addition or Removal,"image,local",Add a thin 1px gold divider line between 'PRODUCT' and 'PREMIUM PRODUCT' to refine rhythm.
+1131w-rH9o0IzDWQY,9,Typography or Style Shift,"style,global",Switch 'PRODUCT' to a high-contrast serif like Didot in uppercase to shift the tone from modern to elegant.
+1131w-rH9o0IzDWQY,10,Structural Enhancement,"structure,local","Apply a soft drop shadow (0, 8, 24, 12%) to the central white diamond to subtly lift the headline layer."
+1131w-sSnAV2dB_qg,1,Color Palette Variation,"color,global","Shift the warm orange accents to a cool teal-and-charcoal palette, recoloring the city glow and particles while preserving black typography and overall thriller mood."
+1131w-sSnAV2dB_qg,2,Element Recolor,"color,local",Change the 'AGENT' headline color to burnt orange matching the city glow.
+1131w-sSnAV2dB_qg,3,Layout Swap,"layout,global",Move the agent composite to the right half and left-align the title stack on the left for balance.
+1131w-sSnAV2dB_qg,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'AGENT' headline by 12% and add 20px extra top padding to maintain breathing room.
+1131w-sSnAV2dB_qg,5,Copy Rewrite,"copy,local",Change the headline 'AGENT' to 'ASSET'.
+1131w-sSnAV2dB_qg,6,Copy Expansion,"copy,global","Expand 'A FILM BY NEIL TRAN' to 'A FILM BY NEIL TRAN — A TENSE DESCENT INTO BETRAYAL, SURVEILLANCE, AND THE COST OF LOYALTY.'"
+1131w-sSnAV2dB_qg,7,Image Replacement,"image,global","Replace the suited male agent with a shadowy hooded figure, retaining the double-exposed skyline and particle dispersion for a darker techno-thriller mood."
+1131w-sSnAV2dB_qg,8,Visual Addition or Removal,"image,local",Add a faint oversized crosshair behind the title to subtly texture the negative space.
+1131w-sSnAV2dB_qg,9,Typography or Style Shift,"style,global",Switch the headline to a condensed uppercase sans-serif to shift the tone from rugged to refined.
+1131w-sSnAV2dB_qg,10,Structural Enhancement,"structure,local",Apply a subtle 30% black vignette around the edges to frame the composition and emphasize central elements.
+1131w-HeJuVR7Avb0,1,Color Palette Variation,"color,global",Replace the pink panel with soft aqua (#CFEFF3) and change all green typography to deep navy (#103A5C) to retain a fresh coastal mood and readability.
+1131w-HeJuVR7Avb0,2,Element Recolor,"color,local",Recolor the 'POSITANO' headline from olive green to warm terracotta (#E05D4A) to shift emphasis upward while staying harmonious with the lemons and pink backdrop.
+1131w-HeJuVR7Avb0,3,Layout Swap,"layout,global","Swap the positions of 'POSITANO' and 'AMALFI COAST', placing 'AMALFI COAST' at the top and 'POSITANO' at the bottom with centered alignment and equal margins."
+1131w-HeJuVR7Avb0,4,Scale and Spacing Adjustment,"layout,local",Scale the pink panel with lemons up by 8% and increase top and bottom margins by 12px to maintain breathing room around the headlines.
+1131w-HeJuVR7Avb0,5,Copy Rewrite,"copy,local",Change the bottom line 'AMALFI COAST' to 'AMALFI SHORE'.
+1131w-HeJuVR7Avb0,6,Copy Expansion,"copy,global","Replace 'AMALFI COAST' with: 'AMALFI COAST — sun-drenched cliffs, fragrant lemon groves, and winding seaside villages inviting slow, sparkling summer wanderings.'"
+1131w-HeJuVR7Avb0,7,Image Replacement,"image,global",Replace the lemon-branch watercolor with a watercolor of bougainvillea sprigs arranged diagonally across the same pink panel.
+1131w-HeJuVR7Avb0,8,Visual Addition or Removal,"image,local",Add a small white lemon-blossom icon (12px) near the upper-left of the pink panel to subtly enrich visual rhythm.
+1131w-HeJuVR7Avb0,9,Typography or Style Shift,"style,global","Change all headline text to a high-contrast serif (e.g., Didot) at the same sizes to shift the tone from playful to elegant."
+1131w-HeJuVR7Avb0,10,Structural Enhancement,"structure,local",Add a 2px olive-green stroke around the pink rectangle to strengthen framing and focus.
+1131w-120Kpwxx3eY,1,Color Palette Variation,"color,global","Replace all cobalt-blue elements (headers, icons, rules, border) with deep teal (#0E7C86) and introduce soft coral (#FF6F61) for accents, retaining the warm ivory background for readability."
+1131w-120Kpwxx3eY,2,Element Recolor,"color,local",Recolor the 'Estelle Darcy' headline from cobalt blue to deep teal (#0E7C86) to soften contrast while maintaining hierarchy.
+1131w-120Kpwxx3eY,3,Layout Swap,"layout,global","Swap positions of the profile photo and the name/contact block, placing the photo on the right and the name/contact on the left without changing column widths."
+1131w-120Kpwxx3eY,4,Scale and Spacing Adjustment,"layout,local",Increase the profile photo size by 15% and expand its right margin to 24px to preserve gutter spacing against the main content column.
+1131w-120Kpwxx3eY,5,Copy Rewrite,"copy,local",Replace the subheadline 'Graphic Designer' with 'Visual Designer' to maintain tone and length.
+1131w-120Kpwxx3eY,6,Copy Expansion,"copy,global","Expand the About Me paragraph to 2–3× its current length (90–120 words), keeping professional tone and existing paragraph styling."
+1131w-120Kpwxx3eY,7,Image Replacement,"image,global","Replace the portrait photo with a minimalist vector avatar illustration facing left, similar crop and neutral background."
+1131w-120Kpwxx3eY,8,Visual Addition or Removal,"image,local",Remove the blue squiggle doodle above the name to reduce visual clutter and streamline the header.
+1131w-120Kpwxx3eY,9,Typography or Style Shift,"style,global",Switch all headings from the current sans-serif to 'Merriweather SemiBold' and set them Title Case to shift tone from techy to elegant.
+1131w-120Kpwxx3eY,10,Structural Enhancement,"structure,local",Add a 1px vertical divider line between the left column and the right content area starting below the top border to clarify hierarchy.
+1131w-mOTBWbhbFs0,1,Color Palette Variation,"color,global",Replace the dark green background and cream typography/illustration with deep navy background and warm coral-beige text to keep the retro mood and high contrast.
+1131w-mOTBWbhbFs0,2,Element Recolor,"color,local",Recolor the 'TO GO' headline from cream to warm mustard (#D4A72C) to heighten emphasis against the green background.
+1131w-mOTBWbhbFs0,3,Layout Swap,"layout,global","Swap the 'Coffee TO GO' block with the cup illustration, moving the illustration to the top and the headline to the center above the schedule."
+1131w-mOTBWbhbFs0,4,Scale and Spacing Adjustment,"layout,local",Increase the cup illustration size by 20% and add 24px spacing above the illustration to prevent crowding under the headline.
+1131w-mOTBWbhbFs0,5,Copy Rewrite,"copy,local",Replace 'Coffee TO GO' with 'Grab & Go Coffee'.
+1131w-mOTBWbhbFs0,6,Copy Expansion,"copy,global","Extend the hours line to: 'MON–FRI 07:00–20:30 — fresh brews all day, quick pickup, mobile ordering, and limited seating for a speedy stop'."
+1131w-mOTBWbhbFs0,7,Image Replacement,"image,global","Replace the group-lifting-cup illustration with a similar monochrome drawing of a courier on a bicycle carrying an oversized takeaway cup, maintaining central placement."
+1131w-mOTBWbhbFs0,8,Visual Addition or Removal,"image,local",Add a small cream starburst behind the 'TO GO' word to create a focal pop without clutter.
+1131w-mOTBWbhbFs0,9,Typography or Style Shift,"style,global","Switch the blocky 'TO GO' typeface to a sleek condensed sans (e.g., Neue Haas Grotesk Condensed) to shift the poster from retro to contemporary."
+1131w-mOTBWbhbFs0,10,Structural Enhancement,"structure,local",Add a thin cream border inset 16px around the canvas to frame content and improve hierarchy.
+1067w-IQprojiENUA,1,Color Palette Variation,"color,global","With beige and denim blue dominant, change the background to muted coral-orange to complement the blues while retaining black typography for readability."
+1067w-IQprojiENUA,2,Element Recolor,"color,local",Recolor the striped polo’s red stripes to deep navy to shift emphasis upward while harmonizing with the denim pieces.
+1067w-IQprojiENUA,3,Layout Swap,"layout,global",Swap the denim jacket on the left with the jeans on the right to rebalance blue mass without changing other placements.
+1067w-IQprojiENUA,4,Scale and Spacing Adjustment,"layout,local",Enlarge the sunglasses by 20% and add 16px spacing around them to maintain separation from the jacket and polo.
+1067w-IQprojiENUA,5,Copy Rewrite,"copy,local",Change the headline to STYLISH WARDROBE.
+1067w-IQprojiENUA,6,Copy Expansion,"copy,global","Expand the headline to FASHIONABLE WARDROBE ESSENTIALS FOR EVERYDAY STYLE, keeping the same font, uppercase styling, and centered alignment."
+1067w-IQprojiENUA,7,Image Replacement,"image,global","Replace the clothing flat-lay with a skincare essentials flat-lay—serums, moisturizer, and roller—arranged with the same spacing and central composition."
+1067w-IQprojiENUA,8,Visual Addition or Removal,"image,local",Remove the hanger hook from the denim jacket to reduce minor clutter near the top-left.
+1067w-IQprojiENUA,9,Typography or Style Shift,"style,global","Switch the headline font to a bold geometric sans-serif, such as Montserrat Bold, for a cleaner, modern tone."
+1067w-IQprojiENUA,10,Structural Enhancement,"structure,local",Add a 2px black keyline border around the canvas to frame the layout and subtly increase hierarchy.
+1131w-Cn6h5Tqrn10,1,Color Palette Variation,"color,global","Currently white and forest green dominate; switch to a complementary palette by recoloring all greens to muted terracotta (#C4684E) and text to deep wine (#5A1F2E), retaining the white background."
+1131w-Cn6h5Tqrn10,2,Element Recolor,"color,local",Change the central script headline color from dark green to deep navy (#0F2A43) to increase contrast against the leaves while maintaining harmony.
+1131w-Cn6h5Tqrn10,3,Layout Swap,"layout,global","Swap the central quote with the 'Daily Motivation' line: move the quote to top-center and place 'Daily Motivation' mid-center, maintaining leaf corner framing."
+1131w-Cn6h5Tqrn10,4,Scale and Spacing Adjustment,"layout,local",Enlarge the central quote by 15% and add 24px extra top and bottom padding to prevent crowding near the foliage.
+1131w-Cn6h5Tqrn10,5,Copy Rewrite,"copy,local","Stay motivated, never stop creating."
+1131w-Cn6h5Tqrn10,6,Copy Expansion,"copy,global","Expand the central quote to: 'Stay inspired and never stop creating—keep exploring, practicing daily, and sharing your work.'"
+1131w-Cn6h5Tqrn10,7,Image Replacement,"image,global","Replace the eucalyptus corner foliage with watercolor wildflowers arranged in the same corners for a softer, spring mood."
+1131w-Cn6h5Tqrn10,8,Visual Addition or Removal,"image,local",Add a thin 1px sage line under 'Daily Motivation' to anchor the header and guide the eye downward.
+1131w-Cn6h5Tqrn10,9,Typography or Style Shift,"style,global","Switch the quote from brush script to Playfair Display Italic for an elegant, editorial tone."
+1131w-Cn6h5Tqrn10,10,Structural Enhancement,"structure,local",Add a soft 8px drop shadow beneath the central quote to subtly lift it from the textured background.
+1135w-537M02wjfK8,1,Color Palette Variation,"color,global","Shift the palette from sage green and gold to dusty blue with soft silver accents, preserving white florals and dark text for the same calm, readable mood."
+1135w-537M02wjfK8,2,Element Recolor,"color,local",Change the gold arch border to rose gold (#B76E79) to create a warmer focal accent.
+1135w-537M02wjfK8,3,Layout Swap,"layout,global","Swap the positions of the names block and the date/time line, placing the date centered beneath the arch top and the names below it."
+1135w-537M02wjfK8,4,Scale and Spacing Adjustment,"layout,local",Increase 'OLIVIA & DANIEL' size by 15% and add 12px extra top and bottom spacing within the arch.
+1135w-537M02wjfK8,5,Copy Rewrite,"copy,local",Replace 'Reception to follow!' with 'Join us for the reception!'
+1135w-537M02wjfK8,6,Copy Expansion,"copy,global","Replace the subhead with: 'Together with their families, the couple warmly invites you to celebrate their marriage at a heartfelt ceremony followed by a joyful reception.'"
+1135w-537M02wjfK8,7,Image Replacement,"image,global","Replace the watercolor white-rose greenery with a similarly arranged eucalyptus illustration featuring lavender sprigs for a cooler, late-summer mood."
+1135w-537M02wjfK8,8,Visual Addition or Removal,"image,local",Remove the faint leaf silhouettes behind the text area to reduce background noise and improve legibility.
+1135w-537M02wjfK8,9,Typography or Style Shift,"style,global","Set 'OLIVIA & DANIEL' in an elegant script font with slight swash forms, keeping other text unchanged, to shift the tone more romantic."
+1135w-537M02wjfK8,10,Structural Enhancement,"structure,local","Add a soft white 85% opacity panel within the gold arch behind text, with 12px rounded corners, to subtly lift hierarchy and contrast."
+1131w-DBVzDPV0y5E,1,Color Palette Variation,"color,global","Shift the palette by converting the periwinkle background and blue illustrations to deep teal, keeping the white card and red headline for strong, readable contrast."
+1131w-DBVzDPV0y5E,2,Element Recolor,"color,local",Change the 'SCIENCE LAB' headline color to deep navy to reduce dominance and harmonize with the blue accents.
+1131w-DBVzDPV0y5E,3,Layout Swap,"layout,global",Swap positions by moving the 'SCIENCE LAB' headline to the top center and placing the beaker illustration in the middle of the white card.
+1131w-DBVzDPV0y5E,4,Scale and Spacing Adjustment,"layout,local",Increase the 'SCIENCE LAB' headline size by 20% and add 16px vertical padding within the white card to maintain breathing room.
+1131w-DBVzDPV0y5E,5,Copy Rewrite,"copy,local",Change the headline to 'Science Workshop'.
+1131w-DBVzDPV0y5E,6,Copy Expansion,"copy,global","Expand the 'SCIENCE LAB' headline to: 'Science Lab — hands-on experiments for curious minds and safe discovery,' keeping the same type styling and centered alignment."
+1131w-DBVzDPV0y5E,7,Image Replacement,"image,global",Replace the top beaker illustration with a similarly styled microscope drawing at the same size and tilt.
+1131w-DBVzDPV0y5E,8,Visual Addition or Removal,"image,local",Add a small blue sparkle icon beside the droplet under the left pipette to increase visual rhythm.
+1131w-DBVzDPV0y5E,9,Typography or Style Shift,"style,global","Switch the headline font to Nunito ExtraBold, maintaining size and color, to shift the tone from playful to modern-friendly."
+1131w-DBVzDPV0y5E,10,Structural Enhancement,"structure,local",Apply a soft 12px drop shadow to the white card to subtly elevate it above the blue background.
+1131w-02GXIIidf_4,1,Color Palette Variation,"color,global","Replace all red areas with safety orange and swap the yellow highlight to charcoal gray, keeping white/black text for contrast and the same urgent, readable mood."
+1131w-02GXIIidf_4,2,Element Recolor,"color,local",Recolor the 'REWARD' stamp background to bright yellow (#FFD400) while retaining the white text to shift emphasis.
+1131w-02GXIIidf_4,3,Layout Swap,"layout,global","Swap the positions of the 'MISSING' header bar and the cat photo, placing the photo at the top and the header directly below it."
+1131w-02GXIIidf_4,4,Scale and Spacing Adjustment,"layout,local",Scale the cat photo up 12% and add 16px extra space below it to maintain separation from the description text.
+1131w-02GXIIidf_4,5,Copy Rewrite,"copy,local",Change the main headline from 'MISSING' to 'LOST CAT'.
+1131w-02GXIIidf_4,6,Copy Expansion,"copy,global","Replace description with: 'Female, 2 years old; brown, white, black tabby with yellow eyes; shy but friendly; silver name collar; all-black tail; last seen near Borcelle Yard at dusk.'"
+1131w-02GXIIidf_4,7,Image Replacement,"image,global",Replace the indoor cat portrait with a similarly centered close-up of a tabby cat outdoors on grass in soft evening light.
+1131w-02GXIIidf_4,8,Visual Addition or Removal,"image,local",Add a small red location-pin icon to the left of the yellow 'Last seen' bar to anchor the information.
+1131w-02GXIIidf_4,9,Typography or Style Shift,"style,global","Switch all typography to Montserrat—Black for 'MISSING' and CTA, Regular for body—to create a cleaner, modern tone."
+1131w-02GXIIidf_4,10,Structural Enhancement,"structure,local",Add a 4px black border around the entire poster to strengthen framing and hierarchy.
+1131w-MQeKlmQ9RXc,1,Color Palette Variation,"color,global","Replace the warm gray/black/coral palette with ivory background, charcoal text, and teal accents to maintain contrast and mood."
+1131w-MQeKlmQ9RXc,2,Element Recolor,"color,local",Recolor the glossy smile from coral to vibrant teal to shift emphasis without clashing with the grayscale typography.
+1131w-MQeKlmQ9RXc,3,Layout Swap,"layout,global","Swap positions of the ""BLOCK PARTY"" headline and the 3D face, placing the face at the top hero area and the headline centered above the bottom grid."
+1131w-MQeKlmQ9RXc,4,Scale and Spacing Adjustment,"layout,local","Reduce the 3D face by 15% and add 12px inner-frame padding to clear the ""FREE DRINKS"" and ""5:00 PM"" corners."
+1131w-MQeKlmQ9RXc,5,Copy Rewrite,"copy,local","Replace ""BLOCK PARTY"" with ""STREET PARTY""."
+1131w-MQeKlmQ9RXc,6,Copy Expansion,"copy,global","Expand ""FREE DRINKS"" to ""FREE DRINKS ALL NIGHT — craft cocktails, ice-cold brews, and refreshing mocktails on the house for everyone""."
+1131w-MQeKlmQ9RXc,7,Image Replacement,"image,global",Replace the 3D smiley face with a chrome 3D boombox at similar scale and lighting.
+1131w-MQeKlmQ9RXc,8,Visual Addition or Removal,"image,local",Add a small black starburst icon near the mouth's lower-right to introduce a playful accent.
+1131w-MQeKlmQ9RXc,9,Typography or Style Shift,"style,global","Switch all headlines to a condensed grotesk font (e.g., Neue Haas Grotesk Condensed) to tighten rhythm and amplify energy."
+1131w-MQeKlmQ9RXc,10,Structural Enhancement,"structure,local","Add a soft drop shadow to the ""Saturday 3 September"" date box to lift it above the grid and improve hierarchy."
+1131w-50t2MzJLmsM,1,Color Palette Variation,"color,global","With dominant royal blue on beige, switch all blue elements to burnt orange and keep the background pale cream to maintain warmth and readability."
+1131w-50t2MzJLmsM,2,Element Recolor,"color,local","Recolor ""OPENING"" to bright coral (#FF5A5F) to shift emphasis while keeping other elements blue."
+1131w-50t2MzJLmsM,3,Layout Swap,"layout,global","Swap the ""OPENING"" subhead and the barista illustration, moving ""OPENING"" to the right side and the illustration left under ""GRAND."""
+1131w-50t2MzJLmsM,4,Scale and Spacing Adjustment,"layout,local","Reduce the ""GRAND"" headline size by 15% and increase spacing above ""OPENING"" by 8 px."
+1131w-50t2MzJLmsM,5,Copy Rewrite,"copy,local","Replace ""GRAND OPENING"" with ""OFFICIAL OPENING."""
+1131w-50t2MzJLmsM,6,Copy Expansion,"copy,global","Expand the bottom details to: 'Join us at 10:00 AM Saturday, Dec 15, 2025 at 123 Anywhere St., Any City for fresh coffee, giveaways, and opening-day specials all morning.'"
+1131w-50t2MzJLmsM,7,Image Replacement,"image,global",Replace the right-side barista holding a steaming cup with a similarly sized sketch of the café storefront to keep composition while shifting theme.
+1131w-50t2MzJLmsM,8,Visual Addition or Removal,"image,local",Remove the smallest star near the top-left cluster to reduce visual noise.
+1131w-50t2MzJLmsM,9,Typography or Style Shift,"style,global","Change the ""GRAND OPENING"" type to a high-contrast serif (e.g., Playfair Display Bold) for a more elegant tone."
+1131w-50t2MzJLmsM,10,Structural Enhancement,"structure,local",Add a thin navy outline border around the entire canvas to subtly frame and elevate the hierarchy.
+1131w-zsrhBwj_J58,1,Color Palette Variation,"color,global","Change all green elements (headline, halftone figure, accents) to muted burnt orange to create complementary contrast while preserving the vintage mood and readability on the light background."
+1131w-zsrhBwj_J58,2,Element Recolor,"color,local",Recolor the RETRO REWIND headline to deep maroon (#7A1F2B) to shift visual emphasis without clashing with the neutral background and black subhead.
+1131w-zsrhBwj_J58,3,Layout Swap,"layout,global","Swap positions of the halftone garment image and the RETRO REWIND headline, placing the image on the upper half and the headline centered above the subhead near midpage."
+1131w-zsrhBwj_J58,4,Scale and Spacing Adjustment,"layout,local",Reduce the halftone garment image height by 15% and increase the bottom margin beneath it by 24px to keep the footer copy unobstructed.
+1131w-zsrhBwj_J58,5,Copy Rewrite,"copy,local",Change the main headline to VINTAGE REPLAY.
+1131w-zsrhBwj_J58,6,Copy Expansion,"copy,global","Expand the bottom paragraph to a 70–90 word, three-sentence blurb in the same uppercase style to test wrapping and overflow."
+1131w-zsrhBwj_J58,7,Image Replacement,"image,global","Replace the halftone arms-holding-garment image with a halftone stack of vintage suitcases centered at the bottom, keeping similar scale and grain texture."
+1131w-zsrhBwj_J58,8,Visual Addition or Removal,"image,local",Add a 20px green starburst icon to the left of 10-15 NOV 2024 to subtly boost date emphasis.
+1131w-zsrhBwj_J58,9,Typography or Style Shift,"style,global","Switch the headline to a high-contrast Didone typeface (e.g., Bodoni) in uppercase to shift the tone from playful retro to elegant vintage."
+1131w-zsrhBwj_J58,10,Structural Enhancement,"structure,local",Add a 2px dark green inset border around the poster canvas to frame content and subtly elevate hierarchy.
+1143w-ugSBoa9VtEw,1,Color Palette Variation,"color,global","With lavender and deep purple dominating, switch the overall palette to muted sage green with warm cream accents, preserving the soothing mood and text legibility."
+1143w-ugSBoa9VtEw,2,Element Recolor,"color,local",Recolor the 'SHOP NOW' button from plum to deep forest green to shift emphasis while remaining harmonious with the natural theme.
+1143w-ugSBoa9VtEw,3,Layout Swap,"layout,global","Swap positions of the product tube and 'Natural Skincare' headline, placing the tube left and the headline right to preserve visual balance."
+1143w-ugSBoa9VtEw,4,Scale and Spacing Adjustment,"layout,local",Increase the product tube height by 15% and add 24 px extra top spacing above it to keep balanced white space.
+1143w-ugSBoa9VtEw,5,Copy Rewrite,"copy,local",Replace the main headline 'Natural Skincare' with 'Botanical Skincare'.
+1143w-ugSBoa9VtEw,6,Copy Expansion,"copy,global","Expand the subhead to: ""Discover our latest skincare essentials designed to balance tone, calm sensitivity, relieve dryness, and restore a healthy glow, with gentle formulas suitable for everyday self-care."""
+1143w-ugSBoa9VtEw,7,Image Replacement,"image,global","Replace the center tube photo with an amber glass dropper bottle on the same pedestal and lighting, keeping the clean, minimal composition."
+1143w-ugSBoa9VtEw,8,Visual Addition or Removal,"image,local",Remove the curved arrow pointing to the tube to reduce clutter and simplify flow.
+1143w-ugSBoa9VtEw,9,Typography or Style Shift,"style,global",Switch the headline to a clean humanist sans in Semibold to shift the tone from elegant to modern.
+1143w-ugSBoa9VtEw,10,Structural Enhancement,"structure,local",Add a subtle 8 px blur drop shadow to the 'SHOP NOW' button to elevate its prominence in the hierarchy.
+1257w-EN_LTZdAMlw,1,Color Palette Variation,"color,global","Dominant warm oranges, browns, and sage—switch the overall palette to complementary deep teal and cream with copper text to maintain rustic autumn mood and readability."
+1257w-EN_LTZdAMlw,2,Element Recolor,"color,local",Recolor the 'PUMPKIN PATCH FESTIVAL' headline from brown to deep forest green for stronger contrast and emphasis.
+1257w-EN_LTZdAMlw,3,Layout Swap,"layout,global","Swap the headline with the date/time row, placing the three-column details above the headline while centering both to preserve balance."
+1257w-EN_LTZdAMlw,4,Scale and Spacing Adjustment,"layout,local",Increase the headline size by 15% and add 24px top and bottom padding to preserve white space between florals.
+1257w-EN_LTZdAMlw,5,Copy Rewrite,"copy,local",Change the main headline to 'Pumpkin Harvest Festival'.
+1257w-EN_LTZdAMlw,6,Copy Expansion,"copy,global","Expand the subhead to: 'Pick your perfect pumpkin, enjoy hayrides and live music, sip warm cider, and dive into cozy autumn fun for families, friends, and neighbors all afternoon.'"
+1257w-EN_LTZdAMlw,7,Image Replacement,"image,global",Replace the watercolor pumpkin-and-sunflower borders with a watercolor apple orchard and maple leaves motif while keeping top-and-bottom framing.
+1257w-EN_LTZdAMlw,8,Visual Addition or Removal,"image,local",Add a small maple leaf icon centered above the date/time row to enrich visual rhythm.
+1257w-EN_LTZdAMlw,9,Typography or Style Shift,"style,global",Switch the headline to Cormorant Garamond Semibold in title case to shift from rustic to elegant while retaining readability.
+1257w-EN_LTZdAMlw,10,Structural Enhancement,"structure,local",Add a thin copper watercolor stroke border around the canvas to frame content and gently elevate hierarchy.
+1135w-e1BT38mksX0,1,Color Palette Variation,"color,global","With current orange/black/white dominance, shift all orange elements to neon green to create a contrasting scheme while preserving spooky mood and legibility."
+1135w-e1BT38mksX0,2,Element Recolor,"color,local",Change the 'HALLOWEEN' headline from black to deep purple (#4B2E83) to subtly shift emphasis while keeping harmony with existing accents.
+1135w-e1BT38mksX0,3,Layout Swap,"layout,global","Swap the bottom-left ghost illustration with the date/time block on the right, keeping both aligned to their new sides."
+1135w-e1BT38mksX0,4,Scale and Spacing Adjustment,"layout,local",Enlarge the 'HALLOWEEN' headline by 15% and add 12px top/bottom padding to maintain separation from 'YOU ARE INVITED' and 'Party'.
+1135w-e1BT38mksX0,5,Copy Rewrite,"copy,local",Change the headline to 'Halloween Bash'.
+1135w-e1BT38mksX0,6,Copy Expansion,"copy,global","Expand the date/time block to 'October 31, 2023 • Doors open at 9 PM—arrive early for games, treats, and a costume contest'."
+1135w-e1BT38mksX0,7,Image Replacement,"image,global","Replace the ghost-and-pumpkin illustration with a cute skeleton in a scarf holding a candy bucket beside a cauldron, keeping the same scale and placement."
+1135w-e1BT38mksX0,8,Visual Addition or Removal,"image,local",Remove the potion bottle icon at bottom-right to reduce visual clutter.
+1135w-e1BT38mksX0,9,Typography or Style Shift,"style,global","Switch the 'Party' script to a bold condensed serif (e.g., Cinzel) for a more gothic, elegant tone."
+1135w-e1BT38mksX0,10,Structural Enhancement,"structure,local",Add a thin orange banner behind the date/time block to increase emphasis and separation.
+1143w-6-Ht1iOh8uw,1,Color Palette Variation,"color,global","Switch the red-and-black accents to a teal-and-orange scheme on white, retaining black text for contrast to keep the festive mood and readability."
+1143w-6-Ht1iOh8uw,2,Element Recolor,"color,local",Change the 'Birthday Party' script headline color from black to metallic gold (#D4AF37) to become the primary focal point.
+1143w-6-Ht1iOh8uw,3,Layout Swap,"layout,global","Swap the central 'Birthday Party' headline with the date block below, placing the date at center and the headline slightly lower."
+1143w-6-Ht1iOh8uw,4,Scale and Spacing Adjustment,"layout,local",Increase the '23' numeral size by 25% and add 12px extra top and bottom padding around the date block.
+1143w-6-Ht1iOh8uw,5,Copy Rewrite,"copy,local",Replace 'Birthday Party' with 'Birthday Celebration'.
+1143w-6-Ht1iOh8uw,6,Copy Expansion,"copy,global","Replace 'YOU ARE INVITED TO' with 'Join us for a joyful evening of cake, music, and memories with friends and family'."
+1143w-6-Ht1iOh8uw,7,Image Replacement,"image,global",Replace the red and black balloon-and-gift imagery with edge-framing confetti and cupcake photos maintaining the same peripheral composition.
+1143w-6-Ht1iOh8uw,8,Visual Addition or Removal,"image,local",Add small gold star confetti around the 'Birthday Party' headline to increase festive texture without crowding.
+1143w-6-Ht1iOh8uw,9,Typography or Style Shift,"style,global","Change the 'Birthday Party' script to a high-contrast serif like Playfair Display, keeping other text sans-serif for a more elegant tone."
+1143w-6-Ht1iOh8uw,10,Structural Enhancement,"structure,local",Add a thin 2px gold border with 16px inner margin around the canvas to subtly frame the invitation.
+1280w-7NdToF9SL00,1,Color Palette Variation,"color,global","With black-on-cream dominance, recolor all black strokes and type to deep burgundy (#7A002E) while retaining the cream background for contrast and readability."
+1280w-7NdToF9SL00,2,Element Recolor,"color,local",Change the wine liquid in the glass icon from black to deep burgundy (#7A002E) to emphasize the wine theme while keeping harmony with the cream background.
+1280w-7NdToF9SL00,3,Layout Swap,"layout,global","Swap the centered 'MUSIC AND WINE PARTY' headline with the turntable illustration, placing the turntable top-center and the headline directly beneath it."
+1280w-7NdToF9SL00,4,Scale and Spacing Adjustment,"layout,local",Enlarge the 'MUSIC AND WINE PARTY' headline by 20% and add 12 px extra top and bottom spacing to preserve balance.
+1280w-7NdToF9SL00,5,Copy Rewrite,"copy,local",Change the headline 'MUSIC AND WINE PARTY' to 'LIVE MUSIC & WINE NIGHT'.
+1280w-7NdToF9SL00,6,Copy Expansion,"copy,global","Expand 'Live music by Olivia Wilson' to: 'Live music by Olivia Wilson, with soulful acoustic sets and upbeat favorites all evening.'"
+1280w-7NdToF9SL00,7,Image Replacement,"image,global","Replace the central turntable doodle with a hand-drawn saxophone on a stand, maintaining the playful line style and similar size/placement."
+1280w-7NdToF9SL00,8,Visual Addition or Removal,"image,local",Add three small hand-drawn music notes around the headline’s right side to increase rhythm without crowding.
+1280w-7NdToF9SL00,9,Typography or Style Shift,"style,global","Switch the headline to a bold condensed sans-serif in all caps (e.g., Bebas Neue) for a cleaner, more energetic tone."
+1280w-7NdToF9SL00,10,Structural Enhancement,"structure,local",Add a thin charcoal hand-drawn border with 12 px corner radius to frame the poster and strengthen hierarchy.
+1257w-dnPJ18q1Q2E,1,Color Palette Variation,"color,global","Dominant colors are red, cream, and brown; replace the red background with deep teal (darker teal speckles) while keeping cream typography to preserve mood and readability."
+1257w-dnPJ18q1Q2E,2,Element Recolor,"color,local",Change the headline color from cream to bright white to heighten contrast and draw primary focus.
+1257w-dnPJ18q1Q2E,3,Layout Swap,"layout,global",Swap the headline and figure positions: center the figure in the upper half and place the headline across the lower third above the credits.
+1257w-dnPJ18q1Q2E,4,Scale and Spacing Adjustment,"layout,local",Reduce the headline size by 12% and add 24px top margin to create breathing room from the director credit.
+1257w-dnPJ18q1Q2E,5,Copy Rewrite,"copy,local",Change the headline to: THE TALE OF OUR LOVE.
+1257w-dnPJ18q1Q2E,6,Copy Expansion,"copy,global","Replace the top director credit with: FROM THE DIRECTOR OF LOVE IN BLOOM, DANIEL GALLEGO—A TENDER JOURNEY OF SECOND CHANCES AND QUIET PROMISES THAT KEEP TWO HEARTS TOGETHER."
+1257w-dnPJ18q1Q2E,7,Image Replacement,"image,global","Replace the back-view woman photo with a centered, back-view couple holding hands on a city bridge at dusk, similar scale and framing."
+1257w-dnPJ18q1Q2E,8,Visual Addition or Removal,"image,local",Remove the background grunge speckle overlay to simplify texture and lighten visual density.
+1257w-dnPJ18q1Q2E,9,Typography or Style Shift,"style,global","Switch the headline to a high-contrast serif like Didot, retaining uppercase, to shift the poster’s tone from rugged to elegant."
+1257w-dnPJ18q1Q2E,10,Structural Enhancement,"structure,local",Apply a soft black radial vignette around the edges to subtly frame the composition and push focus toward the title and figure.
+1280w-IBJtTP4icf8,1,Color Palette Variation,"color,global","Replace the warm brown wood and gray wall palette with a cool slate‑blue color grade, maintaining white text for readability."
+1280w-IBJtTP4icf8,2,Element Recolor,"color,local",Change the headline text color to deep forest green (#1E4D2B) to emphasize wellness while keeping contrast on the gray wall.
+1280w-IBJtTP4icf8,3,Layout Swap,"layout,global",Right-align the headline in the upper-right negative space and right-align the @reallygreatsite beneath it to preserve balance.
+1280w-IBJtTP4icf8,4,Scale and Spacing Adjustment,"layout,local",Enlarge the headline 20% and add 24px margin below it to separate it from the handle.
+1280w-IBJtTP4icf8,5,Copy Rewrite,"copy,local",Clean girl mindful rituals.
+1280w-IBJtTP4icf8,6,Copy Expansion,"copy,global","Replace the headline copy with: 'Clean girl healthy habits for steady energy, clear skin, and a calmer mind—small daily choices that keep your routine simple, sustainable, and nourishing.'"
+1280w-IBJtTP4icf8,7,Image Replacement,"image,global","Replace the café table scene with a bright kitchen countertop featuring a green smoothie and open notebook, shot from the same side angle."
+1280w-IBJtTP4icf8,8,Visual Addition or Removal,"image,local",Add a small monochrome leaf icon to the left of 'healthy habits' for a subtle wellness cue.
+1280w-IBJtTP4icf8,9,Typography or Style Shift,"style,global","Switch all display text to Inter (SemiBold headline, Regular subhead) to shift the tone from classic to modern minimal."
+1280w-IBJtTP4icf8,10,Structural Enhancement,"structure,local",Add a semi-transparent 25% black rounded rectangle behind the headline and handle with 12px padding to strengthen text hierarchy.
+1280w-IV5gw4zs55c,1,Color Palette Variation,"color,global","Replace the warm mustard/coral/pink background bands with a cool teal/mint/slate palette (#2F6F7E, #8FD3C6, #E6F4F1) to maintain a calm mood and preserve readability."
+1280w-IV5gw4zs55c,2,Element Recolor,"color,local",Recolor the paperclip to matte gold (#C7A34A) to create a subtle focal accent.
+1280w-IV5gw4zs55c,3,Layout Swap,"layout,global","Swap the vertical order of elements, placing @ReallyGreatSite above the quote while keeping both center-aligned."
+1280w-IV5gw4zs55c,4,Scale and Spacing Adjustment,"layout,local",Increase the white note card size by 12% and expand its outer margins by 16px to maintain balance.
+1280w-IV5gw4zs55c,5,Copy Rewrite,"copy,local","Change the headline to 'Ask better questions, uncover better answers'."
+1280w-IV5gw4zs55c,6,Copy Expansion,"copy,global","Replace the quote with: 'The better the question, the better the answer—curiosity sharpens insight; ask with intent and listen closely, and clearer, stronger solutions consistently emerge.'"
+1280w-IV5gw4zs55c,7,Image Replacement,"image,global",Replace the paper note and clip with a minimalist clipboard holding a white sheet centered on the same background.
+1280w-IV5gw4zs55c,8,Visual Addition or Removal,"image,local",Add a 12px gold starburst icon to the left of @ReallyGreatSite for a subtle accent.
+1280w-IV5gw4zs55c,9,Typography or Style Shift,"style,global","Switch the headline to a clean sans-serif like Inter Semibold, maintaining size and center alignment for a more modern tone."
+1280w-IV5gw4zs55c,10,Structural Enhancement,"structure,local",Add a 1px light-gray (#E0E0E0) outline around the note card to enhance separation from the background.
+1280w-GZEFZIEhLE0,1,Color Palette Variation,"color,global",Retint the entire design to a navy-and-coral palette while keeping all text white to preserve contrast and the moody nighttime vibe.
+1280w-GZEFZIEhLE0,2,Element Recolor,"color,local",Recolor the 'DJ JACOB' headline to electric cyan to shift emphasis toward the performer.
+1280w-GZEFZIEhLE0,3,Layout Swap,"layout,global","Swap positions of the central portrait and the 'MUSIC PARTY NIGHT' headline, keeping alignment balanced."
+1280w-GZEFZIEhLE0,4,Scale and Spacing Adjustment,"layout,local",Reduce the portrait height by 10% and add 24px outer margin to increase breathing room around it.
+1280w-GZEFZIEhLE0,5,Copy Rewrite,"copy,local",Change the headline to 'NIGHT BEATS PARTY'.
+1280w-GZEFZIEhLE0,6,Copy Expansion,"copy,global","Expand 'MUSIC PARTY NIGHT' to: 'Music Party Night - nonstop beats, fresh mixes, and high-energy vibes all evening; bring friends, dance hard, and celebrate an unforgettable night'."
+1280w-GZEFZIEhLE0,7,Image Replacement,"image,global",Replace the central black-and-white portrait with a close-up monochrome shot of a spinning vinyl turntable.
+1280w-GZEFZIEhLE0,8,Visual Addition or Removal,"image,local",Remove the dark graffiti stroke touching the photo's bottom edge to clean up the focal area.
+1280w-GZEFZIEhLE0,9,Typography or Style Shift,"style,global","Switch all headings to a condensed, uppercase sans-serif to create a sleeker techno tone."
+1280w-GZEFZIEhLE0,10,Structural Enhancement,"structure,local",Add a soft 12px drop shadow to the photo container to lift it from the pale background.
+1200w-taPfkpk_5cE,1,Color Palette Variation,"color,global","Switch background to soft mint (#D9F3E6), headline and accents to coral (#FF6F61) and deep teal (#0F6A6A), preserving cheerful contrast and legibility."
+1200w-taPfkpk_5cE,2,Element Recolor,"color,local",Recolor the 'BOOK CLUB' headline to deep teal (#0F6A6A) for stronger contrast against the light pink background.
+1200w-taPfkpk_5cE,3,Layout Swap,"layout,global","Swap the central 'BOOK CLUB' headline with the body paragraph, placing the paragraph center and the headline directly below it, both center-aligned."
+1200w-taPfkpk_5cE,4,Scale and Spacing Adjustment,"layout,local",Increase 'BOOK CLUB' headline size by 20% and add 16px top/bottom margin around it to maintain breathing room.
+1200w-taPfkpk_5cE,5,Copy Rewrite,"copy,local",Change the main headline 'BOOK CLUB' to 'READERS CLUB'.
+1200w-taPfkpk_5cE,6,Copy Expansion,"copy,global","Expand the body paragraph to 60–75 words, elaborating on monthly themes, welcoming all ages, meeting times, and location details while keeping friendly tone and centered formatting."
+1200w-taPfkpk_5cE,7,Image Replacement,"image,global","Replace the reader illustrations around the border with illustrated houseplants and book stacks, maintaining the same scattered ring composition."
+1200w-taPfkpk_5cE,8,Visual Addition or Removal,"image,local",Add a 24px magenta (#E74CA4) bookmark icon at the bottom-center along the pink cord to punctuate the flow.
+1200w-taPfkpk_5cE,9,Typography or Style Shift,"style,global","Switch the 'BOOK CLUB' headline to a high-contrast serif (e.g., Playfair Display Bold) and keep body in current sans-serif to shift tone from playful to elegant."
+1200w-taPfkpk_5cE,10,Structural Enhancement,"structure,local",Add a soft white (#FFFFFF) 4px rounded border with 24px inset padding around the poster to subtly frame the content.
+1280w-QGZG7QgzOng,1,Color Palette Variation,"color,global","With dominant sky blue and white tones, shift the background to a soft peach–apricot gradient while keeping white text and clouds for contrast and the same serene mood."
+1280w-QGZG7QgzOng,2,Element Recolor,"color,local",Recolor the hand-drawn oval around 'GOD' from white to sunshine gold (#FFC54D) to heighten emphasis while staying harmonious with the sky and clouds.
+1280w-QGZG7QgzOng,3,Layout Swap,"layout,global","Swap the top headline 'GET TO KNOW GOD' with the bottom line 'THROUGH HIS WORD,' keeping the Bible centered to preserve balance."
+1280w-QGZG7QgzOng,4,Scale and Spacing Adjustment,"layout,local",Increase the Bible image size by 15% and add 40px extra vertical padding above and below to maintain breathing room.
+1280w-QGZG7QgzOng,5,Copy Rewrite,"copy,local",Change the headline to 'DISCOVER WHO GOD IS'.
+1280w-QGZG7QgzOng,6,Copy Expansion,"copy,global","Replace 'THROUGH HIS WORD' with 'THROUGH HIS WORD—READ, REFLECT, AND LIVE ITS TRUTH EACH DAY' to test multiline wrapping."
+1280w-QGZG7QgzOng,7,Image Replacement,"image,global","Replace the open Bible with a centered open journal and pen photographed from above, maintaining similar scale against the sky background."
+1280w-QGZG7QgzOng,8,Visual Addition or Removal,"image,local",Remove the hand-drawn oval around 'GOD' to reduce visual noise and keep the typography clean.
+1280w-QGZG7QgzOng,9,Typography or Style Shift,"style,global",Switch both lines to Montserrat Semibold in Title Case to modernize the tone while preserving readability.
+1280w-QGZG7QgzOng,10,Structural Enhancement,"structure,local","Add a soft, centered drop shadow beneath the Bible to create separation from the sky and increase focal emphasis."
+1236w-JT1Z7rx2PuU,1,Color Palette Variation,"color,global","Change the charcoal background to deep navy (#0D1B2A) and recolor the orange flower to bright teal (#14B8A6), keeping white text intact for equally high-contrast readability."
+1236w-JT1Z7rx2PuU,2,Element Recolor,"color,local",Recolor the 'Grand Opening' headline from white to warm pale yellow (#FFE089) to shift emphasis while complementing the orange stem and dark background.
+1236w-JT1Z7rx2PuU,3,Layout Swap,"layout,global","Swap positions of the 'Grand Opening' headline and the date/time block, moving the headline below midline and elevating the date/time to the upper-middle."
+1236w-JT1Z7rx2PuU,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Grand Opening' headline size by 15% and add 24px top and bottom margin to prevent overlap with the orange stem and upper labels.
+1236w-JT1Z7rx2PuU,5,Copy Rewrite,"copy,local",Change the main headline from 'Grand Opening' to 'Grand Launch'.
+1236w-JT1Z7rx2PuU,6,Copy Expansion,"copy,global","Expand the date/time block to: 'Join us October 24 at 5 PM for our grand opening celebration with music, giveaways, and refreshments throughout the evening.'"
+1236w-JT1Z7rx2PuU,7,Image Replacement,"image,global",Replace the central orange botanical stem with a vertical neon-blue city skyline silhouette of similar height and grainy texture.
+1236w-JT1Z7rx2PuU,8,Visual Addition or Removal,"image,local",Add a subtle 1px white horizontal divider above the date/time block at 60% width to separate the headline area from the details.
+1236w-JT1Z7rx2PuU,9,Typography or Style Shift,"style,global","Switch the 'Grand Opening' headline to a bold condensed sans-serif (e.g., Bebas Neue) in all caps to shift the tone from grunge to modern."
+1236w-JT1Z7rx2PuU,10,Structural Enhancement,"structure,local",Add a 2px off-white border around the poster to frame the layout and subtly elevate overall hierarchy.
+1280w-1EsFpGQoTQo,1,Color Palette Variation,"color,global","With dominant teal water, tan neutrals, and white type, apply a warm coral grade and coral pill outlines to shift to a complementary palette while preserving white text contrast."
+1280w-1EsFpGQoTQo,2,Element Recolor,"color,local",Recolor the 'BUSINESS' word to deep forest green (#1F4D43) to shift emphasis while maintaining readability over the pool background.
+1280w-1EsFpGQoTQo,3,Layout Swap,"layout,global",Swap the headline stack with the top category pills by moving the headline to the top center and placing the pills mid-frame above the hat.
+1280w-1EsFpGQoTQo,4,Scale and Spacing Adjustment,"layout,local",Reduce 'BUSINESS' size by 12% and add 24px vertical margins to it to maintain breathing room between the subhead and bottom CTA pill.
+1280w-1EsFpGQoTQo,5,Copy Rewrite,"copy,local",Change the headline to 'HOW TO LAUNCH THE BUSINESS YOU'VE DREAMED OF'.
+1280w-1EsFpGQoTQo,6,Copy Expansion,"copy,global","Replace the subhead 'OF YOUR DREAMS' with 'to craft a sustainable, client-focused brand that supports your lifestyle, scales with ease, and helps you work smarter for lasting impact'."
+1280w-1EsFpGQoTQo,7,Image Replacement,"image,global","Replace the poolside lounging photo with a serene lakeside dock at sunset, legs stretched and a journal in hand, maintaining a top-down angle and central negative space."
+1280w-1EsFpGQoTQo,8,Visual Addition or Removal,"image,local",Remove the sunglasses on the pool edge to simplify the foreground and reduce visual clutter.
+1280w-1EsFpGQoTQo,9,Typography or Style Shift,"style,global",Switch the headline to Playfair Display Black in all caps to shift the tone from casual to luxe.
+1280w-1EsFpGQoTQo,10,Structural Enhancement,"structure,local",Add a subtle bottom-to-center dark gradient overlay (30% black to transparent) to improve headline contrast and gently frame the composition.
+1280w-sqmHAnUAgsI,1,Color Palette Variation,"color,global","Dominant colors: white, cream, beige, and concrete gray; shift the overall palette to cool slate-blue toning while preserving bright whites for contrast and the clean, sunlit mood."
+1280w-sqmHAnUAgsI,2,Element Recolor,"color,local",Recolor all sunglasses frames from beige to soft matte tortoiseshell to shift emphasis toward faces while harmonizing with the neutral outfits.
+1280w-sqmHAnUAgsI,3,Layout Swap,"layout,global","Swap the central full-height duo photo with the top-left portrait tile, keeping grid gutters unchanged."
+1280w-sqmHAnUAgsI,4,Scale and Spacing Adjustment,"layout,local",Increase the central vertical photo’s width by 12% and reduce its adjacent left and right gutters by 6px to maintain balance.
+1280w-sqmHAnUAgsI,5,Copy Rewrite,"copy,local","Rewrite the headline to 'City Sunwear, Effortless Whites'."
+1280w-sqmHAnUAgsI,6,Copy Expansion,"copy,global","Expand the tagline to: 'Clean lines, cool shade, and light layers for bright city days; versatile pieces designed for movement, comfort, and effortless style wherever the afternoon takes you.'"
+1280w-sqmHAnUAgsI,7,Image Replacement,"image,global",Replace the central vertical street-style duo photo with a rooftop golden-hour duo shot framed similarly.
+1280w-sqmHAnUAgsI,8,Visual Addition or Removal,"image,local",Add a small beige circular sticker overlapping the central photo’s top-left corner to introduce a subtle focal accent.
+1280w-sqmHAnUAgsI,9,Typography or Style Shift,"style,global",Apply a soft warm-to-cool gray background gradient across the canvas to shift the tone from clinical to editorial.
+1280w-sqmHAnUAgsI,10,Structural Enhancement,"structure,local",Add a subtle 8px drop shadow behind the central vertical photo to elevate its hierarchy within the grid.
+1280w-TgB3qSfKXOY,1,Color Palette Variation,"color,global","Change the background to deep charcoal (#1E2420) and shift all text and accents to warm cream (#F5EDE1) with mint highlights (#A6D6A6), retaining the matcha image."
+1280w-TgB3qSfKXOY,2,Element Recolor,"color,local",Recolor the 'served hot or iced!' pill background to warm amber (#FFC164) with deep green text (#1E3B2B) to draw emphasis.
+1280w-TgB3qSfKXOY,3,Layout Swap,"layout,global",Swap positions of the glass photo and 'craving' headline—place the glass right-aligned and the headline left-aligned with matching margins.
+1280w-TgB3qSfKXOY,4,Scale and Spacing Adjustment,"layout,local",Enlarge the glass photo by 15% and increase the clearance above 'maicha' by 24 px to avoid overlap.
+1280w-TgB3qSfKXOY,5,Copy Rewrite,"copy,local",Replace 'craving' with 'crave more'.
+1280w-TgB3qSfKXOY,6,Copy Expansion,"copy,global","Replace 'match with whole milk & vanilla syrup' with 'Match with whole milk and vanilla syrup for a silky, lightly sweet sip—try oat milk for dairy-free creaminess and extra foam.'"
+1280w-TgB3qSfKXOY,7,Image Replacement,"image,global","Replace the iced matcha glass with a close-up of a steaming matcha latte in a ceramic cup, framed similarly."
+1280w-TgB3qSfKXOY,8,Visual Addition or Removal,"image,local",Remove the two starburst flares to simplify the background and reduce distraction.
+1280w-TgB3qSfKXOY,9,Typography or Style Shift,"style,global",Switch 'craving' and 'maicha' to Playfair Display Italic at the same sizes for a more elegant tone.
+1280w-TgB3qSfKXOY,10,Structural Enhancement,"structure,local",Add a soft cream vignette around the edges of the green background to subtly frame the central glass.
+1280w-2LZs3UZm33E,1,Color Palette Variation,"color,global","Dominant beige/cream and cocoa-brown; switch to deep teal text with warm ivory backgrounds for a complementary, calm palette maintaining readability."
+1280w-2LZs3UZm33E,2,Element Recolor,"color,local",Recolor the 'Guess What?' headline to deep teal (#0F6D6D) to create fresher contrast against the cream background.
+1280w-2LZs3UZm33E,3,Layout Swap,"layout,global","Swap the headline 'Guess What?' with the paragraph block, placing the paragraph above and the headline centered within the lower semicircle."
+1280w-2LZs3UZm33E,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Guess What?' headline size by 15% and add 24px top padding to maintain visual balance.
+1280w-2LZs3UZm33E,5,Copy Rewrite,"copy,local",Change the headline to: Sweet Surprise?
+1280w-2LZs3UZm33E,6,Copy Expansion,"copy,global","Replace the paragraph with: WHETHER IT'S A PIECE OF DARK CHOCOLATE OR YOUR FAVORITE CAKE, A LITTLE SWEETNESS CAN LIFT YOUR SPIRITS, SPARK SMALL CELEBRATIONS, AND TURN ORDINARY MOMENTS INTO WARM, COMFORTING PAUSES; SAVOR EACH BITE, SHARE A SMILE, AND FEEL THE DAY BRIGHTEN. LET THE RICH AROMA, SILKY TEXTURE, AND FAMILIAR FLAVORS OFFER A GENTLE RESET AND A TREAT YOU TRULY DESERVE."
+1280w-2LZs3UZm33E,7,Image Replacement,"image,global",Replace the bottom cream semicircle with a tonal illustration of cocoa beans clipped to the same curved mask.
+1280w-2LZs3UZm33E,8,Visual Addition or Removal,"image,local",Add a small cocoa-bean icon centered above the paragraph to enrich rhythm without clutter.
+1280w-2LZs3UZm33E,9,Typography or Style Shift,"style,global","Switch the headline font to Playfair Display for a more elegant, editorial tone."
+1280w-2LZs3UZm33E,10,Structural Enhancement,"structure,local",Apply a thin cocoa-brown stroke around the lower semicircle to strengthen framing and hierarchy.
+1280w-l2k_WnNosUU,1,Color Palette Variation,"color,global","Switch entire palette to a cool complementary scheme: change orange/yellow elements to cobalt/indigo and green/teal elements to lavender, retaining black text and the light peach background."
+1280w-l2k_WnNosUU,2,Element Recolor,"color,local",Change the REGISTER TODAY! text color to the same vibrant orange used on Monday/Saturday bars.
+1280w-l2k_WnNosUU,3,Layout Swap,"layout,global","Swap the positions of REGISTER TODAY! and the contact block, placing the CTA bottom-left and contact details bottom-right."
+1280w-l2k_WnNosUU,4,Scale and Spacing Adjustment,"layout,local",Increase the EVENTS wordmark height by 15% and add 12px top margin to keep spacing consistent.
+1280w-l2k_WnNosUU,5,Copy Rewrite,"copy,local",Replace REGISTER TODAY! with SIGN UP NOW! maintaining the same typographic style.
+1280w-l2k_WnNosUU,6,Copy Expansion,"copy,global","Replace Monday's description with: 'Local author reading night at the library with a lively Q&A and book signing; bring friends, enjoy refreshments, and discover new stories from emerging voices.'"
+1280w-l2k_WnNosUU,7,Image Replacement,"image,global",Replace the starburst day badges with minimal calendar-page icons while keeping their left-column positions.
+1280w-l2k_WnNosUU,8,Visual Addition or Removal,"image,local",Add 1px light-gray dotted dividers between each event row.
+1280w-l2k_WnNosUU,9,Typography or Style Shift,"style,global",Switch the headline to Playfair Display Bold while keeping body text as is to create a more elegant tone.
+1280w-l2k_WnNosUU,10,Structural Enhancement,"structure,local",Add a rounded white card with an 8px drop shadow behind the weekly list to subtly elevate hierarchy.
+1257w-w-iZnixy-TU,1,Color Palette Variation,"color,global","Dominant colors: dusty blue sky, cream headline, multicolor stripes; replace the sky with a deep coral gradient while keeping all text white to preserve contrast and mood."
+1257w-w-iZnixy-TU,2,Element Recolor,"color,local",Recolor the 'CLUB CLASSICS' headline from cream to soft mint (#D6F7E1) to shift emphasis while maintaining strong contrast against the blue sky.
+1257w-w-iZnixy-TU,3,Layout Swap,"layout,global",Swap positions of the 'CLUB CLASSICS' headline and the striped shirt: move the shirt to the top third and center the headline directly beneath it.
+1257w-w-iZnixy-TU,4,Scale and Spacing Adjustment,"layout,local",Enlarge the floating shirt by 15% and add 24px extra top spacing to prevent overlap with the headline.
+1257w-w-iZnixy-TU,5,Copy Rewrite,"copy,local",Replace the headline 'CLUB CLASSICS' with 'CLOSET CLASSICS'.
+1257w-w-iZnixy-TU,6,Copy Expansion,"copy,global","Replace 'RIMBERIO CLOTHES' in the left pill with 'RIMBERIO CLOTHES: ORGANIC, ETHICAL, DESIGNED TO LAST' to test 2-3x length wrapping."
+1257w-w-iZnixy-TU,7,Image Replacement,"image,global",Replace the floating striped shirt with a similarly lit floating vintage denim jacket to shift the theme toward timeless basics.
+1257w-w-iZnixy-TU,8,Visual Addition or Removal,"image,local",Remove the small white star glyph beneath the shirt to simplify the midsection's visual rhythm.
+1257w-w-iZnixy-TU,9,Typography or Style Shift,"style,global","Switch the headline to a high-contrast serif like Didot, keeping size and tracking, to shift the tone from bold streetwear to refined elegance."
+1257w-w-iZnixy-TU,10,Structural Enhancement,"structure,local",Apply a subtle top-to-bottom gradient overlay (25% black to transparent) behind the headline area to improve legibility without flattening the sky.
+1280w-H8F4b127vDk,1,Color Palette Variation,"color,global",Dominant moss greens and neon yellow text; recolor all typography and UI to vivid coral (#FF6B5E) for complementary contrast while maintaining readability against the dark foliage.
+1280w-H8F4b127vDk,2,Element Recolor,"color,local",Recolor the bottom 'SWIPE' button’s outline and text to warm coral (#FF6B5E) to draw focus while harmonizing with the green background.
+1280w-H8F4b127vDk,3,Layout Swap,"layout,global","Move the headline block to the top center and relocate the brand/date row to the lower third, preserving balance."
+1280w-H8F4b127vDk,4,Scale and Spacing Adjustment,"layout,local",Reduce the main headline size by 12% and increase its line spacing by 6px to clear the subjects’ faces.
+1280w-H8F4b127vDk,5,Copy Rewrite,"copy,local",HOW I COPE WHEN I BURN OUT
+1280w-H8F4b127vDk,6,Copy Expansion,"copy,global","What I do when I burn out—small rituals, quiet resets, and gentle steps that help me breathe, slow down, and restart."
+1280w-H8F4b127vDk,7,Image Replacement,"image,global","Replace the full-bleed sunlit grass scene with an overhead flat-lay of self-care items (journal, tea, candle) on a linen blanket in dappled light."
+1280w-H8F4b127vDk,8,Visual Addition or Removal,"image,local",Remove the 'Liceria & Co.' script at the top center to reduce visual clutter near the subjects.
+1280w-H8F4b127vDk,9,Typography or Style Shift,"style,global","Switch the headline from condensed sans to a high-contrast serif (e.g., Playfair Display Bold) to shift the tone from punchy to elegant."
+1280w-H8F4b127vDk,10,Structural Enhancement,"structure,local",Add a subtle 20% black gradient overlay behind the headline area to improve contrast and hierarchy without changing content.
+1600w-00kdfU4MHKA,1,Color Palette Variation,"color,global","Switch the current light gray and black palette to a warm ivory background with deep forest green accents, retaining black typography for contrast."
+1600w-00kdfU4MHKA,2,Element Recolor,"color,local",Recolor the oversized left headline text to deep forest green instead of black to shift emphasis while matching muted tones.
+1600w-00kdfU4MHKA,3,Layout Swap,"layout,global","Swap the stacked headline block on the left with the collage cluster on the right, keeping equal margins from edges."
+1600w-00kdfU4MHKA,4,Scale and Spacing Adjustment,"layout,local",Enlarge the central grey sweatshirt photo by 20% and add 16px spacing around surrounding items to maintain breathing room.
+1600w-00kdfU4MHKA,5,Copy Rewrite,"copy,local",Change headline to 'FASHION STYLE INSPIRATION BOARD'.
+1600w-00kdfU4MHKA,6,Copy Expansion,"copy,global","Replace the note 'find this bucket hat' with 'Find this ribbed bucket hat in warm taupe—breathable, packable, and easy to style daily'."
+1600w-00kdfU4MHKA,7,Image Replacement,"image,global",Replace the central full-body outfit photo with a similar full-body shot of athleisure running gear to shift theme to sporty minimalism.
+1600w-00kdfU4MHKA,8,Visual Addition or Removal,"image,local",Remove the squiggly line near the bottom-right portrait to clean the layout.
+1600w-00kdfU4MHKA,9,Typography or Style Shift,"style,global",Switch the headline from condensed bold sans to high-contrast serif uppercase to create an elegant tone.
+1600w-00kdfU4MHKA,10,Structural Enhancement,"structure,local",Add a thin 2px charcoal border around the entire canvas to frame the collage and tighten hierarchy.
+1600w-1HZYAUid2AE,1,Color Palette Variation,"color,global","Swap the purple background gradient to deep teal and change yellow accents to coral, retaining white text for contrast to keep the energetic mood and readability."
+1600w-1HZYAUid2AE,2,Element Recolor,"color,local",Change the 'Learn More' button fill from yellow to electric blue (#1E90FF) to shift emphasis while harmonizing with the phone’s blue screen.
+1600w-1HZYAUid2AE,3,Layout Swap,"layout,global","Move the phone mockup to the left and place the headline block on the right, maintaining centered vertical alignment for balance."
+1600w-1HZYAUid2AE,4,Scale and Spacing Adjustment,"layout,local",Scale up the phone mockup by 12% and increase the gap to the headline by 24px to maintain spacing.
+1600w-1HZYAUid2AE,5,Copy Rewrite,"copy,local",Change the headline to 'DIGITAL GROWTH AGENCY'.
+1600w-1HZYAUid2AE,6,Copy Expansion,"copy,global","Expand the subheadline to: 'Super fast support and real-time updates wherever you are, with proactive insights, transparent reporting, and dedicated experts accelerating growth across every channel.'"
+1600w-1HZYAUid2AE,7,Image Replacement,"image,global","Replace the man-in-phone photo with a phone framing a clean analytics dashboard screenshot, keeping the centered composition and light blue screen background."
+1600w-1HZYAUid2AE,8,Visual Addition or Removal,"image,local",Remove the floating red heart-like icon on the right edge to reduce distraction.
+1600w-1HZYAUid2AE,9,Typography or Style Shift,"style,global",Switch the headline to a modern serif like Playfair Display Semibold to shift tone from playful to elegant.
+1600w-1HZYAUid2AE,10,Structural Enhancement,"structure,local",Add a subtle 2px white stroke around the phone mockup to enhance focal framing.
+1280w-QVxrpF_dKgM,1,Color Palette Variation,"color,global",Replace the red gingham background with a muted forest-green gingham to create a complementary palette while retaining beige paper and black text contrast.
+1280w-QVxrpF_dKgM,2,Element Recolor,"color,local",Recolor the headline 'PICNIC EN EL PARQUE' from black to deep cherry red (#C0392B) to echo the gingham and shift emphasis upward.
+1280w-QVxrpF_dKgM,3,Layout Swap,"layout,global","Swap the headline with the basket illustration, placing the basket at the top center and the headline directly beneath it to maintain hierarchy."
+1280w-QVxrpF_dKgM,4,Scale and Spacing Adjustment,"layout,local",Scale the basket illustration to 115% and add 12 px vertical padding around it to avoid crowding.
+1280w-QVxrpF_dKgM,5,Copy Rewrite,"copy,local",Change the headline to 'PICNIC AL AIRE LIBRE'.
+1280w-QVxrpF_dKgM,6,Copy Expansion,"copy,global","Reemplaza el párrafo de ubicación por: 'Te esperamos en el Parque La Sierra, Calle Cualquiera 123, Cualquier Lugar, con áreas sombreadas, estacionamiento cercano y fácil acceso para familias y amigos.'"
+1280w-QVxrpF_dKgM,7,Image Replacement,"image,global",Replace the central basket illustration with a top-down picnic blanket spread illustration to keep a centered silhouette while shifting the theme to food display.
+1280w-QVxrpF_dKgM,8,Visual Addition or Removal,"image,local",Add a small black ant icon centered beneath the basket to subtly increase visual rhythm.
+1280w-QVxrpF_dKgM,9,Typography or Style Shift,"style,global",Switch all headings from the hand-drawn font to a rounded sans-serif like Poppins SemiBold to make the tone more modern and friendly.
+1280w-QVxrpF_dKgM,10,Structural Enhancement,"structure,local",Add a soft drop shadow to the torn paper sheet to increase separation from the gingham.
+1600w-3BBdsD4EXsY,1,Color Palette Variation,"color,global","Shift the palette from peach/blush/terracotta to soft teal (#D8F3F0), mint canvas (#EFFFF6), and slate easel (#4A6373), keeping text charcoal (#2B2B2B) for readability."
+1600w-3BBdsD4EXsY,2,Element Recolor,"color,local",Recolor the background from light peach to soft sage green (#E8F1E8) to shift emphasis toward the pink canvas while maintaining warmth.
+1600w-3BBdsD4EXsY,3,Layout Swap,"layout,global","Swap vertical positions of the easel and the quote, placing the easel upper-center and the quote directly below."
+1600w-3BBdsD4EXsY,4,Scale and Spacing Adjustment,"layout,local",Increase the canvas panel width by 12% and expand inner text padding by 16px to maintain comfortable margins.
+1600w-3BBdsD4EXsY,5,Copy Rewrite,"copy,local",MOVE AT YOUR OWN SPEED; LIFE ISN'T A RACE.
+1600w-3BBdsD4EXsY,6,Copy Expansion,"copy,global","DO THINGS AT YOUR OWN PACE—TAKE SMALL STEPS, PAUSE WHEN NEEDED, AND TRUST YOUR RHYTHM; LIFE ISN’T A RACE, SO LET PROGRESS UNFOLD STEADILY."
+1600w-3BBdsD4EXsY,7,Image Replacement,"image,global","Replace the easel illustration with a centered clipboard holding the quote, maintaining a single focal object on a plain background."
+1600w-3BBdsD4EXsY,8,Visual Addition or Removal,"image,local",Add two small cream star icons to the canvas’s top-left and bottom-right corners for a gentle accent.
+1600w-3BBdsD4EXsY,9,Typography or Style Shift,"style,global",Switch the headline to Cormorant Garamond Semibold in Title Case to shift tone from playful to elegant.
+1600w-3BBdsD4EXsY,10,Structural Enhancement,"structure,local","Apply a soft drop shadow to the canvas (0,10px,24px, 15% black) to subtly lift it from the background."
+1600w-4gpfnsQOREQ,1,Color Palette Variation,"color,global",Shift the blush-pink background to muted sage green (#D7E5D0) while keeping the white card and navy text for the same calm mood and readability.
+1600w-4gpfnsQOREQ,2,Element Recolor,"color,local",Recolor the envelope-and-bell icon to coral #FF6F61 to create a warm focal accent that harmonizes with the pink backdrop.
+1600w-4gpfnsQOREQ,3,Layout Swap,"layout,global","Swap positions: center the dialog card near the top of the screen and move the notification icon below it, maintaining symmetrical alignment."
+1600w-4gpfnsQOREQ,4,Scale and Spacing Adjustment,"layout,local",Reduce the dialog card height by 12% and add 12px inner padding to preserve comfortable spacing.
+1600w-4gpfnsQOREQ,5,Copy Rewrite,"copy,local",Your worth isn’t measured by output.
+1600w-4gpfnsQOREQ,6,Copy Expansion,"copy,global","Your productivity doesn’t define you; your value includes rest, growth, and small wins, and it’s okay to pause, recalibrate, and move at a pace that feels sustainable."
+1600w-4gpfnsQOREQ,7,Image Replacement,"image,global",Replace the envelope-with-bell icon with a minimalist calendar-and-checkmark icon to shift the theme from alerts to planning while preserving centered composition.
+1600w-4gpfnsQOREQ,8,Visual Addition or Removal,"image,local",Add a thin coral underline beneath 'REMINDER' to reinforce hierarchy without increasing visual weight.
+1600w-4gpfnsQOREQ,9,Typography or Style Shift,"style,global","Switch the 'REMINDER' type to a high-contrast serif like Playfair Display while keeping body text in the current sans for a calmer, more reassuring tone."
+1600w-4gpfnsQOREQ,10,Structural Enhancement,"structure,local","Apply a soft 20px blur, 12% black drop shadow to the dialog card to increase separation from the phone background."
+1600w-3FMwHZotkUM,1,Color Palette Variation,"color,global","Replace the lime background with soft lavender (#EDE5FF) and recolor accents to deep plum (#4B1F60), retaining black text for contrast and the current upbeat mood."
+1600w-3FMwHZotkUM,2,Element Recolor,"color,local",Recolor the 'Collaborate with us' button from black to bright orange (#FF6A00) to echo image accents and draw focus.
+1600w-3FMwHZotkUM,3,Layout Swap,"layout,global","Swap the positions of the headline and the CTA button: place the button left and the headline right, aligned on the same top baseline."
+1600w-3FMwHZotkUM,4,Scale and Spacing Adjustment,"layout,local",Increase the headline size by 12% and add 16px top padding to keep spacing balanced against the image row.
+1600w-3FMwHZotkUM,5,Copy Rewrite,"copy,local",Change the headline to: 'Ways to partner'.
+1600w-3FMwHZotkUM,6,Copy Expansion,"copy,global",Replace the 'Product reviews' caption with 'Detailed and honest product reviews'.
+1600w-3FMwHZotkUM,7,Image Replacement,"image,global","Replace the third tile’s orange lamp close-up with a centered close-up of a glass terrarium, keeping similar lighting and framing."
+1600w-3FMwHZotkUM,8,Visual Addition or Removal,"image,local",Add a 2px black divider line spanning the width beneath the headline to anchor the grid visually.
+1600w-3FMwHZotkUM,9,Typography or Style Shift,"style,global","Switch the headline to a high-contrast serif (e.g., Playfair Display) while keeping other text in the current sans to shift tone toward elegant."
+1600w-3FMwHZotkUM,10,Structural Enhancement,"structure,local",Add a 1px light-gray border and subtle 12px blur shadow around each photo tile to increase separation from the lime background.
+1600w-9czv6kB-DXc,1,Color Palette Variation,"color,global","Shift the overall palette to navy (#0B3D91), coral (#FF5A5F), and off-white (#F7F7F7), replacing the current blue, red, and white while preserving black text for readability."
+1600w-9czv6kB-DXc,2,Element Recolor,"color,local",Recolor the red 'UPDATE' banner to deep purple (#5A3DFF) to redirect emphasis while keeping the white lettering legible.
+1600w-9czv6kB-DXc,3,Layout Swap,"layout,global",Swap positions by moving the megaphone to the left edge and placing the 'NEWS UPDATE' block in the upper-right.
+1600w-9czv6kB-DXc,4,Scale and Spacing Adjustment,"layout,local",Increase the 'NEWS UPDATE' group size by 20% and add 12px additional padding around the body copy within the speech bubble.
+1600w-9czv6kB-DXc,5,Copy Rewrite,"copy,local",Replace the 'NEWS UPDATE' headline with 'LATEST UPDATE'.
+1600w-9czv6kB-DXc,6,Copy Expansion,"copy,global","Replace the body text with: 'See our latest update on our earlier story, including new details and context; stay informed as developments continue and we share what has changed.'"
+1600w-9czv6kB-DXc,7,Image Replacement,"image,global","Replace the megaphone illustration with a smartphone notification illustration of similar scale, positioned at the bottom-right."
+1600w-9czv6kB-DXc,8,Visual Addition or Removal,"image,local",Remove the smallest lightning bolt icon near the headline to reduce visual clutter.
+1600w-9czv6kB-DXc,9,Typography or Style Shift,"style,global","Switch the headline to Oswald Bold, keeping size unchanged, to heighten urgency and a modern news tone."
+1600w-9czv6kB-DXc,10,Structural Enhancement,"structure,local","Add a soft drop shadow (20% black, 8px blur, 4px offset) to the speech bubble to separate it from the blue background."
+1600w-7YZFYlcCTPk,1,Color Palette Variation,"color,global","Change the dominant red/white/black palette to deep teal background (#0C5A5A) with white type and cooler bulb glow, preserving high contrast and the bold, urgent mood."
+1600w-7YZFYlcCTPk,2,Element Recolor,"color,local",Recolor the hanging bulb’s glow from white to warm amber (#FFC76B) to draw focus upward while harmonizing with the red background.
+1600w-7YZFYlcCTPk,3,Layout Swap,"layout,global","Swap the positions of the lightbulb and 'COMING SOON': move the headline to the upper center, and hang the bulb near the lower center above the URL."
+1600w-7YZFYlcCTPk,4,Scale and Spacing Adjustment,"layout,local",Reduce the bulb size by 25% and add 40px extra space between the bulb and 'STAY TUNED' to prevent crowding.
+1600w-7YZFYlcCTPk,5,Copy Rewrite,"copy,local",Change the headline to LAUNCHING SOON.
+1600w-7YZFYlcCTPk,6,Copy Expansion,"copy,global","Replace 'STAY TUNED' with 'Stay tuned—exciting updates are on the way with new features, announcements, and surprises; we can’t wait to share what’s next.'"
+1600w-7YZFYlcCTPk,7,Image Replacement,"image,global","Replace the hanging lightbulb with a suspended countdown stopwatch icon emitting a soft white glow, centered at the top."
+1600w-7YZFYlcCTPk,8,Visual Addition or Removal,"image,local",Add a thin 2px white underline beneath 'STAY TUNED' matching its width to increase visual rhythm.
+1600w-7YZFYlcCTPk,9,Typography or Style Shift,"style,global","Switch 'COMING SOON' to a high-contrast serif like Playfair Display Black, keeping uppercase, to shift tone from bold promotional to elegant announcement."
+1600w-7YZFYlcCTPk,10,Structural Enhancement,"structure,local","Add a semi-transparent black banner (60% opacity) behind @REALLYGREATSITE, 56px tall and full width, to strengthen footer hierarchy and legibility."
+1600w-DB7VCKEjrvU,1,Color Palette Variation,"color,global","Dominant colors: navy, cream, pink, blue, mustard; change to a teal background with coral, ivory, and ochre accents to maintain playful contrast and readability."
+1600w-DB7VCKEjrvU,2,Element Recolor,"color,local",Recolor the 'ART SPACE' line from pink to turquoise to refresh emphasis while harmonizing with the blue shape.
+1600w-DB7VCKEjrvU,3,Layout Swap,"layout,global","Swap the abstract icon stack with the 'LUMA' wordmark, placing 'LUMA' above the shapes to prioritize the name while keeping the block centered."
+1600w-DB7VCKEjrvU,4,Scale and Spacing Adjustment,"layout,local",Increase the 'LUMA' wordmark size by 15% and add 8px extra spacing above 'ART SPACE' to maintain separation.
+1600w-DB7VCKEjrvU,5,Copy Rewrite,"copy,local",Change the subhead 'ART SPACE' to 'CREATIVE HUB'.
+1600w-DB7VCKEjrvU,6,Copy Expansion,"copy,global","Expand the tagline to: 'A playful art space for modern makers and curious minds, featuring bold exhibits and community workshops year-round.'"
+1600w-DB7VCKEjrvU,7,Image Replacement,"image,global","Replace the abstract doodle icon stack with a geometric line-art stack of studio tools (brush, ruler, canvas) in the same arrangement."
+1600w-DB7VCKEjrvU,8,Visual Addition or Removal,"image,local",Add a small cream starburst above the eye icon to introduce a focal spark without crowding.
+1600w-DB7VCKEjrvU,9,Typography or Style Shift,"style,global","Switch 'LUMA' to a clean geometric sans (Futura Bold) and remove distressing for a more modern, refined tone."
+1600w-DB7VCKEjrvU,10,Structural Enhancement,"structure,local",Add a thin cream rectangular keyline around the logo cluster to subtly frame and elevate hierarchy against the navy background.
+1600w-6ODHj5q4uMY,1,Color Palette Variation,"color,global","Shift the green bokeh background to cool teal hues and change the dark brown text/accents to warm copper, preserving earthy contrast and readability."
+1600w-6ODHj5q4uMY,2,Element Recolor,"color,local",Recolor the quote text from dark brown to deep indigo (#1F2A44) to increase contrast against the green background.
+1600w-6ODHj5q4uMY,3,Layout Swap,"layout,global","Swap the wooden tabletop to the top and move the quote block to the lower center, preserving balance."
+1600w-6ODHj5q4uMY,4,Scale and Spacing Adjustment,"layout,local",Increase the quote text size by 20% and add 40px right margin to prevent edge crowding.
+1600w-6ODHj5q4uMY,5,Copy Rewrite,"copy,local",WHO SEEKS TO CHANGE THE WORLD MUST FIRST CHANGE HIMSELF.
+1600w-6ODHj5q4uMY,6,Copy Expansion,"copy,global","To move the world, begin by moving yourself—choose discipline, act with intention, and let inner change ripple outward, inspiring others and turning small steps into lasting momentum."
+1600w-6ODHj5q4uMY,7,Image Replacement,"image,global",Replace the green bokeh background with a soft blue sky bokeh while retaining the wooden tabletop foreground and shallow depth-of-field.
+1600w-6ODHj5q4uMY,8,Visual Addition or Removal,"image,local",Remove the top-left quotation mark cluster to reduce visual clutter and focus attention on the quote.
+1600w-6ODHj5q4uMY,9,Typography or Style Shift,"style,global","Switch the quote typography to Playfair Display Semibold Italic for a more elegant, literary tone."
+1600w-6ODHj5q4uMY,10,Structural Enhancement,"structure,local",Add a semi-transparent 40% black rounded rectangle behind the quote to enhance contrast and hierarchy.
+1600w-CxALar1xspQ,1,Color Palette Variation,"color,global","Apply a navy-and-coral complementary palette, replacing all green elements with navy and highlighting 'Agency' and the CTA button with coral."
+1600w-CxALar1xspQ,2,Element Recolor,"color,local",Recolor the 'get started' button to bright orange (#FF7A00) to increase emphasis against the green-and-white layout.
+1600w-CxALar1xspQ,3,Layout Swap,"layout,global","Swap the right-side photo with the left-side headline block, placing the photo on the left and the text on the right to preserve balance."
+1600w-CxALar1xspQ,4,Scale and Spacing Adjustment,"layout,local",Scale the right-side portrait up by 8% and increase the gutter between image and text to 36px.
+1600w-CxALar1xspQ,5,Copy Rewrite,"copy,local",Change the headline to 'Digital Growth Agency'.
+1600w-CxALar1xspQ,6,Copy Expansion,"copy,global","Replace the tagline with: 'Your partner in digital success, delivering data-driven campaigns, SEO, and social strategies that grow traffic, leads, and conversions for modern brands.'"
+1600w-CxALar1xspQ,7,Image Replacement,"image,global",Replace the right-aligned man-at-laptop photo with a right-aligned team collaborating around a laptop to shift the mood toward teamwork.
+1600w-CxALar1xspQ,8,Visual Addition or Removal,"image,local",Add a right-pointing arrow icon inside the 'get started' button to increase affordance.
+1600w-CxALar1xspQ,9,Typography or Style Shift,"style,global","Change the headline font to a modern serif (e.g., Playfair Display Bold) for a more elegant tone while keeping body copy in sans-serif."
+1600w-CxALar1xspQ,10,Structural Enhancement,"structure,local","Add a subtle drop shadow to the 'get started' button (0 6px 20px rgba(0,0,0,0.15)) to elevate hierarchy."
+1600w-F-yK2D5pels,1,Color Palette Variation,"color,global",Replace the neon-lime background (dominant with black type) with soft lavender #EAE0FF to create a complementary palette while maintaining high contrast and energetic mood.
+1600w-F-yK2D5pels,2,Element Recolor,"color,local",Recolor the top-right CTA pill from black to coral #FF5A5F with white text to shift emphasis.
+1600w-F-yK2D5pels,3,Layout Swap,"layout,global","Move the 'MEDIA KIT' headline to the top and place the three-image strip below it, preserving equal margins and grid alignment."
+1600w-F-yK2D5pels,4,Scale and Spacing Adjustment,"layout,local",Scale the top-right CTA pill up by 20% and add 16px outer margin to maintain spacing from the edges.
+1600w-F-yK2D5pels,5,Copy Rewrite,"copy,local",Change the main headline 'MEDIA KIT' to 'PRESS KIT'.
+1600w-F-yK2D5pels,6,Copy Expansion,"copy,global",Expand the CTA text to 'Collaborate with us on campaigns and content today' to test multiline wrapping.
+1600w-F-yK2D5pels,7,Image Replacement,"image,global",Replace the center portrait photo with a similar composition of a designer sketching on a tablet at a desk.
+1600w-F-yK2D5pels,8,Visual Addition or Removal,"image,local",Insert 2px black vertical dividers between the three photos to increase separation and visual rhythm.
+1600w-F-yK2D5pels,9,Typography or Style Shift,"style,global",Switch the headline and labels from a bold sans to 'Playfair Display' Bold to shift the tone from playful to editorial.
+1600w-F-yK2D5pels,10,Structural Enhancement,"structure,local",Add a 2px black keyline border around the three-image strip to subtly frame and elevate its hierarchy.
+1600w-D3Vl-1x6STM,1,Color Palette Variation,"color,global","The palette is teal, brick red, cream, and black; replace it with navy, mustard, ivory, and charcoal to maintain retro mood while improving complementary contrast and readability."
+1600w-D3Vl-1x6STM,2,Element Recolor,"color,local",Recolor the 'COMING SOON' headline from teal to deep navy to heighten contrast against the white oval while preserving the retro vibe.
+1600w-D3Vl-1x6STM,3,Layout Swap,"layout,global","Swap the positions of the date and the 'STAY TUNED' subhead, placing 'STAY TUNED' above the headline and moving the date below it to maintain vertical balance."
+1600w-D3Vl-1x6STM,4,Scale and Spacing Adjustment,"layout,local",Increase the 'COMING SOON' headline size by 15% and expand the oval’s internal padding by 8% to prevent crowding with the date and subhead.
+1600w-D3Vl-1x6STM,5,Copy Rewrite,"copy,local",Change the main headline to 'ARRIVING SOON'.
+1600w-D3Vl-1x6STM,6,Copy Expansion,"copy,global","Replace '-STAY TUNED-' with '-Stay tuned for updates, sneak peeks, and early access details.-'."
+1600w-D3Vl-1x6STM,7,Image Replacement,"image,global","Swap the retro comic sunburst background for a minimalist gradient burst in cool blues, retaining the central white oval and overall composition."
+1600w-D3Vl-1x6STM,8,Visual Addition or Removal,"image,local",Remove the lower-left lightning bolt to reduce visual clutter around the oval’s edge.
+1600w-D3Vl-1x6STM,9,Typography or Style Shift,"style,global",Switch the headline and subhead to Futura Bold with tighter tracking to shift the tone from playful retro to modern bold.
+1600w-D3Vl-1x6STM,10,Structural Enhancement,"structure,local",Add a soft teal drop shadow to the central white oval to elevate it above the sunburst and clarify hierarchy.
+1600w-9eXC-dXI0uE,1,Color Palette Variation,"color,global","Replace all purple accents (text, shapes, button) with teal #1FB6B6, keeping black text and the light gray background unchanged."
+1600w-9eXC-dXI0uE,2,Element Recolor,"color,local",Recolor the 'contact us' button outline and text from purple to coral #FF6F61 to shift emphasis.
+1600w-9eXC-dXI0uE,3,Layout Swap,"layout,global","Swap the left headline block with the right photo panel, placing the man on the left and text on the right."
+1600w-9eXC-dXI0uE,4,Scale and Spacing Adjustment,"layout,local",Enlarge the 'marketing project' text block by 12% and increase the gap above the 'contact us' button to 24px.
+1600w-9eXC-dXI0uE,5,Copy Rewrite,"copy,local",Change the headline to 'let us manage your next marketing campaign'.
+1600w-9eXC-dXI0uE,6,Copy Expansion,"copy,global","Expand the headline into: 'let us handle your next marketing project with strategic planning, creative execution, and measurable outcomes that grow your brand and engage your audience'."
+1600w-9eXC-dXI0uE,7,Image Replacement,"image,global",Replace the man-with-laptop photo with a similarly framed photo of a businesswoman using a tablet in a relaxed seating pose.
+1600w-9eXC-dXI0uE,8,Visual Addition or Removal,"image,local","Add a small right-pointing arrow icon inside the 'contact us' button, aligned after the text."
+1600w-9eXC-dXI0uE,9,Typography or Style Shift,"style,global",Switch the headline font to Montserrat SemiBold to shift the tone from casual to corporate.
+1600w-9eXC-dXI0uE,10,Structural Enhancement,"structure,local",Add a soft 12px-blur drop shadow behind the purple vertical panel to enhance depth.
+1600w-E0pKviCC-yw,1,Color Palette Variation,"color,global","Switch to deep indigo on warm ivory with a muted coral accent, maintaining high contrast and the restrained, gallery mood."
+1600w-E0pKviCC-yw,2,Element Recolor,"color,local",Recolor the large 'a.' from black to deep indigo to shift emphasis while keeping harmony with the warm ivory background.
+1600w-E0pKviCC-yw,3,Layout Swap,"layout,global","Move the oversized 'a.' to right-center and relocate the 'NEW YORK ESTD 2030 GALLERY' block to the upper-left, preserving equal margins."
+1600w-E0pKviCC-yw,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'a.' size by 15% and increase the gap to the square period to 32px for clearer separation.
+1600w-E0pKviCC-yw,5,Copy Rewrite,"copy,local",Change 'NEW YORK ESTD 2030 GALLERY' to 'NEW YORK EST. 2030 ART SPACE'.
+1600w-E0pKviCC-yw,6,Copy Expansion,"copy,global","Expand the block to: 'New York gallery, established 2030—curating modern works, bold forms, and quiet spaces that invite reflection in the heart of the city'."
+1600w-E0pKviCC-yw,7,Image Replacement,"image,global","Replace the oversized 'a.' letterform with a centered, high-contrast abstract circle motif of similar scale, retaining the small square period."
+1600w-E0pKviCC-yw,8,Visual Addition or Removal,"image,local",Remove the square period to simplify the composition and emphasize the single dominant form.
+1600w-E0pKviCC-yw,9,Typography or Style Shift,"style,global","Switch all text, including the 'a.', to a high-contrast serif like Canela to shift the tone from modernist to elegant."
+1600w-E0pKviCC-yw,10,Structural Enhancement,"structure,local",Add a 1px charcoal keyline border around the canvas to frame the layout and subtly strengthen hierarchy.
+1600w-A9ARWpzo3xk,1,Color Palette Variation,"color,global",Replace the black-on-ivory palette with deep indigo typography on warm ecru background to preserve elegant mood and strong readability.
+1600w-A9ARWpzo3xk,2,Element Recolor,"color,local",Change the 'ego' wordmark from black to deep evergreen (#0B3D2E) to shift emphasis while maintaining harmony.
+1600w-A9ARWpzo3xk,3,Layout Swap,"layout,global","Swap the positions of 'CREATIVE STUDIO' and 'SINCE 2025', keeping them baseline-aligned and equidistant from the centered wordmark."
+1600w-A9ARWpzo3xk,4,Scale and Spacing Adjustment,"layout,local",Increase the 'ego' wordmark size by 12% and add 32px top and bottom margin to preserve whitespace balance.
+1600w-A9ARWpzo3xk,5,Copy Rewrite,"copy,local",Change 'CREATIVE STUDIO' to 'DESIGN STUDIO'.
+1600w-A9ARWpzo3xk,6,Copy Expansion,"copy,global",Expand 'CREATIVE STUDIO' to uppercase: 'CREATIVE STUDIO CRAFTING BOLD IDENTITIES AND TYPE-LED SYSTEMS'.
+1600w-A9ARWpzo3xk,7,Image Replacement,"image,global",Replace the ornate 'ego' wordmark with a centered abstract interlocking-circle emblem at the same scale and contrast.
+1600w-A9ARWpzo3xk,8,Visual Addition or Removal,"image,local","Add a 1px light charcoal horizontal rule beneath the wordmark, matching its width, to subtly anchor the layout."
+1600w-A9ARWpzo3xk,9,Typography or Style Shift,"style,global",Switch the small captions to all-caps semi-condensed sans at medium weight to shift tone from ornate to modern.
+1600w-A9ARWpzo3xk,10,Structural Enhancement,"structure,local",Add a 2px charcoal keyline border around the canvas to subtly frame the mark and strengthen hierarchy.
+1600w-DVXZyB158ss,1,Color Palette Variation,"color,global","Replace the beige/taupe and light gray palette with muted sage backgrounds and charcoal accents, keeping all text in dark charcoal to preserve the calm mood and readability."
+1600w-DVXZyB158ss,2,Element Recolor,"color,local",Change the 'ABOUT ME' headline color from dark brown to deep forest green to shift emphasis while maintaining harmony with the neutral tones.
+1600w-DVXZyB158ss,3,Layout Swap,"layout,global","Move the portrait to the right and place the headline and body text on the left, retaining the vertical torn edge as the central divider."
+1600w-DVXZyB158ss,4,Scale and Spacing Adjustment,"layout,local",Increase the 'ABOUT ME' headline size by 20% and add 12px top and bottom padding to maintain spacing within the text column.
+1600w-DVXZyB158ss,5,Copy Rewrite,"copy,local",Replace the headline 'ABOUT ME' with 'MY STORY'.
+1600w-DVXZyB158ss,6,Copy Expansion,"copy,global","Replace the body copy with a single 90–120 word lorem ipsum paragraph using the same font, size, and justification."
+1600w-DVXZyB158ss,7,Image Replacement,"image,global","Replace the left portrait photo with a similarly lit, neutral-toned workspace desk scene, keeping the subject cropped left to mirror the current composition."
+1600w-DVXZyB158ss,8,Visual Addition or Removal,"image,local",Add a thin 48px divider line beneath the 'ABOUT ME' headline to subtly anchor and pace the text block.
+1600w-DVXZyB158ss,9,Typography or Style Shift,"style,global","Switch the headline to a high-contrast serif, such as Playfair Display Semibold, to shift the tone from casual to elegant."
+1600w-DVXZyB158ss,10,Structural Enhancement,"structure,local",Add a soft 8px drop shadow along the torn paper edge to enhance depth and hierarchy between photo and text sections.
+1600w-GQFPH6ndGO4,1,Color Palette Variation,"color,global","Dominant colors are yellow, pink, black, and green; replace the yellow-to-pink gradient with a teal-to-indigo gradient, preserving black text."
+1600w-GQFPH6ndGO4,2,Element Recolor,"color,local",Recolor the 'EVERY DAY' button from black to cobalt blue to draw focus while maintaining white text.
+1600w-GQFPH6ndGO4,3,Layout Swap,"layout,global",Swap positions: move the portrait to the right side and align the headline block left.
+1600w-GQFPH6ndGO4,4,Scale and Spacing Adjustment,"layout,local",Enlarge the 'IMPROVE YOURSELF' headline by 20% and add 12px spacing above the 'EVERY DAY' button.
+1600w-GQFPH6ndGO4,5,Copy Rewrite,"copy,local",Change the main headline to 'ELEVATE YOURSELF'.
+1600w-GQFPH6ndGO4,6,Copy Expansion,"copy,global","Expand 'HOW TO' into 'HOW TO START SMALL, STAY CONSISTENT, AND GROW EACH DAY'."
+1600w-GQFPH6ndGO4,7,Image Replacement,"image,global","Replace the portrait with a photo of a runner tying shoes, composed left with open space for right-side text."
+1600w-GQFPH6ndGO4,8,Visual Addition or Removal,"image,local",Remove the yellow halftone dot pattern in the lower-left to simplify the layout.
+1600w-GQFPH6ndGO4,9,Typography or Style Shift,"style,global",Switch the headline to Playfair Display Bold to shift the tone from modern bold to refined elegant.
+1600w-GQFPH6ndGO4,10,Structural Enhancement,"structure,local",Add a subtle white 2px border around the 'EVERY DAY' button to strengthen its hierarchy.
+1600w-GFKaeiEL8R0,1,Color Palette Variation,"color,global","Dominant black, white, and cyan–purple gradients; replace all gradients with amber–electric orange to create a warm complementary palette while preserving contrast."
+1600w-GFKaeiEL8R0,2,Element Recolor,"color,local",Recolor the 'Design' word to solid electric magenta (#FF2FB6) to shift emphasis to the headline while staying harmonious with the existing purple–teal accents.
+1600w-GFKaeiEL8R0,3,Layout Swap,"layout,global","Swap positions of the 3D gradient shapes and the 'Branding & Design' headline, placing the headline above and the shapes centered beneath to maintain hierarchy."
+1600w-GFKaeiEL8R0,4,Scale and Spacing Adjustment,"layout,local",Reduce the 3D shape cluster by 15% and add 24px extra spacing between shapes and headline to avoid crowding.
+1600w-GFKaeiEL8R0,5,Copy Rewrite,"copy,local",Change the main headline to 'Branding & Identity'.
+1600w-GFKaeiEL8R0,6,Copy Expansion,"copy,global","Replace 'Branding & Design' with: 'Branding and design for bold digital products, blending strategy, identity, and motion into memorable, high-contrast experiences'."
+1600w-GFKaeiEL8R0,7,Image Replacement,"image,global",Replace the central 3D gradient blobs with a similarly sized neon-gradient polygonal crystal cluster to keep the central composition but shift the theme to faceted geometry.
+1600w-GFKaeiEL8R0,8,Visual Addition or Removal,"image,local",Add a faint 240px radial glow (purple→transparent) behind the 3D shape cluster to increase depth without adding clutter.
+1600w-GFKaeiEL8R0,9,Typography or Style Shift,"style,global","Change the headline 'Branding & Design' to a high-contrast serif (e.g., Playfair Display) with Medium weight to shift tone from techy to refined."
+1600w-GFKaeiEL8R0,10,Structural Enhancement,"structure,local",Add a 1px purple–cyan gradient stroke around the READ MORE pill button to subtly elevate its prominence.
+1600w-IVdkMeHmo04,1,Color Palette Variation,"color,global",Current palette is deep forest green/black with white text; switch to deep navy background with warm ivory text and subtle coral accents to maintain elegance and readability.
+1600w-IVdkMeHmo04,2,Element Recolor,"color,local",Change the 'Register to Attend' button outline and text to soft gold (#D4B26A) to elevate emphasis while harmonizing with the dark botanical background.
+1600w-IVdkMeHmo04,3,Layout Swap,"layout,global","Swap the 'Gala of Hope' headline with the top event details row, placing the headline centered at the top and moving the details to the lower-left."
+1600w-IVdkMeHmo04,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Gala of Hope' headline size by 15% and add 24px top margin to preserve spacing from nearby elements.
+1600w-IVdkMeHmo04,5,Copy Rewrite,"copy,local",Change the headline to 'An Evening of Hope'.
+1600w-IVdkMeHmo04,6,Copy Expansion,"copy,global","Expand the tagline to: A night of inspiration, connection, and a chance to make a real impact, featuring stories, community leaders, and ways to support programs that change lives year-round."
+1600w-IVdkMeHmo04,7,Image Replacement,"image,global",Replace the dark leafy background photo with a softly blurred candlelit ballroom scene of similar depth and composition to shift toward a formal gala mood.
+1600w-IVdkMeHmo04,8,Visual Addition or Removal,"image,local",Add 1px thin vertical separators between the four top event detail blocks to improve rhythm without increasing clutter.
+1600w-IVdkMeHmo04,9,Typography or Style Shift,"style,global",Switch the headline font to a high-contrast Didot italic to heighten elegance.
+1600w-IVdkMeHmo04,10,Structural Enhancement,"structure,local",Apply a subtle 20% black gradient overlay from top to bottom on the background to boost text contrast.
+1600w-H6V1JbJYyYU,1,Color Palette Variation,"color,global",Replace the dominant red-on-off-white palette with deep teal (#0F6C6D) typography on the same off-white background for a complementary scheme that keeps the bold mood and readability.
+1600w-H6V1JbJYyYU,2,Element Recolor,"color,local",Recolor the 'she said yes' headline from red to royal blue (#2046AE) to shift emphasis cooler while remaining harmonious with the off-white background.
+1600w-H6V1JbJYyYU,3,Layout Swap,"layout,global","Swap the large 'she said yes' block with the 'FASHION STORE EST.2025' tag, moving the brand to top-center and the headline to mid-center for balanced hierarchy."
+1600w-H6V1JbJYyYU,4,Scale and Spacing Adjustment,"layout,local",Increase the 'she said yes' headline size by 15% and add 24px extra top and bottom margin to maintain breathing room.
+1600w-H6V1JbJYyYU,5,Copy Rewrite,"copy,local",Change the main headline to: 'she said forever'.
+1600w-H6V1JbJYyYU,6,Copy Expansion,"copy,global","Replace 'FASHION STORE EST.2025' with: 'FASHION STORE — EST.2025 · curated looks for every moment, crafted with love, designed to celebrate commitments and everyday joy.'"
+1600w-H6V1JbJYyYU,7,Image Replacement,"image,global",Replace the centered typographic block with a minimalist engagement ring illustration of similar scale and alignment.
+1600w-H6V1JbJYyYU,8,Visual Addition or Removal,"image,local",Replace the dot above the 'i' in 'said' with a small heart icon to add a playful accent.
+1600w-H6V1JbJYyYU,9,Typography or Style Shift,"style,global","Switch the headline and subhead to a high-contrast serif, such as Didot, keeping lowercase to shift the tone from playful to elegant."
+1600w-H6V1JbJYyYU,10,Structural Enhancement,"structure,local",Add a 2px inset rounded red border around the canvas to subtly frame and emphasize the central typography.
+1600w-9JTrLkx-Ppg,1,Color Palette Variation,"color,global","Replace the black/white palette with purple accents by deep navy (#0B1A2A) background, warm gold (#D4A647) accents, and off-white (#F4F4F2) text to maintain professional contrast."
+1600w-9JTrLkx-Ppg,2,Element Recolor,"color,local",Recolor the 'Business Consultant' subheadline from purple to teal (#00A7A7) to create a fresh focal accent against the dark background.
+1600w-9JTrLkx-Ppg,3,Layout Swap,"layout,global","Swap positions: move the portrait to the left half and shift the headline/text block to the right, maintaining vertical center alignment."
+1600w-9JTrLkx-Ppg,4,Scale and Spacing Adjustment,"layout,local",Reduce the portrait width by 8% and add 24px extra gutter between the image edge and the left text block.
+1600w-9JTrLkx-Ppg,5,Copy Rewrite,"copy,local",Change the subheadline from 'Business Consultant' to 'Business Advisor'.
+1600w-9JTrLkx-Ppg,6,Copy Expansion,"copy,global","Replace 'Fauget Co.' with 'Fauget Co. | Strategy, Operations, and Growth' to test wrapping on two lines."
+1600w-9JTrLkx-Ppg,7,Image Replacement,"image,global","Replace the right-aligned portrait with a right-aligned photo of a modern office desk setup on dark background, maintaining similar lighting and negative space."
+1600w-9JTrLkx-Ppg,8,Visual Addition or Removal,"image,local",Add a subtle 1px vertical divider line (#333) between the text block and portrait to organize visual flow.
+1600w-9JTrLkx-Ppg,9,Typography or Style Shift,"style,global",Switch the headline to 'Merriweather Bold' in title case and keep body text in 'Inter Regular' to shift tone from corporate to refined.
+1600w-9JTrLkx-Ppg,10,Structural Enhancement,"structure,local",Apply a soft black-to-transparent gradient overlay on the image’s left edge to improve text contrast and clarify hierarchy.
+1600w-K18O8e4K488,1,Color Palette Variation,"color,global","Shift the teal, orange, gray palette to a navy-and-coral scheme, replacing orange accents with coral and teal text with navy, preserving contrast on the light background."
+1600w-K18O8e4K488,2,Element Recolor,"color,local",Change the large orange circular photo frame gradient to a deep teal gradient for a cooler emphasis.
+1600w-K18O8e4K488,3,Layout Swap,"layout,global",Swap the right-side speaker photo with the left-aligned 'LIVE WEBINAR' headline block to rebalance focus.
+1600w-K18O8e4K488,4,Scale and Spacing Adjustment,"layout,local",Increase the speaker photo circle by 15% and add 24px extra left padding to the adjacent text block.
+1600w-K18O8e4K488,5,Copy Rewrite,"copy,local",Change the main headline to: LIVE MASTERCLASS.
+1600w-K18O8e4K488,6,Copy Expansion,"copy,global","Replace the subheadline with: Practical strategies, expert insights, and actionable tools to accelerate growth, streamline operations, and build a resilient, scalable business."
+1600w-K18O8e4K488,7,Image Replacement,"image,global","Swap the speaker portrait with a flat illustration of a laptop and analytics dashboard, centered within the same circular frame."
+1600w-K18O8e4K488,8,Visual Addition or Removal,"image,local",Remove the small orange circle overlapping the top-right of the photo frame to simplify the layout.
+1600w-K18O8e4K488,9,Typography or Style Shift,"style,global","Switch the headline to a modern serif, such as Playfair Display, while retaining size and case for a more elegant tone."
+1600w-K18O8e4K488,10,Structural Enhancement,"structure,local",Add a 2px white stroke around the circular speaker photo to improve separation from the orange gradient ring.
+1600w-IVdkMeHmo04-1,1,Color Palette Variation,"color,global","With dominant dark green and ivory tones, switch the overall palette to deep navy with warm gold typography and accents to keep the elegant mood and readability."
+1600w-IVdkMeHmo04-1,2,Element Recolor,"color,local",Change the 'Gala of Hope' headline color to warm gold (#D4AF37) to become the focal point while harmonizing with the dark greens.
+1600w-IVdkMeHmo04-1,3,Layout Swap,"layout,global","Swap the 'Gala of Hope' headline with the right-side 'Register to Attend' button, placing the headline right-center and the button left to preserve balance."
+1600w-IVdkMeHmo04-1,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Register to Attend' button size by 20% and add 12px extra padding around it to maintain spacing from the subheadline.
+1600w-IVdkMeHmo04-1,5,Copy Rewrite,"copy,local",Change the main headline to 'Evening of Hope'.
+1600w-IVdkMeHmo04-1,6,Copy Expansion,"copy,global","Expand the subheadline to: 'An evening of inspiration, meaningful connection, and shared purpose—where stories are lifted, partnerships begin, and every contribution helps create lasting, tangible change in our community'."
+1600w-IVdkMeHmo04-1,7,Image Replacement,"image,global","Replace the dark leaf background image with a soft-focus night cityscape with warm lights, keeping a similar composition and moody elegance."
+1600w-IVdkMeHmo04-1,8,Visual Addition or Removal,"image,local","Add a small, soft-gold star accent to the left of 'Save the date' to subtly enrich the header rhythm."
+1600w-IVdkMeHmo04-1,9,Typography or Style Shift,"style,global",Switch the headline font to a high-contrast serif like Didot Italic to heighten elegance while keeping body text unchanged.
+1600w-IVdkMeHmo04-1,10,Structural Enhancement,"structure,local",Apply a subtle top-to-bottom black gradient overlay (30% to 0%) across the background to improve text legibility and framing.
+1600w-J2-prU82nP4,1,Color Palette Variation,"color,global","Given the green background with black/white text, change the background to muted coral (#FF6F61) to create contrast while keeping readability."
+1600w-J2-prU82nP4,2,Element Recolor,"color,local",Recolor the lightbulb icon to neon yellow (#FFD400) to shift emphasis while harmonizing with the green background.
+1600w-J2-prU82nP4,3,Layout Swap,"layout,global","Swap positions: move the headline stack to the right and place the person cutout on the left, maintaining equal margins."
+1600w-J2-prU82nP4,4,Scale and Spacing Adjustment,"layout,local",Enlarge the person cutout by 12% and add a 24px left gutter to separate it from the headline.
+1600w-J2-prU82nP4,5,Copy Rewrite,"copy,local",STOP OVERTHINKING NOW!
+1600w-J2-prU82nP4,6,Copy Expansion,"copy,global","Replace the headline with: Don't think too much—trust your gut, take the first step, and keep moving because momentum beats hesitation every time."
+1600w-J2-prU82nP4,7,Image Replacement,"image,global","Replace the pondering woman cutout with a right-aligned person meditating in a similar three-quarter pose, keeping the white sticker outline."
+1600w-J2-prU82nP4,8,Visual Addition or Removal,"image,local",Remove the radiating halo lines above the person’s head to reduce visual clutter.
+1600w-J2-prU82nP4,9,Typography or Style Shift,"style,global",Switch the headline to a rounded bold sans like Poppins ExtraBold to shift tone from assertive to friendly.
+1600w-J2-prU82nP4,10,Structural Enhancement,"structure,local",Add a subtle 4px off-white border around the canvas to frame the layout and increase hierarchy.
+1600w-FAqixqKkICk,1,Color Palette Variation,"color,global","Shift the palette to complementary blues: slate-blue background (#5A6E7F), off-white paper (#FAF8F3), and dark navy text and outline (#1E2A36) to preserve mood and contrast."
+1600w-FAqixqKkICk,2,Element Recolor,"color,local",Change the headline text color to deep teal (#0F6B6D) to shift emphasis toward the message while maintaining harmony with the beige background and brown outline.
+1600w-FAqixqKkICk,3,Layout Swap,"layout,global","Move the notepad illustration to the right half and place the headline text, centered, on the left half, preserving equal margins."
+1600w-FAqixqKkICk,4,Scale and Spacing Adjustment,"layout,local",Scale the notepad illustration up by 12% and add 20px padding between the text and paper edges to maintain breathing room.
+1600w-FAqixqKkICk,5,Copy Rewrite,"copy,local","Replace the headline with: 'TODAY WILL BE A FOCUSED, BOLD, ALL-CAPS SORT OF DAY.'"
+1600w-FAqixqKkICk,6,Copy Expansion,"copy,global","Replace the text block with: 'TODAY IS GOING TO BE PRODUCTIVE AND CONFIDENT—ALL CAPS ENERGY, CLEAR GOALS, FOCUSED WORK, SMALL WINS STACKING UP, MOMENTUM BUILDING, AND FINISH THAT FEELS EARNED.'"
+1600w-FAqixqKkICk,7,Image Replacement,"image,global",Replace the notepad doodle with a minimalist clipboard illustration in the same size and central placement to convey a more professional mood.
+1600w-FAqixqKkICk,8,Visual Addition or Removal,"image,local",Add an oversized sunburst behind the notepad at 10% opacity to increase depth and rhythm without distracting from the text.
+1600w-FAqixqKkICk,9,Typography or Style Shift,"style,global","Switch the headline font to a humanist serif (e.g., Source Serif 3, Semibold) while keeping all caps to shift tone from playful to editorial."
+1600w-FAqixqKkICk,10,Structural Enhancement,"structure,local","Add a soft 8px drop shadow to the notepad (0, 10, 30, 15%) to lift it from the beige background and clarify hierarchy."
+1600w-NcQMz5zOIyQ,1,Color Palette Variation,"color,global",Swap the yellow background to teal (#00B3B3) and change pink accents to coral (#FF5A5F) for a contrasting palette that keeps the upbeat mood and readability.
+1600w-NcQMz5zOIyQ,2,Element Recolor,"color,local",Change the 'LETS PARTY' headline color from pink to deep purple (#6A2CF0) for stronger contrast against the yellow background.
+1600w-NcQMz5zOIyQ,3,Layout Swap,"layout,global","Swap positions: place 'LETS PARTY' at top-center and anchor the subject slightly lower-right, keeping 'YOU ARE INVITED' beneath."
+1600w-NcQMz5zOIyQ,4,Scale and Spacing Adjustment,"layout,local",Increase 'LETS PARTY' size by 20% and add 24px padding above 'YOU ARE INVITED' to maintain separation.
+1600w-NcQMz5zOIyQ,5,Copy Rewrite,"copy,local",Change the main headline to 'LET'S CELEBRATE'.
+1600w-NcQMz5zOIyQ,6,Copy Expansion,"copy,global","Replace 'YOU ARE INVITED' with 'You are invited to dance, laugh, and celebrate—join us for a night of music, friends, and nonstop fun'."
+1600w-NcQMz5zOIyQ,7,Image Replacement,"image,global","Replace the woman-with-boombox confetti photo with a neon-lit DJ turntable shot with falling confetti, maintaining a central subject and bright background."
+1600w-NcQMz5zOIyQ,8,Visual Addition or Removal,"image,local",Remove confetti overlapping the headline by clearing star shapes within a 40px buffer around the letters to improve legibility.
+1600w-NcQMz5zOIyQ,9,Typography or Style Shift,"style,global","Switch the headline to Bebas Neue, all caps, with 5% tighter tracking to shift tone from playful to bold, modern."
+1600w-NcQMz5zOIyQ,10,Structural Enhancement,"structure,local","Add a semi-transparent white rectangle (80% width, 60% opacity) behind 'YOU ARE INVITED' to improve contrast without obscuring the background."
+1600w-NEoYkSVC058,1,Color Palette Variation,"color,global","With dominant black, white, and gray, switch to a deep charcoal background with muted gold (#C2A66B) accents for headings/illustration to preserve elegance and readability."
+1600w-NEoYkSVC058,2,Element Recolor,"color,local",Change the 'Rimberio' script headline color to muted gold (#C2A66B) to draw focus while harmonizing with the monochrome photo.
+1600w-NEoYkSVC058,3,Layout Swap,"layout,global",Swap sides: place the large photo on the right and move the black content column to the left to maintain balance.
+1600w-NEoYkSVC058,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Rimberio' script size by 20% and add 16px bottom margin to prevent overlap with the model’s coat.
+1600w-NEoYkSVC058,5,Copy Rewrite,"copy,local",Change 'Fashion Style' to 'Modern Style'.
+1600w-NEoYkSVC058,6,Copy Expansion,"copy,global",Replace the 'Fashion Style' subhead with 'Fashion Style for Modern Minimalists' to test wrapping and multiline behavior.
+1600w-NEoYkSVC058,7,Image Replacement,"image,global","Replace the monochrome studio portrait with a monochrome runway close-up, preserving left-side lighting and ample negative space."
+1600w-NEoYkSVC058,8,Visual Addition or Removal,"image,local",Add a thin muted-gold vertical divider line between the photo and the right column to subtly increase rhythm and structure.
+1600w-NEoYkSVC058,9,Typography or Style Shift,"style,global",Set 'FASHION STYLE' in small caps with +40 tracking to create a more refined editorial tone.
+1600w-NEoYkSVC058,10,Structural Enhancement,"structure,local",Apply a 20% black gradient overlay on the left photo to improve headline legibility against bright highlights.
+1600w-KZpYxSRdMn4,1,Color Palette Variation,"color,global","Replace the current cream, dark green, and gold palette with navy, teal, and coral accents to maintain professional tone while boosting contrast and legibility."
+1600w-KZpYxSRdMn4,2,Element Recolor,"color,local",Change the GET STARTED button fill from dark green to rich gold (#F9C543) to increase emphasis while matching the bottom ribbon accents.
+1600w-KZpYxSRdMn4,3,Layout Swap,"layout,global",Swap the right-side circular photo with the left-side 'Our Services' text block to create a right-aligned information column.
+1600w-KZpYxSRdMn4,4,Scale and Spacing Adjustment,"layout,local",Increase the circular portrait diameter by 15% and add 24px left margin to preserve spacing from the service list.
+1600w-KZpYxSRdMn4,5,Copy Rewrite,"copy,local",Replace the headline 'DIGITAL MARKETING AGENCY' with 'DIGITAL GROWTH AGENCY'.
+1600w-KZpYxSRdMn4,6,Copy Expansion,"copy,global","Replace the services bullets with: 'We grow brands through targeted campaigns, data-led strategy, deep research, and intuitive mobile solutions—delivering measurable outcomes, insights, and programs that scale with your goals.'"
+1600w-KZpYxSRdMn4,7,Image Replacement,"image,global",Replace the circular portrait with a circular photo of a team collaborating around a laptop in a modern office.
+1600w-KZpYxSRdMn4,8,Visual Addition or Removal,"image,local","Add a small upward arrow icon inside the GET STARTED button, right-aligned, to reinforce action."
+1600w-KZpYxSRdMn4,9,Typography or Style Shift,"style,global",Switch the headline font to a refined serif like Merriweather Bold to shift the tone from corporate to elegant.
+1600w-KZpYxSRdMn4,10,Structural Enhancement,"structure,local",Add a soft drop shadow to the circular photo to subtly elevate it from the cream background.
+1600w-ROAkphj1zsA,1,Color Palette Variation,"color,global","Dominant colors: cream, deep green, yellow, red; switch to a complementary palette with a pale aqua background and indigo text/limbs while retaining the yellow face for warm contrast."
+1600w-ROAkphj1zsA,2,Element Recolor,"color,local",Recolor the headline from deep green to burnt orange (#D7672E) to shift emphasis while harmonizing with the yellow face.
+1600w-ROAkphj1zsA,3,Layout Swap,"layout,global","Move the walking smiley to the left and place the headline on the right, both vertically centered for balance."
+1600w-ROAkphj1zsA,4,Scale and Spacing Adjustment,"layout,local",Enlarge the walking smiley by 15% and increase the space between it and the headline to 48px.
+1600w-ROAkphj1zsA,5,Copy Rewrite,"copy,local",Say yes to new challenges!
+1600w-ROAkphj1zsA,6,Copy Expansion,"copy,global","Replace the headline with: 'Say yes to challenges and keep moving forward—embrace the learning, stay curious, and turn every obstacle into a chance to grow.'"
+1600w-ROAkphj1zsA,7,Image Replacement,"image,global",Replace the walking smiley character with a retro-styled mountain climber walking in the same direction and scale.
+1600w-ROAkphj1zsA,8,Visual Addition or Removal,"image,local",Add a small retro starburst around the word 'yes' in soft gold to create subtle emphasis.
+1600w-ROAkphj1zsA,9,Typography or Style Shift,"style,global","Switch the headline to a Didone serif (e.g., Didot) with 'yes' in italic, shifting tone from playful to elegant."
+1600w-ROAkphj1zsA,10,Structural Enhancement,"structure,local",Add a 4px dark green border with 12px inner padding around the canvas to subtly frame the layout.
+1600w-OnW3L3V5tgI,1,Color Palette Variation,"color,global","With dominant cyan-blue and pink, change the blue background to coral (#FF6A5A) and the pink panel to teal (#1FB6A6), retaining ivory text."
+1600w-OnW3L3V5tgI,2,Element Recolor,"color,local",Recolor the 'OUR FOOD' button fill to coral (#FF6A5A) to draw primary emphasis against the blue background.
+1600w-OnW3L3V5tgI,3,Layout Swap,"layout,global","Swap the dog photo to the left half and move the 'HUMAN-GRADE. Dog-approved.' block to the right, maintaining current vertical alignment."
+1600w-OnW3L3V5tgI,4,Scale and Spacing Adjustment,"layout,local",Reduce the dog photo panel by 10% and add 24px inner padding to preserve spacing around the rounded edges.
+1600w-OnW3L3V5tgI,5,Copy Rewrite,"copy,local",Replace the headline with 'KITCHEN-QUALITY. Pup-approved.'
+1600w-OnW3L3V5tgI,6,Copy Expansion,"copy,global","Replace the supporting paragraph with: 'Nutritious, delicious meals made with real ingredients—crafted for wagging tails and healthy lives. Cooked in small batches, transparently sourced, and tailored to keep pups energetic and thriving every day.'"
+1600w-OnW3L3V5tgI,7,Image Replacement,"image,global","Replace the white Pomeranian on pink with a right-facing golden retriever in a warm kitchen setting, maintaining a close-up crop."
+1600w-OnW3L3V5tgI,8,Visual Addition or Removal,"image,local",Add a small white paw-print icon to the left of 'OUR FOOD' to increase visual rhythm and reinforce the CTA.
+1600w-OnW3L3V5tgI,9,Typography or Style Shift,"style,global",Switch the headline font to a refined serif like Playfair Display Semibold to shift the tone from playful to premium.
+1600w-OnW3L3V5tgI,10,Structural Enhancement,"structure,local",Add a 12px white border around the pink photo panel to strengthen separation from the blue background.
+1600w-NwdmmHkEOxk,1,Color Palette Variation,"color,global",Replace peach and mustard accents with teal (#2BB3C0) and navy (#1F3A56) while keeping white background and black text to maintain uplifting mood and legibility.
+1600w-NwdmmHkEOxk,2,Element Recolor,"color,local",Change the right green scalloped badge to coral (#FF7A6E) to draw attention while harmonizing with existing peach accents.
+1600w-NwdmmHkEOxk,3,Layout Swap,"layout,global","Swap the left headline block with the right 'Community Outreach Program' badge column, keeping contact information centered to preserve balance."
+1600w-NwdmmHkEOxk,4,Scale and Spacing Adjustment,"layout,local",Increase the 'Community Outreach Program' badge 15% and add 24px padding around it.
+1600w-NwdmmHkEOxk,5,Copy Rewrite,"copy,local","Change the headline to: 'Together, We Can Create Lasting Change'."
+1600w-NwdmmHkEOxk,6,Copy Expansion,"copy,global","Expand the left body copy to ~75 words, elaborating on volunteering, donations, mentorship, local partnerships, and impact stories, keeping the supportive tone and formatting as one paragraph."
+1600w-NwdmmHkEOxk,7,Image Replacement,"image,global","Replace the right teal wavy badge illustration with a candid photo of volunteers working together, framed inside a rounded rectangle of similar size."
+1600w-NwdmmHkEOxk,8,Visual Addition or Removal,"image,local",Add a subtle teal dot grid behind the left star icon for texture.
+1600w-NwdmmHkEOxk,9,Typography or Style Shift,"style,global","Switch all headlines to Poppins SemiBold and set uppercase for a cleaner, modern tone."
+1600w-NwdmmHkEOxk,10,Structural Enhancement,"structure,local",Add a 2px teal border around the entire flyer to subtly frame and unify sections.
+1600w-_HHyJ9eyu3Q,1,Color Palette Variation,"color,global","Replace the burgundy background and light-blue accents with deep navy (#0E2A3B) and soft coral (#FF6F61), keeping all body text white for readability and the calm tone."
+1600w-_HHyJ9eyu3Q,2,Element Recolor,"color,local",Recolor the 'BRAND ASSETS' headline to mustard yellow (#FFD34E) to become the primary focal accent against the burgundy background.
+1600w-_HHyJ9eyu3Q,3,Layout Swap,"layout,global","Swap positions of the right photo panel and the left 'BRAND ASSETS' block, placing the image left and the headline right while maintaining existing margins."
+1600w-_HHyJ9eyu3Q,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'BRAND ASSETS' headline size by 15% and increase top padding above the 'OUR LOGO' section by 12px to preserve spacing.
+1600w-_HHyJ9eyu3Q,5,Copy Rewrite,"copy,local",Change the main headline to 'BRAND ELEMENTS'.
+1600w-_HHyJ9eyu3Q,6,Copy Expansion,"copy,global","Expand the bottom-right tagline to: 'Functional items for everyday living, thoughtfully crafted for daily use with durable, timeless style'."
+1600w-_HHyJ9eyu3Q,7,Image Replacement,"image,global",Replace the photo of two people holding woven baskets with two people holding minimalist ceramic mugs on the same red backdrop.
+1600w-_HHyJ9eyu3Q,8,Visual Addition or Removal,"image,local",Add a thin 1px vertical divider line between the left text column and the photo panel to balance visual density.
+1600w-_HHyJ9eyu3Q,9,Typography or Style Shift,"style,global","Switch headings and tagline to a high-contrast modern serif (e.g., 'Merriweather') to shift tone from playful to elegant."
+1600w-_HHyJ9eyu3Q,10,Structural Enhancement,"structure,local","Apply a soft drop shadow (0, 12px, 24px, rgba(0,0,0,0.2)) to the photo card to subtly elevate it above the background."
+1600w-bU_eCuLHDN8,1,Color Palette Variation,"color,global","Shift palette: replace lime green panel with turquoise and pink text with coral, retaining the black‑white checkerboard for contrast and the playful mood."
+1600w-bU_eCuLHDN8,2,Element Recolor,"color,local",Recolor the 'OUT OF OFFICE' headline from pink to cobalt blue to redirect emphasis while keeping harmony with the lime panel and checkerboard.
+1600w-bU_eCuLHDN8,3,Layout Swap,"layout,global","Swap positions: place 'OUT OF OFFICE' above and move 'A LITTLE HEADS UP' below, centered, maintaining overall balance."
+1600w-bU_eCuLHDN8,4,Scale and Spacing Adjustment,"layout,local",Increase 'OUT OF OFFICE' size by 20% and add 24px breathing space above and below within the lime panel.
+1600w-bU_eCuLHDN8,5,Copy Rewrite,"copy,local",Replace 'OUT OF OFFICE' with 'AWAY FROM DESK'.
+1600w-bU_eCuLHDN8,6,Copy Expansion,"copy,global","Expand 'A LITTLE HEADS UP' to 'A LITTLE HEADS UP — AWAY FOR NOW, BACK SOON'."
+1600w-bU_eCuLHDN8,7,Image Replacement,"image,global",Replace the black‑white checkerboard background with bold black‑white diagonal stripes to keep rhythm but refresh the theme.
+1600w-bU_eCuLHDN8,8,Visual Addition or Removal,"image,local",Remove the top-right pink flower accent to reduce visual clutter and balance density.
+1600w-bU_eCuLHDN8,9,Typography or Style Shift,"style,global","Switch the headline to a refined high‑contrast serif, such as Didot Bold, to shift the tone from playful to elegant."
+1600w-bU_eCuLHDN8,10,Structural Enhancement,"structure,local",Add a thin 2px black stroke around the lime rectangle to strengthen framing and hierarchy.
+1600w-eqZAnXprFhg,1,Color Palette Variation,"color,global","Replace all orange gradients and accents (header, center node, orange cards) with a teal-to-cyan scheme, retaining black text and white cards to preserve contrast and calm mood."
+1600w-eqZAnXprFhg,2,Element Recolor,"color,local",Recolor the central 'Topic' rounded rectangle to deep teal (#0F766E) to shift emphasis while harmonizing with existing light blues.
+1600w-eqZAnXprFhg,3,Layout Swap,"layout,global","Swap the 'Mind Map' headline on the left with the right-side description block, keeping both aligned to top within the orange header."
+1600w-eqZAnXprFhg,4,Scale and Spacing Adjustment,"layout,local",Enlarge the central 'Topic' node by 20% and expand the radial gap to surrounding cards by 24px to maintain breathing room.
+1600w-eqZAnXprFhg,5,Copy Rewrite,"copy,local",Change the main headline from 'Mind Map' to 'Concept Map'.
+1600w-eqZAnXprFhg,6,Copy Expansion,"copy,global","Expand the right-side tagline to: 'Explore ideas and information around a main idea or topic, capture connections between thoughts, and organize related insights into clear, visual clusters for fast understanding'."
+1600w-eqZAnXprFhg,7,Image Replacement,"image,global","Replace the sticky-note mind map with a central lightbulb icon connected to circular nodes using thin lines, maintaining the radial composition."
+1600w-eqZAnXprFhg,8,Visual Addition or Removal,"image,local",Add a faint dashed circular ring around the 'Topic' node to unify the spokes.
+1600w-eqZAnXprFhg,9,Typography or Style Shift,"style,global","Change the headline font to a refined serif (e.g., Merriweather Bold) to shift tone from playful to academic, leaving body text unchanged."
+1600w-eqZAnXprFhg,10,Structural Enhancement,"structure,local",Add a 1px dark divider line below the orange header bar to clearly separate it from the canvas.
+1600w-e_KkH19ObUk,1,Color Palette Variation,"color,global",Replace the lavender background with muted sage green (#BFD8C1) to create a complementary palette while preserving white text contrast and the design’s calm mood.
+1600w-e_KkH19ObUk,2,Element Recolor,"color,local",Recolor the word ‘brilliance’ to coral (#FF6F61) to shift emphasis while harmonizing with the bouquet’s warm tones.
+1600w-e_KkH19ObUk,3,Layout Swap,"layout,global","Swap the bouquet image to the right and move the headline, body copy, and CTA left, maintaining equal side margins."
+1600w-e_KkH19ObUk,4,Scale and Spacing Adjustment,"layout,local",Increase the bouquet photo size by 15% and add 24px right padding to keep clear spacing from the headline.
+1600w-e_KkH19ObUk,5,Copy Rewrite,"copy,local",Change the headline to: Bursting with beauty.
+1600w-e_KkH19ObUk,6,Copy Expansion,"copy,global","Replace the body copy with: Freshly arranged, locally sourced, and crafted with care for every occasion—thoughtfully selected blooms delivered with lasting freshness, fragrance, and effortless style."
+1600w-e_KkH19ObUk,7,Image Replacement,"image,global","Replace the bouquet photo with a minimalist white orchid stem, similarly cropped and positioned on the left."
+1600w-e_KkH19ObUk,8,Visual Addition or Removal,"image,local",Insert a thin 1px white divider line between the headline and body copy to clarify hierarchy.
+1600w-e_KkH19ObUk,9,Typography or Style Shift,"style,global","Change ‘Blooming with’ to a high-contrast serif (Playfair Display) to elevate tone, keeping ‘brilliance’ styling and sizes unchanged."
+1600w-e_KkH19ObUk,10,Structural Enhancement,"structure,local","Add a soft drop shadow to the white Explore button (0,8,24,20% black) to increase prominence."
+1600w-VLAmdFwJm1I,1,Color Palette Variation,"color,global","With electric blue and white dominant, replace all blue elements with deep burnt orange (#D35400) and shift accents to charcoal (#333333) to retain contrast."
+1600w-VLAmdFwJm1I,2,Element Recolor,"color,local",Change the 'CAMPAIGN HUB' headline color from blue to emerald green (#0F8A5F) to subtly shift emphasis.
+1600w-VLAmdFwJm1I,3,Layout Swap,"layout,global","Swap the group photo and the 'CAMPAIGN HUB' banner, placing the headline at the top and the photo beneath."
+1600w-VLAmdFwJm1I,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'CAMPAIGN HUB' headline size by 12% and increase top and bottom padding of the white banner by 8px.
+1600w-VLAmdFwJm1I,5,Copy Rewrite,"copy,local",Replace 'CAMPAIGN HUB' with 'CAMPAIGN HQ'.
+1600w-VLAmdFwJm1I,6,Copy Expansion,"copy,global","Expand 'VIVID MARKETING' to: 'Vivid Marketing—plan, collaborate, and launch campaigns.'"
+1600w-VLAmdFwJm1I,7,Image Replacement,"image,global","Swap the group meeting photo for a bright flat-lay of laptops, notebooks, and coffee on a desk, keeping the wide horizontal crop."
+1600w-VLAmdFwJm1I,8,Visual Addition or Removal,"image,local",Add a 2px blue divider line between the top photo and the white headline panel to tighten separation.
+1600w-VLAmdFwJm1I,9,Typography or Style Shift,"style,global",Switch the headline font to a high-contrast serif (Playfair Display) to shift the tone from utilitarian to elegant.
+1600w-VLAmdFwJm1I,10,Structural Enhancement,"structure,local","Apply a soft drop shadow (0, 8px, 24px, rgba(0,0,0,0.12)) to the white headline panel to elevate hierarchy."
+1600w-Vu6fJpXHfB0,1,Color Palette Variation,"color,global",Switch to a deep royal blue background with white typography and question mark to maintain contrast and the bold mood.
+1600w-Vu6fJpXHfB0,2,Element Recolor,"color,local",Change the large question mark color from dark gray to deep teal to shift emphasis while keeping contrast on the yellow background.
+1600w-Vu6fJpXHfB0,3,Layout Swap,"layout,global","Swap the positions of the big question mark and the 'DID YOU KNOW' headline, placing the mark left and headline right to rebalance."
+1600w-Vu6fJpXHfB0,4,Scale and Spacing Adjustment,"layout,local",Reduce question mark size by 20% and increase the gap between it and the headline by 24px.
+1600w-Vu6fJpXHfB0,5,Copy Rewrite,"copy,local",Change the headline to 'DID YOU REALIZE'.
+1600w-Vu6fJpXHfB0,6,Copy Expansion,"copy,global","Replace the fact line with: 'Hot water can freeze faster than cold water, called the Mpemba effect, influenced by evaporation, convection, and container conditions; outcomes vary by environment.'"
+1600w-Vu6fJpXHfB0,7,Image Replacement,"image,global",Replace the large 3D question mark with a 3D lightbulb illustration of similar size and angle.
+1600w-Vu6fJpXHfB0,8,Visual Addition or Removal,"image,local",Add a thin 2px charcoal underline beneath 'DID YOU KNOW' to anchor the headline.
+1600w-Vu6fJpXHfB0,9,Typography or Style Shift,"style,global","Change the headline font to a condensed sans (e.g., Bebas Neue) to shift the tone from playful to bold editorial."
+1600w-Vu6fJpXHfB0,10,Structural Enhancement,"structure,local",Add a subtle rounded white pill banner behind the fact line with 12px padding to emphasize it.
+1600w-gOlznvJ4zdk,1,Color Palette Variation,"color,global","With sage green, white, and charcoal dominant, shift the palette to muted lavender and plum while keeping text charcoal for readability."
+1600w-gOlznvJ4zdk,2,Element Recolor,"color,local",Change the red hearts inside the jar to soft coral (#F98080) to shift emphasis without clashing with the sage palette.
+1600w-gOlznvJ4zdk,3,Layout Swap,"layout,global","Swap positions of the jar illustration and the white instruction panel, placing the steps on top and the jar centered below to maintain balance."
+1600w-gOlznvJ4zdk,4,Scale and Spacing Adjustment,"layout,local",Increase the jar illustration size by 20% and add 24px extra top padding above the white panel to keep spacing comfortable.
+1600w-gOlznvJ4zdk,5,Copy Rewrite,"copy,local",Change the headline to 'Wellness Jar'.
+1600w-gOlznvJ4zdk,6,Copy Expansion,"copy,global","Replace step 1 text with: 'Find a clean, empty jar you enjoy seeing every day.'"
+1600w-gOlznvJ4zdk,7,Image Replacement,"image,global","Replace the jar-with-hearts illustration with a cozy teacup emitting heart-shaped steam, centered on the same oval shadow."
+1600w-gOlznvJ4zdk,8,Visual Addition or Removal,"image,local",Remove the white heart doodle in the top-right corner to reduce visual clutter.
+1600w-gOlznvJ4zdk,9,Typography or Style Shift,"style,global","Switch all body copy to Nunito Regular, maintaining size and color, for a cleaner, friendlier tone."
+1600w-gOlznvJ4zdk,10,Structural Enhancement,"structure,local",Add a soft 8px drop shadow to the white instruction panel to subtly lift it from the background.
+1600w-ijK0RlZ5JR8-1,1,Color Palette Variation,"color,global","Replace the light blue/white/pink scheme with a deep navy background, white circle, coral headline, and mint accents to create a contrasting palette while preserving readability."
+1600w-ijK0RlZ5JR8-1,2,Element Recolor,"color,local",Recolor the main headline from pink to the arrow’s orange to shift emphasis warmer while maintaining harmony.
+1600w-ijK0RlZ5JR8-1,3,Layout Swap,"layout,global","Swap the arrow and 'QUICK TIPS' positions within the circle, placing the arrow at top center and 'QUICK TIPS' at bottom center."
+1600w-ijK0RlZ5JR8-1,4,Scale and Spacing Adjustment,"layout,local",Reduce the main headline size by 10% and add 6 px line spacing to improve legibility within the circle.
+1600w-ijK0RlZ5JR8-1,5,Copy Rewrite,"copy,local",Replace the headline with GET MORE FROM EVERY WORKOUT.
+1600w-ijK0RlZ5JR8-1,6,Copy Expansion,"copy,global","Expand 'QUICK TIPS' to: Quick tips to boost performance, stay motivated, and train smarter with simple adjustments you can apply today for better results."
+1600w-ijK0RlZ5JR8-1,7,Image Replacement,"image,global","Replace the solid light blue background with a soft-focus gym interior photo in cool tones, keeping the white circle and text legible."
+1600w-ijK0RlZ5JR8-1,8,Visual Addition or Removal,"image,local",Add two small mint dots flanking 'QUICK TIPS' to increase visual rhythm.
+1600w-ijK0RlZ5JR8-1,9,Typography or Style Shift,"style,global","Switch the headline to a condensed bold sans (e.g., Bebas Neue) for a more athletic, assertive tone."
+1600w-ijK0RlZ5JR8-1,10,Structural Enhancement,"structure,local",Add a soft drop shadow to the white circle to subtly elevate it from the background.
+1600w-jlhsA8F30Lk,1,Color Palette Variation,"color,global","With dominant pink, white, and light gray, change the palette to teal (#16A5A1) across bubble, megaphone accents, and footer, retaining white type and the light gray background."
+1600w-jlhsA8F30Lk,2,Element Recolor,"color,local",Recolor the speech bubble to royal blue (#2D4BF0) to heighten contrast with the white headline while keeping the megaphone and footer pink.
+1600w-jlhsA8F30Lk,3,Layout Swap,"layout,global","Swap the speech bubble to the left half and move the megaphone to the right, aligning both vertically centered to preserve balance."
+1600w-jlhsA8F30Lk,4,Scale and Spacing Adjustment,"layout,local",Scale the megaphone up 20% and increase the gap between it and the speech bubble by 24px to prevent crowding.
+1600w-jlhsA8F30Lk,5,Copy Rewrite,"copy,local","Replace 'WE ARE OPEN TODAY' with 'YES, WE’RE OPEN TODAY'."
+1600w-jlhsA8F30Lk,6,Copy Expansion,"copy,global","Replace the '10AM - 9PM' line with 'Open 10AM-9PM daily—drop in for quick service, friendly support, and curbside pickup; we’re here to help whenever you need.'"
+1600w-jlhsA8F30Lk,7,Image Replacement,"image,global","Replace the 3D pink megaphone with a 3D storefront icon facing right, matching scale and angle."
+1600w-jlhsA8F30Lk,8,Visual Addition or Removal,"image,local",Add a small white starburst accent near the bubble’s tail to create a focal pop.
+1600w-jlhsA8F30Lk,9,Typography or Style Shift,"style,global",Switch the headline and hours to a high-contrast serif (Playfair Display Bold) to shift the tone from playful to elegant.
+1600w-jlhsA8F30Lk,10,Structural Enhancement,"structure,local","Add a soft drop shadow to the speech bubble (20% black, 0px x, 8px y, 24px blur) to subtly lift it above the background."
+1600w-mQV8WxekDho,1,Color Palette Variation,"color,global","Shift the palette to teal background, coral headline with mustard outline, navy shadows, and off-white body text to keep playful contrast and readability."
+1600w-mQV8WxekDho,2,Element Recolor,"color,local",Change the background from lavender-blue to deep navy to heighten contrast with the pink headline.
+1600w-mQV8WxekDho,3,Layout Swap,"layout,global","Swap positions of the 'DON'T MISS OUT' headline and the 'OUR EXCLUSIVE SALE...' subheadline, maintaining center alignment."
+1600w-mQV8WxekDho,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'DON'T MISS OUT' headline size by 12% and increase spacing above it by 16px.
+1600w-mQV8WxekDho,5,Copy Rewrite,"copy,local",Replace 'DON'T MISS OUT' with 'DON'T SLEEP ON THIS'.
+1600w-mQV8WxekDho,6,Copy Expansion,"copy,global","Expand the subheadline to: Our exclusive sale is here—limited-time deals, fresh drops, and daily surprises; shop now before your favorites disappear."
+1600w-mQV8WxekDho,7,Image Replacement,"image,global","Replace the white starburst accents with colorful confetti sprinkles, keeping similar sizes and scatter."
+1600w-mQV8WxekDho,8,Visual Addition or Removal,"image,local",Remove the two smallest left-side star icons to reduce clutter around the headline.
+1600w-mQV8WxekDho,9,Typography or Style Shift,"style,global",Switch the subheadline and footer text to Montserrat Medium to shift the tone from playful to modern.
+1600w-mQV8WxekDho,10,Structural Enhancement,"structure,local",Add a semi-transparent white rounded banner behind the subheadline to improve hierarchy and readability.
+1600w-u6z_9iKj-iQ,1,Color Palette Variation,"color,global",Replace the teal-blue bokeh background with deep royal purple hues to create contrast while preserving warmth and white text readability.
+1600w-u6z_9iKj-iQ,2,Element Recolor,"color,local",Change 'DIWALI' text color from white to saffron gold #FFC107 to strengthen festive emphasis against the dark background.
+1600w-u6z_9iKj-iQ,3,Layout Swap,"layout,global","Reposition the row of diyas to the upper third and move the 'DIWALI' headline to the lower third, centered, preserving balance."
+1600w-u6z_9iKj-iQ,4,Scale and Spacing Adjustment,"layout,local",Increase 'DIWALI' headline size by 15% and add 24px spacing above 'FESTIVAL OF LIGHTS' to maintain separation.
+1600w-u6z_9iKj-iQ,5,Copy Rewrite,"copy,local",Replace 'Happy Diwali' with 'Joyous Diwali'.
+1600w-u6z_9iKj-iQ,6,Copy Expansion,"copy,global","Change 'FESTIVAL OF LIGHTS' to 'CELEBRATING THE FESTIVAL OF LIGHTS WITH WARMTH, JOY, AND TOGETHERNESS'."
+1600w-u6z_9iKj-iQ,7,Image Replacement,"image,global","Replace the clay diya row with floating paper lanterns at dusk, maintaining shallow depth-of-field and warm glow."
+1600w-u6z_9iKj-iQ,8,Visual Addition or Removal,"image,local",Add a faint gold sparkle trail above the central flame to enrich visual rhythm.
+1600w-u6z_9iKj-iQ,9,Typography or Style Shift,"style,global",Switch 'DIWALI' to Playfair Display Bold and keep supporting text as-is to shift tone from modern to elegant.
+1600w-u6z_9iKj-iQ,10,Structural Enhancement,"structure,local",Add a subtle dark gradient vignette around the edges to frame the headline and improve contrast.
+1600w-qWWXRzbWBOk,1,Color Palette Variation,"color,global",Dominant colors are cobalt blue and cream; replace the blue gradient with a muted coral-peach gradient while keeping white text to preserve contrast and calm mood.
+1600w-qWWXRzbWBOk,2,Element Recolor,"color,local",Change the 'a new chance' line color from white to soft gold (#F2D283) to shift emphasis while harmonizing with the cream glow.
+1600w-qWWXRzbWBOk,3,Layout Swap,"layout,global",Move the headline to the upper-left quadrant and relocate the star accents to the lower-right to maintain diagonal balance.
+1600w-qWWXRzbWBOk,4,Scale and Spacing Adjustment,"layout,local",Scale the headline up 15% and push the nearest stars outward by 20px to preserve breathing room.
+1600w-qWWXRzbWBOk,5,Copy Rewrite,"copy,local",Replace the main headline with 'Each day brings a fresh opportunity'.
+1600w-qWWXRzbWBOk,6,Copy Expansion,"copy,global","Expand the headline to: 'Every day is a new chance to begin again, to learn, to grow, and to choose the path that matters most to you'."
+1600w-qWWXRzbWBOk,7,Image Replacement,"image,global","Replace the blue sky-like gradient background with a soft sunrise cloud gradient, keeping the central light bloom for text legibility."
+1600w-qWWXRzbWBOk,8,Visual Addition or Removal,"image,local",Remove the thin oval orbit around the subline to simplify the center and reduce visual density.
+1600w-qWWXRzbWBOk,9,Typography or Style Shift,"style,global",Switch the headline to a humanist sans-serif (Source Sans Pro Semibold) while retaining the italic subline to shift tone from dreamy classic to modern clean.
+1600w-qWWXRzbWBOk,10,Structural Enhancement,"structure,local",Add a 1px soft-gold keyline border around the canvas to subtly frame and elevate the headline.
+1600w-zcHQ3XLP3Ow,1,Color Palette Variation,"color,global","Currently dominated by purple, magenta, and blue, recolor the background and accents to a deep teal/coral complementary palette while retaining white text for the same mood and readability."
+1600w-zcHQ3XLP3Ow,2,Element Recolor,"color,local",Change the 'now live!' text to coral #FF615A to create a warm focal accent against the cool background.
+1600w-zcHQ3XLP3Ow,3,Layout Swap,"layout,global",Swap the top-left 'podcast' label with the top-right 'The first episode is now live!' badge to balance weight while keeping the headline centered.
+1600w-zcHQ3XLP3Ow,4,Scale and Spacing Adjustment,"layout,local",Scale the 'tech talk' headline down 8% and increase card inner padding by 12px to maintain balance.
+1600w-zcHQ3XLP3Ow,5,Copy Rewrite,"copy,local",Replace the main headline 'tech talk' with 'tech chat'.
+1600w-zcHQ3XLP3Ow,6,Copy Expansion,"copy,global","Expand the subheadline to: 'Join us as we explore new gadgets, trends, and ideas—short, smart conversations that make technology clear, practical, and exciting for everyone.'"
+1600w-zcHQ3XLP3Ow,7,Image Replacement,"image,global","Replace the abstract 3D ribbon background with a macro circuit-board photo with soft bokeh, maintaining central blur and dark edges."
+1600w-zcHQ3XLP3Ow,8,Visual Addition or Removal,"image,local",Remove the bottom-right icon cluster to simplify the footer and reduce visual noise.
+1600w-zcHQ3XLP3Ow,9,Typography or Style Shift,"style,global","Change the headline to a semi-condensed grotesk (e.g., Inter Black) in all caps for a bolder, more tech-forward tone."
+1600w-zcHQ3XLP3Ow,10,Structural Enhancement,"structure,local",Apply a soft 12px blur shadow and 2px inner stroke to the glass card to enhance separation from the background rings.
+1600w-laANf5rvLUw,1,Color Palette Variation,"color,global","Replace the magenta furry numerals with saturated emerald-green to create a complementary palette against the light-gray background, retaining black text for readability."
+1600w-laANf5rvLUw,2,Element Recolor,"color,local",Change the 'GIRL'S PARTY' headline color from black to magenta to echo the numerals and shift emphasis upward.
+1600w-laANf5rvLUw,3,Layout Swap,"layout,global",Move the 'GIRL'S PARTY' text block to the top-right photo’s spot and place that photo where the headline currently sits.
+1600w-laANf5rvLUw,4,Scale and Spacing Adjustment,"layout,local",Scale the '2004' numerals down 12% and add 24px padding around them to prevent collisions with nearby photos and text.
+1600w-laANf5rvLUw,5,Copy Rewrite,"copy,local",Change the headline 'GIRL'S PARTY' to 'Girls' Night'.
+1600w-laANf5rvLUw,6,Copy Expansion,"copy,global","Expand the body paragraph to 2-3x length by adding details about music, snacks, games, decor, and RSVP, keeping the same friendly tone and sentence structure."
+1600w-laANf5rvLUw,7,Image Replacement,"image,global",Replace the large pink furry '2004' numerals with reflective gold foil balloon '2004' in the same scale and positions.
+1600w-laANf5rvLUw,8,Visual Addition or Removal,"image,local",Remove the bottom-left Polaroid photo to declutter and emphasize the central numerals.
+1600w-laANf5rvLUw,9,Typography or Style Shift,"style,global","Switch the headline to DM Serif Display Regular, all caps, while keeping body and details in the current sans-serif to create a more elegant tone."
+1600w-laANf5rvLUw,10,Structural Enhancement,"structure,local",Add a subtle 2px white border around the canvas with a soft 8px drop shadow to gently frame the layout.
+1600w-xCuy4vLKWKc,1,Color Palette Variation,"color,global",Switch the terracotta palette to a muted teal background with off-white text to preserve calm mood and high readability.
+1600w-xCuy4vLKWKc,2,Element Recolor,"color,local",Recolor the 'Swipe for tips' box (stroke and text) to soft teal for stronger emphasis against the terracotta.
+1600w-xCuy4vLKWKc,3,Layout Swap,"layout,global","Swap the 'Swipe for tips' button with the dotted corner accent, placing the button bottom-right and the dots beneath the headline."
+1600w-xCuy4vLKWKc,4,Scale and Spacing Adjustment,"layout,local",Increase the headline size by 15% and add 12px extra top and bottom margin to maintain spacing.
+1600w-xCuy4vLKWKc,5,Copy Rewrite,"copy,local",How to grow your email list.
+1600w-xCuy4vLKWKc,6,Copy Expansion,"copy,global","Learn how to build an email list with beginner-friendly strategies, simple tools, and proven tactics to grow subscribers."
+1600w-xCuy4vLKWKc,7,Image Replacement,"image,global",Replace the solid terracotta background with a subtle abstract wave illustration in a single color field for texture.
+1600w-xCuy4vLKWKc,8,Visual Addition or Removal,"image,local","Add a small right-arrow icon inside the 'Swipe for tips' button, aligned after the text."
+1600w-xCuy4vLKWKc,9,Typography or Style Shift,"style,global",Switch the headline to a refined serif font at the same weight to shift tone from casual to authoritative.
+1600w-xCuy4vLKWKc,10,Structural Enhancement,"structure,local",Add a 2px off-white border around the entire canvas to subtly frame the content and increase hierarchy.
+1600w-m4qQZp-grvQ,1,Color Palette Variation,"color,global","Dominant sand beige, off-white, and red; shift the palette by converting red accents to deep teal (#0F6C73) and body text to charcoal, preserving minimal mood and strong readability."
+1600w-m4qQZp-grvQ,2,Element Recolor,"color,local",Change the 'BRAND PROPOSAL' headline from red to deep teal (#0F6C73) to shift emphasis cooler while preserving contrast on the cream background.
+1600w-m4qQZp-grvQ,3,Layout Swap,"layout,global","Swap the hero image and 'BRAND PROPOSAL' headline positions, placing the headline at the top margin and the image below to maintain balance."
+1600w-m4qQZp-grvQ,4,Scale and Spacing Adjustment,"layout,local",Scale down the 'BRAND PROPOSAL' headline by 15% and add 24px space above it to separate it from the image edge.
+1600w-m4qQZp-grvQ,5,Copy Rewrite,"copy,local",Change the headline to 'BRAND PRESENTATION'.
+1600w-m4qQZp-grvQ,6,Copy Expansion,"copy,global","Expand 'BRAND PROPOSAL' to: 'Brand proposal for Borcelle: refined visual identity, typography, and campaign direction expressed through minimal materials and timeless photography.'"
+1600w-m4qQZp-grvQ,7,Image Replacement,"image,global","Replace the desert scene with a centered subject walking along a foggy coastline, preserving wide negative sky and muted, neutral tones."
+1600w-m4qQZp-grvQ,8,Visual Addition or Removal,"image,local",Remove the white oval around 'BORCELLE' to simplify the focal point and lighten the layout's visual density.
+1600w-m4qQZp-grvQ,9,Typography or Style Shift,"style,global",Switch the headline from a high-contrast serif to a modern sans-serif (Neue Haas Grotesk Medium) to shift tone from dramatic fashion to contemporary minimal.
+1600w-m4qQZp-grvQ,10,Structural Enhancement,"structure,local",Insert a 1px hairline rule between the image and headline across the width to clarify section hierarchy.
+624w-UZhVzgGhAZA,1,Color Palette Variation,"color,global",Shift the poster's pastel green/red/orange accents to a teal-and-coral complementary palette while keeping all typography black for readability.
+624w-UZhVzgGhAZA,2,Element Recolor,"color,local",Recolor the 'Hanover' script from black to deep forest green to draw attention without overpowering the fruit illustration.
+624w-UZhVzgGhAZA,3,Layout Swap,"layout,global","Swap positions of the 'Hanover' script and the walking fruit illustration, placing the illustration at top and the script directly underneath."
+624w-UZhVzgGhAZA,4,Scale and Spacing Adjustment,"layout,local",Increase the walking fruit illustration by 20% and add 16px top and bottom padding to maintain balance with the headline.
+624w-UZhVzgGhAZA,5,Copy Rewrite,"copy,local",Change the main headline to 'LUNCH SERVED EVERY DAY'.
+624w-UZhVzgGhAZA,6,Copy Expansion,"copy,global","Expand the 'JAKARTA, IDN' line to: 'Jakarta, IDN — Fresh bites, friendly vibes, and quick lunch service for every craving, open daily'."
+624w-UZhVzgGhAZA,7,Image Replacement,"image,global",Replace the walking fruit trio illustration with three cheerful coffee cups in the same stride and placement.
+624w-UZhVzgGhAZA,8,Visual Addition or Removal,"image,local",Remove the pink halftone dot backdrop behind the characters to reduce visual noise.
+624w-UZhVzgGhAZA,9,Typography or Style Shift,"style,global","Switch the 'LUNCH HOURS EVERY DAY' serif to a bold condensed sans-serif uppercase for a cleaner, modern tone."
+624w-UZhVzgGhAZA,10,Structural Enhancement,"structure,local",Add a thin black keyline border around the canvas to frame and contain the layout.
+848w-Xal0F5OfysY,1,Color Palette Variation,"color,global",Replace the dominant powder-blue background with muted burnt orange (#D96A3A) while retaining the ivory text to create a contrasting yet readable palette.
+848w-Xal0F5OfysY,2,Element Recolor,"color,local",Recolor the headline text from ivory to deep navy (#0D2B45) to increase contrast against the blue background.
+848w-Xal0F5OfysY,3,Layout Swap,"layout,global","Move the photo to the top-center and stack the headline below it, maintaining even vertical margins."
+848w-Xal0F5OfysY,4,Scale and Spacing Adjustment,"layout,local",Enlarge the photo to 140% and add 48px spacing above and below to separate it from the headline.
+848w-Xal0F5OfysY,5,Copy Rewrite,"copy,local",Change the headline to 'ELEVATE YOUR CREATIVE SKILLS'.
+848w-Xal0F5OfysY,6,Copy Expansion,"copy,global","Replace 'Student Updates' with 'Student Updates and Resources for Workshops, Exhibitions, Deadlines, and Opportunities This Semester' to test multiline wrapping."
+848w-Xal0F5OfysY,7,Image Replacement,"image,global",Replace the photo of a person viewing posters with a similar medium-shot of a student sketching at a desk.
+848w-Xal0F5OfysY,8,Visual Addition or Removal,"image,local","Add a 1px ivory horizontal rule above the photo, matching its width, to anchor the midsection."
+848w-Xal0F5OfysY,9,Typography or Style Shift,"style,global",Switch the headline to a high-contrast serif like Playfair Display at the same size to shift tone from bold to refined.
+848w-Xal0F5OfysY,10,Structural Enhancement,"structure,local",Add a 6px ivory border with 8px corner radius around the photo to strengthen framing.
+848w-a7AVmpGZf5E,1,Color Palette Variation,"color,global","Current palette is black on white; apply a contrasting electric blue (#1E90FF) accent to headline, date, and button while keeping the white background and grayscale product imagery."
+848w-a7AVmpGZf5E,2,Element Recolor,"color,local",Recolor the bottom pill button from black to bright orange #FF6A00 to shift emphasis without altering the monochrome headline or product.
+848w-a7AVmpGZf5E,3,Layout Swap,"layout,global","Swap the positions of the headline/date block and the headphone image, placing the image above and the text block centered directly below."
+848w-a7AVmpGZf5E,4,Scale and Spacing Adjustment,"layout,local",Increase the headphone image size by 15% and add 24px top and bottom margin to prevent crowding against the headline and button.
+848w-a7AVmpGZf5E,5,Copy Rewrite,"copy,local",Change the headline to: Crank Up the Deals.
+848w-a7AVmpGZf5E,6,Copy Expansion,"copy,global","Replace the headline with: Turn Up the Savings with premium sound for less—limited-time deals on top models, engineered comfort, and crystal clarity that keep you listening longer."
+848w-a7AVmpGZf5E,7,Image Replacement,"image,global",Replace the centered black headphone product photo with a centered matte-black wireless earbuds photo on the same white background.
+848w-a7AVmpGZf5E,8,Visual Addition or Removal,"image,local",Add a faint 10% gray circular halo behind the headphones to subtly increase depth without clutter.
+848w-a7AVmpGZf5E,9,Typography or Style Shift,"style,global","Switch the headline to Playfair Display Semibold, Title Case, to shift tone from sporty to premium while keeping body text unchanged."
+848w-a7AVmpGZf5E,10,Structural Enhancement,"structure,local",Insert a 1px light-gray horizontal rule between the headline/date and the headphones to clarify hierarchy.
+900w-8g4EBLeikgE,1,Color Palette Variation,"color,global",Change all mustard/orange accents (LUNCH TIMES and chevron) to teal #1FA2A6 while retaining the cream background and black text to preserve mood and readability.
+900w-8g4EBLeikgE,2,Element Recolor,"color,local",Recolor the 'Order Now' text to mustard #F2A01F to align with the headline and increase CTA emphasis.
+900w-8g4EBLeikgE,3,Layout Swap,"layout,global","Swap the taco photo with the 'Grab your favourites at 40% discount today' subhead, placing the photo mid-page and the subhead beneath it."
+900w-8g4EBLeikgE,4,Scale and Spacing Adjustment,"layout,local",Increase the taco photo size by 12% and add 24px bottom margin to maintain spacing above 'Order Now'.
+900w-8g4EBLeikgE,5,Copy Rewrite,"copy,local","Change 'Fast, Fresh, & Delicious' to 'Quick, Fresh, and Tasty'."
+900w-8g4EBLeikgE,6,Copy Expansion,"copy,global","Replace 'Grab your favourites at 40% discount today' with 'Enjoy your favourites at 40% off—limited-time lunch savings on fresh tacos, sides, and drinks, available for pickup or delivery today'."
+900w-8g4EBLeikgE,7,Image Replacement,"image,global",Replace the taco-in-hands photo with a similar composition of hands holding a grilled chicken wrap box against the same neutral background.
+900w-8g4EBLeikgE,8,Visual Addition or Removal,"image,local",Remove the small chevron above 'Order Now' to reduce visual clutter near the CTA.
+900w-8g4EBLeikgE,9,Typography or Style Shift,"style,global","Switch the script headline to a bold italic sans-serif (e.g., Sora SemiBold Italic) to shift the tone from playful to modern."
+900w-8g4EBLeikgE,10,Structural Enhancement,"structure,local",Wrap 'Order Now' in a rounded pill button with a thin mustard stroke and subtle shadow to elevate the call-to-action.
+900w-hCJXZqhSZiw,1,Color Palette Variation,"color,global",Dominant colors: beige neutrals with black text; change all circle fills to muted sage greens while keeping black text to maintain soft mood and strong readability.
+900w-hCJXZqhSZiw,2,Element Recolor,"color,local",Change the 'travel' circle fill to dusty blue to create a focal contrast while harmonizing with neutrals.
+900w-hCJXZqhSZiw,3,Layout Swap,"layout,global","Swap the headline block with the six-circle grid, placing the grid at top and the headline centered below."
+900w-hCJXZqhSZiw,4,Scale and Spacing Adjustment,"layout,local",Enlarge each circle by 12% and increase gutter spacing between circles to 24px to preserve alignment.
+900w-hCJXZqhSZiw,5,Copy Rewrite,"copy,local",Change headline to 'Social media HIGHLIGHT ICON COVERS'.
+900w-hCJXZqhSZiw,6,Copy Expansion,"copy,global","Expand the headline into: 'Curated, minimalist story highlight covers for your social media—clean, cohesive icons that keep your profile organized, on-brand, and easy to browse.'"
+900w-hCJXZqhSZiw,7,Image Replacement,"image,global","Replace the six text-labeled beige circles with six minimalist line icons inside circles representing the same categories, maintaining the 3x2 grid."
+900w-hCJXZqhSZiw,8,Visual Addition or Removal,"image,local","Add a thin, centered horizontal rule between the headline and the circle grid to subtly separate sections."
+900w-hCJXZqhSZiw,9,Typography or Style Shift,"style,global",Switch the circle label font from casual script to a refined serif italic to shift tone from playful to elegant.
+900w-hCJXZqhSZiw,10,Structural Enhancement,"structure,local",Apply a soft 8px drop shadow to each circle to increase depth and visual hierarchy.
+848w-x9A8Hm2mD6U,1,Color Palette Variation,"color,global","Retone the background photo and UI accents from cool blue/gray to a warm sand-and-terracotta palette, preserving black text for contrast and the same calm, minimal mood."
+848w-x9A8Hm2mD6U,2,Element Recolor,"color,local",Change the 'Cloudlet' headline color from black to deep cobalt #1E40AF to shift emphasis toward the blue table while maintaining strong readability.
+848w-x9A8Hm2mD6U,3,Layout Swap,"layout,global",Move the 'Cloudlet' headline to the top-left and shift the date/links bar to the bottom margin to rebalance the full-bleed photo.
+848w-x9A8Hm2mD6U,4,Scale and Spacing Adjustment,"layout,local",Reduce the 'Cloudlet' headline size by 15% and add 32px top padding to reveal more of the tabletop while preserving center alignment.
+848w-x9A8Hm2mD6U,5,Copy Rewrite,"copy,local","Replace the preheadline 'why you should choose' with 'Why Cloudlet is better' to keep the confident, concise tone."
+848w-x9A8Hm2mD6U,6,Copy Expansion,"copy,global","Expand the preheadline to: 'Choose Cloudlet for effortless setup, dependable speed, and responsive support that scales with your team, so you can focus on building rather than managing infrastructure.'"
+848w-x9A8Hm2mD6U,7,Image Replacement,"image,global","Replace the desk-and-laptop photo with a similarly composed minimalist workspace featuring a tablet, notepad, and potted plant under warm morning light."
+848w-x9A8Hm2mD6U,8,Visual Addition or Removal,"image,local",Remove the stack of books on the table to simplify the foreground and reduce distraction around the headline.
+848w-x9A8Hm2mD6U,9,Typography or Style Shift,"style,global","Switch the 'Cloudlet' headline to a high-contrast serif like Playfair Display Semibold, retaining the small preheadline in a clean sans for a more elegant tone."
+848w-x9A8Hm2mD6U,10,Structural Enhancement,"structure,local",Add a subtle 20% black gradient overlay behind the central text area (top-to-bottom 0–20%) to improve legibility against the photo.
+1600w-p1o6ND26wWg,1,Color Palette Variation,"color,global","Dominant colors are black, white, and caramel; change the global palette to deep navy typography on warm cream background to complement the caramel drink while maintaining contrast."
+1600w-p1o6ND26wWg,2,Element Recolor,"color,local",Recolor the 'NEW POST' pill’s stroke and text to caramel #C98A55 to echo the drink and draw subtle emphasis.
+1600w-p1o6ND26wWg,3,Layout Swap,"layout,global","Move the iced coffee image to the left center and right-align the 'SHORT BREAK' headline on the right, preserving margins."
+1600w-p1o6ND26wWg,4,Scale and Spacing Adjustment,"layout,local",Reduce the iced coffee image by 15% and add 24px padding around it to clear the headline strokes.
+1600w-p1o6ND26wWg,5,Copy Rewrite,"copy,local",Replace 'SHORT BREAK' with 'BRIEF PAUSE'.
+1600w-p1o6ND26wWg,6,Copy Expansion,"copy,global",Expand 'SHORT BREAK' into 'Taking a short break for improvements' to test wrapping.
+1600w-p1o6ND26wWg,7,Image Replacement,"image,global","Replace the iced coffee cutout with a centered vintage alarm clock cutout on white, matching object size and placement."
+1600w-p1o6ND26wWg,8,Visual Addition or Removal,"image,local","Add a soft #000000 15% opacity oval shadow under the drink, 40px wide by 12px tall, to ground the object."
+1600w-p1o6ND26wWg,9,Typography or Style Shift,"style,global","Switch the headline to Playfair Display Black, all caps, to shift tone from bold modern to elegant editorial."
+1600w-p1o6ND26wWg,10,Structural Enhancement,"structure,local",Add a 1px charcoal keyline border inset 16px around the canvas to frame content.
+900w-Aneww-_lpeg,1,Color Palette Variation,"color,global","With navy, teal, and cream dominant, convert all blue typographic and rule elements to rich espresso brown to create a warm contrasting palette while preserving the cream background."
+900w-Aneww-_lpeg,2,Element Recolor,"color,local",Recolor the 'Your Day' script to warm copper (#B4673C) to echo the latte crema and gently shift emphasis.
+900w-Aneww-_lpeg,3,Layout Swap,"layout,global","Swap the hero cup photo above the 'ESPRESSO Your Day' headline, keeping center alignment to foreground the product."
+900w-Aneww-_lpeg,4,Scale and Spacing Adjustment,"layout,local",Scale the cup photo up 12% and add 16px extra space between it and the price bar to maintain breathing room.
+900w-Aneww-_lpeg,5,Copy Rewrite,"copy,local",Change the headline to 'Perk Up Your Day'.
+900w-Aneww-_lpeg,6,Copy Expansion,"copy,global","Expand 'DOUBLE ESPRESSO' to: 'Double espresso — rich, bold, and velvety; crafted for a quick pick‑me‑up; buy one, get one free today' to test wrapping."
+900w-Aneww-_lpeg,7,Image Replacement,"image,global","Replace the latte art cup photo with a centered double espresso in a white demitasse on a saucer, maintaining similar scale and lighting."
+900w-Aneww-_lpeg,8,Visual Addition or Removal,"image,local",Add a small line‑art coffee bean icon before 'DOUBLE ESPRESSO' to enrich rhythm without crowding.
+900w-Aneww-_lpeg,9,Typography or Style Shift,"style,global","Switch 'ESPRESSO' to a bold geometric sans (e.g., Futura Bold) to shift the tone from classic to modern."
+900w-Aneww-_lpeg,10,Structural Enhancement,"structure,local",Add a thin 1px navy keyline border around the poster to subtly frame content and lift hierarchy.
+900w-r5rfhPArHDg,1,Color Palette Variation,"color,global","Dominant colors: beige, royal blue, chocolate; replace all blue text and accents with burnt orange to create a warm complementary palette while maintaining readability."
+900w-r5rfhPArHDg,2,Element Recolor,"color,local",Change the price '$9.99' text color from blue to caramel orange (#E47D28) to draw focus while staying harmonious with the chocolate waffle.
+900w-r5rfhPArHDg,3,Layout Swap,"layout,global","Swap positions of the waffle image and the 'Perfect Chocolate Delight' headline, placing the waffle left and the headline right to preserve balance."
+900w-r5rfhPArHDg,4,Scale and Spacing Adjustment,"layout,local",Increase the waffle image size by 20% and add 32px bottom spacing to keep it clear of the price block.
+900w-r5rfhPArHDg,5,Copy Rewrite,"copy,local",Change the headline to 'ULTIMATE CHOCOLATE INDULGENCE'.
+900w-r5rfhPArHDg,6,Copy Expansion,"copy,global","Expand the subcopy to: 'Enjoy our crispy waffle with rich chocolate sauce, baked fresh for a melt-in-your-mouth bite, generously topped for a decadent treat you'll crave again and again'."
+900w-r5rfhPArHDg,7,Image Replacement,"image,global",Replace the chocolate waffle-on-fork photo with a honey-drizzled golden waffle-on-fork photo of similar angle and crop.
+900w-r5rfhPArHDg,8,Visual Addition or Removal,"image,local",Add a 20% opacity dotted sprinkle pattern behind the waffle's upper-right area to increase texture and balance.
+900w-r5rfhPArHDg,9,Typography or Style Shift,"style,global","Switch the headline to a condensed serif like Playfair Display Black for a more elegant tone, keeping current size and tracking."
+900w-r5rfhPArHDg,10,Structural Enhancement,"structure,local",Add a soft 12px drop shadow to the waffle image to lift it from the background and strengthen hierarchy.
+1600w-z8zt2gNZe3I,1,Color Palette Variation,"color,global",Change the current dark navy/white/light-blue palette to deep charcoal with muted copper-orange accents and off-white text to maintain professional mood and readability.
+1600w-z8zt2gNZe3I,2,Element Recolor,"color,local",Recolor the @reallygreatsite handle from blue to copper-orange (#CC6A2E) to shift emphasis toward the attribution while preserving harmony with the dark background.
+1600w-z8zt2gNZe3I,3,Layout Swap,"layout,global","Swap the portrait to the left half and move the quote text block to the right, maintaining equal margins and vertical centering."
+1600w-z8zt2gNZe3I,4,Scale and Spacing Adjustment,"layout,local",Enlarge the portrait by 12% and increase the gutter between image and text to 48 px to preserve balance.
+1600w-z8zt2gNZe3I,5,Copy Rewrite,"copy,local","Even the smallest wins deserve recognition, as they signal progress and momentum in business."
+1600w-z8zt2gNZe3I,6,Copy Expansion,"copy,global","Replace quote: 'Celebrate every small achievement; each step builds momentum, reinforces good habits, reveals what works, and compounds into progress that strengthens teams, earns trust, and grows a resilient business.'"
+1600w-z8zt2gNZe3I,7,Image Replacement,"image,global","Swap the right-side business portrait with a similar right-aligned studio photo of a confident businesswoman to introduce diversity while retaining lighting, scale, and background tone."
+1600w-z8zt2gNZe3I,8,Visual Addition or Removal,"image,local",Add a thin copper-orange underline beneath @reallygreatsite to strengthen attribution hierarchy.
+1600w-z8zt2gNZe3I,9,Typography or Style Shift,"style,global",Switch the quote text to 'Playfair Display' Semibold and set small caps for BUSINESS to shift tone from corporate to refined.
+1600w-z8zt2gNZe3I,10,Structural Enhancement,"structure,local",Add a subtle 20% black overlay behind the left quote block with 12 px corner radius to improve readability.
