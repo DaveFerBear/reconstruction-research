@@ -37,21 +37,18 @@ const GOOGLE_FONTS = {
 
 async function loadSpecList() {
   try {
-    const response = await fetch(SPECS_DIR);
-    const text = await response.text();
+    // Use API endpoint instead of directory listing
+    const response = await fetch(`${API_URL}/api/list-specs`);
+    const data = await response.json();
 
-    // Parse directory listing (this assumes a simple file server)
-    // If you're using a different setup, you might need to provide a manifest
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(text, "text/html");
-    const links = Array.from(doc.querySelectorAll("a"))
-      .map((a) => a.getAttribute("href"))
-      .filter((href) => href && href !== "../" && !href.includes("."));
+    if (!response.ok) {
+      throw new Error(data.error || "Failed to load specs");
+    }
 
+    const specs = data.specs || [];
     const specList = document.getElementById("spec-list");
 
-    links.forEach((dir, index) => {
-      const specName = dir.replace("/", "");
+    specs.forEach((specName, index) => {
       const item = document.createElement("div");
       item.className = "spec-item";
       item.dataset.specName = specName;
@@ -81,7 +78,7 @@ async function loadSpecList() {
     });
   } catch (error) {
     document.getElementById("error").textContent =
-      "Error loading spec list. Please ensure you're running a local server.";
+      "Error loading spec list. Please ensure the server is running.";
     console.error("Error loading spec list:", error);
   }
 }

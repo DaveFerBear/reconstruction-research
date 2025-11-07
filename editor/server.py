@@ -314,6 +314,27 @@ def upload_image():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# List available specs
+@app.route('/api/list-specs', methods=['GET'])
+def list_specs():
+    try:
+        specs_dir = BASE_DIR / 'datasets' / 'specs'
+        if not specs_dir.exists():
+            return jsonify({'specs': []})
+
+        # Get all directories in specs/
+        specs = []
+        for item in specs_dir.iterdir():
+            if item.is_dir() and not item.name.startswith('.'):
+                specs.append(item.name)
+
+        # Sort alphabetically
+        specs.sort()
+
+        return jsonify({'specs': specs})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Serve static files from editor directory
 @app.route('/')
 def index():
