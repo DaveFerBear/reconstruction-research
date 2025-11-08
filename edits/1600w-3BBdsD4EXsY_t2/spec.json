@@ -1,0 +1,38 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#FFE49C",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "Centered flat vector easel and sign: a blush-pink rounded-rectangle sign panel sits behind a terracotta-orange wooden easel. The easel has a triangular head with a small circular cut-out, a short horizontal top shelf, a matching bottom shelf, a central vertical post, and two wide splayed legs with softly rounded ends. Colors: easel elements #C95E3E; sign panel #F3BBB1; cut-out shows background through.",
+      "filename": "svg-1.svg",
+      "x": 330,
+      "y": 220,
+      "width": 940,
+      "height": 1160,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "text",
+      "text": "DO THINGS AT YOUR\nOWN PACE. LIFE'S NOT\nA RACE.",
+      "x": 420,
+      "y": 620,
+      "width": 760,
+      "height": 260,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Comic Sans MS",
+      "font_size": 56,
+      "color": "#4A2B25",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}

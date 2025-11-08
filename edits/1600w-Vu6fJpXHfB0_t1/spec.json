@@ -1,0 +1,56 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1341,
+  "background_color": "#4A235A",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Large 3D light warm yellow question mark with beveled edges and a separate round dot beneath it. The mark has a soft, elongated cast shadow falling down and to the right on the flat purple background, giving strong depth and a slightly matte, textured surface.",
+      "filename": "asset-1.png",
+      "x": 1035,
+      "y": 150,
+      "width": 520,
+      "height": 1000,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "text",
+      "text": "DID YOU\nKNOW",
+      "x": 150,
+      "y": 300,
+      "width": 720,
+      "height": 520,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Impact",
+      "font_size": 220,
+      "color": "#F9E79F",
+      "text_align": "left",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "Hot water will turn into\nice faster than cold\nwater.",
+      "x": 250,
+      "y": 900,
+      "width": 500,
+      "height": 180,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Arial",
+      "font_size": 42,
+      "color": "#F9E79F",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}

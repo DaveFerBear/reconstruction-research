@@ -1,0 +1,24 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="drop-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="8"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Modal card body with rounded corners and drop shadow -->
+  <rect x="70" y="70" width="500" height="300" rx="44" ry="44" fill="white" filter="url(#drop-shadow)"/>
+
+  <!-- Thin horizontal divider line in pale pink -->
+  <line x1="70" y1="310" x2="570" y2="310" stroke="#efd9dc" stroke-width="1"/>
+
+  <!-- Thin vertical divider line in pale pink, splitting the bottom area -->
+  <line x1="320" y1="310" x2="320" y2="370" stroke="#efd9dc" stroke-width="1"/>
+</svg>

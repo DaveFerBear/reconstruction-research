@@ -1,0 +1,23 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blush-pink rounded-rectangle sign panel -->
+  <rect x="25" y="27.5" width="50" height="35" rx="5" ry="5" fill="#F3BBB1"/>
+
+  <!-- Terracotta-orange wooden easel elements -->
+  <g fill="#C95E3E">
+    <!-- Central vertical post -->
+    <rect x="48" y="20" width="4" height="58"/>
+
+    <!-- Top shelf -->
+    <rect x="35" y="35" width="30" height="4"/>
+
+    <!-- Bottom shelf -->
+    <rect x="35" y="55" width="30" height="4"/>
+
+    <!-- Triangular head with circular cut-out -->
+    <path d="M 50 20 L 40 35 H 60 L 50 20 Z M 50 27.5 m -3 0 a 3 3 0 1 0 6 0 a 3 3 0 1 0 -6 0 Z" fill-rule="evenodd"/>
+
+    <!-- Splayed legs with softly rounded ends -->
+    <rect x="46" y="78" width="8" height="20" rx="4" ry="4" transform="rotate(-15 50 78)"/>
+    <rect x="46" y="78" width="8" height="20" rx="4" ry="4" transform="rotate(15 50 78)"/>
+  </g>
+</svg>
