@@ -1,0 +1,63 @@
+{
+  "canvas_width": 1280,
+  "canvas_height": 1600,
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "Full-bleed photo of a cozy cafe workspace: wooden table, grey chair, a centered glass of coffee on a wooden tray with cutlery; neutral grey wall background.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Clean girl",
+      "x": 158,
+      "y": 204,
+      "width": 900,
+      "height": 190,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Playfair Display",
+      "font_size": 160,
+      "color": "#FFFFFF",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "healthy habits",
+      "x": 172,
+      "y": 419,
+      "width": 900,
+      "height": 150,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Playfair Display",
+      "font_size": 120,
+      "color": "#FFFFFF",
+      "text_align": "center",
+      "font_weight": "600",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "@reallygreatsite",
+      "x": 23,
+      "y": 1267,
+      "width": 1280,
+      "height": 44,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Helvetica",
+      "font_size": 32,
+      "color": "#E0E0E0",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ]
+}
