@@ -370,8 +370,8 @@ def render_all_designs():
         # Save render.png directly in the spec directory
         output_path = spec_path.parent / "render.png"
 
-        # Assets are in the same directory
-        asset_dir = spec_path.parent if gen_images else None
+        # Assets are in the same directory (always load them)
+        asset_dir = spec_path.parent
         render_image(spec_data, output_path,
                     canvas_width=spec_data.get('canvas_width', 800),
                     canvas_height=spec_data.get('canvas_height', 600),

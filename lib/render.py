@@ -22,19 +22,20 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
         if isinstance(node, TextNode):
             fonts_needed.add(node.font_family)
 
-    # Map to Google Fonts (skip system fonts)
-    google_fonts = {
-        'Anton': 'family=Anton',
-        'Dancing Script': 'family=Dancing+Script:wght@400;700',
-        'Great Vibes': 'family=Great+Vibes',
-        'Montserrat': 'family=Montserrat:wght@100;400;700;900',
-        'Poppins': 'family=Poppins:wght@100;400;700;900',
+    # System fonts that don't need Google Fonts
+    system_fonts = {
+        'Arial', 'Helvetica', 'Times New Roman', 'Georgia',
+        'Courier New', 'Verdana', 'Times', 'Courier', 'serif', 'sans-serif'
     }
 
+    # Load all non-system fonts from Google Fonts with multiple weights
     font_imports = []
     for font in fonts_needed:
-        if font in google_fonts:
-            font_imports.append(google_fonts[font])
+        if font not in system_fonts:
+            # Convert font name to Google Fonts format
+            font_param = font.replace(' ', '+')
+            # Load with multiple weights for flexibility
+            font_imports.append(f'family={font_param}:wght@300;400;500;600;700;800;900')
 
     # Build Google Fonts URL
     if font_imports:
