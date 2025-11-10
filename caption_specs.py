@@ -1,76 +1,14 @@
 #!/usr/bin/env python3
 """Caption all images in specs using GPT-5 vision API."""
 
-import os
 import json
-import base64
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dotenv import load_dotenv
-import litellm
 from tqdm import tqdm
 
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise ValueError("OPENAI_API_KEY not set in environment")
+from lib.caption import caption_image
 
 SPECS_DIR = Path("datasets/specs")
-
-
-def encode_image_to_data_url(image_path: Path) -> str:
-    """Encode image to data URL for GPT-5 vision API."""
-    mime_types = {
-        '.jpg': 'image/jpeg',
-        '.jpeg': 'image/jpeg',
-        '.png': 'image/png',
-        '.webp': 'image/webp',
-    }
-    mime_type = mime_types.get(image_path.suffix.lower(), 'image/png')
-
-    with open(image_path, 'rb') as f:
-        image_data = base64.b64encode(f.read()).decode('utf-8')
-
-    return f"data:{mime_type};base64,{image_data}"
-
-
-def caption_image(image_path: Path) -> str:
-    """Generate a caption for an image using GPT-5 vision."""
-    if not image_path.exists():
-        return None
-
-    data_url = encode_image_to_data_url(image_path)
-
-    messages = [
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "text",
-                    "text": "Describe this image concisely in 1-2 sentences. Focus on the main subject, colors, style, and composition. Be specific and visual."
-                },
-                {
-                    "type": "image_url",
-                    "image_url": {"url": data_url}
-                }
-            ]
-        }
-    ]
-
-    try:
-        response = litellm.completion(
-            model="gpt-5",
-            messages=messages,
-            api_key=OPENAI_API_KEY,
-            timeout=60
-        )
-
-        caption = response.choices[0].message.content.strip()
-        return caption
-    except Exception as e:
-        print(f"  Error captioning {image_path.name}: {e}")
-        return None
 
 
 def process_spec(spec_path: Path) -> dict:
