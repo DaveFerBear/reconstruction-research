@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
   <defs>
-    <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="soft-shadow" x="-50%" y="-50%" width="200%" height="500%">
       <feOffset dx="2" dy="2" in="SourceAlpha" result="offset-blur"/>
       <feGaussianBlur stdDeviation="8" in="offset-blur" result="blurred-shadow"/>
       <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.1 0" in="blurred-shadow" result="shadow-color"/>
@@ -10,5 +10,5 @@
       </feMerge>
     </filter>
   </defs>
-  <rect x="10" y="10" width="280" height="130" rx="24" ry="24" fill="#FFFFFF" filter="url(#soft-shadow)"/>
+  <rect x="10" y="10" width="280" height="400" rx="24" ry="24" fill="#FFFFFF" filter="url(#soft-shadow)"/>
 </svg>
