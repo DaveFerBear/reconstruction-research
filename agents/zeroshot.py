@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 
 from .base import Agent
 from lib.types import Spec
+from lib.render import render_image
 
 load_dotenv()
 
@@ -57,11 +58,36 @@ class ZeroShotAgent(Agent):
         self.log(f"Loading spec from {spec_path}")
         spec = self.load_spec(spec_path)
 
+        # Copy assets from source to output directory
+        source_dir = spec_path.parent
+        output_dir = output_path.parent
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        self.log(f"Copying assets from {source_dir} to {output_dir}")
+        self.copy_assets(source_dir, output_dir)
+
         self.log(f"Applying instruction: '{instruction}'")
         edited_spec = self._apply_edit(spec, instruction)
 
         self.log(f"Saving edited spec to {output_path}")
-        return self.save_spec(edited_spec, output_path)
+        saved_path = self.save_spec(edited_spec, output_path)
+
+        # Render the edited design
+        self.log("Rendering edited design...")
+        render_output = saved_path.parent / "render.png"
+        try:
+            render_image(
+                edited_spec,
+                render_output,
+                canvas_width=edited_spec.canvas_width,
+                canvas_height=edited_spec.canvas_height,
+                asset_dir=saved_path.parent
+            )
+            self.log(f"✓ Rendered to {render_output}")
+        except Exception as e:
+            self.log(f"Warning: Failed to render: {e}")
+
+        return saved_path
 
     def _apply_edit(self, spec: Spec, instruction: str) -> Spec:
         """

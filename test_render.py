@@ -387,15 +387,41 @@ if __name__ == '__main__':
         # Then render all designs sync
         render_all_designs()
     else:
-        # Render single test
-        spec_path = Path('datasets/specs/1600w-1HZYAUid2AE/spec.json')
+        # Render single spec
+        # Accept spec path as first argument (can be a design name or full path)
+        if len(sys.argv) > 1 and sys.argv[1] not in ['--gen-images']:
+            spec_arg = sys.argv[1]
+
+            # Check if it's a full path to spec.json
+            if spec_arg.endswith('.json') and Path(spec_arg).exists():
+                spec_path = Path(spec_arg)
+            # Check if it's a path to a directory containing spec.json
+            elif Path(spec_arg).is_dir() and (Path(spec_arg) / 'spec.json').exists():
+                spec_path = Path(spec_arg) / 'spec.json'
+            # Otherwise treat as design name in datasets/specs/
+            elif (Path('datasets/specs') / spec_arg / 'spec.json').exists():
+                spec_path = Path('datasets/specs') / spec_arg / 'spec.json'
+            # Or check in edits/
+            elif (Path('edits') / spec_arg / 'spec.json').exists():
+                spec_path = Path('edits') / spec_arg / 'spec.json'
+            else:
+                print(f"Error: Could not find spec at {spec_arg}")
+                print("Provide either:")
+                print("  - Full path to spec.json")
+                print("  - Directory containing spec.json")
+                print("  - Design name (searches datasets/specs/ and edits/)")
+                sys.exit(1)
+        else:
+            # Default spec
+            spec_path = Path('datasets/specs/1600w-1HZYAUid2AE/spec.json')
+
         output_path = spec_path.parent / 'test_render.png'
 
         print(f"Loading spec from: {spec_path}")
         spec_data = json.load(spec_path.open())
 
         print(f"Rendering to: {output_path}")
-        result = render_image(spec_data, output_path, canvas_width=800, canvas_height=600)
+        result = render_image(spec_data, output_path, canvas_width=800, canvas_height=600, asset_dir=spec_path.parent)
 
         print(f"Successfully rendered to: {result}")
         print(f"File exists: {result.exists()}")

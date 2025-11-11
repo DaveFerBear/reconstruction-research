@@ -95,7 +95,16 @@ class DirectEditAgent(Agent):
         else:
             self.log("Warning: No source image found, image editing may not work")
 
+        # Copy all assets from source to output directory first
+        output_dir = output_path.parent
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        self.log(f"Copying assets from {self.current_spec_path} to {output_dir}")
+        self.copy_assets(self.current_spec_path, output_dir)
+
         self.log(f"Applying instruction: '{instruction}'")
+        # Now edit will modify assets in the output directory
+        self.current_spec_path = output_dir  # Point to output directory for edits
         edited_spec = self._apply_edit_with_tools(instruction)
 
         self.log(f"Saving edited spec to {output_path}")

@@ -88,3 +88,34 @@ class Agent(ABC):
         """Print a message if verbose mode is enabled."""
         if self.verbose:
             print(f"[{self.__class__.__name__}] {message}")
+
+    def copy_assets(self, source_dir: Path, dest_dir: Path):
+        """
+        Copy all asset files from source directory to destination directory.
+
+        Args:
+            source_dir: Source directory containing assets
+            dest_dir: Destination directory for assets
+        """
+        import shutil
+
+        # Copy all image assets (asset-*.png, asset-*.jpg)
+        for asset_file in source_dir.glob("asset-*.*"):
+            dest_file = dest_dir / asset_file.name
+            shutil.copy2(asset_file, dest_file)
+            self.log(f"  Copied {asset_file.name}")
+
+        # Copy all SVG assets (svg-*.svg)
+        for svg_file in source_dir.glob("svg-*.*"):
+            dest_file = dest_dir / svg_file.name
+            shutil.copy2(svg_file, dest_file)
+            self.log(f"  Copied {svg_file.name}")
+
+        # Copy background image if it exists
+        for bg_ext in [".png", ".jpg", ".jpeg"]:
+            bg_file = source_dir / f"background{bg_ext}"
+            if bg_file.exists():
+                dest_file = dest_dir / bg_file.name
+                shutil.copy2(bg_file, dest_file)
+                self.log(f"  Copied {bg_file.name}")
+                break
