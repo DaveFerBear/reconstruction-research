@@ -66,7 +66,7 @@ class DirectEditAgent(Agent):
         self.current_spec = self.load_spec(spec_path)
 
         # Load source image for Kontext editing
-        self.source_image_url = self._load_source_image(spec_path.parent.name)
+        self.source_image_url = self._load_source_image(spec_path)
 
         # Copy assets to output directory
         output_dir = output_path.parent
@@ -92,21 +92,17 @@ class DirectEditAgent(Agent):
 
         return saved_path
 
-    def _load_source_image(self, design_name: str) -> str | None:
-        """Find and load source image as data URL."""
-        candidates = [
-            Path(f"datasets/original/{design_name}.jpg"),
-            Path(f"datasets/original/{design_name}.png"),
-            Path(f"datasets/specs/{design_name}/render.png"),
-        ]
-
-        for candidate in candidates:
-            if candidate.exists():
-                self.log(f"Loading source image from {candidate}")
-                return _to_data_url(candidate)
-
-        self.log("Warning: No source image found, image editing may not work")
-        return None
+    def _load_source_image(self, spec_path: Path) -> str:
+        """Load the rendered image as source for editing."""
+        render_path = spec_path.parent / "render.png"
+        if not render_path.exists():
+            raise FileNotFoundError(
+                f"FATAL: No render.png found at {render_path}\n"
+                f"DirectEditAgent requires render.png to exist for image editing.\n"
+                f"Please ensure the design has been rendered before editing."
+            )
+        self.log(f"Loading source image from {render_path}")
+        return _to_data_url(render_path)
 
     def _render_design(self, saved_path: Path, spec: Spec):
         """Render design to PNG in separate thread to avoid async conflicts."""
@@ -335,7 +331,9 @@ IMPORTANT:
 - When using update_spec, return the COMPLETE spec with ALL fields
 - Preserve all nodes you're not modifying
 - Make sure your JSON is valid
-- You can combine tools (e.g., update_spec + update_image) in multiple iterations"""
+- You can combine tools (e.g., update_spec + update_image) in multiple iterations
+- Don't add \\n to text nodes- they should wrap naturally due to the width of the node
+"""
 
     def _build_user_prompt(self, instruction: str) -> str:
         """Build user prompt with spec and instruction."""
@@ -379,9 +377,6 @@ Analyze the current spec and the user's instruction. Determine which tool(s) to 
     def _tool_update_image(self, filename: str, edit_instruction: str) -> dict:
         """Edit an image asset using Kontext."""
         try:
-            if not self.source_image_url:
-                return {"error": "No source image available for editing"}
-
             image_path = self.current_spec_path / filename
             self.log(f"Editing {filename}: {edit_instruction}")
 

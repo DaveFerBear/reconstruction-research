@@ -3,7 +3,7 @@
   "canvas_height": 1600,
   "background_color": "#F6F0E6",
   "has_background_image": false,
-  "background_image_description": "",
+  "background_image_description": null,
   "nodes": [
     {
       "type": "image",
