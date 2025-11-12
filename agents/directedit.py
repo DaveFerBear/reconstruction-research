@@ -20,27 +20,25 @@ load_dotenv()
 
 class DirectEditAgent(Agent):
     """
-    Direct edit agent with function calling.
+    Direct edit agent with function calling (single-shot).
 
     Tools available:
     - update_spec: Modify text, layout, colors, positions, and all spec properties
     - update_image: Edit image files using AI (Kontext)
     - update_svg: Regenerate SVG files using AI (Gemini)
 
-    Uses iterative function calling to apply edits with verification.
+    Makes a single LLM call that can invoke multiple tools in parallel.
     """
 
     def __init__(
         self,
         model: str = "gpt-4o",
         temperature: float = 0.7,
-        verbose: bool = False,
-        max_iterations: int = 3
+        verbose: bool = False
     ):
         super().__init__(verbose=verbose)
         self.model = model
         self.temperature = temperature
-        self.max_iterations = max_iterations
 
         # Load API keys
         self.fal_api_key = os.getenv("FAL_API_KEY")
@@ -121,7 +119,7 @@ class DirectEditAgent(Agent):
             self.log(f"Warning: Failed to render: {e}")
 
     def _apply_edit_with_tools(self, instruction: str) -> Spec:
-        """Apply edits using function calling loop."""
+        """Apply edits using single-shot function calling."""
         messages = [
             {"role": "system", "content": self._build_system_prompt()},
             {"role": "user", "content": self._build_user_prompt(instruction)}
@@ -129,47 +127,34 @@ class DirectEditAgent(Agent):
 
         tools = self._build_tool_definitions()
 
-        # Iterative function calling loop
-        for iteration in range(self.max_iterations):
-            self.log(f"Iteration {iteration + 1}/{self.max_iterations}")
-            self._append_to_edit_log(f"\n{'='*80}\nITERATION {iteration + 1}/{self.max_iterations}\n{'='*80}\n")
+        # Single LLM call
+        self.log("Calling LLM with tools...")
+        response = litellm.completion(
+            model=self.model,
+            messages=messages,
+            tools=tools,
+            tool_choice="auto",
+            api_key=self.api_key,
+            temperature=self.temperature
+        )
 
-            response = litellm.completion(
-                model=self.model,
-                messages=messages,
-                tools=tools,
-                tool_choice="auto",
-                api_key=self.api_key,
-                temperature=self.temperature
-            )
+        assistant_message = response.choices[0].message
 
-            assistant_message = response.choices[0].message
-            messages.append({
-                "role": "assistant",
-                "content": assistant_message.content,
-                "tool_calls": assistant_message.tool_calls if hasattr(assistant_message, 'tool_calls') else None
-            })
+        # Log LLM response
+        if assistant_message.content:
+            self._append_to_edit_log(f"\nLLM Response:\n{assistant_message.content}\n")
 
-            # Log LLM response
-            if assistant_message.content:
-                self._append_to_edit_log(f"\nLLM Response:\n{assistant_message.content}\n")
+        # Execute tool calls if any
+        if hasattr(assistant_message, 'tool_calls') and assistant_message.tool_calls:
+            self.log(f"LLM called {len(assistant_message.tool_calls)} tool(s)")
+            self._append_to_edit_log(f"\nTool Calls: {len(assistant_message.tool_calls)}\n")
 
-            # Execute tool calls if any
-            if hasattr(assistant_message, 'tool_calls') and assistant_message.tool_calls:
-                self.log(f"LLM called {len(assistant_message.tool_calls)} tool(s)")
-                self._append_to_edit_log(f"\nTool Calls: {len(assistant_message.tool_calls)}\n")
-
-                for tool_call in assistant_message.tool_calls:
-                    result = self._execute_tool(tool_call)
-                    messages.append({
-                        "role": "tool",
-                        "tool_call_id": tool_call.id,
-                        "content": json.dumps(result)
-                    })
-            else:
-                self.log("LLM finished editing")
-                self._append_to_edit_log("\nLLM finished editing (no more tool calls)\n")
-                break
+            for tool_call in assistant_message.tool_calls:
+                result = self._execute_tool(tool_call)
+                self._append_to_edit_log(f"  ← Result: {json.dumps(result, indent=4)}\n")
+        else:
+            self.log("No tool calls made")
+            self._append_to_edit_log("\nNo tool calls made\n")
 
         return self.current_spec
 
@@ -187,18 +172,13 @@ class DirectEditAgent(Agent):
             self._append_to_edit_log(f"\n  → {function_name}({json.dumps(function_args, indent=4)})\n")
 
         if function_name == "update_spec":
-            result = self._tool_update_spec(**function_args)
+            return self._tool_update_spec(**function_args)
         elif function_name == "update_image":
-            result = self._tool_update_image(**function_args)
+            return self._tool_update_image(**function_args)
         elif function_name == "update_svg":
-            result = self._tool_update_svg(**function_args)
+            return self._tool_update_svg(**function_args)
         else:
-            result = {"error": f"Unknown function: {function_name}"}
-
-        # Log result
-        self._append_to_edit_log(f"  ← Result: {json.dumps(result, indent=4)}\n")
-
-        return result
+            return {"error": f"Unknown function: {function_name}"}
 
     def _build_tool_definitions(self) -> list:
         """Build OpenAI function definitions."""
@@ -447,12 +427,11 @@ Analyze the current spec and the user's instruction. Determine which tool(s) to 
         from datetime import datetime
 
         header = f"""{'='*80}
-DIRECTEDIT AGENT EDIT LOG
+DIRECTEDIT AGENT EDIT LOG (Single-Shot)
 {'='*80}
 Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 Model: {self.model}
 Temperature: {self.temperature}
-Max Iterations: {self.max_iterations}
 
 USER INSTRUCTION:
 {instruction}

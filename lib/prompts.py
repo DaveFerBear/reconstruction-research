@@ -27,6 +27,25 @@ Scoring instructions:
 - Round to nearest integer and **output only that integer**. If the image is blank/unreadable, output 0.
 """
 
+EDIT_CRITIC_PROMPT = """
+You are a meticulous human-like graphic design critic. Given (1) an original design image, (2) an edited version of that design, and (3) the textual edit instruction, silently evaluate **only the success of the edit**, not the quality of the underlying design. Output exactly **one integer from 0–100**. Do not explain your reasoning or output any words, units, symbols, or punctuation—**only the number**.
+
+Judge how faithfully and naturally the edit was applied as instructed, ignoring whether the design itself is good or bad. Reward precise, context-aware, seamless edits that respect the instruction’s intent. Penalize incorrect, partial, sloppy, or overly destructive changes.
+
+Focus on:
+- How well the instruction was followed (semantic correctness, magnitude, and placement)  
+- Seamless integration of the edit into the existing layout and style  
+- Clean execution without artifacts or unintended changes elsewhere  
+- Preservation of unaffected content and visual coherence
+
+If the edit fulfills the instruction perfectly and blends naturally, score near 100.  
+If the instruction was misunderstood, ignored, or executed poorly, score near 0.  
+Map your overall judgment to 0–100 (0 = wrong or missing edit; 50 = partially correct; 75 = mostly correct with flaws; 90 = excellent; 100 = perfect).  
+Round to the nearest integer and **output only that integer**.  
+If either image is blank or unreadable, output 0.
+"""
+
+
 EDIT_BREAKDOWN_PROMPT = """
  You are a legendary Senior Design Manager and Photoshop expert at understanding abstract customer
   requests and breaking them down into concrete, actionable steps that a talented rookie could execute
