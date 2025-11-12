@@ -114,13 +114,18 @@ class DirectEditAgent(Agent):
         self.log("Rendering edited design...")
         render_output = saved_path.parent / "render.png"
         try:
-            render_image(
-                edited_spec,
-                render_output,
-                canvas_width=edited_spec.canvas_width,
-                canvas_height=edited_spec.canvas_height,
-                asset_dir=saved_path.parent
-            )
+            # Run rendering in a thread to avoid asyncio loop conflicts
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(
+                    render_image,
+                    edited_spec,
+                    render_output,
+                    edited_spec.canvas_width,
+                    edited_spec.canvas_height,
+                    saved_path.parent
+                )
+                future.result()  # Wait for completion
             self.log(f"✓ Rendered to {render_output}")
         except Exception as e:
             self.log(f"Warning: Failed to render: {e}")
@@ -195,6 +200,12 @@ class DirectEditAgent(Agent):
             }
         ]
 
+        # Select the correct API key based on model
+        if self.model.startswith("gemini/"):
+            api_key = self.gemini_api_key
+        else:
+            api_key = self.api_key
+
         # Iteratively call LLM with function calling
         for iteration in range(self.max_iterations):
             self.log(f"Iteration {iteration + 1}/{self.max_iterations}")
@@ -204,7 +215,7 @@ class DirectEditAgent(Agent):
                 messages=messages,
                 tools=tools,
                 tool_choice="auto",
-                api_key=self.api_key,
+                api_key=api_key,
                 temperature=self.temperature
             )
 

@@ -38,10 +38,20 @@ class ZeroShotAgent(Agent):
         super().__init__(verbose=verbose)
         self.model = model
         self.temperature = temperature
-        self.api_key = os.getenv("GEMINI_API_KEY")
 
-        if not self.api_key:
-            raise ValueError("GEMINI_API_KEY environment variable not set")
+        # Load API keys for different providers
+        self.gemini_api_key = os.getenv("GEMINI_API_KEY")
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+
+        # Select appropriate key based on model
+        if model.startswith("gemini/"):
+            self.api_key = self.gemini_api_key
+            if not self.api_key:
+                raise ValueError("GEMINI_API_KEY environment variable not set")
+        else:
+            self.api_key = self.openai_api_key
+            if not self.api_key:
+                raise ValueError("OPENAI_API_KEY environment variable not set")
 
     def edit(self, spec_path: Path, instruction: str, output_path: Path) -> Path:
         """
@@ -76,13 +86,18 @@ class ZeroShotAgent(Agent):
         self.log("Rendering edited design...")
         render_output = saved_path.parent / "render.png"
         try:
-            render_image(
-                edited_spec,
-                render_output,
-                canvas_width=edited_spec.canvas_width,
-                canvas_height=edited_spec.canvas_height,
-                asset_dir=saved_path.parent
-            )
+            # Run rendering in a thread to avoid asyncio loop conflicts
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(
+                    render_image,
+                    edited_spec,
+                    render_output,
+                    edited_spec.canvas_width,
+                    edited_spec.canvas_height,
+                    saved_path.parent
+                )
+                future.result()  # Wait for completion
             self.log(f"✓ Rendered to {render_output}")
         except Exception as e:
             self.log(f"Warning: Failed to render: {e}")

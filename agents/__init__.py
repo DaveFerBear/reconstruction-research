@@ -3,6 +3,6 @@
 from .base import Agent
 from .zeroshot import ZeroShotAgent
 from .singleshot import SingleShotAgent
-from .direct_edit import DirectEditAgent
+from .directedit import DirectEditAgent
 
 __all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent', 'DirectEditAgent']
