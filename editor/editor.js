@@ -91,7 +91,9 @@ async function loadSpec(specName) {
     });
 
     // Load spec JSON with cache-busting
-    const specResponse = await fetch(`${SPECS_DIR}/${specName}/spec.json?t=${Date.now()}`);
+    const specResponse = await fetch(
+      `${SPECS_DIR}/${specName}/spec.json?t=${Date.now()}`
+    );
     const spec = await specResponse.json();
 
     // Store current spec
@@ -103,7 +105,9 @@ async function loadSpec(specName) {
     document.getElementById("add-svg-btn").disabled = false;
 
     // Update URL without reloading page
-    const newUrl = `${window.location.pathname}?design=${encodeURIComponent(specName)}`;
+    const newUrl = `${window.location.pathname}?design=${encodeURIComponent(
+      specName
+    )}`;
     history.pushState({ specName }, "", newUrl);
 
     // Render the spec
@@ -122,7 +126,7 @@ function loadOriginalImage(specName) {
   const originalImage = document.getElementById("original-image");
 
   // Try multiple extensions since files could be .webp, .jpg, .png, etc.
-  const extensions = ['webp', 'jpg', 'jpeg', 'png'];
+  const extensions = ["webp", "jpg", "jpeg", "png"];
   let attemptIndex = 0;
   const cacheBuster = `?t=${Date.now()}`;
 
@@ -133,17 +137,20 @@ function loadOriginalImage(specName) {
       img.src = `${CANVA_DIR}/${specName}.${ext}${cacheBuster}`;
     } else {
       // All extensions failed
-      originalImage.innerHTML = '<div style="padding: 20px; color: #999;">Original image not found</div>';
+      originalImage.innerHTML =
+        '<div style="padding: 20px; color: #999;">Original image not found</div>';
     }
   }
 
   // Start with the first extension
-  const img = document.createElement('img');
+  const img = document.createElement("img");
   img.src = `${CANVA_DIR}/${specName}.${extensions[0]}${cacheBuster}`;
   img.alt = specName;
-  img.onerror = function() { tryNextExtension(this); };
+  img.onerror = function () {
+    tryNextExtension(this);
+  };
 
-  originalImage.innerHTML = '';
+  originalImage.innerHTML = "";
   originalImage.appendChild(img);
 }
 
@@ -264,9 +271,7 @@ function renderSpec(spec, specName) {
                 <div class="draggable svg-container" data-node-idx="${i}" data-svg-path="${svgPath}" style="${style}">
                     <div class="svg-content" style="width: 100%; height: 100%;"></div>
                     <div class="svg-placeholder" style="width: 100%; height: 100%; background: #e8f5e9; border: 2px dashed #4caf50; display: none; align-items: center; justify-content: center; font-size: 12px; color: #2e7d32; text-align: center; padding: 10px; box-sizing: border-box;">
-                        [SVG: ${
-                          node.svg_description?.substring(0, 100) || ""
-                        }]
+                        [SVG: ${node.svg_description?.substring(0, 100) || ""}]
                     </div>
                     <div class="resize-handle nw" data-corner="nw"></div>
                     <div class="resize-handle ne" data-corner="ne"></div>
@@ -730,12 +735,22 @@ function showProperties(nodeIdx) {
         <div class="property-group">
             <h3>Layer Order</h3>
             <div style="display: flex; gap: 12px; margin-bottom: 12px;">
-                <button class="layer-btn" onclick="window.sendToBack(${nodeIdx})" ${isFirst ? 'disabled' : ''}>⬇️ To Back</button>
-                <button class="layer-btn" onclick="window.sendBackward(${nodeIdx})" ${isFirst ? 'disabled' : ''}>↓ Backward</button>
-                <button class="layer-btn" onclick="window.bringForward(${nodeIdx})" ${isLast ? 'disabled' : ''}>↑ Forward</button>
-                <button class="layer-btn" onclick="window.bringToFront(${nodeIdx})" ${isLast ? 'disabled' : ''}>⬆️ To Front</button>
+                <button class="layer-btn" onclick="window.sendToBack(${nodeIdx})" ${
+    isFirst ? "disabled" : ""
+  }>⬇️ To Back</button>
+                <button class="layer-btn" onclick="window.sendBackward(${nodeIdx})" ${
+    isFirst ? "disabled" : ""
+  }>↓ Backward</button>
+                <button class="layer-btn" onclick="window.bringForward(${nodeIdx})" ${
+    isLast ? "disabled" : ""
+  }>↑ Forward</button>
+                <button class="layer-btn" onclick="window.bringToFront(${nodeIdx})" ${
+    isLast ? "disabled" : ""
+  }>⬆️ To Front</button>
             </div>
-            <div style="font-size: 30px; color: #666; font-weight: 600; margin-top: 4px;">Layer ${nodeIdx + 1} of ${totalNodes}</div>
+            <div style="font-size: 30px; color: #666; font-weight: 600; margin-top: 4px;">Layer ${
+              nodeIdx + 1
+            } of ${totalNodes}</div>
         </div>
         <div class="property-group">
             <h3>Transform</h3>
@@ -795,7 +810,9 @@ function showProperties(nodeIdx) {
                                class="font-picker-input"
                                data-prop="font-family"
                                data-node-idx="${nodeIdx}"
-                               value="${node["font-family"] || node.font_family}"
+                               value="${
+                                 node["font-family"] || node.font_family
+                               }"
                                readonly
                                placeholder="Select font..."/>
                         <div class="font-picker-dropdown" style="display: none;">
@@ -1017,30 +1034,36 @@ function showProperties(nodeIdx) {
   propertiesContent.innerHTML = html;
 
   // Add event listeners to update spec on change
-  propertiesContent.querySelectorAll("input, select, textarea").forEach((input) => {
-    // Skip the SVG editor textarea - it has its own save button
-    if (input.id === "svg-editor") return;
-    // Skip the font picker inputs - they have their own handlers
-    if (input.classList.contains("font-picker-input") || input.classList.contains("font-picker-search")) return;
+  propertiesContent
+    .querySelectorAll("input, select, textarea")
+    .forEach((input) => {
+      // Skip the SVG editor textarea - it has its own save button
+      if (input.id === "svg-editor") return;
+      // Skip the font picker inputs - they have their own handlers
+      if (
+        input.classList.contains("font-picker-input") ||
+        input.classList.contains("font-picker-search")
+      )
+        return;
 
-    input.addEventListener("input", (e) => {
-      const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
-      const prop = e.target.getAttribute("data-prop");
-      const value =
-        e.target.type === "number"
-          ? parseFloat(e.target.value)
-          : e.target.value;
+      input.addEventListener("input", (e) => {
+        const nodeIdx = parseInt(e.target.getAttribute("data-node-idx"));
+        const prop = e.target.getAttribute("data-prop");
+        const value =
+          e.target.type === "number"
+            ? parseFloat(e.target.value)
+            : e.target.value;
 
-      currentSpec.nodes[nodeIdx][prop] = value;
+        currentSpec.nodes[nodeIdx][prop] = value;
 
-      hasChanges = true;
-      document.getElementById("save-btn").disabled = false;
-      document.getElementById("copy-btn").disabled = false;
+        hasChanges = true;
+        document.getElementById("save-btn").disabled = false;
+        document.getElementById("copy-btn").disabled = false;
 
-      // Re-render to see changes
-      renderSpec(currentSpec, currentSpecName);
+        // Re-render to see changes
+        renderSpec(currentSpec, currentSpecName);
+      });
     });
-  });
 
   // Handle SVG editing
   if (node.type === "svg" && node.filename) {
@@ -1063,7 +1086,9 @@ function showProperties(nodeIdx) {
       };
     }
 
-    const removeBackgroundBtn = document.getElementById("remove-background-btn");
+    const removeBackgroundBtn = document.getElementById(
+      "remove-background-btn"
+    );
     if (removeBackgroundBtn) {
       removeBackgroundBtn.onclick = async () => {
         await removeBackground(nodeIdx, node.filename);
@@ -1078,7 +1103,9 @@ function showProperties(nodeIdx) {
 }
 
 function setupFontPicker(nodeIdx) {
-  const fontPicker = document.querySelector(`.font-picker[data-node-idx="${nodeIdx}"]`);
+  const fontPicker = document.querySelector(
+    `.font-picker[data-node-idx="${nodeIdx}"]`
+  );
   if (!fontPicker) return;
 
   const pickerInput = fontPicker.querySelector(".font-picker-input");
@@ -1184,7 +1211,8 @@ async function makeBackground(nodeIdx, filename) {
 
     // Update spec to use background image
     currentSpec.has_background_image = true;
-    currentSpec.background_image_description = currentSpec.nodes[nodeIdx].asset_description || "Background image";
+    currentSpec.background_image_description =
+      currentSpec.nodes[nodeIdx].asset_description || "Background image";
 
     // Remove the image node since it's now the background
     currentSpec.nodes.splice(nodeIdx, 1);
@@ -1358,7 +1386,7 @@ function loadFromUrl() {
 }
 
 // Layer reordering functions (exposed globally for onclick handlers)
-window.sendToBack = function(nodeIdx) {
+window.sendToBack = function (nodeIdx) {
   if (nodeIdx === 0) return;
   const node = currentSpec.nodes.splice(nodeIdx, 1)[0];
   currentSpec.nodes.unshift(node);
@@ -1368,7 +1396,7 @@ window.sendToBack = function(nodeIdx) {
   showProperties(0); // New index is 0
 };
 
-window.sendBackward = function(nodeIdx) {
+window.sendBackward = function (nodeIdx) {
   if (nodeIdx === 0) return;
   const node = currentSpec.nodes[nodeIdx];
   currentSpec.nodes[nodeIdx] = currentSpec.nodes[nodeIdx - 1];
@@ -1379,7 +1407,7 @@ window.sendBackward = function(nodeIdx) {
   showProperties(nodeIdx - 1); // New index is nodeIdx - 1
 };
 
-window.bringForward = function(nodeIdx) {
+window.bringForward = function (nodeIdx) {
   if (nodeIdx === currentSpec.nodes.length - 1) return;
   const node = currentSpec.nodes[nodeIdx];
   currentSpec.nodes[nodeIdx] = currentSpec.nodes[nodeIdx + 1];
@@ -1390,7 +1418,7 @@ window.bringForward = function(nodeIdx) {
   showProperties(nodeIdx + 1); // New index is nodeIdx + 1
 };
 
-window.bringToFront = function(nodeIdx) {
+window.bringToFront = function (nodeIdx) {
   if (nodeIdx === currentSpec.nodes.length - 1) return;
   const node = currentSpec.nodes.splice(nodeIdx, 1)[0];
   currentSpec.nodes.push(node);

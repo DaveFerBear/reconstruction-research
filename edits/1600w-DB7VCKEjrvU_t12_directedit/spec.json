@@ -1,20 +1,20 @@
 {
   "canvas_width": 1600,
   "canvas_height": 1600,
-  "background_color": "#3e496d",
+  "background_color": "#2A3352",
   "has_background_image": false,
-  "background_image_description": "",
+  "background_image_description": null,
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A rounded, blob-like turquoise \u201cM\u201d with drippy legs and speckled paint splatters is centered on a slate-blue background. The design is minimal and graphic, with a distressed texture that adds visual grit.",
+      "asset_description": "Abstract graphic featuring pastel, speckled shapes\u2014a cream eye with lashes, a pink arch, a bulbous blue H, a yellow spiral square, and a pink bar\u2014floating on a dark gradient background with soft neon halos. The style is modern and minimal, with bold forms and glow effects creating a poster-like composition.",
       "filename": "asset-1.png",
       "x": 619,
       "y": 493,
       "width": 458,
       "height": 387,
       "rotation": 0,
-      "opacity": 1
+      "opacity": 1.0
     },
     {
       "type": "text",
@@ -24,7 +24,7 @@
       "width": 360,
       "height": 120,
       "rotation": 0,
-      "opacity": 1,
+      "opacity": 1.0,
       "font_family": "Bungee",
       "font_size": 112,
       "color": "#f3e6d4",
@@ -42,7 +42,7 @@
       "width": 360,
       "height": 70,
       "rotation": 0,
-      "opacity": 1,
+      "opacity": 1.0,
       "font_family": "Helvetica",
       "font_size": 52,
       "color": "#f29ab0",

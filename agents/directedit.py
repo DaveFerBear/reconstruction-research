@@ -22,8 +22,12 @@ class DirectEditAgent(Agent):
     """
     Direct edit agent with function calling.
 
-    Limitations: Can only edit images/SVGs via tools. Cannot modify text, layout,
-    or other spec properties. For those, use ZeroShotAgent instead.
+    Tools available:
+    - update_spec: Modify text, layout, colors, positions, and all spec properties
+    - update_image: Edit image files using AI (Kontext)
+    - update_svg: Regenerate SVG files using AI (Gemini)
+
+    Uses iterative function calling to apply edits with verification.
     """
 
     def __init__(
@@ -70,6 +74,10 @@ class DirectEditAgent(Agent):
         self.log(f"Copying assets from {self.current_spec_path} to {output_dir}")
         self.copy_assets(self.current_spec_path, output_dir)
 
+        # Initialize edit log
+        self.edit_log_path = output_dir / "edit_log.txt"
+        self._init_edit_log(instruction)
+
         # Apply edits
         self.log(f"Applying instruction: '{instruction}'")
         self.current_spec_path = output_dir
@@ -79,6 +87,8 @@ class DirectEditAgent(Agent):
         self.log(f"Saving edited spec to {output_path}")
         saved_path = self.save_spec(edited_spec, output_path)
         self._render_design(saved_path, edited_spec)
+
+        self._append_to_edit_log("\n" + "="*80 + "\nEDIT COMPLETED\n" + "="*80)
 
         return saved_path
 
@@ -126,6 +136,7 @@ class DirectEditAgent(Agent):
         # Iterative function calling loop
         for iteration in range(self.max_iterations):
             self.log(f"Iteration {iteration + 1}/{self.max_iterations}")
+            self._append_to_edit_log(f"\n{'='*80}\nITERATION {iteration + 1}/{self.max_iterations}\n{'='*80}\n")
 
             response = litellm.completion(
                 model=self.model,
@@ -143,9 +154,14 @@ class DirectEditAgent(Agent):
                 "tool_calls": assistant_message.tool_calls if hasattr(assistant_message, 'tool_calls') else None
             })
 
+            # Log LLM response
+            if assistant_message.content:
+                self._append_to_edit_log(f"\nLLM Response:\n{assistant_message.content}\n")
+
             # Execute tool calls if any
             if hasattr(assistant_message, 'tool_calls') and assistant_message.tool_calls:
                 self.log(f"LLM called {len(assistant_message.tool_calls)} tool(s)")
+                self._append_to_edit_log(f"\nTool Calls: {len(assistant_message.tool_calls)}\n")
 
                 for tool_call in assistant_message.tool_calls:
                     result = self._execute_tool(tool_call)
@@ -156,6 +172,7 @@ class DirectEditAgent(Agent):
                     })
             else:
                 self.log("LLM finished editing")
+                self._append_to_edit_log("\nLLM finished editing (no more tool calls)\n")
                 break
 
         return self.current_spec
@@ -165,18 +182,48 @@ class DirectEditAgent(Agent):
         function_name = tool_call.function.name
         function_args = json.loads(tool_call.function.arguments)
 
-        self.log(f"Executing {function_name}({function_args})")
+        self.log(f"Executing {function_name}(...)")
 
-        if function_name == "update_image":
-            return self._tool_update_image(**function_args)
-        elif function_name == "update_svg":
-            return self._tool_update_svg(**function_args)
+        # Log with truncated args for readability
+        if function_name == "update_spec":
+            self._append_to_edit_log(f"\n  → {function_name}(modified_spec={{...}})\n")
         else:
-            return {"error": f"Unknown function: {function_name}"}
+            self._append_to_edit_log(f"\n  → {function_name}({json.dumps(function_args, indent=4)})\n")
+
+        if function_name == "update_spec":
+            result = self._tool_update_spec(**function_args)
+        elif function_name == "update_image":
+            result = self._tool_update_image(**function_args)
+        elif function_name == "update_svg":
+            result = self._tool_update_svg(**function_args)
+        else:
+            result = {"error": f"Unknown function: {function_name}"}
+
+        # Log result
+        self._append_to_edit_log(f"  ← Result: {json.dumps(result, indent=4)}\n")
+
+        return result
 
     def _build_tool_definitions(self) -> list:
         """Build OpenAI function definitions."""
         return [
+            {
+                "type": "function",
+                "function": {
+                    "name": "update_spec",
+                    "description": "Update the design spec JSON to modify text, layout, colors, positions, or any other properties. Returns the complete modified spec.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {
+                            "modified_spec": {
+                                "type": "object",
+                                "description": "The complete modified design spec as JSON. Must include all required fields: canvas_width, canvas_height, background_color, has_background_image, nodes array."
+                            }
+                        },
+                        "required": ["modified_spec"]
+                    }
+                }
+            },
             {
                 "type": "function",
                 "function": {
@@ -223,25 +270,72 @@ class DirectEditAgent(Agent):
 
     def _build_system_prompt(self) -> str:
         """Build system prompt."""
-        return """You are a design editing assistant with access to image and SVG editing tools.
+        return """You are a design editing assistant with access to three powerful tools for modifying designs.
 
 AVAILABLE TOOLS:
-- update_image(filename, edit_instruction): Edit image assets using AI
-- update_svg(filename, edit_instruction): Regenerate SVG assets using AI
 
-LIMITATIONS:
-- You can ONLY modify images and SVGs via tools
-- You CANNOT modify text, layout, colors, or other properties
-- For those edits, tell the user this agent cannot help
+1. update_spec(modified_spec)
+   - Use this to modify TEXT, LAYOUT, COLORS, POSITIONS, or any SPEC PROPERTIES
+   - Pass the COMPLETE modified spec JSON with all your changes
+   - Use for: changing text content, colors, fonts, positions, spacing, adding/removing nodes, etc.
+   - This is your PRIMARY tool for most edits
+
+2. update_image(filename, edit_instruction)
+   - Use this to modify IMAGE FILES using AI (changes pixels, not spec properties)
+   - Only use when you need to change the actual image content (e.g., "make the car blue", "change photo to mountains")
+   - Do NOT use for positioning, sizing, or opacity - use update_spec instead
+
+3. update_svg(filename, edit_instruction)
+   - Use this to regenerate SVG FILES from scratch
+   - Only use when you need to change the SVG artwork itself
+   - Do NOT use for positioning, sizing, or opacity - use update_spec instead
 
 DESIGN SPEC FORMAT:
-- nodes: Array with types "text", "image", "svg"
-- Each node has: filename, x, y, width, height, rotation, opacity
-- Text nodes: text, font-family, font-size, color
-- Image nodes: filename, asset_description
-- SVG nodes: filename, svg_description
+The spec is a JSON object with:
+- canvas_width, canvas_height: Canvas dimensions (integers)
+- background_color: Background color (hex string like "#ffffff")
+- has_background_image: Boolean indicating if there's a background image
+- background_image_description: Optional string describing the background
+- nodes: Array of design elements, each with:
+  - type: "text", "image", or "svg"
+  - x, y: Position (float)
+  - width, height: Size (float)
+  - rotation: Rotation in degrees (float, default 0)
+  - opacity: Opacity 0-1 (float, default 1)
 
-When you call tools, they will be executed and you'll receive results. You can call tools multiple times."""
+  TEXT nodes also have:
+  - text: The text content (string)
+  - font_family: Font name (string)
+  - font_size: Font size in px (float)
+  - color: Text color (hex string)
+  - text_align: "left", "center", or "right"
+  - font_weight: "normal", "bold", or numeric (string)
+  - font_style: "normal" or "italic"
+  - text_decoration: "none" or "underline"
+  - text_transform: "none", "uppercase", "lowercase", "capitalize"
+
+  IMAGE nodes also have:
+  - filename: Image file (string, e.g., "asset-1.png")
+  - asset_description: Description of the image (string)
+
+  SVG nodes also have:
+  - filename: SVG file (string, e.g., "svg-1.svg")
+  - svg_description: Description of the SVG (string)
+
+WORKFLOW:
+1. Analyze the current spec and the user's instruction
+2. Determine which tool(s) to use:
+   - For text/layout/color/position changes → update_spec
+   - For changing image content → update_image
+   - For regenerating SVG artwork → update_svg
+3. Call the appropriate tool(s)
+4. You can call tools multiple times if needed
+
+IMPORTANT:
+- When using update_spec, return the COMPLETE spec with ALL fields
+- Preserve all nodes you're not modifying
+- Make sure your JSON is valid
+- You can combine tools (e.g., update_spec + update_image) in multiple iterations"""
 
     def _build_user_prompt(self, instruction: str) -> str:
         """Build user prompt with spec and instruction."""
@@ -253,9 +347,34 @@ When you call tools, they will be executed and you'll receive results. You can c
 
 User instruction: {instruction}
 
-Analyze the design and use tools to make the requested edits. If the edit requires modifying text/layout/properties, tell the user this agent cannot help with that."""
+Analyze the current spec and the user's instruction. Determine which tool(s) to use and call them to make the requested edits."""
 
     # ============ TOOL IMPLEMENTATIONS ============
+
+    def _tool_update_spec(self, modified_spec: dict) -> dict:
+        """Update the design spec with modifications."""
+        try:
+            self.log("Applying spec modifications...")
+
+            # Validate the modified spec using Pydantic
+            try:
+                new_spec = Spec.model_validate(modified_spec)
+            except Exception as e:
+                return {"error": f"Invalid spec format: {str(e)}"}
+
+            # Update the current spec
+            self.current_spec = new_spec
+            self.log("✓ Spec updated successfully")
+
+            return {
+                "success": True,
+                "message": "Spec updated successfully",
+                "nodes_count": len(new_spec.nodes)
+            }
+
+        except Exception as e:
+            self.log(f"Error updating spec: {e}")
+            return {"error": str(e)}
 
     def _tool_update_image(self, filename: str, edit_instruction: str) -> dict:
         """Edit an image asset using Kontext."""
@@ -327,6 +446,31 @@ Analyze the design and use tools to make the requested edits. If the edit requir
             return {"error": str(e)}
 
     # ============ HELPER METHODS ============
+
+    def _init_edit_log(self, instruction: str):
+        """Initialize edit log file."""
+        from datetime import datetime
+
+        header = f"""{'='*80}
+DIRECTEDIT AGENT EDIT LOG
+{'='*80}
+Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+Model: {self.model}
+Temperature: {self.temperature}
+Max Iterations: {self.max_iterations}
+
+USER INSTRUCTION:
+{instruction}
+
+{'='*80}
+"""
+        self.edit_log_path.write_text(header, encoding='utf-8')
+
+    def _append_to_edit_log(self, content: str):
+        """Append content to edit log."""
+        if hasattr(self, 'edit_log_path') and self.edit_log_path:
+            with open(self.edit_log_path, 'a', encoding='utf-8') as f:
+                f.write(content)
 
     def _update_node_property(self, filename: str, property_name: str, value: any):
         """Update a property on a node by filename."""
