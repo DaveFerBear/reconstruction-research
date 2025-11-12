@@ -1,7 +1,7 @@
 {
   "background_color": "#0f2430",
   "has_background_image": true,
-  "background_image_description": "Full-canvas photographic portrait. Right half features a middle‑aged man with short dark hair and trimmed goatee wearing a dark navy crewneck sweater over a light gray collared shirt, softly smiling. Left half shows a dark teal textured wall. A subtle vignette darkens the top and corners. From the bottom edge upward ~30% there is a soft blue overlay gradient (transparent to #1e73b8) that adds a cool tint.",
+  "background_image_description": "A clean, professional portrait of a middle‑aged man with salt-and-pepper hair and beard, smiling in a navy sweater over a light blue shirt. Shot against a deep teal backdrop with soft, directional lighting, he’s positioned on the right with ample negative space on the left for a modern, minimalist feel.",
   "nodes": [
     {
       "type": "svg",

@@ -1,11 +1,11 @@
 {
   "background_color": "#3a0b5e",
   "has_background_image": true,
-  "background_image_description": "Deep purple cosmic background with a soft radial gradient (center ~#6a28d9 fading to edges ~#260944) and subtle nebula streaks, star-dust specks, and pink-violet light flares concentrated toward the left side.",
+  "background_image_description": "A luminous magenta-purple nebula glows across the center of a deep violet star field, with a bright star flare on the left. The ethereal, soft-gradient space scene has a digital wallpaper style with fine speckled stars framing the central cloud.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Right-side composite showing a modern black smartphone mockup with rounded corners and a centered punch-hole camera. A smiling man with medium-length locs wearing a light blue sweatshirt sits cross‑legged, thumbs up, with a gray laptop on his lap. The phone screen background is a pale blue gradient. White vapor/cloud wisps overlap the phone edges. Around the phone are floating 3D emojis: a heart‑eyes face near the left edge of the phone, a blue circular share arrow to the right, a laughing face near the bottom right, and a red like/heart notification bubble at the far right. The device casts a soft shadow onto the purple background.",
+      "asset_description": "A smiling man in a light blue sweatshirt sits cross‑legged with a laptop, appearing to pop out of a large smartphone centered on a purple background while giving two thumbs up. Bright emojis and social media icons float around him, with a soft blue gradient screen and a playful, composite digital style.",
       "filename": "asset-1.png",
       "x": 900,
       "y": 210,

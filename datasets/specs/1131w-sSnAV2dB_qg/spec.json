@@ -1,11 +1,11 @@
 {
   "background_color": "#f2f2f2",
   "has_background_image": true,
-  "background_image_description": "Soft off-white to light-gray vignette with subtle cloudy swirls; corners slightly darker gray (#dedede\u2013#e6e6e6) fading to brighter center (#f7f7f7).",
+  "background_image_description": "A high-key photograph of billowy clouds in soft whites and pale grays. Fluffy cumulus clusters gather around the edges, leaving a bright, airy negative space at the center.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Composite photo-illustration of a stylish male figure from waist up, facing left, wearing tortoiseshell sunglasses, a gray overcoat, and a black leather glove by his chin. His silhouette contains a double-exposure of a modern city skyline at sunset: a tall central spire and clustered buildings in dark silhouette, warm orange-to-yellow glow (#f5a623 to #ffd36b) radiating from the chest area. The right side of the figure dissolves into hundreds of small shards and particles (squares/triangles) dispersing up and to the right, in tones from dark gray/black to warm orange. Lower portion shows a city street receding toward the skyline. Clean white negative space surrounds the figure.",
+      "asset_description": "A stylish man in sunglasses and a coat is portrayed in a double-exposure portrait, his torso filled with a vivid orange sunset over a city skyline and a roadway leading to a tall tower. The right side of his figure disintegrates into flying fragments against a smooth gray backdrop, contrasting warm amber tones with cool charcoal hues.",
       "filename": "asset-1.png",
       "x": 72,
       "y": 322,

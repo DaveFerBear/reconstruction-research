@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Full-canvas black-and-white checkerboard made of large, even squares (approx. 230–260 px each). Alternating black (#000000) squares on a white (#ffffff) base, forming vertical and horizontal bands that continue uniformly behind the central lime rectangle.",
+  "background_image_description": "A grayscale pixel mosaic made of small square tiles creates an abstract, grid-based pattern with shades from white to black. The composition feels balanced with a slightly lighter central area and scattered dark blocks adding rhythm.",
   "nodes": [
     {
       "type": "svg",

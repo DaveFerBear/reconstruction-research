@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Cluster of glossy 3D abstract shapes centered near the top: three pill/pebble-like forms in cyan-to-teal gradients and one six-lobed asterisk/flower shape. Colors range from light aqua (#AEEBEE) and icy cyan (#B9F2FF) to magenta-violet (#A33BFF) with soft studio lighting and subtle cast shadows. The forms are arranged in a gentle diagonal arc from left to right.",
+      "asset_description": "A minimalist 3D render shows glossy aqua-blue oval discs clustered beside a purple six-petal asterisk, all floating on a soft gray gradient. Subtle neon glows and smooth plastic textures give the composition a sleek, modern feel.",
       "filename": "asset-1.png",
       "x": 514,
       "y": 148,
@@ -15,7 +15,7 @@
     },
     {
       "type": "text",
-      "text": "STUDIO \u2726 AGATHO",
+      "text": "STUDIO ✦ AGATHO",
       "x": 636,
       "y": 70,
       "width": 328,
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The word \"Design\" set in bold rounded sans-serif, filled with a left-to-right gradient transitioning from soft lavender (#C7A9FF) through light purple (#B68CFF) to vivid violet (#7D3CFF). Slight soft drop shadow; baseline aligned to the ampersand on the left.",
+      "asset_description": "The image shows the word “Design” in large 3D sans‑serif letters with a lavender-to-magenta gradient and a soft neon glow. Centered on a smooth gray background, the text casts long diagonal shadows, giving a clean, minimalist look.",
       "filename": "asset-2.png",
       "x": 526,
       "y": 612,
@@ -76,7 +76,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Pill-shaped CTA button centered near the bottom. Background has a horizontal gradient from deep violet (#3A0B8C) at left through near-black (#0B0B12) to bright purple (#7C3CF2) at right, with a subtle inner glow. White uppercase label \"READ MORE\" centered-left in Helvetica Neue Medium. On the right end, a small circular purple capsule with a white downward chevron/arrow icon.",
+      "asset_description": "A neon-style, purple gradient pill-shaped button sits centered on a black background, glowing with a soft halo. It reads “READ MORE” in bold white fading to translucent purple toward the right, ending with a white checkmark icon.",
       "filename": "asset-3.png",
       "x": 640,
       "y": 780,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1600w-K18O8e4K488.webp",
+      "asset_description": "A modern webinar poster with bold dark‑teal “LIVE WEBINAR” text over a grayscale office background, contrasted by a warm orange gradient circle framing a smiling speaker on the right. Left-aligned details and a red “Live Streaming” badge complete the clean, balanced composition.",
       "filename": "asset-4.png",
       "x": 1086,
       "y": 407,

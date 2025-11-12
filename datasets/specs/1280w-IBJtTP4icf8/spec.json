@@ -1,7 +1,7 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photo of a cozy cafe workspace: wooden table, grey chair, open laptop, glass of coffee on a wooden tray with cutlery, and a pastry on a plate; neutral grey wall background.",
+  "background_image_description": "A minimalist café scene shows a wooden table with an open laptop and a glass of coffee on a light wooden tray beside cutlery, with a pastry peeking in at the right. Earthy browns and soft grays dominate, lit gently for a clean, uncluttered composition.",
   "nodes": [
     {
       "type": "text",

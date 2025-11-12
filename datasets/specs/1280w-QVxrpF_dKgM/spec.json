@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Seamless gingham picnic tablecloth pattern covering the full 1280x1600 canvas: alternating checks of medium red (#e76b76) and light pink (#ffd6db) on white (#ffffff), arranged in a square grid with soft edges and slight inner transparency that creates lighter intersections.",
+  "background_image_description": "A red-and-white gingham check pattern forms a uniform grid of alternating squares with pink intersections. The flat, graphic style evokes a classic picnic tablecloth.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Irregular torn paper sheet centered on the canvas, warm light beige (#efe7de) with soft gray drop shadow; top-left and top-right corners are held with semi-transparent masking tape pieces in tan (#e1c07b/#cfae66) overlapping the paper; bottom edge is jagged and curled.",
+      "asset_description": "A blank, off-white torn sheet of paper is centered and taped at the top corners with beige masking tape against a dark gray vignette background. Minimalist, graphic style with soft shadows adds depth around the edges.",
       "filename": "asset-1.png",
       "x": 130,
       "y": 120,
@@ -35,7 +35,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Black hand-drawn line-art illustration of a woven wicker picnic basket with a U-shaped handle; crosshatched rectangular weave pattern with shaded squares.",
+      "asset_description": "A black-and-white line drawing of a rectangular woven basket with a tall handle, rendered with thick outlines and crosshatch-like texture. Centered on a smooth gray gradient background, it has a clean, minimalist, graphic style.",
       "filename": "asset-2.png",
       "x": 420,
       "y": 520,

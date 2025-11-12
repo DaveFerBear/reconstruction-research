@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Photograph of a marble-top desk with a space gray laptop showing a slide that reads 'Kick-off Meeting' with an orange theme, an orange desk lamp on a stack of books, orange earbuds, and a black turntable with a bright blue vinyl record in the foreground.",
+      "asset_description": "A sleek laptop on a white marble countertop shows a bold orange-and-white “Kick-off Meeting” slide, flanked by a small orange dome lamp on stacked books and a turntable with a bright blue vinyl. The scene has a clean, modern aesthetic with strong pops of orange and teal, balanced across a neutral background.",
       "filename": "asset-1.png",
       "x": 48,
       "y": 140,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Photo of a smiling person in glasses and a backwards cap, wearing a red jacket, seated at a wooden desk using a laptop that displays a presentation slide. A small red dome lamp, a few stacked books, a small plant, and taped-up wall photos sit against a white textured wall.",
+      "asset_description": "A smiling person in glasses and a backward blue cap sits at a wooden desk, turning toward the camera while using a laptop. The scene features bold pops of red (lamp, book, jacket) against a textured white wall, balanced by green plants, creating a bright, cozy workspace composition with the subject on the right and desk objects to the left.",
       "filename": "asset-2.png",
       "x": 560,
       "y": 140,
@@ -25,7 +25,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Close-up photo of a person in a green corduroy jacket and blue jeans typing on a dark laptop resting on their lap. A red cabinet and wooden floor appear in the background.",
+      "asset_description": "A person in a green corduroy jacket and jeans types on a dark laptop, shown in a close crop of their torso and hands. Bold red cabinets and warm wood flooring create a strong color contrast with the green and black tones.",
       "filename": "asset-3.png",
       "x": 1072,
       "y": 140,

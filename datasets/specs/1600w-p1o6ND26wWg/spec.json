@@ -1,7 +1,7 @@
 {
   "background_color": "#f6f6f6",
   "has_background_image": true,
-  "background_image_description": "Subtle soft-gray fabric-like backdrop with wavy folds and gentle shadow gradients across an off‑white surface.",
+  "background_image_description": "Close-up of white satin fabric draped in smooth, flowing folds that create soft gray shadows. Minimalist, monochrome composition emphasizing silky texture and diagonal undulations.",
   "nodes": [
     {
       "type": "text",
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Cutout photo of an iced latte in a clear plastic cup with a domed rim, creamy tan coffee, visible ice cubes and frothy top; soft shadow at the base. The cup is centered and overlaps the large black headline text.",
+      "asset_description": "A caramel-toned iced coffee in a clear plastic cup with a dome lid and chunky ice sits centered against a gray studio background. Bold black typography reading “SHORT BREAK” fills the backdrop, creating a clean, high-contrast advertising-style composition.",
       "filename": "asset-1.png",
       "x": 540,
       "y": 420,

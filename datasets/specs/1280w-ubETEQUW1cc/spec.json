@@ -1,11 +1,11 @@
 {
   "background_color": "#e684b8",
   "has_background_image": true,
-  "background_image_description": "Full-canvas soft, grainy gradient with fine film-noise texture. Colors blend from magenta-pink (#d85ab3) in the upper left to light peach (#f3c39e) toward the center-right, with warm orange (#ee6f4a) and purple-violet (#8743c1) blooms toward the lower half. No distinct shapes; just smooth radial/linear blends and noise.",
+  "background_image_description": "An abstract, softly blurred gradient washes from warm peach and apricot in the center to pink, lavender, and purple toward the edges. The minimal composition has a dreamy, bokeh-like texture with gentle vignetting.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Background gradient texture described above covering the entire canvas with film grain.",
+      "asset_description": "A vibrant Pride parade poster with oversized white sans‑serif words “pride” and “parade” cropped at the edges over a grainy pink-to-orange gradient. Minimal, modern typography scatters small details like the date “29/06” and registration info in white.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,

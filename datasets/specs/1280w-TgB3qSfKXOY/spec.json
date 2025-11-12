@@ -1,7 +1,7 @@
 {
   "background_color": "#566F58",
   "has_background_image": true,
-  "background_image_description": "Full-canvas dark olive-green crumpled paper texture (#566F58 base with subtle darker folds #475C49). Two soft luminous starburst glares (creamy #F2E9CF center to transparent) sit at left-mid and right-lower edges, diffused and elongated, blending into the textured background.",
+  "background_image_description": "An olive-green, crumpled-paper texture fills the frame, punctuated by two small golden starburst flares—one near the upper left and the other at the lower right. The minimalist, abstract composition uses diagonal balance and ample negative space.",
   "nodes": [
     {
       "type": "text",
@@ -39,7 +39,7 @@
     },
     {
       "type": "image",
-      "asset_description": "High-resolution cutout photo of a clear glass filled with iced matcha latte. The drink shows layered swirls of light foam and vivid green matcha, with semi-transparent ice cubes on top. The glass has thick beveled facets and a clear base, with realistic lighting and soft shadow at the bottom edge.",
+      "asset_description": "A clear, faceted glass holds a frothy pale-green iced matcha latte, with deeper green swirls and chunky ice cubes on top. Shot as a studio close-up on a glossy gray surface, the drink is spotlighted with a soft halo behind it.",
       "filename": "asset-1.png",
       "x": 330,
       "y": 390,

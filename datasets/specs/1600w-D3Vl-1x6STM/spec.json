@@ -1,7 +1,7 @@
 {
   "background_color": "#f4eedc",
   "has_background_image": true,
-  "background_image_description": "Retro sunburst background filling the entire 1600x1131 canvas with alternating wide radial rays in muted teal (#2f9a93) and brick red (#c95543) over a cream base (#f4eedc). Rays emanate from the center behind a large central oval; edges are softly rounded for a vintage poster feel.",
+  "background_image_description": "A retro sunburst poster with an off-white central circle radiating alternating rust-red and muted teal rays on a cream background. The design has a distressed texture and soft, vignetted edges, creating a vintage, symmetrical composition.",
   "nodes": [
     {
       "type": "svg",

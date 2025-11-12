@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photographic backdrop: soft-focus green-yellow bokeh foliage filling the upper ~70% with bright highlights toward the top-right and deeper green toward the lower-right; bottom ~30% is a warm brown wooden plank tabletop in perspective with visible grain, seams between boards, and subtle specular highlights.",
+  "background_image_description": "A warm, honey-brown wooden tabletop of horizontal planks fills the foreground. Behind it, sunlit green foliage forms a soft bokeh background, with leaves framing the top edge for a bright, natural composition.",
   "nodes": [
     {
       "type": "svg",

@@ -1,7 +1,7 @@
 {
   "background_color": "#d8e6cd",
   "has_background_image": true,
-  "background_image_description": "Subtle light-sage grid across the entire 1600x1600 canvas. Base is #d8e6cd with thin square gridlines in #c5d7bd spaced evenly (~160px), giving a calm notebook-like pattern.",
+  "background_image_description": "A minimalist abstract background with a fine crosshatch grid, like linen or graph paper, spanning the frame. It features a soft gradient from warm beige on the left to cool blue‑gray on the right, emphasizing subtle texture and light falloff.",
   "nodes": [
     {
       "type": "svg",

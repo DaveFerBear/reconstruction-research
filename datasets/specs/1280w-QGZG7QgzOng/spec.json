@@ -1,11 +1,11 @@
 {
   "background_color": "#63B3E6",
   "has_background_image": true,
-  "background_image_description": "Textured blue sky backdrop with subtle film grain and scattered soft white cumulus clouds, denser at the lower-left and mid-right; gentle vertical gradient from deeper azure at the top to slightly lighter blue toward the bottom.",
+  "background_image_description": "A minimal sky scene shows a bright cyan-blue expanse dotted with soft white cumulus clouds, the largest cluster in the lower left. The image has a dreamy, film-like feel with subtle edge vignetting and ample negative space.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Overhead photo of an open Bible centered on the canvas. The book shows two pages of dense black text in two columns with small headings; cream-colored pages with slightly darker edges and a black cover visible at left and right. The book is photographed on transparent background with no visible shadow.",
+      "asset_description": "An open, thick reference book with small, densely set columns of text sits centered against a dark gradient background, its white pages brightly lit. The monochrome palette of black text, cream pages, and a dark cover creates a clean, studio-lit, symmetrical composition.",
       "filename": "asset-1.png",
       "x": 312,
       "y": 640,

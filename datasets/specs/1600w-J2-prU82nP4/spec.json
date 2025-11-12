@@ -1,11 +1,11 @@
 {
   "background_color": "#66C172",
   "has_background_image": true,
-  "background_image_description": "Subtle fine paper-grain texture covering the entire 1600x1341 canvas in a flat green tone.",
+  "background_image_description": "An abstract, minimalist background with a grainy green gradient fills the frame, shifting from darker forest green at the bottom-left to lighter mint at the top-right. The composition is empty with a subtle vignette.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Cutout photo of a thoughtful young woman wearing a bright green oversized sweater, looking up-right with her index finger touching her lips. The figure has a thick white sticker-style outline. Long dark wavy hair; pose cropped around mid-torso on the right edge.",
+      "asset_description": "A woman in an oversized bright green sweater looks up thoughtfully with a finger on her lips, her long dark hair cascading over her shoulders. The centered studio shot features a gray gradient backdrop and a crisp white outline around the subject for a cutout-style look.",
       "filename": "asset-1.png",
       "x": 860,
       "y": 310,

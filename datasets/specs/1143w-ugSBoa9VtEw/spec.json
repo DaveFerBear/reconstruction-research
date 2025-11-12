@@ -1,7 +1,7 @@
 {
   "background_color": "#caa0b7",
   "has_background_image": true,
-  "background_image_description": "Soft mauve-to-lavender gradient with subtle cloudy fabric-like folds and diffuse lighting, darker along the left and right edges and lighter toward the center; no distinct objects.",
+  "background_image_description": "A close-up of silky fabric in pastel pink and lavender, with a smooth sheen. The abstract composition focuses on flowing folds and soft gradients of light and shadow.",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Photorealistic cosmetic squeeze tube standing upright on a white rectangular pedestal block casting a soft shadow. Tube has a mauve-purple cap and top band (#6f4b7b), a wide off-white band (#f3f0ed), a narrow warm beige band (#eedfd8), and a lower body in plum gradient (#7d4d87 to #6b457e). Base and rim are glossy white (#f8f8f8). Pedestal top is light gray-white with soft edge shading; a faint drop shadow falls to the right.",
+      "asset_description": "A minimalist product shot of a tall cosmetic tube with lavender-purple and cream-white bands standing upright on a white pedestal. Set against a neutral gray background, sharp side lighting casts clean shadows for a modern studio look.",
       "filename": "asset-1.png",
       "x": 204,
       "y": 510,
@@ -188,7 +188,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: ss.png",
+      "asset_description": "A bold, curved purple arrow sweeps from the lower right toward the upper left, ending in a pointed head. It’s a minimalist graphic on a soft lavender background with a smooth, brushlike stroke.",
       "filename": "asset-2.png",
       "x": 255,
       "y": 1059,

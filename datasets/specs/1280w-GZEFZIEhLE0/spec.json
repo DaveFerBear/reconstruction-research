@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Grayscale abstract graffiti-like paint strokes with concrete texture wrapping around the edges of the poster: thick curved swashes on the top-left and lower-left, and tall looping strokes along the right edge. The strokes have soft shadows and rough, stippled texture; tones range from dark charcoal (#2b2b2b) to mid gray (#7a7a7a). Center area is mostly clear for content.",
+  "background_image_description": "A monochrome close-up shows thick dark gray paint smeared in sweeping arcs, creating a large oval void at the center. High-contrast lighting accentuates the ridged brushstrokes and gritty texture, giving it a sculptural, minimalist feel.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Black-and-white portrait photograph of a young man in close-up, looking directly at the camera. Strong frontal lighting creates smooth tonal gradients on the face. The image is vertically oriented with a shallow depth of field; shoulders and forearms are faintly visible at the bottom. No text embedded in the photo.",
+      "asset_description": "A high-contrast black‑and‑white, extreme close-up portrait centers on a young man’s face with an intense gaze and detailed skin texture, his shoulders fading into soft focus. Bold white text “DJ JACOB” spans the top, giving it a clean, poster-like composition.",
       "filename": "asset-1.png",
       "x": 230,
       "y": 280,

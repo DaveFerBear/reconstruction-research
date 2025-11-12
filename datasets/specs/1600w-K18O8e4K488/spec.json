@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Desaturated, low-contrast office desk scene covering full 1600x1600 canvas: hands holding a pen, documents with charts, a tablet/laptop; soft light, blurry to serve as a subtle backdrop.",
+  "background_image_description": "Close-up of hands writing on printed charts and graphs spread across a wooden desk beside a laptop. Cool blue-and-white tones dominate, with soft natural light and shallow depth of field creating a clean, modern office look.",
   "nodes": [
     {
       "type": "svg",
@@ -35,7 +35,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Portrait photo of a smiling young woman with shoulder-length brown hair, neutral beige background; subject facing camera, wearing a sleeveless light top. Image is circularly masked to fit within the orange ring.",
+      "asset_description": "Centered portrait of a young woman with shoulder-length brown hair and a soft smile, wearing a cream tank top. The neutral beige background is overlaid with a bold orange circular ring and small dot, giving a clean, modern graphic style with warm tones and a long shadow.",
       "filename": "asset-1.png",
       "x": 970,
       "y": 670,

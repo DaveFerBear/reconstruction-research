@@ -1,11 +1,11 @@
 {
   "background_color": "#0a150b",
   "has_background_image": true,
-  "background_image_description": "Full-canvas photographic scene in warm sunlight: two women resting on lush green grass under dense ivy leaves. The upper woman sits leaning against a tree with a pink dress and headband; the lower woman lies in a pale green slip dress. Deep shadows and bright patches create a moody, film-like look with rich greens and earthy tones.",
+  "background_image_description": "Two women in flowing pastel dresses rest beneath a leafy tree—one seated in blush pink against the trunk, the other reclining in a mint-green gown. Golden-hour light filters through the canopy, creating dappled shadows and a dreamy, painterly composition of lush greens and soft tones.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Sunlit outdoor portrait of two women on grass beneath leafy branches; high-contrast greens and warm skin tones; ivy canopy upper left; one figure reclined at bottom right, another seated mid-right; soft, vintage aesthetic.",
+      "asset_description": "Two women sit on a sunlit meadow, wearing pastel green and pink slip dresses with sheer layers, gazing at the camera. The photo has a soft, vintage film look with lush greens, dappled light, and a centered composition framed by hanging leaves, accented by minimal yellow text overlays.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,

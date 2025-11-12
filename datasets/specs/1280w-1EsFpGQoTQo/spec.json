@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "Full-bleed lifestyle photo of a poolside scene in daylight. Turquoise-green rippling swimming pool water fills the upper two-thirds, with a narrow band of mosaic tiles along the pool wall. At right, a reclining woman in a dark olive bikini top and white shorts lies on a concrete deck; her left arm extends upward holding a faceted glass with a pink drink and a red garnish. A wide straw sun hat rests across her torso and the deck in the lower-left quadrant. Sunglasses with translucent pink frames sit on the wet concrete near the pool edge. Strong sun creates crisp shadows; overall warm, summery mood.",
+  "background_image_description": "A woman in an olive bikini top and white shorts lounges on a pool ledge, holding a bright pink cocktail as sunlight dances across the turquoise water. The saturated, summery scene features clean composition with her straw hat and sunglasses adding stylish accents at the edge.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Photograph described above, covering the entire canvas edge-to-edge.",
+      "asset_description": "A sunlit figure reclines diagonally, face hidden by a wide straw hat, wearing an olive bandeau bikini top and white shorts while holding up a glass with a red drink and strawberry garnish. The minimalist, soft-focus background and strong highlights create a dreamy, summer-luxe aesthetic with warm neutrals and a pop of crimson.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,

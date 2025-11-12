@@ -1,7 +1,7 @@
 {
   "background_color": "#6b88a6",
   "has_background_image": true,
-  "background_image_description": "Full-canvas photographic sky backdrop with soft mottled clouds. Gradient-like variation from slightly darker slate blue at the top to lighter sky blue toward the bottom, subtle film grain texture. Covers entire 1257x1600 canvas.",
+  "background_image_description": "A minimalist sky scene with soft, pale-blue tones and diffused white clouds. A diagonal band of luminous light cuts through the center, creating an airy, serene composition.",
   "nodes": [
     {
       "type": "text",
@@ -39,7 +39,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Isolated photo of a short-sleeve crewneck shirt floating and slightly twisting in mid-air. Shirt has narrow horizontal stripes in alternating colors (red, orange, yellow, green, teal, and white) with a solid red collar. Perspective shows the shirt front and right sleeve more prominently, with fabric folds and shadows.",
+      "asset_description": "A retro ringer T‑shirt with red collar and cuffs features tight horizontal stripes in mustard, forest green, orange, red, and white. It’s centered and floating against a dark gradient backdrop with a soft halo and shadow, giving a clean studio look.",
       "filename": "asset-1.png",
       "x": 240,
       "y": 560,

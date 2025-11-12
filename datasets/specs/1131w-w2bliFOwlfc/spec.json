@@ -1,11 +1,11 @@
 {
   "background_color": "#f4d1d4",
   "has_background_image": true,
-  "background_image_description": "Subtle light-pink paper texture with fine grain, tiny speckles, and very soft vignette; no distinct shapes, just organic paper fibers.",
+  "background_image_description": "A minimalist close-up of a pale blush-beige textured surface, like matte paper, filling the frame. Soft lighting creates a gentle gradient and faint ripples across the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Vintage red rotary telephone facing slightly right with glossy highlights; translucent rotary dial with numbers, handset resting on cradle, and long red coiled cord extending left across the surface. Soft shadow beneath phone.",
+      "asset_description": "A glossy red rotary-dial telephone with a coiled cord is shown in a three-quarter view, centered against a dark gradient background. Soft spotlighting creates a halo glow that highlights its retro shape and shiny plastic finish.",
       "filename": "asset-1.png",
       "x": 249,
       "y": 227,

@@ -1,7 +1,7 @@
 {
   "background_color": "#0f3028",
   "has_background_image": true,
-  "background_image_description": "Dark green, slightly mottled/grainy paper texture covering the full 1131x1600 canvas; fine noise gives a vintage, film-poster feel.",
+  "background_image_description": "A deep forest-green textured background fills the frame, with soft gradients and a darker vignette around rough, slightly frayed edges. It resembles aged paper or velvet, minimal and monochromatic.",
   "nodes": [
     {
       "type": "text",
@@ -124,7 +124,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Screenshot 2025-11-11 065544.png",
+      "asset_description": "The image shows the word “Movie” in a bold, retro cursive font colored salmon-pink against a deep green, slightly textured background. The tight crop centers the lettering, creating a clean, poster-like composition.",
       "filename": "asset-2.png",
       "x": 293,
       "y": 124,
@@ -135,7 +135,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Monochrome/duotone salmon-pink vintage photo of a smiling 1950s-style woman from waist up, wearing a strapless dress with a geometric patterned bust. She holds a handful of popcorn in her right hand while her left hand rests near a large round woven wicker basket overflowing with popcorn that spans the bottom width. Subject centered, cut out on the textured dark background.",
+      "asset_description": "A vintage-style duotone image shows a smiling woman in a strapless patterned top holding popcorn over an oversized wicker basket brimming with it. The scene uses pink-green sepia tones with a soft halo and dark vignette, centering the figure against a plain background.",
       "filename": "asset-1.png",
       "x": 114,
       "y": 354,

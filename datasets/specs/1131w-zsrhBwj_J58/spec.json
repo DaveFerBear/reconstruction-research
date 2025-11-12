@@ -1,11 +1,11 @@
 {
   "background_color": "#efefea",
   "has_background_image": true,
-  "background_image_description": "Light gray recycled paper texture with subtle darker speckles and soft fiber grain across the entire 1131x1600 canvas.",
+  "background_image_description": "A minimal, monochrome image of a soft, mottled gray texture filling the entire frame, resembling fog or lightly speckled concrete. The composition is flat and uniform with subtle tonal variations and no distinct focal point.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Grainy green halftone photograph of a torso draped in a textured robe or towel with both arms lifted outward, cropped at the elbows and cut off by the left and right edges. The fabric shows a fine repeating diamond pattern and soft shading, creating a vintage/retro screen-printed look. Positioned across the lower half of the poster.",
+      "asset_description": "A mint-green, waffle-textured towel hangs over two outstretched arms that are made of the same fabric, creating a surreal still-life. Centered against a soft, vignetted green gradient background, the studio lighting emphasizes the towel’s texture and draped folds.",
       "filename": "asset-1.png",
       "x": 36,
       "y": 432,

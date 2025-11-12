@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Photo of a person using a laptop on a rustic wooden table. Hands are on the keyboard, a notebook sits to the left, and a bowl of oranges is visible in the background. Shot from over-the-shoulder, warm indoor lighting.",
+      "asset_description": "Over-the-shoulder view of someone typing on a silver laptop at a rustic dark-wood table; the screen shows a recipe page with meal-prep containers on the left and text on the right. Warm oranges in red bowls and a small stack of white notecards add pops of color around the centered laptop, with a shallow depth of field.",
       "filename": "asset-1.png",
       "x": 48,
       "y": 312,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Casual indoor scene of a young woman in a pale lime sweatshirt and pink pants sitting on the floor with an open laptop. She holds a pen; an open notebook lies on the rug. Cozy, natural light.",
+      "asset_description": "A young woman in pastel loungewear sits cross‑legged on a rug by a black sofa, using a laptop and holding a pen. The scene is cozy and softly lit, with her pale yellow sweatshirt, pink pants, and mustard socks standing out against neutral tones, plus notebooks and a wooden table in the background.",
       "filename": "asset-2.png",
       "x": 431,
       "y": 312,
@@ -25,7 +25,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Close-up of a bright orange mushroom-shaped lamp on top of a stack of books. Shallow background with neutral wall; strong, saturated color on the lamp.",
+      "asset_description": "A bright orange, mushroom-shaped lamp with a glossy dome and bulbous base sits centered atop a tidy stack of hardcover books. The scene is minimal and modern, set against a soft gray wall with warm, even lighting.",
       "filename": "asset-3.png",
       "x": 814,
       "y": 312,
@@ -35,7 +35,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Home workspace with a computer on a desk showing a slide with three circular steps. Shelves with books and photos above; a person’s striped-sock feet rest on the desk next to a green checkered mug.",
+      "asset_description": "A cozy home workspace shows feet in mustard striped socks propped on a white desk facing a peach-colored all-in-one computer displaying a slide with pink and orange circles. Warm, muted tones and clean styling—wood floating shelves with books, photos, and a retro radio plus green-check mugs—create a tidy, playful composition.",
       "filename": "asset-4.png",
       "x": 1197,
       "y": 312,

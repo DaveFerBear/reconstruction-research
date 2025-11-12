@@ -1,11 +1,11 @@
 {
   "background_color": "#f6cbd3",
   "has_background_image": true,
-  "background_image_description": "Soft pastel pink paper texture with a gentle gradient transitioning from a lighter pink at the top-left (#fad9e0) to a slightly deeper pink at the bottom-right (#e6aeb9), subtle grain and diffuse vignette.",
+  "background_image_description": "A minimal, pastel pink gradient fills the frame, fading from pale rose at the top to warmer blush at the bottom. The composition is empty and smooth with a soft, matte texture.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Photorealistic front view of a modern black smartphone (iPhone-style) centered on the canvas. It has a slim black bezel, rounded corners, and a wide top notch with a small camera/earpiece opening. The screen content is white, and the device casts a soft shadow on the pink background.",
+      "asset_description": "A black-framed smartphone with a notched, blank white screen sits centered on a soft pink background. The minimalist flat-lay composition features clean lines and a subtle drop shadow.",
       "filename": "asset-1.png",
       "x": 310,
       "y": 120,

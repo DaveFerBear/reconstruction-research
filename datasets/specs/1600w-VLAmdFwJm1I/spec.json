@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photograph across the canvas showing four people seated around a low table in a bright studio: at left a man in a color-block light gray and pale blue sweater, center-left a blonde woman in a black sweatshirt, center-right a man with long dark curly hair in a navy jacket over a white shirt, and far right a woman in glasses wearing a bright cobalt knit with orange-and-blue striped sleeves. White wall backdrop; scene cropped by a large off-white card overlay in the lower half.",
+  "background_image_description": "Four smiling young adults sit side-by-side behind a large blank white board, centered against a plain light wall. The image has soft natural light and a clean, minimal style, with mostly neutral clothing accented by a bright orange-and-blue striped sweater on the right.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Top-to-mid canvas lifestyle photo of a collaborative meeting with four people as described; bright flash lighting, clean white wall background, table edges and hands visible near the bottom; vivid cobalt accents in clothing on the right.",
+      "asset_description": "A bright, flash-lit photo shows four people gathered around a glossy white table, chatting and smiling while one person in a vivid blue sweater gestures across the table. The minimal setup—a white wall, a hint of plant, and a paper on the right—uses saturated blues, blacks, and whites for a casual meeting vibe.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,

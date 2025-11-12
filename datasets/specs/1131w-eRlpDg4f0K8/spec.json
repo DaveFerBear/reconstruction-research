@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_t77hpyt77hpyt77h.png",
+      "asset_description": "A simple rectangular frame with a thick navy-blue wavy border surrounds a transparent checkered background. The hand-drawn, scalloped outline creates a playful, minimalist composition with a large empty center.",
       "filename": "asset-2.png",
       "x": 3,
       "y": 36,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Monochrome navy line-art illustration of three upright books with bookmarks surrounded by various leafy branches, small flowers, and berry-like buds; hand-drawn style with thick outlines.",
+      "asset_description": "A centered, hand-drawn illustration shows three closed books with ribbon bookmarks, surrounded by leafy branches and simple flowers. The palette is monochromatic midnight blue with a soft glow against a black background, giving it a whimsical, dreamy feel.",
       "filename": "asset-1.png",
       "x": 207,
       "y": 330,
@@ -94,7 +94,7 @@
     },
     {
       "type": "text",
-      "text": "Let\u2019s get reading!",
+      "text": "Let’s get reading!",
       "x": 137,
       "y": 1335,
       "width": 900,
