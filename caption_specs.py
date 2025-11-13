@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Caption all images in specs using GPT-5 vision API."""
+"""Caption all images and SVGs in specs using Moondream3 vision API."""
 
 import json
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 
-from lib.caption import caption_image
+from lib.caption import caption_moondream
 
 SPECS_DIR = Path("datasets/specs")
 
@@ -28,21 +28,31 @@ def process_spec(spec_path: Path) -> dict:
             bg_path = spec_path.parent / 'background.png'
             if bg_path.exists():
                 print(f"  [{design_name}] Captioning background image...")
-                caption = caption_image(bg_path)
+                caption = caption_moondream(bg_path)
                 if caption:
                     spec_data['background_image_description'] = caption
                     updated = True
                     captions_generated += 1
 
-        # Caption all image nodes
+        # Caption all image and SVG nodes
         for node in spec_data.get('nodes', []):
             if node.get('type') == 'image' and node.get('filename'):
                 image_path = spec_path.parent / node['filename']
                 if image_path.exists():
                     print(f"  [{design_name}] Captioning {node['filename']}...")
-                    caption = caption_image(image_path)
+                    caption = caption_moondream(image_path)
                     if caption:
                         node['asset_description'] = caption
+                        updated = True
+                        captions_generated += 1
+
+            elif node.get('type') == 'svg' and node.get('filename'):
+                svg_path = spec_path.parent / node['filename']
+                if svg_path.exists():
+                    print(f"  [{design_name}] Captioning SVG {node['filename']}...")
+                    caption = caption_moondream(svg_path)
+                    if caption:
+                        node['svg_description'] = caption
                         updated = True
                         captions_generated += 1
 
@@ -81,7 +91,7 @@ def main():
         return
 
     print(f"Found {len(spec_paths)} specs to process")
-    print(f"Using GPT-5 for image captioning\n")
+    print(f"Using Moondream3 for image captioning\n")
 
     # Process in parallel (max 5 concurrent to avoid rate limits)
     max_workers = 5
