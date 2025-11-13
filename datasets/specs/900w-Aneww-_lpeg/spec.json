@@ -1,7 +1,7 @@
 {
   "background_color": "#efe6d8",
   "has_background_image": true,
-  "background_image_description": "A minimalist, off-white paper texture with subtle brown speckles scattered across the surface. Flat composition with no focal object, giving a clean, neutral background.",
+  "background_image_description": "Subtle warm off‑white recycled paper texture with tiny grey and tan speckles evenly distributed across the entire 900x1600 canvas.",
   "nodes": [
     {
       "type": "svg",
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light turquoise, speckled ceramic cup and saucer holds a latte with white tulip latte art, the warm caramel crema contrasting the aqua glaze. Centered on a smooth gray gradient with a soft vignette, it has a clean, studio-style composition.",
+      "asset_description": "Isolated photo of a light turquoise ceramic cup with latte art (rosetta/leaf) on a matching speckled saucer with a warm tan rim; soft shadow beneath, viewed slightly above at a 3/4 angle.",
       "filename": "asset-1.png",
       "x": 100,
       "y": 600,

@@ -1,11 +1,11 @@
 {
   "background_color": "#7b86e8",
   "has_background_image": true,
-  "background_image_description": "A retro mid-century starburst pattern on a dusty blue, linen-textured grid, with scattered white twinkles and a large radiating burst on the right. A wide blue band with two thin white stripes runs along the bottom, giving the composition a clean, minimal look.",
+  "background_image_description": "Full-bleed decorative backdrop: a subtle square grid of thin lines (~80 px spacing) in a slightly darker periwinkle-blue (#6f7fe0) over the base color. Scattered crisp white (#ffffff) starbursts with 6–8 points appear behind the headline: one large at top-right (~x1350,y190), medium at left-mid (~x280,y460), small at far-left (~x140,y720), and another small at right-mid (~x1230,y940). A thin white horizontal rule runs nearly full width near the bottom (~y1270) with two vertical white divider lines rising from it around the lower third of the canvas (approximately at x540 and x1085).",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Bold, blocky pink text reading “DON’T MISS OUT” sits centered with thick yellow outlines and stacked electric-blue drop shadows. The neon-poster style glows against a dark gradient background with a subtle blue starburst accent.",
+      "asset_description": "Stylized three-line headline reading “DON’T MISS OUT” set in a chunky retro display style: uppercase hot pink letters (#f43aa6) with a thick golden-yellow outline (#ffc400) and a pronounced offset drop shadow down-right in deep royal blue (#1f4db4). The words are stacked (DON’T on top, MISS in the middle, OUT at the bottom), tightly kerned with rounded corners and an angled apostrophe. The shadow is consistently offset ~24 px down and right, creating a layered, cutout effect.",
       "filename": "asset-1.png",
       "x": 180,
       "y": 320,

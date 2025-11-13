@@ -5,13 +5,47 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A whimsical, pastel illustration shows four cartoon readers seated around the border, connected by a looping neon‑pink line with scattered open and stacked books, framing a large empty gray center. Soft gradients and warm hues—peach, lavender, teal, and orange—create a cozy circular composition.",
-      "filename": "asset-1.png",
-      "x": 7,
-      "y": 3,
-      "width": 1200,
-      "height": 1600,
-      "rotation": 0
+      "asset_description": "Uploaded image: 4.png",
+      "filename": "asset-20.png",
+      "x": 339,
+      "y": 1337,
+      "width": 526,
+      "height": 173,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 3.png",
+      "filename": "asset-19.png",
+      "x": 430,
+      "y": 138,
+      "width": 430,
+      "height": 175,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 1.png",
+      "filename": "asset-18.png",
+      "x": 951,
+      "y": 464,
+      "width": 183,
+      "height": 635,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 2.png",
+      "filename": "asset-17.png",
+      "x": 60,
+      "y": 476,
+      "width": 219,
+      "height": 562,
+      "rotation": 0,
+      "opacity": 1
     },
     {
       "type": "text",
@@ -80,6 +114,149 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 23.png",
+      "filename": "asset-2.png",
+      "x": -26,
+      "y": 1128,
+      "width": 456,
+      "height": 464,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 28.png",
+      "filename": "asset-3.png",
+      "x": 667,
+      "y": 1057,
+      "width": 584,
+      "height": 536,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 29.png",
+      "filename": "asset-4.png",
+      "x": 625,
+      "y": -49,
+      "width": 636,
+      "height": 592,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 33.png",
+      "filename": "asset-5.png",
+      "x": 89,
+      "y": 71,
+      "width": 448,
+      "height": 456,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 27.png",
+      "filename": "asset-6.png",
+      "x": 945,
+      "y": 903,
+      "width": 236,
+      "height": 256,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 25.png",
+      "filename": "asset-7.png",
+      "x": 50,
+      "y": 368,
+      "width": 232,
+      "height": 300,
+      "rotation": -10,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_qzvwsnqzvwsnqzvw.png",
+      "filename": "asset-8.png",
+      "x": 303,
+      "y": -87,
+      "width": 612,
+      "height": 712,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 26.png",
+      "filename": "asset-9.png",
+      "x": -9,
+      "y": 851,
+      "width": 260,
+      "height": 272,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_mqfgw2mqfgw2mqfg.png",
+      "filename": "asset-10.png",
+      "x": 872,
+      "y": 619,
+      "width": 224,
+      "height": 288,
+      "rotation": 20,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_mqfgw2mqfgw2mqfg (1).png",
+      "filename": "asset-11.png",
+      "x": 35,
+      "y": 597,
+      "width": 244,
+      "height": 312,
+      "rotation": 10,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_f3mk70f3mk70f3mk.png",
+      "filename": "asset-12.png",
+      "x": 306,
+      "y": 1334,
+      "width": 324,
+      "height": 216,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: unnamed.jpg",
+      "filename": "asset-13.png",
+      "x": 956,
+      "y": 384,
+      "width": 212,
+      "height": 260,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_kxt4w6kxt4w6kxt4.png",
+      "filename": "asset-14.png",
+      "x": 602,
+      "y": 1262,
+      "width": 236,
+      "height": 292,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1200,

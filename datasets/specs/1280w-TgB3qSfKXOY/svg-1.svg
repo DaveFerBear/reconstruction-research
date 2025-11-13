@@ -5,8 +5,8 @@
     </filter>
   </defs>
   <rect
-    x="2" y="2"
-    width="180" height="72"
+    x="1" y="1"
+    width="180" height="35"
     rx="36" ry="36"
     fill="#5F785A"
     stroke="#FFFFFF"

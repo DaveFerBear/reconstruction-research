@@ -5,13 +5,80 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A collage of sunlit street-style shots features two models in all-white outfits—she in a ribbed tank and wide-leg trousers, he in a short-sleeve shirt and shorts—both wearing retro sunglasses. The palette is clean whites and creams set against a modern metal-and-glass walkway, with strong linear shadows and crisp, high-contrast lighting.",
-      "filename": "asset-1.png",
+      "asset_description": "Uploaded image: Image_fx (41).jpg",
+      "filename": "asset-5.png",
       "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 1600,
-      "rotation": 0
+      "y": 3,
+      "width": 318,
+      "height": 520,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (45).jpg",
+      "filename": "asset-6.png",
+      "x": 966,
+      "y": 537,
+      "width": 315,
+      "height": 526,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (44).jpg",
+      "filename": "asset-7.png",
+      "x": -3,
+      "y": 534,
+      "width": 321,
+      "height": 529,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (43).jpg",
+      "filename": "asset-8.png",
+      "x": 966,
+      "y": 3,
+      "width": 312,
+      "height": 517,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (42).jpg",
+      "filename": "asset-9.png",
+      "x": 333,
+      "y": 6,
+      "width": 615,
+      "height": 1057,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (47).jpg",
+      "filename": "asset-10.png",
+      "x": 0,
+      "y": 1074,
+      "width": 646,
+      "height": 604,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Image_fx (48).jpg",
+      "filename": "asset-11.png",
+      "x": 660,
+      "y": 1077,
+      "width": 652,
+      "height": 625,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1280,

@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A delicate, seamless pattern of translucent watercolor leaves and thin branches spreads across a white background, resembling eucalyptus sprigs. The palette is cool and muted—slate blue and soft gray—creating an airy, minimalist botanical design with gentle diagonal flow.",
+  "background_image_description": "Subtle, low-contrast watercolor botanical pattern covering the full 1135x1600 canvas: desaturated eucalyptus leaves and soft floral shapes in very pale gray-green tones (#e7efe8 to #f5f8f5), centered and feathered with large translucent washes.",
   "nodes": [
     {
       "type": "svg",
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A minimalist template with a gold arched frame on a soft gray-beige gradient background. Watercolor white roses and blossoms with sage-green leaves cluster at the top left, leaving ample blank space for text.",
+      "asset_description": "Watercolor floral bouquet at the top-left corner overlapping the gold arch: large cream-white rose, white ranunculus and jasmine blossoms, buds, and eucalyptus stems with rounded bluish-green leaves; painted with soft edges and subtle shadows.",
       "filename": "asset-1.png",
       "x": 28,
       "y": 70,
@@ -25,7 +25,7 @@
     },
     {
       "type": "image",
-      "asset_description": "An elegant design shows a glowing gold arched frame on a smoky gray gradient background, with a watercolor bouquet of white roses and teal‑green leaves clustered at the lower right corner.",
+      "asset_description": "Watercolor floral arrangement at the bottom-right corner overlapping the gold arch: large cream-white rose, smaller white flowers, eucalyptus sprigs and bluish-green elongated leaves; delicate watercolor texture with soft highlights.",
       "filename": "asset-2.png",
       "x": 760,
       "y": 990,
@@ -161,6 +161,17 @@
       "font-style": "italic",
       "text-decoration": "none",
       "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Golden window frame.png",
+      "filename": "asset-3.png",
+      "x": 311,
+      "y": 978,
+      "width": 1000,
+      "height": 1000,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1135,

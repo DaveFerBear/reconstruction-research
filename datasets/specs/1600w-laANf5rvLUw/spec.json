@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "“2004” is rendered as plush, furry pink 3D numbers with a soft magenta glow, centered against a smooth gray gradient background. The composition is clean and symmetrical, giving a playful, tactile, surreal style.",
+      "asset_description": "Large center-spanning 3D furry numerals '2004' in deep mauve/pink (approximately #b84b86 to #c25a95), soft directional shading and long hair-like fibers. The digits are arranged from left to right with the '2' on the far left, two rounded '0's in the middle, and a chunky '4' on the right. Edges are soft and fuzzy; subtle inner shadows on the holes of the zeros. Transparent background so the gray canvas shows through.",
       "filename": "asset-1.png",
       "x": 40,
       "y": 120,
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A close-up, candid portrait shows a red-haired person looking downward, wearing a tan quilted jacket and a large sculptural green earring. The image is tilted within a white-bordered frame against a gray gradient background, with muted beige tones contrasted by the vivid green accessory.",
+      "asset_description": "Top-right polaroid-style photo with thick white border and soft drop shadow, rotated slightly clockwise. Close-up of a person in profile with light brown hair wearing a large green leafy earring, neutral background.",
       "filename": "asset-2.png",
       "x": 1160,
       "y": 60,
@@ -76,7 +76,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A flash-lit Polaroid shows two partygoers at a pool’s edge: one in black pants and boots, the other in a denim jacket and white combat boots holding a mini disco ball. Silver tinsel curtains gleam on the right, teal pool tiles on the left, and the waist-down crop gives a candid nightlife vibe.",
+      "asset_description": "Bottom-left polaroid-style photo with white frame and soft shadow, rotated slightly counterclockwise. Scene by a swimming pool: two people standing near metallic fringe backdrop; visible legs and footwear beside the pool edge.",
       "filename": "asset-3.png",
       "x": 60,
       "y": 1020,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A Polaroid-style snapshot shows a person in a shiny lavender outfit with feather cuffs and narrow sunglasses, leaning forward on a sofa. The flash-lit, retro image sits centered on a blurred duplicate background, with deep green and soft gray tones framing the purple focal point.",
+      "asset_description": "Center-bottom polaroid-style photo with white frame and soft shadow, rotated slightly clockwise. Person in a light purple outfit seated on a sofa, arms extended forward, dark green wall behind.",
       "filename": "asset-4.png",
       "x": 760,
       "y": 930,

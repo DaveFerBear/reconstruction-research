@@ -5,29 +5,19 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solitary figure in a long tan coat and black boots walks away across a flat, sandy desert toward low dunes, centered against a low horizon. Muted beige and pale blue tones with soft daylight create a minimalist, wide-angle composition with ample negative space.",
+      "asset_description": "Wide landscape photograph of an arid desert plain with low sandy mounds across the horizon and a pale blue-gray sky. Centered in the frame is a solitary figure walking away from the camera wearing a long beige trench coat and black shoes; soft, muted colors and natural daylight.",
       "filename": "asset-1.png",
-      "x": 40,
-      "y": 40,
-      "width": 1520,
-      "height": 560,
-      "rotation": 0
-    },
-    {
-      "type": "svg",
-      "svg_description": "Thin white ellipse outline (no fill), stroke ~3px, centered over the figure's torso.",
-      "filename": "svg-1.svg",
-      "x": 560,
-      "y": 290,
-      "width": 480,
-      "height": 140,
+      "x": -20,
+      "y": -28,
+      "width": 1624,
+      "height": 692,
       "rotation": 0
     },
     {
       "type": "text",
       "text": "BORCELLE",
       "x": 560,
-      "y": 356,
+      "y": 308,
       "width": 480,
       "height": 48,
       "rotation": 0,
@@ -43,12 +33,12 @@
     {
       "type": "text",
       "text": "BRAND PROPOSAL",
-      "x": 60,
-      "y": 610,
-      "width": 1480,
-      "height": 260,
+      "x": 52,
+      "y": 522,
+      "width": 2272,
+      "height": 384,
       "rotation": 0,
-      "font-family": "Georgia",
+      "font-family": "Antonio",
       "font-size": 250,
       "color": "#b01719",
       "text-align": "left",
@@ -56,6 +46,17 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: Untitled-2.png",
+      "filename": "asset-2.png",
+      "x": 633,
+      "y": 265,
+      "width": 316,
+      "height": 123,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1600,

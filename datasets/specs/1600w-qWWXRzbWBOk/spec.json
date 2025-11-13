@@ -1,17 +1,18 @@
 {
   "background_color": "#f5f2e6",
   "has_background_image": true,
-  "background_image_description": "An abstract watercolor plume of blues—from deep navy to airy cyan—spreads diagonally across a white background, tapering to a point on the right. Soft, layered edges create a cloud-like gradient and a triangular composition.",
+  "background_image_description": "Soft airbrushed radial gradient on a 1600x1600 canvas: warm off\u2011white base (#f5f2e6) with a large cobalt-to-sky blue cloud (#2f6fbd to #3b7fd6) dominating the right-center and fading smoothly to off\u2011white at the top-left and bottom-right; subtle vignette with gentle feathered edges and minimal grain.",
   "nodes": [
     {
-      "type": "svg",
-      "svg_description": "Thin elliptical outline behind the headline; no fill, 2px stroke in semi-transparent white (#ffffff, ~45% opacity). The ellipse is elongated horizontally, roughly 760x380px, visually tilted about 12 degrees clockwise and centered around the text block.",
-      "filename": "svg-1.svg",
-      "x": 420,
-      "y": 520,
-      "width": 760,
-      "height": 380,
-      "rotation": 0
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_o1hme2o1hme2o1hm.png",
+      "filename": "asset-1.png",
+      "x": -7,
+      "y": -5,
+      "width": 1636,
+      "height": 1628,
+      "rotation": 0,
+      "opacity": 1
     },
     {
       "type": "text",
@@ -51,11 +52,11 @@
       "type": "svg",
       "svg_description": "Three small, four-point sparkle stars rendered as diamond crosses with rounded points, solid fill #ffffff. One larger star (~34x34px) above-left of the text block; two smaller stars (~22x22px and ~16x16px) to the lower-right of the text block, spaced ~60px apart vertically.",
       "filename": "svg-2.svg",
-      "x": 520,
-      "y": 460,
-      "width": 560,
-      "height": 520,
-      "rotation": 0
+      "x": 1083,
+      "y": 275,
+      "width": 748,
+      "height": 668,
+      "rotation": 20
     }
   ],
   "canvas_width": 1600,

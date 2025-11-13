@@ -1,17 +1,18 @@
 {
   "background_color": "#0a150b",
   "has_background_image": true,
-  "background_image_description": "Two women in flowing pastel dresses rest beneath a leafy tree—one seated in blush pink against the trunk, the other reclining in a mint-green gown. Golden-hour light filters through the canopy, creating dappled shadows and a dreamy, painterly composition of lush greens and soft tones.",
+  "background_image_description": "Full-canvas photographic scene in warm sunlight: two women resting on lush green grass under dense ivy leaves. The upper woman sits leaning against a tree with a pink dress and headband; the lower woman lies in a pale green slip dress. Deep shadows and bright patches create a moody, film-like look with rich greens and earthy tones.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two women sit on a sunlit meadow, wearing pastel green and pink slip dresses with sheer layers, gazing at the camera. The photo has a soft, vintage film look with lush greens, dappled light, and a centered composition framed by hanging leaves, accented by minimal yellow text overlays.",
-      "filename": "asset-1.png",
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 1600,
-      "rotation": 0
+      "asset_description": "Uploaded image: Gemini_Generated_Image_rod0ysrod0ysrod0.png",
+      "filename": "asset-2.png",
+      "x": -3,
+      "y": -3,
+      "width": 1294,
+      "height": 1609,
+      "rotation": 0,
+      "opacity": 1
     },
     {
       "type": "text",
@@ -33,8 +34,8 @@
     {
       "type": "text",
       "text": "DO WHEN",
-      "x": 270,
-      "y": 590,
+      "x": 279,
+      "y": 599,
       "width": 1000,
       "height": 240,
       "rotation": 0,
@@ -67,8 +68,8 @@
     {
       "type": "text",
       "text": "OUT",
-      "x": 640,
-      "y": 1190,
+      "x": 637,
+      "y": 1172,
       "width": 500,
       "height": 220,
       "rotation": 0,
@@ -150,18 +151,8 @@
       "text-transform": "none"
     },
     {
-      "type": "svg",
-      "svg_description": "Center-bottom rounded pill outline (no fill) with 2px stroke in #e4f24a; approximate size 220x64 with 32px corner radius.",
-      "filename": "svg-1.svg",
-      "x": 530,
-      "y": 1472,
-      "width": 220,
-      "height": 64,
-      "rotation": 0
-    },
-    {
       "type": "text",
-      "text": "SWIPE →",
+      "text": "SWIPE \u2192",
       "x": 582,
       "y": 1488,
       "width": 140,
@@ -175,6 +166,17 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 9.png",
+      "filename": "asset-3.png",
+      "x": 276,
+      "y": 1200,
+      "width": 712,
+      "height": 613,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1280,

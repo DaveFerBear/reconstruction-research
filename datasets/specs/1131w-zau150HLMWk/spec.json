@@ -1,11 +1,11 @@
 {
   "background_color": "#f3f2ee",
   "has_background_image": true,
-  "background_image_description": "A minimalist pattern of evenly spaced vertical stripes in soft gray and off-white, with a subtle textured paper look. The composition is uniform and monochrome, creating a clean, calm aesthetic.",
+  "background_image_description": "Off-white textured paper with subtle fiber/grain noise, overlaid by evenly spaced vertical stripes alternating very light gray (#f6f6f6) and pale gray (#e8e8e8) running full height.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A minimalist background of soft vertical stripes in pale gray and white, with a faint central glow and paper-like texture. The evenly spaced bands create a clean, symmetrical composition that gently fades toward the edges.",
+      "asset_description": "Full-canvas background pattern of vertical alternating light gray stripes on a softly textured paper surface; stripes are uniform in width and extend from top to bottom.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,
@@ -49,12 +49,12 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue, sketch-style illustration of a lobster with raised claws sits centered inside an oval frame with a dotted border. The monochrome design on an off-white background gives it a vintage, nautical logo feel.",
+      "asset_description": "Uploaded image: Screenshot 2025-11-11 070050.png",
       "filename": "asset-3.png",
-      "x": 21,
+      "x": 9,
       "y": 249,
-      "width": 1078,
-      "height": 1069,
+      "width": 1110,
+      "height": 1065,
       "rotation": 0,
       "opacity": 1
     }
