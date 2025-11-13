@@ -8,6 +8,7 @@ from datetime import datetime
 from agents import ZeroShotAgent
 from agents.singleshot import SingleShotAgent
 from agents.multishot import MultiShotAgent
+from agents.imageedit import ImageEditAgent
 
 def main():
     # Parse arguments
@@ -20,7 +21,7 @@ def main():
     parser.add_argument("output_path", nargs="?", default=None,
                         help="Path to save edited spec (default: auto-generate from design + agent + timestamp)")
     parser.add_argument("--agent", default="ZeroShotAgent",
-                        choices=["ZeroShotAgent", "SingleShotAgent", "MultiShotAgent"],
+                        choices=["ZeroShotAgent", "SingleShotAgent", "MultiShotAgent", "ImageEditAgent"],
                         help="Agent type to use (default: ZeroShotAgent)")
 
     args = parser.parse_args()
@@ -65,6 +66,8 @@ def main():
         agent = SingleShotAgent(verbose=True)
     elif args.agent == "MultiShotAgent":
         agent = MultiShotAgent(verbose=True)
+    elif args.agent == "ImageEditAgent":
+        agent = ImageEditAgent(verbose=True)
     else:
         agent = ZeroShotAgent(verbose=True)
 

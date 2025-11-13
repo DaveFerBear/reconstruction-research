@@ -4,5 +4,6 @@ from .base import Agent
 from .zeroshot import ZeroShotAgent
 from .singleshot import SingleShotAgent
 from .multishot import MultiShotAgent
+from .imageedit import ImageEditAgent
 
-__all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent', 'MultiShotAgent']
+__all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent', 'MultiShotAgent', 'ImageEditAgent']
