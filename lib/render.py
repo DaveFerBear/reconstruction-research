@@ -78,8 +78,8 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
             if asset_dir and node.filename:
                 asset_path = asset_dir / node.filename
                 if asset_path.exists():
-                    # Use relative path instead of data URL
-                    image_src = node.filename
+                    # Use absolute file:// URL to ensure assets load from any location
+                    image_src = f"file://{asset_path.resolve()}"
 
             if image_src:
                 # Use actual image with object-fit to stretch to dimensions
@@ -175,8 +175,8 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
         if asset_dir:
             bg_image_path = asset_dir / "background.png"
             if bg_image_path.exists():
-                # Use relative path instead of data URL
-                bg_style = f"background-image: url('background.png'); background-size: cover; background-position: center;"
+                # Use absolute file:// URL to ensure background loads from any location
+                bg_style = f"background-image: url('file://{bg_image_path.resolve()}'); background-size: cover; background-position: center;"
 
     # Build font link tag if needed
     font_link = ''
