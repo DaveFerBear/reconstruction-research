@@ -3,6 +3,7 @@ from typing import Union
 import json
 from playwright.sync_api import sync_playwright
 from .types import Spec, TextNode, ImageNode, SVGNode
+from .fonts import generate_local_fonts_css, generate_google_fonts_url, LOCAL_FONTS
 
 
 def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600, asset_dir: Path = None) -> str:
@@ -22,26 +23,12 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
         if isinstance(node, TextNode):
             fonts_needed.add(node.font_family)
 
-    # System fonts that don't need Google Fonts
-    system_fonts = {
-        'Arial', 'Helvetica', 'Times New Roman', 'Georgia',
-        'Courier New', 'Verdana', 'Times', 'Courier', 'serif', 'sans-serif'
-    }
+    # Generate Google Fonts URL for web fonts
+    fonts_url = generate_google_fonts_url(fonts_needed)
 
-    # Load all non-system fonts from Google Fonts with multiple weights
-    font_imports = []
-    for font in fonts_needed:
-        if font not in system_fonts:
-            # Convert font name to Google Fonts format
-            font_param = font.replace(' ', '+')
-            # Load with multiple weights for flexibility
-            font_imports.append(f'family={font_param}:wght@300;400;500;600;700;800;900')
-
-    # Build Google Fonts URL
-    if font_imports:
-        fonts_url = f"https://fonts.googleapis.com/css2?{'&'.join(font_imports)}&display=swap"
-    else:
-        fonts_url = None
+    # Generate @font-face CSS for local fonts
+    local_fonts_in_use = fonts_needed & LOCAL_FONTS
+    local_font_css = generate_local_fonts_css(local_fonts_in_use)
 
     # Build node HTML
     nodes_html = []
@@ -202,6 +189,10 @@ def _generate_html(spec: Spec, canvas_width: int = 800, canvas_height: int = 600
     <meta charset="utf-8">
     {font_link}
     <style>
+        /* Local fonts */
+        {local_font_css}
+
+        /* Base styles */
         * {{
             margin: 0;
             padding: 0;
