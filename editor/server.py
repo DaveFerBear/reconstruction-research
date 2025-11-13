@@ -342,9 +342,12 @@ def index():
 
 @app.route('/<path:path>')
 def static_files(path):
-    # Serve files from editor directory or parent datasets directory
+    # Serve files from editor directory, parent datasets directory, or parent fonts directory
     if path.startswith('datasets/'):
         # Serve from parent directory for datasets
+        return send_from_directory(BASE_DIR, path)
+    elif path.startswith('fonts/'):
+        # Serve from parent directory for fonts
         return send_from_directory(BASE_DIR, path)
     else:
         # Serve from editor directory

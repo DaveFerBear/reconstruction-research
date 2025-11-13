@@ -158,6 +158,24 @@ const FONTS = [
   "Work Sans",
   "Yellowtail",
   "Zeyada",
+  // Local fonts (loaded from fonts.css)
+  "Tusker Grotesk",
+  "Saveur Sans Round",
+  "Eurotype BKL",
+  "Extenda",
+  "Bobby Jones Soft",
+  "Bobby Jones Soft Outline",
+  "Bobby Rough Soft",
+  "Bobby Rough Soft Outline",
+  "Ashing",
+  "Bondjlo",
+  "Dodo",
+  "English 111 Presto",
+  "Faylake",
+  "Felt Tip",
+  "Fontuna Stencil",
+  "Merisca",
+  "Natalic",
 ];
 
 export default FONTS;
