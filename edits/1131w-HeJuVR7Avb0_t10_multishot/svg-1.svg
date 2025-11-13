@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="watercolorWash">
+      <!-- Create a cloudy, organic noise pattern -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="3" seed="0" result="noise"/>
+      <!-- Slightly blur the noise to soften the texture, like a wash -->
+      <feGaussianBlur in="noise" stdDeviation="0.5" result="softNoise"/>
+      <!-- Use diffuse lighting to give the noise depth, like a textured surface -->
+      <!-- lighting-color="white" ensures it modulates the existing color, not introduces a new one -->
+      <feDiffuseLighting in="softNoise" lighting-color="white" surfaceScale="5" result="light">
+        <feDistantLight azimuth="225" elevation="60"/>
+      </feDiffuseLighting>
+      <!-- Blend the textured light with the original graphic. -->
+      <!-- "multiply" mode darkens areas where the light is less intense, creating variations in the blue. -->
+      <feBlend in="SourceGraphic" in2="light" mode="multiply"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="100" height="100" fill="#0077B6" filter="url(#watercolorWash)"/>
+</svg>

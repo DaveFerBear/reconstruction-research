@@ -1,0 +1,56 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#3e496d",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A minimalist logo on a deep navy background features a stack of playful geometric shapes\u2014a cream star and eye, pink arch and bar, blue \u201cH\u201d-like form, and a mustard rectangle\u2014with a worn, textured finish. Centered below, the word \u201cLUMA\u201d appears in bold cream lettering.",
+      "filename": "asset-1.png",
+      "x": 619,
+      "y": 493,
+      "width": 458,
+      "height": 387,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 675,
+      "y": 887,
+      "width": 360,
+      "height": 120,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Bungee",
+      "font_size": 112,
+      "color": "#f3e6d4",
+      "text_align": "center",
+      "font_weight": "100",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 674,
+      "y": 1018,
+      "width": 360,
+      "height": 70,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Helvetica",
+      "font_size": 52,
+      "color": "#f29ab0",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ]
+}
