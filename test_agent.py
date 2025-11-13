@@ -6,7 +6,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime
 from agents import ZeroShotAgent
-from agents.directedit import DirectEditAgent
+from agents.singleshot import SingleShotAgent
 
 def main():
     # Parse arguments
@@ -19,7 +19,7 @@ def main():
     parser.add_argument("output_path", nargs="?", default=None,
                         help="Path to save edited spec (default: auto-generate from design + agent + timestamp)")
     parser.add_argument("--agent", default="ZeroShotAgent",
-                        choices=["ZeroShotAgent", "DirectEditAgent"],
+                        choices=["ZeroShotAgent", "SingleShotAgent"],
                         help="Agent type to use (default: ZeroShotAgent)")
 
     args = parser.parse_args()
@@ -60,8 +60,8 @@ def main():
     print()
 
     # Create agent based on type
-    if args.agent == "DirectEditAgent":
-        agent = DirectEditAgent(verbose=True)
+    if args.agent == "SingleShotAgent":
+        agent = SingleShotAgent(verbose=True)
     else:
         agent = ZeroShotAgent(verbose=True)
 
