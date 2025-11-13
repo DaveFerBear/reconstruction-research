@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from .prompts import ENUM_CRITIC_PROMPT
+from .prompts import ENUM_CRITIC_PROMPT, EDIT_CRITIC_PROMPT
 
 load_dotenv()
 
@@ -231,6 +231,92 @@ def gemini_score_aesthetic(image_path: str, timeout: int = 120) -> float:
                 {
                     "type": "image_url",
                     "image_url": {"url": f"data:{mime_type};base64,{image_data}"}
+                }
+            ]
+        }],
+        api_key=GEMINI_API_KEY,
+        timeout=timeout
+    )
+
+    # Extract score from response
+    try:
+        text = response.choices[0].message.content.strip()
+        # Try to extract just the number
+        import re
+        match = re.search(r'\b(\d+(?:\.\d+)?)\b', text)
+        if match:
+            score = float(match.group(1))
+            # Ensure score is in 0-100 range
+            return min(max(score, 0), 100)
+        else:
+            raise ValueError(f"Could not extract score from response: {text}")
+    except (KeyError, IndexError, AttributeError, ValueError) as e:
+        print(f"Error parsing Gemini response: {response}")
+        raise e
+
+
+def gemini_score_edit(original_image_path: str, edited_image_path: str, instruction: str, timeout: int = 120) -> float:
+    """
+    Score how well an edit was applied using Gemini vision API via litellm.
+
+    Args:
+        original_image_path: Path to the original image file.
+        edited_image_path: Path to the edited image file.
+        instruction: The edit instruction that was given.
+        timeout: Max request time in seconds.
+
+    Returns:
+        float: Edit quality score out of 100.
+    """
+    import base64
+    from pathlib import Path
+    import litellm
+
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    if not GEMINI_API_KEY:
+        raise ValueError("GEMINI_API_KEY environment variable not set")
+
+    # Read and encode both images
+    original_path = Path(original_image_path)
+    edited_path = Path(edited_image_path)
+
+    with open(original_path, 'rb') as f:
+        original_data = base64.b64encode(f.read()).decode('utf-8')
+
+    with open(edited_path, 'rb') as f:
+        edited_data = base64.b64encode(f.read()).decode('utf-8')
+
+    # Determine mime types
+    mime_types = {
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.png': 'image/png',
+        '.webp': 'image/webp',
+    }
+    original_mime = mime_types.get(original_path.suffix.lower(), 'image/jpeg')
+    edited_mime = mime_types.get(edited_path.suffix.lower(), 'image/jpeg')
+
+    # Call Gemini via litellm with both images
+    response = litellm.completion(
+        model="gemini/gemini-2.5-pro",
+        messages=[{
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": f"{EDIT_CRITIC_PROMPT}\n\nEdit instruction: {instruction}\n\nOriginal design:"
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{original_mime};base64,{original_data}"}
+                },
+                {
+                    "type": "text",
+                    "text": "Edited design:"
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{edited_mime};base64,{edited_data}"}
                 }
             ]
         }],
