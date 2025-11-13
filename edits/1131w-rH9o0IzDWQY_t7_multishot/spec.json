@@ -7,7 +7,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A minimal still-life of a white ceramic pour-over dripper on a glass carafe with dark coffee sits beside a small white milk pitcher. Set against a warm peach background with strong directional shadows, the clean white ceramics contrast crisply with the black base and deep brown coffee.",
+      "asset_description": "Three skincare containers\u2014a white squeeze tube, an amber dropper bottle with a gold collar, and a clear jar with a white lid\u2014stand on a matte orange surface against a bright yellow backdrop. The minimalist studio shot uses strong side lighting to cast crisp shadows, creating a clean, graphic composition.",
       "filename": "asset-5.png",
       "x": 579,
       "y": 819,
@@ -18,7 +18,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A flat-lay of coffee essentials features a bowl of roasted beans, two minimalist coffee bags, and a copper scoop on a pastel geometric backdrop of peach, pink, and yellow. The composition is clean and graphic, divided by white lines with crisp studio lighting and strong shadows.",
+      "asset_description": "A minimal still life features a white ceramic pour-over dripper with coffee and a pipette, paired with a dark glass dropper bottle and a white lid. Set on a split yellow and peach background, the direct light casts sharp shadows that highlight the clean shapes and bold color contrast.",
       "filename": "asset-6.png",
       "x": 573,
       "y": 0,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A hand holds a white, matte coffee pouch with a pump dispenser labeled \u201cArticnian Coffee\u201d against a warm apricot backdrop. The minimalist, product-style shot uses strong directional light and a crisp shadow with ample negative space.",
+      "asset_description": "A clean, collage-style product ad shows coffee gear\u2014a metal pour-over dripper, a bag of beans, and a cup of coffee\u2014plus a pump bottle arranged around a central \u201cNew Product\u201d diamond. Warm yellow, peach, and orange backdrops with crisp white borders and strong side-lit shadows create a minimal, sunlit look.",
       "filename": "asset-4.png",
       "x": -6,
       "y": 816,
@@ -40,7 +40,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A minimalist flat lay of coffee gear on a warm peach background: a wood-and-metal hand grinder, white pour-over dripper, cup of black coffee with a sugar stick, an amber vial, and a labeled dark bottle. Strong directional light casts crisp shadows, highlighting neutral whites, browns, and metallic textures in a clean, airy composition.",
+      "asset_description": "A minimalist flat lay shows a white pump bottle centered among a black dropper bottle, white jar and ceramics, an espresso cup, and scattered coffee beans on a warm peach background. Sunlit shadows and the contrast of white, black, gold, and deep brown create a clean, modern composition.",
       "filename": "asset-3.png",
       "x": -84,
       "y": -69,
@@ -98,7 +98,7 @@
     },
     {
       "type": "text",
-      "text": "PREMIUM COFFEE",
+      "text": "ARTISANAL COFFEE",
       "x": 196,
       "y": 861,
       "width": 780,

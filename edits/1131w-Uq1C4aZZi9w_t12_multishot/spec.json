@@ -3,7 +3,7 @@
   "canvas_height": 1600,
   "background_color": "#f7ecec",
   "has_background_image": false,
-  "background_image_description": null,
+  "background_image_description": "",
   "nodes": [
     {
       "type": "image",
@@ -24,6 +24,17 @@
       "y": 12,
       "width": 991,
       "height": 1405,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "image",
+      "asset_description": "A minimalist composition shows a large white rectangle floating on a pale blush-pink background. The colors are soft and muted, with clean edges and generous negative space creating a calm, modern feel.",
+      "filename": "asset-2.png",
+      "x": 54,
+      "y": 1149,
+      "width": 1030,
+      "height": 419,
       "rotation": 0,
       "opacity": 1.0
     },
@@ -62,17 +73,6 @@
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "uppercase"
-    },
-    {
-      "type": "svg",
-      "svg_description": "A solid white rectangle serving as a background for a text block.. Modified: a solid rectangle with fill color #FFFFFF",
-      "filename": "background-box-1.svg",
-      "x": 110,
-      "y": 1188,
-      "width": 911,
-      "height": 140,
-      "rotation": 0,
-      "opacity": 1.0
     },
     {
       "type": "text",

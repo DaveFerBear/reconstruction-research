@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="snowflake-arm" stroke="white" stroke-width="4" stroke-linecap="round">
+      <!-- Main arm segment -->
+      <line x1="50" y1="50" x2="50" y2="10" />
+      <!-- First set of branches -->
+      <line x1="50" y1="20" x2="45" y2="25" />
+      <line x1="50" y1="20" x2="55" y2="25" />
+      <!-- Second set of branches -->
+      <line x1="50" y1="30" x2="45" y2="35" />
+      <line x1="50" y1="30" x2="55" y2="35" />
+    </g>
+  </defs>
+
+  <!-- Central circle for the snowflake -->
+  <circle cx="50" cy="50" r="4" fill="white" />
+
+  <!-- Rotate and place 6 arms around the center -->
+  <use href="#snowflake-arm" transform="rotate(0 50 50)" />
+  <use href="#snowflake-arm" transform="rotate(60 50 50)" />
+  <use href="#snowflake-arm" transform="rotate(120 50 50)" />
+  <use href="#snowflake-arm" transform="rotate(180 50 50)" />
+  <use href="#snowflake-arm" transform="rotate(240 50 50)" />
+  <use href="#snowflake-arm" transform="rotate(300 50 50)" />
+</svg>

@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A centered headshot of a golden retriever wearing a red collar, with a shallow depth of field and a neutral background.",
+      "asset_description": "A centered headshot of a golden retriever wearing a red collar, with shallow depth of field and a neutral background.",
       "filename": "asset-1.png",
       "x": 169,
       "y": 295,
@@ -76,7 +76,7 @@
     },
     {
       "type": "text",
-      "text": "Male, 3 years old.\nGolden fur.\nWearing a red collar.\nAnswers to Buddy.",
+      "text": "Male, 3 years old. Golden coat. Wearing a red collar with his name on it.",
       "x": 335,
       "y": 1145,
       "width": 498,
