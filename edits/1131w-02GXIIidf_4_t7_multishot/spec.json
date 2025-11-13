@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A close-up studio portrait of a golden-colored retriever-type dog wearing a bright red collar, centered against a soft light-gray background. Warm tones and gentle, even lighting with shallow depth of field highlight its expressive eyes and silky fur.",
+      "asset_description": "A centered headshot of a golden retriever wearing a red collar, with a shallow depth of field and a neutral background.",
       "filename": "asset-1.png",
       "x": 169,
       "y": 295,
@@ -76,7 +76,7 @@
     },
     {
       "type": "text",
-      "text": "Male, 3 years old.\\nGolden coat.\\nWearing a red collar.",
+      "text": "Male, 3 years old.\nGolden fur.\nWearing a red collar.\nAnswers to Buddy.",
       "x": 335,
       "y": 1145,
       "width": 498,
@@ -105,7 +105,7 @@
     },
     {
       "type": "text",
-      "text": "Last seen at Borcelle Yard\\non June 08, 2022",
+      "text": "Last seen at Borcelle Yard\non June 08, 2022",
       "x": 287,
       "y": 1353,
       "width": 571,

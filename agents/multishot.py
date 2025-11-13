@@ -411,6 +411,9 @@ Here is the rendered result after your previous edits:"""
             except Exception as e:
                 return {"error": f"Invalid spec format: {str(e)}"}
 
+            # Clean up text nodes (remove literal \n characters)
+            self._clean_text_nodes(new_spec)
+
             # Update the current spec
             self.current_spec = new_spec
             self.log("✓ Spec updated successfully")
@@ -492,6 +495,19 @@ Here is the rendered result after your previous edits:"""
             return {"error": str(e)}
 
     # ============ HELPER METHODS ============
+
+    def _clean_text_nodes(self, spec: Spec):
+        """Convert literal \n strings to actual newline characters in text nodes."""
+        for node in spec.nodes:
+            if hasattr(node, 'text') and node.text:
+                original = node.text
+                # Replace literal \n and \\n with actual newlines
+                cleaned = original.replace('\\n', '\n')
+                # Also handle \r
+                cleaned = cleaned.replace('\\r', '\n')
+                if cleaned != original:
+                    node.text = cleaned
+                    self.log(f"Cleaned text node: converted literal \\n to newlines")
 
     def _init_edit_log(self, instruction: str):
         """Initialize edit log file."""

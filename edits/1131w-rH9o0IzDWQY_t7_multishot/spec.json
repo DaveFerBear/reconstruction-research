@@ -7,7 +7,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Artisanal coffee concept: two glass bottles of cold brew coffee, nestled in soft fabric on a marble surface, with a warm pastel backdrop.",
+      "asset_description": "A minimal still-life of a white ceramic pour-over dripper on a glass carafe with dark coffee sits beside a small white milk pitcher. Set against a warm peach background with strong directional shadows, the clean white ceramics contrast crisply with the black base and deep brown coffee.",
       "filename": "asset-5.png",
       "x": 579,
       "y": 819,
@@ -18,7 +18,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A minimalist flat lay of a ceramic coffee dripper and a bag of whole coffee beans, arranged diagonally on a split background of warm pastel colors, creating a sharp and clean composition.",
+      "asset_description": "A flat-lay of coffee essentials features a bowl of roasted beans, two minimalist coffee bags, and a copper scoop on a pastel geometric backdrop of peach, pink, and yellow. The composition is clean and graphic, divided by white lines with crisp studio lighting and strong shadows.",
       "filename": "asset-6.png",
       "x": 573,
       "y": 0,
@@ -29,7 +29,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A hand holds a ceramic coffee pour-over dripper against a warm pastel background. Strong natural light creates crisp shadows, giving it a minimalist, product-photography look.",
+      "asset_description": "A hand holds a white, matte coffee pouch with a pump dispenser labeled \u201cArticnian Coffee\u201d against a warm apricot backdrop. The minimalist, product-style shot uses strong directional light and a crisp shadow with ample negative space.",
       "filename": "asset-4.png",
       "x": -6,
       "y": 816,
@@ -40,7 +40,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Minimalist flat-lay of artisanal coffee gear\u2014a ceramic pour-over dripper, a small bag of coffee beans, and a glass of cold brew\u2014on a warm pastel pink background. The scene uses soft pastel tones and strong angled shadows, with ample negative space for a clean, modern look.",
+      "asset_description": "A minimalist flat lay of coffee gear on a warm peach background: a wood-and-metal hand grinder, white pour-over dripper, cup of black coffee with a sugar stick, an amber vial, and a labeled dark bottle. Strong directional light casts crisp shadows, highlighting neutral whites, browns, and metallic textures in a clean, airy composition.",
       "filename": "asset-3.png",
       "x": -84,
       "y": -69,
@@ -80,7 +80,7 @@
     },
     {
       "type": "text",
-      "text": "PRODUCT",
+      "text": "ROAST",
       "x": 182,
       "y": 738,
       "width": 780,
@@ -98,7 +98,7 @@
     },
     {
       "type": "text",
-      "text": "PREMIUM PRODUCT",
+      "text": "PREMIUM COFFEE",
       "x": 196,
       "y": 861,
       "width": 780,

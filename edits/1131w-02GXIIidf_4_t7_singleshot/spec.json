@@ -14,7 +14,7 @@
       "width": 923,
       "height": 1120,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 1
     },
     {
       "type": "svg",
@@ -25,18 +25,18 @@
       "width": 1138,
       "height": 110,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 1
     },
     {
       "type": "image",
-      "asset_description": "A centered headshot of a golden retriever wearing a red collar, with a neutral background and shallow depth of field.",
+      "asset_description": "A centered studio portrait of a golden retriever with warm golden fur and a bright red collar against a light gray background. Soft, even lighting emphasizes the dog\u2019s expressive brown eyes and wavy coat.",
       "filename": "asset-1.png",
       "x": 169,
       "y": 295,
       "width": 796,
       "height": 823,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 1
     },
     {
       "type": "text",
@@ -46,7 +46,7 @@
       "width": 1131,
       "height": 150,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Arial Black",
       "font_size": 150,
       "color": "#ffffff",
@@ -64,7 +64,7 @@
       "width": 1128,
       "height": 62,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Arial Black",
       "font_size": 72,
       "color": "#000000",
@@ -82,7 +82,7 @@
       "width": 498,
       "height": 142,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Arial",
       "font_size": 36,
       "color": "#000000",
@@ -111,7 +111,7 @@
       "width": 571,
       "height": 69,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "DM Sans",
       "font_size": 44,
       "color": "#000000",
@@ -140,7 +140,7 @@
       "width": 1131,
       "height": 54,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Arimo",
       "font_size": 48,
       "color": "#ffffff",
@@ -158,7 +158,7 @@
       "width": 1131,
       "height": 120,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Arial Black",
       "font_size": 80,
       "color": "#ffffff",

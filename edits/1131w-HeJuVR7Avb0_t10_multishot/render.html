@@ -27,25 +27,15 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 119px; top: 263px; width: 942px; height: 1178px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <div style="position: absolute; left: 119px; top: 263px; width: 942px; height: 1178px; transform: rotate(0deg); opacity: 1.0; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="watercolorWash">
-      <!-- Create a cloudy, organic noise pattern -->
-      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="3" seed="0" result="noise"/>
-      <!-- Slightly blur the noise to soften the texture, like a wash -->
-      <feGaussianBlur in="noise" stdDeviation="0.5" result="softNoise"/>
-      <!-- Use diffuse lighting to give the noise depth, like a textured surface -->
-      <!-- lighting-color="white" ensures it modulates the existing color, not introduces a new one -->
-      <feDiffuseLighting in="softNoise" lighting-color="white" surfaceScale="5" result="light">
-        <feDistantLight azimuth="225" elevation="60"/>
-      </feDiffuseLighting>
-      <!-- Blend the textured light with the original graphic. -->
-      <!-- "multiply" mode darkens areas where the light is less intense, creating variations in the blue. -->
-      <feBlend in="SourceGraphic" in2="light" mode="multiply"/>
-    </filter>
+    <radialGradient id="mediterraneanWash" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0077B6"/>
+      <stop offset="100%" stop-color="#004A77"/>
+    </radialGradient>
   </defs>
-  <rect x="0" y="0" width="100" height="100" fill="#0077B6" filter="url(#watercolorWash)"/>
-</svg></div><img src="asset-2.png" style="position: absolute; left: -33px; top: 244px; width: 1070px; height: 999px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="Two ripe yellow lemons hang from a slender twig with glossy green leaves, rendered sharp and textured. The studio-style shot uses a dark background with a soft green glow, creating a diagonal composition that makes the fruit pop." /><div style="position: absolute; left: 100px; top: 334px; width: 123px; height: 63px; transform: rotate(-90deg); opacity: 1; font-family: Cormorant Garamond; font-size: 50px; color: #5A8D36; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">ITALY</div></div><div style="position: absolute; left: 884px; top: 1253px; width: 200px; height: 60px; transform: rotate(90deg); opacity: 1; font-family: Helvetica; font-size: 44px; color: #5A8D36; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">2025</div></div><div style="position: absolute; left: 6px; top: 64px; width: 1131px; height: 170px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 148px; color: #5A8D36; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">POSITANO</div></div><div style="position: absolute; left: 0px; top: 1356px; width: 1131px; height: 150px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 120px; color: #5A8D36; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">AMALFI COAST</div></div>
+  <rect x="0" y="0" width="100" height="100" fill="url(#mediterraneanWash)"/>
+</svg></div><img src="asset-2.png" style="position: absolute; left: -33px; top: 244px; width: 1070px; height: 999px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="A watercolor-style illustration of three speckled yellow lemons hanging from a diagonal green branch with mottled leaves. The fruit cluster sits against a soft, muted green-gray gradient background, creating a gentle, airy composition." /><div style="position: absolute; left: 100px; top: 334px; width: 123px; height: 63px; transform: rotate(-90deg); opacity: 1.0; font-family: Cormorant Garamond; font-size: 50px; color: #F3EFE7; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">ITALY</div></div><div style="position: absolute; left: 884px; top: 1253px; width: 200px; height: 60px; transform: rotate(90deg); opacity: 1.0; font-family: Helvetica; font-size: 44px; color: #F3EFE7; text-align: left; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; "><div style="width: 100%;">2025</div></div><div style="position: absolute; left: 6px; top: 64px; width: 1131px; height: 170px; transform: rotate(0deg); opacity: 1.0; font-family: Helvetica; font-size: 148px; color: #F3EFE7; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">POSITANO</div></div><div style="position: absolute; left: 0px; top: 1356px; width: 1131px; height: 150px; transform: rotate(0deg); opacity: 1.0; font-family: Helvetica; font-size: 120px; color: #F3EFE7; text-align: center; font-weight: 900; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">AMALFI COAST</div></div>
     </div>
 </body>
 </html>

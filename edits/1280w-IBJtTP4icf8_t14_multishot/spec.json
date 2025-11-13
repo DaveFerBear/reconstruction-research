@@ -3,20 +3,20 @@
   "canvas_height": 1600,
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "A minimalist caf\\\\u00e9 scene shows a wooden table with an open laptop and a glass of coffee on a light wooden tray beside cutlery, with a pastry peeking in at the right. Earthy browns and soft grays dominate, lit gently for a clean, uncluttered composition.",
+  "background_image_description": "A minimalist caf\\u00e9 scene shows a wooden table with an open laptop and a glass of coffee on a light wooden tray beside cutlery, with a pastry peeking in at the right. Earthy browns and soft grays dominate, lit gently for a clean, uncluttered composition.",
   "nodes": [
     {
       "type": "text",
       "text": "Winter wellness",
-      "x": 90,
+      "x": 140,
       "y": 184,
-      "width": 1100,
+      "width": 1000,
       "height": 190,
       "rotation": 0,
       "opacity": 1.0,
       "font_family": "Playfair Display",
       "font_size": 160,
-      "color": "#FFFFFF",
+      "color": "#D1EFFF",
       "text_align": "center",
       "font_weight": "700",
       "font_style": "italic",
@@ -26,15 +26,15 @@
     {
       "type": "text",
       "text": "habits",
-      "x": 90,
-      "y": 440,
-      "width": 1100,
+      "x": 340,
+      "y": 399,
+      "width": 600,
       "height": 150,
       "rotation": 0,
       "opacity": 1.0,
       "font_family": "Playfair Display",
       "font_size": 120,
-      "color": "#FFFFFF",
+      "color": "#D1EFFF",
       "text_align": "center",
       "font_weight": "600",
       "font_style": "italic",
@@ -58,6 +58,28 @@
       "font_style": "normal",
       "text_decoration": "none",
       "text_transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "A subtle, elegant border of white snowflakes in the top left corner.. Modified: Create a visible, white snowflake pattern to be used as a corner border. The snowflakes must be white and not transparent.. Modified: A visible, elegant corner border made of white snowflakes. The snowflakes should be clearly identifiable as snowflakes.",
+      "filename": "snowflakes.svg",
+      "x": -50,
+      "y": -50,
+      "width": 400,
+      "height": 400,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "svg",
+      "svg_description": "A subtle, elegant border of white snowflakes in the bottom right corner.",
+      "filename": "snowflakes.svg",
+      "x": 930,
+      "y": 1250,
+      "width": 400,
+      "height": 400,
+      "rotation": 180,
+      "opacity": 1.0
     }
   ]
 }

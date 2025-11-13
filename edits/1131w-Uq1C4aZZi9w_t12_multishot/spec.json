@@ -3,7 +3,7 @@
   "canvas_height": 1600,
   "background_color": "#f7ecec",
   "has_background_image": false,
-  "background_image_description": "",
+  "background_image_description": null,
   "nodes": [
     {
       "type": "image",
@@ -24,17 +24,6 @@
       "y": 12,
       "width": 991,
       "height": 1405,
-      "rotation": 0,
-      "opacity": 1.0
-    },
-    {
-      "type": "image",
-      "asset_description": "A colossal sword is embedded in a rocky ridge, wrapped in swirling electric\u2011blue energy, overlooking a misty valley of golden grass and reflective pools. Cinematic fantasy concept art with a wide-angle composition, where warm orange-pink sunset clouds contrast sharply against the cool teal glow and dark, craggy mountains.",
-      "filename": "asset-2.png",
-      "x": 54,
-      "y": 1149,
-      "width": 1030,
-      "height": 419,
       "rotation": 0,
       "opacity": 1.0
     },
@@ -75,9 +64,9 @@
       "text_transform": "uppercase"
     },
     {
-      "type": "image",
-      "asset_description": "A minimalist grayscale watercolor illustration of a coupe cocktail glass filled with a bubbly drink, garnished with a strawberry on the rim. The glass is centered on a clean white background, with soft shading and speckled textures for a delicate, airy feel.",
-      "filename": "asset-3.png",
+      "type": "svg",
+      "svg_description": "A solid white rectangle serving as a background for a text block.. Modified: a solid rectangle with fill color #FFFFFF",
+      "filename": "background-box-1.svg",
       "x": 110,
       "y": 1188,
       "width": 911,

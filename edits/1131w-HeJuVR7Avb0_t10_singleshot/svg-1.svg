@@ -1,15 +1,19 @@
 <svg viewBox="0 0 100 100">
   <defs>
-    <filter id="watercolorWash" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="3" seed="0" result="textureNoise" />
-      <feDisplacementMap in="SourceGraphic" in2="textureNoise" scale="3" xChannelSelector="R" yChannelSelector="G" result="distortedGraphic" />
-      <feTurbulence type="fractalNoise" baseFrequency="0.03 0.04" numOctaves="2" seed="1" result="alphaNoise" />
-      <feComponentTransfer in="alphaNoise" result="alphaMask">
-        <feFuncA type="linear" slope="0.8" intercept="0.1" />
+    <filter id="watercolorWash">
+      <!-- Create fractal noise for a textured base -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="3" seed="0" result="noise"/>
+      <!-- Convert the noise to grayscale -->
+      <feColorMatrix in="noise" type="saturate" values="0" result="grayscaleNoise"/>
+      <!-- Map grayscale values to the alpha channel to create a transparency mask -->
+      <feComponentTransfer in="grayscaleNoise" result="alphaMask">
+        <feFuncA type="linear" slope="0.5" intercept="0.2"/>
       </feComponentTransfer>
-      <feComposite in="distortedGraphic" in2="alphaMask" operator="in" result="alphaWashed" />
-      <feGaussianBlur in="alphaWashed" stdDeviation="0.5" />
+      <!-- Blur the alpha mask slightly for softer, more organic edges -->
+      <feGaussianBlur in="alphaMask" stdDeviation="1" result="blurredAlphaMask"/>
+      <!-- Apply the blurred alpha mask to the source graphic (the rectangle) -->
+      <feComposite in="SourceGraphic" in2="blurredAlphaMask" operator="in"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="100" height="100" fill="#0A4F6B" filter="url(#watercolorWash)" />
+  <rect x="0" y="0" width="100" height="100" fill="#1A4B7D" filter="url(#watercolorWash)"/>
 </svg>
