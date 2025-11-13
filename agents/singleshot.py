@@ -11,7 +11,6 @@ from dotenv import load_dotenv
 
 from .base import Agent
 from lib.types import Spec
-from lib.caption import caption_image
 from lib.utils import _to_data_url
 from lib.render import render_image
 
@@ -372,20 +371,9 @@ Analyze the current spec and the user's instruction. Determine which tool(s) to 
 
             self.log(f"✓ Saved edited image to {filename}")
 
-            # Caption for verification
-            self.log(f"Captioning edited {filename}...")
-            new_caption = caption_image(image_path)
-
-            if not new_caption:
-                return {"error": f"Failed to caption {filename}"}
-
-            # Update spec
-            self._update_node_property(filename, 'asset_description', new_caption)
-
             return {
                 "success": True,
                 "filename": filename,
-                "new_caption": new_caption,
                 "message": f"Successfully edited {filename}"
             }
 

@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 from .base import Agent
 from lib.types import Spec
-from lib.caption import caption_image
+from lib.caption import caption_moondream
 from lib.utils import _to_data_url
 from lib.render import render_image
 
@@ -445,7 +445,7 @@ Here is the rendered result after your previous edits:"""
 
             # Caption for verification
             self.log(f"Captioning edited {filename}...")
-            new_caption = caption_image(image_path)
+            new_caption = caption_moondream(image_path)
 
             if not new_caption:
                 return {"error": f"Failed to caption {filename}"}

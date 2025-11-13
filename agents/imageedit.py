@@ -27,6 +27,7 @@ class ImageEditAgent(Agent):
 
     def __init__(
         self,
+        model: str = "nano-banana",
         timeout: int = 120,
         verbose: bool = False
     ):
@@ -34,11 +35,16 @@ class ImageEditAgent(Agent):
         Initialize the image edit agent.
 
         Args:
-            timeout: Request timeout in seconds for nano-banana API (default: 120)
+            model: Image editing model to use - only "nano-banana" is currently supported (default: nano-banana)
+            timeout: Request timeout in seconds for API (default: 120)
             verbose: If True, print debug information
         """
         super().__init__(verbose=verbose)
+        self.model = model
         self.timeout = timeout
+
+        if model != "nano-banana":
+            raise ValueError(f"Unsupported model: {model}. Only 'nano-banana' is currently supported")
 
         # Load API key
         self.fal_api_key = os.getenv("FAL_API_KEY")
