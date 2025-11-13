@@ -1,11 +1,11 @@
 {
   "background_color": "#efefea",
   "has_background_image": true,
-  "background_image_description": "Light gray recycled paper texture with subtle darker speckles and soft fiber grain across the entire 1131x1600 canvas.",
+  "background_image_description": "A gray surface with subtle variations in tone and texture. The surface is predominantly light gray, with subtle darker gray and slightly darker gray areas interspersed throughout. The texture appears slightly uneven, with some areas showing a smoother, more uniform appearance while others exhibit a slightly rougher, more granular quality. No discernible patterns, objects, or text are visible on the surface.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Grainy green halftone photograph of a torso draped in a textured robe or towel with both arms lifted outward, cropped at the elbows and cut off by the left and right edges. The fabric shows a fine repeating diamond pattern and soft shading, creating a vintage/retro screen-printed look. Positioned across the lower half of the poster.",
+      "asset_description": "A light green dress with a textured pattern is draped over a person’s arm. The dress has a gathered bodice and a slightly flared skirt. The arm is positioned to the left of the dress, with the hand partially visible near the shoulder. The background is a gradient of dark green to light green.",
       "filename": "asset-1.png",
       "x": 36,
       "y": 432,
@@ -100,7 +100,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal rule line separating the two small labels; solid black rectangle acting as a line.",
+      "svg_description": "A horizontal black line runs across the image, positioned near the top edge.",
       "filename": "svg-1.svg",
       "x": 310,
       "y": 551,

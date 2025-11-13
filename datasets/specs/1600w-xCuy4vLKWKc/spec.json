@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 37.png",
+      "asset_description": "A light peach-colored rectangle is centered on a black background. The rectangle is positioned horizontally and vertically centered within the frame.",
       "filename": "asset-1.png",
       "x": -63,
       "y": 699,
@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Pattern of small dots: 6 columns by 5 rows of solid circles (diameter ~12px), evenly spaced ~28px apart, rendered in a light terracotta-tan (#D9A590) at low contrast against the background.",
+      "svg_description": "A grid of evenly spaced, light brown circles on a white background. The circles are uniformly sized and spaced, creating a regular, repeating pattern across the entire image.",
       "filename": "svg-1.svg",
       "x": 1296,
       "y": 1440,
@@ -26,7 +26,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal line extending rightward from the handle text, 2px stroke in light tan #D9A590.",
+      "svg_description": "A thin, horizontal brown line stretches across the image, positioned slightly off-center. The line is thin and straight, running horizontally from left to right. The background is entirely white, providing a stark contrast to the line.",
       "filename": "svg-2.svg",
       "x": 496,
       "y": 128,
@@ -121,7 +121,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Small white mouse cursor arrow (pointer) with a thin dark outline, tilted slightly up-right, overlapping the right edge of the outlined button.",
+      "svg_description": "A dark gray arrow points diagonally upward and to the right on a white background. The arrow is outlined and has a thin black border.",
       "filename": "svg-4.svg",
       "x": 520,
       "y": 1032,
@@ -131,7 +131,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 38.png",
+      "asset_description": "A white cursor arrow pointing to the right is centered on a black background. The arrow has a thin outline and appears slightly raised from the background.",
       "filename": "asset-4.png",
       "x": 448,
       "y": 956,

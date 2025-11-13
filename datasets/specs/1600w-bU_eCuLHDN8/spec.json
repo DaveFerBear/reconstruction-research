@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Full-canvas black-and-white checkerboard made of large, even squares (approx. 230\u2013260 px each). Alternating black (#000000) squares on a white (#ffffff) base, forming vertical and horizontal bands that continue uniformly behind the central lime rectangle.",
+  "background_image_description": "A pixelated image composed of small squares in varying shades of gray and black. The squares are arranged in a grid-like pattern, with some squares appearing darker due to overlapping or shadowing. The image is uniform in color and texture, with no discernible patterns or shapes beyond the individual squares.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_xo0060xo0060xo00.png",
+      "asset_description": "A checkerboard pattern composed of alternating black and white squares. The squares are arranged in a grid with equal spacing. A small gray diamond is visible in the bottom right corner.",
       "filename": "asset-1.png",
       "x": 5,
       "y": -3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A bright yellow rectangle fills the center of the image against a black background. The rectangle is uniformly colored and has no visible texture or pattern.",
       "filename": "asset-3.png",
       "x": -57,
       "y": -82,
@@ -27,7 +27,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Six-petal rounded flower shape (cartoon asterisk-like) filled with bright pink (#F15BB5). Positioned near the top-right corner of the lime panel.",
+      "svg_description": "A bright pink, star-shaped icon is centered on a white background. The icon has a symmetrical design with curved edges and a pointed tip.",
       "filename": "svg-2.svg",
       "x": 1390,
       "y": 140,
@@ -88,7 +88,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are rounded and slightly pointed at the tips. The flower is centered and symmetrical.",
       "filename": "asset-2.png",
       "x": 1107,
       "y": -154,
@@ -99,7 +99,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 17.png",
+      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance.",
       "filename": "asset-4.png",
       "x": 66,
       "y": 1012,

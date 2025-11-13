@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_l5slgzl5slgzl5sl.png",
+      "asset_description": "A woman with dark hair and dark eyes stands with her arms crossed against a dark background. She wears a black blazer over a white top and a watch on her left wrist. Her nails are painted red, and she has a ring on her left ring finger.",
       "filename": "asset-2.png",
       "x": -7,
       "y": -1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin vertical bar to the left of the brand: solid purple rectangle (#6A3DF0), 6 px wide and 80 px high.",
+      "svg_description": "A solid purple vertical stripe runs from top to bottom against a white background.",
       "filename": "svg-1.svg",
       "x": 140,
       "y": 180,
@@ -26,7 +26,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin vertical accent line beside the small paragraph: 4 px wide, 120 px high. Top 12 px segment in purple (#6A3DF0), remaining 108 px in white (#FFFFFF).",
+      "svg_description": "A purple vertical bar is centered on a white background. The bar is positioned near the top edge of the image and extends slightly downward.",
       "filename": "svg-2.svg",
       "x": 120,
       "y": 1325,

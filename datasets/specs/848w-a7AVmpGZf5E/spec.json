@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Solid black rounded rectangle (pill) with fully rounded ends, centered near the bottom; serves as a simple decorative bar/button shape.",
+      "svg_description": "A black horizontal bar is centered on a white background.",
       "filename": "svg-1.svg",
       "x": 244,
       "y": 1002,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "High-contrast product photo of matte black over-ear headphones on a white background. The headband arcs across the top; two thin silver sliders connect to large oval earcups with textured fabric pads. The right earcup shows a subtle geometric lattice pattern on the inner grille. Controls and a small port are visible on the left cup. A soft shadow sits beneath the headphones.",
+      "asset_description": "A pair of black over-ear headphones with a black headband and earcups are shown against a white background. The earcups feature a textured, mesh-like material on the outer surface and a patterned design on the inner surface. The headband is smooth and curved, connecting the two earcups. The headphones are angled slightly, with the left earcup positioned higher than the right.",
       "filename": "asset-1.png",
       "x": 44,
       "y": 318,
@@ -42,7 +42,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Small black geometric monogram icon composed of two interlocking angular loops forming a tilted diamond/knot shape.",
+      "svg_description": "A black diamond shape with a thin diagonal line extending from its center. The diamond is centered on a white background.",
       "filename": "svg-2.svg",
       "x": 784,
       "y": 40,

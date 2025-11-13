@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Full-canvas dark scene with glossy 3D interlocking ribbon loops and tubes in magenta-purple and teal-blue hues on a near-black background. The forms sweep diagonally, with specular highlights and soft depth-of-field blur toward the edges.",
+      "asset_description": "A complex, three-dimensional abstract design composed of intertwined, curved metallic bands in shades of pink, teal, and gray. The bands are layered and overlap, creating a sense of depth and three-dimensionality. The background is black, providing a stark contrast to the vibrant colors of the metallic structure.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Large frosted-glass style rounded rectangle card (approx 40 px corner radius) centered slightly right, semi-transparent with a soft internal gradient bloom from deep magenta (#8b2a67) at upper left fading to desaturated blue-gray (#425b6f) at lower right. Subtle outer drop shadow and faint 1 px outer stroke in translucent white around the perimeter.",
+      "asset_description": "A square frame with a white border encloses a gradient background transitioning from pink on the left to blue on the right. The background is smooth and gradient, with no visible texture or pattern. The frame is centered on a gray background, and the lighting appears soft and diffused.",
       "filename": "asset-2.png",
       "x": 180,
       "y": 120,
@@ -127,7 +127,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Row of five small monochrome white UI icons aligned horizontally: a rounded video camera glyph, a square speech bubble with tail, a heart, a chat bubble with three dots, and a phone handset; evenly spaced with about 20 px gaps.",
+      "svg_description": "A plain white background.",
       "filename": "svg-1.svg",
       "x": 1120,
       "y": 1312,

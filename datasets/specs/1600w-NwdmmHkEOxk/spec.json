@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Two large organic coral shapes. 1) From the top edge, slightly right of center, a soft wavy coral slab (#ee8d72) curves downward about 220px with an inner white highlight ribbon and a darker coral outline (#d26b53). 2) From the bottom-left corner, a matching wavy coral slab (#ee8d72) curves upward with the same white inner ribbon and darker coral outline (#d26b53).",
+      "svg_description": "Two reddish-brown, curved shapes are shown against a white background. The left shape is wider and shorter, while the right shape is taller and narrower. Both shapes are oriented vertically.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Pastel yellow circle (#f4c45a) with a hand-drawn black outlined five-point star centered; casual sketch stroke ~4px.",
+      "svg_description": "A gold five-pointed star with a black outline is centered on a white background. The star is positioned slightly off-center toward the top.",
       "filename": "svg-2.svg",
       "x": 92,
       "y": 150,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Wavy teal frame and doodle icon. A thick wavy rectangular border (#66cfc7, stroke ~18px, rounded ends) encloses a white field. Near the top inside the frame, a simple black line doodle of two abstract heads/shoulders with radiating short lines.",
+      "svg_description": "Two black stick figures with downward-pointing arrows above their heads are centered on a white background. The stick figures are enclosed within a teal-colored frame with a wavy border.",
       "filename": "svg-3.svg",
       "x": 1130,
       "y": 80,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped badge shape filled light green (#cfe97a) with soft, evenly spaced semicircle bumps around the perimeter.",
+      "svg_description": "A light green, scalloped, cloud-like shape with rounded edges and pointed tips is centered on a white background. The shape is symmetrical and evenly distributed across the image.",
       "filename": "svg-4.svg",
       "x": 1150,
       "y": 460,
@@ -45,7 +45,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Dashed rounded rectangle: white fill, teal dashed border (#69d0c7), dash length ~12px, corner radius ~14px.",
+      "svg_description": "A teal-colored rectangular shape with straight horizontal and vertical lines is centered on a white background. Curved teal lines extend outward from the rectangle, resembling a rounded rectangle or oval shape.",
       "filename": "svg-5.svg",
       "x": 1188,
       "y": 860,
@@ -55,7 +55,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Circular location icon: light lime circle (#cfe6a5) with a centered black outline map-pin glyph.",
+      "svg_description": "A black teardrop-shaped icon with a smaller inner circle is centered on a light green circle. The icon has a smooth, rounded edge and casts a subtle shadow beneath it.",
       "filename": "svg-6.svg",
       "x": 757,
       "y": 210,
@@ -65,7 +65,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Circular phone icon: warm yellow circle (#f4c45a) with a centered black outline smartphone/handset glyph.",
+      "svg_description": "A black outline of a smartphone is centered on a gold circular background. The phone is oriented vertically and has a rounded top and bottom.",
       "filename": "svg-7.svg",
       "x": 757,
       "y": 430,
@@ -75,7 +75,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Circular email icon: teal circle (#8dd1cb) with a centered black outline envelope glyph.",
+      "svg_description": "A black outline of an envelope icon is centered on a light teal circular background. The icon is simple, featuring a rectangular shape with a pointed top and a curved bottom edge.",
       "filename": "svg-8.svg",
       "x": 757,
       "y": 650,
@@ -85,7 +85,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Circular heart/favorite icon: soft salmon circle (#ee8b73) with a centered black outline heart glyph.",
+      "svg_description": "A black heart shape is centered on a light coral-pink circle. The heart is outlined and has a smooth, continuous curve.",
       "filename": "svg-9.svg",
       "x": 757,
       "y": 860,
@@ -95,7 +95,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Circular hands-with-heart icon: pastel yellow circle (#f4c45a) with a centered black outline of two cupped hands holding a heart.",
+      "svg_description": "A black line drawing of a headband with a heart-shaped center is centered on a gold-yellow circle. The headband is curved and simple in design.",
       "filename": "svg-10.svg",
       "x": 1260,
       "y": 650,

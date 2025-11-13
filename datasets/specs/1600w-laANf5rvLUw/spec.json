@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Large center-spanning 3D furry numerals '2004' in deep mauve/pink (approximately #b84b86 to #c25a95), soft directional shading and long hair-like fibers. The digits are arranged from left to right with the '2' on the far left, two rounded '0's in the middle, and a chunky '4' on the right. Edges are soft and fuzzy; subtle inner shadows on the holes of the zeros. Transparent background so the gray canvas shows through.",
+      "asset_description": "The image shows the year \"2004\" rendered in a stylized, fuzzy, pink font. The numbers are centrally positioned and have a soft, textured appearance. The background is a gradient transitioning from dark gray at the edges to a lighter pink in the center, creating a subtle glow around the numbers.",
       "filename": "asset-1.png",
       "x": 40,
       "y": 120,
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Top-right polaroid-style photo with thick white border and soft drop shadow, rotated slightly clockwise. Close-up of a person in profile with light brown hair wearing a large green leafy earring, neutral background.",
+      "asset_description": "A woman with light reddish-brown hair pulled back in a loose style wears a light beige jacket and a green, textured earring. Her head is tilted downward, and her eyes are partially closed. She is positioned against a light-colored wall, with a dark object partially visible behind her. The image is framed by a white border and has a soft, slightly faded appearance.",
       "filename": "asset-2.png",
       "x": 1160,
       "y": 60,
@@ -76,7 +76,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Bottom-left polaroid-style photo with white frame and soft shadow, rotated slightly counterclockwise. Scene by a swimming pool: two people standing near metallic fringe backdrop; visible legs and footwear beside the pool edge.",
+      "asset_description": "Two people stand on a light-colored stone or concrete surface next to a teal swimming pool. The person on the left wears dark pants and boots; the person on the right wears a light-colored top, denim shorts, and white sneakers. A silver tinsel-like fence runs along the right side. Green foliage is visible in the background.",
       "filename": "asset-3.png",
       "x": 60,
       "y": 1020,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Center-bottom polaroid-style photo with white frame and soft shadow, rotated slightly clockwise. Person in a light purple outfit seated on a sofa, arms extended forward, dark green wall behind.",
+      "asset_description": "A woman with long dark hair and sunglasses is seated, wearing a light purple outfit with long sleeves and a tie at the front. Her right hand rests near her waist. The background is dark, with a blurred, out-of-focus area behind her. The image is framed by a white border resembling a Polaroid photo frame.",
       "filename": "asset-4.png",
       "x": 760,
       "y": 930,

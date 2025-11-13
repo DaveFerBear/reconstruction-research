@@ -1,11 +1,11 @@
 {
   "background_color": "#F4EEDB",
   "has_background_image": true,
-  "background_image_description": "All-over subtle paper-like speckled texture on a light beige background, with small irregular flecks and scratches in slightly darker beige tones (#D8CFB8, #CFC4A6) distributed uniformly across the 1600x1200 canvas.",
+  "background_image_description": "The image shows a cream or off-white background with small, scattered dark specks. The specks are unevenly distributed and vary in size and shape. The background has a slightly textured appearance but is not overly grainy or mottled. The image is primarily a uniform cream color with no discernible patterns, objects, or text present.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_tzl1z0tzl1z0tzl1.png",
+      "asset_description": "A light beige background with small speckles and irregular patterns throughout. The speckles vary in size and distribution, creating a textured appearance. No other elements or objects are visible.",
       "filename": "asset-3.png",
       "x": -6,
       "y": -2,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A yellow, circular cartoon character with green arms, legs, and white gloves is depicted against a black background. The character has a smiling face with wide eyes and a small red nose.",
       "filename": "asset-2.png",
       "x": 786,
       "y": 202,

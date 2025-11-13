@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 24.png",
+      "asset_description": "A green rectangle is centered on a black background. The rectangle is oriented horizontally and has a uniform width.",
       "filename": "asset-4.png",
       "x": -9,
       "y": -21,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 23.png",
+      "asset_description": "The image shows a black background with a green and gold wave-like pattern along the bottom edge. The pattern consists of curved lines in green and gold colors that create a sense of depth and movement. The image does not contain any text or additional objects.",
       "filename": "asset-8.png",
       "x": -31,
       "y": -113,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 24.png",
+      "asset_description": "A green horizontal rectangle is centered on a black background. The rectangle is uniformly filled and positioned horizontally.",
       "filename": "asset-5.png",
       "x": 67,
       "y": 853,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 22.png",
+      "asset_description": "A woman with long brown hair sits at a white table, wearing a green cardigan. She smiles at the camera while looking directly at the lens. A cell phone rests on the table beside her. The background is white and out of focus.",
       "filename": "asset-2.png",
       "x": 582,
       "y": 399,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 24.png",
+      "asset_description": "A green horizontal rectangle is centered on a black background. The rectangle is uniformly colored and positioned horizontally.",
       "filename": "asset-3.png",
       "x": 92,
       "y": -130,
@@ -196,7 +196,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: world-wide-web.png",
+      "asset_description": "A black globe icon with a grid of curved lines forming a spherical shape. The grid divides the globe into eight triangular sections, each containing white space.",
       "filename": "asset-6.png",
       "x": 125,
       "y": 1179,
@@ -207,7 +207,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: telephone.png",
+      "asset_description": "A white telephone handset icon is centered within a black circle on a white background. The handset is oriented with the mouthpiece pointing downward and the handset base pointing to the right.",
       "filename": "asset-7.png",
       "x": 121,
       "y": 1259,

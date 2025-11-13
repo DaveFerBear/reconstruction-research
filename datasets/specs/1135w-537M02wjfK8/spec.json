@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Subtle, low-contrast watercolor botanical pattern covering the full 1135x1600 canvas: desaturated eucalyptus leaves and soft floral shapes in very pale gray-green tones (#e7efe8 to #f5f8f5), centered and feathered with large translucent washes.",
+  "background_image_description": "A repeating pattern of watercolor eucalyptus leaves in varying shades of blue-gray on a white background. The leaves are depicted with soft, diffused edges and attached to thin, branching stems. The background is a plain, off-white color.",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Tall rounded-arch frame centered on the canvas with no fill and a metallic gold gradient stroke (12px). Gradient runs from #d4af37 at the left vertical to #f6e7a6 across the crown, returning to #c89d2e on the right vertical. The arch has straight vertical sides meeting a smooth semicircular top; bottom is open.",
+      "svg_description": "A gold-colored arch shape is centered on a white background. The arch is symmetrical and has a smooth, continuous curve.",
       "filename": "svg-1.svg",
       "x": 150,
       "y": 145,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Watercolor floral bouquet at the top-left corner overlapping the gold arch: large cream-white rose, white ranunculus and jasmine blossoms, buds, and eucalyptus stems with rounded bluish-green leaves; painted with soft edges and subtle shadows.",
+      "asset_description": "A gold rectangular frame with a thin gold border encloses a light gray background. Inside the frame, a watercolor bouquet of white flowers and green leaves is positioned on the left side. The flowers include a large white rose and smaller white blossoms with yellow centers. The leaves are green with subtle variations in shade. The frame is centered in the image and has a soft, elegant appearance.",
       "filename": "asset-1.png",
       "x": 28,
       "y": 70,
@@ -25,7 +25,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Watercolor floral arrangement at the bottom-right corner overlapping the gold arch: large cream-white rose, smaller white flowers, eucalyptus sprigs and bluish-green elongated leaves; delicate watercolor texture with soft highlights.",
+      "asset_description": "A gold-colored arch frames a blank, dark gray space. Below the arch, a watercolor bouquet of white flowers and green leaves is positioned on the right side. The background transitions from dark gray to light green at the bottom.",
       "filename": "asset-2.png",
       "x": 760,
       "y": 990,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Two thin dark-green horizontal rules (2px stroke, color #2f5a4c) flanking the ampersand. Left line from x=310 to x=540; right line from x=595 to x=825; both aligned at y=512.",
+      "svg_description": "A dark green ampersand symbol is centered on a white background, flanked by two thin horizontal lines. The ampersand is stylized with a curved tail connecting the upper loop to the lower loop.",
       "filename": "svg-2.svg",
       "x": 310,
       "y": 511,
@@ -164,7 +164,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Golden window frame.png",
+      "asset_description": "A gold-colored rounded rectangle with a smooth, polished appearance is centered on a light beige background. The rectangle has a thin gold border and a slightly curved top edge.",
       "filename": "asset-3.png",
       "x": 311,
       "y": 978,

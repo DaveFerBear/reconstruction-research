@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Six flat, solid-filled circles arranged in two columns and three rows. Each circle has a diameter of 340px with no stroke or shadow: 1) top-left circle at (60,420) fill #EFE4DF, 2) top-right circle at (500,420) fill #EADDD6, 3) middle-left circle at (60,840) fill #E5D4CB, 4) middle-right circle at (500,840) fill #D9B6A4, 5) bottom-left circle at (60,1260) fill #CFAF9E, 6) bottom-right circle at (500,1260) fill #C99D86.",
+      "svg_description": "Six circular shapes are arranged in two rows of three on a white background. Each circle is a light beige or taupe color. The circles are evenly spaced and aligned vertically.",
       "filename": "svg-1.svg",
       "x": 60,
       "y": 420,

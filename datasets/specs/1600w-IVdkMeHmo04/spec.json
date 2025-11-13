@@ -1,11 +1,11 @@
 {
   "background_color": "#0b1412",
   "has_background_image": true,
-  "background_image_description": "Full-bleed dark, moody photograph of lush green foliage. Large split monstera-style leaves arc from the top-left toward center and from the right edge toward center, with deep shadows and soft bokeh along the bottom. Overall tone is green-black with subtle highlights on leaf edges.",
+  "background_image_description": "The image displays a close-up view of multiple Monstera leaves against a solid black background. The leaves are predominantly dark green with lighter green veins and edges, and they exhibit the characteristic splits characteristic of Monstera plants. The leaves are arranged in an overlapping manner, creating a layered effect. Some leaves are partially illuminated from above, while others are in shadow. The black background provides a strong contrast, emphasizing the shape and texture of the leaves.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_50s05y50s05y50s0.png",
+      "asset_description": "Two large, dark green leaves with irregular cutouts are attached to a thin, light-colored stem. The background is dark and out of focus, with indistinct green shapes visible. The image is dimly lit, with subtle highlights on the leaves and stem.",
       "filename": "asset-1.png",
       "x": -3,
       "y": 1,
@@ -220,7 +220,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 13.png",
+      "asset_description": "A white oval shape is centered on a black background. The oval is outlined and uniformly white.",
       "filename": "asset-2.png",
       "x": 1088,
       "y": 516,

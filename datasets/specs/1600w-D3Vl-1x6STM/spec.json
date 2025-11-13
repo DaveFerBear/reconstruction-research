@@ -1,11 +1,11 @@
 {
   "background_color": "#f4eedc",
   "has_background_image": true,
-  "background_image_description": "Retro sunburst background filling the entire 1600x1131 canvas with alternating wide radial rays in muted teal (#2f9a93) and brick red (#c95543) over a cream base (#f4eedc). Rays emanate from the center behind a large central oval; edges are softly rounded for a vintage poster feel.",
+  "background_image_description": "A circular design composed of radiating red and teal stripes on a white background. The stripes are evenly spaced and create a symmetrical pattern extending outward from the center. The central circle is off-white and empty.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled-2.png",
+      "asset_description": "A solid black circle is centered on a white background. The circle has a smooth, continuous edge with no visible breaks or variations in thickness.",
       "filename": "asset-1.png",
       "x": 125,
       "y": 103,
@@ -101,7 +101,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1.png",
+      "asset_description": "A white lightning bolt symbol with a red outline is shown against a black background. The lightning bolt is angled diagonally and has a three-dimensional appearance with shading and highlights.",
       "filename": "asset-2.png",
       "x": 1068,
       "y": 46,
@@ -112,7 +112,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1.png",
+      "asset_description": "A white lightning bolt symbol with a thick red outline is shown against a black background. The bolt is angled diagonally and has a three-dimensional appearance with shading and highlights.",
       "filename": "asset-3.png",
       "x": 124,
       "y": 686,
@@ -123,7 +123,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 2.png",
+      "asset_description": "A five-pointed star with a reddish-brown center and a black outline is centered on a black background. The star has a slightly three-dimensional appearance with subtle shading and highlights.",
       "filename": "asset-4.png",
       "x": 151,
       "y": 96,
@@ -134,7 +134,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 2.png",
+      "asset_description": "A five-pointed star with a reddish-orange center is centered on a black background. The star has a black outline and a slightly raised, three-dimensional appearance.",
       "filename": "asset-5.png",
       "x": 1199,
       "y": 708,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #F07F3A, 4px black stroke.",
+      "svg_description": "A solid orange oval shape with a black outline is centered on a white background. The oval is uniformly filled and has a smooth, continuous edge.",
       "filename": "svg-1.svg",
       "x": 300,
       "y": 360,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #86DE6A, 4px black stroke.",
+      "svg_description": "A light green oval shape with a black outline is shown against a white background. The oval is centered and oriented horizontally.",
       "filename": "svg-2.svg",
       "x": 300,
       "y": 480,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #76D3CE, 4px black stroke.",
+      "svg_description": "A teal oval shape with a black outline is shown against a white background. The oval is centered and uniformly filled with a solid color.",
       "filename": "svg-3.svg",
       "x": 300,
       "y": 600,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #F2C433, 4px black stroke.",
+      "svg_description": "A yellow oval shape with a black outline is shown against a white background. The oval is centered and uniformly filled.",
       "filename": "svg-4.svg",
       "x": 300,
       "y": 720,
@@ -45,7 +45,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #7CD06F, 4px black stroke.",
+      "svg_description": "A light green oval shape with a black outline is shown against a white background. The oval is centered and oriented horizontally.",
       "filename": "svg-5.svg",
       "x": 300,
       "y": 840,
@@ -55,7 +55,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #F07F3A, 4px black stroke.",
+      "svg_description": "A solid orange oval shape with a black outline is centered on a white background. The oval is uniformly filled and has a smooth, continuous edge.",
       "filename": "svg-6.svg",
       "x": 300,
       "y": 960,
@@ -65,7 +65,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle pill with 44px corner radius, fill #76D3CE, 4px black stroke.",
+      "svg_description": "A teal oval shape with a black outline is centered on a white background. The oval is oriented horizontally and has a smooth, continuous curve.",
       "filename": "svg-7.svg",
       "x": 300,
       "y": 1080,
@@ -75,7 +75,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #F07F3A.",
+      "svg_description": "A completely white image with no visible features or objects.",
       "filename": "svg-8.svg",
       "x": 100,
       "y": 350,
@@ -85,7 +85,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #86DE6A.",
+      "svg_description": "A bright green, irregularly shaped shape with a jagged, wavy edge is shown against a white background. The shape has a thick black outline along its perimeter.",
       "filename": "svg-9.svg",
       "x": 100,
       "y": 470,
@@ -95,7 +95,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #8DD7D1.",
+      "svg_description": "A teal-colored, rounded shape with a jagged, uneven edge is centered on a white background. A thick black outline surrounds the shape, emphasizing its three-dimensional form. The edges of the shape are uneven and irregular, giving it a dynamic and somewhat abstract appearance.",
       "filename": "svg-10.svg",
       "x": 100,
       "y": 590,
@@ -105,7 +105,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #F2C433.",
+      "svg_description": "A yellow, irregularly shaped shape with a pointed top and a curved bottom is centered on a white background. The shape has a thin black outline and four small black dots along its edges.",
       "filename": "svg-11.svg",
       "x": 100,
       "y": 710,
@@ -115,7 +115,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #8BD57E.",
+      "svg_description": "A light green, irregularly shaped shape with a jagged, uneven edge is shown against a white background. The shape has a black outline around its perimeter.",
       "filename": "svg-12.svg",
       "x": 100,
       "y": 830,
@@ -125,7 +125,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #F07F3A.",
+      "svg_description": "An orange circle with a black outline is shown against a white background. The circle is centered and has a smooth, uniform texture.",
       "filename": "svg-13.svg",
       "x": 100,
       "y": 950,
@@ -135,7 +135,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Scalloped starburst badge (about 18 lobes) with black outline, filled #8DD7D1.",
+      "svg_description": "A light teal rounded shape with a scalloped black outline is centered on a white background. The shape has a smooth, uniform texture with no visible patterns or markings.",
       "filename": "svg-14.svg",
       "x": 100,
       "y": 1070,
@@ -145,7 +145,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Word 'EVENTS' in thick, playful bubble letters, filled bright orange (#F07F3A) with a heavy black outline and slight offset dark shadow; letters slightly slanted and overlapping, cartoon style.",
+      "asset_description": "The words \"upcoming EVENTS\" are displayed in large, orange, bold letters against a dark gray background. The letters have a slightly three-dimensional appearance with black outlines.",
       "filename": "asset-1.png",
       "x": 290,
       "y": 180,

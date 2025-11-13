@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 10 background.jpg",
+      "asset_description": "A checkered pattern in pink and white fills the upper half of the image. Below, a series of diagonal stripes in pink and orange run from left to right. The stripes are separated by white spaces.",
       "filename": "asset-5.png",
       "x": 111,
       "y": 324,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Centered illustration panel showing a wide coupe glass filled with a frosty pink strawberry daiquiri on a pedestal stem. A fresh strawberry with seeds and green leaves is perched on the rim at the upper-left of the glass. The glass has soft watercolor-style shading and small sparkling bubbles. Behind the glass is a pink checkerboard backdrop made of alternating light and mid pink scalloped squares. Below the glass, the floor forms sunburst rays in diagonal wedges of peach-orange and pink. The entire illustration sits within a soft pink rectangular panel with subtle inner shadow.",
+      "asset_description": "A clear glass filled with a pink liquid sits on a surface with diagonal stripes in pink and orange. A single strawberry rests on the rim of the glass. The background features a pink and white checkered pattern.",
       "filename": "asset-1.png",
       "x": 81,
       "y": 12,
@@ -26,7 +26,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 3 RECTANGLE STROKE.png",
+      "asset_description": "A solid black image with no visible features or patterns.",
       "filename": "asset-2.png",
       "x": 54,
       "y": 1149,
@@ -156,7 +156,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: color used .png",
+      "asset_description": "The image displays a horizontal color palette with six distinct vertical color bands. From left to right, the colors are: a light beige or cream, a pale orange, a soft pink, a light coral or salmon, a pale peach or salmon, and a deep red. The colors are evenly spaced and presented in a flat, two-dimensional format against a light gray background. There is no text or other objects visible in the image.",
       "filename": "asset-3.png",
       "x": 475,
       "y": 1147,

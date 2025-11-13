@@ -1,11 +1,11 @@
 {
   "background_color": "#f3f2ee",
   "has_background_image": true,
-  "background_image_description": "Off-white textured paper with subtle fiber/grain noise, overlaid by evenly spaced vertical stripes alternating very light gray (#f6f6f6) and pale gray (#e8e8e8) running full height.",
+  "background_image_description": "The image displays a pattern of vertical stripes in alternating shades of gray and white. The stripes are of equal width and run perfectly vertically from top to bottom of the image, creating a continuous, repeating pattern. The background color is a light, neutral gray that provides a subtle contrast to the white stripes. There are no other elements, texts, or objects visible in the image. The image is purely a depiction of vertical stripes in a monochromatic color scheme.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Full-canvas background pattern of vertical alternating light gray stripes on a softly textured paper surface; stripes are uniform in width and extend from top to bottom.",
+      "asset_description": "A background of vertical gray stripes on a white gradient. The stripes are evenly spaced and run from top to bottom. The image is uniform and evenly lit.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Screenshot 2025-11-11 070050.png",
+      "asset_description": "A blue ink drawing of a lobster on a white oval plate with a dotted border. The lobster is positioned with its claws raised and body angled diagonally. The plate is set against a white background.",
       "filename": "asset-3.png",
       "x": 9,
       "y": 249,

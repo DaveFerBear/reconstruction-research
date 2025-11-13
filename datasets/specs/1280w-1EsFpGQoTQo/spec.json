@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "Full-bleed lifestyle photo of a poolside scene in daylight. Turquoise-green rippling swimming pool water fills the upper two-thirds, with a narrow band of mosaic tiles along the pool wall. At right, a reclining woman in a dark olive bikini top and white shorts lies on a concrete deck; her left arm extends upward holding a faceted glass with a pink drink and a red garnish. A wide straw sun hat rests across her torso and the deck in the lower-left quadrant. Sunglasses with translucent pink frames sit on the wet concrete near the pool edge. Strong sun creates crisp shadows; overall warm, summery mood.",
+  "background_image_description": "A woman with long brown hair lies on her stomach beside a bright turquoise swimming pool. She wears a dark green bikini top, white shorts, and dark sunglasses. She holds a pink cocktail with a straw in her right hand. A straw hat rests on the pool deck to her left, and a pair of pink sunglasses lies on the deck near her feet. The water in the pool has a textured, rippled pattern.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_hf39umhf39umhf39.png",
+      "asset_description": "A woman lies on her back in a swimming pool, wearing a white bikini top and olive green bikini bottom. She holds a red plastic cup in her right hand, raised above her head. A straw hat rests beside her on the pool deck. A pair of pink sunglasses lies on the concrete near the edge of the pool. The water in the pool is a teal-blue color.",
       "filename": "asset-3.png",
       "x": 0,
       "y": -6,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A white horizontal oval shape with a thin white outline is centered on a black background. The oval is positioned horizontally and spans the width of the image.",
       "filename": "asset-7.png",
       "x": 405,
       "y": 1218,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A white horizontal oval shape is centered on a black background. The oval is outlined with a thin white border.",
       "filename": "asset-6.png",
       "x": 900,
       "y": -154,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A white horizontal oval shape is centered on a black background. The oval is outlined with a thin white border.",
       "filename": "asset-5.png",
       "x": 474,
       "y": -159,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A white horizontal oval shape is centered on a black background. The oval is outlined with a thin white border.",
       "filename": "asset-4.png",
       "x": 96,
       "y": -165,

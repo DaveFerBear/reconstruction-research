@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A bright pink square is centered on a black background. The square is solid and uniformly colored.",
       "filename": "asset-2.png",
       "x": 303,
       "y": -231,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Close-up photo of a fluffy white Pomeranian dog facing right, tongue out and wearing a light collar. The image is cropped to the right edge of the canvas and overlaps the pink panel, with the dog's ear and head extending into the blue background above.",
+      "asset_description": "A white dog with dark eyes and a pink tongue is positioned against a bright blue background. A pink rectangle is partially visible behind the dog. The dog wears a light-colored collar with a circular tag. The dog’s head is turned slightly to the right, and its mouth is open.",
       "filename": "asset-1.png",
       "x": 106,
       "y": 28,
@@ -60,7 +60,7 @@
     },
     {
       "type": "text",
-      "text": "Nutritious, delicious meals made with real ingredients \u2014 crafted for wagging tails and healthy lives.",
+      "text": "Nutritious, delicious meals made with real ingredients — crafted for wagging tails and healthy lives.",
       "x": 76,
       "y": 564,
       "width": 528,
@@ -77,7 +77,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Pill-shaped button with off-white fill (#F4F0E6), fully rounded corners (radius ~40px).",
+      "svg_description": "A light beige, oval shape is centered on a white background. The shape is uniform in width and height, with no visible texture, pattern, or additional elements.",
       "filename": "svg-2.svg",
       "x": 72,
       "y": 732,
@@ -87,7 +87,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Pill-shaped button with off-white fill (#F4F0E6), fully rounded corners (radius ~40px).",
+      "svg_description": "A light beige, oval-shaped object is shown against a white background. The object is smooth and uniform in color, with no visible texture or pattern.",
       "filename": "svg-3.svg",
       "x": 320,
       "y": 732,

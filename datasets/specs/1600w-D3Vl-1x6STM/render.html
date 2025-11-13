@@ -2,8 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arial+Black:wght@300;400;500;600;700;800;900&family=Bauhaus+93:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
+        /* Local fonts */
+        
+
+        /* Base styles */
         * {
             margin: 0;
             padding: 0;
@@ -25,99 +31,7 @@
 </head>
 <body>
     <div id="canvas">
-        <div style="position: absolute; left: 160px; top: 120px; width: 1280px; height: 845px; transform: rotate(0deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!--
-    Main Ellipse: cx=50, cy=50, rx=40, ry=25, stroke-width=14
-    Outer edge of main ellipse stroke: rx=40+7=47, ry=25+7=32
-    Inner edge of main ellipse stroke (fill boundary): rx=40, ry=25
-
-    Shadow parameters:
-    Offset center for shadow: cx_offset=53, cy_offset=53 (shifted 3 units down-right from main ellipse center)
-    Outer shadow ellipse radii: rx_out=52, ry_out=37 (extends 5 units beyond main ellipse's outer stroke edge)
-    Inner shadow ellipse radii: rx_in=40, ry_in=25 (aligned with main ellipse's fill boundary)
-    This creates a shadow thickness of 12 units at its widest points.
-
-    Points for outer shadow arc (210° to 330°) based on cx=53, cy=53, rx=52, ry=37:
-    210°: x = 53 + 52*cos(210°) ≈ 7.968, y = 53 + 37*sin(210°) ≈ 34.5
-    330°: x = 53 + 52*cos(330°) ≈ 98.032, y = 53 + 37*sin(330°) ≈ 34.5
-
-    Points for inner shadow arc (210° to 330°) based on cx=53, cy=53, rx=40, ry=25:
-    210°: x = 53 + 40*cos(210°) ≈ 18.36, y = 53 + 25*sin(210°) ≈ 40.5
-    330°: x = 53 + 40*cos(330°) ≈ 87.64, y = 53 + 25*sin(330°) ≈ 40.5
-  -->
-  <path
-    d="M 7.968 34.5
-       A 52 37 0 0 1 98.032 34.5
-       L 87.64 40.5
-       A 40 25 0 0 0 18.36 40.5
-       Z"
-    fill="#2a2a2a"
-  />
-
-  <ellipse
-    cx="50"
-    cy="50"
-    rx="40"
-    ry="25"
-    fill="#ffffff"
-    stroke="#1f1f1f"
-    stroke-width="14"
-  />
-</svg></div><div style="position: absolute; left: 272px; top: 170px; width: 125px; height: 125px; transform: rotate(12deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Oval at the upper-left -->
-  <ellipse cx="30" cy="30" rx="20" ry="15"
-           fill="#c95543"
-           stroke="#1f1f1f"
-           stroke-width="1"/>
-
-  <!-- Four-pointed diamond burst (cartoon star) -->
-  <!-- Points are calculated for a star centered at (50,50) with outer radius 40 and inner radius 20,
-       oriented with main points at 45, 135, 225, 315 degrees. -->
-  <polygon points="78.28,78.28 70,50 78.28,21.72 50,30 21.72,21.72 30,50 21.72,78.28 50,70"
-           fill="#c95543"
-           stroke="#1f1f1f"
-           stroke-width="1"
-           stroke-linejoin="round"/>
-</svg></div><div style="position: absolute; left: 1298px; top: 805px; width: 130px; height: 130px; transform: rotate(-18deg); opacity: 1; "><svg viewBox="0 0 100 100">
-  <ellipse cx="75" cy="75" rx="20" ry="15" fill="#c95543" stroke="#1f1f1f" stroke-width="1"/>
-  <polygon points="91,59 83,75 91,91 75,83 59,91 67,75 59,59 75,67" fill="#c95543" stroke="#1f1f1f" stroke-width="1"/>
-</svg></div><div style="position: absolute; left: 1215px; top: 70px; width: 170px; height: 300px; transform: rotate(8deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Main lightning bolt shape: white fill, black outline -->
-  <polygon
-    points="50,0 70,0 95,30 60,25 90,60 50,55 80,100 60,100"
-    fill="#ffffff"
-    stroke="#1f1f1f"
-    stroke-width="2"
-  />
-  <!-- Accent stroke along the right edge of the bolt -->
-  <path
-    d="M 70 0 L 95 30 L 90 60 L 80 100"
-    fill="none"
-    stroke="#c95543"
-    stroke-width="3"
-  />
-</svg></div><div style="position: absolute; left: 260px; top: 720px; width: 165px; height: 295px; transform: rotate(-10deg); opacity: 1; "><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <g transform="rotate(-15 35 80)">
-    <!-- Main lightning bolt shape: white fill with black outline -->
-    <path
-      d="M 30 80 L 50 40 L 70 60 L 90 20 L 80 40 L 60 70 L 40 75 Z"
-      fill="#ffffff"
-      stroke="#1f1f1f"
-      stroke-width="3"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-    <!-- Narrow brick red accent stroke along the right edge -->
-    <path
-      d="M 77 43 L 63 67 L 43 72"
-      fill="none"
-      stroke="#c95543"
-      stroke-width="2"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-    />
-  </g>
-</svg></div><div style="position: absolute; left: 260px; top: 185px; width: 1080px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Arial; font-size: 38px; color: #2f9a93; text-align: center; font-weight: 700; font-style: italic; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Larana, Inc.</div></div><div style="position: absolute; left: 260px; top: 270px; width: 1080px; height: 90px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 72px; color: #c95543; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">28.09.2028</div></div><div style="position: absolute; left: 210px; top: 365px; width: 1180px; height: 200px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 170px; color: #2f9a93; text-align: center; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">COMING SOON</div></div><div style="position: absolute; left: 260px; top: 595px; width: 1080px; height: 130px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 110px; color: #c95543; text-align: center; font-weight: 800; font-style: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">-STAY TUNED-</div></div><div style="position: absolute; left: 260px; top: 725px; width: 1080px; height: 70px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 46px; color: #2f9a93; text-align: center; font-weight: 700; font-style: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">www.reallygreatsite.com</div></div>
+        <img src="asset-1.png" style="position: absolute; left: 125px; top: 103px; width: 1380px; height: 967px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="Uploaded image: Untitled-2.png" /><div style="position: absolute; left: 296px; top: 221px; width: 1080px; height: 60px; transform: rotate(0deg); opacity: 1; font-family: Helvetica; font-size: 38px; line-height: 1.2; color: #2f9a93; text-align: center; font-weight: 700; font-style: italic; font-stretch: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">Larana, Inc.</div></div><div style="position: absolute; left: 284px; top: 358px; width: 1080px; height: 90px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 72px; line-height: 1.2; color: #c95543; text-align: center; font-weight: 700; font-style: normal; font-stretch: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">28.09.2028</div></div><div style="position: absolute; left: 178px; top: 433px; width: 1292px; height: 200px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 140px; line-height: 1.2; color: #2f9a93; text-align: center; font-weight: 800; font-style: normal; font-stretch: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">COMING SOON</div></div><div style="position: absolute; left: 300px; top: 631px; width: 1080px; height: 130px; transform: rotate(0deg); opacity: 1; font-family: Bauhaus 93; font-size: 110px; line-height: 1.2; color: #c95543; text-align: center; font-weight: 800; font-style: normal; font-stretch: normal; text-decoration: none; text-transform: uppercase; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">-STAY TUNED-</div></div><div style="position: absolute; left: 284px; top: 857px; width: 1080px; height: 70px; transform: rotate(0deg); opacity: 1; font-family: Arial Black; font-size: 35px; line-height: 1.2; color: #2f9a93; text-align: center; font-weight: 700; font-style: normal; font-stretch: normal; text-decoration: none; text-transform: none; margin: 0; padding: 0; box-sizing: border-box; display: flex; align-items: center; justify-content: center; "><div style="width: 100%;">www.reallygreatsite.com</div></div><img src="asset-2.png" style="position: absolute; left: 1068px; top: 46px; width: 520px; height: 456px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="Uploaded image: 1.png" /><img src="asset-3.png" style="position: absolute; left: 124px; top: 686px; width: 504px; height: 468px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="Uploaded image: 1.png" /><img src="asset-4.png" style="position: absolute; left: 151px; top: 96px; width: 360px; height: 332px; transform: rotate(0deg); opacity: 1.0; object-fit: fill; " alt="Uploaded image: 2.png" /><img src="asset-5.png" style="position: absolute; left: 1199px; top: 708px; width: 312px; height: 308px; transform: rotate(20deg); opacity: 1.0; object-fit: fill; " alt="Uploaded image: 2.png" />
     </div>
 </body>
 </html>

@@ -1,11 +1,11 @@
 {
   "background_color": "#0e2735",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photograph of a dark teal-blue bokeh background with large soft circular light orbs. In the foreground on a textured dark surface sit five terracotta clay oil lamps (diyas) arranged in a gentle arc, each with a bright yellow-orange flame; the center diya is closest and largest with glowing embers/sparks rising. Side diyas recede into depth of field with soft blur; overall scene has warm highlights near flames and cool shadows toward edges.",
+  "background_image_description": "Five lit diyas (oil lamps) are arranged on a dark surface. The diyas are orange and have a shallow bowl-like shape. Each diya has a flame with a bright yellow-orange glow. The background is dark teal with blurred, out-of-focus circles of light.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_aqsw00aqsw00aqsw.png",
+      "asset_description": "Five lit diyas (small clay lamps) are arranged on a dark surface. The flames are bright orange and yellow, with sparks visible near the center of each diya. The background is dark with blurred blue and pink bokeh effects. A small white diamond shape appears in the bottom right corner.",
       "filename": "asset-1.png",
       "x": -7,
       "y": -17,

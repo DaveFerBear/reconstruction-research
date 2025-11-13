@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Central vintage cartoon illustration of three anthropomorphic fruits jogging side by side: a green apple with blue-striped pants on the left, a red triangular watermelon slice with seeds in the middle, and a yellow pineapple with green leaves on the right. Each character has black-outlined eyes, smiles, gloved hands, and sneakers in pastel colors. Behind them are retro halftone pink dots and soft green swooshing shapes suggesting motion.",
+      "asset_description": "Three anthropomorphic fruit characters—a green coconut drink with a straw and umbrella, a watermelon slice with eyes and a smile, and a pineapple with a leafy stem—are depicted in a running pose against a dotted pink and green background. The characters wear colorful sandals and appear to be in motion.",
       "filename": "asset-1.png",
       "x": 106,
       "y": 143,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Left thin black-stroked white oval label (no fill beyond white) placed horizontally.",
+      "svg_description": "A black oval shape is centered on a white background. The oval is uniformly filled and has a smooth, continuous outline.",
       "filename": "svg-1.svg",
       "x": 112,
       "y": 238,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Right thin black-stroked white oval label (no fill beyond white) placed horizontally.",
+      "svg_description": "A simple black oval shape is centered on a white background. The oval is closed and uniformly sized, with no additional markings or text.",
       "filename": "svg-2.svg",
       "x": 424,
       "y": 238,

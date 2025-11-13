@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A statue of a woman wearing a light-colored robe and head covering is shown against a white background. The statue’s head is turned slightly to the right, and its right arm is raised. The statue’s left arm is partially visible. The background is uniformly white.",
       "filename": "asset-2.png",
       "x": 17,
       "y": 3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 9.png",
+      "asset_description": "A woman with shoulder-length blonde hair sits against a black background. She wears a white long-sleeved shirt and light-colored pants. Her right hand rests on her cheek, and her left arm is bent, with her hand near her head. She looks directly at the camera.",
       "filename": "asset-3.png",
       "x": 4,
       "y": -176,

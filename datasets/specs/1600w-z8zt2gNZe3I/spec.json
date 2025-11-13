@@ -1,11 +1,11 @@
 {
   "background_color": "#0f2430",
   "has_background_image": true,
-  "background_image_description": "Full-canvas photographic portrait. Right half features a middle‑aged man with short dark hair and trimmed goatee wearing a dark navy crewneck sweater over a light gray collared shirt, softly smiling. Left half shows a dark teal textured wall. A subtle vignette darkens the top and corners. From the bottom edge upward ~30% there is a soft blue overlay gradient (transparent to #1e73b8) that adds a cool tint.",
+  "background_image_description": "A man with short brown hair and a beard is positioned against a dark teal background. He wears a dark blue v-neck sweater over a light blue collared shirt. His arms are crossed, and he looks directly at the camera with a slight smile.",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Thin vertical line used as a quote accent, solid color #ffffff, 6px wide, running from y=300 to y=1080.",
+      "svg_description": "A plain white background.",
       "filename": "svg-1.svg",
       "x": 120,
       "y": 300,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Full-width footer rectangle at the bottom, solid fill #ffffff.",
+      "svg_description": "A plain white background.",
       "filename": "svg-2.svg",
       "x": 0,
       "y": 1440,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin vertical divider line within the footer, solid color #e6e9ee, 2px wide.",
+      "svg_description": "A light gray vertical line runs from the top to the bottom of the image. The background is entirely white.",
       "filename": "svg-3.svg",
       "x": 1100,
       "y": 1440,

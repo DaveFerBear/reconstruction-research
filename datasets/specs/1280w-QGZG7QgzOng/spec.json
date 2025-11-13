@@ -1,11 +1,11 @@
 {
   "background_color": "#63B3E6",
   "has_background_image": true,
-  "background_image_description": "Textured blue sky backdrop with subtle film grain and scattered soft white cumulus clouds, denser at the lower-left and mid-right; gentle vertical gradient from deeper azure at the top to slightly lighter blue toward the bottom.",
+  "background_image_description": "The image shows a clear blue sky with scattered white clouds. The clouds are primarily fluffy and cumulus-shaped, with some areas appearing denser and whiter. The sky is a uniform, light blue color with no visible horizon or ground features. The clouds are distributed across the image, with some located near the bottom left corner and others near the top right. No other objects or text are present in the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_o5wuxoo5wuxoo5wu.png",
+      "asset_description": "A light blue sky with scattered white clouds of varying sizes. The clouds are mostly concentrated in the lower half of the image, with some smaller, wispy clouds near the top. The sky has a slightly textured appearance, possibly due to small particles or dust.",
       "filename": "asset-3.png",
       "x": -75,
       "y": -3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Overhead photo of an open Bible centered on the canvas. The book shows two pages of dense black text in two columns with small headings; cream-colored pages with slightly darker edges and a black cover visible at left and right. The book is photographed on transparent background with no visible shadow.",
+      "asset_description": "An open book with cream-colored pages displays dense text in a serif typeface. The pages are numbered and contain paragraphs of text arranged in columns. The book is bound in dark leather with a visible spine and edges. The background is a dark gradient, emphasizing the book’s open pages.",
       "filename": "asset-1.png",
       "x": 261,
       "y": 351,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_1mr8pk1mr8pk1mr8.png",
+      "asset_description": "A white, hand-drawn oval shape is centered on a transparent background. The oval is slightly irregular, with some uneven edges and slight variations in thickness. The background consists of a regular grid of gray and white squares.",
       "filename": "asset-2.png",
       "x": 684,
       "y": 309,
@@ -71,7 +71,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: woosh.png",
+      "asset_description": "A horizontal white line stretches across the center of the image against a solid black background. The line is slightly uneven, with small variations in thickness.",
       "filename": "asset-4.png",
       "x": 600,
       "y": 1110,

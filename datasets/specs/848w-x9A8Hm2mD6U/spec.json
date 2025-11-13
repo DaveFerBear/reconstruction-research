@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Softly lit interior photograph of a modern workspace. A large matte blue round table fills the lower half; on it are a stack of books with red, white, and blue covers at the right edge, an open silver-gray laptop angled left, a dark ceramic mug with white drip glaze near center, and a slim black smartphone partly under a white notebook. Background shows an out-of-focus light gray wall with a diagonal handrail or pipe entering from the left. Neutral, desaturated tones overall.",
+      "asset_description": "A round blue table holds a silver laptop, a dark blue mug with a white design, a smartphone, and a stack of books. A light-colored wall and a portion of a staircase are visible in the background.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 100,
@@ -100,7 +100,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Small circular logo mark: solid black ring with a simple lowercase 'c' glyph centered inside, appearing as a minimalist icon.",
+      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the letter, and the letter is centered within the circle. The background is white.",
       "filename": "svg-1.svg",
       "x": 812,
       "y": 24,

@@ -1,7 +1,7 @@
 {
   "background_color": "#0c1513",
   "has_background_image": true,
-  "background_image_description": "Moody, dark green photographic background showing close-up tropical leaves (monstera-like) with shallow depth of field; large leaf arcs from center-right toward the middle, blurred foliage along the bottom, and deep green-black negative space across the canvas.",
+  "background_image_description": "A large, dark green leaf with prominent veins dominates the right side of the frame, angled slightly downward. The background is a darker shade of green, with blurred foliage visible at the bottom of the image. The lighting is dim, creating a moody atmosphere. The leaf's edges appear slightly blurred, possibly due to a shallow depth of field. The overall composition emphasizes the leaf's texture and color against the dark green backdrop.",
   "nodes": [
     {
       "type": "text",
@@ -192,7 +192,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle button outline with 2px stroke, 44px corner radius, no fill. Stroke color #EAE4D6.",
+      "svg_description": "The image is entirely white. Centered horizontally is a thin, light orange-red oval shape.",
       "filename": "svg-1.svg",
       "x": 1140,
       "y": 706,

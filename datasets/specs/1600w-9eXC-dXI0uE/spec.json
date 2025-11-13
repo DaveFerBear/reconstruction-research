@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A purple vertical rectangle with a white wavy line across its upper portion. The line starts near the top and ends near the bottom, slightly curved.",
       "filename": "asset-6.png",
       "x": 689,
       "y": 167,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_sjblijsjblijsjbl.png",
+      "asset_description": "A man with brown hair and a beard sits in a light gray beanbag chair, wearing a purple long-sleeved shirt and brown pants. He is holding a silver laptop computer on his lap and looking down at it with a smile. The background is transparent.",
       "filename": "asset-5.png",
       "x": 88,
       "y": 500,
@@ -27,7 +27,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Hand-drawn oval ring underline encircling the word 'handle'; skewed ellipse with two overlapping strokes: primary stroke #7c3aed (6\u20138px) and an offset shadow stroke #000000 (4px) slightly trailing on the lower-right, forming a dynamic scribble highlight.",
+      "svg_description": "A purple ring is shown against a white background. The ring is slightly thicker at the edges and has a smooth, uniform surface.",
       "filename": "svg-4.svg",
       "x": 386,
       "y": 192,
@@ -88,7 +88,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded button outline (pill shape) with 36px corner radius, 4px stroke #7c3aed, transparent fill.",
+      "svg_description": "A purple oval shape is centered on a white background. The oval is uniformly colored and has a smooth, continuous outline.",
       "filename": "svg-5.svg",
       "x": 140,
       "y": 848,
@@ -115,7 +115,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 60.png",
+      "asset_description": "A purple, wavy, continuous line is centered on a black background. The line is smooth and continuous, with no sharp points or breaks.",
       "filename": "asset-2.png",
       "x": -429,
       "y": 869,
@@ -126,7 +126,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 60.png",
+      "asset_description": "A purple, wavy, continuous line is centered on a black background. The line is smooth and continuous, with no sharp points or breaks.",
       "filename": "asset-3.png",
       "x": -189,
       "y": -186,

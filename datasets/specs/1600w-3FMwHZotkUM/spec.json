@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled design.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-5.png",
       "x": 1245,
       "y": -23,
@@ -118,7 +118,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_q8y7j4q8y7j4q8y7.png",
+      "asset_description": "A computer monitor displaying a website titled “Savoir-Vivre Clique” sits on a white desk. Beside it, a green and white checkered mug rests on the desk. A pair of legs, clad in orange and yellow striped socks and blue jeans, lie casually on the desk. A white mug with a green and white checkered pattern is visible nearby. Above the monitor, two wooden shelves hold a radio, books, a framed photo, and decorative objects. The wall behind the shelves is white.",
       "filename": "asset-6.png",
       "x": 1191,
       "y": 309,
@@ -129,7 +129,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_k6u42ok6u42ok6u4.png",
+      "asset_description": "A young woman with long red hair and glasses sits cross-legged on a patterned rug, wearing a light green long-sleeved shirt and pink pants. She holds a blue pen in her right hand and looks down at a black laptop computer placed on her lap. In front of her is a spiral-bound notebook and a black tablet computer resting on the rug. A black leather couch is visible in the background to the right, and a wooden table with a lamp is partially visible to the left.",
       "filename": "asset-7.png",
       "x": 434,
       "y": 309,
@@ -140,7 +140,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_rwgf42rwgf42rwgf.png",
+      "asset_description": "An orange, glossy mushroom-shaped lamp sits atop a stack of three books on a wooden surface. The lamp has a rounded base and a wide, dome-like top. A white cord extends from the base of the lamp to the left. To the right of the lamp, a small black and white photograph rests on the books. The background is a plain white wall.",
       "filename": "asset-8.png",
       "x": 811,
       "y": 309,
@@ -151,7 +151,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_1g35s41g35s41g35.png",
+      "asset_description": "A person wearing a white long-sleeved shirt is seated at a wooden table, typing on a silver laptop. The laptop screen displays a recipe image showing a bowl of food with orange slices and a fork. A stack of books rests to the left, and an orange bowl filled with oranges sits behind the laptop. The person’s hands are positioned on the laptop’s keyboard.",
       "filename": "asset-9.png",
       "x": 49,
       "y": 309,

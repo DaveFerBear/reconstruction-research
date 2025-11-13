@@ -1,11 +1,11 @@
 {
   "background_color": "#efe6d8",
   "has_background_image": true,
-  "background_image_description": "Subtle warm off‑white recycled paper texture with tiny grey and tan speckles evenly distributed across the entire 900x1600 canvas.",
+  "background_image_description": "A light beige or cream-colored background with small, scattered specks of orange-brown. The speckles are relatively small and evenly distributed across the surface.",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Thin blue oval outline centered near the top (stroke ~2px, no fill) used as a badge frame.",
+      "svg_description": "A blue circle is centered on a white background.",
       "filename": "svg-1.svg",
       "x": 295,
       "y": 78,
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Isolated photo of a light turquoise ceramic cup with latte art (rosetta/leaf) on a matching speckled saucer with a warm tan rim; soft shadow beneath, viewed slightly above at a 3/4 angle.",
+      "asset_description": "A light teal cup with a handle sits on a light blue saucer with an orange rim. The cup is filled with a light brown liquid topped with white foam swirls. The background is a dark gray gradient.",
       "filename": "asset-1.png",
       "x": 100,
       "y": 600,
@@ -76,7 +76,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal blue rule (stroke ~2px) spanning the layout to frame the pricing section (top line).",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-2.svg",
       "x": 90,
       "y": 1075,
@@ -154,7 +154,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal blue rule (stroke ~2px) spanning the layout to frame the pricing section (bottom line).",
+      "svg_description": "A solid blue horizontal bar spans the width of the image, positioned centrally.",
       "filename": "svg-3.svg",
       "x": 90,
       "y": 1275,

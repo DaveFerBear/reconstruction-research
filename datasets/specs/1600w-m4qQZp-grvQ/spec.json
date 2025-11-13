@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Wide landscape photograph of an arid desert plain with low sandy mounds across the horizon and a pale blue-gray sky. Centered in the frame is a solitary figure walking away from the camera wearing a long beige trench coat and black shoes; soft, muted colors and natural daylight.",
+      "asset_description": "A man walks away from the camera across a flat, sandy desert landscape. He wears a light beige long coat, white pants, and dark shoes. His dark hair is visible under the coat. The sand is light tan and sparsely covered with small stones. In the distance, rolling sand dunes rise against a pale blue sky.",
       "filename": "asset-1.png",
       "x": -20,
       "y": -28,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled-2.png",
+      "asset_description": "A completely white image with no visible content.",
       "filename": "asset-2.png",
       "x": 633,
       "y": 265,

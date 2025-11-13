@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Full-canvas composite: left-center features a smiling young woman with long straight blonde hair wearing a green button-up shirt, raising her right hand to make an 'OK' gesture. Background behind her is a soft matte pink that blends toward the right into a vivid yellow gradient. Across the lower-left to mid area is a yellow halftone dot field (dots increasing in size toward the bottom-left). The bottom portion merges smoothly into the yellow area used for headline placement.",
+      "asset_description": "A woman with long blonde hair wears a green shirt with a dotted pattern. She is smiling and making an \"OK\" hand gesture with her right hand against a pink and yellow gradient background.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid rounded-rectangle button filled with near-black (#111111).",
+      "svg_description": "A black horizontal bar is centered on a white background. The bar is uniformly black and spans the width of the image, with no visible texture, patterns, or variations in color.",
       "filename": "svg-1.svg",
       "x": 592,
       "y": 1392,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Right-pointing triangular arrow icon filled #111111, positioned to the right of the button.",
+      "svg_description": "A black triangle is centered on a white background. The triangle is oriented with its apex pointing to the right.",
       "filename": "svg-2.svg",
       "x": 1240,
       "y": 1362,

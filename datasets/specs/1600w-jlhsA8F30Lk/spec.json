@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Solid speech bubble: asymmetrical rounded blob with a short triangular tail pointing toward the lower-left. No stroke, no shadow. Fill color #D85584.",
+      "svg_description": "A pink speech bubble shape with a pointed tail extending to the left. The bubble is centered against a white background.",
       "filename": "svg-1.svg",
       "x": 520,
       "y": 120,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "3D glossy pink megaphone angled up-right. Pink rim and body with shiny highlights, light gray inner horn, small beige button/trigger, and subtle reflections. No background.",
+      "asset_description": "A pink megaphone with a white inner cone and a pink handle is centered on a gray surface. The background is dark gray with light pink highlights around the megaphone.",
       "filename": "asset-1.png",
       "x": 150,
       "y": 890,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_vi9hyovi9hyovi9h.png",
+      "asset_description": "A black and white photograph shows a model with dark hair pulled back, wearing a light-colored, long-sleeved blazer over a white garment. The model stands against a dark wall with shadows cast on the left side. A small, light-colored diamond shape appears in the bottom right corner.",
       "filename": "asset-2.png",
       "x": -15,
       "y": 1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid vertical panel rectangle filling the right side of the canvas",
+      "svg_description": "The image is divided into two vertical halves. The left half is white, while the right half is black.",
       "filename": "svg-1.svg",
       "x": 1066,
       "y": 0,
@@ -145,7 +145,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A white line drawing on a black background depicts two figures embracing. The figure on the left has their arms wrapped around the other figure, who has their arms around the left figure’s waist. The figures are positioned vertically, with their heads close together. The drawing style is minimalist and uses only white lines against a black background.",
       "filename": "asset-3.png",
       "x": 963,
       "y": 173,

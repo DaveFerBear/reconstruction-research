@@ -1,11 +1,11 @@
 {
   "background_color": "#f4d1d4",
   "has_background_image": true,
-  "background_image_description": "Subtle light-pink paper texture with fine grain, tiny speckles, and very soft vignette; no distinct shapes, just organic paper fibers.",
+  "background_image_description": "A plain, light beige or off-white background fills the frame. The surface appears smooth with subtle horizontal texture variations. No objects, patterns, or text are visible.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Vintage red rotary telephone facing slightly right with glossy highlights; translucent rotary dial with numbers, handset resting on cradle, and long red coiled cord extending left across the surface. Soft shadow beneath phone.",
+      "asset_description": "A red rotary telephone with a coiled cord rests on a light-colored surface against a dark background. The rotary dial features numbered markings and a central circular button. The phone’s handset is visible at the top, and the coiled cord extends to the left. The lighting creates a gradient effect, transitioning from dark around the edges to brighter in the center.",
       "filename": "asset-1.png",
       "x": 249,
       "y": 227,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Six-armed red asterisk mark composed of tapered bars, evenly spaced at 60-degree increments; resembles a decorative burst symbol.",
+      "svg_description": "A red, eight-pointed star is centered on a white background. Each point is formed by straight lines extending from the center, creating a symmetrical design.",
       "filename": "svg-1.svg",
       "x": 146,
       "y": 660,
@@ -127,7 +127,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled design.png",
+      "asset_description": "A horizontal, reddish-orange line is drawn on a black background. The line is slightly curved and has a textured appearance.",
       "filename": "asset-5.png",
       "x": 333,
       "y": 1239,

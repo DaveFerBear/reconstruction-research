@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 12.png",
+      "asset_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient.",
       "filename": "asset-9.png",
       "x": -21,
       "y": 1166,
@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three small decorative sparkles: two cream line starbursts (four-point, fine stroke) near left-mid and right-mid, and one solid red diamond (#C21A17) near right-mid. Minimal, thin lines.",
+      "svg_description": "A yellow plus sign is centered on a white background. A small red diamond is positioned to the right of the plus sign.",
       "filename": "svg-3.svg",
       "x": -626,
       "y": 392,
@@ -26,7 +26,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 11.png",
+      "asset_description": "A bright yellow, jagged-edged circle with a dark red outline is shown against a black background. The circle has a symmetrical, star-like shape with pointed tips.",
       "filename": "asset-5.png",
       "x": 77,
       "y": 949,
@@ -37,7 +37,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 10.png",
+      "asset_description": "A red rectangle is centered on a black background. The rectangle is uniformly colored and has a smooth, flat appearance.",
       "filename": "asset-4.png",
       "x": 723,
       "y": 1260,
@@ -48,7 +48,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 9.png",
+      "asset_description": "A red horizontal bar is centered on a black background. The bar is uniformly colored and spans the width of the image.",
       "filename": "asset-3.png",
       "x": 96,
       "y": -106,
@@ -110,7 +110,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: oval price tag.jpg",
+      "asset_description": "A solid yellow circle with a dark red border is shown against a white background. The circle is centered and fills the frame.",
       "filename": "asset-7.png",
       "x": 735,
       "y": 461,
@@ -121,7 +121,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: oval price tag.jpg",
+      "asset_description": "A solid yellow circle with a dark red border is shown against a white background. The circle is centered and fills the frame.",
       "filename": "asset-8.png",
       "x": 145,
       "y": 524,
@@ -166,7 +166,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Single-color line-art illustration of a burger drawn in dark red (#C21A17): domed sesame bun, layers of patty, lettuce, sauce and stylized abstract swirls; thick outline with interior contour lines; no shading; placed on a plate-like bottom bun.",
+      "asset_description": "A red line drawing of a burger on a white background. The burger consists of a top and bottom bun, filled with layered ingredients including lettuce, tomato, onion, and cheese. The top bun has a textured appearance with lines suggesting a pattern. The bottom bun is plain. The drawing style is simple and bold, with no shading or detailed textures.",
       "filename": "asset-1.png",
       "x": 454,
       "y": 613,
@@ -278,7 +278,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 16.png",
+      "asset_description": "A horizontal checkerboard pattern composed of alternating red and white squares. The squares are arranged in rows and columns, with each row containing an equal number of red and white squares. The image is on a light beige background.",
       "filename": "asset-2.png",
       "x": 672,
       "y": 79,
@@ -289,7 +289,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 16.png",
+      "asset_description": "A checkerboard pattern composed of alternating red and white squares is shown against a cream-colored background. The squares are arranged in a grid-like formation, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated, particularly toward the edges.",
       "filename": "asset-10.png",
       "x": 90,
       "y": 1473,
@@ -300,7 +300,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1.png",
+      "asset_description": "A red, diamond-shaped symbol is centered on a light beige background. The symbol is slightly blurred and has a subtle gradient in its red color.",
       "filename": "asset-11.png",
       "x": 971,
       "y": 718,
@@ -311,7 +311,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 2.png",
+      "asset_description": "A reddish-brown starburst shape is centered on a light beige background. The shape has four pointed arms extending from a central point, with slight variations in thickness along each arm. The arms are evenly spaced and point outward from the center, creating a symmetrical design.",
       "filename": "asset-12.png",
       "x": 47,
       "y": 315,

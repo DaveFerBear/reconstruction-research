@@ -1,11 +1,11 @@
 {
   "background_color": "#d8e6cd",
   "has_background_image": true,
-  "background_image_description": "Subtle light-sage grid across the entire 1600x1600 canvas. Base is #d8e6cd with thin square gridlines in #c5d7bd spaced evenly (~160px), giving a calm notebook-like pattern.",
+  "background_image_description": "A light teal background with a grid pattern. The grid lines are thin and evenly spaced, creating a subtle texture. The color transitions from a lighter shade on the left to a slightly darker shade on the right.",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Large white rounded rectangle banner occupying the lower portion of the canvas with a gentle concave dip along the top edge centered under the jar area; smooth corners (~32px radius). Fill #ffffff, no stroke.",
+      "svg_description": "A plain white background fills the frame.",
       "filename": "svg-1.svg",
       "x": 80,
       "y": 980,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Flat oval shadow centered under the jar. Ellipse filled #93ad91 with soft edges (no stroke).",
+      "svg_description": "A light green oval shape is centered on a white background. The oval is slightly elongated and has a subtle gradient, giving it a soft, natural appearance.",
       "filename": "svg-2.svg",
       "x": 520,
       "y": 820,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Hand-drawn glass jar with thick dark green outline (#2f4f46). White body (#ffffff) with subtle interior dark-green accent lines, short squiggle near the base, and lid area consisting of stacked rim lines. The jar has a warm yellow-orange lid/top fill (#f7c56d). Inside the jar are four doodle hearts with the same dark green outline: two red hearts (#d24b40) and two golden hearts (#f0b562), arranged diagonally.",
+      "svg_description": "A stylized jar with a yellow lid and dark green outline contains three heart-shaped decorations. Two are red and one is yellow. The jar is centered on a white background.",
       "filename": "svg-3.svg",
       "x": 650,
       "y": 470,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three short hand-drawn white dash marks suggesting sparkles, angled slightly, placed left of the jar. Strokes #ffffff, rounded caps.",
+      "svg_description": "A plain white background.",
       "filename": "svg-4.svg",
       "x": 300,
       "y": 330,
@@ -45,7 +45,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Loose hand-drawn heart outline in white (#ffffff) with a single continuous stroke, placed at the upper-right near the headline.",
+      "svg_description": "A completely white image with no visible features or objects.",
       "filename": "svg-5.svg",
       "x": 1370,
       "y": 210,
@@ -72,7 +72,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Decorative number \"1\" with playful bubble style: fill #98b892, thick outline #2f4f46, small white dots (#ffffff) as highlights.",
+      "svg_description": "A dark green, elongated handle with two small white circles near its ends is shown against a white background. The handle has a curved, slightly tapered shape with a lighter green inner section visible at the top.",
       "filename": "svg-6.svg",
       "x": 150,
       "y": 1060,
@@ -99,7 +99,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Decorative number \"2\" with the same bubble style as the 1: fill #98b892, thick outline #2f4f46, white highlight dots.",
+      "svg_description": "A dark green hourglass shape with a lighter green interior is shown against a white background. The upper portion curves inward, forming a rounded top, while the lower portion curves outward and downward. A small white circle is visible near the upper left portion of the hourglass.",
       "filename": "svg-7.svg",
       "x": 150,
       "y": 1210,
@@ -126,7 +126,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Decorative number \"3\" in matching bubble style: fill #98b892, thick outline #2f4f46, white highlight dots.",
+      "svg_description": "A dark green circle with a thick, dark green border encloses a lighter green inner circle. Inside the inner circle, the number \"3\" is displayed in dark green. Two small white circles are positioned near the number.",
       "filename": "svg-8.svg",
       "x": 820,
       "y": 1060,
@@ -153,7 +153,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Hand-drawn brush underline stroke beneath the step 3 paragraph, slightly curved and tapering ends, fill #93ad91.",
+      "svg_description": "A light green, curved, horizontal shape is centered on a white background. The shape is smooth and continuous, with no visible breaks or edges.",
       "filename": "svg-9.svg",
       "x": 1000,
       "y": 1380,

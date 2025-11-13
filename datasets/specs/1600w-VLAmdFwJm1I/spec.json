@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photograph across the canvas showing four people seated around a low table in a bright studio: at left a man in a color-block light gray and pale blue sweater, center-left a blonde woman in a black sweatshirt, center-right a man with long dark curly hair in a navy jacket over a white shirt, and far right a woman in glasses wearing a bright cobalt knit with orange-and-blue striped sleeves. White wall backdrop; scene cropped by a large off-white card overlay in the lower half.",
+  "background_image_description": "Four people stand behind a white table against a plain white wall. From left to right: a man with short brown hair and a gray and blue striped sweater; a woman with long blonde hair and a black sweater; a man with curly brown hair and a dark blue button-up shirt; and a woman with long light brown hair and an orange and blue striped sweater.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Top-to-mid canvas lifestyle photo of a collaborative meeting with four people as described; bright flash lighting, clean white wall background, table edges and hands visible near the bottom; vivid cobalt accents in clothing on the right.",
+      "asset_description": "Four people are gathered around a white table against a white wall. The person on the far left wears a light blue and white striped shirt and blue jeans, holding a small object in their hands. The person next to them wears a black long-sleeved shirt and has their hands clasped together. The third person has dark, curly hair and is wearing a dark blue jacket over a white shirt. The person on the far right wears a blue sweater with orange and blue stripes and has their arm extended toward the center of the table. A piece of paper lies on the table near the person on the right.",
       "filename": "asset-1.png",
       "x": -8,
       "y": -4,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Add a heading.png",
+      "asset_description": "A blue horizontal line spans the width of the image, positioned centrally. Above and below the line are black horizontal bands. The image is entirely black except for the blue line.",
       "filename": "asset-2.png",
       "x": -100,
       "y": 35,

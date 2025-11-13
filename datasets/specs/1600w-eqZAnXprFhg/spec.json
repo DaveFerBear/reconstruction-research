@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Full-width top banner rectangle with a left-to-right linear gradient from light peach (#f6c189) at the left to vivid orange (#e7782e) at the right. No stroke.",
+      "svg_description": "A horizontal gradient bar transitions from light yellow-orange on the left to orange on the right. The bar is positioned above a white background.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
       "filename": "svg-2.svg",
       "x": 110,
       "y": 300,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #d9d6c6 (warm light gray-beige).",
+      "svg_description": "A solid, light beige background fills the frame. The color is uniform and without any visible patterns, textures, or objects.",
       "filename": "svg-3.svg",
       "x": 290,
       "y": 330,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #cfe3f1 (very light blue).",
+      "svg_description": "A light blue square is centered on a white background.",
       "filename": "svg-4.svg",
       "x": 520,
       "y": 250,
@@ -45,7 +45,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange square is centered on a white background.",
       "filename": "svg-5.svg",
       "x": 775,
       "y": 230,
@@ -55,7 +55,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-6.svg",
       "x": 980,
       "y": 250,
@@ -65,7 +65,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A plain white background.",
       "filename": "svg-7.svg",
       "x": 1180,
       "y": 270,
@@ -75,7 +75,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the top-right.",
       "filename": "svg-8.svg",
       "x": 1400,
       "y": 250,
@@ -85,7 +85,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #6fa8dc (medium blue).",
+      "svg_description": "A solid blue background fills the frame, appearing uniform and without any visible texture, patterns, or objects.",
       "filename": "svg-9.svg",
       "x": 1260,
       "y": 420,
@@ -95,7 +95,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange square is centered on a white background.",
       "filename": "svg-10.svg",
       "x": 1440,
       "y": 560,
@@ -105,7 +105,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #d9d6c6 (warm light gray-beige).",
+      "svg_description": "A light beige square is centered on a white background. The square is uniform in color and shape, with no visible texture or pattern.",
       "filename": "svg-11.svg",
       "x": 1240,
       "y": 700,
@@ -115,7 +115,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A plain white background fills the frame.",
       "filename": "svg-12.svg",
       "x": 1060,
       "y": 560,
@@ -125,7 +125,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #6fa8dc (medium blue).",
+      "svg_description": "A solid blue background fills the frame, uniformly colored without any variations, textures, or patterns.",
       "filename": "svg-13.svg",
       "x": 720,
       "y": 580,
@@ -135,7 +135,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #cfe3f1 (very light blue).",
+      "svg_description": "A light blue square is centered on a white background. The square is positioned slightly off-center, towards the upper left.",
       "filename": "svg-14.svg",
       "x": 880,
       "y": 620,
@@ -145,7 +145,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
       "filename": "svg-15.svg",
       "x": 520,
       "y": 700,
@@ -155,7 +155,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-16.svg",
       "x": 260,
       "y": 540,
@@ -165,7 +165,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, toward the upper right portion of the image.",
       "filename": "svg-17.svg",
       "x": 80,
       "y": 600,
@@ -175,7 +175,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle (360x130, 24px corner radius) centered horizontally around x=620..980 with a subtle diagonal gradient from peach #f6c189 (top-left) to orange #f0864c (bottom-right). No stroke.",
+      "svg_description": "A horizontal, rectangular shape with a gradient of orange-yellow to light orange is centered against a white background. The shape is uniform in width and length, with no visible edges or patterns.",
       "filename": "svg-18.svg",
       "x": 620,
       "y": 400,
@@ -185,7 +185,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Network of black connector lines (2.5px stroke) radiating from the edges of the central rounded rectangle to the nearest sides of each colored square, each terminating with small triangular arrowheads pointing toward the squares. Lines fan out in all directions with slight angles; no fills besides arrowheads.",
+      "svg_description": "A central white rectangle is connected to six colored squares: red, purple, blue, green, orange, and yellow. Each square is connected by black arrows to the central rectangle.",
       "filename": "svg-19.svg",
       "x": 60,
       "y": 240,
