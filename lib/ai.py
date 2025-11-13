@@ -299,29 +299,35 @@ def gemini_score_edit(original_image_path: str, edited_image_path: str, instruct
     # Call Gemini via litellm with both images
     response = litellm.completion(
         model="gemini/gemini-2.5-pro",
-        messages=[{
-            "role": "user",
-            "content": [
-                {
-                    "type": "text",
-                    "text": f"{EDIT_CRITIC_PROMPT}\n\nEdit instruction: {instruction}\n\nOriginal design:"
-                },
-                {
-                    "type": "image_url",
-                    "image_url": {"url": f"data:{original_mime};base64,{original_data}"}
-                },
-                {
-                    "type": "text",
-                    "text": "Edited design:"
-                },
-                {
-                    "type": "image_url",
-                    "image_url": {"url": f"data:{edited_mime};base64,{edited_data}"}
-                }
-            ]
-        }],
+        messages=[
+            {
+                "role": "system",
+                "content": EDIT_CRITIC_PROMPT
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": f"Edit instruction: {instruction}\n\nOriginal design:"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {"url": f"data:{original_mime};base64,{original_data}"}
+                    },
+                    {
+                        "type": "text",
+                        "text": "Edited design:"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {"url": f"data:{edited_mime};base64,{edited_data}"}
+                    }
+                ]
+            }
+        ],
         api_key=GEMINI_API_KEY,
-        timeout=timeout
+        timeout=timeout,
     )
 
     # Extract score from response
