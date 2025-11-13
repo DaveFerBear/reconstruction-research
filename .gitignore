@@ -3,3 +3,6 @@ datasets_secret/
 .DS_Store
 .env
 *.pyc
+
+# Temp for now
+edits/
