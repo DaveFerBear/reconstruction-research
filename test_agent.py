@@ -7,6 +7,7 @@ from pathlib import Path
 from datetime import datetime
 from agents import ZeroShotAgent
 from agents.singleshot import SingleShotAgent
+from agents.multishot import MultiShotAgent
 
 def main():
     # Parse arguments
@@ -19,7 +20,7 @@ def main():
     parser.add_argument("output_path", nargs="?", default=None,
                         help="Path to save edited spec (default: auto-generate from design + agent + timestamp)")
     parser.add_argument("--agent", default="ZeroShotAgent",
-                        choices=["ZeroShotAgent", "SingleShotAgent"],
+                        choices=["ZeroShotAgent", "SingleShotAgent", "MultiShotAgent"],
                         help="Agent type to use (default: ZeroShotAgent)")
 
     args = parser.parse_args()
@@ -62,6 +63,8 @@ def main():
     # Create agent based on type
     if args.agent == "SingleShotAgent":
         agent = SingleShotAgent(verbose=True)
+    elif args.agent == "MultiShotAgent":
+        agent = MultiShotAgent(verbose=True)
     else:
         agent = ZeroShotAgent(verbose=True)
 
