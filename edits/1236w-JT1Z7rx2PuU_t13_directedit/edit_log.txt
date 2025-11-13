@@ -1,18 +1,13 @@
 ================================================================================
-DIRECTEDIT AGENT EDIT LOG
+DIRECTEDIT AGENT EDIT LOG (Single-Shot)
 ================================================================================
-Timestamp: 2025-11-12 15:34:30
+Timestamp: 2025-11-12 16:16:54
 Model: gemini/gemini-2.5-pro
 Temperature: 0.7
-Max Iterations: 3
 
 USER INSTRUCTION:
 Add a subtitle “Celebrating our new studio” centered below “OPENING” in 18pt uppercase sans-serif, light gray (#CCCCCC), with tight tracking to visually bridge the headline and event details.
 
-================================================================================
-
-================================================================================
-ITERATION 1/3
 ================================================================================
 
 Tool Calls: 1
@@ -23,15 +18,6 @@ Tool Calls: 1
     "message": "Spec updated successfully",
     "nodes_count": 12
 }
-
-================================================================================
-ITERATION 2/3
-================================================================================
-
-LLM Response:
-I've added the subtitle as requested. It's now centered below "OPENING" in a light gray, uppercase, 18pt sans-serif font, creating a nice bridge between the main headline and the event details.
-
-LLM finished editing (no more tool calls)
 
 ================================================================================
 EDIT COMPLETED

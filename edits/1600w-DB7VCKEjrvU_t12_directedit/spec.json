@@ -7,14 +7,14 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A rounded, blob-like cyan \u201cM\u201d with a speckled, distressed texture sits centered on a deep navy background. The minimalist, flat graphic style uses high contrast and simple composition.",
+      "asset_description": "A minimalist graphic features a rounded, turquoise \u201cM\u201d with a speckled texture centered on a deep navy background. The design is simple and playful, with soft, blobby contours and ample negative space.",
       "filename": "asset-1.png",
       "x": 619,
       "y": 493,
       "width": 458,
       "height": 387,
       "rotation": 0,
-      "opacity": 1.0
+      "opacity": 1
     },
     {
       "type": "text",
@@ -24,7 +24,7 @@
       "width": 360,
       "height": 120,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Bungee",
       "font_size": 112,
       "color": "#f3e6d4",
@@ -42,7 +42,7 @@
       "width": 360,
       "height": 70,
       "rotation": 0,
-      "opacity": 1.0,
+      "opacity": 1,
       "font_family": "Helvetica",
       "font_size": 52,
       "color": "#f29ab0",

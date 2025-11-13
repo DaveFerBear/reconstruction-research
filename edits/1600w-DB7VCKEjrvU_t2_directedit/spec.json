@@ -1,0 +1,56 @@
+{
+  "canvas_width": 1600,
+  "canvas_height": 1600,
+  "background_color": "#3e496d",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Abstract graphic featuring pastel, speckled shapes\u2014a cream eye with lashes, a pink arch, a bulbous blue H, a yellow spiral square, and a pink bar\u2014floating on a dark gradient background with soft neon halos. The style is modern and minimal, with bold forms and glow effects creating a poster-like composition.",
+      "filename": "asset-1.png",
+      "x": 366,
+      "y": 607,
+      "width": 458,
+      "height": 387,
+      "rotation": 0,
+      "opacity": 1.0
+    },
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 874,
+      "y": 700,
+      "width": 360,
+      "height": 120,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Bungee",
+      "font_size": 112,
+      "color": "#f3e6d4",
+      "text_align": "center",
+      "font_weight": "100",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 874,
+      "y": 830,
+      "width": 360,
+      "height": 70,
+      "rotation": 0,
+      "opacity": 1.0,
+      "font_family": "Helvetica",
+      "font_size": 52,
+      "color": "#f29ab0",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ]
+}

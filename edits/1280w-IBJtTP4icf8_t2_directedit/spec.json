@@ -8,8 +8,8 @@
     {
       "type": "text",
       "text": "Clean girl",
-      "x": 222,
-      "y": 1150,
+      "x": 340,
+      "y": 1200,
       "width": 900,
       "height": 190,
       "rotation": 0,
@@ -26,8 +26,8 @@
     {
       "type": "text",
       "text": "healthy habits",
-      "x": 222,
-      "y": 1365,
+      "x": 340,
+      "y": 1415,
       "width": 900,
       "height": 150,
       "rotation": 0,
@@ -44,9 +44,9 @@
     {
       "type": "text",
       "text": "@reallygreatsite",
-      "x": 23,
+      "x": 158,
       "y": 184,
-      "width": 1280,
+      "width": 900,
       "height": 44,
       "rotation": 0,
       "opacity": 1.0,

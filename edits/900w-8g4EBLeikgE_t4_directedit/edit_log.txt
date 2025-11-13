@@ -1,18 +1,13 @@
 ================================================================================
-DIRECTEDIT AGENT EDIT LOG
+DIRECTEDIT AGENT EDIT LOG (Single-Shot)
 ================================================================================
-Timestamp: 2025-11-12 15:33:34
+Timestamp: 2025-11-12 16:15:56
 Model: gemini/gemini-2.5-pro
 Temperature: 0.7
-Max Iterations: 3
 
 USER INSTRUCTION:
 Remove the handwritten “Fast, Fresh & Delicious” overlay and tighten the spacing between “LUNCH” and “TIMES” by 12px.
 
-================================================================================
-
-================================================================================
-ITERATION 1/3
 ================================================================================
 
 Tool Calls: 1
@@ -21,17 +16,8 @@ Tool Calls: 1
   ← Result: {
     "success": true,
     "message": "Spec updated successfully",
-    "nodes_count": 7
+    "nodes_count": 8
 }
-
-================================================================================
-ITERATION 2/3
-================================================================================
-
-LLM Response:
-I've removed the handwritten text overlay and tightened the spacing for "LUNCH TIMES" as you requested.
-
-LLM finished editing (no more tool calls)
 
 ================================================================================
 EDIT COMPLETED
