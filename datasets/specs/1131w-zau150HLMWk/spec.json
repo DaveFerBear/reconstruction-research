@@ -1,11 +1,11 @@
 {
   "background_color": "#f3f2ee",
   "has_background_image": true,
-  "background_image_description": "The image displays a pattern of vertical stripes in alternating shades of gray and white. The stripes are of equal width and run perfectly vertically from top to bottom of the image, creating a continuous and uniform pattern. The background color is a light gray or off-white, providing a subtle contrast to the stripes. There are no discernible texts, objects, or actions present in the image. The image is purely a depiction of vertical stripes in a monochromatic color scheme.",
+  "background_image_description": "The image displays a pattern of vertical stripes in alternating shades of gray and white. The stripes are of equal width and run perfectly vertically from the top to the bottom of the image, creating a consistent and repetitive design. The background color is a uniform light gray, providing a neutral backdrop for the stripes. No other elements, text, or objects are visible in the image. The stripes are evenly spaced and of the same length, contributing to the overall uniformity of the pattern.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A vertical pattern of evenly spaced light gray stripes on a white background. The stripes are evenly spaced and run from the top to the bottom of the image. The background is a uniform white color.",
+      "asset_description": "A background of vertical gray stripes on a white gradient. The stripes are evenly spaced and fade slightly towards the edges, creating a subtle gradient effect. The image is uniform and symmetrical, with no additional elements or textures.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,

@@ -1,7 +1,7 @@
 {
   "background_color": "#f2f2f2",
   "has_background_image": true,
-  "background_image_description": "A gray and white image depicts a cloudy sky. The clouds are various shades of gray and white, with some areas appearing brighter due to light exposure. The image is evenly lit, with no strong shadows or highlights.",
+  "background_image_description": "A gray sky filled with white clouds. The clouds vary in size and shape, with some areas appearing denser and others more wispy. The overall tone is light and neutral.",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand raised, wearing a black glove on his left wrist. Behind him, a cityscape is visible at sunset, with buildings and a road extending into the distance. Orange and yellow tones are prominent in the sky and cityscape. Brown and gray fragments are scattered around the man and cityscape, appearing to emanate from the right side of the image.",
+      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand clenched, facing left. Behind him, a cityscape is visible against a sunset sky, with tall buildings and a street lined with lights. Orange and yellow hues are prominent in the sky and scattered around the man and cityscape. Brown and gray fragments are dispersed around the edges of the image.",
       "filename": "asset-2.png",
       "x": 144,
       "y": 418,

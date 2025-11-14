@@ -1,11 +1,11 @@
 {
   "background_color": "#ead9c9",
   "has_background_image": true,
-  "background_image_description": "The image features three horizontal layers of paper cutouts in varying colors: yellow, orange-red, and pink. The layers are wavy and create a sense of depth and movement. The bottom layer is a cream or off-white color. The image is flat and two-dimensional, with no three-dimensional elements or perspective.",
+  "background_image_description": "The image features three horizontal waves of color stacked one above the other. The top wave is yellow, the middle wave is orange-red, and the bottom wave is pinkish-coral. The waves have a layered, paper-like appearance, with soft curves and gentle slopes. The colors blend smoothly into one another, creating a gradient effect from top to bottom. The image is flat, with no depth or perspective, focusing solely on the interplay of color and form.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image features four horizontal bands of color: a light beige or cream at the top, a peach or light orange band in the middle, a light pink band in the middle, and a light beige or cream band at the bottom. The bands are slightly curved and have a soft, blended appearance. A small white diamond shape is visible in the bottom right corner.",
+      "asset_description": "The image features four horizontal bands of color: a light beige or cream at the top, a peach or salmon-colored band in the middle, a light pink band in the middle, and a light beige or cream band at the bottom. The bands have a gradient effect, blending from light beige to peach and pink. The image is flat and two-dimensional, with no depth or perspective. A small white diamond shape appears in the bottom right corner.",
       "filename": "asset-2.png",
       "x": 0,
       "y": -6,

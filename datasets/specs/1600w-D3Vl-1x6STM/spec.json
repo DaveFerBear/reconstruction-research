@@ -1,11 +1,11 @@
 {
   "background_color": "#f4eedc",
   "has_background_image": true,
-  "background_image_description": "A circular design composed of radiating red and teal stripes on a white background. The stripes are evenly spaced and create a symmetrical pattern extending outward from the center. The central circle is off-white and provides a focal point for the design. The edges of the stripes have a slightly textured appearance.",
+  "background_image_description": "A circular design composed of radiating rays in red, teal, and off-white. The rays are evenly spaced and create a symmetrical pattern around a central off-white circle. The texture appears slightly distressed or vintage, giving it a retro feel.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid black circle is centered on a white background. The circle has a smooth, continuous curve with no visible breaks or variations in thickness.",
+      "asset_description": "A solid black circle is centered on a white background. The circle is uniformly black and has no visible texture, patterns, or additional elements.",
       "filename": "asset-1.png",
       "x": 125,
       "y": 103,
@@ -134,7 +134,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A five-pointed star with a reddish-orange center and a black outline is shown against a white background. The star has a slightly three-dimensional appearance with subtle shading and highlights.",
+      "asset_description": "A five-pointed star with a reddish-orange center and a black outline is shown against a black background. The star has a slightly three-dimensional appearance with subtle shading and highlights.",
       "filename": "asset-5.png",
       "x": 1199,
       "y": 708,

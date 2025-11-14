@@ -1,7 +1,7 @@
 {
   "background_color": "#f5f5f2",
   "has_background_image": true,
-  "background_image_description": "A solid light gray background fills the frame, with no discernible texture, patterns, or objects present. The color is uniform and consistent throughout the image.",
+  "background_image_description": "A solid light gray background fills the frame. The surface appears uniform and featureless, with no discernible texture, patterns, or objects.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single stem with green leaves extends diagonally against a light gray-green background. The leaves are arranged along a single stem, with some leaves appearing slightly lighter in shade. The stem is smooth and slender, connecting the leaves in a linear pattern. The leaves vary slightly in size and shape, with some appearing more elongated and others more rounded. The overall appearance is of a simple, stylized plant illustration or graphic.",
+      "asset_description": "A single stem with several green leaves extends diagonally across the frame against a light gray-green background. The leaves are arranged along the stem, with some appearing slightly lighter or darker due to lighting. The stem is smooth and slender, connecting the leaves in a continuous line. No other objects or text are visible in the image.",
       "filename": "asset-1.png",
       "x": 721,
       "y": -140,
@@ -26,7 +26,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single green plant branch extends diagonally across the image, displaying several leaves of varying sizes and shapes. The leaves are predominantly green with subtle shading and lighter green highlights near the edges. The branch features smaller, emerging leaves at the top and larger, more mature leaves along the stem. The background is a soft, light green gradient, transitioning from a lighter shade on the left to a slightly darker shade on the right. The image is isolated, with no other objects or elements present.",
+      "asset_description": "A single green plant stem with leaves extends diagonally across a light green-to-white gradient background. The leaves are elongated and slightly pointed, with visible veins. The stem has small, light green buds or shoots growing from it.",
       "filename": "asset-2.png",
       "x": -90,
       "y": 1118,

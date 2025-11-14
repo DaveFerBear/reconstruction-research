@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image displays a dark green background with a textured appearance resembling crumpled paper or fabric. Three white, star-shaped shapes are scattered across the image: one in the top left, one in the bottom left, and one in the bottom right. A small, diamond-shaped white shape appears in the bottom right corner.",
+      "asset_description": "The image displays a dark green background with a textured, slightly wrinkled or creased appearance. Three white, star-shaped shapes are positioned near the top left, bottom left, and bottom right of the image. A small, white, diamond-shaped shape appears in the bottom right corner.",
       "filename": "asset-5.png",
       "x": 3,
       "y": -3,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A clear glass filled with a light green beverage sits on a reflective surface. Ice cubes are visible within the drink, and the glass features vertical ridges near the base. The background is a muted gray-green gradient with soft lighting.",
+      "asset_description": "A clear glass filled with a light green beverage containing ice cubes sits on a reflective surface. The glass has vertical ridges and appears slightly rounded. The background is a muted gray-green gradient with soft lighting.",
       "filename": "asset-1.png",
       "x": 137,
       "y": 110,
@@ -88,7 +88,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a black background. The oval is centered and positioned horizontally.",
+      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a solid black background. The oval is centered and positioned horizontally.",
       "filename": "asset-2.png",
       "x": 102,
       "y": 690,

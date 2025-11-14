@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A black smartphone with a blank white screen is centered on a light pink background. The phone’s front-facing camera and buttons are visible along the left edge. The screen occupies most of the visible area, and the phone casts a subtle shadow to the right.",
+      "asset_description": "A black smartphone with a blank white screen is centered on a light pink background. The phone’s front-facing camera and buttons are visible along the left edge. The screen occupies most of the visible area.",
       "filename": "asset-1.png",
       "x": -138,
       "y": 4,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white rectangle with a thin red horizontal line across its center is centered on a black background. The rectangle is oriented horizontally.",
+      "asset_description": "A white rectangle with a thin red horizontal line dividing it into two equal sections. The rectangle is centered against a black background.",
       "filename": "asset-3.png",
       "x": -7,
       "y": 381,
@@ -94,7 +94,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark blue outline of an open envelope with a white bell icon on top. The bell icon has wavy lines suggesting vibration or ringing. The background is plain white.",
+      "asset_description": "A dark blue outline of an open envelope with a white bell icon on top. The bell has curved lines indicating vibration. The image is a simple, flat icon on a white background.",
       "filename": "asset-2.png",
       "x": 691,
       "y": 403,

@@ -42,7 +42,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black diamond shape is centered on a white background. A thin, dark line extends from the lower left point of the diamond, angled upward and to the right.",
+      "svg_description": "A black diamond shape is centered on a white background. A thin, dark line extends from the lower left point of the diamond, angled slightly upward and to the right.",
       "filename": "svg-2.svg",
       "x": 784,
       "y": 40,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black.",
+      "asset_description": "The image is entirely black, with no discernible features, objects, or patterns.",
       "filename": "asset-2.png",
       "x": 423,
       "y": 835,

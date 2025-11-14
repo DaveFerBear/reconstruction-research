@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A pixelated image composed of small squares in varying shades of gray and black. The squares are arranged in a grid-like pattern, with some squares appearing darker or lighter than others. The image is uniform in color and texture, with no visible patterns or objects.",
+  "background_image_description": "A pixelated image composed of small squares in varying shades of gray and black. The squares are arranged in a grid-like pattern, with some squares appearing darker or lighter than others. The image is uniform in color and texture, with no discernible patterns or shapes beyond the squares themselves.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of alternating black and white squares. The squares are arranged in a grid with equal spacing. A small gray diamond is visible in the bottom right corner.",
+      "asset_description": "A checkerboard pattern composed of alternating black and white squares. The pattern is uniform and symmetrical, with no variations in color or size.",
       "filename": "asset-1.png",
       "x": 5,
       "y": -3,
@@ -27,7 +27,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A bright pink, five-pointed star shape is centered on a white background. The star has a smooth, rounded outline and evenly distributed points.",
+      "svg_description": "A bright pink, five-pointed star shape is centered on a white background. The star has a smooth, rounded outline with pointed tips and a slightly curved base.",
       "filename": "svg-2.svg",
       "x": 1390,
       "y": 140,
@@ -88,7 +88,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are rounded and slightly pointed at the tips. The flower is centered and symmetrical.",
+      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance.",
       "filename": "asset-2.png",
       "x": 1107,
       "y": -154,
@@ -99,7 +99,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance.",
+      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance. The flower is symmetrical and evenly spaced, with no visible stem or leaves.",
       "filename": "asset-4.png",
       "x": 66,
       "y": 1012,

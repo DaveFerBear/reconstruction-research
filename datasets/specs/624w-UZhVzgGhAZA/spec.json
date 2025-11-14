@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black oval shape is centered on a white background. The oval is uniformly thick and smooth, with no internal markings or variations in thickness.",
+      "svg_description": "A black oval shape is centered on a white background. The oval is uniformly black and contains no internal markings or variations in thickness.",
       "filename": "svg-1.svg",
       "x": 40,
       "y": 260,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A simple black oval shape is centered on a white background. The oval is uniformly filled and has a smooth, continuous outline.",
+      "svg_description": "A simple black oval shape is centered on a white background. The oval is closed and symmetrical.",
       "filename": "svg-2.svg",
       "x": 480,
       "y": 254,

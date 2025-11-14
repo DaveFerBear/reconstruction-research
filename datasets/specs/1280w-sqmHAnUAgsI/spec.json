@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A woman with dark hair pulled back wears large, light beige-framed sunglasses and a white collared shirt. She is looking directly at the camera with a neutral expression. The background is blurred, showing a street with traffic lights and trees, suggesting an outdoor setting during daylight.",
+      "asset_description": "A woman with dark hair pulled back wears large, light-colored sunglasses with dark lenses. She is wearing a white collared shirt. The background is blurred, showing a street with traffic lights and trees. The woman's expression is neutral.",
       "filename": "asset-5.png",
       "x": 0,
       "y": 3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with brown hair and sunglasses lies on her side on a light-colored paved surface. She wears a white short-sleeved shirt and light beige or khaki pants. Her head is turned slightly to the right, and her right arm rests near her left elbow. The background is out of focus and mostly dark, with some lighter areas visible.",
+      "asset_description": "A woman with brown hair and sunglasses lies on her side on a light-colored paved surface. She wears a white short-sleeved shirt and light beige or khaki pants. Her head is turned slightly to the right, and her right arm rests near her elbow. Her left arm is bent at the elbow with her hand near her left thigh. The background is out of focus and primarily dark, with no discernible features.",
       "filename": "asset-6.png",
       "x": 966,
       "y": 537,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with long brown hair sits on a stone-paved surface, wearing a white sleeveless top and white pants. She wears light-colored sunglasses with brown frames. Her left hand rests on her left knee, and her right hand is placed on her right thigh. She looks upward and to the right. The background is out of focus and dark.",
+      "asset_description": "A woman with long brown hair sits on a stone surface, wearing a white sleeveless top and white pants. She wears light-colored sunglasses and has a ring on her left ring finger. Her right hand rests on her left knee, and her left arm is bent with her hand near her left elbow. The background is out of focus and dark.",
       "filename": "asset-7.png",
       "x": -3,
       "y": 534,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Close-up view of a person's shoulder and upper arm. The individual is wearing a white tank top with a scoop neckline. The skin tone is medium to light brown. The background is blurred and light-colored, with no discernible details.",
+      "asset_description": "Close-up view of a person's shoulder and upper arm. The individual is wearing a white tank top with a scoop neckline. The skin tone is medium to light brown. The background is blurred and out of focus, with light-colored tones visible. Sunlight illuminates the shoulder and upper arm area. No other objects or text are present in the image.",
       "filename": "asset-8.png",
       "x": 966,
       "y": 3,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man and a woman stand side by side on a sidewalk. The woman wears a white sleeveless crop top and white wide-leg pants, accessorized with sunglasses and a thin gold necklace. Her hair is shoulder-length and brown. The man wears a white short-sleeved button-down shirt over a white undershirt, khaki shorts, and brown sandals. He wears sunglasses and has short, dark hair. The background includes a red brick building and blurred pedestrians.",
+      "asset_description": "A man and a woman stand side by side on a sidewalk. The woman wears a white sleeveless crop top and white wide-leg pants, accessorized with sunglasses and a thin gold necklace. Her hair is shoulder-length and brown. The man wears a white short-sleeved button-down shirt over a white undershirt, khaki shorts, and brown sandals. He wears sunglasses and has short, dark hair. Behind them are red brick buildings, and blurred figures are visible in the background.",
       "filename": "asset-9.png",
       "x": 333,
       "y": 6,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman and a man stand in front of a glass building. The woman wears a white sleeveless top and white high-waisted trousers with pleats at the front. She has dark hair and is wearing white-framed sunglasses. The man wears a light gray short-sleeved shirt with a small geometric pattern, paired with matching patterned shorts and dark sunglasses. Both are looking directly at the camera.",
+      "asset_description": "A woman and a man stand in front of a glass building. The woman wears a white sleeveless top and white high-waisted trousers. She has dark hair and is wearing white-framed sunglasses. The man wears a light gray short-sleeved shirt with a small geometric pattern, gray shorts, and dark sunglasses. Both are looking directly at the camera.",
       "filename": "asset-10.png",
       "x": 0,
       "y": 1074,
@@ -71,7 +71,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Two individuals stand in front of a large glass window. The woman on the left wears a white sleeveless crop top and light beige trousers, with her hands in her pockets. She has dark hair and is wearing clear-framed sunglasses. The man on the right wears a light gray patterned short-sleeved shirt and matching shorts, also wearing clear-framed sunglasses. Both are looking directly at the camera. The background is blurred but shows a modern urban setting.",
+      "asset_description": "Two individuals stand in front of a large glass window. The woman on the left wears a white sleeveless crop top and light-colored pants. The man on the right wears a light gray patterned short-sleeved shirt and matching shorts. Both wear sunglasses. The background is primarily the glass window, with reflections of buildings visible.",
       "filename": "asset-11.png",
       "x": 660,
       "y": 1077,

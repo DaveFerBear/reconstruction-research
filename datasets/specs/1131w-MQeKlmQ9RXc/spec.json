@@ -40,7 +40,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid black square border surrounds a white background.",
+      "svg_description": "A solid white rectangle with a black border is centered in the image. The rectangle is uniformly filled and has no visible texture, patterns, or markings.",
       "filename": "svg-2.svg",
       "x": 43,
       "y": 364,

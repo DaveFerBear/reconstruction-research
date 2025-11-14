@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A pinkish-purple, curving line on a white background. The line starts on the left side, curves upward and to the right, then extends to the right, ending in a small loop near the top.",
+      "asset_description": "A single, curved, magenta line is drawn on a white background. The line starts on the left side and curves gently to the right, ending in a smooth, continuous curve.",
       "filename": "asset-20.png",
       "x": 339,
       "y": 1337,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pink, curvy, looping line on a white background. The line starts near the top, curves downward, then loops back up towards the top.",
+      "asset_description": "A pink, curvy, looping line on a white background. The line starts at the top right, curves downward and to the left, then loops back up towards the top right.",
       "filename": "asset-18.png",
       "x": 951,
       "y": 464,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pink, curvy, looped line on a white background. The line starts at the top left and curves downward and to the right, ending in a loop near the center.",
+      "asset_description": "A pink, stylized, cursive letter “f” on a white background. The letter is formed by curved lines and loops.",
       "filename": "asset-17.png",
       "x": 60,
       "y": 476,
@@ -117,7 +117,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A cartoon figure with dark skin and short dark hair sits cross-legged, wearing a coral-pink hooded sweatshirt and teal socks with white stripes. The figure holds a light purple book open with both hands, facing forward. The background is plain white.",
+      "asset_description": "A cartoon figure with dark skin and short dark hair sits cross-legged, wearing a coral pink hooded sweatshirt and teal socks with white stripes. The figure holds a light purple book open with both hands, facing forward. The background is plain white.",
       "filename": "asset-2.png",
       "x": -26,
       "y": 1128,
@@ -128,7 +128,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A person with dark hair, wearing a mustard-yellow long-sleeved shirt and light pink pants, is seated and reading a light teal book. Their hands are holding the book open. The background is solid black.",
+      "asset_description": "A person with dark hair, wearing a yellow long-sleeved shirt and light pink pants, is seated and reading a light teal book with both hands. They are wearing white sneakers. The background is entirely black.",
       "filename": "asset-3.png",
       "x": 667,
       "y": 1057,
@@ -139,7 +139,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A person with brown hair and glasses, wearing a teal shirt with green polka dots and purple pants, is seated and holding an open book with both hands. They are wearing brown loafers and appear to be floating against a white background.",
+      "asset_description": "A person with brown curly hair and glasses is seated, wearing a teal polka-dotted shirt and purple pants. They are holding a book open in their hands, resting their arms on the pages. The person is wearing brown loafers with black straps. The background is plain white.",
       "filename": "asset-4.png",
       "x": 625,
       "y": -49,
@@ -150,7 +150,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized figure with green hair, a pink scarf, and a blue shirt is depicted in a floating pose, reading a yellow book. The figure has orange shoes with black stripes and is positioned against a white background with faint pink horizontal lines.",
+      "asset_description": "A stylized figure with green hair, a pink scarf, and a dark blue top is depicted in a floating pose against a white background. The figure holds a yellow book open with both hands, positioned in front of its chest. The figure’s legs are bent at the knees, and its feet are clad in orange and yellow sneakers with black stripes. The overall style is minimalist and cartoonish, with flat colors and simple shapes.",
       "filename": "asset-5.png",
       "x": 89,
       "y": 71,
@@ -161,7 +161,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stack of five books with teal, blue, and yellow spines rests against a white background. The top book is green, the next two are blue and yellow, and the bottom book is purple. Each book has white pages with horizontal lines.",
+      "asset_description": "A stack of five books with teal, blue, orange, and dark blue covers is shown against a white background. Each book has white pages and brown edges. The top book is green, the next two are blue, the third is yellow, the fourth is teal, and the bottom book is dark blue.",
       "filename": "asset-6.png",
       "x": 945,
       "y": 903,
@@ -172,7 +172,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Two open books are shown against a white background. The book on the left is teal with a brown bookmark and horizontal lines on the cover. The book on the right is pink with horizontal lines on the cover. Both books are slightly angled toward each other.",
+      "asset_description": "Two open books are shown against a white background. The book on the left is teal with a brown bookmark and horizontal lines on the cover. The book on the right is pink with horizontal lines on the cover. Both books are slightly angled and appear to be standing upright.",
       "filename": "asset-7.png",
       "x": 50,
       "y": 368,
@@ -183,7 +183,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Two open books are displayed on a transparent background. The book on the left is teal with gold accents and rests on a light brown cover. The book on the right is pink with a light pink cover and rests on a light pink cover. Both books are open, revealing pages with cream-colored paper. The background consists of a repeating gray and white checkerboard pattern.",
+      "asset_description": "Two open books are positioned on a transparent background. The book on the left is teal with gold accents and rests on a light gray surface. The book on the right is pink with cream pages and lies on a similar light gray surface. Both books are oriented with their pages facing upwards. The background consists of a repeating pattern of gray and white squares.",
       "filename": "asset-8.png",
       "x": 303,
       "y": -87,
@@ -194,7 +194,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Two books are stacked on top of each other. The top book is yellow with a white spine and a rectangular label. The bottom book is teal with a white spine and a black rectangular label. Both books have white pages.",
+      "asset_description": "Two books are stacked on top of each other. The top book is yellow with a white cover and a rectangular label. The bottom book is teal with a white cover and a black spine. Both books are positioned against a white background.",
       "filename": "asset-9.png",
       "x": -9,
       "y": 851,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "asset_description": "An open book with cream-colored pages and dark lines forming the pages is depicted against a transparent background. The book is bound in a teal cover and has a red bookmark attached to the right page. The pages are arranged in two columns. The background consists of a gray and white checkered pattern.",
+      "asset_description": "An open book with cream-colored pages and dark lines forming the pages is depicted against a transparent background. A red bookmark is positioned on the right page. The book is bound in a teal-colored cover.",
       "filename": "asset-10.png",
       "x": 872,
       "y": 619,
@@ -216,7 +216,7 @@
     },
     {
       "type": "image",
-      "asset_description": "An open book with a red cover and cream-colored pages lies flat on a transparent background. The pages are lined with horizontal lines, and the book is positioned centrally.",
+      "asset_description": "An open book with a red cover and cream-colored pages lies flat on a transparent background. The pages are lined with horizontal lines. The book is positioned centrally in the image.",
       "filename": "asset-11.png",
       "x": 35,
       "y": 597,
@@ -227,7 +227,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A closed book with an orange cover and a yellow leaf symbol on the front is shown against a transparent background. The book is angled slightly to the right, with its pages visible along the right edge.",
+      "asset_description": "A closed book with an orange cover and a yellow leaf symbol on the front is shown against a transparent background. The book is angled slightly to the right, with its spine visible and pages partially open.",
       "filename": "asset-12.png",
       "x": 306,
       "y": 1334,
@@ -238,7 +238,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A drawing of a closed book with an orange cover and a yellow spine. The book is angled slightly to the right, revealing its white pages. The cover has a small white rectangular label. The drawing style is simple, with black outlines and solid colors.",
+      "asset_description": "A drawing of a closed book with an orange cover and a yellow spine. The book is angled slightly to the right, revealing its white pages. The cover has a small, light-colored rectangular label near the top. The drawing style is simple and cartoon-like, with bold outlines and flat colors.",
       "filename": "asset-13.png",
       "x": 956,
       "y": 384,

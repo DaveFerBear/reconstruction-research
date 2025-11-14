@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A repeating pattern of watercolor eucalyptus leaves in varying shades of blue-gray against a white background. The leaves are depicted with soft, diffused edges and connected by thin, delicate branches.",
+  "background_image_description": "A repeating pattern of watercolor eucalyptus leaves in varying shades of blue-gray on a white background. The leaves are depicted with soft, diffused edges and connected by thin, curved stems.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two light grayish-white flowers with rounded petals and simple leaves are depicted against a plain off-white background. The stems are thin and straight, extending upward from the base of the flowers. The leaves are elongated and pointed, growing from the stems at varying angles. The image is simple and stylized, focusing on the floral elements without additional details or shading.",
+      "asset_description": "Two light grayish-white flowers with rounded petals and simple leaves are depicted against a plain off-white background. The flowers are positioned slightly apart, with stems extending upward and outward.",
       "filename": "asset-6.png",
       "x": -15,
       "y": -114,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A gold-colored rounded rectangle with a smooth, polished appearance is centered on a light beige background. The rectangle has a slightly thicker top and bottom edge compared to its sides.",
+      "asset_description": "A gold-colored rounded rectangle with a smooth, polished appearance is centered on a light beige background. The rectangle has a thin gold border and a slightly curved top edge.",
       "filename": "asset-3.png",
       "x": -228,
       "y": 93,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white rose with green leaves and stems is positioned on the right side of the image against a solid black background. Small white dots are scattered near the rose.",
+      "asset_description": "A white rose with green leaves and stems is positioned on the right side of the image, partially overlapping the black background. The background is uniformly black with no other visible elements.",
       "filename": "asset-5.png",
       "x": -489,
       "y": 150,

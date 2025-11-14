@@ -137,7 +137,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black, with no discernible features, objects, or patterns.",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-4.png",
       "x": 1064,
       "y": 506,
@@ -191,7 +191,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
+      "svg_description": "A solid orange background fills the frame. The color is a uniform, slightly muted orange with no visible texture or pattern.",
       "filename": "svg-2.svg",
       "x": 80,
       "y": 279,
@@ -211,7 +211,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light blue square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
+      "svg_description": "A light blue square is centered on a white background.",
       "filename": "svg-4.svg",
       "x": 520,
       "y": 250,
@@ -231,7 +231,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
+      "svg_description": "A light beige square is centered on a white background. The square is uniform in color and shape, with no visible texture or pattern.",
       "filename": "svg-6.svg",
       "x": 968,
       "y": 250,
@@ -241,7 +241,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background fills the frame.",
+      "svg_description": "A plain white background.",
       "filename": "svg-7.svg",
       "x": 1180,
       "y": 270,
@@ -251,7 +251,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the upper right.",
       "filename": "svg-8.svg",
       "x": 1400,
       "y": 250,
@@ -261,7 +261,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue background fills the frame, uniformly colored without any variations, textures, or patterns.",
+      "svg_description": "A solid blue background fills the frame, uniformly colored without any variations or patterns.",
       "filename": "svg-9.svg",
       "x": 1260,
       "y": 420,
@@ -281,7 +281,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background.",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the upper left.",
       "filename": "svg-11.svg",
       "x": 1282,
       "y": 727,
@@ -321,7 +321,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
+      "svg_description": "A solid orange-peach color fills the frame, appearing uniform and without any visible texture or pattern.",
       "filename": "svg-15.svg",
       "x": 520,
       "y": 700,
@@ -331,7 +331,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-16.svg",
       "x": 314,
       "y": 570,
@@ -341,7 +341,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, toward the upper right portion of the image.",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-17.svg",
       "x": 80,
       "y": 600,
@@ -351,7 +351,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A horizontal, rectangular shape with a gradient of orange and yellow tones fills the frame against a white background. The shape is uniform in width and height, with no visible edges or patterns.",
+      "svg_description": "A horizontal, rectangular shape with a gradient of orange-yellow to light orange is centered against a white background. The shape is uniform in width and length, with no visible edges or patterns.",
       "filename": "svg-18.svg",
       "x": 620,
       "y": 454,

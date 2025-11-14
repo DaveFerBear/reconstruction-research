@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light gray rectangle is centered on a black background. The rectangle is uniformly filled and has a smooth, matte appearance.",
+      "asset_description": "A light gray rectangle is centered on a black background. The rectangle is uniformly filled and has a smooth, flat appearance.",
       "filename": "asset-4.png",
       "x": 603,
       "y": 249,
@@ -44,7 +44,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light brown paper cup holds three scoops of white ice cream. A stream of caramel sauce pours from the top, dripping down the ice cream and onto the cup. The background is a pale cream color.",
+      "asset_description": "A light brown paper cup holds three scoops of white ice cream. A stream of caramel sauce pours from the top, dripping over the ice cream and pooling slightly on the cup’s surface. The background is a plain, light beige color.",
       "filename": "asset-3.png",
       "x": 274,
       "y": 3,

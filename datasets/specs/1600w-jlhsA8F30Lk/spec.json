@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid light gray background fills the frame.",
+      "asset_description": "A solid light gray background fills the frame with no other elements or patterns.",
       "filename": "asset-4.png",
       "x": -120,
       "y": -100,
@@ -78,7 +78,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pink plastic megaphone with a rounded handle and a white inner cone is shown against a white background. The handle is angled slightly downward.",
+      "asset_description": "A pink plastic megaphone with a white inner cone and a pink handle is shown against a white background. The handle is angled slightly downward.",
       "filename": "asset-3.png",
       "x": -48,
       "y": 632,

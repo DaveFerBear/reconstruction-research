@@ -100,7 +100,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the letter and has a uniform thickness.",
+      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the letter, and the letter is centered within the circle. The background is white.",
       "filename": "svg-1.svg",
       "x": 812,
       "y": 62,

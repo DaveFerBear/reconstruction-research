@@ -1,11 +1,11 @@
 {
   "background_color": "#f5f2e6",
   "has_background_image": true,
-  "background_image_description": "A blue gradient fills the left side of the image, transitioning from a lighter blue at the top to a darker blue at the bottom. The right side is white and appears brighter. The image is softly lit, with no visible objects or text.",
+  "background_image_description": "A blue gradient fills the left side of the image, transitioning from dark blue at the top to lighter blue at the bottom. The right side is white, with no visible objects or text present.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light blue gradient background transitions from a lighter cream at the top to a deeper blue towards the bottom. A thin, light blue oval is centered in the image, slightly tilted. Two small white star shapes are positioned near the oval, one above and one below. A faint, lighter blue-gray area is visible along the bottom edge.",
+      "asset_description": "A light blue gradient background transitions from a lighter cream at the top to a deeper blue towards the bottom. Two white star shapes are positioned near the top left and bottom right of the oval shape. A thin white line outlines the oval, extending from the top left and curving slightly towards the bottom right.",
       "filename": "asset-1.png",
       "x": -7,
       "y": -5,
@@ -50,7 +50,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "A completely white image with no visible content or features.",
       "filename": "svg-2.svg",
       "x": 1083,
       "y": 275,

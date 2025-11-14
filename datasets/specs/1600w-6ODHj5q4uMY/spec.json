@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A light brown wooden table with visible grain and planks runs horizontally across the frame. Behind it, a blurred background of green foliage and out-of-focus light creates a soft, natural backdrop. The lighting suggests a daytime outdoor setting.",
+  "background_image_description": "A light brown wooden table with visible grain and planks runs horizontally across the image. Behind the table, a blurred background of green foliage and out-of-focus light creates a soft, natural backdrop. The lighting suggests a daytime scene with sunlight filtering through the leaves.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A wooden table with parallel planks occupies the foreground. The planks are light brown and show visible grain. Behind the table, a blurred green background with out-of-focus circular bokeh suggests a natural setting with trees or foliage. The lighting is bright, casting soft shadows on the table surface.",
+      "asset_description": "A wooden table with parallel planks occupies the foreground. The planks are light brown and show visible grain. Behind the table, a blurred green background with out-of-focus circular shapes suggests a natural setting with trees or foliage. The lighting is bright, casting soft shadows on the table surface. A small white diamond shape is visible in the bottom right corner.",
       "filename": "asset-3.png",
       "x": 5,
       "y": -2,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Two quotation marks are displayed on a transparent background. The left quotation mark is positioned slightly higher than the right one. Both marks are dark brown and centered horizontally.",
+      "asset_description": "Two quotation marks are positioned on a transparent background with a checkered pattern. The left quotation mark is centered, while the right quotation mark is slightly offset to the right.",
       "filename": "asset-2.png",
       "x": -56,
       "y": 16,

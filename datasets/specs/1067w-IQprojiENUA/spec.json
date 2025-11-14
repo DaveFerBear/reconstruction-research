@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A pair of light blue jeans with distressed detailing, including rips and fading, are shown against a black background. The jeans are positioned with the legs slightly apart and the waistband visible. The image is presented in a flat, two-dimensional style.",
+      "asset_description": "A pair of light blue jeans with distressed detailing, including rips and fading, are shown against a black background. The jeans are positioned with the legs slightly apart and the waistband visible at the top. The image is isolated, with no other objects or background elements present.",
       "filename": "asset-2.png",
       "x": 58,
       "y": 402,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pair of light tan, lace-up shoes with thick black soles are shown against a white background. The shoes are positioned slightly angled, with the soles facing upward. The laces are black and threaded through the eyelets. The shoes appear to be made of a smooth material.",
+      "asset_description": "A pair of light tan, lace-up shoes with black soles and thick, chunky soles are shown against a white background. The shoes are positioned slightly angled, with the toe pointing toward the bottom right corner of the image. The soles are textured with small bumps, and the laces are black. The shoes appear to be made of a smooth material.",
       "filename": "asset-3.png",
       "x": 23,
       "y": 858,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue denim jacket hangs on a metal hanger against a black background. The jacket features two chest pockets, two front pockets, and long sleeves with buttoned cuffs. The denim material has a slightly faded or worn appearance.",
+      "asset_description": "A blue denim jacket hangs on a metal hanger against a black background. The jacket features two chest pockets, two front pockets, and long sleeves with buttoned cuffs. The denim material appears slightly faded or worn in places.",
       "filename": "asset-5.png",
       "x": -112,
       "y": 126,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pair of tortoiseshell sunglasses with gradient lenses, resting on a black background. The lenses transition from a lighter shade at the top to a darker shade at the bottom. The frame is dark brown or black and has a slightly angular shape.",
+      "asset_description": "A pair of tortoiseshell sunglasses with gradient lenses, dark frames, and gold accents are centered against a black background. The lenses transition from a lighter shade at the top to a darker shade at the bottom.",
       "filename": "asset-7.png",
       "x": 284,
       "y": 159,

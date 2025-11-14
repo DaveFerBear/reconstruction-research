@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black and white line drawing depicts a hand holding a stemmed wine glass containing a dark liquid. The hand is positioned palm-up, with the fingers gently curled around the glass stem. The glass is tilted slightly to the right. The background is a solid gray color, providing a neutral backdrop for the illustration.",
+      "asset_description": "A black and white line drawing depicts a hand holding a stemmed wine glass containing a dark liquid. The hand is positioned palm-up, with the fingers gently curled around the glass. The glass is tilted slightly to the right. The background is a solid, uniform gray color.",
       "filename": "asset-2.png",
       "x": 62,
       "y": 886,
@@ -100,7 +100,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black and white line drawing of a rectangular appliance with a rounded top, a horizontal handle on top, and three circular buttons on its front. The appliance has stick-like legs with feet and arms extending outward from the sides. The face of the appliance features a curved line for a mouth and two upward-pointing curved lines for eyes. The appliance is set against a transparent background.",
+      "asset_description": "A black and white line drawing of a rectangular device with rounded corners, resembling a box or appliance, sits on a transparent background. The device has a handle on top and features two circular buttons or controls on its front side. Simple, stylized hands with clenched fists are positioned on either side of the device. The device is drawn in a cartoonish style with thick black lines and no shading or texture.",
       "filename": "asset-3.png",
       "x": 594,
       "y": 681,
@@ -111,7 +111,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black, eight-pointed star is centered on a transparent background. The star is symmetrical and evenly spaced from its center point.",
+      "asset_description": "A black, eight-pointed star is centered on a transparent background. The star's points are evenly spaced and point outward from the center. The background consists of a repeating pattern of alternating gray and white squares.",
       "filename": "asset-4.png",
       "x": 15,
       "y": 153,

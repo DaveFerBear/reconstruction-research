@@ -62,11 +62,12 @@
       "width": 290,
       "height": 660,
       "rotation": 0,
-      "image_description": "A woman wearing a green blazer, yellow shorts, and blue platform shoes stands holding a yellow crate containing a pink handbag."
+      "image_description": "A woman wearing a green blazer, yellow shorts, and blue platform shoes stands holding a yellow crate containing a pink handbag.",
+      "asset_description": "A person with dark hair and bangs stands against a muted olive-green background. They are wearing a green jacket, a pale yellow or cream-colored short skirt, white socks, and blue platform sandals with thin white straps. The person is holding a yellow crate with a pink rectangular object inside. The crate has a geometric, lattice-like design. The person’s expression is neutral, and their arms are at their sides."
     },
     {
       "type": "svg",
-      "svg_description": "Two outlined globe icons drawn with thin green strokes, side by side.",
+      "svg_description": "A green circle is positioned to the left of a green globe with grid lines. The globe is partially overlapping the circle. The background is white.",
       "filename": "svg-1.svg",
       "x": 120,
       "y": 550,

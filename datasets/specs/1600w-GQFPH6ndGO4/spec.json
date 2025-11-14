@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A woman with long blonde hair wears a green shirt with a dotted pattern. She is smiling and making an \"OK\" hand gesture with her right hand against a pink and yellow gradient background.",
+      "asset_description": "A woman with long blonde hair wears a green shirt with a dotted pattern. She is smiling and making an \"OK\" gesture with her right hand against a pink and yellow gradient background.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 0,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black horizontal bar is centered on a white background. The bar is uniformly black and spans the width of the image.",
+      "svg_description": "A black horizontal bar is centered on a white background. The bar is uniformly black and spans the width of the image, with no visible texture, patterns, or gradients.",
       "filename": "svg-1.svg",
       "x": 592,
       "y": 1392,

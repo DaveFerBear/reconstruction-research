@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A bright green, oval-shaped shape with a wavy, uneven edge is centered on a black background. The shape is slightly elongated horizontally and has a subtle gradient, giving it a three-dimensional appearance.",
+      "asset_description": "A bright green, oval-shaped shape with a wavy, uneven edge is centered on a black background. The shape is slightly elongated and has a subtle gradient, appearing lighter in the center and darker at the edges.",
       "filename": "asset-14.png",
       "x": 817,
       "y": 101,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A teal dashed rectangle is centered on a black background. The rectangle is oriented horizontally and has a uniform thickness.",
+      "asset_description": "A light teal dashed rectangle is centered on a black background. The rectangle is outlined with evenly spaced dashed lines along its top and bottom edges.",
       "filename": "asset-13.png",
       "x": 1093,
       "y": 949,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow circle with a black outline contains two hands positioned side by side. A heart shape is centered above the hands.",
+      "asset_description": "A yellow circle with a black outline contains two hands positioned side by side, palms facing upward. A heart shape is centered above the hands. The background is black.",
       "filename": "asset-12.png",
       "x": 1113,
       "y": 629,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light orange-brown shape with a wavy, uneven edge is centered against a black background. The shape has subtle shading and highlights along its perimeter.",
+      "asset_description": "A light orange-brown shape with a wavy, uneven edge is shown against a black background. The shape has a slightly curved form with subtle variations in color intensity along its perimeter.",
       "filename": "asset-7.png",
       "x": 589,
       "y": 1,
@@ -315,7 +315,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A five-pointed star outlined in black is centered on a yellow circle. The star is slightly tilted to the right, and a small burst of lines extends from its upper right side. The background consists of a transparent gray and white checkerboard pattern.",
+      "asset_description": "A five-pointed star outlined in black is centered on a yellow circle. The star is slightly tilted to the right, and a small set of short lines extends from its upper right side. The background consists of a transparent gray and white checkerboard pattern.",
       "filename": "asset-2.png",
       "x": 22,
       "y": 159,
@@ -326,7 +326,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light orange-brown shape with a wavy, uneven edge is centered against a black background. The shape has subtle variations in color intensity and texture along its perimeter.",
+      "asset_description": "A light orange-brown shape with a wavy, uneven edge against a black background. The shape has subtle variations in color intensity and texture.",
       "filename": "asset-6.png",
       "x": 0,
       "y": 680,
@@ -370,7 +370,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black heart shape is centered within a light orange circle on a black background. The heart is drawn with a slightly uneven, hand-drawn style.",
+      "asset_description": "A light orange circle with a black heart shape is centered on a black background. The heart is drawn with slightly uneven lines, giving it a hand-drawn appearance.",
       "filename": "asset-11.png",
       "x": 657,
       "y": 857,
@@ -381,7 +381,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized spider design is centered on a black background. The spider is formed by thin, light-colored lines radiating outward from its body. The lines are uneven and create a dynamic, energetic effect. The design is simple yet effective, drawing attention to the spider’s form.",
+      "asset_description": "A stylized spider design is centered on a black background. The spider is formed by thin white lines radiating outward from its body, with small white dots along the lines. The design is simple and symmetrical.",
       "filename": "asset-15.png",
       "x": 985,
       "y": -238,

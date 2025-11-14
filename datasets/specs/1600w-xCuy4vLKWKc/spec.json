@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A grid of evenly spaced, light brown circles on a white background. Each circle is centered and uniformly sized.",
+      "svg_description": "A grid of evenly spaced, light brown circles on a white background. The circles are uniformly sized and spaced, creating a regular pattern across the image.",
       "filename": "svg-1.svg",
       "x": 1296,
       "y": 1440,
@@ -26,7 +26,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A thin, horizontal line in a light brown or tan color stretches across the image, positioned near the center. The line is thin and straight, with no visible texture or pattern.",
+      "svg_description": "A thin, horizontal line in a light brown or tan color runs across the image, positioned near the center. The line is thin and straight, with no visible texture or pattern.",
       "filename": "svg-2.svg",
       "x": 496,
       "y": 128,
@@ -121,7 +121,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A dark gray arrow points diagonally upward and to the right on a white background. The arrow is positioned near the center of the image.",
+      "svg_description": "A dark gray arrow points diagonally upward and to the right on a white background. The arrow is outlined and has a thin, dark outline.",
       "filename": "svg-4.svg",
       "x": 520,
       "y": 1032,

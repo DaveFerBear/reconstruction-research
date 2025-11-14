@@ -1,7 +1,7 @@
 {
   "background_color": "#3a0b5e",
   "has_background_image": true,
-  "background_image_description": "A purple nebula dominates the center of the image, displaying a gradient of purple hues from lighter to darker tones. Wispy, cloud-like structures extend from the nebula's core. Numerous stars of varying brightness are scattered throughout the dark background. The nebula has a diffuse, uneven appearance.",
+  "background_image_description": "A purple nebula with pink and purple hues stretches diagonally across the image, illuminated by bright white stars scattered around it. The nebula’s edges are soft and diffuse, transitioning into more defined, cloud-like structures. The background is a dark purple, speckled with numerous small white dots representing distant stars.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black smartphone with a blank light blue screen is centered on a transparent background. The screen is vertically oriented and features no visible content. The phone has a black bezel and a small black camera lens at the top center.",
+      "asset_description": "A black smartphone with a rounded rectangular shape is shown against a transparent background. The screen is blank, displaying a gradient from light blue at the top to white at the bottom. The phone has a black bezel and two visible buttons on the left side. The image is well-lit and shows the phone’s front face clearly.",
       "filename": "asset-2.png",
       "x": 475,
       "y": 98,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man with dark skin and dreadlocks sits cross-legged on the floor, wearing a light blue long-sleeved shirt and dark gray pants. He holds a light gray laptop on his lap and gives two thumbs up. Behind him is a transparent checkered background.",
+      "asset_description": "A man with dark skin and dreadlocks sits cross-legged on the floor, wearing a light blue long-sleeved shirt and dark gray pants. He holds a gray laptop on his lap and gives a thumbs-up gesture with both hands. The background is transparent.",
       "filename": "asset-3.png",
       "x": 460,
       "y": 181,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal white bar spans the width of the image against a black background. The bar is centered and positioned horizontally.",
+      "asset_description": "A horizontal white bar spans the width of the image, centered horizontally. The bar is positioned against a solid black background.",
       "filename": "asset-9.png",
       "x": -51,
       "y": 834,
@@ -49,7 +49,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A completely white image with no visible content.",
+      "svg_description": "A plain white background.",
       "filename": "svg-1.svg",
       "x": 120,
       "y": 86,
@@ -161,7 +161,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow, circular emoji with a wide smile and white teeth is centered against a white background. Two red heart shapes are positioned over the eyes. The emoji casts a subtle shadow below.",
+      "asset_description": "A yellow, circular emoji with a wide smile and white teeth is centered against a white background. Two red heart shapes are positioned over the eyes. The emoji casts a subtle shadow beneath it.",
       "filename": "asset-4.png",
       "x": 680,
       "y": 911,
@@ -172,7 +172,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A glossy red heart shape is centered on a transparent background. The heart is smooth and reflective, with subtle highlights along its edges.",
+      "asset_description": "A glossy red heart shape is centered on a transparent background. The heart is smooth and rounded, with a subtle highlight on its upper right side. The background consists of a repeating gray and white checkerboard pattern.",
       "filename": "asset-5.png",
       "x": 1445,
       "y": 535,
@@ -183,7 +183,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white cloud is centered on a transparent background. The cloud has a soft, rounded shape with subtle shading and texture. The background consists of a grid of gray and white squares.",
+      "asset_description": "A single white cloud is centered on a transparent background. The cloud has a rounded, fluffy shape with a slightly darker base. The background consists of a grid of gray and white squares.",
       "filename": "asset-6.png",
       "x": 702,
       "y": 234,
@@ -194,7 +194,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow, round, cartoon face with wide white eyes and black pupils is centered on a transparent background. The mouth is open, revealing a red interior. Black eyebrows are positioned above the eyes.",
+      "asset_description": "A yellow, round, cartoon face with wide white eyes, black eyebrows, and black pupils is shown against a transparent background. The mouth is open in a surprised or shocked expression.",
       "filename": "asset-7.png",
       "x": 1457,
       "y": 1079,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A round, glossy blue button with a white arrow pointing to the right is centered on a white background. The arrow is positioned slightly off-center, curving from the top left to the bottom right. The button casts a soft shadow below it on the white surface.",
+      "asset_description": "A round, glossy blue button with a white arrow pointing right is centered on a white background. The arrow is positioned slightly off-center, curving from the top left to the bottom right. The button casts a subtle shadow beneath it.",
       "filename": "asset-8.png",
       "x": 1281,
       "y": 898,
@@ -233,7 +233,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white telephone handset icon is displayed against a black background. The icon is centered and oriented vertically.",
+      "asset_description": "A white telephone handset icon is displayed against a black background. The handset is curved and positioned vertically.",
       "filename": "asset-11.png",
       "x": 108,
       "y": 1429,
@@ -244,7 +244,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white vertical bar is centered on a black background. The bar is uniform in width and height, with no visible texture, patterns, or additional elements.",
+      "asset_description": "A single white vertical bar is centered on a black background.",
       "filename": "asset-13.png",
       "x": 492,
       "y": 1437,

@@ -1,11 +1,11 @@
 {
   "background_color": "#efefea",
   "has_background_image": true,
-  "background_image_description": "A gray surface with a mottled texture, resembling a concrete or plaster finish. The surface is uniform in color with subtle variations in tone and shading. No objects, patterns, or text are visible.",
+  "background_image_description": "A gray surface with a mottled texture, resembling a rough or slightly uneven surface. The color is uniform and consistent across the image, with no visible patterns, objects, or distinct features. The surface appears flat and evenly lit, with no noticeable depth or shadowing.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light green, textured dress with a small-scale checkered pattern is draped over a hand. The hand is positioned on the left side of the dress, with its fingers slightly curled. The background is a darker shade of green, transitioning to a lighter green gradient near the bottom. The dress appears to be made of a lightweight fabric.",
+      "asset_description": "A light green dress with a textured pattern is draped over a person’s arm. The dress has a slightly gathered or ruffled appearance at the waist. The arm is extended and angled slightly downward. The background is a dark green gradient, lighter near the bottom.",
       "filename": "asset-1.png",
       "x": 36,
       "y": 432,

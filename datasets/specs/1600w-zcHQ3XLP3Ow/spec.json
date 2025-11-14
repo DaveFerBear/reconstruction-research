@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A complex, swirling abstract design composed of multiple curved, ribbon-like shapes in shades of pink, purple, gray, and blue-gray. The shapes overlap and intertwine, creating a sense of depth and movement. The background is dark gray, and a small diamond shape is visible in the bottom right corner.",
+      "asset_description": "A complex, swirling abstract design composed of multiple curved, ribbon-like forms in shades of pink, purple, gray, and blue-gray. The forms overlap and intertwine, creating a sense of depth and movement. The background is dark gray, and a small, diamond-shaped white shape appears in the bottom right corner.",
       "filename": "asset-3.png",
       "x": -3,
       "y": 2,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blurred, pastel-colored abstract background with pink, purple, and blue hues. The image is softly lit and has a slightly grainy texture. A small video camera icon and a heart icon are visible in the bottom right corner.",
+      "asset_description": "A blurred, pastel-colored abstract background with pink, purple, blue, and gray hues. A white video camera icon and a small heart icon are visible in the bottom right corner.",
       "filename": "asset-4.png",
       "x": 112,
       "y": 81,
@@ -129,7 +129,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Three white icons are displayed on a black background. From left to right, the icons appear to be a horizontal bar, a heart, and a circle with a light blue center.",
+      "asset_description": "Three white icons are displayed on a black background. From left to right, the icons appear to be a rectangular shape, a circle, and a rounded square with a small white circle inside.",
       "filename": "asset-5.png",
       "x": 847,
       "y": 1062,

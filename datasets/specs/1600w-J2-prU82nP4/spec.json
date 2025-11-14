@@ -1,7 +1,7 @@
 {
   "background_color": "#66C172",
   "has_background_image": true,
-  "background_image_description": "The image displays a solid green background with a gradient effect, transitioning from a darker shade at the edges to a lighter shade towards the center. The gradient is smooth and continuous, creating a uniform and visually balanced appearance. There are no discernible objects, texts, or patterns in the image. The green color is consistent throughout the frame, with no variations in hue or tone.",
+  "background_image_description": "The image displays a solid green background with a gradient effect, transitioning from a darker shade at the edges to a lighter shade towards the top. The color is uniform and continuous across the image, with no visible patterns, textures, or objects. The image is likely a digital graphic or illustration.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A semi-circular shape composed of numerous small, light-colored rectangular elements arranged closely together against a black background. The elements are densely packed and create a textured, uneven appearance.",
+      "asset_description": "A semi-circular shape composed of numerous small, light-colored rectangular elements arranged closely together against a solid black background. The elements are densely packed and create a textured, uneven appearance.",
       "filename": "asset-3.png",
       "x": 673,
       "y": -90,
@@ -95,7 +95,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with long dark brown hair wears a bright green sweater. She is looking up and to the right, her right index finger touching her chin. Her left arm is slightly bent, and her left hand is partially visible near her waist. The background is solid black.",
+      "asset_description": "A woman with long dark brown hair wears a bright green sweater. She is looking upward and to the right, with her right index finger touching her chin. Her left arm is slightly bent, and her left hand is partially visible near her shoulder. The background is black.",
       "filename": "asset-2.png",
       "x": 621,
       "y": 316,
@@ -106,7 +106,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white outline of a lightbulb hangs from a coiled wire against a black background. The lightbulb has a rounded base, a clear glass bulb, and a pointed filament at the bottom.",
+      "asset_description": "A white outline of a lightbulb hangs from a coiled wire against a black background. The lightbulb has a rounded base and a bulbous shape, with a filament visible inside.",
       "filename": "asset-5.png",
       "x": 1112,
       "y": -46,

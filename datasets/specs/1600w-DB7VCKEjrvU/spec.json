@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A gold-colored square with a stylized, curved, incomplete square shape inside is centered on a black background. The square has a textured appearance with small, dark specks throughout its surface.",
+      "asset_description": "A gold-colored square with a stylized, curved, interlocking design is centered on a black background. The design is textured and appears slightly rough or speckled.",
       "filename": "asset-2.png",
       "x": 617,
       "y": 463,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue, wavy, three-dimensional shape resembling a stylized letter \"M\" with a yellow rectangular block attached to its right side. The block has small, dark dots on its surface. The background is entirely black.",
+      "asset_description": "A stylized blue wave shape with three rounded peaks is centered on a black background. A yellow rectangular block is positioned to the right of the wave, partially overlapping it.",
       "filename": "asset-3.png",
       "x": 433,
       "y": 447,

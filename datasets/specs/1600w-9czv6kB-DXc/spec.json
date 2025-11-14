@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A white, rounded rectangle with a pointed tail extending from its bottom left corner is set against a black background. The rectangle is uniformly white with no visible markings, text, or patterns.",
+      "asset_description": "A white, rounded rectangle with a pointed tail extending from the bottom left corner. The rectangle is centered against a black background.",
       "filename": "asset-6.png",
       "x": -68,
       "y": -180,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A hand holds a red and yellow megaphone against a white background. The hand is gray and wears a yellow sleeve with a star. The megaphone is angled slightly to the right.",
+      "asset_description": "A hand holds a red and yellow megaphone against a white background. The hand is positioned with the thumb gripping the handle and the fingers supporting the megaphone’s opening. The megaphone is angled slightly upward and to the right.",
       "filename": "asset-5.png",
       "x": 505,
       "y": 262,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A solid orange-yellow shape fills the frame, angled diagonally from top left to bottom right. The color is uniform and consistent across the image, with no visible patterns, textures, or gradients. No text, objects, or actions are present.",
+      "asset_description": "A solid orange-yellow shape fills the frame, angled diagonally from top left to bottom right. The color is uniform and consistent across the visible area, with no visible texture, patterns, or gradients.",
       "filename": "asset-4.png",
       "x": 19,
       "y": 87,
@@ -55,7 +55,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red rectangle is centered on a black background. The rectangle is solid and uniform in color, with no visible texture or pattern.",
+      "asset_description": "A red rectangle is centered on a black background. The rectangle is uniformly colored and positioned horizontally.",
       "filename": "asset-7.png",
       "x": -120,
       "y": -153,
@@ -100,7 +100,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Four stylized lightning bolts are depicted against a black background. The bolts vary in size and orientation, with some appearing larger and more prominent than others. The lightning bolts are rendered in a dark gray or black color with a textured appearance.",
+      "asset_description": "Four black lightning bolt symbols are displayed against a white background. The lightning bolts vary in size and orientation, with some appearing larger and more prominent than others.",
       "filename": "asset-8.png",
       "x": 936,
       "y": 156,

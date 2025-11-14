@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A teal-colored, rounded, star-shaped icon is centered on a black background. The icon has a slightly uneven, wavy edge and appears to be solid in color with no visible patterns or textures.",
+      "asset_description": "A teal-colored, rounded shape with jagged edges is centered on a black background. The shape resembles a stylized sun or flower, with pointed protrusions radiating outward from its center.",
       "filename": "asset-15.png",
       "x": -103,
       "y": 1017,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "An orange, rounded shape with jagged edges is centered on a black background. The shape is symmetrical and evenly distributed.",
+      "asset_description": "An orange, rounded shape with jagged edges is centered on a black background. The shape is symmetrical and evenly distributed across the image.",
       "filename": "asset-14.png",
       "x": -97,
       "y": 879,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright green, irregularly shaped shape resembling a starburst or burst is centered on a black background. The shape has jagged edges and varying shades of green, with no internal details or patterns.",
+      "asset_description": "A bright green, irregularly shaped shape resembling a burst or starburst is centered on a black background. The shape has jagged edges and varying shades of green, with no internal details or patterns.",
       "filename": "asset-13.png",
       "x": -89,
       "y": 751,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright yellow, irregularly shaped, star-like shape is centered on a black background. The shape has jagged edges and appears slightly three-dimensional.",
+      "asset_description": "A bright yellow, star-shaped shape is centered on a black background. The star has eight points and slightly jagged edges.",
       "filename": "asset-12.png",
       "x": -89,
       "y": 619,
@@ -82,7 +82,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright green, irregularly shaped, star-like shape is centered on a solid black background. The shape has jagged edges and is not symmetrical.",
+      "asset_description": "A bright green, irregularly shaped shape resembling a starburst or burst is centered on a black background. The shape has jagged edges and varying shades of green, with no internal details or patterns.",
       "filename": "asset-10.png",
       "x": -75,
       "y": 343,
@@ -126,7 +126,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal orange rectangle is centered on a black background. The rectangle is uniformly sized and positioned horizontally.",
+      "asset_description": "A horizontal orange bar is centered on a black background. The bar is uniformly colored and positioned horizontally.",
       "filename": "asset-2.png",
       "x": 95,
       "y": -85,
@@ -159,7 +159,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The words \"upcoming EVENTS\" are displayed in bold, orange, rounded-corner letters against a dark gray background. The letters have a thick black outline and appear slightly raised, giving a three-dimensional effect.",
+      "asset_description": "The words \"upcoming EVENTS\" are displayed in bold, orange, rounded-corner letters against a dark gray background. The text is centered and has a slightly shadowed effect.",
       "filename": "asset-1.png",
       "x": 378,
       "y": -164,

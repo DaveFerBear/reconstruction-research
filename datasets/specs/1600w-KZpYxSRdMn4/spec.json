@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with long brown hair sits at a white table, wearing a green cardigan. She smiles at the camera while looking directly at the viewer. A smartphone rests on the table beside her. The background is blurred and light-colored.",
+      "asset_description": "A woman with long brown hair sits at a white table, wearing a green cardigan over a white collared shirt. She smiles at the camera while resting her hands on the table. A dark object is partially visible on the table behind her. The background is white.",
       "filename": "asset-2.png",
       "x": 582,
       "y": 399,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A green rectangle is centered on a black background. The rectangle is oriented horizontally and has a uniform width.",
+      "asset_description": "A green horizontal rectangle is centered on a black background. The rectangle is uniformly filled and positioned horizontally.",
       "filename": "asset-3.png",
       "x": 92,
       "y": -130,
@@ -196,7 +196,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black globe icon with a grid of curved lines forming a spherical shape. The grid consists of intersecting horizontal and vertical lines, creating a symmetrical pattern across the globe.",
+      "asset_description": "A black globe icon with a grid of curved lines forming a spherical shape. The grid intersects at multiple points, creating a symmetrical pattern across the globe.",
       "filename": "asset-6.png",
       "x": 125,
       "y": 1179,
@@ -207,7 +207,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white telephone handset icon is centered within a black circle on a white background. The handset is oriented with the mouthpiece pointing downward and the receiver extending to the right.",
+      "asset_description": "A white telephone handset icon is centered within a black circle. The handset is oriented vertically, with the earpiece pointing upward and the mouthpiece pointing downward.",
       "filename": "asset-7.png",
       "x": 121,
       "y": 1259,

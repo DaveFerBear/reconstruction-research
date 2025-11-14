@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal border of watercolor pumpkins and sunflowers runs across the bottom edge of the image against a plain white background. The pumpkins are various shades of peach and pale green, with some showing stems and leaves. The sunflowers are yellow with brown centers. The arrangement is dense and colorful, with no empty space visible.",
+      "asset_description": "A watercolor border of pumpkins and sunflowers on a white background. The pumpkins are light peach and pale green, with some showing stems and leaves. The sunflowers are yellow with brown centers and thin petals. Brown leaves and stems are interspersed among the flowers. The border is uneven, with some areas thicker than others.",
       "filename": "asset-2.png",
       "x": 21,
       "y": 432,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A vertical brown line runs from the top to the bottom of the image. The background is white.",
+      "svg_description": "A vertical brown line runs from the top to the bottom of the image, centered against a white background.",
       "filename": "svg-1.svg",
       "x": 515,
       "y": 798,

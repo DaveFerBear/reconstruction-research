@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient. No objects, text, or elements are present.",
+      "asset_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient.",
       "filename": "asset-9.png",
       "x": -21,
       "y": 1166,
@@ -26,7 +26,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright yellow, jagged-edged circle with a dark red outline is shown against a black background. The circle has a scalloped, wavy edge and appears to be centered.",
+      "asset_description": "A bright yellow, jagged-edged circle with a dark red outline is shown against a black background. The circle is symmetrical and evenly spaced.",
       "filename": "asset-5.png",
       "x": 77,
       "y": 949,
@@ -166,7 +166,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red line drawing of a burger on a white background. The burger consists of a top and bottom bun, filled with layered ingredients including lettuce, tomato, onion, and cheese. The top bun has a textured appearance, and the bottom bun appears slightly thicker. The drawing style is simple and bold, with no shading or detailed textures.",
+      "asset_description": "A red line drawing of a hamburger on a white background. The burger features a top bun, a layer of lettuce, a slice of tomato, and a patty. The bun has visible texture lines, and the tomato slice has distinct lines. The lettuce appears layered, and the patty has visible texture lines. The drawing style is simple and bold, with no shading or complex details.",
       "filename": "asset-1.png",
       "x": 454,
       "y": 613,
@@ -278,7 +278,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of red and white squares is arranged horizontally. The squares are evenly spaced and aligned in rows and columns. The image is uniform in color and texture, with no visible texture or shading beyond the checkerboard pattern itself.",
+      "asset_description": "A checkerboard pattern composed of alternating red and white squares is shown against a cream-colored background. The squares are arranged in a grid-like formation, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated, particularly at the edges.",
       "filename": "asset-2.png",
       "x": 672,
       "y": 79,
@@ -289,7 +289,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of alternating red and white squares is shown against a cream-colored background. The squares are arranged in a grid-like formation, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated, particularly toward the edges.",
+      "asset_description": "A checkerboard pattern composed of red and white squares is arranged horizontally. The squares are evenly spaced and aligned in rows and columns, with no gaps or overlaps. The image is on a light beige background.",
       "filename": "asset-10.png",
       "x": 90,
       "y": 1473,
@@ -300,7 +300,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red, diamond-shaped symbol is centered on a light beige background. The symbol is slightly blurred and has a subtle gradient, appearing darker at the edges.",
+      "asset_description": "A dark red, diamond-shaped symbol is centered on a light beige background. The symbol is slightly blurred and has a subtle gradient in its color intensity.",
       "filename": "asset-11.png",
       "x": 971,
       "y": 718,
@@ -311,7 +311,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A reddish-brown starburst shape is centered on a light beige background. The shape has four pointed arms extending from a central point, with slight variations in thickness along each arm. The image is uniform in color and texture, with no additional elements or patterns.",
+      "asset_description": "A reddish-brown starburst shape is centered on a light beige background. The shape has four pointed arms extending from a central point, with slight variations in thickness along each arm. The color is uniform across the image, with no additional patterns or textures.",
       "filename": "asset-12.png",
       "x": 47,
       "y": 315,

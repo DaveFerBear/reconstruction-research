@@ -1,11 +1,11 @@
 {
   "background_color": "#f5f5f5",
   "has_background_image": true,
-  "background_image_description": "A close-up view of a white surface with numerous wrinkles and creases. The wrinkles vary in depth and direction, creating a textured appearance across the surface. The image is evenly lit, with no visible shadows or highlights.",
+  "background_image_description": "A close-up view of a white surface with visible wrinkles and creases. The surface is uniformly white and shows no additional markings, textures, or objects.",
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "A solid black square is centered on a white background. The square is uniformly filled with no visible patterns, textures, or variations in color.",
+      "svg_description": "A solid black square border surrounds a white background.",
       "filename": "svg-4.svg",
       "x": 102,
       "y": 233,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid red horizontal band fills the frame, extending from the left edge to the right edge. The band is uniform in color and texture, with no visible patterns, gradients, or text.",
+      "svg_description": "A solid red horizontal band fills the frame, positioned centrally and spanning the width of the image. The band has no discernible texture, patterns, or gradients, appearing as a uniform, flat color.",
       "filename": "svg-1.svg",
       "x": -8,
       "y": -402,
@@ -25,7 +25,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A long-haired tabby cat lies on a light-colored surface, facing forward. Its fur is predominantly gray with darker stripes, and it has yellowish-green eyes. The cat's paws are tucked under its body, and its head is slightly tilted. The background is blurred and light-colored.",
+      "asset_description": "A long-haired tabby cat with brown and black stripes lies on a light-colored surface. Its front paws are tucked under its body, and its head is turned slightly to the left. The cat's eyes are light green or yellow-green, and its ears are upright. The background is blurred and light-colored.",
       "filename": "asset-1.png",
       "x": 169,
       "y": 295,
@@ -159,7 +159,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red rectangular stamp with a white border displays the word \"REWARD\" in bold white capital letters. The stamp has a textured appearance with small, light-colored specks scattered across its surface. The background is a gradient transitioning from dark gray at the top to light pink at the bottom.",
+      "asset_description": "A red rectangular stamp with a white border displays the word \"REWARD\" in bold white capital letters. The stamp has a textured, speckled appearance with small white specks scattered across its surface. The background is a gradient transitioning from dark gray at the top to light pink at the bottom.",
       "filename": "asset-3.png",
       "x": 625,
       "y": 821,

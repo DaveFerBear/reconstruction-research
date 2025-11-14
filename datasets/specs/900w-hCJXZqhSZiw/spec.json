@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light brown circle is centered on a black background. The circle is uniformly sized and positioned centrally, with no additional markings or text.",
+      "asset_description": "A light brown circle is centered on a black background. The circle is uniform in color and size, with no visible texture or pattern.",
       "filename": "asset-5.png",
       "x": -213,
       "y": 828,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light beige circle is centered on a black background. The circle is uniformly sized and positioned centrally, with no other shapes or elements present.",
+      "asset_description": "A light beige circle is centered on a black background. The circle is uniform in color and size, with no visible texture or pattern.",
       "filename": "asset-4.png",
       "x": 132,
       "y": 507,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light gray circle is centered on a black background. The circle is uniform in color and shape, with no visible texture or pattern.",
+      "asset_description": "A light gray circle is centered on a black background. The circle is smooth and uniform in shape, with no visible texture or markings.",
       "filename": "asset-3.png",
       "x": -213,
       "y": 501,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light gray circle is centered on a black background. The circle is uniform in color and size, with no visible texture or pattern.",
+      "asset_description": "A light gray circle is centered on a black background.",
       "filename": "asset-1.png",
       "x": -213,
       "y": 165,

@@ -1,11 +1,11 @@
 {
   "background_color": "#d8e6cd",
   "has_background_image": true,
-  "background_image_description": "A light teal background with a grid pattern. The grid lines are thin and evenly spaced, creating a subtle texture. The color transitions from a lighter shade on the left to a slightly darker shade on the right, with a subtle gradient visible along the edges. No other elements or objects are present in the image.",
+  "background_image_description": "A light teal background with a grid pattern. The grid lines are thin and evenly spaced, creating a uniform texture. The color transitions from a lighter shade on the left to a slightly darker shade on the right, with a subtle gradient visible along the edges. No other elements or objects are present in the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light green grid pattern fills the frame. A small white diamond shape appears in the bottom right corner.",
+      "asset_description": "A light green background with a grid of evenly spaced squares. A small white diamond shape appears in the bottom right corner.",
       "filename": "asset-1.png",
       "x": 1,
       "y": -1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A solid white rectangle is centered on a black background. The rectangle is uniformly filled and has no visible texture, patterns, or gradients.",
+      "asset_description": "A solid white rectangle is centered on a black background.",
       "filename": "asset-3.png",
       "x": -95,
       "y": 410,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white glass jar with a white lid sits on a dark green circular base. Inside the jar are four heart-shaped decorations: one red, one orange, one yellow, and one yellow. The jar is outlined in black and set against a white background.",
+      "asset_description": "A white glass jar with a white lid sits on a green circular base. Inside the jar are four heart shapes: one red, one yellow, one yellow, and one red. The jar is outlined in black against a white background.",
       "filename": "asset-2.png",
       "x": 268,
       "y": 140,
@@ -38,7 +38,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "A completely white image with no visible features or objects.",
       "filename": "svg-4.svg",
       "x": 300,
       "y": 330,
@@ -48,7 +48,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A completely white image with no visible content.",
+      "svg_description": "A plain white background.",
       "filename": "svg-5.svg",
       "x": 1370,
       "y": 210,
@@ -148,7 +148,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark green, three-dimensional numeral 3 is centered on a black background. The numeral has a glossy appearance with subtle highlights and shadows, giving it a three-dimensional form.",
+      "asset_description": "A dark green, three-dimensional numeral \"3\" is shown against a black background. The numeral has a glossy appearance with subtle highlights and shadows, giving it a three-dimensional form.",
       "filename": "asset-6.png",
       "x": 641,
       "y": 919,
@@ -159,7 +159,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light green arrow points to the right on a black background. The arrow is thin and curved.",
+      "asset_description": "A light green arrow points to the right on a black background. The arrow is slightly curved and positioned near the center of the image.",
       "filename": "asset-7.png",
       "x": 636,
       "y": 885,
@@ -170,7 +170,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white heart shape is drawn on a black background. The heart is oriented with its point facing right and its base curving slightly downward. A thin, straight line extends from the bottom point of the heart.",
+      "asset_description": "A white heart shape is drawn on a black background. The heart is oriented with its point facing right and its base curving slightly downward. A thin, straight line extends from the bottom left of the heart, passing through the lower portion of the heart’s curve and extending to the right edge of the image.",
       "filename": "asset-8.png",
       "x": 1100,
       "y": -71,

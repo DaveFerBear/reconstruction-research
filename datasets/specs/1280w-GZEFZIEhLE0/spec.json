@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A black and white image shows three thick, horizontal brushstrokes of paint forming a rough oval shape in the center. The paint appears textured and slightly uneven, with small specks visible between strokes. The background is dark and smooth, providing contrast to the textured paint.",
+  "background_image_description": "A black and white image shows three thick, horizontal brushstrokes of paint forming a rough oval shape in the center. The paint appears textured and slightly uneven, with small specks visible between strokes. The background is dark and uniform, providing contrast to the paint strokes.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two gray spray-painted lines are visible against a light gray background. The lines are slightly curved and overlap in places. A small white diamond shape appears in the bottom right corner.",
+      "asset_description": "Two gray spray-painted lines are visible against a light gray background. The lines are uneven and overlap in places, with some areas appearing thicker than others. A small white diamond shape is visible in the bottom right corner.",
       "filename": "asset-2.png",
       "x": 3,
       "y": 3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black and white close-up of a person's face. The individual has dark skin and short, curly hair. Their eyes are open and looking directly at the camera. The nose is straight and centered. The mouth is closed in a neutral expression. The background is dark and out of focus. The image is sharply focused on the face.",
+      "asset_description": "A black and white close-up of a person's face. The individual has dark skin and short, curly hair. Their eyes are open and looking directly at the camera. The nose is straight and centered. The mouth is closed, forming a straight line. The background is plain and nondescript. The image is well-lit and focused on the face. No other objects or text are visible.",
       "filename": "asset-3.png",
       "x": 270,
       "y": 229,

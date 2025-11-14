@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two hands hold a brown cardboard container lined with white paper with green stripes. Inside are four yellow tacos filled with red and green toppings. A wedge of lemon sits beside the tacos. The background is dark and blurred.",
+      "asset_description": "Two hands hold a brown cardboard takeout container with green and white striped paper liner. The container holds three yellow tacos filled with shredded red and green toppings. A lemon wedge rests on the side of the container. The background is blurred with warm tones.",
       "filename": "asset-2.png",
       "x": -155,
       "y": 859,
@@ -68,7 +68,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A gold-colored triangle is centered on a white background. The triangle is equilateral with equal sides and angles.",
+      "svg_description": "A gold-colored triangle is centered on a white background. The triangle is equilateral and symmetrical.",
       "filename": "svg-1.svg",
       "x": 387,
       "y": 1363,

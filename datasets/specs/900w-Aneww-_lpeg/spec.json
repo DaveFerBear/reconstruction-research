@@ -1,7 +1,7 @@
 {
   "background_color": "#efe6d8",
   "has_background_image": true,
-  "background_image_description": "A light beige background with small, scattered dark specks of varying sizes. The speckles appear randomly distributed across the surface.",
+  "background_image_description": "A light beige or cream-colored background with small, scattered specks of darker beige or brown. The specks are unevenly distributed and vary in size. The background texture appears slightly grainy or speckled.",
   "nodes": [
     {
       "type": "image",
@@ -76,7 +76,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the lower portion. The line is uniform in width and appears solid with no visible breaks or variations in color.",
+      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the frame. The line is uniform in width and appears solid with no visible breaks or variations in color.",
       "filename": "svg-2.svg",
       "x": 87,
       "y": 1171,
@@ -154,7 +154,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge. The line is uniform in width and appears solid with no variations or textures. The background is a plain white surface, providing a stark contrast to the blue line. No other objects, texts, or markings are visible in the image.",
+      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the top edge. The line is uniform in width and appears solid with no visible breaks or variations in color.",
       "filename": "svg-3.svg",
       "x": 87,
       "y": 1308,

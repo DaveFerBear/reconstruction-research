@@ -1,7 +1,7 @@
 {
   "background_color": "#caa0b7",
   "has_background_image": true,
-  "background_image_description": "A close-up view of a light purple fabric with a smooth, silky texture. The fabric is draped and folded, creating soft curves and shadows that emphasize its gentle folds. The color is a uniform, light lavender or lilac, with no visible patterns or embellishments. The image focuses solely on the fabric and its visual texture, without any additional objects or context.",
+  "background_image_description": "A close-up view of a light purple fabric with a smooth, silky texture. The fabric is draped and folded, creating soft curves and shadows that emphasize its gentle folds. The color is a uniform, pale lavender with no visible patterns or embellishments. The image focuses solely on the fabric and its interplay of light and shadow, with no additional objects or text present.",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A tube of cream or lotion with horizontal bands of purple, white, and beige sits on a white rectangular block against a solid gray background. The tube has a white cap and a slightly textured, ridged top edge. The block is plain and unadorned.",
+      "asset_description": "A tube of cream or lotion with horizontal bands of purple, white, and beige sits on a white rectangular block against a solid gray background. The tube has a white cap and a slightly curved, ribbed top.",
       "filename": "asset-1.png",
       "x": 204,
       "y": 510,
@@ -127,7 +127,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid purple oval shape is centered on a white background. The oval is uniformly colored and has no visible texture or pattern.",
+      "svg_description": "A solid purple oval shape is centered on a white background. The oval is uniformly colored and has a smooth, continuous edge.",
       "filename": "svg-3.svg",
       "x": 399,
       "y": 1443,
