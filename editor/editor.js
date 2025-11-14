@@ -102,6 +102,7 @@ async function loadSpec(specName) {
     hasChanges = false;
     document.getElementById("save-btn").disabled = true;
     document.getElementById("copy-btn").disabled = false;
+    document.getElementById("add-text-btn").disabled = false;
     document.getElementById("add-svg-btn").disabled = false;
 
     // Update URL without reloading page
@@ -621,6 +622,51 @@ async function uploadAndAddImage(file, x, y) {
   } catch (error) {
     showToast("Error adding image: " + error.message, true);
     console.error("Upload error:", error);
+  }
+}
+
+async function addNewText() {
+  if (!currentSpec || !currentSpecName) return;
+
+  try {
+    // Add new text node to spec (default position: center of canvas)
+    const canvasWidth = currentSpec.canvas_width || 800;
+    const canvasHeight = currentSpec.canvas_height || 600;
+
+    const newNode = {
+      type: "text",
+      text: "New Text",
+      x: Math.round(canvasWidth / 2 - 100),
+      y: Math.round(canvasHeight / 2 - 25),
+      width: 200,
+      height: 50,
+      rotation: 0,
+      opacity: 1,
+      "font-family": "Arial",
+      "font-size": 24,
+      color: "#000000",
+      "text-align": "center",
+      "font-weight": "normal",
+      "font-style": "normal",
+      "font-stretch": "normal",
+      "text-decoration": "none",
+      "text-transform": "none",
+      "line-height": 1.2,
+    };
+
+    currentSpec.nodes.push(newNode);
+
+    // Save the updated spec
+    hasChanges = true;
+    await saveSpec();
+
+    // Re-render to show the new text
+    renderSpec(currentSpec, currentSpecName);
+
+    showToast("✓ Text added successfully!");
+  } catch (error) {
+    showToast("Error adding text: " + error.message, true);
+    console.error("Add text error:", error);
   }
 }
 
@@ -1429,6 +1475,7 @@ window.bringToFront = function (nodeIdx) {
 };
 
 // Initialize
+document.getElementById("add-text-btn").addEventListener("click", addNewText);
 document.getElementById("add-svg-btn").addEventListener("click", addNewSVG);
 document.getElementById("copy-btn").addEventListener("click", copySpec);
 document.getElementById("save-btn").addEventListener("click", saveSpec);
