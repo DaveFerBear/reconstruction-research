@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled design.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-5.png",
       "x": 1245,
       "y": -23,
@@ -118,7 +118,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_q8y7j4q8y7j4q8y7.png",
+      "asset_description": "A computer monitor displaying a website titled “Savoir-Vivre Choise” sits on a white desk. A person’s legs, wearing striped socks and jeans, are crossed at the ankles in front of the monitor. A green and white mug rests on the desk beside the monitor. Above the monitor, two wooden shelves hold books, a vintage radio, and a framed photo. The wall behind the shelves is white with visible texture.",
       "filename": "asset-6.png",
       "x": 1191,
       "y": 309,
@@ -129,7 +129,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_k6u42ok6u42ok6u4.png",
+      "asset_description": "A young woman with long red hair and glasses sits cross-legged on a patterned rug, wearing a pale yellow long-sleeved shirt and pink pants. She holds a blue pen in her right hand and looks down at a black laptop computer resting on her lap. A closed spiral-bound notebook lies beside her, and a black tablet is positioned to the left. A black leather couch is visible in the background, along with a wooden table and a lamp.",
       "filename": "asset-7.png",
       "x": 434,
       "y": 309,
@@ -140,7 +140,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_rwgf42rwgf42rwgf.png",
+      "asset_description": "An orange, glossy mushroom-shaped lamp sits atop a stack of three books on a dark brown wooden surface. The lamp has a rounded, bulbous base and a wide, flat top. A white cord extends from the left side of the lamp. The top book is dark blue with visible text, and the bottom two books are white with visible text. A small, black and white photograph rests on the bottom book. A small, white, diamond-shaped object is visible in the bottom right corner of the image.",
       "filename": "asset-8.png",
       "x": 811,
       "y": 309,
@@ -151,7 +151,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_1g35s41g35s41g35.png",
+      "asset_description": "A person wearing a white long-sleeved shirt is seated at a wooden table, typing on a silver laptop. The laptop screen displays a recipe image featuring a bowl of orange-colored food. A bright orange bowl filled with oranges sits on the table next to the laptop. To the left of the laptop, a closed book rests on the table. The background is blurred and out of focus.",
       "filename": "asset-9.png",
       "x": 49,
       "y": 309,

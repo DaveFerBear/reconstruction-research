@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1b62f4c1-45f9-408b-ac01-ae4940f50877.png",
+      "asset_description": "Two hands hold a brown cardboard container lined with white paper with green stripes. Inside are four yellow tacos filled with red and green toppings. A wedge of lemon sits beside the tacos. The background is dark and blurred.",
       "filename": "asset-2.png",
       "x": -155,
       "y": 859,
@@ -68,7 +68,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Small upward-pointing chevron, solid fill #e8a22b, centered above the call-to-action.",
+      "svg_description": "A gold-colored triangle is centered on a white background. The triangle is equilateral with equal sides and angles.",
       "filename": "svg-1.svg",
       "x": 387,
       "y": 1363,

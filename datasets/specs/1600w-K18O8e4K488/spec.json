@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Desaturated, low-contrast office desk scene covering full 1600x1600 canvas: hands holding a pen, documents with charts, a tablet/laptop; soft light, blurry to serve as a subtle backdrop.",
+  "background_image_description": "A person's hands are shown writing on a document with a pen. The document contains multiple sheets with charts and graphs. A laptop is partially visible on the left side of the image. The background is blurred, showing a window with natural light.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_56ug3h56ug3h56ug.png",
+      "asset_description": "Two hands in white lab coats are shown interacting with documents on a table. One hand holds a white card with text and graphics, while the other holds a pen and rests near a document with text and bar graphs. The table surface is light-colored.",
       "filename": "asset-2.png",
       "x": 1,
       "y": -1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A solid orange circle is centered on a black background. The circle is uniform in color and shape, with no visible texture or pattern.",
       "filename": "asset-3.png",
       "x": 543,
       "y": 693,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_zh2iajzh2iajzh2i.png",
+      "asset_description": "A woman with shoulder-length brown hair and a light-colored sleeveless top is centered within an orange circle on a transparent background. The circle has a thin orange border and contains a smaller orange circle in the upper right corner. The woman is looking directly at the camera and has a slight smile.",
       "filename": "asset-4.png",
       "x": 83,
       "y": 93,
@@ -38,7 +38,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Top-left quarter-circle accent clipped to canvas corner; solid orange fill (#FF7A00) with slight radial highlight toward center.",
+      "svg_description": "A bright orange circle fills the frame, curving from the top left to the bottom right. The circle has a smooth, gradient appearance, transitioning from a lighter orange at the top to a deeper orange at the bottom. The right edge of the circle is slightly thicker than the left edge.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,
@@ -48,7 +48,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded pill badge background with fully rounded ends; solid warm red (#E83B54).",
+      "svg_description": "A solid red oval shape is centered on a white background. The oval is uniformly colored and has a smooth, continuous form.",
       "filename": "svg-5.svg",
       "x": 1148,
       "y": 116,
@@ -211,7 +211,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: phone (1).png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-6.png",
       "x": 130,
       "y": 1410,

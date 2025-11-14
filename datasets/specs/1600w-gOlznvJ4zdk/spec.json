@@ -1,11 +1,11 @@
 {
   "background_color": "#d8e6cd",
   "has_background_image": true,
-  "background_image_description": "Subtle light-sage grid across the entire 1600x1600 canvas. Base is #d8e6cd with thin square gridlines in #c5d7bd spaced evenly (~160px), giving a calm notebook-like pattern.",
+  "background_image_description": "A light teal background with a grid pattern. The grid lines are thin and evenly spaced, creating a subtle texture. The color transitions from a lighter shade on the left to a slightly darker shade on the right, with a subtle gradient visible along the edges. No other elements or objects are present in the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_gxc9pjgxc9pjgxc9.png",
+      "asset_description": "A light green grid pattern fills the frame. A small white diamond shape appears in the bottom right corner.",
       "filename": "asset-1.png",
       "x": 1,
       "y": -1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 16.png",
+      "asset_description": "A solid white rectangle is centered on a black background. The rectangle is uniformly filled and has no visible texture, patterns, or gradients.",
       "filename": "asset-3.png",
       "x": -95,
       "y": 410,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 11.png",
+      "asset_description": "A white glass jar with a white lid sits on a dark green circular base. Inside the jar are four heart-shaped decorations: one red, one orange, one yellow, and one yellow. The jar is outlined in black and set against a white background.",
       "filename": "asset-2.png",
       "x": 268,
       "y": 140,
@@ -38,7 +38,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three short hand-drawn white dash marks suggesting sparkles, angled slightly, placed left of the jar. Strokes #ffffff, rounded caps.",
+      "svg_description": "A plain white background.",
       "filename": "svg-4.svg",
       "x": 300,
       "y": 330,
@@ -48,7 +48,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Loose hand-drawn heart outline in white (#ffffff) with a single continuous stroke, placed at the upper-right near the headline.",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-5.svg",
       "x": 1370,
       "y": 210,
@@ -109,7 +109,7 @@
     },
     {
       "type": "text",
-      "text": "Whenever you're feeling down, stressed out, or drained \u2013 pull out a strip of paper and then do that activity.",
+      "text": "Whenever you're feeling down, stressed out, or drained – pull out a strip of paper and then do that activity.",
       "x": 930,
       "y": 1080,
       "width": 580,
@@ -126,7 +126,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 12.png",
+      "asset_description": "A single, light green number \"1\" is shown against a black background. The number has a slightly glossy or reflective appearance.",
       "filename": "asset-4.png",
       "x": 5,
       "y": 938,
@@ -137,7 +137,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 13.png",
+      "asset_description": "A green, rounded numeral 2 is shown against a black background. The number has a glossy or reflective appearance.",
       "filename": "asset-5.png",
       "x": 16,
       "y": 1093,
@@ -148,7 +148,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 14.png",
+      "asset_description": "A dark green, three-dimensional numeral 3 is centered on a black background. The numeral has a glossy appearance with subtle highlights and shadows, giving it a three-dimensional form.",
       "filename": "asset-6.png",
       "x": 641,
       "y": 919,
@@ -159,7 +159,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 15.png",
+      "asset_description": "A light green arrow points to the right on a black background. The arrow is thin and curved.",
       "filename": "asset-7.png",
       "x": 636,
       "y": 885,
@@ -170,7 +170,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 17.png",
+      "asset_description": "A white heart shape is drawn on a black background. The heart is oriented with its point facing right and its base curving slightly downward. A thin, straight line extends from the bottom point of the heart.",
       "filename": "asset-8.png",
       "x": 1100,
       "y": -71,

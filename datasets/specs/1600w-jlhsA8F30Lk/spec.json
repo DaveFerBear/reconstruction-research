@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 20.png",
+      "asset_description": "A solid light gray background fills the frame.",
       "filename": "asset-4.png",
       "x": -120,
       "y": -100,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 18.png",
+      "asset_description": "A pinkish-red speech bubble shape is centered on a black background. The bubble has a rounded top and a pointed tail extending to the left.",
       "filename": "asset-2.png",
       "x": 257,
       "y": -154,
@@ -78,7 +78,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 19.png",
+      "asset_description": "A pink plastic megaphone with a rounded handle and a white inner cone is shown against a white background. The handle is angled slightly downward.",
       "filename": "asset-3.png",
       "x": -48,
       "y": 632,

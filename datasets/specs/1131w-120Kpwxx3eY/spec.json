@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 3.png",
+      "asset_description": "A solid white rectangle is centered on a black background. The rectangle is uniformly filled and has no visible texture, patterns, or gradients.",
       "filename": "asset-3.png",
       "x": -300,
       "y": -15,
@@ -50,7 +50,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the job title.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color.",
       "filename": "svg-3.svg",
       "x": 525,
       "y": 351,
@@ -60,7 +60,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three small royal-blue line icons stacked vertically: phone handset, envelope, and map pin, each circular-corner, outline style.",
+      "svg_description": "A plain white background.",
       "filename": "svg-4.svg",
       "x": 540,
       "y": 324,
@@ -138,7 +138,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the 'About Me' heading.",
+      "svg_description": "A horizontal black line runs across the image, positioned near the center. The background is entirely white, providing a stark contrast to the black line. No other elements, text, or objects are visible in the image.",
       "filename": "svg-5.svg",
       "x": 93,
       "y": 635,
@@ -182,7 +182,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the 'Language' heading.",
+      "svg_description": "A horizontal blue bar spans the width of the image, positioned near the center. The bar is uniform in width and extends across the entire frame, with no visible texture, pattern, or additional elements.",
       "filename": "svg-6.svg",
       "x": 81,
       "y": 935,
@@ -243,7 +243,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the 'Skills' heading.",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-9.svg",
       "x": 78,
       "y": 1276,
@@ -287,7 +287,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the 'Education' heading.",
+      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the center. The line is uniform in width and extends from the left edge to the right edge of the frame, with no visible texture or pattern.",
       "filename": "svg-10.svg",
       "x": 519,
       "y": 611,
@@ -331,7 +331,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule separating education entries.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top edge and extending to the right edge. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
       "filename": "svg-11.svg",
       "x": 525,
       "y": 739,
@@ -375,7 +375,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule separating sections.",
+      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the center. The line is uniform in width and extends from the left edge to the right edge of the frame. No other elements are visible in the image.",
       "filename": "svg-12.svg",
       "x": 525,
       "y": 855,
@@ -402,7 +402,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule under the 'Work Experience' heading.",
+      "svg_description": "A solid blue horizontal line spans the width of the image, positioned near the top edge.",
       "filename": "svg-13.svg",
       "x": 523,
       "y": 968,
@@ -463,7 +463,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule separating work experience entries.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
       "filename": "svg-14.svg",
       "x": 525,
       "y": 1085,
@@ -524,7 +524,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin royal-blue horizontal rule at the bottom of the second work experience entry.",
+      "svg_description": "A horizontal blue line spans the width of the image, positioned near the top edge. The line is uniform in width and extends across the entire visible area.",
       "filename": "svg-15.svg",
       "x": 525,
       "y": 1342,
@@ -534,7 +534,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 3 1.png",
+      "asset_description": "A wavy blue line stretches horizontally across a light beige background. The line is slightly uneven, with gentle curves along its length.",
       "filename": "asset-4.png",
       "x": 408,
       "y": 105,
@@ -545,7 +545,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 3 2.png",
+      "asset_description": "A blue, stylized sunburst symbol is centered on a light beige background. The symbol consists of eight straight lines radiating outward from a central point, all in uniform blue color. The lines are of consistent thickness and width, with no gradients or shading.",
       "filename": "asset-5.png",
       "x": 921,
       "y": 66,
@@ -556,7 +556,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 3 3.png",
+      "asset_description": "A young woman with dark, curly hair is captured in a close-up shot. She is wearing a vibrant blue sweater with orange-brown accents at the shoulders and sleeves. The sweater has a textured, somewhat fuzzy appearance. She is holding a blue pen or marker in her right hand and appears to be resting her left hand near her chin. Her gaze is directed towards the camera. The background is a plain, light-colored wall, with a portion of a green plant visible on the left side. A blue line is visible in the top right corner of the image.",
       "filename": "asset-6.png",
       "x": 93,
       "y": 114,
@@ -567,7 +567,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Default blue square with SVG text",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-16.svg",
       "x": 516,
       "y": 750,
@@ -578,7 +578,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Default blue square with SVG text",
+      "svg_description": "A horizontal blue bar is centered on a white background. The bar is slightly angled to the right and has a small white end on the right side.",
       "filename": "svg-18.svg",
       "x": 90,
       "y": 1023,
@@ -589,7 +589,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 46.png",
+      "asset_description": "A blue envelope icon with a black diagonal line running through its center, centered on a black background.",
       "filename": "asset-10.png",
       "x": 520,
       "y": 428,
@@ -600,7 +600,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 48.png",
+      "asset_description": "A blue telephone icon with a rounded handset and a keypad is shown against a black background. The handset curves upwards and outwards, and the keypad consists of six black rectangular keys arranged in a 3x2 grid.",
       "filename": "asset-11.png",
       "x": 523,
       "y": 387,
@@ -611,7 +611,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 47.png",
+      "asset_description": "A blue location marker icon with a circular center and a pointed tip is shown against a black background.",
       "filename": "asset-12.png",
       "x": 521,
       "y": 476,
@@ -622,7 +622,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Default blue square with SVG text",
+      "svg_description": "A horizontal blue progress bar is centered on a white background. The bar is filled halfway and has a small gap on the right end.",
       "filename": "svg-19.svg",
       "x": 84,
       "y": 1138,

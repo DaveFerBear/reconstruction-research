@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 29.png",
+      "asset_description": "A solid light blue background fills the frame. The color is uniform and without any visible texture, patterns, or objects.",
       "filename": "asset-2.png",
       "x": -222,
       "y": -107,
@@ -84,7 +84,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Color photograph centered on a light beige gallery wall. A middle-aged man with gray hair tied in a bun and glasses, wearing a dark teal long-sleeve shirt, stands in profile with arms crossed looking at a bulletin board. The board displays colorful posters, flyers, and notes including bold abstract graphics and typography in red, green, orange, blue, and yellow.",
+      "asset_description": "A man with gray hair and glasses, wearing a dark blue sweater, stands with his arms crossed, looking towards a corkboard mounted on a white wall. The corkboard displays various papers and artwork, including a poster with the words “LET THE NUSSE CONSUME YOU,” a pink butterfly drawing, and other colorful papers. The man is positioned to the right of the corkboard, facing it directly.",
       "filename": "asset-1.png",
       "x": 243,
       "y": 414,

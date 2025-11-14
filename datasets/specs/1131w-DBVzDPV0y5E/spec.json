@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled design.png",
+      "asset_description": "A solid white rectangle is centered on a black background. The rectangle is uniformly filled and has a uniform thickness.",
       "filename": "asset-4.png",
       "x": -9,
       "y": -25,
@@ -67,7 +67,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 1.png",
+      "asset_description": "A light blue beaker with a black rim and measurement markings is shown tilted against a black background. The beaker contains a small amount of light blue liquid with several white bubbles.",
       "filename": "asset-6.png",
       "x": 224,
       "y": -31,
@@ -78,7 +78,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 2.png",
+      "asset_description": "A yellow liquid is contained within a clear tube with a white cap. The tube is angled diagonally against a white background. Four small black dashes are visible along the length of the tube.",
       "filename": "asset-7.png",
       "x": 678,
       "y": 34,
@@ -89,7 +89,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 3.png",
+      "asset_description": "A pink and yellow battery with a yellow top and a white cap is shown against a white background. The battery has a black plus symbol and a black minus symbol on its surface.",
       "filename": "asset-8.png",
       "x": -5,
       "y": 359,
@@ -100,7 +100,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 4.png",
+      "asset_description": "A cartoon drawing of a dropper with a pink cap and beige body contains a blue liquid dripping from the tip. The background is white.",
       "filename": "asset-9.png",
       "x": -12,
       "y": 924,
@@ -111,7 +111,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 5.png",
+      "asset_description": "A stylized molecular model depicts a central red sphere with six yellow spheres connected by black lines. The spheres are arranged in a roughly symmetrical pattern, with some overlapping. The background is black, providing a stark contrast to the colored spheres and lines.",
       "filename": "asset-10.png",
       "x": 702,
       "y": 1127,
@@ -122,7 +122,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 6.png",
+      "asset_description": "A pair of light blue-framed safety glasses with a small blue droplet on the bridge rests on a white background. The glasses are angled slightly downward, with the left arm curved and the right arm straight. White lines on the lenses indicate reflections.",
       "filename": "asset-11.png",
       "x": 203,
       "y": 1285,

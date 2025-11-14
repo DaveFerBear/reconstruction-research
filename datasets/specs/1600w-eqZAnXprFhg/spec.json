@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-16.png",
       "x": 725,
       "y": 433,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-15.png",
       "x": 538,
       "y": 408,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-14.png",
       "x": 680,
       "y": 436,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-13.png",
       "x": 225,
       "y": 327,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-12.png",
       "x": 406,
       "y": 299,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-11.png",
       "x": 226,
       "y": 565,
@@ -71,7 +71,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-10.png",
       "x": 437,
       "y": 425,
@@ -82,7 +82,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-9.png",
       "x": 629,
       "y": 379,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-8.png",
       "x": 725,
       "y": 344,
@@ -104,7 +104,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-7.png",
       "x": 824,
       "y": 341,
@@ -115,7 +115,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-6.png",
       "x": 1186,
       "y": 246,
@@ -126,7 +126,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-5.png",
       "x": 847,
       "y": 247,
@@ -137,7 +137,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black, with no discernible features, objects, or patterns.",
       "filename": "asset-4.png",
       "x": 1064,
       "y": 506,
@@ -148,7 +148,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-2.png",
       "x": 694,
       "y": 293,
@@ -159,7 +159,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-1.png",
       "x": 867,
       "y": 198,
@@ -170,7 +170,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 36.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-3.png",
       "x": 788,
       "y": 406,
@@ -181,7 +181,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Full-width top banner rectangle with a left-to-right linear gradient from light peach (#f6c189) at the left to vivid orange (#e7782e) at the right. No stroke.",
+      "svg_description": "A horizontal gradient bar transitions from light yellow-orange on the left to orange on the right. The bar is positioned centrally against a white background.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,
@@ -191,7 +191,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
       "filename": "svg-2.svg",
       "x": 80,
       "y": 279,
@@ -201,7 +201,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #d9d6c6 (warm light gray-beige).",
+      "svg_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient.",
       "filename": "svg-3.svg",
       "x": 290,
       "y": 330,
@@ -211,7 +211,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #cfe3f1 (very light blue).",
+      "svg_description": "A light blue square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
       "filename": "svg-4.svg",
       "x": 520,
       "y": 250,
@@ -221,7 +221,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange square is centered on a white background.",
       "filename": "svg-5.svg",
       "x": 739,
       "y": 239,
@@ -231,7 +231,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
       "filename": "svg-6.svg",
       "x": 968,
       "y": 250,
@@ -241,7 +241,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A plain white background fills the frame.",
       "filename": "svg-7.svg",
       "x": 1180,
       "y": 270,
@@ -251,7 +251,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the top-left.",
       "filename": "svg-8.svg",
       "x": 1400,
       "y": 250,
@@ -261,7 +261,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #6fa8dc (medium blue).",
+      "svg_description": "A solid blue background fills the frame, uniformly colored without any variations, textures, or patterns.",
       "filename": "svg-9.svg",
       "x": 1260,
       "y": 420,
@@ -271,7 +271,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange square is centered on a white background.",
       "filename": "svg-10.svg",
       "x": 1416,
       "y": 572,
@@ -281,7 +281,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #d9d6c6 (warm light gray-beige).",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-11.svg",
       "x": 1282,
       "y": 727,
@@ -291,7 +291,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-12.svg",
       "x": 1066,
       "y": 578,
@@ -301,7 +301,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #6fa8dc (medium blue).",
+      "svg_description": "A solid blue background fills the frame, appearing uniform and without any visible texture, patterns, or objects.",
       "filename": "svg-13.svg",
       "x": 729,
       "y": 664,
@@ -311,7 +311,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #cfe3f1 (very light blue).",
+      "svg_description": "A light blue square is centered on a white background.",
       "filename": "svg-14.svg",
       "x": 883,
       "y": 698,
@@ -321,7 +321,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f28c57 (orange).",
+      "svg_description": "A solid orange-peach color fills the frame. The color is uniform and consistent across the image, with no visible texture, patterns, or gradients.",
       "filename": "svg-15.svg",
       "x": 520,
       "y": 700,
@@ -331,7 +331,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #ffffff (white).",
+      "svg_description": "A plain white background.",
       "filename": "svg-16.svg",
       "x": 314,
       "y": 570,
@@ -341,7 +341,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid square (150x150) filled #f6d68a (pale yellow).",
+      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, toward the upper right portion of the image.",
       "filename": "svg-17.svg",
       "x": 80,
       "y": 600,
@@ -351,7 +351,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Rounded rectangle (360x130, 24px corner radius) centered horizontally around x=620..980 with a subtle diagonal gradient from peach #f6c189 (top-left) to orange #f0864c (bottom-right). No stroke.",
+      "svg_description": "A horizontal, rectangular shape with a gradient of orange and yellow tones fills the frame against a white background. The shape is uniform in width and height, with no visible edges or patterns.",
       "filename": "svg-18.svg",
       "x": 620,
       "y": 454,

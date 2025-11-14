@@ -1,11 +1,11 @@
 {
   "background_color": "#e684b8",
   "has_background_image": true,
-  "background_image_description": "Full-canvas soft, grainy gradient with fine film-noise texture. Colors blend from magenta-pink (#d85ab3) in the upper left to light peach (#f3c39e) toward the center-right, with warm orange (#ee6f4a) and purple-violet (#8743c1) blooms toward the lower half. No distinct shapes; just smooth radial/linear blends and noise.",
+  "background_image_description": "The image displays a gradient background that transitions from pink on the left to purple on the right. The gradient is smooth and gradual, with a lighter area in the center that gradually darkens toward the edges. The colors blend seamlessly, creating a soft and pastel effect. There are no discernible objects, texts, or actions present in the image. The focus is solely on the color gradient itself.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 3.jpg",
+      "asset_description": "A gradient of pink and orange tones fills the image. The pink shades range from a light, pastel hue at the top to a deeper, more vibrant pink at the bottom. The orange tones transition from a lighter, almost peachy-orange in the center to a richer, deeper orange towards the bottom right. The image is smooth and without any visible texture or patterns.",
       "filename": "asset-2.png",
       "x": -3,
       "y": 0,
@@ -118,7 +118,7 @@
     },
     {
       "type": "text",
-      "text": "PRIDE IS MORE\nTHAN      A\nCELEBRATION_ \nIT\u2019S A MOVEMENT!",
+      "text": "PRIDE IS MORE\nTHAN      A\nCELEBRATION_ \nIT’S A MOVEMENT!",
       "x": 75,
       "y": 1032,
       "width": 264,

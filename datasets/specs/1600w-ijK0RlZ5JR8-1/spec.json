@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 20.png",
+      "asset_description": "A solid white circle is centered on a black background. The circle is uniform in shape and size, with no visible texture or pattern.",
       "filename": "asset-1.png",
       "x": -69,
       "y": -47,
@@ -50,7 +50,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Simple right-pointing arrow with a rectangular shaft and triangular head, filled with soft orange #F2A24A.",
+      "svg_description": "A solid orange arrow points to the right against a white background. The arrow is straight and uniform in width.",
       "filename": "svg-2.svg",
       "x": 592,
       "y": 1120,

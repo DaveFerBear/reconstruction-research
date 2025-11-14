@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 8.png",
+      "asset_description": "A statue of a woman wearing a head covering and robe is shown against a white background. The statue’s head is tilted upward, and its robe drapes over its shoulder. The background is uniformly white.",
       "filename": "asset-2.png",
       "x": 17,
       "y": 3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 9.png",
+      "asset_description": "A woman with shoulder-length blonde hair sits with her hand resting on her cheek. She wears a white long-sleeved shirt and light-colored pants. Her gaze is directed slightly to her left. The background is solid black.",
       "filename": "asset-3.png",
       "x": 4,
       "y": -176,

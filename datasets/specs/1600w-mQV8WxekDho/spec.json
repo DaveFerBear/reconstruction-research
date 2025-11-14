@@ -1,11 +1,11 @@
 {
   "background_color": "#7b86e8",
   "has_background_image": true,
-  "background_image_description": "Full-bleed decorative backdrop: a subtle square grid of thin lines (~80 px spacing) in a slightly darker periwinkle-blue (#6f7fe0) over the base color. Scattered crisp white (#ffffff) starbursts with 6\u20138 points appear behind the headline: one large at top-right (~x1350,y190), medium at left-mid (~x280,y460), small at far-left (~x140,y720), and another small at right-mid (~x1230,y940). A thin white horizontal rule runs nearly full width near the bottom (~y1270) with two vertical white divider lines rising from it around the lower third of the canvas (approximately at x540 and x1085).",
+  "background_image_description": "A light blue background with a grid pattern is adorned with numerous white star shapes of varying sizes and brightness. A larger, starburst-like white shape is positioned in the upper right quadrant. A horizontal white line runs across the lower portion of the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_8rdwj48rdwj48rdw.png",
+      "asset_description": "A light blue grid pattern fills the background. The grid is composed of evenly spaced squares and lines, creating a uniform, textured appearance. In the bottom right corner, a small, light blue diamond shape is visible.",
       "filename": "asset-3.png",
       "x": -4,
       "y": 4,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 25.png",
+      "asset_description": "A horizontal white line spans the width of the image against a solid black background. The line is centered and evenly spaced, with no additional markings or elements.",
       "filename": "asset-5.png",
       "x": 61,
       "y": 859,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 24.png",
+      "asset_description": "The text \"DON'T MESS OUT\" is displayed in bold, pink letters with blue outlines, outlined in yellow. The letters are set against a black background, with small white star-like shapes positioned below and to the sides of the text.",
       "filename": "asset-2.png",
       "x": 81,
       "y": -45,

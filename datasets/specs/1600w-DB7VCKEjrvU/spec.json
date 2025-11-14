@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 4.png",
+      "asset_description": "A gold-colored square with a stylized, curved, incomplete square shape inside is centered on a black background. The square has a textured appearance with small, dark specks throughout its surface.",
       "filename": "asset-2.png",
       "x": 617,
       "y": 463,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 7.png",
+      "asset_description": "A horizontal pink bar is centered on a black background. The bar is uniformly colored and spans the width of the image, with no visible texture or pattern.",
       "filename": "asset-6.png",
       "x": 460,
       "y": 628,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 5.png",
+      "asset_description": "A blue, wavy, three-dimensional shape resembling a stylized letter \"M\" with a yellow rectangular block attached to its right side. The block has small, dark dots on its surface. The background is entirely black.",
       "filename": "asset-3.png",
       "x": 433,
       "y": 447,
@@ -72,7 +72,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 3.png",
+      "asset_description": "A pinkish-coral colored arch shape with a textured, speckled appearance is shown against a black background. A small blue section is visible at the bottom left of the arch.",
       "filename": "asset-4.png",
       "x": 608,
       "y": 192,
@@ -83,7 +83,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 6.png",
+      "asset_description": "A stylized eye icon with a textured, off-white appearance is set against a solid black background. The eye is centered and features two circular shapes representing pupils, with radiating lines extending outward from the outer edges.",
       "filename": "asset-5.png",
       "x": 365,
       "y": 215,

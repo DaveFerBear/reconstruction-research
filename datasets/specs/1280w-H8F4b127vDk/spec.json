@@ -1,11 +1,11 @@
 {
   "background_color": "#0a150b",
   "has_background_image": true,
-  "background_image_description": "Full-canvas photographic scene in warm sunlight: two women resting on lush green grass under dense ivy leaves. The upper woman sits leaning against a tree with a pink dress and headband; the lower woman lies in a pale green slip dress. Deep shadows and bright patches create a moody, film-like look with rich greens and earthy tones.",
+  "background_image_description": "Two women lie on grass beneath a tree with green leaves. The woman on the left wears a pinkish-coral dress with short sleeves and a gathered neckline. The woman on the right wears a light green dress with long sleeves and a flowing skirt. Both have long dark hair and look upward.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_rod0ysrod0ysrod0.png",
+      "asset_description": "Two women lie on grass in a park-like setting. The woman on the left wears a light pink dress and has a head covering. The woman on the right wears a light green dress with thin straps and embellishments. Both have their eyes closed and appear to be resting or sleeping. Green grass and foliage are visible around them. A small white star is visible in the bottom right corner.",
       "filename": "asset-2.png",
       "x": -3,
       "y": -3,
@@ -152,7 +152,7 @@
     },
     {
       "type": "text",
-      "text": "SWIPE \u2192",
+      "text": "SWIPE →",
       "x": 582,
       "y": 1488,
       "width": 140,
@@ -169,7 +169,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 9.png",
+      "asset_description": "A yellow oval shape is centered on a black background. The oval is outlined and has a smooth, continuous curve.",
       "filename": "asset-3.png",
       "x": 276,
       "y": 1200,

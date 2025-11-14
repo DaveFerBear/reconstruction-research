@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "Seamless gingham picnic tablecloth pattern covering the full 1280x1600 canvas: alternating checks of medium red (#e76b76) and light pink (#ffd6db) on white (#ffffff), arranged in a square grid with soft edges and slight inner transparency that creates lighter intersections.",
+  "background_image_description": "A repeating pattern of alternating red and light pink squares forms a grid. The squares are evenly spaced and uniformly sized, creating a consistent and symmetrical design.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Irregular torn paper sheet centered on the canvas, warm light beige (#efe7de) with soft gray drop shadow; top-left and top-right corners are held with semi-transparent masking tape pieces in tan (#e1c07b/#cfae66) overlapping the paper; bottom edge is jagged and curled.",
+      "asset_description": "A blank white rectangular piece of paper is taped to a gray background with two pieces of tan tape, one at the top left and one at the top right. The paper has a slightly uneven, jagged edge along its bottom right side.",
       "filename": "asset-1.png",
       "x": 36,
       "y": 6,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three short black hand-drawn accent lines radiating near the basket handle on the left side.",
+      "svg_description": "A black arrow pointing left is centered on a white background. The arrow consists of two short, curved lines forming a pointed shape.",
       "filename": "svg-1.svg",
       "x": 320,
       "y": 500,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Three short black hand-drawn accent lines radiating near the basket handle on the right side.",
+      "svg_description": "A black arrow pointing left is centered on a white background. The arrow is simple, with two short lines forming its shaft and two short lines forming its tail.",
       "filename": "svg-2.svg",
       "x": 880,
       "y": 500,
@@ -103,7 +103,7 @@
     },
     {
       "type": "text",
-      "text": "VEN A DISFRUTAR DE UN D\u00cdA AL AIRE LIBRE CON\nBUENA COMIDA, JUEGOS Y LA MEJOR COMPA\u00d1\u00cdA.",
+      "text": "VEN A DISFRUTAR DE UN DÍA AL AIRE LIBRE CON\nBUENA COMIDA, JUEGOS Y LA MEJOR COMPAÑÍA.",
       "x": 195,
       "y": 970,
       "width": 900,
@@ -154,7 +154,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_2260j62260j62260.png",
+      "asset_description": "A black and white line drawing of a rectangular basket with a handle. The basket is filled with woven material and has a grid pattern on its sides. Four short, curved lines emanate from the sides of the basket. The background is a transparent checkered pattern.",
       "filename": "asset-4.png",
       "x": 294,
       "y": 309,

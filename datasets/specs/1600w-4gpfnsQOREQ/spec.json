@@ -1,11 +1,11 @@
 {
   "background_color": "#f6cbd3",
   "has_background_image": true,
-  "background_image_description": "Soft pastel pink paper texture with a gentle gradient transitioning from a lighter pink at the top-left (#fad9e0) to a slightly deeper pink at the bottom-right (#e6aeb9), subtle grain and diffuse vignette.",
+  "background_image_description": "The image displays a gradient of pink shades, transitioning from a lighter pink at the top to a darker pink at the bottom. The gradient is smooth and continuous, with no visible patterns, textures, or objects. The image is square in shape.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Photorealistic front view of a modern black smartphone (iPhone-style) centered on the canvas. It has a slim black bezel, rounded corners, and a wide top notch with a small camera/earpiece opening. The screen content is white, and the device casts a soft shadow on the pink background.",
+      "asset_description": "A black smartphone with a blank white screen is centered on a light pink background. The phone’s front-facing camera and buttons are visible along the left edge. The screen occupies most of the visible area, and the phone casts a subtle shadow to the right.",
       "filename": "asset-1.png",
       "x": -138,
       "y": 4,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 6.png",
+      "asset_description": "A white rectangle with a thin red horizontal line across its center is centered on a black background. The rectangle is oriented horizontally.",
       "filename": "asset-3.png",
       "x": -7,
       "y": 381,
@@ -43,7 +43,7 @@
     },
     {
       "type": "text",
-      "text": "Your productivity doesn\u2019t define you.",
+      "text": "Your productivity doesn’t define you.",
       "x": 432,
       "y": 1048,
       "width": 756,
@@ -94,7 +94,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_hz1xhohz1xhohz1x.png",
+      "asset_description": "A dark blue outline of an open envelope with a white bell icon on top. The bell icon has wavy lines suggesting vibration or ringing. The background is plain white.",
       "filename": "asset-2.png",
       "x": 691,
       "y": 403,

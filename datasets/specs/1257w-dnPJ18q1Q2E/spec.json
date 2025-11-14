@@ -1,11 +1,11 @@
 {
   "background_color": "#c53128",
   "has_background_image": true,
-  "background_image_description": "Full-canvas gritty red poster background with scattered darker and lighter speckled noise. Centered in the lower half is a back-view photograph of a woman with windblown blonde hair wearing a brown corduroy jacket with a white sherpa collar, shoulders spanning most of the width; the figure fades softly into the red background toward the top.",
+  "background_image_description": "A person with light blonde hair is seen from behind, wearing a brown corduroy jacket with a white sherpa-like collar. The jacket is buttoned up. The background is a solid red color.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_wiuqgqwiuqgqwiuq.png",
+      "asset_description": "The image displays a red surface with a textured, slightly worn appearance. Numerous small, light-colored specks are scattered across the surface. The specks vary in size and distribution. A small, light-colored, five-pointed star-like shape is visible in the bottom right corner.",
       "filename": "asset-1.png",
       "x": 12,
       "y": -9,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_fiuvdyfiuvdyfiuv.png",
+      "asset_description": "A person with long, light blonde hair is seen from behind, wearing a rust-colored corduroy jacket with a white fur-trimmed hood. The jacket has a visible button near the center. The background is transparent with gray and white checkerboard patterns.",
       "filename": "asset-2.png",
       "x": 114,
       "y": 630,

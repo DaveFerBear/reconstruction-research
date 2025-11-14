@@ -1,11 +1,11 @@
 {
   "background_color": "#e9d8c6",
   "has_background_image": true,
-  "background_image_description": "Full-canvas light beige crumpled paper texture with soft folds and shadows, giving a wrinkled kraft-paper appearance.",
+  "background_image_description": "A cream-colored paper surface is crumpled and folded in various directions. The texture is rough and uneven, with creases and folds creating a three-dimensional appearance. The color is uniform throughout, with no visible patterns or markings.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: slide 4.png",
+      "asset_description": "A stylized blue line drawing depicts a figure holding a steaming cup above their head, with steam rising from the cup. The figure wears a dress and boots, and stands against a black background with scattered blue star shapes. Below the figure, horizontal blue lines suggest text or design elements.",
       "filename": "asset-7.png",
       "x": -90,
       "y": 297,

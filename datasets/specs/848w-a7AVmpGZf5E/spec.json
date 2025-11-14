@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "High-contrast product photo of matte black over-ear headphones on a white background. The headband arcs across the top; two thin silver sliders connect to large oval earcups with textured fabric pads. The right earcup shows a subtle geometric lattice pattern on the inner grille. Controls and a small port are visible on the left cup. A soft shadow sits beneath the headphones.",
+      "asset_description": "A pair of black over-ear headphones with a black headband and earcups. The earcups have a textured, mesh-like material and a white geometric pattern on the inner surface. The headband is smooth and curved. The headphones are positioned against a white background.",
       "filename": "asset-1.png",
       "x": 21,
       "y": 72,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Solid black rounded rectangle (pill) with fully rounded ends, centered near the bottom; serves as a simple decorative bar/button shape.",
+      "svg_description": "A black horizontal bar is centered on a white background.",
       "filename": "svg-1.svg",
       "x": 244,
       "y": 1002,
@@ -42,7 +42,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Small black geometric monogram icon composed of two interlocking angular loops forming a tilted diamond/knot shape.",
+      "svg_description": "A black diamond shape is centered on a white background. A thin, dark line extends from the lower left point of the diamond, angled upward and to the right.",
       "filename": "svg-2.svg",
       "x": 784,
       "y": 40,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 29.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-2.png",
       "x": 423,
       "y": 835,
@@ -97,7 +97,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 29.png",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-3.png",
       "x": 159,
       "y": 753,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 19.png",
+      "asset_description": "A string of triangular flags in red and gray hangs against a black background. The flags are evenly spaced and point downward.",
       "filename": "asset-2.png",
       "x": 13,
       "y": -5,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 20.png",
+      "asset_description": "Four red and black balloons are clustered together against a white background. The red balloons are positioned towards the top right, while the black balloons are at the bottom right.",
       "filename": "asset-3.png",
       "x": 316,
       "y": 388,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 21.png",
+      "asset_description": "Three black gift boxes with red ribbons tied in bows are arranged diagonally against a white background. The ribbons are glossy and reflect light. The boxes are positioned from left to right, with the largest box on the right.",
       "filename": "asset-4.png",
       "x": 429,
       "y": 1003,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 22.png",
+      "asset_description": "Four red balloons are clustered together against a black background. The balloons are slightly overlapping and angled toward the bottom right corner of the image.",
       "filename": "asset-5.png",
       "x": -3,
       "y": 867,
@@ -49,7 +49,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Two thin black horizontal rules (stroke #111111, 2px) centered around the date row: one left segment extending toward the center from the left side, and one right segment extending toward the center from the right side, leaving a clear gap around the central number and the small words. The lines are positioned at the vertical center of the date row.",
+      "svg_description": "Two horizontal black lines are centered on a white background. The lines are evenly spaced and run parallel to each other.",
       "filename": "svg-1.svg",
       "x": 248,
       "y": 1086,
@@ -59,7 +59,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Default blue square with SVG text",
+      "svg_description": "Two horizontal black lines are centered on a white background. The lines are evenly spaced and run parallel to each other.",
       "filename": "svg-2.svg",
       "x": 244,
       "y": 1030,

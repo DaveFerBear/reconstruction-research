@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "Solid bright-green rectangle filling the right side of the canvas (fill #63C13C).",
+      "svg_description": "A solid green background occupies the right side of the image, extending from the top to the bottom. The left side is white, containing no visible objects or patterns.",
       "filename": "svg-1.svg",
       "x": 224,
       "y": -32,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Cutout photo of a smiling man with dark hair and beard, wearing black rectangular glasses, a light gray zip hoodie over an olive t-shirt, typing on a white laptop at a white desk. A pair of black over-ear headphones rests on the right edge of the desk. Soft shadow under the laptop and along the lower edge. The subject overlaps the green right panel and the white left area.",
+      "asset_description": "A man with dark hair and a beard sits at a white desk, wearing a gray zip-up jacket over a green t-shirt. He wears black-framed glasses and looks down at a white laptop. A white notebook and a pen rest on the desk beside him. The background is split diagonally, with a black section on the left and a green section on the right.",
       "filename": "asset-1.png",
       "x": 380,
       "y": 380,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 62.png",
+      "asset_description": "A dark teal horizontal oval shape is centered on a black background. The oval is uniform in width and length, with no visible texture or pattern.",
       "filename": "asset-2.png",
       "x": 69,
       "y": 739,
@@ -121,7 +121,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 63.png",
+      "asset_description": "A light blue-green cloud-like shape with a white center is centered against a black background. The edges of the cloud are irregular and uneven, with some darker areas near the perimeter.",
       "filename": "asset-3.png",
       "x": -7,
       "y": 1007,

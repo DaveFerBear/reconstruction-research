@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Image_fx (55).jpg",
+      "asset_description": "A woman with shoulder-length brown hair wears a green blazer and a pair of green, geometric-patterned earrings. Her gaze is directed slightly to her left, and she has light skin with subtle makeup. The background is a plain, light gray or off-white color.",
       "filename": "asset-10.png",
       "x": 1166,
       "y": 11,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 21.png",
+      "asset_description": "A pink, fuzzy, donut-shaped object with a central hole is centered against a black background. The object has a textured, slightly uneven surface and appears three-dimensional.",
       "filename": "asset-7.png",
       "x": -236,
       "y": -56,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Image_fx (56).jpg",
+      "asset_description": "A woman with long dark hair sits on a white background, wearing a white tank top and light purple loose-fitting pants. She is tying the laces of her white sneakers with her right hand. Her gaze is directed downwards, focused on her shoes. The background is plain white, providing a clean and simple backdrop for the image.",
       "filename": "asset-11.png",
       "x": 623,
       "y": 816,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 20.png",
+      "asset_description": "A pink, furry numeral 2 is shown against a black background. The numeral has a textured, three-dimensional appearance with subtle highlights and shadows.",
       "filename": "asset-5.png",
       "x": -643,
       "y": -434,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 21.png",
+      "asset_description": "A pink, fuzzy, donut-shaped object with a central hole is centered against a black background. The object has a textured, slightly uneven surface and appears three-dimensional.",
       "filename": "asset-6.png",
       "x": 224,
       "y": -308,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 22.png",
+      "asset_description": "A pink, textured object resembling a nose or snout is shown against a black background. The object has a rounded, bulbous shape with a small circular hole near the center. The surface appears fuzzy or hairy, with fine, short hairs visible across the object’s surface.",
       "filename": "asset-9.png",
       "x": 549,
       "y": 118,
@@ -71,7 +71,7 @@
     },
     {
       "type": "text",
-      "text": "GIRL\u2019S\nPARTY",
+      "text": "GIRL’S\nPARTY",
       "x": 484,
       "y": 72,
       "width": 420,
@@ -156,7 +156,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 21.png",
+      "asset_description": "A pink, fuzzy, donut-shaped object with a central hole is shown against a black background. The object has a textured, slightly uneven surface and is centered in the frame.",
       "filename": "asset-8.png",
       "x": 1528,
       "y": 1360,
@@ -167,7 +167,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: Image_fx (57).jpg",
+      "asset_description": "A person wearing a black skirt and white ankle boots is walking on a wet, reflective surface. The boots are pointed-toe and have a zipper detail on the side. The surface is dark and glossy, with reflections visible. The background is transparent with a checkered pattern.",
       "filename": "asset-12.png",
       "x": -74,
       "y": 1003,

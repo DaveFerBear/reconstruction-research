@@ -1,11 +1,11 @@
 {
   "background_color": "#efe6d8",
   "has_background_image": true,
-  "background_image_description": "Subtle warm off\u2011white recycled paper texture with tiny grey and tan speckles evenly distributed across the entire 900x1600 canvas.",
+  "background_image_description": "A light beige background with small, scattered dark specks of varying sizes. The speckles appear randomly distributed across the surface.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Isolated photo of a light turquoise ceramic cup with latte art (rosetta/leaf) on a matching speckled saucer with a warm tan rim; soft shadow beneath, viewed slightly above at a 3/4 angle.",
+      "asset_description": "A light teal cup with a handle sits on a light blue saucer with an orange rim. The cup is filled with a light brown liquid topped with a white design resembling a stylized leaf or feather. The saucer rests on a dark gray background.",
       "filename": "asset-1.png",
       "x": -3,
       "y": 45,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin blue oval outline centered near the top (stroke ~2px, no fill) used as a badge frame.",
+      "svg_description": "A dark blue circle is centered on a white background. The circle is slightly thicker at the top and bottom edges and has a smooth, continuous line.",
       "filename": "svg-1.svg",
       "x": 288,
       "y": 42,
@@ -76,7 +76,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal blue rule (stroke ~2px) spanning the layout to frame the pricing section (top line).",
+      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the lower portion. The line is uniform in width and appears solid with no visible breaks or variations in color.",
       "filename": "svg-2.svg",
       "x": 87,
       "y": 1171,
@@ -154,7 +154,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "Thin horizontal blue rule (stroke ~2px) spanning the layout to frame the pricing section (bottom line).",
+      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge. The line is uniform in width and appears solid with no variations or textures. The background is a plain white surface, providing a stark contrast to the blue line. No other objects, texts, or markings are visible in the image.",
       "filename": "svg-3.svg",
       "x": 87,
       "y": 1308,

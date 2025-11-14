@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "Full-bleed photo of a cozy cafe workspace: wooden table, grey chair, open laptop, glass of coffee on a wooden tray with cutlery, and a pastry on a plate; neutral grey wall background.",
+  "background_image_description": "A dark wooden table holds a dark glass of iced coffee, a wooden tray, a laptop, a dark chair with a teal cushion, and a plate with pastries. The scene is set against a light gray textured wall.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Gemini_Generated_Image_iyg8haiyg8haiyg8.png",
+      "asset_description": "A dark glass of iced coffee sits on a wooden table next to a laptop. A wooden cutting board holds a spoon and a napkin. A partially visible plate with food and a chair are in the background. The table and wall are plain white.",
       "filename": "asset-2.png",
       "x": 3,
       "y": 0,
