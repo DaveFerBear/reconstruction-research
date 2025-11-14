@@ -63,6 +63,10 @@ class ImageEditAgent(Agent):
         Returns:
             Path: The output path where the edited spec was saved
         """
+        # Check for NaN/None/empty instruction
+        if instruction is None or not instruction or str(instruction).lower() == 'nan':
+            raise ValueError(f"❌ INVALID INSTRUCTION: instruction is NaN/None/empty! Got: {repr(instruction)} (spec: {spec_path.name})")
+
         self.log(f"Loading spec from {spec_path}")
         spec = self.load_spec(spec_path)
 
