@@ -176,6 +176,9 @@ const FONTS = [
   "Fontuna Stencil",
   "Merisca",
   "Natalic",
+  "Kaylar",
+  "Posterman",
+  "Tokyo OneSolid Regular",
 ];
 
 export default FONTS;

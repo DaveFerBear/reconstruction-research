@@ -10,7 +10,7 @@ LOCAL_FONTS = {
     'Bobby Jones Soft', 'Bobby Jones Soft Outline', 'Bobby Rough Soft',
     'Bobby Rough Soft Outline', 'Ashing', 'Bondjlo', 'Dodo',
     'English 111 Presto', 'Faylake', 'Felt Tip', 'Fontuna Stencil',
-    'Merisca', 'Natalic'
+    'Merisca', 'Natalic', 'Kaylar', 'Posterman', 'Tokyo OneSolid Regular'
 }
 
 # System fonts that don't need loading
@@ -102,7 +102,8 @@ def generate_font_face_css(font_name: str, fonts_dir: Path) -> str:
 
     # Single-style fonts
     elif font_name in ['Ashing', 'Bondjlo', 'Dodo', 'English 111 Presto', 'Faylake',
-                      'Felt Tip', 'Fontuna Stencil', 'Merisca', 'Natalic']:
+                      'Felt Tip', 'Fontuna Stencil', 'Merisca', 'Natalic', 'Kaylar',
+                      'Posterman', 'Tokyo OneSolid Regular']:
         font_mapping = {
             'Ashing': 'Ashing Regular/ahsing-regular.otf',
             'Bondjlo': 'Bondjlo/Bondjlo.ttf',
@@ -113,6 +114,9 @@ def generate_font_face_css(font_name: str, fonts_dir: Path) -> str:
             'Fontuna Stencil': 'Fontuna Stencil/fontuna-stencil.otf',
             'Merisca': 'Merisca/merisca.otf',
             'Natalic': 'Natalic/Natalic 2.ttf',
+            'Kaylar': 'Kaylar/Kaylar DEMO.ttf',
+            'Posterman': 'Posterman/Posterman.otf',
+            'Tokyo OneSolid Regular': 'Tokyo OneSolid Regular/Tokyo OneSolid Regular.otf',
         }
 
         if font_name in font_mapping:

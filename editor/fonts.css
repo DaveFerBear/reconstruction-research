@@ -442,3 +442,21 @@
     src: url('../fonts/Natalic/Natalic 2.ttf') format('truetype');
     font-weight: 400;
 }
+
+@font-face {
+    font-family: 'Kaylar';
+    src: url('../fonts/Kaylar/Kaylar DEMO.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Posterman';
+    src: url('../fonts/Posterman/Posterman.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tokyo OneSolid Regular';
+    src: url('../fonts/Tokyo OneSolid Regular/Tokyo OneSolid Regular.otf') format('opentype');
+    font-weight: 400;
+}
