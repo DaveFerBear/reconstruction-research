@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "A light pink rectangular shape is centered on a white background. The shape is uniform in color and occupies a substantial portion of the image.",
+      "svg_description": "solid pastel pink rectangle with no border serving as a framed panel area",
       "filename": "svg-1.svg",
       "x": 119,
       "y": 263,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A watercolor painting on a light pink background depicts a branch with three yellow lemons and several green leaves. The word \"ITALY\" is printed vertically along the left edge, and the year \"2025\" is printed vertically along the right edge.",
+      "asset_description": "Uploaded image: Annotation 2025-11-08 042405.png",
       "filename": "asset-2.png",
       "x": -33,
       "y": 244,

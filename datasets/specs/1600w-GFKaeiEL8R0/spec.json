@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A cluster of five rounded, translucent objects in varying shades of cyan and purple are arranged on a light gray background. The objects are clustered together, with one purple object positioned slightly apart from the others. The objects have a smooth, glossy surface and cast soft shadows on the surface below.",
+      "asset_description": "Cluster of glossy 3D abstract shapes centered near the top: three pill/pebble-like forms in cyan-to-teal gradients and one six-lobed asterisk/flower shape. Colors range from light aqua (#AEEBEE) and icy cyan (#B9F2FF) to magenta-violet (#A33BFF) with soft studio lighting and subtle cast shadows. The forms are arranged in a gentle diagonal arc from left to right.",
       "filename": "asset-1.png",
       "x": 270,
       "y": 16,
@@ -15,7 +15,7 @@
     },
     {
       "type": "text",
-      "text": "STUDIO ✦ AGATHO",
+      "text": "STUDIO \u2726 AGATHO",
       "x": 636,
       "y": 70,
       "width": 328,
@@ -66,7 +66,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The word \"Design\" is displayed in large, three-dimensional, gradient purple letters against a light gray background. The letters cast subtle shadows beneath them, indicating a light source from above. The letters have a smooth, glossy finish.",
+      "asset_description": "The word \"Design\" set in bold rounded sans-serif, filled with a left-to-right gradient transitioning from soft lavender (#C7A9FF) through light purple (#B68CFF) to vivid violet (#7D3CFF). Slight soft drop shadow; baseline aligned to the ampersand on the left.",
       "filename": "asset-2.png",
       "x": 470,
       "y": 508,

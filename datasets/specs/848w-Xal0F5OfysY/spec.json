@@ -4,6 +4,17 @@
   "background_image_description": "",
   "nodes": [
     {
+      "type": "image",
+      "asset_description": "Uploaded image: 29.png",
+      "filename": "asset-2.png",
+      "x": -222,
+      "y": -107,
+      "width": 1129,
+      "height": 1234,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
       "type": "text",
       "text": "West University",
       "x": 32,
@@ -41,7 +52,7 @@
       "type": "text",
       "text": "LEVEL",
       "x": 0,
-      "y": 140,
+      "y": 131,
       "width": 848,
       "height": 165,
       "rotation": 0,
@@ -58,7 +69,7 @@
       "type": "text",
       "text": "UP YOUR",
       "x": 0,
-      "y": 290,
+      "y": 254,
       "width": 848,
       "height": 165,
       "rotation": 0,
@@ -73,12 +84,12 @@
     },
     {
       "type": "image",
-      "asset_description": "A man with gray hair and glasses, wearing a dark blue sweater, stands with his arms crossed, looking towards a corkboard mounted on a white wall. The corkboard displays various papers, including a pink butterfly drawing, a green sheet of paper with text, a red stamp with a white handprint, and a yellow sheet of paper with handwritten text. Below the corkboard, a colorful abstract painting with red, yellow, blue, and white shapes is visible.",
+      "asset_description": "Color photograph centered on a light beige gallery wall. A middle-aged man with gray hair tied in a bun and glasses, wearing a dark teal long-sleeve shirt, stands in profile with arms crossed looking at a bulletin board. The board displays colorful posters, flyers, and notes including bold abstract graphics and typography in red, green, orange, blue, and yellow.",
       "filename": "asset-1.png",
-      "x": 248,
-      "y": 418,
-      "width": 352,
-      "height": 264,
+      "x": 243,
+      "y": 414,
+      "width": 319,
+      "height": 294,
       "rotation": 0
     },
     {
@@ -101,8 +112,8 @@
     {
       "type": "text",
       "text": "SKILLS",
-      "x": 0,
-      "y": 880,
+      "x": 3,
+      "y": 844,
       "width": 848,
       "height": 165,
       "rotation": 0,

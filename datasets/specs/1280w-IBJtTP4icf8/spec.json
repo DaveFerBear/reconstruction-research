@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "A dark wooden table holds a black laptop, a dark glass with ice, a wooden tray with cutlery, a light blue chair with a dark cushion, and a white plate with food. The background is a light gray textured wall.",
+  "background_image_description": "Full-bleed photo of a cozy cafe workspace: wooden table, grey chair, open laptop, glass of coffee on a wooden tray with cutlery, and a pastry on a plate; neutral grey wall background.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A dark glass cup filled with a brown liquid sits on a wooden table next to a partially visible laptop. A wooden cutting board holds a spoon and a white napkin. A light blue chair is visible to the left of the table. The background is a plain light gray wall.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_iyg8haiyg8haiyg8.png",
       "filename": "asset-2.png",
       "x": 3,
       "y": 0,

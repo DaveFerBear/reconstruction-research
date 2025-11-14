@@ -5,24 +5,25 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A black and white photograph shows a model with dark hair pulled back, wearing a light-colored, long-sleeved blazer over a white garment. The model stands against a dark wall with shadows cast on the left side. A small, light-colored diamond shape appears in the bottom right corner.",
-      "filename": "asset-2.png",
-      "x": -15,
-      "y": 1,
-      "width": 1072,
-      "height": 1328,
+      "asset_description": "Uploaded image: Add a heading.png",
+      "filename": "asset-3.png",
+      "x": 963,
+      "y": 173,
+      "width": 720,
+      "height": 708,
       "rotation": 0,
       "opacity": 1
     },
     {
-      "type": "svg",
-      "svg_description": "The image is divided into two vertical halves. The left half is white, while the right half is black.",
-      "filename": "svg-1.svg",
-      "x": 1066,
-      "y": 0,
-      "width": 534,
-      "height": 1236,
-      "rotation": 0
+      "type": "image",
+      "asset_description": "Uploaded image: 49.png",
+      "filename": "asset-4.png",
+      "x": -111,
+      "y": -66,
+      "width": 1261,
+      "height": 1366,
+      "rotation": 0,
+      "opacity": 1
     },
     {
       "type": "text",
@@ -142,17 +143,6 @@
       "font-style": "italic",
       "text-decoration": "none",
       "text-transform": "none"
-    },
-    {
-      "type": "image",
-      "asset_description": "A white line drawing on a black background depicts two figures embracing. The figure on the left has their arms wrapped around the other figure, who has their arms around the left figure’s waist. The figures are positioned vertically, with their heads close together. The drawing style is minimalist and uses only white lines against a black background.",
-      "filename": "asset-3.png",
-      "x": 963,
-      "y": 173,
-      "width": 720,
-      "height": 708,
-      "rotation": 0,
-      "opacity": 1
     }
   ],
   "canvas_width": 1600,

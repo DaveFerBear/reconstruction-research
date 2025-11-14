@@ -1,11 +1,11 @@
 {
   "background_color": "#566F58",
   "has_background_image": true,
-  "background_image_description": "The image shows a textured dark green surface with two bright yellow starburst shapes. The starbursts are positioned near the top left and bottom right corners of the image. The surface has a slightly uneven, rough texture with subtle variations in shade. The image is symmetrical, with the starbursts serving as focal points.",
+  "background_image_description": "Full-canvas dark olive-green crumpled paper texture (#566F58 base with subtle darker folds #475C49). Two soft luminous starburst glares (creamy #F2E9CF center to transparent) sit at left-mid and right-lower edges, diffused and elongated, blending into the textured background.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image displays a dark green background with a textured, slightly wrinkled or creased appearance. Three white, star-shaped shapes are positioned near the top left, bottom left, and bottom right of the image. A small, white, diamond-shaped shape appears in the bottom right corner.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_ufpudvufpudvufpu.png",
       "filename": "asset-5.png",
       "x": 3,
       "y": -3,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A clear glass filled with a light green beverage sits on a reflective surface. Ice cubes are visible within the drink. The glass has vertical ridges and a slightly rounded base. The background is a muted gray-green gradient with soft lighting.",
+      "asset_description": "High-resolution cutout photo of a clear glass filled with iced matcha latte. The drink shows layered swirls of light foam and vivid green matcha, with semi-transparent ice cubes on top. The glass has thick beveled facets and a clear base, with realistic lighting and soft shadow at the bottom edge.",
       "filename": "asset-1.png",
       "x": 137,
       "y": 110,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a black background. The oval is centered and positioned horizontally.",
+      "asset_description": "Uploaded image: greean.png",
       "filename": "asset-3.png",
       "x": 873,
       "y": 313,
@@ -88,7 +88,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a black background. The oval is centered and positioned horizontally.",
+      "asset_description": "Uploaded image: greean.png",
       "filename": "asset-2.png",
       "x": 102,
       "y": 690,
@@ -150,7 +150,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light green arrow points left and curves upward and to the right against a black background. The arrow is drawn with slightly uneven lines, giving it a hand-drawn appearance.",
+      "asset_description": "Uploaded image: arrow.png",
       "filename": "asset-4.png",
       "x": 920,
       "y": 519,

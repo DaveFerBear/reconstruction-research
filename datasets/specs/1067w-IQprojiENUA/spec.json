@@ -4,6 +4,72 @@
   "background_image_description": "",
   "nodes": [
     {
+      "type": "image",
+      "asset_description": "Uploaded image: 40.png",
+      "filename": "asset-2.png",
+      "x": 58,
+      "y": 402,
+      "width": 1336,
+      "height": 1342,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 41.png",
+      "filename": "asset-3.png",
+      "x": 23,
+      "y": 858,
+      "width": 742,
+      "height": 808,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 42.png",
+      "filename": "asset-4.png",
+      "x": 1,
+      "y": 576,
+      "width": 733,
+      "height": 739,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 43.png",
+      "filename": "asset-5.png",
+      "x": -112,
+      "y": 126,
+      "width": 922,
+      "height": 943,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 45.png",
+      "filename": "asset-7.png",
+      "x": 284,
+      "y": 159,
+      "width": 448,
+      "height": 493,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 44.png",
+      "filename": "asset-6.png",
+      "x": 220,
+      "y": 87,
+      "width": 1000,
+      "height": 1000,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
       "type": "text",
       "text": "FASHIONABLE WARDROBE",
       "x": 0,
@@ -36,72 +102,6 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: 65d1ee69-d8b6-4bd3-861b-11059ce95f46.png",
-      "filename": "asset-6.png",
-      "x": 401,
-      "y": 352,
-      "width": 228,
-      "height": 216,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: 558239ab-ac25-4807-a908-561a03a558a3.png",
-      "filename": "asset-7.png",
-      "x": 29,
-      "y": 430,
-      "width": 543,
-      "height": 442,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: 11b78cb7-5d46-4b07-a6b4-d652a59ffd1e.png",
-      "filename": "asset-8.png",
-      "x": 530,
-      "y": 369,
-      "width": 457,
-      "height": 645,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: be47dad2-69a5-4f16-8ffb-7cfacd98e575.png",
-      "filename": "asset-9.png",
-      "x": 538,
-      "y": 867,
-      "width": 416,
-      "height": 573,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: 648986bf-1911-4220-9acc-0c3ffef7002d.png",
-      "filename": "asset-10.png",
-      "x": 188,
-      "y": 816,
-      "width": 316,
-      "height": 417,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "Uploaded image: c4d7ada0-0326-419c-b017-696ee3d1ecfe.png",
-      "filename": "asset-11.png",
-      "x": 224,
-      "y": 1063,
-      "width": 277,
-      "height": 443,
-      "rotation": 0,
-      "opacity": 1
     }
   ],
   "canvas_width": 1067,

@@ -1,7 +1,7 @@
 {
   "background_color": "#0f3028",
   "has_background_image": true,
-  "background_image_description": "A dark green chalkboard surface fills the frame. The surface is slightly textured with subtle variations in tone and shading. The edges of the board are slightly uneven, with some minor creases or variations in tone. The color is consistent across the surface, with no visible markings or patterns beyond the texture and tone variations. No writing, drawings, or other objects are present.",
+  "background_image_description": "Dark green, slightly mottled/grainy paper texture covering the full 1131x1600 canvas; fine noise gives a vintage, film-poster feel.",
   "nodes": [
     {
       "type": "text",
@@ -124,7 +124,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The word \"Movie\" is displayed in large, pink letters against a dark green background. The letters have a slightly stylized, cursive appearance.",
+      "asset_description": "Uploaded image: Screenshot 2025-11-11 065544.png",
       "filename": "asset-2.png",
       "x": 293,
       "y": 124,
@@ -135,7 +135,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with dark hair styled in a vintage fashion holds a small piece of food, possibly a cracker, in her right hand. She wears a strapless dress with a dark bodice and a patterned band at the waist. In front of her is a large woven basket filled with popcorn. The background is dark, and the image has a sepia tone.",
+      "asset_description": "Monochrome/duotone salmon-pink vintage photo of a smiling 1950s-style woman from waist up, wearing a strapless dress with a geometric patterned bust. She holds a handful of popcorn in her right hand while her left hand rests near a large round woven wicker basket overflowing with popcorn that spans the bottom width. Subject centered, cut out on the textured dark background.",
       "filename": "asset-1.png",
       "x": 114,
       "y": 354,

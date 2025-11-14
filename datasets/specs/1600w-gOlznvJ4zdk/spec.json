@@ -1,41 +1,44 @@
 {
   "background_color": "#d8e6cd",
   "has_background_image": true,
-  "background_image_description": "A light teal background with a grid pattern. The grid lines are thin and evenly spaced, creating a subtle texture. The color transitions from a lighter shade on the left to a slightly darker shade on the right.",
+  "background_image_description": "Subtle light-sage grid across the entire 1600x1600 canvas. Base is #d8e6cd with thin square gridlines in #c5d7bd spaced evenly (~160px), giving a calm notebook-like pattern.",
   "nodes": [
     {
-      "type": "svg",
-      "svg_description": "A plain white background fills the frame.",
-      "filename": "svg-1.svg",
-      "x": 80,
-      "y": 980,
-      "width": 1440,
-      "height": 500,
-      "rotation": 0
+      "type": "image",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_gxc9pjgxc9pjgxc9.png",
+      "filename": "asset-1.png",
+      "x": 1,
+      "y": -1,
+      "width": 1708,
+      "height": 1696,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 16.png",
+      "filename": "asset-3.png",
+      "x": -95,
+      "y": 410,
+      "width": 1788,
+      "height": 1444,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 11.png",
+      "filename": "asset-2.png",
+      "x": 268,
+      "y": 140,
+      "width": 1044,
+      "height": 1060,
+      "rotation": 0,
+      "opacity": 1
     },
     {
       "type": "svg",
-      "svg_description": "A light green oval shape is centered on a white background. The oval is slightly elongated and has a subtle gradient, giving it a soft, natural appearance.",
-      "filename": "svg-2.svg",
-      "x": 520,
-      "y": 820,
-      "width": 560,
-      "height": 140,
-      "rotation": 0
-    },
-    {
-      "type": "svg",
-      "svg_description": "A stylized jar with a yellow lid and dark green outline contains three heart-shaped decorations. Two are red and one is yellow. The jar is centered on a white background.",
-      "filename": "svg-3.svg",
-      "x": 650,
-      "y": 470,
-      "width": 300,
-      "height": 420,
-      "rotation": 0
-    },
-    {
-      "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "Three short hand-drawn white dash marks suggesting sparkles, angled slightly, placed left of the jar. Strokes #ffffff, rounded caps.",
       "filename": "svg-4.svg",
       "x": 300,
       "y": 330,
@@ -45,7 +48,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A completely white image with no visible features or objects.",
+      "svg_description": "Loose hand-drawn heart outline in white (#ffffff) with a single continuous stroke, placed at the upper-right near the headline.",
       "filename": "svg-5.svg",
       "x": 1370,
       "y": 210,
@@ -61,7 +64,7 @@
       "width": 840,
       "height": 150,
       "rotation": 0,
-      "font-family": "Arial Rounded MT Bold",
+      "font-family": "Comic Relief",
       "font-size": 120,
       "color": "#2f4f46",
       "text-align": "center",
@@ -69,16 +72,6 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
-    },
-    {
-      "type": "svg",
-      "svg_description": "A dark green, elongated handle with two small white circles near its ends is shown against a white background. The handle has a curved, slightly tapered shape with a lighter green inner section visible at the top.",
-      "filename": "svg-6.svg",
-      "x": 150,
-      "y": 1060,
-      "width": 70,
-      "height": 100,
-      "rotation": 0
     },
     {
       "type": "text",
@@ -98,16 +91,6 @@
       "text-transform": "none"
     },
     {
-      "type": "svg",
-      "svg_description": "A dark green hourglass shape with a lighter green interior is shown against a white background. The upper portion curves inward, forming a rounded top, while the lower portion curves outward and downward. A small white circle is visible near the upper left portion of the hourglass.",
-      "filename": "svg-7.svg",
-      "x": 150,
-      "y": 1210,
-      "width": 74,
-      "height": 100,
-      "rotation": 0
-    },
-    {
       "type": "text",
       "text": "Write down your favorite self-care ideas on strips of paper.",
       "x": 260,
@@ -125,18 +108,8 @@
       "text-transform": "none"
     },
     {
-      "type": "svg",
-      "svg_description": "A dark green circle with a thick, dark green border encloses a lighter green inner circle. Inside the inner circle, the number \"3\" is displayed in dark green. Two small white circles are positioned near the number.",
-      "filename": "svg-8.svg",
-      "x": 820,
-      "y": 1060,
-      "width": 80,
-      "height": 100,
-      "rotation": 0
-    },
-    {
       "type": "text",
-      "text": "Whenever you're feeling down, stressed out, or drained – pull out a strip of paper and then do that activity.",
+      "text": "Whenever you're feeling down, stressed out, or drained \u2013 pull out a strip of paper and then do that activity.",
       "x": 930,
       "y": 1080,
       "width": 580,
@@ -152,14 +125,59 @@
       "text-transform": "none"
     },
     {
-      "type": "svg",
-      "svg_description": "A light green, curved, horizontal shape is centered on a white background. The shape is smooth and continuous, with no visible breaks or edges.",
-      "filename": "svg-9.svg",
-      "x": 1000,
-      "y": 1380,
-      "width": 380,
-      "height": 26,
-      "rotation": 0
+      "type": "image",
+      "asset_description": "Uploaded image: 12.png",
+      "filename": "asset-4.png",
+      "x": 5,
+      "y": 938,
+      "width": 368,
+      "height": 332,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 13.png",
+      "filename": "asset-5.png",
+      "x": 16,
+      "y": 1093,
+      "width": 348,
+      "height": 356,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 14.png",
+      "filename": "asset-6.png",
+      "x": 641,
+      "y": 919,
+      "width": 436,
+      "height": 424,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 15.png",
+      "filename": "asset-7.png",
+      "x": 636,
+      "y": 885,
+      "width": 1000,
+      "height": 1000,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Uploaded image: 17.png",
+      "filename": "asset-8.png",
+      "x": 1100,
+      "y": -71,
+      "width": 676,
+      "height": 652,
+      "rotation": 0,
+      "opacity": 1
     }
   ],
   "canvas_width": 1600,

@@ -1,7 +1,7 @@
 {
   "background_color": "#caa0b7",
   "has_background_image": true,
-  "background_image_description": "A close-up view of a light purple fabric with a smooth, silky texture. The fabric is draped and folded, creating soft curves and folds across the frame. The color is a uniform light purple with no visible patterns or embellishments. The image focuses solely on the fabric and its texture, without any other objects or background elements.",
+  "background_image_description": "Soft mauve-to-lavender gradient with subtle cloudy fabric-like folds and diffuse lighting, darker along the left and right edges and lighter toward the center; no distinct objects.",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A tube of cream or lotion with horizontal bands of purple, white, and beige sits on a white rectangular block against a solid gray background. The tube has a white cap and a slightly curved, ribbed top. The block is plain and unadorned.",
+      "asset_description": "Photorealistic cosmetic squeeze tube standing upright on a white rectangular pedestal block casting a soft shadow. Tube has a mauve-purple cap and top band (#6f4b7b), a wide off-white band (#f3f0ed), a narrow warm beige band (#eedfd8), and a lower body in plum gradient (#7d4d87 to #6b457e). Base and rim are glossy white (#f8f8f8). Pedestal top is light gray-white with soft edge shading; a faint drop shadow falls to the right.",
       "filename": "asset-1.png",
       "x": 204,
       "y": 510,
@@ -83,7 +83,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid purple circle fills the frame against a white background. The circle is uniform in color and has no visible texture or pattern.",
+      "svg_description": "Solid circle badge filled with deep plum (#5a2a6d).",
       "filename": "svg-1.svg",
       "x": 140,
       "y": 810,
@@ -127,7 +127,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid purple oval shape is centered on a white background. The oval is uniformly colored and has no visible texture or pattern.",
+      "svg_description": "Pill-shaped button background filled with dark eggplant (#4a275b) with fully rounded ends.",
       "filename": "svg-3.svg",
       "x": 399,
       "y": 1443,
@@ -188,7 +188,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark purple arrow points upward and to the right against a light purple background. The arrow has a smooth, curved shape.",
+      "asset_description": "Uploaded image: ss.png",
       "filename": "asset-2.png",
       "x": 255,
       "y": 1059,

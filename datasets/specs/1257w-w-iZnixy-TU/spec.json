@@ -1,11 +1,11 @@
 {
   "background_color": "#6b88a6",
   "has_background_image": true,
-  "background_image_description": "A blue sky with scattered white clouds. The clouds are mostly concentrated in the upper left and center areas of the image, with some variations in density and shape. The sky is predominantly light blue, with no distinct horizon line visible.",
+  "background_image_description": "Full-canvas photographic sky backdrop with soft mottled clouds. Gradient-like variation from slightly darker slate blue at the top to lighter sky blue toward the bottom, subtle film grain texture. Covers entire 1257x1600 canvas.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A blue sky with light, wispy clouds. The color is a gradient from lighter blue near the top to deeper blue towards the bottom. A small, bright white diamond shape is visible in the bottom right corner.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_jeuc5fjeuc5fjeuc.png",
       "filename": "asset-3.png",
       "x": -69,
       "y": -96,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A solid white rectangle is centered against a black background. The rectangle is uniformly white with no visible texture, shading, or markings.",
+      "asset_description": "Uploaded image: Screenshot 2025-11-12 022319.png",
       "filename": "asset-4.png",
       "x": 30,
       "y": 1297,
@@ -61,7 +61,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A blank white image with no visible content or features.",
+      "svg_description": "White four-point sparkle/star glyph centered below the shirt: vertical and horizontal points with tapered ends; thin diamond-like shape with soft curves.",
       "filename": "svg-1.svg",
       "x": 598,
       "y": 1060,
@@ -139,7 +139,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A short-sleeved t-shirt with a striped pattern in red, orange, yellow, green, and white lies flat against a transparent background. The shirt has a red neckline and slightly curved sleeves. The stripes are horizontal and evenly spaced across the fabric.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_3ffzdw3ffzdw3ffz.png",
       "filename": "asset-2.png",
       "x": 315,
       "y": 489,
@@ -150,7 +150,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A blank white image with no visible content or features.",
+      "svg_description": "Default blue square with SVG text",
       "filename": "svg-3.svg",
       "x": 416,
       "y": 1317,
@@ -161,7 +161,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "Default blue square with SVG text",
       "filename": "svg-4.svg",
       "x": 416,
       "y": 1377,
@@ -172,7 +172,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background fills the frame.",
+      "svg_description": "Default blue square with SVG text",
       "filename": "svg-5.svg",
       "x": 970,
       "y": 1355,
@@ -183,7 +183,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A completely white image with no visible features or objects.",
+      "svg_description": "Default blue square with SVG text",
       "filename": "svg-6.svg",
       "x": 1160,
       "y": 1359,
@@ -194,7 +194,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white, five-pointed starburst shape is centered on a black background. The points are evenly spaced and point outward from the center.",
+      "asset_description": "Uploaded image: 7.png",
       "filename": "asset-7.png",
       "x": 501,
       "y": 1101,

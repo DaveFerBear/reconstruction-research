@@ -1,11 +1,11 @@
 {
   "background_color": "#ead9c9",
   "has_background_image": true,
-  "background_image_description": "The image features three horizontal wave-like shapes in yellow, orange-red, and pink, layered on top of each other against a cream-colored background. The waves have a three-dimensional appearance due to overlapping layers, creating a sense of depth and movement. The colors transition smoothly from yellow at the top to orange-red in the middle and finally to pink at the bottom. The image is flat, with no perspective or shading beyond the layered shapes.",
+  "background_image_description": "Abstract backdrop of five wide, gently wavy horizontal bands spanning the full 1280x1600 canvas: top band mustard-gold (#d3b062), second band pale beige (#ead9c9), middle band warm coral-orange (#f19373), fourth band soft pink (#f6a3b4), and bottom band light cream-beige (#e9d9cd). Each band curves smoothly with diagonal transitions from left to right.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image features four horizontal bands of color: a light beige or cream at the top, a peach or light orange band in the middle, a light pink band in the middle, and a light gold or beige band at the bottom. The bands are arranged horizontally and have a smooth, curved appearance. A small, white, diamond-shaped shape is visible in the bottom right corner of the image.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_bxmj9wbxmj9wbxmj.png",
       "filename": "asset-2.png",
       "x": 0,
       "y": -6,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white sheet of paper with a folded corner is attached to a silver paperclip. The background is a gradient gray, transitioning from lighter at the top to darker at the bottom.",
+      "asset_description": "Centered white paper note with subtle paper texture, soft drop shadow to the right and bottom, and a curled/peeled bottom-right corner revealing a gray underside. A metallic silver paperclip (chrome with inner shadow) is clipped at the top edge slightly left of center, overlapping the note and casting a small shadow on the paper.",
       "filename": "asset-1.png",
       "x": 30,
       "y": -9,

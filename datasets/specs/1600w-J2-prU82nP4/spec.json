@@ -1,11 +1,11 @@
 {
   "background_color": "#66C172",
   "has_background_image": true,
-  "background_image_description": "The image displays a solid green background with a gradient effect, transitioning from a darker shade at the edges to a lighter shade towards the top. The color is uniform and continuous across the image, with no visible patterns, textures, or objects.",
+  "background_image_description": "Subtle fine paper-grain texture covering the entire 1600x1341 canvas in a flat green tone.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image displays a solid green background with no visible patterns, textures, or objects.",
+      "asset_description": "Uploaded image: Add a heading.png",
       "filename": "asset-4.png",
       "x": -16,
       "y": -10,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A semi-circular shape composed of numerous small, light-colored rectangular elements arranged closely together against a black background. The elements are densely packed and form a continuous, curved structure.",
+      "asset_description": "Uploaded image: Add a heading.png",
       "filename": "asset-3.png",
       "x": 673,
       "y": -90,
@@ -95,7 +95,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with long dark brown hair wears a bright green sweater. She is looking upward and to the right, with her right index finger touching her chin. Her left arm is slightly bent, and her left hand is partially visible near her shoulder. The background is black.",
+      "asset_description": "Uploaded image: 15.png",
       "filename": "asset-2.png",
       "x": 621,
       "y": 316,
@@ -106,7 +106,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white outline of a lightbulb hangs from a coiled wire against a black background. The lightbulb has a rounded base, a clear glass bulb, and a pointed filament at the bottom.",
+      "asset_description": "Uploaded image: 16.png",
       "filename": "asset-5.png",
       "x": 1112,
       "y": -46,

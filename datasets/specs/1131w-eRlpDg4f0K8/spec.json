@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A dark blue scalloped border frames a light gray and white checkerboard pattern. The border has a repeating wave-like design along its edges.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_t77hpyt77hpyt77h.png",
       "filename": "asset-2.png",
       "x": 3,
       "y": 36,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Three closed books with dark blue covers are arranged on a dark blue surface, surrounded by stylized blue-gray foliage and flowers. The books are positioned side by side, with the middle book slightly overlapping the others. The foliage includes leaves and stems, with some resembling fern-like shapes. The flowers are simple, stylized depictions of blossoms. The background is solid black, providing contrast to the blue-gray elements.",
+      "asset_description": "Monochrome navy line-art illustration of three upright books with bookmarks surrounded by various leafy branches, small flowers, and berry-like buds; hand-drawn style with thick outlines.",
       "filename": "asset-1.png",
       "x": 207,
       "y": 330,
@@ -94,7 +94,7 @@
     },
     {
       "type": "text",
-      "text": "Let’s get reading!",
+      "text": "Let\u2019s get reading!",
       "x": 137,
       "y": 1335,
       "width": 900,

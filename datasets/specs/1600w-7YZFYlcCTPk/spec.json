@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid red background fills the frame. A small, light-colored diamond shape is visible in the bottom right corner.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_1mz44w1mz44w1mz4.png",
       "filename": "asset-2.png",
       "x": 1,
       "y": -5,
@@ -33,7 +33,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black.",
+      "asset_description": "Uploaded image: 7.png",
       "filename": "asset-3.png",
       "x": 352,
       "y": 448,
@@ -44,7 +44,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white lightbulb hangs from a black cord against a solid red background. The lightbulb emits a bright white glow at its base, gradually fading as it extends upward. The cord extends from the top center of the frame, disappearing out of the frame. The text \"@REALLYGREATSITE\" is visible in the bottom center of the image.",
+      "asset_description": "Minimal hanging lightbulb centered near the top: a thin black cord descending from the top edge to a small glossy black socket holding a glowing white bulb. The bulb emits a soft radial white glow that fades into the red background.",
       "filename": "asset-1.png",
       "x": 418,
       "y": 4,

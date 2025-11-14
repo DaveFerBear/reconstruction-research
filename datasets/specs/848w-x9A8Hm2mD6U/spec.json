@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A round blue table holds a silver laptop, a dark blue mug with a white design, a smartphone, and a stack of books. A light-colored wall and a portion of a staircase are visible in the background.",
+      "asset_description": "Softly lit interior photograph of a modern workspace. A large matte blue round table fills the lower half; on it are a stack of books with red, white, and blue covers at the right edge, an open silver-gray laptop angled left, a dark ceramic mug with white drip glaze near center, and a slim black smartphone partly under a white notebook. Background shows an out-of-focus light gray wall with a diagonal handrail or pipe entering from the left. Neutral, desaturated tones overall.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 100,
@@ -16,8 +16,8 @@
     {
       "type": "text",
       "text": "why you should choose",
-      "x": 0,
-      "y": 396,
+      "x": -39,
+      "y": 468,
       "width": 848,
       "height": 30,
       "rotation": 0,
@@ -33,8 +33,8 @@
     {
       "type": "text",
       "text": "Cloudlet",
-      "x": 0,
-      "y": 466,
+      "x": 3,
+      "y": 439,
       "width": 848,
       "height": 210,
       "rotation": 0,
@@ -50,8 +50,8 @@
     {
       "type": "text",
       "text": "March 30, 2030",
-      "x": 24,
-      "y": 20,
+      "x": 34,
+      "y": 62,
       "width": 180,
       "height": 18,
       "rotation": 0,
@@ -67,8 +67,8 @@
     {
       "type": "text",
       "text": "VIEW ONLINE",
-      "x": 312,
-      "y": 18,
+      "x": 230,
+      "y": 62,
       "width": 120,
       "height": 18,
       "rotation": 0,
@@ -84,8 +84,8 @@
     {
       "type": "text",
       "text": "FORWARD",
-      "x": 436,
-      "y": 18,
+      "x": 382,
+      "y": 64,
       "width": 100,
       "height": 18,
       "rotation": 0,
@@ -100,10 +100,10 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the letter, and the letter is centered within the circle. The background is white.",
+      "svg_description": "Small circular logo mark: solid black ring with a simple lowercase 'c' glyph centered inside, appearing as a minimalist icon.",
       "filename": "svg-1.svg",
       "x": 812,
-      "y": 24,
+      "y": 62,
       "width": 20,
       "height": 20,
       "rotation": 0

@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A black and white image shows three thick, horizontal brushstrokes of paint forming a rough circle around a central empty space. The paint appears textured and slightly uneven, with small specks visible between strokes. The image is monochromatic, with varying shades of gray.",
+  "background_image_description": "Grayscale abstract graffiti-like paint strokes with concrete texture wrapping around the edges of the poster: thick curved swashes on the top-left and lower-left, and tall looping strokes along the right edge. The strokes have soft shadows and rough, stippled texture; tones range from dark charcoal (#2b2b2b) to mid gray (#7a7a7a). Center area is mostly clear for content.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two gray spray paint streaks are visible against a light gray background. The left streak is angled diagonally, while the right streak is curved and oriented more vertically. A small white diamond shape appears in the bottom right corner.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_6eb5gu6eb5gu6eb5.png",
       "filename": "asset-2.png",
       "x": 3,
       "y": 3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black and white close-up of a person's face. The individual has dark skin and short, textured hair. Their eyes are open and looking directly at the camera. The person's lips are closed, and their expression is neutral. The background is dark and out of focus.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_qhvgxkqhvgxkqhvg.png",
       "filename": "asset-3.png",
       "x": 270,
       "y": 229,

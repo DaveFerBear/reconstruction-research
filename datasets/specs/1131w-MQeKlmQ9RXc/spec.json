@@ -40,7 +40,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid white rectangle with a black border is centered in the image. The rectangle is uniformly filled and has no visible texture, patterns, or markings.",
+      "svg_description": "Thin 2px stroke rectangle (no fill) framing the central content area. Stroke color #111111, square corners.",
       "filename": "svg-2.svg",
       "x": 43,
       "y": 364,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized face with two large, round, white eyes with dark brown pupils is centered against a dark gray background. The eyes are positioned symmetrically, with a slight curve to the lower eyelid. Below the eyes is a wide, bright red, smooth, rounded shape resembling a tongue. The lighting creates a soft glow around the face, emphasizing the contours and shapes.",
+      "asset_description": "Centered 3D cartoon face composed of two large glossy white spherical eyes with dark oval pupils and specular highlights, and a shiny inflatable-looking curved coral-pink tube forming a smiling mouth. Soft shadows and subtle shading give a plastic toy-like appearance.",
       "filename": "asset-1.png",
       "x": 65,
       "y": 202,
@@ -60,7 +60,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "The image shows three adjacent rectangular shapes, all white and empty. Each rectangle is divided vertically by a thin gray line. The top and bottom rectangles are identical in size and shape, while the middle rectangle is slightly smaller.",
+      "svg_description": "Thin 2px stroke rectangle (no fill) forming a bottom grid area with two vertical divider lines. Outer border size 1051x290 with stroke color #111111. Vertical dividers at approximately x=390 and x=741 inside the rectangle, running full height.",
       "filename": "svg-1.svg",
       "x": -86,
       "y": 1368,
@@ -228,7 +228,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black, with no discernible features or objects.",
+      "asset_description": "Uploaded image: RECTANGLE STROKE.png",
       "filename": "asset-2.png",
       "x": 843,
       "y": -9,

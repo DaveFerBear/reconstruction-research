@@ -1,7 +1,7 @@
 {
   "background_color": "#f2f2f2",
   "has_background_image": true,
-  "background_image_description": "A gray and white image depicts a cloudy sky. The clouds are various shades of gray and white, with some areas appearing brighter due to light. The image is predominantly monochromatic, with no discernible text or human figures. The clouds are unevenly distributed across the frame, with some areas denser than others. No specific objects or actions are depicted within the image.",
+  "background_image_description": "Soft off-white to light-gray vignette with subtle cloudy swirls; corners slightly darker gray (#dedede\u2013#e6e6e6) fading to brighter center (#f7f7f7).",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand raised, wearing a black glove on his left wrist. Behind him, a cityscape at sunset is visible, with tall buildings and a street. The background is transparent, and the image is overlaid with fragmented pieces of the cityscape and man.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_60n6xl60n6xl60n6.png",
       "filename": "asset-2.png",
       "x": 144,
       "y": 418,

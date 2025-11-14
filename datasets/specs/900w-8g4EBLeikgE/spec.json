@@ -4,6 +4,17 @@
   "background_image_description": "",
   "nodes": [
     {
+      "type": "image",
+      "asset_description": "Uploaded image: 1b62f4c1-45f9-408b-ac01-ae4940f50877.png",
+      "filename": "asset-2.png",
+      "x": -155,
+      "y": 859,
+      "width": 1173,
+      "height": 765,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
       "type": "text",
       "text": "LUNCH\nTIMES",
       "x": 68,
@@ -24,8 +35,8 @@
     {
       "type": "text",
       "text": "Fast, Fresh, &\nDelicious",
-      "x": 190,
-      "y": 330,
+      "x": 175,
+      "y": 291,
       "width": 579,
       "height": 258,
       "rotation": -8,
@@ -57,12 +68,12 @@
     },
     {
       "type": "svg",
-      "svg_description": "A gold-colored triangle is centered on a white background. The triangle is equilateral and symmetrical.",
+      "svg_description": "Small upward-pointing chevron, solid fill #e8a22b, centered above the call-to-action.",
       "filename": "svg-1.svg",
-      "x": 414,
-      "y": 1405,
-      "width": 46,
-      "height": 28,
+      "x": 387,
+      "y": 1363,
+      "width": 130,
+      "height": 100,
       "rotation": 0
     },
     {
@@ -115,17 +126,6 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
-    },
-    {
-      "type": "image",
-      "asset_description": "Two hands hold a brown cardboard container lined with green and white striped paper. The container holds three yellow taco shells filled with red salsa and chopped green herbs. A half lemon sits beside the taco shells. The background is dark and blurred.",
-      "filename": "asset-2.png",
-      "x": -155,
-      "y": 859,
-      "width": 1173,
-      "height": 765,
-      "rotation": 0,
-      "opacity": 1
     }
   ],
   "canvas_width": 900,

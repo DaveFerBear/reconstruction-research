@@ -1,11 +1,11 @@
 {
   "background_color": "#3a0b5e",
   "has_background_image": true,
-  "background_image_description": "A purple nebula with pink and purple hues stretches diagonally across the image, illuminated by bright white stars scattered around it. The nebula’s edges are soft and diffuse, transitioning into more defined, cloud-like structures. The background is a dark purple, speckled with numerous small white stars.",
+  "background_image_description": "Deep purple cosmic background with a soft radial gradient (center ~#6a28d9 fading to edges ~#260944) and subtle nebula streaks, star-dust specks, and pink-violet light flares concentrated toward the left side.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A yellow rectangle is centered on a black background. The rectangle is uniformly colored and positioned horizontally.",
+      "asset_description": "Uploaded image: 2.png",
       "filename": "asset-10.png",
       "x": 80,
       "y": 865,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black smartphone with a blank light blue gradient screen is shown against a transparent background. The phone has a black bezel and visible buttons on its sides.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_3rl2wd3rl2wd3rl2.png",
       "filename": "asset-2.png",
       "x": 475,
       "y": 98,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man with dark skin and dreadlocks sits cross-legged on the floor, wearing a light blue long-sleeved shirt and dark pants. He holds a silver laptop on his lap and gives a thumbs-up gesture with both hands. The background is transparent.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_v0zesev0zesev0ze (2).png",
       "filename": "asset-3.png",
       "x": 460,
       "y": 181,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal white bar is centered on a black background. The bar is uniform in width and extends across the entire width of the image.",
+      "asset_description": "Uploaded image: 1.png",
       "filename": "asset-9.png",
       "x": -51,
       "y": 834,
@@ -49,7 +49,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A completely white image with no visible features or objects.",
+      "svg_description": "Minimal white geometric logo mark resembling a stylized building/home monogram: vertical central column with two angled roof-like strokes forming a hexagonal-outline suggestion.",
       "filename": "svg-1.svg",
       "x": 120,
       "y": 86,
@@ -161,7 +161,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow, circular emoji with a wide smile and white teeth is centered against a white background. Two red heart shapes are positioned over the eyes. The emoji casts a subtle shadow below.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_7gg4if7gg4if7gg4.png",
       "filename": "asset-4.png",
       "x": 680,
       "y": 911,
@@ -172,7 +172,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A glossy red heart shape is centered on a transparent background. The heart is smooth and rounded, with a subtle highlight on its right side.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_o8gzg5o8gzg5o8gz.png",
       "filename": "asset-5.png",
       "x": 1445,
       "y": 535,
@@ -183,7 +183,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white cloud is centered on a transparent background. The cloud has a rounded, fluffy shape with a slightly darker base. The background consists of a grid of gray and white squares.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_v0zesev0zesev0ze (1).png",
       "filename": "asset-6.png",
       "x": 702,
       "y": 234,
@@ -194,7 +194,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow, round, cartoon face with wide white eyes and black eyebrows is shown against a transparent background. The mouth is open in a surprised or shocked expression.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_oozhgvoozhgvoozh.png",
       "filename": "asset-7.png",
       "x": 1457,
       "y": 1079,
@@ -205,7 +205,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A round, glossy blue button with a white arrow pointing to the right is centered on a white background. The arrow is positioned slightly off-center, curving from its base to its tip. The button has a smooth, reflective surface and a subtle shadow beneath it.",
+      "asset_description": "Uploaded image: Gemini_Generated_Image_sm6ozqsm6ozqsm6o.png",
       "filename": "asset-8.png",
       "x": 1281,
       "y": 898,
@@ -233,7 +233,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white telephone handset icon is centered on a black background. The handset is curved and oriented vertically.",
+      "asset_description": "Uploaded image: 3.png",
       "filename": "asset-11.png",
       "x": 108,
       "y": 1429,
@@ -244,7 +244,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white vertical bar is centered on a black background. The bar is uniform in width and height, with no visible texture, patterns, or additional elements.",
+      "asset_description": "Uploaded image: 4.png",
       "filename": "asset-13.png",
       "x": 492,
       "y": 1437,
@@ -255,7 +255,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white vertical bar is centered on a black background.",
+      "asset_description": "Uploaded image: 4.png",
       "filename": "asset-14.png",
       "x": 948,
       "y": 1445,

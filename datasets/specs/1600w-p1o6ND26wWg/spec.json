@@ -1,11 +1,11 @@
 {
   "background_color": "#f6f6f6",
   "has_background_image": true,
-  "background_image_description": "A close-up view of a white fabric with a smooth, slightly reflective surface. The fabric is draped and folded, creating gentle curves and shadows across the surface. The folds and curves vary in depth and direction, giving the fabric a dynamic and three-dimensional appearance. No visible patterns, textures, or embellishments are present.",
+  "background_image_description": "Subtle soft-gray fabric-like backdrop with wavy folds and gentle shadow gradients across an off\u2011white surface.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid light gray background fills the frame.",
+      "asset_description": "Uploaded image: 36.png",
       "filename": "asset-4.png",
       "x": -27,
       "y": -39,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black.",
+      "asset_description": "Uploaded image: 21.png",
       "filename": "asset-3.png",
       "x": 3,
       "y": -63,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black.",
+      "asset_description": "Uploaded image: 21.png",
       "filename": "asset-2.png",
       "x": 1106,
       "y": -56,
@@ -106,7 +106,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A tall, light brown plastic cup filled with a light brown beverage and ice cubes sits against a light gray background. The words “SHORT BREAK” are displayed in large, black, sans-serif letters behind the cup.",
+      "asset_description": "Cutout photo of an iced latte in a clear plastic cup with a domed rim, creamy tan coffee, visible ice cubes and frothy top; soft shadow at the base. The cup is centered and overlaps the large black headline text.",
       "filename": "asset-1.png",
       "x": 118,
       "y": 118,
@@ -116,7 +116,7 @@
     },
     {
       "type": "text",
-      "text": "Our design studio is taking a short break for updates and improvements.\nWe’ll be back with new ideas and inspiration soon. Thank you for your\nunderstanding, and we look forward to welcoming you again!",
+      "text": "Our design studio is taking a short break for updates and improvements.\nWe\u2019ll be back with new ideas and inspiration soon. Thank you for your\nunderstanding, and we look forward to welcoming you again!",
       "x": 192,
       "y": 1296,
       "width": 1248,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A watercolor illustration shows three pumpkins and a sunflower arranged horizontally along the top edge of a white background. The leftmost pumpkin is light green, the middle sunflower is yellow, and the rightmost pumpkin is pale peach. Brown leaves and stems extend from the right side of the arrangement.",
+      "asset_description": "Watercolor autumn border along the top edge: a pale green pumpkin at the top-left corner, a large yellow sunflower slightly left of center, and clusters of tan and copper leaves with orange berries extending across the top on a white background.",
       "filename": "asset-1.png",
       "x": -87,
       "y": -90,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A watercolor border of pumpkins and sunflowers on a white background. The pumpkins are light peach and pale green, with some showing stems and leaves. The sunflowers are yellow with brown centers. The arrangement includes leaves and stems connecting the pumpkins and sunflowers.",
+      "asset_description": "Watercolor autumn border along the bottom edge: several pumpkins (pale green and peach/orange), yellow sunflowers, dried tan leaves, and orange berries forming a dense botanical arrangement rising from the bottom on a white background.",
       "filename": "asset-2.png",
       "x": 21,
       "y": 432,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A vertical brown line runs from the top to the bottom of the image, filling the frame. The background is entirely white.",
+      "svg_description": "Solid vertical separator line, color #9c6b3e, 2 px wide and 90 px tall.",
       "filename": "svg-1.svg",
       "x": 515,
       "y": 798,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A vertical brown line runs from the top to the bottom of the image, filling the frame. The line is solid and uniform in width.",
+      "svg_description": "Solid vertical separator line, color #9c6b3e, 2 px wide and 90 px tall.",
       "filename": "svg-2.svg",
       "x": 749,
       "y": 795,
