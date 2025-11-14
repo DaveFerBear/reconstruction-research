@@ -3,3 +3,6 @@ playwright>=1.40.0
 pandas>=2.0.0
 litellm>=1.0.0
 python-dotenv>=1.0.0
+vlmrun>=0.1.0
+numpy>=2.0.0
+numexpr>=2.14.0
