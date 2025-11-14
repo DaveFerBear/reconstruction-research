@@ -241,15 +241,22 @@ def gemini_score_aesthetic(image_path: str, timeout: int = 120) -> float:
     # Extract score from response
     try:
         text = response.choices[0].message.content.strip()
-        # Try to extract just the number
+        # Try to extract the score (look for "SCORE: X" format first, then fallback to any number)
         import re
-        match = re.search(r'\b(\d+(?:\.\d+)?)\b', text)
-        if match:
-            score = float(match.group(1))
-            # Ensure score is in 0-100 range
-            return min(max(score, 0), 100)
+        match = re.search(r'SCORE:\s*(\d+(?:\.\d+)?)', text, re.IGNORECASE)
+        if not match:
+            # Fallback: extract last number in the text (for backwards compatibility)
+            matches = re.findall(r'\b(\d+(?:\.\d+)?)\b', text)
+            if matches:
+                match = matches[-1]  # Take the last number
+                score = float(match)
+            else:
+                raise ValueError(f"Could not extract score from response: {text}")
         else:
-            raise ValueError(f"Could not extract score from response: {text}")
+            score = float(match.group(1))
+
+        # Ensure score is in 0-100 range
+        return min(max(score, 0), 100)
     except (KeyError, IndexError, AttributeError, ValueError) as e:
         print(f"Error parsing Gemini response: {response}")
         raise e
@@ -333,15 +340,22 @@ def gemini_score_edit(original_image_path: str, edited_image_path: str, instruct
     # Extract score from response
     try:
         text = response.choices[0].message.content.strip()
-        # Try to extract just the number
+        # Try to extract the score (look for "SCORE: X" format first, then fallback to any number)
         import re
-        match = re.search(r'\b(\d+(?:\.\d+)?)\b', text)
-        if match:
-            score = float(match.group(1))
-            # Ensure score is in 0-100 range
-            return min(max(score, 0), 100)
+        match = re.search(r'SCORE:\s*(\d+(?:\.\d+)?)', text, re.IGNORECASE)
+        if not match:
+            # Fallback: extract last number in the text (for backwards compatibility)
+            matches = re.findall(r'\b(\d+(?:\.\d+)?)\b', text)
+            if matches:
+                match = matches[-1]  # Take the last number
+                score = float(match)
+            else:
+                raise ValueError(f"Could not extract score from response: {text}")
         else:
-            raise ValueError(f"Could not extract score from response: {text}")
+            score = float(match.group(1))
+
+        # Ensure score is in 0-100 range
+        return min(max(score, 0), 100)
     except (KeyError, IndexError, AttributeError, ValueError) as e:
         print(f"Error parsing Gemini response: {response}")
         raise e
