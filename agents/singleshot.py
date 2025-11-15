@@ -363,7 +363,7 @@ Analyze the current spec and the user's instruction. Determine which tool(s) to 
             self.log(f"Editing {filename}: {edit_instruction}")
 
             # Use Kontext to edit
-            prompt = f"Isolate and extract this element with modifications: {edit_instruction}"
+            prompt = edit_instruction
             success = self._run_async(self._edit_image_async(prompt, image_path))
 
             if not success:
@@ -473,7 +473,9 @@ USER INSTRUCTION:
         """Edit image using Kontext API."""
         timeout = aiohttp.ClientTimeout(total=300, connect=60, sock_read=60)
         async with aiohttp.ClientSession(timeout=timeout) as session:
-            result = await self._kontext_edit_async(prompt, self.source_image_url, session)
+            # IMPORTANT: send the ASSET itself, not the full-page render
+            asset_image_url = _to_data_url(image_path)
+            result = await self._kontext_edit_async(prompt, asset_image_url, session)
 
             if 'images' in result and result['images']:
                 image_url = result['images'][0]['url']
