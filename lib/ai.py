@@ -1,12 +1,16 @@
 import os
+import base64
+from pathlib import Path
 import requests
 from dotenv import load_dotenv
 from .prompts import ENUM_CRITIC_PROMPT, EDIT_CRITIC_PROMPT
+from .utils import _to_data_url
 
 load_dotenv()
 
 FAL_API_KEY = os.getenv("FAL_API_KEY")
 FAL_EDIT_URL = "https://fal.run/fal-ai/nano-banana/edit"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 
@@ -184,6 +188,77 @@ def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: i
     else:
         raise RuntimeError(f"Unexpected response: {response.status_code} - {response.text}")
 
+
+def edit_image_local(
+    prompt: str,
+    image_path: str | Path,
+    backend: str | None = None,
+    size: str | None = None,
+    timeout: int = 300
+) -> bytes:
+    """
+    Edit a local image file using the selected backend and return edited image bytes.
+    backend: "gpt-image-1" or "kontext" (default via IMAGE_EDITOR env).
+    """
+    image_path = Path(image_path)
+    backend = (backend or os.getenv("IMAGE_EDITOR", "kontext")).lower()
+
+    if backend == "gpt-image-1":
+        if not OPENAI_API_KEY:
+            raise ValueError("OPENAI_API_KEY not set for gpt-image-1 image edits")
+
+        url = "https://api.openai.com/v1/images/edits"
+        headers = {"Authorization": f"Bearer {OPENAI_API_KEY}"}
+
+        # Files/multipart payload
+        files = {
+            "image": (image_path.name, image_path.read_bytes(), "image/png" if image_path.suffix.lower() == ".png" else "image/jpeg")
+        }
+        data = {
+            "model": "gpt-image-1",
+            "prompt": prompt,
+            "quality": "medium",
+            "background": "transparent",
+            "output_format": "png",
+        }
+        if size:
+            data["size"] = size
+
+        resp = requests.post(url, headers=headers, files=files, data=data, timeout=timeout)
+        if resp.status_code >= 400:
+            raise RuntimeError(f"gpt-image-1 edit error {resp.status_code}: {resp.text}")
+        payload = resp.json()
+        # New API returns URL by default
+        image_url = payload["data"][0].get("url")
+        if image_url:
+            r = requests.get(image_url, timeout=timeout)
+            r.raise_for_status()
+            return r.content
+        # Back-compat: if b64 is returned
+        b64 = payload["data"][0].get("b64_json")
+        if b64:
+            return base64.b64decode(b64)
+        raise RuntimeError("gpt-image-1 response missing image url/data")
+
+    # Default: FAL kontext backend with data URL to avoid external hosting
+    image_url = _to_data_url(image_path)
+    result = kontext_edit(prompt, image_url, with_logs=False, timeout=timeout)
+    # Common result shapes: {"images": [{"url": ...}]}
+    url = None
+    if isinstance(result, dict):
+        images = result.get("images") or result.get("output") or []
+        if isinstance(images, list) and images:
+            url = images[0].get("url")
+        elif isinstance(images, dict):
+            url = images.get("url")
+        if not url:
+            # Try top-level fields
+            url = result.get("url")
+    if not url:
+        raise RuntimeError(f"Unexpected kontext response: {result}")
+    r = requests.get(url, timeout=timeout)
+    r.raise_for_status()
+    return r.content
 
 def gemini_score_aesthetic(image_path: str, timeout: int = 120) -> float:
     """

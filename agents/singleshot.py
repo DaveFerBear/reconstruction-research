@@ -6,13 +6,14 @@ import asyncio
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import litellm
-import aiohttp
 from dotenv import load_dotenv
+from typing import Optional
 
 from .base import Agent
 from lib.types import Spec
 from lib.utils import _to_data_url
 from lib.render import render_image
+from lib.ai import edit_image_local
 
 load_dotenv()
 
@@ -33,7 +34,9 @@ class SingleShotAgent(Agent):
         self,
         model: str = "gpt-4o",
         temperature: float = 0.7,
-        verbose: bool = False
+        verbose: bool = False,
+        image_editor: Optional[str] = None,
+        image_edit_size: Optional[str] = None,
     ):
         super().__init__(verbose=verbose)
         self.model = model
@@ -49,6 +52,11 @@ class SingleShotAgent(Agent):
         if not self.api_key:
             required = "GEMINI_API_KEY" if model.startswith("gemini/") else "OPENAI_API_KEY"
             raise ValueError(f"{required} environment variable not set")
+
+        # Image editor backend and size overrides (can be set via args or env)
+        # Backends: "kontext" (default) or "gpt-image-1"
+        self.image_editor = (image_editor or "kontext").lower()
+        self.image_edit_size = image_edit_size or os.getenv("IMAGE_EDIT_SIZE")
 
         # Current state
         self.current_spec_path = None
@@ -362,12 +370,14 @@ Analyze the current spec and the user's instruction. Determine which tool(s) to 
             image_path = self.current_spec_path / filename
             self.log(f"Editing {filename}: {edit_instruction}")
 
-            # Use Kontext to edit
+            # Edit via shared AI util (sync)
             prompt = edit_instruction
-            success = self._run_async(self._edit_image_async(prompt, image_path))
-
-            if not success:
-                return {"error": f"Failed to generate edited image for {filename}"}
+            size = self.image_edit_size
+            try:
+                edited_bytes = edit_image_local(prompt, image_path, backend=self.image_editor, size=size)
+            except Exception as e:
+                return {"error": f"Failed to generate edited image for {filename}: {e}"}
+            image_path.write_bytes(edited_bytes)
 
             self.log(f"✓ Saved edited image to {filename}")
 
@@ -469,50 +479,6 @@ USER INSTRUCTION:
         """Run async coroutine in sync context."""
         return asyncio.run(coro)
 
-    async def _edit_image_async(self, prompt: str, image_path: Path) -> bool:
-        """Edit image using Kontext API."""
-        timeout = aiohttp.ClientTimeout(total=300, connect=60, sock_read=60)
-        async with aiohttp.ClientSession(timeout=timeout) as session:
-            # IMPORTANT: send the ASSET itself, not the full-page render
-            asset_image_url = _to_data_url(image_path)
-            result = await self._kontext_edit_async(prompt, asset_image_url, session)
-
-            if 'images' in result and result['images']:
-                image_url = result['images'][0]['url']
-                await self._download_image(image_url, image_path, session)
-                return True
-            return False
-
-    async def _kontext_edit_async(self, prompt: str, image_url: str, session: aiohttp.ClientSession) -> dict:
-        """Call Kontext API for context-aware image editing."""
-        headers = {"Authorization": f"Key {self.fal_api_key}"}
-        payload = {"prompt": prompt, "image_url": image_url}
-
-        async with session.post("https://fal.run/fal-ai/flux-pro/kontext", json=payload, headers=headers) as response:
-            if response.status == 422:
-                error_text = await response.text()
-                raise Exception(f"Kontext API Error: {error_text}")
-            response.raise_for_status()
-
-            if response.status == 200:
-                return await response.json()
-            elif response.status == 202:
-                # Poll for completion
-                job = await response.json()
-                status_url = job.get("status_url") or job.get("response_url")
-
-                while True:
-                    await asyncio.sleep(2)
-                    async with session.get(status_url, headers=headers) as status_response:
-                        status_response.raise_for_status()
-                        data = await status_response.json()
-                        state = (data.get("status") or data.get("state") or "").lower()
-
-                        if state in ("completed", "success", "succeeded"):
-                            return data
-                        if state in ("failed", "error"):
-                            raise RuntimeError(f"Kontext job failed: {data}")
-
     async def _generate_svg_async(self, description: str) -> str:
         """Generate SVG markup using Gemini."""
         prompt = f"""Generate clean, minimal SVG markup for: {description}
@@ -542,9 +508,4 @@ SVG:"""
 
         return svg_content
 
-    async def _download_image(self, url: str, path: Path, session: aiohttp.ClientSession):
-        """Download image from URL to path."""
-        async with session.get(url) as response:
-            response.raise_for_status()
-            content = await response.read()
-            path.write_bytes(content)
+    # Note: image downloading handled in lib.ai for edits; no local downloader needed here.
