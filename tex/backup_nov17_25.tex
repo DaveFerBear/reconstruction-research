@@ -1,0 +1,470 @@
+\documentclass{article}
+
+\usepackage[preprint]{neurips_2025} 
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{float}
+
+% Compact lists
+\setlist{nosep,leftmargin=*,itemsep=2pt,topsep=2pt,parsep=2pt}
+
+% Robust missing-figure helper
+% Helper macro: include a graphic if it exists; otherwise draw a placeholder box.
+\newcommand{\maybeincludegraphics}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{%
+    \fbox{\parbox[c][.28\linewidth][c]{.9\linewidth}{\centering \textbf{MISSING FIGURE}\\[4pt]\texttt{#2}}}%
+  }%
+}
+
+\title{Reconstruction: A Counter-Intuitive Approach to Multi-Layer Design Editing with AI Agents}
+
+\author{
+  David Ferris \\
+  South Park Commons \\
+  \texttt{research@dferris.me}
+}
+
+\date{August 27, 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Reliable multi-layer editing remains outside the capabilities of current AI systems. We discuss how LLM-only approaches produce broken designs, argue that rendering is equivalent to verification, and explain the failure modes that arise in simple VLLM agent architectures. We also propose a pragmatic new algorithm that leverages modern image editing models to reconstruct and edit layered designs and introduce a new VQA benchmark for multilayer image editing.
+\end{abstract}
+
+\section{Introduction and Related Work}
+\subsection{The Current State of Design AI}
+Multi-layer editing is the core mode of professional graphic editing in tools like \emph{Figma}, \emph{Photoshop}, and \emph{Canva}: independent layers stack (``composite'') to form a final image. Contemporary ``text-to-prototype'' systems (e.g., Lovable, v0, Bolt) are not true design agents; they rely on HTML flow layouts (e.g., flexbox) that succinctly describe \emph{relative} layouts, where elements are ordered in a hierarchy or grid.
+
+The benefit of flow layouts is robustness to content changes: resizing one element typically re-flows others so text does not overlap, icons stay aligned, and distribution and centering are preserved --- i.e., the layout does not ``break.'' If taste and judgment are the pinnacle of good design, broken layouts are the epitome of bad design: universally undesirable mistakes. Much of today's design AI emits HTML precisely to avoid breakage. This difference between absolute and relative positioning is one of the primary challenges in true design AI.
+
+Layout-first approaches like LayoutGAN\cite{li2019layoutgan} and LayoutDM\cite{inoue2023layoutdm} suggest generating the layout first, then populating the design. While this can work, design is circularly dependent: the layout affects the content which affects the layout, etc. For this reason we are interested in approaches which generate the layout and content simultaneously.
+
+\subsection{The Challenges in Evaluating Design}
+\begin{quote}
+``Learn the rules like a pro, so you can break them like an artist.'' --- Pablo Picasso
+\end{quote}
+
+Evaluating design is challenging because the gap between great and terrible can be narrow. Some decisions are merely poor (e.g. clashing colors); others are \emph{objectively broken} (e.g., text wrapping mid-word). Human experts also disagree on success criteria, making evaluation difficult. Fortunately, the bar for AI design is still low: the near-term aim is to move from broken layouts to passable (if conservative) designs.
+
+There are numerous aesthetic evaluation models like \cite{AesExpert}, however these are trained mostly on photographs and perform poorly when evaluating graphic or user-interface design quality. UIClip\cite{wu2024uiclip} is an open-source model trained on websites by applying jitter functions to break their layouts. We use UIClip as part of our evaluation stack.
+
+\subsection{Limitations of LLM-Only Design Agents}
+
+\begin{quote}
+``The map is not the territory.'' --- Alfred Korzybski
+\end{quote}
+
+LLMs cannot see. Whether the design is represented as absolutely positioned HTML/JSON/XML, \emph{rendering is equivalent to verification}. Asking an LLM to edit layout without rendering is like asking a frontend engineer to write HTML/CSS blind: it is nearly impossible for anything but the simplest designs. This is in large part because of \textbf{input sensitivity}: small changes can create large visual regressions. For example, a copy change may reflow text, causing it to overlap with an icon. Flow layouts mitigate this, explaining their prevalence.
+
+Even state-of-the-art reasoning models (e.g., olympiad-capable LLMs) cannot reliably perform simple design tasks because they lack visual feedback. Rendering is therefore essential to verify non-breaking edits.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{figures/designer_loop.png}
+    \caption{The design-render-edit loop}
+    \label{The design-render-edit loop}
+\end{figure}
+
+This rendering requirement reflects real-world design workflows: (1) the designer edits an existing design, (2) the modification is recorded in the underlying representation, and (3) the design is re-rendered for immediate visual feedback. The process repeats iteratively until completion.
+
+\subsection{An Ontology of Broken Layouts}
+
+By "broken layout", we refer to any design choice that is universally objectionable and clearly an error. For every "rule" in graphic design, it is easy to provide a counter-example; we grant this to be true, however we maintain there are still common errors that can be classified.
+
+\begin{figure}
+\centering
+\maybeincludegraphics[width=\linewidth]{figures/broken_layouts.png}
+\caption{Possible reasons for broken layouts}
+\label{fig:intro-context}
+\end{figure}
+
+
+\begin{table}[t]
+  \centering
+  \small
+  \setlength{\tabcolsep}{6pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{p{3.5cm}p{9.5cm}}
+    \toprule
+    \textbf{Failure Mode} & \textbf{Strategy to Remedy} \\ 
+    \midrule
+    Uneven distribution & Elements should be evenly spaced using consistent margins or grid systems to maintain visual balance. \\[3pt]
+    Misalignment & Components should align along shared axes or baselines to reinforce structural coherence. \\[3pt]
+    Inconsistency (fonts, colors, etc.) & Apply a unified visual system—consistent typography, color palette, and iconography—to ensure semantic and aesthetic coherence. \\[3pt]
+    Nonsensical scale/hierarchy & Visual hierarchy should reflect semantic importance through proportional size, weight, and spacing relationships. \\[3pt]
+    Crowding & Adequate whitespace, padding, and line spacing should be preserved to promote legibility and visual breathing room. \\[3pt]
+    Semiotic mismatch & Icons and visual symbols should be selected according to their conventional or intuitive meanings within the given context. \\[3pt]
+    Undesired overflow & Text boxes and containers should dynamically adjust or constrain content to prevent clipping and maintain readability. \\[3pt]
+    Poor contrast & Ensure sufficient luminance and chromatic contrast between text and background for accessibility and legibility. \\[3pt]
+    Undesired overlap & Elements should be positioned to avoid spatial collisions, preserving intended visual grouping and reading order. \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.25cm}
+  \caption{Common layout failure modes and corresponding mitigation strategies. The list summarizes universal, non-stylistic failure categories that frequently occur in automatically generated designs.}
+  \label{tab:failure_modes}
+\end{table}
+
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.44\linewidth}
+  \centering
+  \maybeincludegraphics[width=\linewidth]{figures/templates/recharge_gently.png}
+  \caption{Original poster.}
+  \label{fig:poster-orig}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+  \centering
+  \maybeincludegraphics[width=\linewidth]{figures/templates/recharge_gently2.png}
+  \caption{Edited vibe (``dream-like''): sensible colors/fonts, but alignment/text wrapping breaks.}
+  \label{fig:poster-edit}
+\end{minipage}
+\end{figure}
+
+\section{Methodology}
+We compare four different approaches to multi-layer AI design editing.
+\begin{enumerate}
+    \item \textbf{Zero-shot, design-only}: Only the design template is included in context.
+    \item \textbf{Zero-shot, with render}: Both the design spec and render are included in context.
+    \item \textbf{Design Agent}: A 2-agent VQA Loop (Figure \ref{designer-critic-agent-loop}).
+    \item \textbf{Reconstruction}: The algorithm explained in Section \ref{section:reconstruction}.
+\end{enumerate}
+
+We also include scores for just the edited image, since this poses an upper bound on reconstruction.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/designer_critic_agent.png}
+    \caption{Designer-Critic agent loop. The designer applies edits to a design, and the critic provides feedback about a design and whether an edit was successfully applied.}
+    \label{designer-critic-agent-loop}
+\end{figure}
+
+\subsection{Data}
+We selected 100 Free template images from the Canva.com template library, spanning the \emph{Poster}, \emph{Instagram Post}, \emph{Presentation}, and \emph{Website} categories. These designs were chosen to represent a diverse mix of content types, color palettes, visual complexity, and aspect ratios. These template images (.jpeg, .png or .webp) were then reconstructed into multi-layer templates by hand. Only templates explicitly marked as “Free” were used to ensure open availability and legal use in research settings.
+
+Each template was exported as a flattened raster image which, with the help of a manual GUI, was converted into a structured multi-layer representation (via manual recreation of layers). The raster images served as inputs for reconstruction and evaluation, while the layered representations provided ground-truth structure for quantitative comparison.
+
+To simulate realistic editing errors, we applied synthetic regressions such as text overlap, misalignment, inconsistent font weights, and poor contrast. These degraded variants were used to benchmark critic sensitivity and to evaluate the reconstruction pipeline’s ability to recover clean, editable layouts.
+
+All figures and examples in this paper are derived from Canva Free templates or their synthetic variants.\footnote{Templates were used under the Canva Free Media License: \url{https://www.canva.com/policies/free-media-license-agreement-2022-01-03/}.}
+
+
+\subsection{Evaluation}
+\subsubsection{Aesthetics}
+We use a frontier VLLM, \texttt{gemini-2.5-pro}, to evaluate design quality. The model is prompted to act as a human-like graphic design critic, producing a holistic score from 0–100 based on clarity, hierarchy, typography, alignment, contrast, and overall craft. The full text of the evaluation prompt is provided in Appendix~\ref{app:critic_prompt}. 
+
+To assess the reliability of this automated critic, we conducted a qualitative sanity check using intentionally regressed versions of high-quality designs (e.g., with degraded alignment, color balance, or typography). As shown in Figure~\ref{fig:gemini-obv-broken} and Appendix \ref{fig:aesthetic_regressions}, the critic consistently assigns lower scores to these degraded variants, aligning with human visual intuition. While not a substitute for a formal user study, this comparison provides initial evidence that the approach captures meaningful aspects of design quality.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/gemini-obv-broken.png}
+    \caption{Obvious regressions are correctly identified almost all of the time}
+    \label{fig:gemini-obv-broken}
+\end{figure}
+
+\subsubsection{Edit Quality}
+To measure edit success, we use a similar approach to that proposed in DPG-Bench \cite{hu2024ella} and break the edit into specific sub-tasks and use VQA to evaluate each one independently. \texttt{gemini-2.5-pro} is also used for this VQA evaluation.
+
+\section{Reconstruction: Leverage Image Editing Models for Multi-Layer Edits}
+\label{section:reconstruction}
+Image editing models (e.g., GPT-Image, Nano-Banana, Flux.1 Kontext) operate in pixel-space: they accept multi-modal inputs and render outputs. This makes them incompatible with multi-layer editing, since they are only capable of modifying a single, flattened image. It is initially unclear how to best leverage such a model to perform structured, multi-layer edits.
+
+However, there is one critical property of modern image editing models: \textit{they almost never produce broken layouts}. Trained on vast datasets of visually coherent images, their generative process inherently favors plausible arrangements of elements, proper alignment, and aesthetic harmony. This hints at a powerful, if counter-intuitive, workaround: instead of using these models for direct layer manipulation, we can use them for holistic, pixel-space editing and then reconstruct a layered structure from their output.
+
+We propose a multi-stage process that leverages the strengths of both layered representations and pixel-space generative models. The workflow, illustrated in the figure below, consists of three main steps: compose, edit, and decompose.
+
+
+\begin{enumerate}
+    \item \textbf{Compose (Render):} The process begins with an existing multi-layer design, represented in a structured format (e.g., JSON, SVG). This design is rendered into a single, flat bitmap image. This step effectively erases the explicit layer information, creating the input required by the image editing model.
+
+    \item \textbf{Pixel-Space Edit:} The rendered image is passed to a generative image editing model along with a high-level natural language prompt (e.g., "make this look more professional," "change the style to a vintage 70s aesthetic"). The model, operating entirely in pixel-space, generates a new image that reflects the requested changes while maintaining visual coherence. This is the core of the stylistic transformation, where the model's implicit understanding of design principles is applied holistically.
+
+    \item \textbf{Decompose (Reconstruct):} The final, and most critical, step is to reverse the initial rendering process. The newly generated flat image is analyzed to reconstruct a multi-layer design. This decomposition pipeline involves several sub-tasks:
+    \begin{itemize}
+        \item \textbf{Element Segmentation and Detection:} Computer vision models are used to identify and isolate distinct elements. This includes Optical Character Recognition (OCR) to locate and transcribe text, object detection to find icons and logos, and semantic segmentation to identify background shapes and image blocks.
+
+        \item \textbf{Property Extraction:} For each detected element, we extract its visual properties. For a text element, this includes its content, bounding box, color, and an estimation of its font family, weight, and size. For shapes and images, we extract their geometry, color fills, or image crops.
+
+        \item \textbf{Layer Reassembly:} The detected elements and their extracted properties are reassembled into a new, structured, multi-layer representation. The z-ordering of layers is inferred from occlusion in the generated image.
+    \end{itemize}
+\end{enumerate}
+
+This reconstructive approach allows us to treat the powerful but unstructured image model as a "black-box" design consultant. We leverage its aesthetic capabilities to generate a high-quality visual target, then use more traditional computer vision techniques to recover the editable, multi-layer structure that is essential for professional design workflows. It is a pragmatic bridge, enabling multi-layer editing by repurposing models that were never designed for it.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/reconstruction.png}
+    \caption{The reconstruction algorithm}
+    \label{The reconstruction algorithm}
+\end{figure}
+
+\subsection{Detecting Layers}
+
+After the image editing model produces a flattened output, we segment it into individual text
+elements using Gemini 2.5 Flash for OCR. The system prompt is:
+
+\begin{quote}
+\small
+\texttt{Output a json list where each entry contains the 2D bounding box in "box\_2d", the text
+content in "label", and the text color in "color". The bounding box coordinates should be normalized
+to the image dimensions (0-1000). Here's what the response should look like: \{ "box\_2d": [68, 75,
+322, 408], "label": "Start working out now", "color": "\#0055b3" \}}
+\end{quote}
+
+The model returns structured JSON with each text element's content, bounding box coordinates
+$[y_{\text{min}}, x_{\text{min}}, y_{\text{max}}, x_{\text{max}}]$, and color.
+
+Since the initial detection often fragments multi-line text into separate boxes, we apply a
+consolidation step using this prompt:
+
+\begin{quote}
+\small
+\texttt{I have detected the following text boxes in an image. Each has an index, a label, color, and
+bounding box coordinates ([yMin, xMin, yMax, xMax]). Some of these are single lines that belong to
+a larger, multi-line text block. Please group the indices of text boxes that should be merged.}
+
+\texttt{IMPORTANT RULES:}\\
+\texttt{- Only group text boxes that have the EXACT SAME COLOR}\\
+\texttt{- Text boxes that are far apart or have different styling should not be grouped}\\
+\texttt{- Different colors indicate different text elements and must remain separate}
+
+\texttt{Return a JSON object with a single key "groups". [...] For example: \{ "groups": [[0, 1],
+[3, 4, 5]] \}. Do not include single, ungrouped boxes in the response.}
+\end{quote}
+
+After consolidation, we crop each text region and pass it to the ResNet-50 classifier to extract
+font properties (family, size, weight).
+
+\subsection{Extracting the Background}
+
+To recover a clean background layer, we use Gemini 2.5 Flash Image Preview for two-pass inpainting.
+The first pass prompt:
+
+\begin{quote}
+\small
+\texttt{IMPORTANT: Remove ONLY the following specific text elements from the image: [list].}
+
+\texttt{CRITICAL PRESERVATION RULES:}\\
+\texttt{- DO NOT remove any images, photos, illustrations, or visual elements}\\
+\texttt{- DO NOT remove logos, icons, graphics, or decorative elements}\\
+\texttt{- DO NOT remove borders, frames, backgrounds, or visual design elements}\\
+\texttt{- DO NOT remove colors, patterns, textures, or visual styling}\\
+\texttt{- ONLY remove the exact text content specified above}\\
+\texttt{- Preserve all non-text visual elements completely unchanged}\\
+\texttt{- Fill any removed text areas naturally to match surrounding background/context}
+
+\texttt{Return only the edited image with text removed but all other visual elements preserved.}
+\end{quote}
+
+The second pass prompt:
+
+\begin{quote}
+\small
+\texttt{Examine this image carefully for any remaining visible text. If you find ANY text still
+visible, remove it completely while following these STRICT PRESERVATION RULES:}
+
+\texttt{CRITICAL PRESERVATION RULES:}\\
+\texttt{- DO NOT remove any images, photos, illustrations, or visual elements}\\
+\texttt{- DO NOT remove logos, icons, graphics, or decorative elements}\\
+\texttt{- DO NOT remove borders, frames, backgrounds, or visual design elements}\\
+\texttt{- DO NOT remove colors, patterns, textures, or visual styling}\\
+\texttt{- DO NOT alter any non-text visual elements}\\
+\texttt{- ONLY remove visible text/letters/words/numbers}\\
+\texttt{- Preserve the exact visual composition and design}\\
+\texttt{- Fill removed text areas to match surrounding context naturally}
+
+\texttt{If there is no visible text remaining, return the image completely unchanged. If there is
+text remaining, remove ONLY the text while preserving all other visual elements.}
+
+\texttt{The goal is a completely text-free image with all original visual elements intact.}
+\end{quote}
+
+\subsection{Extracting Text Properties}
+
+Accurate text property extraction is critical for reconstruction: once text regions are identified
+via OCR, we must determine their visual styling---font family, size, weight, color, and
+alignment---to reassemble an editable layer. While OCR provides the textual content, extracting
+these typographic properties requires a separate classification step.
+
+We approach font detection as a supervised classification problem. Given a cropped text region, we
+predict the font family from a constrained vocabulary of approximately 200 common typefaces. This
+constraint reflects the practical reality of professional design: most designs rely on a small set
+of widely-available fonts (Google Fonts, Adobe Fonts, system defaults) rather than the full universe
+of all possible typefaces.
+
+\subsubsection{Synthetic Data Generation}
+We generate a large-scale synthetic training corpus using Playwright and headless Chromium to programmatically render text across font families.
+
+Our data generation pipeline operates as follows:
+\begin{enumerate}
+  \item \textbf{Text corpus}: We sample 10,000 diverse phrases from a curated list spanning casual
+speech, technical jargon, and common design copy to ensure the model generalizes across varied textual content.
+
+  \item \textbf{Font families}: We select 13 popular Google Fonts representative of common design
+choices: Inter, Lato, Merriweather, Montserrat, Nunito, Open Sans, Oswald, Playfair Display,
+Poppins, Raleway, Roboto, Roboto Mono, and Ubuntu.
+
+  \item \textbf{Rendering variation}: For each phrase-font pair, we introduce realistic visual
+variation:
+  \begin{itemize}
+      \item Font size: uniformly sampled from 10--100px
+      \item Padding: independent random padding on all four sides (0--150px)
+      \item Text alignment: randomly chosen from \{left, center, right\}
+      \item Color: 50\% of samples use randomized background and text colors with sufficient
+luminance contrast ($\geq$4.5:1 ratio, approximating WCAG AA standards); the remaining 50\% use
+black-on-white
+      \item Font weight: 50\% normal, 50\% bold
+  \end{itemize}
+
+  \item \textbf{Screenshot capture}: Each configuration is rendered in Chromium and captured as a
+PNG image via the Playwright screenshot API.
+\end{enumerate}
+
+This process yields 500 training images per font, resulting in 6,500 total samples. An 85\%/15\% train-validation split produces 5,525 training samples and 975 validation samples.
+
+\subsubsection{Model Architecture and Training}
+
+We fine-tune a ResNet-50 \cite{He2016} convolutional network initialized with ImageNet-1K pre-trained weights. The final fully-connected layer is replaced with a dropout layer (p=0.2) followed by a linear classifier projecting to 13 font classes.
+
+Training proceeds in two stages:
+\begin{enumerate}
+  \item \textbf{Warmup (3 epochs)}: The ResNet backbone is frozen, and only the classification
+head is trained. Batch normalization layers remain in evaluation mode to preserve ImageNet-trained
+statistics. This prevents catastrophic forgetting and stabilizes early training.
+
+  \item \textbf{Full fine-tuning (up to 20 epochs)}: All layers are unfrozen. We employ
+discriminative learning rates: the backbone receives a smaller learning rate (1e-4) while the head
+receives a larger rate (3e-4). Training uses AdamW optimization with weight decay (1e-4), cosine
+annealing, gradient clipping (max norm = 1.0), label smoothing (0.1), and early stopping with
+patience of 6 epochs.
+\end{enumerate}
+
+All images are converted to grayscale (then replicated to 3 channels for compatibility with ImageNet
+weights), resized to 384×384 with center cropping, and normalized using ImageNet statistics. Data
+augmentation during training includes random crops, affine transformations, color jitter, and
+Gaussian blur.
+
+\subsubsection{Font Detection Results}
+
+The model achieves 79.5\% top-1 accuracy on the held-out validation set. Per-class accuracy varies
+significantly: decorative serif fonts like Playfair Display (91.8\%) and distinctive sans-serifs
+like Oswald (88.7\%) are classified reliably, while geometric sans-serifs with subtle
+differences---Inter (29.5\%), Open Sans (60.0\%), Roboto (41.7\%)---prove more challenging. This
+aligns with human perception: distinguishing between similar neutral sans-serifs often requires
+zoomed inspection of specific glyphs.
+
+Beyond font family, we extract other text properties via heuristics and classical computer vision:
+\begin{itemize}
+  \item \textbf{Font size}: Estimated from bounding box height and character count
+  \item \textbf{Color}: Sampled via histogram peak or median from the text region mask
+  \item \textbf{Alignment}: Inferred from the position of text within its bounding box relative to
+neighboring elements
+  \item \textbf{Weight}: Potentially detectable via a secondary classifier or stroke-width
+analysis, though not currently implemented
+\end{itemize}
+
+\subsection{Placing the Layers}
+Compose detected layers over the cleaned background. Ordering and bounding boxes from initial layer detection govern placement.
+
+
+\section{Results}
+Qualitative examples: posters, album covers, motivational graphics, invitations. (Figures omitted here for brevity but referenced in source.)
+
+\section{Limitations \& Future Work}
+Reconstruction is a powerful rethinking of the multi-layer design editing problem. However, there are several limitations in the current approach that remain open areas for improvement. While image editing models can extract raster layers, we do not yet propose a method to reliably recover vector graphics. The text property detection model could also be extended to support a wider variety of fonts, weights, and rich text effects like curved text. Evaluation can likewise be improved: although current off-the-shelf VLMs are reliable and approximate human-level aesthetic preferences, they still underperform skilled human designers. An aesthetic model trained specifically to evaluate graphic design would enable more effective hill-climbing techniques. Another area for future work is in maintaining design consistency. As presented, the reconstruction algorithm makes zero guarantees about using the same fonts, sizes, colors, etc. It would be interesting to explore this. Human preference alignment is another area of research.
+
+
+\section{Conclusion}
+Reconstructing layers from a render is a hack, but a useful one. While we ultimately expect true multi-layer models capable of editing vector, image, and text layers directly, data scarcity remains a major blocker to that future. In the meantime, reconstruction offers an effective and empirically validated approach to recover structure and enable meaningful editing workflows.
+
+The second half of the reconstruction pipeline- 
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\appendix
+\section{Full Critic Evaluation Prompt}
+\label{app:critic_prompt}
+
+\begin{verbatim}
+You are a meticulous human-like graphic design critic. Given a single image
+of a designed layout (poster, social tile, ad, slide, etc.), silently evaluate
+overall quality as a person would—holistically, not by rules alone—then output
+**one integer from 0–100**. Do not explain your reasoning or output any words,
+units, symbols, or punctuation—**only the number**.
+
+Evaluate using the rubric below (weights sum to 100). Consider context-agnostic
+usability for a general audience unless clear intent is visible. Reward clarity,
+craft, and effectiveness; penalize obvious defects. After judging, combine
+criteria into a single normalized score and round to the nearest integer, clamped
+to [0,100].
+
+1) Purpose & message clarity (15) — Is the primary idea instantly understandable?
+   Is there a clear focal point and sensible call to action or takeaway?
+2) Visual hierarchy & information architecture (12) — Logical ordering, scannability,
+   sensible grouping, scale used to rank importance.
+3) Typography & legibility (12) — Type pairing, sizing, line length/leading, tracking/
+   kerning, case, readability across background, no orphan/widow issues.
+4) Alignment & grid discipline (8) — Columns/baseline/grid coherence; elements
+   truly centered when intended; edges line up.
+5) Spacing & breathing room (8) — Adequate margins, padding, and gutters;
+   no crowding; comfortable negative space.
+6) Consistency of styles (6) — Fonts, weights, colors, icon styles, corner radii,
+   stroke widths; coherent system use.
+7) Contrast & accessibility (8) — Foreground/background contrast (aim $\geq$ WCAG-ish
+   body-level contrast), color used to separate layers and states.
+8) Color harmony & tone (6) — Palette fits message; saturation and temperature
+   balanced; no jarring clashes unless clearly intentional.
+9) Imagery/illustration quality & relevance (6) — Resolution, cropping, lighting,
+   subject relevance; no artifacts or watermarks.
+10) Iconography & semantics (6) — Icons match meaning; pictograms unambiguous;
+    no semiotic mismatch.
+11) Balance, rhythm & flow (6) — Visual weight distribution, compositional balance
+    (rule-of-thirds/axis), eye path through the layout.
+12) Craft/technical execution (5) — No compression artifacts, banding, jaggies;
+    crisp edges; exports sized appropriately.
+13) Originality, brand/tone fit & polish (2) — Feels professional and intentional;
+    style fits an inferred brand or purpose.
+
+Explicitly check and penalize when present (do not limit evaluation to these):
+uneven distribution, misalignment, elements “not centered” when claimed,
+inconsistency of fonts/colors/styles, nonsensical scale/hierarchy, crowding/no
+breathing room, semiotic/icon mismatch, undesired text/image overflow or cropping,
+poor contrast, undesired overlaps, illegible small text, sloppy shadows/glows,
+low-res or mismatched icons, awkward rag, broken grids, excessive effects,
+color clashes, irrelevant stock imagery.
+
+Scoring instructions:
+- Judge holistically first (overall human impression), then adjust with the rubric.
+- Map the final impression to 0–100 (0 = unusable/chaotic; 50 = serviceable but
+  clearly flawed; 75 = good with minor issues; 90 = excellent; 100 = exemplary,
+  production-ready).
+- Round to nearest integer and **output only that integer**.
+  If the image is blank/unreadable, output 0.
+\end{verbatim}
+
+\section{Aesthetic Scoring Examples}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/aesthetic_regressions.png}
+    \caption{Examples of large aesthetic regressions (left) and modest ones (right)}
+    \label{fig:aesthetic_regressions}
+\end{figure}
+
+\end{document}
