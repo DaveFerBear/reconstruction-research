@@ -182,25 +182,81 @@ class VQACriticAgent(Agent):
                     self.log(f"✓ Copied from {last_render}")
 
     def _critic_review(self, instruction: str, render_url: str | None, iteration: int) -> dict:
-        """Critic reviews the design and provides feedback."""
+        """Critic reviews the design and provides feedback. Becomes more conservative over iterations."""
         spec_json = json.dumps(self.current_spec.model_dump(), indent=2)
+
+        # Iteration-aware prompts that become progressively more conservative
+        if iteration == 0:
+            # First iteration: Focus solely on original instruction
+            eval_prompt = f"""You are evaluating if the editor successfully completed this instruction:
+
+**Original instruction**: {instruction}
+
+Look carefully at the rendered design. Did the editor FULLY complete this instruction?
+
+Be specific and critical in your evaluation:
+- If the instruction says "make X blue" - is X actually blue in the render?
+- If it says "move Y to the right" - did Y actually move?
+- If it says "change the text to Z" - does it now say Z?
+
+Provide your evaluation in JSON format:
+{{
+  "complete": true/false,
+  "instruction": "new instruction for the editor"
+}}
+
+**If complete=true**: The original instruction is FULLY accomplished. You can clearly see the requested change in the rendered design.
+**If complete=false**: Provide ONE specific, actionable instruction to complete the original edit. Be explicit about what's missing.
+
+Be thorough - don't mark complete unless you can clearly see the requested change was made."""
+
+        elif iteration == 1:
+            # Second iteration: Check if original is done, and if last change caused problems
+            eval_prompt = f"""You are checking the editor's progress.
+
+**Original instruction**: {instruction}
+
+Evaluate:
+1. Is the original instruction now complete? (yes/no)
+2. Did the last change create any NEW problems (broken layout, overlaps, unreadable text)?
+
+Provide your evaluation in JSON format:
+{{
+  "complete": true/false,
+  "instruction": "new instruction for the editor"
+}}
+
+**If complete=true**: The original instruction is accomplished AND no new problems exist.
+**If complete=false**: Provide ONE specific instruction to either:
+- Complete the original instruction if not done, OR
+- Fix a NEW problem caused by the last change
+
+Do not suggest general improvements or redesigns."""
+
+        else:
+            # Third+ iteration: Be very conservative, accept "good enough"
+            eval_prompt = f"""You have provided feedback {iteration} times already. Be pragmatic.
+
+**Original instruction**: {instruction}
+
+The design may not be perfect, but answer this question:
+Is the original instruction accomplished? (yes/no)
+
+Provide your evaluation in JSON format:
+{{
+  "complete": true/false,
+  "instruction": "new instruction for the editor"
+}}
+
+**If complete=true**: The original instruction is accomplished. Accept "good enough" - the design doesn't need to be perfect.
+**If complete=false**: Provide the MINIMAL fix needed to complete the original instruction.
+
+You are running out of iterations ({iteration + 1}/{self.max_iterations}). Focus only on the original goal. Do not redesign or improve beyond what was asked."""
 
         content = [
             {
                 "type": "text",
-                "text": f"""You are a design critic. Evaluate this design on two dimensions:
-
-1. **Edit Success**: Does it fulfill the user's original instruction?
-2. **Design Quality**: Evaluate overall design elements including:
-   - Visual balance and composition
-   - Alignment and spacing
-   - Color harmony
-   - Typography hierarchy
-   - Overall aesthetic quality
-
-Original user instruction: {instruction}
-
-Current design spec:
+                "text": f"""Current design spec:
 ```json
 {spec_json}
 ```
@@ -217,21 +273,7 @@ Current rendered design:"""
 
         content.append({
             "type": "text",
-            "text": """
-Provide your evaluation in JSON format:
-{
-  "complete": true/false,
-  "instruction": "new instruction for the editor"
-}
-
-**If complete=false**: Provide a clear, actionable instruction addressing the most important issue. This could be:
-- Completing/fixing the original edit instruction
-- Fixing design quality issues (alignment, spacing, balance, colors, etc.)
-- Any combination of the above
-
-**If complete=true**: Set instruction to an empty string. The design meets the original instruction AND has good design quality.
-
-Focus on ONE clear instruction per iteration for best results."""
+            "text": eval_prompt
         })
 
         response = litellm.completion(
