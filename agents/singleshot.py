@@ -53,10 +53,10 @@ class SingleShotAgent(Agent):
             required = "GEMINI_API_KEY" if model.startswith("gemini/") else "OPENAI_API_KEY"
             raise ValueError(f"{required} environment variable not set")
 
-        # Image editor backend and size overrides (can be set via args or env)
-        # Backends: "kontext" (default) or "gpt-image-1"
-        self.image_editor = (image_editor or "kontext").lower()
-        self.image_edit_size = image_edit_size or os.getenv("IMAGE_EDIT_SIZE")
+        # Image editor backend and size overrides (can be set via args)
+        # Backends: "gpt-image-1" (default, transparent bg) or "kontext" (context-aware)
+        self.image_editor = image_editor or "gpt-image-1"
+        self.image_edit_size = image_edit_size
 
         # Current state
         self.current_spec_path = None

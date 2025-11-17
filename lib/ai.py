@@ -192,16 +192,16 @@ def kontext_edit(prompt: str, image_url: str, with_logs: bool = True, timeout: i
 def edit_image_local(
     prompt: str,
     image_path: str | Path,
-    backend: str | None = None,
+    backend: str = "gpt-image-1",
     size: str | None = None,
     timeout: int = 300
 ) -> bytes:
     """
     Edit a local image file using the selected backend and return edited image bytes.
-    backend: "gpt-image-1" or "kontext" (default via IMAGE_EDITOR env).
+    backend: "gpt-image-1" (default) or "kontext".
     """
     image_path = Path(image_path)
-    backend = (backend or os.getenv("IMAGE_EDITOR", "kontext")).lower()
+    backend = backend.lower()
 
     if backend == "gpt-image-1":
         if not OPENAI_API_KEY:
