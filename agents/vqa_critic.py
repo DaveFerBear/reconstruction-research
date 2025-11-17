@@ -2,6 +2,7 @@
 
 import os
 import json
+import shutil
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 import litellm
@@ -33,11 +34,13 @@ class VQACriticAgent(Agent):
         max_iterations: int = 5,
         image_editor: Optional[str] = None,
         image_edit_size: Optional[str] = None,
+        save_renders: bool = False,
     ):
         super().__init__(verbose=verbose)
         self.model = model
         self.temperature = temperature
         self.max_iterations = max_iterations
+        self.save_renders = save_renders
 
         # Load API keys
         self.gemini_api_key = os.getenv("GEMINI_API_KEY")
@@ -78,13 +81,14 @@ class VQACriticAgent(Agent):
         self.current_spec_path = output_dir
 
         # Critic-editor loop
+        final_iteration = 0
         for iteration in range(self.max_iterations):
             self.log(f"Iteration {iteration + 1}/{self.max_iterations}")
             self._append_to_edit_log(f"\n{'='*80}\nITERATION {iteration + 1}\n{'='*80}\n")
 
             # Save and render current state
             saved_path = self.save_spec(self.current_spec, output_path)
-            render_url = self._render_design(saved_path, self.current_spec)
+            render_url = self._render_design(saved_path, self.current_spec, iteration)
 
             # Critic: Review the design
             feedback = self._critic_review(instruction, render_url, iteration)
@@ -97,19 +101,50 @@ class VQACriticAgent(Agent):
             # Check if complete
             if feedback['complete']:
                 self.log("✓ Critic says design is complete!")
+                final_iteration = iteration
                 break
 
             # Editor: Implement critic's instruction
             self.log("Editor implementing instruction...")
             self._editor_make_changes(critic_instruction)
+            final_iteration = iteration + 1
 
-        # Final save
+        # Final save and render
         self._append_to_edit_log("\n" + "="*80 + "\nEDIT COMPLETED\n" + "="*80)
-        return self.save_spec(self.current_spec, output_path)
+        saved_path = self.save_spec(self.current_spec, output_path)
 
-    def _render_design(self, saved_path: Path, spec: Spec) -> str | None:
-        """Render design to PNG and return data URL."""
+        # Create final render.png
+        self._create_final_render(saved_path, self.current_spec, final_iteration)
+
+        return saved_path
+
+    def _render_design(self, saved_path: Path, spec: Spec, iteration: int) -> str | None:
+        """Render design to PNG and return data URL. Saves intermediate renders if enabled."""
         self.log("Rendering design...")
+
+        # Use iteration-specific filename if save_renders is True
+        if self.save_renders:
+            render_output = saved_path.parent / f"render_iter_{iteration}.png"
+        else:
+            # Use temporary file that will be overwritten
+            render_output = saved_path.parent / "render_temp.png"
+
+        try:
+            with ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(
+                    render_image, spec, render_output,
+                    spec.canvas_width, spec.canvas_height, saved_path.parent
+                )
+                future.result()
+            self.log(f"✓ Rendered to {render_output}")
+            return _to_data_url(render_output)
+        except Exception as e:
+            self.log(f"Warning: Failed to render: {e}")
+            return None
+
+    def _create_final_render(self, saved_path: Path, spec: Spec, final_iteration: int):
+        """Create the final render.png file."""
+        self.log("Creating final render...")
         render_output = saved_path.parent / "render.png"
 
         try:
@@ -119,11 +154,22 @@ class VQACriticAgent(Agent):
                     spec.canvas_width, spec.canvas_height, saved_path.parent
                 )
                 future.result()
-            self.log(f" Rendered to {render_output}")
-            return _to_data_url(render_output)
+            self.log(f"✓ Final render saved to {render_output}")
+
+            # If save_renders is False, clean up temporary file
+            if not self.save_renders:
+                temp_file = saved_path.parent / "render_temp.png"
+                if temp_file.exists():
+                    temp_file.unlink()
         except Exception as e:
-            self.log(f"Warning: Failed to render: {e}")
-            return None
+            self.log(f"Warning: Failed to create final render: {e}")
+            # Try to copy from last iteration if it exists
+            if self.save_renders:
+                last_render = saved_path.parent / f"render_iter_{final_iteration}.png"
+                if last_render.exists():
+                    import shutil
+                    shutil.copy(last_render, render_output)
+                    self.log(f"✓ Copied from {last_render}")
 
     def _critic_review(self, instruction: str, render_url: str | None, iteration: int) -> dict:
         """Critic reviews the design and provides feedback."""
