@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A bright pink square is centered on a black background. The square is solid and uniformly colored.",
+      "asset_description": "A bright pink square is centered on a black background. The square is slightly rounded at the corners and has a smooth, matte appearance.",
       "filename": "asset-2.png",
       "x": 303,
       "y": -231,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white dog with dark eyes and a pink tongue is positioned against a bright blue background. A pink rectangle is partially visible behind the dog. The dog wears a light-colored collar with a circular tag. The dog’s head is turned slightly to the right, and its mouth is open.",
+      "asset_description": "A white dog with dark eyes and a pink tongue is positioned against a bright blue and pink background. The dog is looking to the right, and its fur appears fluffy. A light-colored collar is visible around its neck.",
       "filename": "asset-1.png",
       "x": 106,
       "y": 28,
@@ -77,7 +77,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige, oval-shaped shape is centered on a white background. The shape is uniform in width and length, with no visible texture or pattern.",
+      "svg_description": "A light beige, oval shape is centered on a white background. The shape is uniform in width and length, with no visible texture, pattern, or additional elements.",
       "filename": "svg-2.svg",
       "x": 72,
       "y": 732,
@@ -87,7 +87,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige, oval-shaped object is shown against a white background. The object is smooth and uniform in color, with no visible texture or pattern.",
+      "svg_description": "A light beige, oval shape is centered on a white background. The shape is uniform in width and length, with no visible texture, pattern, or additional elements.",
       "filename": "svg-3.svg",
       "x": 320,
       "y": 732,

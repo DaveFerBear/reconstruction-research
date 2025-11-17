@@ -182,7 +182,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A horizontal blue line spans the width of the image, positioned near the center. The line is uniform in width and extends across the entire visible area, with no visible texture, patterns, or additional elements.",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-6.svg",
       "x": 81,
       "y": 935,
@@ -287,7 +287,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue horizontal line stretches across the image from left to right. The line is uniform in width and appears continuous with no visible breaks or variations in color.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color.",
       "filename": "svg-10.svg",
       "x": 519,
       "y": 611,
@@ -331,7 +331,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
+      "svg_description": "A solid blue horizontal line stretches across the image from left to right. The line is uniform in width and appears continuous with no breaks or variations in color or texture.",
       "filename": "svg-11.svg",
       "x": 525,
       "y": 739,
@@ -375,7 +375,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color.",
       "filename": "svg-12.svg",
       "x": 525,
       "y": 855,
@@ -402,7 +402,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top edge and extending to the right edge. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is a plain white surface.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color.",
       "filename": "svg-13.svg",
       "x": 523,
       "y": 968,
@@ -463,7 +463,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color or texture. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
+      "svg_description": "A solid blue horizontal line stretches across the image, positioned near the top and bottom edges. The line is uniform in width and appears continuous, with no visible breaks or variations in color.",
       "filename": "svg-14.svg",
       "x": 525,
       "y": 1085,
@@ -524,7 +524,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is uniform in width and appears solid with no variations or patterns.",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-15.svg",
       "x": 525,
       "y": 1342,
@@ -545,7 +545,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue, stylized sunburst icon with radiating lines is centered on a light beige background. The icon is flat and two-dimensional, with no shading or texture.",
+      "asset_description": "A blue, stylized sunburst symbol is centered on a light beige background. The symbol consists of eight straight, slightly angled rays emanating from a central point. The rays are evenly spaced and appear to radiate outward from the center. The blue color is uniform and solid, with no gradients or patterns.",
       "filename": "asset-5.png",
       "x": 921,
       "y": 66,
@@ -556,7 +556,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A young woman with dark, curly hair is captured in a close-up shot. She is wearing a vibrant blue sweater with orange-brown accents at the shoulders and sleeves. The sweater has a textured, somewhat fuzzy appearance. She holds a blue pen or marker in her right hand and is looking directly at the camera with a neutral expression. A portion of a plant is visible to the left of the woman, and a light-colored wall forms the background. A blue line is visible in the top right corner of the image.",
+      "asset_description": "A young woman with dark, curly hair is captured in a close-up shot. She is wearing a bright blue knitted cardigan with orange-brown accents on the sleeves and bottom hem. The cardigan has a textured, slightly fuzzy appearance. She is holding a blue pen or marker in her right hand and has a neutral expression, with her gaze directed slightly to the side. The background is a plain, light-colored wall, and a portion of a green plant is visible on the left side of the frame.",
       "filename": "asset-6.png",
       "x": 93,
       "y": 114,
@@ -567,7 +567,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or variations in color. The background is entirely white, providing a stark contrast to the blue line. No other elements, text, or objects are present in the image.",
+      "svg_description": "A horizontal blue line stretches across the image, positioned near the top edge. The line is thin and uniform in width, with no visible texture or pattern.",
       "filename": "svg-16.svg",
       "x": 516,
       "y": 750,
@@ -600,7 +600,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue telephone icon with a curved handset and a keypad is shown against a black background. The handset curves upwards and to the left, while the keypad consists of six rectangular keys arranged in two rows of three.",
+      "asset_description": "A blue telephone icon with a rounded handset and a keypad is shown against a black background. The handset curves upwards and outwards, and the keypad consists of six black rectangular keys arranged in two rows.",
       "filename": "asset-11.png",
       "x": 523,
       "y": 387,
@@ -611,7 +611,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blue location marker icon with a circular center and a pointed tip is shown against a black background. The icon is centered and symmetrical.",
+      "asset_description": "A blue location pin icon with a circular center is shown against a black background. The icon has a pointed bottom and a smooth, rounded top.",
       "filename": "asset-12.png",
       "x": 521,
       "y": 476,

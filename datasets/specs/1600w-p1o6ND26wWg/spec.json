@@ -1,7 +1,7 @@
 {
   "background_color": "#f6f6f6",
   "has_background_image": true,
-  "background_image_description": "A close-up view of a white fabric with a smooth, slightly reflective surface. The fabric is draped and folded, creating gentle curves and shadows across the surface. The folds and curves vary in depth and direction, giving the fabric a dynamic appearance. No visible patterns, textures, or embellishments are present.",
+  "background_image_description": "A close-up view of a white, smooth fabric with soft folds and curves. The fabric has a subtle sheen and appears lightweight. The image focuses on the texture and movement of the material, without any additional elements or context.",
   "nodes": [
     {
       "type": "image",
@@ -106,7 +106,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A tall, light brown plastic cup filled with iced coffee sits in front of a large black text graphic that reads “SHORT BREAK” in bold, uppercase letters. The cup has a clear plastic lid with ice cubes visible inside. The background is a plain light gray.",
+      "asset_description": "A tall, light brown plastic cup filled with a light brown beverage and ice cubes sits against a light gray background. Behind the cup, the words “SHORT BREAK” are displayed in bold, black, uppercase letters.",
       "filename": "asset-1.png",
       "x": 118,
       "y": 118,

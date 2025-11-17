@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light blue sky with scattered white clouds of varying sizes. The clouds are dispersed across the sky, with some areas appearing denser than others. A small, bright star-like object is visible in the bottom right corner of the image.",
+      "asset_description": "A light blue sky with scattered white clouds of varying shapes and sizes. The clouds are dispersed across the upper portion of the image, with some areas appearing denser and others more wispy. The sky has a slightly textured appearance, possibly due to small particles or dust.",
       "filename": "asset-3.png",
       "x": -75,
       "y": -3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "An open book with cream-colored pages displays dense text in a serif typeface. The pages are numbered and contain paragraphs of text arranged in columns. The book has a dark cover and is set against a dark background.",
+      "asset_description": "An open book with cream-colored pages displays dense text in a serif typeface. The pages are numbered and contain footnotes and references. The book is bound in black leather and rests on a dark surface against a dark background.",
       "filename": "asset-1.png",
       "x": 261,
       "y": 351,
@@ -60,7 +60,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white, hand-drawn oval shape is centered on a transparent background. The oval is slightly irregular, with some uneven edges and faint, light-colored markings along its perimeter. The background consists of a grid of gray and white squares.",
+      "asset_description": "A white, irregular oval shape is centered on a transparent background. The oval is slightly uneven, with some small variations in thickness along its edges.",
       "filename": "asset-2.png",
       "x": 684,
       "y": 309,
@@ -71,7 +71,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal white line is centered on a black background. The line is slightly curved and has a small gap in the middle.",
+      "asset_description": "A horizontal white line is centered on a black background. The line is slightly curved and positioned near the center of the image.",
       "filename": "asset-4.png",
       "x": 600,
       "y": 1110,

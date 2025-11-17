@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A black question mark is centered on a yellow background. The question mark casts a shadow to the right, indicating a light source from the upper left. The background is a uniform yellow color with no other elements visible.",
+      "asset_description": "A black question mark is centered on a yellow background. The question mark casts a shadow below it, and its shape is three-dimensional with rounded edges.",
       "filename": "asset-1.png",
       "x": 577,
       "y": 66,

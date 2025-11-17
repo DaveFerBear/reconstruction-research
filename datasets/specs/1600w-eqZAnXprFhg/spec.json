@@ -181,7 +181,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A horizontal gradient bar transitions from light yellow-orange on the left to orange on the right. The bar is positioned centrally against a white background.",
+      "svg_description": "A horizontal band of orange-yellow to light orange-red shades spans the width of the image. The band is positioned centrally and runs from left to right.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,
@@ -191,7 +191,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid orange background fills the frame. The color is a uniform, slightly muted orange with no visible texture or pattern.",
+      "svg_description": "A solid orange-peach color fills the frame, appearing uniform and without any visible texture or pattern.",
       "filename": "svg-2.svg",
       "x": 80,
       "y": 279,
@@ -201,7 +201,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient.",
+      "svg_description": "A solid, light beige background fills the frame. The color is uniform and without any visible patterns, textures, or objects.",
       "filename": "svg-3.svg",
       "x": 290,
       "y": 330,
@@ -231,7 +231,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is uniform in color and shape, with no visible texture or pattern.",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-6.svg",
       "x": 968,
       "y": 250,
@@ -241,7 +241,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-7.svg",
       "x": 1180,
       "y": 270,
@@ -251,7 +251,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the upper right.",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-8.svg",
       "x": 1400,
       "y": 250,
@@ -261,7 +261,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid blue background fills the frame, uniformly colored without any variations or patterns.",
+      "svg_description": "A solid blue background fills the frame, appearing uniform and without any visible texture, patterns, or objects.",
       "filename": "svg-9.svg",
       "x": 1260,
       "y": 420,
@@ -281,7 +281,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A light beige square is centered on a white background. The square is positioned slightly off-center, towards the upper left.",
+      "svg_description": "A light beige square is centered on a white background.",
       "filename": "svg-11.svg",
       "x": 1282,
       "y": 727,

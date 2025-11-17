@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image shows a black background with a stylized wave pattern at the bottom. The wave pattern consists of green and gold curved lines that form a gentle, rolling shape. The green lines are on the left side, and the gold lines are on the right side. There is no text or other objects in the image.",
+      "asset_description": "The image shows a black background with a green and gold wave-like pattern along the bottom edge. The pattern consists of curved lines in green and gold that create a sense of movement. The image does not contain any text, objects, or actions.",
       "filename": "asset-8.png",
       "x": -31,
       "y": -113,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A green rectangle is centered on a black background. The rectangle is uniformly colored and has a smooth, flat appearance.",
+      "asset_description": "A green horizontal rectangle is centered on a black background. The rectangle is uniformly filled and positioned horizontally.",
       "filename": "asset-5.png",
       "x": 67,
       "y": 853,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with long brown hair sits at a white table, wearing a green cardigan over a white collared shirt. She smiles at the camera while resting her hands on the table. A dark object is partially visible on the table behind her. The background is white.",
+      "asset_description": "A woman with long brown hair sits at a white table, wearing a green cardigan. She smiles at the camera and looks directly at the viewer. A cell phone rests on the table beside her. The background is white.",
       "filename": "asset-2.png",
       "x": 582,
       "y": 399,
@@ -196,7 +196,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black globe icon with a grid of curved lines forming a spherical shape. The grid intersects at multiple points, creating a symmetrical pattern across the globe.",
+      "asset_description": "A black globe icon with a grid of curved lines forming a spherical shape. The grid divides the globe into eight triangular sections, each containing white space.",
       "filename": "asset-6.png",
       "x": 125,
       "y": 1179,

@@ -40,7 +40,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid white rectangle with a black border is centered in the image. The rectangle is uniformly filled and has no visible texture, patterns, or markings.",
+      "svg_description": "A solid white square with a black border is centered in the image.",
       "filename": "svg-2.svg",
       "x": 43,
       "y": 364,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized face with two large, round, white eyes with dark brown pupils is centered against a dark gray background. A bright red, glossy lip curves upward and outward, resembling a smile. The lighting creates a soft glow around the face, emphasizing its three-dimensional form.",
+      "asset_description": "A stylized face with two large white eyes, each with a dark brown pupil, is centered against a dark gray background. The eyes are positioned side by side, slightly angled inward. A bright red, rounded shape resembling a tongue curves beneath them, extending horizontally across the lower part of the image. The lighting creates a soft glow around the face, emphasizing the smooth, glossy surfaces of the eyes and the tongue.",
       "filename": "asset-1.png",
       "x": 65,
       "y": 202,

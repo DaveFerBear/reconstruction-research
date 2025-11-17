@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A watercolor illustration shows three pumpkins and a sunflower arranged horizontally along the top edge of a white background. The leftmost pumpkin is light green, the middle sunflower is yellow, and the rightmost pumpkin is pale peach. Brown leaves and stems extend from the right side of the arrangement.",
+      "asset_description": "A watercolor illustration shows three pumpkins and a sunflower arranged horizontally along the top edge of a white background. The pumpkin on the left is light green, the sunflower is yellow, and the pumpkin on the right is pale peach. Brown leaves and stems are interspersed among the pumpkins.",
       "filename": "asset-1.png",
       "x": -87,
       "y": -90,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A watercolor border of pumpkins and sunflowers on a white background. The pumpkins are light peach and pale green, with some showing stems and leaves. The sunflowers are yellow with brown centers and thin petals. Brown leaves and stems are interspersed among the flowers. The border is uneven, with some areas thicker than others.",
+      "asset_description": "A horizontal border of watercolor pumpkins and sunflowers runs across the bottom edge of a white background. The pumpkins are light peach and pale green, with some showing stems and leaves. The sunflowers are yellow with brown centers and brown leaves. The arrangement is dense and colorful, with varying shades of yellow, orange, and green.",
       "filename": "asset-2.png",
       "x": 21,
       "y": 432,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A vertical brown line runs from the top to the bottom of the image, centered against a white background.",
+      "svg_description": "A vertical brown line runs from the top to the bottom of the image, filling the frame. The line is solid and uniform in width.",
       "filename": "svg-1.svg",
       "x": 515,
       "y": 798,
@@ -35,7 +35,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A vertical brown line runs from the top to the bottom of the image, centered against a white background.",
+      "svg_description": "A vertical brown line runs from the top to the bottom of the image, filling the frame. The line is solid and uniform in width.",
       "filename": "svg-2.svg",
       "x": 749,
       "y": 795,

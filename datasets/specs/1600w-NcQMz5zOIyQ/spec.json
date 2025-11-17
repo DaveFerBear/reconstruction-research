@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A woman with curly dark hair and purple sunglasses stands against a bright yellow background. She wears a light beige crocheted bikini top and light blue denim shorts with frayed edges. She holds a vintage-style boombox in her left hand.",
+      "asset_description": "A woman with curly dark hair and purple sunglasses stands against a bright yellow background. She wears a light brown crocheted bikini top and light blue denim shorts with frayed edges. She holds a vintage-style boombox in her left hand.",
       "filename": "asset-1.png",
       "x": 12,
       "y": -16,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A transparent background displays scattered gold and brown star shapes of varying sizes and orientations. Some stars are solid gold or brown, while others are outlined or have internal patterns. The stars are distributed across the entire image, with no visible pattern or structure.",
+      "asset_description": "A transparent background displays scattered gold and brown star shapes of varying sizes and orientations. The stars are distributed across the image, with some appearing as small specks and others as larger, more defined shapes.",
       "filename": "asset-2.png",
       "x": -3,
       "y": 6,

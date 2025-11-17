@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A checkered pattern in pink and white fills the upper half of the image. Below, a series of diagonal stripes in pink and orange run from left to right. The stripes are separated by white spaces, creating a layered effect.",
+      "asset_description": "A checkered pattern in pink and white squares extends across the top half of the image. Below, a series of parallel pink and orange stripes converge toward the bottom center, converging to a point. The stripes are angled and create a sense of depth.",
       "filename": "asset-5.png",
       "x": 111,
       "y": 324,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A clear glass filled with a pink liquid sits on a surface with diagonal stripes in pink and orange. A single strawberry rests on the rim of the glass. The background features a pink and white checkered pattern.",
+      "asset_description": "A clear glass filled with a pink liquid sits on a surface with diagonal pink and orange stripes. A single red strawberry rests on the rim of the glass. The background features a pink and white checkered pattern.",
       "filename": "asset-1.png",
       "x": 81,
       "y": 12,
@@ -156,7 +156,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image displays a horizontal color palette with six distinct vertical color bands. From left to right, the colors are: a light beige or cream, a pale orange, a soft pink, a light coral or salmon, a pale peach or salmon, and a deep red. The colors are evenly spaced and presented in a flat, two-dimensional format against a light gray background. No other elements, text, or actions are visible in the image.",
+      "asset_description": "The image displays a horizontal color gradient with six evenly spaced vertical bands. From left to right, the colors are: a light yellow-orange, a light orange, a light pink, a light pink-red, a dark red, and a light red-orange. The bands are of equal width and create a continuous, smooth transition between colors. No other elements, text, or objects are visible in the image.",
       "filename": "asset-3.png",
       "x": 475,
       "y": 1147,

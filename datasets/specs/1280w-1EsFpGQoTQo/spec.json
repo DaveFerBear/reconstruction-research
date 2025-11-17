@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "A woman in a dark green bikini and white shorts lies on her stomach beside a turquoise swimming pool. She holds a pink cocktail with a straw in her right hand and wears sunglasses. A straw hat rests on the pool deck to her left, and a pair of pink sunglasses lies nearby. The water in the pool has a textured, rippled pattern.",
+  "background_image_description": "A woman with long brown hair lies on her back in a bright turquoise swimming pool, wearing a dark green bikini top and white shorts. She holds a pink cocktail with a straw in her right hand. Beside her is a straw hat with a black band and a pair of pink sunglasses. The pool water has a textured, light blue-green surface.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A woman lies on her back in a swimming pool, wearing a white bikini top and olive green bikini bottom. She holds a red plastic cup in her right hand, raised above her head. Her left arm rests on the pool\u2019s edge. A straw hat rests on the concrete pool deck beside her, and a pair of pink sunglasses lies on the deck nearby. The water in the pool is a teal-blue color.",
+      "asset_description": "A woman lies on her back in a swimming pool, wearing a white bikini top and olive green bikini bottom. She holds a red plastic cup in her right hand, raised above her head. A straw hat rests beside her on the pool deck. A pair of pink sunglasses lies on the concrete near the edge of the pool. The water in the pool is a teal-green color.",
       "filename": "asset-3.png",
       "x": 0,
       "y": -6,
@@ -33,7 +33,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white horizontal oval shape with a thin white border is centered on a black background. The oval is positioned horizontally and spans the width of the image.",
+      "asset_description": "A white horizontal oval shape is centered on a black background. The oval is outlined with a thin white border.",
       "filename": "asset-7.png",
       "x": 405,
       "y": 1218,

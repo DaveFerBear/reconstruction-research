@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: 51.png",
+      "asset_description": "A green globe icon with a grid of intersecting lines is centered on a black background. The icon is simple, with no additional text or elements.",
       "filename": "asset-3.png",
       "x": 191,
       "y": 509,
@@ -74,7 +74,7 @@
       "height": 1050,
       "rotation": 0,
       "image_description": "A woman wearing a green blazer, yellow shorts, and blue platform shoes stands holding a yellow crate containing a pink handbag.",
-      "asset_description": "A person with dark hair and bangs stands against a muted olive-green background. They are wearing a green jacket, a pale yellow or cream-colored short skirt, white socks, and blue platform sandals with thin white straps. The person is holding a yellow crate with a pink rectangular object inside. The crate has a geometric, lattice-like design. The person\u2019s expression is neutral, and their arms are at their sides."
+      "asset_description": "A person with dark hair and light skin stands against a muted olive-green background. They wear a green blazer over a pale yellow top and light yellow shorts, paired with white socks and blue platform sandals with thin white straps. The person holds a yellow crate with a pink cushion inside, positioned in front of their chest. The crate has a grid-like pattern on its sides."
     },
     {
       "type": "text",
@@ -129,7 +129,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Uploaded image: 50.png",
+      "asset_description": "A green globe icon with a grid of intersecting lines is centered on a black background. The globe is outlined in green and has a uniform color throughout.",
       "filename": "asset-2.png",
       "x": 109,
       "y": 526,

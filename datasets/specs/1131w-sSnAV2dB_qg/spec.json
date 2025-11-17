@@ -1,7 +1,7 @@
 {
   "background_color": "#f2f2f2",
   "has_background_image": true,
-  "background_image_description": "A gray sky filled with white clouds. The clouds vary in size and shape, with some areas appearing denser and others more wispy. The overall tone is light and neutral.",
+  "background_image_description": "A gray sky filled with white clouds. The clouds vary in size and shape, with some areas appearing denser and darker gray, while others are lighter and brighter. The image is predominantly white and gray, with no visible blue sky or distinct horizon.",
   "nodes": [
     {
       "type": "text",
@@ -56,7 +56,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand clenched, facing left. Behind him, a cityscape is visible against a sunset sky, with tall buildings and a street lined with lights. Orange and yellow hues are prominent in the sky and scattered around the man and cityscape. Brown and gray fragments are dispersed around the edges of the image.",
+      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand clenched, facing left. Behind him, a cityscape is visible at sunset, with a bright orange glow emanating from behind him. Dark, fragmented pieces are scattered across the transparent background, primarily concentrated behind and to the right of the man.",
       "filename": "asset-2.png",
       "x": 144,
       "y": 418,

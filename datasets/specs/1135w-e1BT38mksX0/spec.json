@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A black bottle with a white skull and crossbones design on its surface is shown against a white background. The bottle has an orange cap and is tilted slightly to the right. White dots are scattered around the bottle’s surface.",
+      "asset_description": "A black bottle with a white skull and crossbones design on its surface is shown against a white background. The bottle has an orange cap and contains small white dots scattered across its surface.",
       "filename": "asset-3.png",
       "x": 717,
       "y": 1156,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow string with hanging stars and a pumpkin with a face is depicted against a black background. A skull is centered below the pumpkin, and a black bat with yellow eyes is to the right.",
+      "asset_description": "A yellow string with five hanging stars and a black skull is depicted against a black background. The stars are orange, purple, and yellow, and the skull is gray. A cartoon bat with black wings and a yellow face hangs from the string.",
       "filename": "asset-2.png",
       "x": 9,
       "y": 3,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white ghost character wears an orange knit beanie with a pompom on top and a white cape. It holds a clear plastic cup with an orange drink and a straw. Beside it sits a carved orange pumpkin with a triangular face and triangular eyes.",
+      "asset_description": "A white ghost character wears an orange knit hat with a pompom and a white cape. It holds a clear plastic cup with orange liquid and a straw. Beside it sits a carved orange pumpkin with a black triangular face.",
       "filename": "asset-4.png",
       "x": 65,
       "y": 739,
@@ -174,7 +174,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black silhouette of a bird in flight against a white background. The bird is oriented with its wings extended upwards and to the right, and its tail extends downward and to the left. The edges of the silhouette are slightly jagged, giving it a stylized appearance.",
+      "asset_description": "A black silhouette of a bird in flight against a white background. The bird is oriented with its head pointing upward and its tail extending downward. The edges of the silhouette are slightly jagged, giving it a stylized appearance.",
       "filename": "asset-6.png",
       "x": 454,
       "y": 920,
@@ -185,7 +185,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark silhouette of a bat is centered against a solid black background. The bat is oriented with its wings spread, and its body is angled slightly downward. The edges of the bat’s form are slightly irregular, typical of bat anatomy. No other objects or details are visible.",
+      "asset_description": "A dark bat silhouette is centered against a solid black background. The bat is oriented with its wings spread and body angled slightly downward.",
       "filename": "asset-7.png",
       "x": 832,
       "y": 838,

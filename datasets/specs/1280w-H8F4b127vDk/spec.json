@@ -1,11 +1,11 @@
 {
   "background_color": "#0a150b",
   "has_background_image": true,
-  "background_image_description": "Two women lie on grass beneath a tree with green leaves. The woman on the left wears a pinkish-coral dress with puffed sleeves and a headband. The woman on the right wears a light green dress. Both have long brown hair and are looking upward. The grass is green and appears well-maintained.",
+  "background_image_description": "Two women lie on grass beneath a tree with green leaves. The woman on the left wears a pinkish-coral dress with short sleeves and a gathered neckline. The woman on the right wears a light green dress with long sleeves and a flowing skirt. Both have long dark hair and look upward.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two women lie on grass in a park-like setting. The woman on the left wears a light pink dress and has curly reddish-brown hair; the woman on the right wears a light green sleeveless dress with thin straps and has dark curly hair. Both are looking to the right. A leafy green plant overhangs them, and a small white star is visible in the bottom right corner of the image.",
+      "asset_description": "Two women lie on grass in a park-like setting. The woman on the left wears a light pink dress and has a head covering. The woman on the right wears a light green dress with thin straps and embellishments. Both have their eyes closed and appear to be resting or sleeping. Green grass and foliage are visible around them. A small white star is visible in the bottom right corner.",
       "filename": "asset-2.png",
       "x": -3,
       "y": -3,
@@ -169,7 +169,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow oval shape is centered on a black background. The oval is outlined and has a smooth, continuous curve.",
+      "asset_description": "A yellow oval shape is centered on a black background. The oval is slightly elongated and has a thin yellow outline.",
       "filename": "asset-3.png",
       "x": 276,
       "y": 1200,

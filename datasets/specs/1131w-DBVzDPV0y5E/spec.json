@@ -89,7 +89,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A cartoon-style battery with a pink top half and a yellow bottom half is shown at an angle. The top half has a small yellow cap and a black \"X\" mark. The bottom half has a small white circle with a black minus sign.",
+      "asset_description": "A pink and yellow battery with a yellow top and a white cap is shown against a white background. The battery has a black plus symbol and a black minus symbol on its surface.",
       "filename": "asset-8.png",
       "x": -5,
       "y": 359,
@@ -100,7 +100,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A cartoon drawing of a dropper with a pink cap and a light beige barrel containing blue liquid. A single drop of blue liquid is falling from the tip of the dropper. The background is black.",
+      "asset_description": "A cartoon drawing of a dropper with a pink cap and beige body contains a blue liquid. A single drop of liquid is falling from the tip. The background is black.",
       "filename": "asset-9.png",
       "x": -12,
       "y": 924,
@@ -111,7 +111,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized molecular model depicts a central red sphere with six yellow spheres connected by black lines. The spheres are arranged symmetrically around the central structure. The model is set against a white background.",
+      "asset_description": "A stylized molecular model depicts a central red sphere with six yellow spheres connected by black lines. The spheres are arranged in a roughly symmetrical pattern, with some overlapping. The background is white.",
       "filename": "asset-10.png",
       "x": 702,
       "y": 1127,
@@ -122,7 +122,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pair of light blue-framed safety glasses with a small blue droplet on the bridge rests against a white background. The glasses are angled slightly downward and to the right, with white lines visible on the lenses.",
+      "asset_description": "A pair of light blue-framed safety glasses with a teal droplet on the bridge rests against a white background. The glasses are angled slightly downward and to the right.",
       "filename": "asset-11.png",
       "x": 203,
       "y": 1285,

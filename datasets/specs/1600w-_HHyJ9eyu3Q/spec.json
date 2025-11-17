@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two individuals are standing side by side against a solid red background. Both are wearing white t-shirts with red and blue trim at the neckline. The person on the left holds a woven basket with a gold-colored handle. The basket features a pattern of red, yellow, blue, and white squares. The person on the right holds a similar basket with a blue and white striped pattern. Both baskets have handles and are made of woven material.",
+      "asset_description": "Two people stand side by side against a solid red background, each holding a woven basket. The person on the left wears a white shirt with a red neckline and short sleeves. The person on the right wears a white shirt with a blue neckline and short sleeves. Both baskets are constructed from multicolored woven strips and feature a handle. The basket on the left has a pattern of red, yellow, and blue squares and rectangles. The basket on the right has a pattern of blue, white, and red squares and rectangles.",
       "filename": "asset-1.png",
       "x": 584,
       "y": 32,
@@ -49,7 +49,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A plain white background.",
+      "svg_description": "A completely white image with no visible content.",
       "filename": "svg-1.svg",
       "x": 58,
       "y": 763,

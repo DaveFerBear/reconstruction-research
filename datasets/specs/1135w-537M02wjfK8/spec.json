@@ -1,7 +1,7 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A repeating pattern of watercolor eucalyptus leaves in varying shades of blue-gray on a white background. The leaves are depicted with soft, diffused edges and connected by thin, curved stems.",
+  "background_image_description": "A repeating pattern of eucalyptus leaves in varying shades of blue-gray against a white background. The leaves are depicted in a watercolor style with soft, diffused edges and subtle color variations.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A gold-colored rounded rectangle with a smooth, polished appearance is centered on a light beige background. The rectangle has a thin gold border and a slightly curved top edge.",
+      "asset_description": "A gold-colored rounded rectangle with a smooth, polished appearance is centered on a light beige background. The rectangle has a slightly thicker top and bottom edge compared to its sides.",
       "filename": "asset-3.png",
       "x": -228,
       "y": 93,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white rose with green leaves and stems is positioned on the right side of the image, partially overlapping the black background. The background is uniformly black with no other visible elements.",
+      "asset_description": "A white rose with green leaves and stems is positioned on the right side of the image, angled slightly downward. The background is entirely black.",
       "filename": "asset-5.png",
       "x": -489,
       "y": 150,
@@ -49,7 +49,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A dark green ampersand symbol is centered on a white background, flanked by two thin horizontal lines. The ampersand is positioned slightly above the center, between the lines.",
+      "svg_description": "A dark teal ampersand symbol is centered on a white background, flanked by two thin horizontal lines. The ampersand is stylized with a curved tail connecting the two loops.",
       "filename": "svg-2.svg",
       "x": 322,
       "y": 466,

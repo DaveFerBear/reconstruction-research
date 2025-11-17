@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light beige envelope with a curved top edge and a thin brown line along the bottom edge. The envelope is closed and appears to be made of a smooth material.",
+      "asset_description": "A light beige envelope with a curved top edge is depicted against a plain off-white background. The envelope is closed and appears to be made of a smooth material. No visible text, images, or markings are present on the envelope.",
       "filename": "asset-1.png",
       "x": -12,
       "y": -402,
@@ -16,7 +16,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A solid white background occupies the upper portion of the image. Below it, a light beige horizontal band stretches across the lower part. The band is uniform in color and texture, with no visible patterns, textures, or variations in tone.",
+      "svg_description": "A light beige horizontal band occupies the lower portion of the image, contrasting with the white background above it. The band is uniform in width and extends across the entire visible area.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 1260,

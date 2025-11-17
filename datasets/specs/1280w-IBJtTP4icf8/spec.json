@@ -1,11 +1,11 @@
 {
   "background_color": "#000000",
   "has_background_image": true,
-  "background_image_description": "A dark wooden table holds a dark glass of iced coffee, a wooden tray, a laptop, a dark chair with a light blue cushion, and a plate with pastries. The scene is set against a light gray textured wall.",
+  "background_image_description": "A dark wooden table holds a black laptop, a dark glass with ice, a wooden tray with cutlery, a light blue chair with a dark cushion, and a white plate with food. The background is a light gray textured wall.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A dark glass cup filled with a brown liquid sits on a wooden table next to a partially visible laptop. A wooden cutting board holds a spoon and a napkin. A partially visible plate with food and a fork rests on the table. A dark chair is visible to the left. The background is a plain light-colored wall.",
+      "asset_description": "A dark glass cup filled with a brown liquid sits on a wooden table next to a partially visible laptop. A wooden cutting board holds a spoon and a white napkin. A light blue chair is visible to the left of the table. The background is a plain light gray wall.",
       "filename": "asset-2.png",
       "x": 3,
       "y": 0,

@@ -1,11 +1,11 @@
 {
   "background_color": "#0b1412",
   "has_background_image": true,
-  "background_image_description": "The image displays a close-up view of multiple Monstera leaves against a black background. The leaves are predominantly dark green with lighter green veins and edges. They exhibit the characteristic large holes and splits typical of Monstera plants. The leaves are arranged in an overlapping manner, creating a layered effect. The black background highlights the contrast between the leaves and the surface below. No other objects or text are visible in the image.",
+  "background_image_description": "The image displays a close-up view of multiple Monstera leaves against a black background. The leaves are predominantly dark green with lighter green veins and edges. They exhibit a characteristic split or fenestrated shape, with some leaves displaying more pronounced holes or slits. The leaves are arranged in an overlapping manner, creating a layered effect. The black background highlights the contrast between the dark green leaves and the dark surroundings, emphasizing the intricate patterns and textures of the foliage.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two large green leaves with irregular, cut-out shapes are attached to a thin, light-colored stem. The background is dark and out of focus, with indistinct green shapes visible in the lower portion of the image. A small, bright star-like shape appears in the bottom right corner.",
+      "asset_description": "Two large green leaves with irregular, cut-out shapes are attached to a thin, light-colored stem. The background is dark and out of focus, with some indistinct green shapes visible.",
       "filename": "asset-1.png",
       "x": -3,
       "y": 1,
@@ -220,7 +220,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white oval shape is centered on a black background. The oval is outlined with a thin white border.",
+      "asset_description": "A white oval shape is centered on a black background. The oval is outlined and uniformly white.",
       "filename": "asset-2.png",
       "x": 1088,
       "y": 516,

@@ -1,7 +1,7 @@
 {
   "background_color": "#F4EEDB",
   "has_background_image": true,
-  "background_image_description": "The image shows a cream or off-white background with small, scattered brown specks. The specks are unevenly distributed and vary in size and shape. The background has a slightly textured appearance but is not completely smooth. The image is primarily a neutral, light beige or cream color with no discernible objects, actions, or text present.",
+  "background_image_description": "The image shows a cream or off-white background with small, scattered dark specks. The specks are unevenly distributed and vary in size and shape. The background has a slightly textured appearance but is not completely smooth or uniform in color.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow, circular cartoon character with large, green eyes and a smiling mouth is depicted against a black background. The character wears white gloves and dark green shoes, and its arms are bent at the elbows.",
+      "asset_description": "A yellow, circular cartoon character with green arms, legs, and white gloves is depicted against a black background. The character has a smiling face with wide eyes and a small red nose.",
       "filename": "asset-2.png",
       "x": 786,
       "y": 202,

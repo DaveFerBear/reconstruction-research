@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A person's hands are shown writing on a document with a pen. The document contains charts and graphs. The person is wearing a dark-colored long-sleeved shirt. The background is blurred, showing a wooden table and a portion of a plant in a pot.",
+  "background_image_description": "A person's hands are shown writing on a document with a pen. The document contains multiple sections with charts and graphs. The person is wearing a dark-colored long-sleeved shirt. A laptop and a potted plant are visible in the out-of-focus background.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Two hands in white lab coats hold a document displaying charts and graphs. The document is partially obscured by the hands. A white table holds additional papers and documents. The background is blurred and light-colored.",
+      "asset_description": "Two hands in white lab coats are shown interacting with documents on a table. One hand holds a white card with text and graphics, while the other holds a pen and rests near a document with text and bar graphs. The table surface is light-colored.",
       "filename": "asset-2.png",
       "x": 1,
       "y": -1,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A solid orange circle is centered on a black background. The circle is uniform in color and shape, with no visible texture or markings.",
+      "asset_description": "A solid orange circle is centered on a black background. The circle is uniform in color and shape, with no visible texture or pattern.",
       "filename": "asset-3.png",
       "x": 543,
       "y": 693,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with shoulder-length brown hair and a light-colored sleeveless top is centered within an orange circle on a transparent background. The circle has a thin orange border and a smaller orange circle in the upper right corner. The woman is looking directly at the camera and has a slight smile. The background is a uniform transparent grid pattern.",
+      "asset_description": "A woman with shoulder-length brown hair is centered within an orange circle on a transparent background. She is wearing a white sleeveless top and smiling slightly at the camera. A smaller orange circle is positioned above and to the right of her head.",
       "filename": "asset-4.png",
       "x": 83,
       "y": 93,
@@ -38,7 +38,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A bright orange circle fills the majority of the frame, extending from the top left corner to the bottom right. The circle has a smooth, gradient appearance, transitioning from a lighter orange in the center to a deeper orange at the edges. No other shapes, text, or objects are visible in the image.",
+      "svg_description": "A bright orange circle fills the frame, curving from the top left to the bottom right. The circle’s edges are smooth and rounded, transitioning from a lighter orange near the center to a deeper orange at the perimeter. The background is white, providing a stark contrast to the vibrant orange.",
       "filename": "svg-1.svg",
       "x": 0,
       "y": 0,

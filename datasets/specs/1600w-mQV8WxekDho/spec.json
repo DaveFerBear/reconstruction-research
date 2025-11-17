@@ -1,7 +1,7 @@
 {
   "background_color": "#7b86e8",
   "has_background_image": true,
-  "background_image_description": "A light blue background with a grid pattern is adorned with numerous white star shapes of varying sizes and brightness. A larger, starburst-like white shape is positioned near the top right. A horizontal white line runs across the bottom of the image. The background has a subtle texture resembling a grid or mesh.",
+  "background_image_description": "A light blue background with a grid of thin white lines forms the backdrop for a collection of white star shapes of varying sizes and brightness. A larger, starburst-like star is positioned near the top right corner. A horizontal white line runs across the lower portion of the image.",
   "nodes": [
     {
       "type": "image",
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal white line spans the width of the image against a solid black background. The line is centered and evenly spaced, with no visible texture or markings.",
+      "asset_description": "A horizontal white line is centered on a black background. The line is thick and uniform, with no variations in thickness or length.",
       "filename": "asset-5.png",
       "x": 61,
       "y": 859,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The text \"DON'T MESS OUT\" is displayed in bold, three-dimensional pink letters with blue outlines, set against a black background. Small white star-like shapes are positioned near the bottom left and right edges of the text.",
+      "asset_description": "The text \"DON'T MESS OUT\" is displayed in bold, pink letters with blue outlines, outlined in yellow. The letters are set against a black background with small white star shapes flanking the text.",
       "filename": "asset-2.png",
       "x": 81,
       "y": -45,

@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A blurred, pastel-colored abstract background with pink, purple, blue, and gray hues. A white video camera icon and a small heart icon are visible in the bottom right corner.",
+      "asset_description": "A blurred, multicolored background with pink, purple, blue, and gray tones fills the frame. The image is softly lit and has a slightly out-of-focus appearance.",
       "filename": "asset-4.png",
       "x": 112,
       "y": 81,
@@ -129,7 +129,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Three white icons are displayed on a black background. From left to right, the icons appear to be a rectangular shape, a circle, and a rounded square with a small white circle inside.",
+      "asset_description": "Three white icons are displayed on a black background. From left to right, the icons appear to be a camera icon, a heart icon, and a phone icon.",
       "filename": "asset-5.png",
       "x": 847,
       "y": 1062,

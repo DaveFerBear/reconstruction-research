@@ -1,7 +1,7 @@
 {
   "background_color": "#0f3028",
   "has_background_image": true,
-  "background_image_description": "A dark green chalkboard surface fills the frame. The chalkboard has a slightly uneven, textured appearance with subtle variations in tone. The color is consistent across the surface, with no visible markings or patterns.",
+  "background_image_description": "A dark green chalkboard surface fills the frame. The surface is slightly textured with subtle variations in tone and shading. The edges of the board are slightly uneven, with some minor creases or variations in tone. The color is consistent across the surface, with no visible patterns, writing, or objects.",
   "nodes": [
     {
       "type": "text",
@@ -124,7 +124,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The word \"Movie\" is displayed in a stylized, pinkish-coral font against a dark green background. The letters are slightly rounded and have a soft, rounded appearance. The background has a subtle texture that gives the impression of a fabric or paper-like surface.",
+      "asset_description": "The word \"Movie\" is displayed in large, pink, cursive letters against a dark green background. The letters are slightly slanted and have a rounded, stylized appearance.",
       "filename": "asset-2.png",
       "x": 293,
       "y": 124,
@@ -135,7 +135,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A woman with dark hair styled in a vintage fashion holds a small piece of food, possibly a cracker or cookie, in her right hand. She wears a strapless dress with a dark bodice and a patterned band across the bust. In front of her is a large woven basket filled with numerous small, white, irregularly shaped pieces. The background is dark and blurred, emphasizing the woman and the basket. The image has a sepia tone, giving it a vintage or nostalgic feel.",
+      "asset_description": "A woman with dark hair styled in a vintage fashion holds a piece of food in her right hand and smiles at the camera. She wears a strapless dress with a dark bodice and a patterned band at the waist. In front of her is a large woven basket filled with popcorn. The image has a sepia tone and features a soft, vintage-style background.",
       "filename": "asset-1.png",
       "x": 114,
       "y": 354,

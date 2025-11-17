@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A pixelated image composed of small squares in varying shades of gray and black. The squares are arranged in a grid-like pattern, with some squares appearing darker or lighter than others. The image is uniform in color and texture, with no discernible patterns or shapes beyond the squares themselves.",
+  "background_image_description": "A pixelated image composed of small gray squares of varying shades, arranged in horizontal rows. The squares are slightly offset and vary in shade from light to dark gray. The image is uniform in appearance, with no visible patterns, textures, or objects.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of alternating black and white squares. The pattern is uniform and symmetrical, with no variations in color or size.",
+      "asset_description": "A checkerboard pattern composed of alternating black and white squares. The pattern is uniform and continuous, with no breaks or variations in color.",
       "filename": "asset-1.png",
       "x": 5,
       "y": -3,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright yellow rectangle fills the center of the image against a black background. The rectangle is uniform in color and shape, with no visible texture or pattern.",
+      "asset_description": "A bright yellow-green rectangle is centered on a black background. The rectangle is uniformly colored and contains no text, symbols, or additional elements.",
       "filename": "asset-3.png",
       "x": -57,
       "y": -82,
@@ -27,7 +27,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A bright pink, five-pointed star shape is centered on a white background. The star has a smooth, rounded outline with pointed tips and a slightly curved base.",
+      "svg_description": "A bright pink, five-pointed star is centered on a white background. The star is symmetrical and evenly distributed, with no additional elements or text present.",
       "filename": "svg-2.svg",
       "x": 1390,
       "y": 140,
@@ -99,7 +99,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance. The flower is symmetrical and evenly spaced, with no visible stem or leaves.",
+      "asset_description": "A bright pink, five-petaled flower is centered on a black background. The petals are slightly rounded and have a subtle gradient, giving them a soft, three-dimensional appearance.",
       "filename": "asset-4.png",
       "x": 66,
       "y": 1012,

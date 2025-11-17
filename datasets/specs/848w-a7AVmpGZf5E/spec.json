@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A pair of black over-ear headphones with a black headband and earcups. The earcups have a textured, mesh-like material and a white geometric pattern on the inner surface. The headband is smooth and curved. The headphones are positioned against a white background.",
+      "asset_description": "A pair of black over-ear headphones with a black headband and earcups are shown against a white background. The earcups feature a textured, mesh-like material on the outer surface and a patterned design on the inner surface. The headband is smooth and curved, connecting the two earcups. The headphones are angled slightly, with the left earcup positioned higher than the right.",
       "filename": "asset-1.png",
       "x": 21,
       "y": 72,
@@ -42,7 +42,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black diamond shape is centered on a white background. A thin, dark line extends from the lower left point of the diamond, angled slightly upward and to the right.",
+      "svg_description": "A black diamond shape is centered on a white background. The diamond is oriented with its point facing upward and to the right.",
       "filename": "svg-2.svg",
       "x": 784,
       "y": 40,
@@ -86,7 +86,7 @@
     },
     {
       "type": "image",
-      "asset_description": "The image is entirely black, with no discernible features, objects, or patterns.",
+      "asset_description": "The image is entirely black.",
       "filename": "asset-2.png",
       "x": 423,
       "y": 835,

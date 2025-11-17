@@ -1,11 +1,11 @@
 {
   "background_color": "#efe6d8",
   "has_background_image": true,
-  "background_image_description": "A light beige or cream-colored background with small, scattered specks of darker beige or brown. The specks are unevenly distributed and vary in size. The background texture appears slightly grainy or speckled.",
+  "background_image_description": "A light beige or cream-colored background with small, scattered specks of orange-brown. The speckles are relatively small and evenly distributed across the surface.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A light teal cup with a handle sits on a light blue saucer with an orange rim. The cup is filled with a light brown liquid topped with a white design resembling a stylized leaf or feather. The saucer rests on a dark gray background.",
+      "asset_description": "A light teal cup with a handle sits on a light blue saucer with an orange rim. The cup is filled with a light brown liquid and has a white design resembling a leaf or feather pattern on its surface. The saucer rests on a dark gray background.",
       "filename": "asset-1.png",
       "x": -3,
       "y": 45,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A dark blue circle is centered on a white background. The circle is slightly thicker at the top and bottom edges and has a smooth, continuous line.",
+      "svg_description": "A dark blue circle is centered on a white background.",
       "filename": "svg-1.svg",
       "x": 288,
       "y": 42,
@@ -76,7 +76,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the frame. The line is uniform in width and appears solid with no visible breaks or variations in color.",
+      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the lower portion. The line is uniform in width and appears solid with no visible breaks or variations in color.",
       "filename": "svg-2.svg",
       "x": 87,
       "y": 1171,
@@ -154,7 +154,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A thin horizontal blue line stretches across the image, positioned near the top edge. The line is uniform in width and appears solid with no visible breaks or variations in color.",
+      "svg_description": "A thin, horizontal blue line stretches across the image, positioned near the top edge and running horizontally across the lower portion. The line is uniform in width and appears solid with no visible breaks or variations in color.",
       "filename": "svg-3.svg",
       "x": 87,
       "y": 1308,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Three anthropomorphic fruit characters—a green coconut drink, a red watermelon slice, and a yellow pineapple—are depicted in a running pose against a dotted pink and green background. The characters wear colorful sandals and appear to be smiling.",
+      "asset_description": "Three anthropomorphic fruit characters—a green coconut drink with a straw and umbrella, a watermelon slice with eyes and a smile, and a pineapple with a leafy stem—are depicted in a running pose against a dotted pink and green background. The characters wear colorful sandals and appear to be in motion.",
       "filename": "asset-1.png",
       "x": 110,
       "y": 147,
@@ -15,7 +15,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black oval shape is centered on a white background. The oval is uniformly black and contains no internal markings or variations in thickness.",
+      "svg_description": "A black oval shape is centered on a white background. The oval is uniformly black and contains no internal markings or text.",
       "filename": "svg-1.svg",
       "x": 40,
       "y": 260,
@@ -25,7 +25,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A simple black oval shape is centered on a white background. The oval is closed and symmetrical.",
+      "svg_description": "A simple black oval shape is centered on a white background. The oval is closed and uniformly sized, with no additional markings or text.",
       "filename": "svg-2.svg",
       "x": 480,
       "y": 254,

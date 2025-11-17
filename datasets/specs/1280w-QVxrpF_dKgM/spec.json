@@ -1,11 +1,11 @@
 {
   "background_color": "#ffffff",
   "has_background_image": true,
-  "background_image_description": "A repeating pattern of alternating red and light pink squares forms a grid. The squares are evenly spaced and evenly sized, creating a uniform and symmetrical design.",
+  "background_image_description": "A repeating pattern of red and pink squares arranged in a 4x4 grid. The squares are evenly spaced and uniformly sized.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A blank white rectangular piece of paper is taped to a gray background with two pieces of tan tape, one at the top left and one at the top right. The paper has a slightly uneven, jagged edge along its bottom right side.",
+      "asset_description": "A blank white rectangular piece of paper is taped to a gray background with two pieces of tan tape. The paper has a slightly irregular, torn edge along its bottom right side.",
       "filename": "asset-1.png",
       "x": 36,
       "y": 6,
@@ -154,7 +154,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A black and white line drawing of a rectangular basket with a handle. The basket is filled with woven material and has a grid pattern. Four short, curved lines extend outward from the right side of the basket.",
+      "asset_description": "A black and white line drawing of a basket with a handle. The basket is rectangular and has a woven pattern. Four short, curved lines extend outward from the sides of the basket. The background is transparent.",
       "filename": "asset-4.png",
       "x": 294,
       "y": 309,

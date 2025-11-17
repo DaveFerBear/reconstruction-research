@@ -1,11 +1,11 @@
 {
   "background_color": "#ead9c9",
   "has_background_image": true,
-  "background_image_description": "The image features three horizontal waves of color stacked one above the other. The top wave is yellow, the middle wave is orange-red, and the bottom wave is pinkish-coral. The waves have a layered, paper-like appearance, with soft curves and gentle slopes. The colors blend smoothly into one another, creating a gradient effect from top to bottom. The image is flat, with no depth or perspective, focusing solely on the interplay of color and form.",
+  "background_image_description": "The image features three horizontal wave-like shapes in yellow, orange-red, and pink, layered on top of each other. The waves have a smooth, paper-like texture and curve gently across the image. The background color is a light cream or beige, providing a neutral contrast to the warm tones of the waves. No text or additional objects are present in the image.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image features four horizontal bands of color: a light beige or cream at the top, a peach or salmon-colored band in the middle, a light pink band in the middle, and a light beige or cream band at the bottom. The bands have a gradient effect, blending from light beige to peach and pink. The image is flat and two-dimensional, with no depth or perspective. A small white diamond shape appears in the bottom right corner.",
+      "asset_description": "The image features four horizontal bands of color: a light beige or cream at the top, a peach or light orange band in the middle, a light pink band in the middle, and a light gold or beige band at the bottom. The bands are slightly curved and have a soft, blended appearance. A small white diamond shape is visible in the bottom right corner.",
       "filename": "asset-2.png",
       "x": 0,
       "y": -6,
@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A white sheet of paper with a folded corner is attached to a silver paperclip. The background is a gradient gray, lighter at the top and darker at the bottom.",
+      "asset_description": "A white sheet of paper with a folded corner is attached to a silver paperclip. The background is a gradient gray, transitioning from lighter at the top to darker at the bottom.",
       "filename": "asset-1.png",
       "x": 30,
       "y": -9,

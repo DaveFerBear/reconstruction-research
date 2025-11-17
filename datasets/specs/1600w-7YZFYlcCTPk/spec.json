@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid red background fills the frame. A small, light-colored diamond shape is visible in the bottom right corner.",
+      "asset_description": "A solid red background fills the frame. A small, light pink diamond is visible in the bottom right corner.",
       "filename": "asset-2.png",
       "x": 1,
       "y": -5,
@@ -44,7 +44,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A single white lightbulb hangs from a black cord against a solid red background. The lightbulb emits a bright white glow at its base, gradually fading as it extends upward. The cord extends from the top of the frame, disappearing out of view. The text \"@REALLYGREATSITE\" is visible in the bottom center of the image.",
+      "asset_description": "A single white lightbulb hangs from a black cord against a solid red background. The lightbulb is illuminated, casting a bright glow that spreads outward. The cord extends upwards and out of the frame. The text \"@REALLYGREATSITE\" is visible in the bottom right corner.",
       "filename": "asset-1.png",
       "x": 418,
       "y": 4,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid light gray background fills the frame with no other elements or patterns.",
+      "asset_description": "A solid light gray background fills the frame.",
       "filename": "asset-4.png",
       "x": -120,
       "y": -100,

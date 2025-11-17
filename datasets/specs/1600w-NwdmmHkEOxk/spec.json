@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light teal dashed rectangle is centered on a black background. The rectangle is outlined with evenly spaced dashed lines along its top and bottom edges.",
+      "asset_description": "A teal dashed rectangle is centered on a black background. The rectangle is outlined with a dashed border.",
       "filename": "asset-13.png",
       "x": 1093,
       "y": 949,
@@ -27,7 +27,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A yellow circle with a black outline contains two hands positioned side by side, palms facing upward. A heart shape is centered above the hands. The background is black.",
+      "asset_description": "A yellow circle with a black outline contains two hands cupped together beneath a heart shape. The hands are positioned centrally within the circle, facing forward. The heart is centered above the hands, slightly offset toward the top. The background is entirely black.",
       "filename": "asset-12.png",
       "x": 1113,
       "y": 629,
@@ -38,7 +38,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light orange-brown shape with a wavy, uneven edge is shown against a black background. The shape has a slightly curved form with subtle variations in color intensity along its perimeter.",
+      "asset_description": "A light orange-brown shape with wavy, irregular edges is centered against a black background. The shape has a slightly uneven, organic form with subtle curves and variations in color intensity.",
       "filename": "asset-7.png",
       "x": 589,
       "y": 1,
@@ -49,7 +49,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A teal-colored, wavy, square frame with a scalloped edge surrounds a white background. The frame is centered and symmetrical.",
+      "asset_description": "A teal-colored, wavy, square frame with a scalloped edge is centered on a white background. The frame is uniform in width and height, with no visible text, symbols, or additional elements.",
       "filename": "asset-3.png",
       "x": 1093,
       "y": 56,
@@ -315,7 +315,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A five-pointed star outlined in black is centered on a yellow circle. The star is slightly tilted to the right, and a small set of short lines extends from its upper right side. The background consists of a transparent gray and white checkerboard pattern.",
+      "asset_description": "A five-pointed star outlined in black is centered on a yellow circle. Four small black lines extend from the top right of the star. The background is a transparent gray and white checkerboard pattern.",
       "filename": "asset-2.png",
       "x": 22,
       "y": 159,
@@ -326,7 +326,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light orange-brown shape with a wavy, uneven edge against a black background. The shape has subtle variations in color intensity and texture.",
+      "asset_description": "A light orange-brown shape with wavy, irregular edges is centered against a black background. The shape has a slightly uneven, organic form with subtle curves and variations in color intensity.",
       "filename": "asset-6.png",
       "x": 0,
       "y": 680,
@@ -337,7 +337,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light green circle containing a black outline of a location pin icon is centered on a black background. The icon has a circular base and a pointed top.",
+      "asset_description": "A light green circle with a black outline contains a black location pin icon centered on a black background. The icon is simple, with no additional text or elements.",
       "filename": "asset-8.png",
       "x": 657,
       "y": 201,
@@ -359,7 +359,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A teal-colored icon of an open envelope is centered on a black background. The icon is enclosed within a circle.",
+      "asset_description": "A teal-colored icon of an open envelope is centered on a black background. The icon is enclosed in a circle.",
       "filename": "asset-10.png",
       "x": 665,
       "y": 630,
@@ -381,7 +381,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized spider design is centered on a black background. The spider is formed by thin white lines radiating outward from its body, with small white dots along the lines. The design is simple and symmetrical.",
+      "asset_description": "A stylized white spider is centered on a black background. The spider has eight legs and appears to have its body slightly curved. Radiating lines extend outward from the spider’s body, creating a starburst effect. The image is monochromatic, with no other colors or elements present.",
       "filename": "asset-15.png",
       "x": 985,
       "y": -238,

@@ -1,11 +1,11 @@
 {
   "background_color": "#566F58",
   "has_background_image": true,
-  "background_image_description": "The image shows a textured dark green surface with two bright yellow starbursts. The starbursts have six points each and are positioned near the top left and bottom right corners of the image. The surface has a rough, uneven texture with subtle variations in color intensity.",
+  "background_image_description": "The image shows a dark green surface with a rough, textured appearance. Two bright yellow starburst shapes are visible, one in the top left corner and another in the bottom right corner. The starbursts are composed of multiple rays emanating from the center point. The overall color scheme is muted, with the yellow starbursts providing a contrasting element against the dark green background.",
   "nodes": [
     {
       "type": "image",
-      "asset_description": "The image displays a dark green background with a textured, slightly wrinkled or creased appearance. Three white, star-shaped shapes are positioned near the top left, bottom left, and bottom right of the image. A small, white, diamond-shaped shape appears in the bottom right corner.",
+      "asset_description": "The image displays a dark green background with a textured, slightly wrinkled or creased appearance. Three white, star-shaped shapes are positioned near the top left, top right, and bottom right corners of the image. A small white diamond shape is visible in the bottom right corner.",
       "filename": "asset-5.png",
       "x": 3,
       "y": -3,
@@ -88,7 +88,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a solid black background. The oval is centered and positioned horizontally.",
+      "asset_description": "A horizontal oval shape with a light green fill and a thin white border is set against a black background. The oval is centered and positioned horizontally.",
       "filename": "asset-2.png",
       "x": 102,
       "y": 690,
@@ -150,7 +150,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light green arrow points left and curves upward and to the right against a black background. The arrow is drawn with slightly uneven lines, giving it a hand-drawn appearance.",
+      "asset_description": "A light green, hand-drawn arrow curves and loops against a black background. The arrow points left and slightly downward.",
       "filename": "asset-4.png",
       "x": 920,
       "y": 519,

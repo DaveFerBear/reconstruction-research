@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A dark blue scalloped border frames a light gray and white checkerboard pattern. The border has a repeating wave-like design along its edges.",
+      "asset_description": "A dark blue scalloped border frames a light gray and white checkerboard pattern. The border has a wavy, uneven edge and repeats along the left and right sides.",
       "filename": "asset-2.png",
       "x": 3,
       "y": 36,
@@ -50,7 +50,7 @@
     },
     {
       "type": "image",
-      "asset_description": "Three closed books are arranged on a dark blue surface, surrounded by stylized blue foliage and flowers. The books are positioned side by side, with one partially obscured by the others. The foliage includes leaves and stems, with some resembling branches. The flowers are simple, with multiple petals and circular centers. The background is entirely black, providing contrast to the blue elements.",
+      "asset_description": "Three closed books with dark blue covers and lighter blue spines are arranged on a dark blue surface. Above the books, stylized blue-gray flowers and leaves are drawn in a simple line art style. The background is black.",
       "filename": "asset-1.png",
       "x": 207,
       "y": 330,

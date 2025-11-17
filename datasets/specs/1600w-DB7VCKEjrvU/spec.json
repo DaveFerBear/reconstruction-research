@@ -16,7 +16,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A horizontal pink bar is centered on a black background. The bar is uniformly colored and spans the width of the image, with no visible texture or pattern.",
+      "asset_description": "A horizontal pink bar is centered on a black background. The bar is solid and uniform in color, with no visible texture or pattern.",
       "filename": "asset-6.png",
       "x": 460,
       "y": 628,
@@ -61,7 +61,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized blue wave shape with three rounded peaks is centered on a black background. A yellow rectangular block is positioned to the right of the wave, partially overlapping it.",
+      "asset_description": "A blue, wavy, three-dimensional shape resembling a stylized letter \"M\" sits on a black background. A yellow, rectangular block is positioned to the right of the blue shape, partially overlapping it.",
       "filename": "asset-3.png",
       "x": 433,
       "y": 447,
@@ -72,7 +72,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A pinkish-coral colored arch shape with a textured, speckled appearance is shown against a black background. A small blue section is visible at the bottom left of the arch.",
+      "asset_description": "A pinkish-red, textured arch shape with a rounded top and a smaller, rounded base is centered on a black background. A small blue area is visible at the bottom left corner of the arch.",
       "filename": "asset-4.png",
       "x": 608,
       "y": 192,
@@ -83,7 +83,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A stylized eye icon with a textured, off-white appearance is set against a solid black background. The eye is centered and features two circular shapes representing pupils, with radiating lines extending outward from the outer edges.",
+      "asset_description": "A stylized eye icon is centered on a black background. The eye is light beige with darker speckles and features two circular pupils surrounded by radiating lines.",
       "filename": "asset-5.png",
       "x": 365,
       "y": 215,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A solid, light beige background fills the frame. The color is uniform and without any visible texture, pattern, or gradient.",
+      "asset_description": "A solid, light beige background fills the frame. The color is uniform and without any visible patterns, textures, or objects.",
       "filename": "asset-9.png",
       "x": -21,
       "y": 1166,
@@ -26,7 +26,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A bright yellow, jagged-edged circle with a dark red outline is shown against a black background. The circle is symmetrical and evenly spaced.",
+      "asset_description": "A bright yellow, jagged-edged shape resembling a starburst or sun is centered against a white background. The shape is outlined in dark red.",
       "filename": "asset-5.png",
       "x": 77,
       "y": 949,
@@ -48,7 +48,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red horizontal bar is centered on a black background. The bar is uniformly colored and spans the width of the image, with no visible texture or pattern.",
+      "asset_description": "A red horizontal bar is centered on a black background. The bar is uniformly colored and positioned horizontally.",
       "filename": "asset-3.png",
       "x": 96,
       "y": -106,
@@ -121,7 +121,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A solid yellow circle with a dark red border is shown against a white background. The circle is centered and fills the frame.",
+      "asset_description": "A solid yellow circle with a dark red border is shown against a white background. The circle is centered and appears uniform in color.",
       "filename": "asset-8.png",
       "x": 145,
       "y": 524,
@@ -166,7 +166,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A red line drawing of a hamburger on a white background. The burger features a top bun, a layer of lettuce, a slice of tomato, and a patty. The bun has visible texture lines, and the tomato slice has distinct lines. The lettuce appears layered, and the patty has visible texture lines. The drawing style is simple and bold, with no shading or complex details.",
+      "asset_description": "A red line drawing of a hamburger on a white background. The burger consists of a top and bottom bun, filled with various ingredients including sliced mushrooms, onions, lettuce, and cheese. The top bun has a textured, speckled appearance. The drawing style is simple, with bold lines and no shading.",
       "filename": "asset-1.png",
       "x": 454,
       "y": 613,
@@ -278,7 +278,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of alternating red and white squares is shown against a cream-colored background. The squares are arranged in a grid-like formation, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated, particularly at the edges.",
+      "asset_description": "A horizontal checkerboard pattern composed of alternating red and white squares. The squares are arranged in rows and columns, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated.",
       "filename": "asset-2.png",
       "x": 672,
       "y": 79,
@@ -289,7 +289,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A checkerboard pattern composed of red and white squares is arranged horizontally. The squares are evenly spaced and aligned in rows and columns, with no gaps or overlaps. The image is on a light beige background.",
+      "asset_description": "A horizontal checkerboard pattern composed of alternating red and white squares. The squares are arranged in rows and columns, with each row containing an equal number of red and white squares. The image is slightly blurred or pixelated.",
       "filename": "asset-10.png",
       "x": 90,
       "y": 1473,
@@ -300,7 +300,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark red, diamond-shaped symbol is centered on a light beige background. The symbol is slightly blurred and has a subtle gradient in its color intensity.",
+      "asset_description": "A red, diamond-shaped symbol is centered on a light beige background. The symbol is slightly blurred and has a subtle gradient, appearing darker at the edges.",
       "filename": "asset-11.png",
       "x": 971,
       "y": 718,
@@ -311,7 +311,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A reddish-brown starburst shape is centered on a light beige background. The shape has four pointed arms extending from a central point, with slight variations in thickness along each arm. The color is uniform across the image, with no additional patterns or textures.",
+      "asset_description": "A reddish-brown starburst shape is centered on a light beige background. The shape is symmetrical, with two pointed ends extending outward from the center.",
       "filename": "asset-12.png",
       "x": 47,
       "y": 315,

@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "svg",
-      "svg_description": "A solid green background occupies the right side of the image, extending from the top to the bottom. A vertical white stripe runs from the left edge to the bottom edge, dividing the green area into two equal halves.",
+      "svg_description": "A solid green background occupies the right side of the image, extending from the top to the bottom. The left side is white, containing no visible objects or text.",
       "filename": "svg-1.svg",
       "x": 224,
       "y": -32,
@@ -15,7 +15,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A man with dark hair and glasses sits at a white desk, looking down at a white laptop. He wears a gray zip-up jacket over a green t-shirt. A white notebook and a pen rest on the desk beside him. The background is split into black on the left and green on the right.",
+      "asset_description": "A man with dark hair, glasses, and a beard sits at a white desk, looking down at a white laptop. He wears a gray zip-up jacket and a green t-shirt. A white notebook and a pen rest on the desk beside him. The background is split: a black area to the left and a green area to the right.",
       "filename": "asset-1.png",
       "x": 380,
       "y": 380,
@@ -93,7 +93,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A dark green horizontal oval shape is centered on a black background. The oval is uniformly filled and positioned horizontally.",
+      "asset_description": "A dark teal horizontal oval shape is centered on a black background. The oval is uniform in width and length, with no visible texture or pattern.",
       "filename": "asset-2.png",
       "x": 69,
       "y": 739,
@@ -121,7 +121,7 @@
     },
     {
       "type": "image",
-      "asset_description": "A light blue-green, irregularly shaped cloud-like form is centered against a black background. The cloud has a textured, uneven edge with subtle variations in color intensity.",
+      "asset_description": "A light blue-green, irregularly shaped area with darker blue-green edges is centered on a black background. The area has a slightly textured appearance with subtle variations in color intensity.",
       "filename": "asset-3.png",
       "x": -7,
       "y": 1007,

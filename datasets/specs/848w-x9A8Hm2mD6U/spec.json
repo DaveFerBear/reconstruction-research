@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A round blue table holds a silver laptop, a dark blue mug with a white design, a smartphone, and a stack of books. A light-colored wall and a portion of a staircase railing are visible in the background.",
+      "asset_description": "A round table with a blue top and light wood legs holds a silver laptop, a dark blue mug with a white design, a smartphone, and a stack of books. A light-colored wall and a portion of a staircase railing are visible in the background.",
       "filename": "asset-1.png",
       "x": 0,
       "y": 100,
@@ -100,7 +100,7 @@
     },
     {
       "type": "svg",
-      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the letter, and the letter is centered within the circle. The background is white.",
+      "svg_description": "A black circle encloses a white letter \"C\". The circle is centered on the white background.",
       "filename": "svg-1.svg",
       "x": 812,
       "y": 62,
