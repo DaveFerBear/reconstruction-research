@@ -1,26 +1,16 @@
 {
   "background_color": "#ffffff",
-  "has_background_image": false,
-  "background_image_description": "",
+  "has_background_image": true,
+  "background_image_description": "A pair of black over-ear headphones with a black headband and earcups are shown against a white background. The earcups feature a textured, mesh-like material on the outer surface and a patterned design on the inner surface. The headband is smooth and curved, connecting the two earcups. The headphones are angled slightly, with the left earcup positioned higher than the right.",
   "nodes": [
-    {
-      "type": "image",
-      "asset_description": "A pair of black over-ear headphones with a black headband and earcups are shown against a white background. The earcups feature a textured, mesh-like material on the outer surface and a patterned design on the inner surface. The headband is smooth and curved, connecting the two earcups. The headphones are angled slightly, with the left earcup positioned higher than the right.",
-      "filename": "asset-1.png",
-      "x": 21,
-      "y": 72,
-      "width": 754,
-      "height": 1010,
-      "rotation": 0
-    },
     {
       "type": "svg",
       "svg_description": "A black horizontal bar is centered on a white background.",
       "filename": "svg-1.svg",
-      "x": 244,
-      "y": 1002,
-      "width": 360,
-      "height": 44,
+      "x": 256,
+      "y": 992,
+      "width": 321,
+      "height": 47,
       "rotation": 0
     },
     {
@@ -44,7 +34,7 @@
       "type": "svg",
       "svg_description": "A black diamond shape is centered on a white background. The diamond is oriented with its point facing upward and to the right.",
       "filename": "svg-2.svg",
-      "x": 784,
+      "x": 785,
       "y": 40,
       "width": 24,
       "height": 24,
@@ -53,8 +43,8 @@
     {
       "type": "text",
       "text": "Turn Up the Savings",
-      "x": -12,
-      "y": 117,
+      "x": 1,
+      "y": 88,
       "width": 848,
       "height": 78,
       "rotation": 0,
@@ -70,8 +60,8 @@
     {
       "type": "text",
       "text": "12/2030",
-      "x": -3,
-      "y": 184,
+      "x": 2,
+      "y": 179,
       "width": 848,
       "height": 36,
       "rotation": 0,
@@ -83,28 +73,6 @@
       "font-style": "normal",
       "text-decoration": "none",
       "text-transform": "none"
-    },
-    {
-      "type": "image",
-      "asset_description": "The image is entirely black.",
-      "filename": "asset-2.png",
-      "x": 423,
-      "y": 835,
-      "width": 1000,
-      "height": 1000,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
-      "asset_description": "The image is entirely black.",
-      "filename": "asset-3.png",
-      "x": 159,
-      "y": 753,
-      "width": 532,
-      "height": 571,
-      "rotation": 0,
-      "opacity": 1
     }
   ],
   "canvas_width": 848,

@@ -402,12 +402,12 @@ Implement this instruction using the appropriate tools."""
                 "type": "function",
                 "function": {
                     "name": "update_svg",
-                    "description": "Regenerate an SVG asset using AI.",
+                    "description": "Edit an SVG asset by modifying the existing SVG. Preserves structure while making requested changes (e.g., 'change the color to blue').",
                     "parameters": {
                         "type": "object",
                         "properties": {
                             "filename": {"type": "string", "description": "SVG filename"},
-                            "edit_instruction": {"type": "string", "description": "How to modify the SVG"}
+                            "edit_instruction": {"type": "string", "description": "How to modify the SVG (e.g., 'change the color to blue', 'make it larger')"}
                         },
                         "required": ["filename", "edit_instruction"]
                     }
@@ -444,35 +444,55 @@ Implement this instruction using the appropriate tools."""
             return {"error": str(e)}
 
     def _tool_update_svg(self, filename: str, edit_instruction: str) -> dict:
-        """Regenerate an SVG asset."""
+        """Edit an SVG asset by reading current SVG and modifying it."""
         try:
             import asyncio
             svg_path = self.current_spec_path / filename
-            self.log(f"Regenerating {filename}: {edit_instruction}")
+            self.log(f"Editing {filename}: {edit_instruction}")
 
-            # Simple SVG generation using Gemini
-            async def generate():
+            # Read current SVG
+            if not svg_path.exists():
+                return {"error": f"SVG file {filename} not found"}
+
+            current_svg = svg_path.read_text(encoding='utf-8')
+
+            # Edit SVG using Gemini
+            async def edit_svg():
+                prompt = f"""Here is the current SVG:
+
+{current_svg}
+
+Modify this SVG according to: {edit_instruction}
+
+Important:
+- Preserve the overall structure and viewBox
+- Only change what's requested in the instruction
+- Return ONLY the modified SVG markup, no explanations or code fences"""
+
                 response = await litellm.acompletion(
                     model="gemini/gemini-2.5-flash",
-                    messages=[{"role": "user", "content": f"Generate clean SVG markup for: {edit_instruction}\n\nReturn ONLY the SVG markup."}],
+                    messages=[{"role": "user", "content": prompt}],
                     api_key=self.gemini_api_key,
                     temperature=0.3,
                     drop_params=True,
                 )
                 svg_content = response.choices[0].message.content.strip()
+
+                # Clean up code fences if present
                 if svg_content.startswith("```"):
                     lines = svg_content.split('\n')
                     svg_content = '\n'.join(lines[1:-1]) if len(lines) > 2 else svg_content
                     svg_content = svg_content.replace("```svg", "").replace("```", "").strip()
+
                 return svg_content
 
-            svg_content = asyncio.run(generate())
+            svg_content = asyncio.run(edit_svg())
             svg_path.write_text(svg_content, encoding='utf-8')
 
-            self.log(f" Saved regenerated SVG to {filename}")
-            return {"success": True, "filename": filename, "message": f"Successfully regenerated {filename}"}
+            self.log(f"✓ Saved edited SVG to {filename}")
+            return {"success": True, "filename": filename, "message": f"Successfully edited {filename}"}
         except Exception as e:
-            self.log(f"Error regenerating {filename}: {e}")
+            self.log(f"Error editing {filename}: {e}")
             return {"error": str(e)}
 
     # ============ HELPER METHODS ============
