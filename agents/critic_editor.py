@@ -18,7 +18,7 @@ from lib.ai import edit_image_local
 load_dotenv()
 
 
-class VQACriticAgent(Agent):
+class CriticEditorAgent(Agent):
     """
     Two-agent system with critic and editor.
 
@@ -482,7 +482,7 @@ Implement this instruction using the appropriate tools."""
         from datetime import datetime
 
         header = f"""{'='*80}
-VQA CRITIC AGENT EDIT LOG (Critic-Editor Loop)
+CRITIC-EDITOR AGENT EDIT LOG (Critic-Editor Loop)
 {'='*80}
 Timestamp: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 Model: {self.model}
