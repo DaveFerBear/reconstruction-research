@@ -1,7 +1,7 @@
 {
   "background_color": "#c53128",
   "has_background_image": true,
-  "background_image_description": "A person with blonde hair is seen from behind, wearing a brown corduroy jacket with a white sherpa-like collar. The jacket is buttoned up, and the individual’s head is turned to the right. The backdrop is a solid red wall.",
+  "background_image_description": "A person with blonde hair is seen from behind, wearing a brown corduroy jacket with a white sherpa-like collar. The jacket is buttoned up, and the individual\u2019s head is turned to the right. The backdrop is a solid red wall.",
   "nodes": [
     {
       "type": "image",
@@ -46,11 +46,11 @@
       "type": "text",
       "text": "THE STORY\nOF OUR\nLOVE",
       "x": 6,
-      "y": 39,
+      "y": 6,
       "width": 1257,
       "height": 660,
       "rotation": 0,
-      "font-family": "Anton",
+      "font-family": "Tusker Grotesk",
       "font-size": 220,
       "color": "#f6ddc9",
       "text-align": "center",

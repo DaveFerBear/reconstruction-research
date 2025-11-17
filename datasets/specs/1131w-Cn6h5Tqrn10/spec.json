@@ -59,7 +59,7 @@
       "width": 507,
       "height": 643,
       "rotation": 0,
-      "font-family": "Yellowtail",
+      "font-family": "Natalic",
       "font-size": 130,
       "color": "#24382d",
       "text-align": "center",
@@ -70,7 +70,7 @@
     },
     {
       "type": "text",
-      "text": "—@reallygreatsite",
+      "text": "\u2014@reallygreatsite",
       "x": 295,
       "y": 1251,
       "width": 590,

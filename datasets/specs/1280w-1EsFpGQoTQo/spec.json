@@ -5,7 +5,7 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "A woman lies on her back in a swimming pool, wearing a white bikini top and olive green bikini bottom. She holds a red plastic cup in her right hand, raised above her head. Her left arm rests on the pool’s edge. A straw hat rests on the concrete pool deck beside her, and a pair of pink sunglasses lies on the deck nearby. The water in the pool is a teal-blue color.",
+      "asset_description": "A woman lies on her back in a swimming pool, wearing a white bikini top and olive green bikini bottom. She holds a red plastic cup in her right hand, raised above her head. Her left arm rests on the pool\u2019s edge. A straw hat rests on the concrete pool deck beside her, and a pair of pink sunglasses lies on the deck nearby. The water in the pool is a teal-blue color.",
       "filename": "asset-3.png",
       "x": 0,
       "y": -6,
@@ -13,6 +13,23 @@
       "height": 1629,
       "rotation": 0,
       "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "BUSINESS",
+      "x": 132,
+      "y": 661,
+      "width": 1040,
+      "height": 260,
+      "rotation": 0,
+      "font-family": "Merisca",
+      "font-size": 320,
+      "color": "#FFFFFF",
+      "text-align": "center",
+      "font-weight": "bold",
+      "font-style": "normal",
+      "text-decoration": "none",
+      "text-transform": "uppercase"
     },
     {
       "type": "image",
@@ -112,8 +129,8 @@
     {
       "type": "text",
       "text": "HOW TO BUILD THE",
-      "x": 120,
-      "y": 583,
+      "x": 111,
+      "y": 580,
       "width": 1040,
       "height": 60,
       "rotation": 0,
@@ -128,26 +145,9 @@
     },
     {
       "type": "text",
-      "text": "BUSINESS",
-      "x": 126,
-      "y": 592,
-      "width": 1040,
-      "height": 260,
-      "rotation": 0,
-      "font-family": "Playfair Display",
-      "font-size": 220,
-      "color": "#FFFFFF",
-      "text-align": "center",
-      "font-weight": "bold",
-      "font-style": "normal",
-      "text-decoration": "none",
-      "text-transform": "uppercase"
-    },
-    {
-      "type": "text",
       "text": "OF YOUR DREAMS",
-      "x": 135,
-      "y": 828,
+      "x": 138,
+      "y": 879,
       "width": 1040,
       "height": 70,
       "rotation": 0,
