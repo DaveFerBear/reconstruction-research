@@ -80,11 +80,17 @@ class VQACriticAgent(Agent):
         # Update working directory
         self.current_spec_path = output_dir
 
+        # First edit: Editor implements the original user instruction
+        self.log(f"ITERATION 1/{self.max_iterations}")
+        self._append_to_edit_log(f"\n{'='*80}\nITERATION 1\n{'='*80}\n")
+        self.log("Editor implementing original instruction...")
+        self._append_to_edit_log(f"\nEDITOR IMPLEMENTING: {instruction}\n")
+        self._editor_make_changes(instruction)
+
         # Critic-editor loop
         final_iteration = 0
         for iteration in range(self.max_iterations):
-            self.log(f"Iteration {iteration + 1}/{self.max_iterations}")
-            self._append_to_edit_log(f"\n{'='*80}\nITERATION {iteration + 1}\n{'='*80}\n")
+            self.log(f"Iteration {iteration + 1}/{self.max_iterations} - Critic review")
 
             # Save and render current state
             saved_path = self.save_spec(self.current_spec, output_path)
@@ -104,9 +110,13 @@ class VQACriticAgent(Agent):
                 final_iteration = iteration
                 break
 
-            # Editor: Implement critic's instruction
-            self.log("Editor implementing instruction...")
-            self._editor_make_changes(critic_instruction)
+            # Editor: Implement critic's instruction (if not at max iterations)
+            if iteration + 1 < self.max_iterations:
+                self.log(f"ITERATION {iteration + 2}/{self.max_iterations}")
+                self._append_to_edit_log(f"\n{'='*80}\nITERATION {iteration + 2}\n{'='*80}\n")
+                self.log("Editor implementing critic's instruction...")
+                self._append_to_edit_log(f"\nEDITOR IMPLEMENTING: {critic_instruction}\n")
+                self._editor_make_changes(critic_instruction)
             final_iteration = iteration + 1
 
         # Final save and render
