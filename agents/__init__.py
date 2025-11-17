@@ -5,5 +5,6 @@ from .zeroshot import ZeroShotAgent
 from .singleshot import SingleShotAgent
 from .multishot import MultiShotAgent
 from .imageedit import ImageEditAgent
+from .vqa_critic import VQACriticAgent
 
-__all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent', 'MultiShotAgent', 'ImageEditAgent']
+__all__ = ['Agent', 'ZeroShotAgent', 'SingleShotAgent', 'MultiShotAgent', 'ImageEditAgent', 'VQACriticAgent']
