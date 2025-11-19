@@ -370,11 +370,13 @@
             const gallery = document.getElementById('gallery');
             gallery.className = 'gallery grouped';
 
-            // Extract template ID from edit name (format: templateId_editInfo)
-            // Group edits by template ID
+            // Extract template ID from edit name (format: templateId_t{editTypeId}_{agent})
+            // Template ID is everything before _t\d
             const groups = {};
             editRenders.forEach(render => {
-                const templateId = render.name.split('_')[0];
+                // Match everything before _t followed by a digit
+                const match = render.name.match(/^(.+?)_t\d/);
+                const templateId = match ? match[1] : render.name.split('_')[0];
                 if (!groups[templateId]) {
                     groups[templateId] = [];
                 }
