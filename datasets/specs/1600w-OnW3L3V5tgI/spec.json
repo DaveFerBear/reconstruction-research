@@ -26,7 +26,7 @@
     },
     {
       "type": "text",
-      "text": "SAVOR\nDOG FOOD",
+      "text": "SAVOR DOG FOOD",
       "x": 72,
       "y": 102,
       "width": 328,
@@ -43,7 +43,7 @@
     },
     {
       "type": "text",
-      "text": "HUMAN-GRADE.\nDog-approved.",
+      "text": "HUMAN-GRADE. Dog-approved.",
       "x": 72,
       "y": 280,
       "width": 716,

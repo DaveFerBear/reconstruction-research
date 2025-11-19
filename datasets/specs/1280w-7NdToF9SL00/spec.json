@@ -22,7 +22,7 @@
     },
     {
       "type": "text",
-      "text": "MUSIC\nAND WINE\nPARTY",
+      "text": "MUSIC AND WINE PARTY",
       "x": 352,
       "y": 319,
       "width": 576,
@@ -39,7 +39,7 @@
     },
     {
       "type": "text",
-      "text": "STARTS AT\n6PM",
+      "text": "STARTS AT 6PM",
       "x": 168,
       "y": 749,
       "width": 360,
@@ -66,7 +66,7 @@
     },
     {
       "type": "text",
-      "text": "LIVE MUSIC BY\nOLIVIA WILSON",
+      "text": "LIVE MUSIC BY OLIVIA WILSON",
       "x": 679,
       "y": 1231,
       "width": 480,

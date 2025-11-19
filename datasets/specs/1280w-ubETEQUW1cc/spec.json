@@ -50,7 +50,7 @@
     },
     {
       "type": "text",
-      "text": "LAST DATE TO\nREGISTER:",
+      "text": "LAST DATE TO REGISTER:",
       "x": 99,
       "y": 423,
       "width": 259,
@@ -84,7 +84,7 @@
     },
     {
       "type": "text",
-      "text": "SHOW YOUR\nCOLORS AND\nMARCH WITH US!",
+      "text": "SHOW YOUR COLORS AND MARCH WITH US!",
       "x": 892,
       "y": 595,
       "width": 255,
@@ -101,7 +101,7 @@
     },
     {
       "type": "text",
-      "text": "JOIN THE\nCELEBRATION!",
+      "text": "JOIN THE CELEBRATION!",
       "x": 81,
       "y": 809,
       "width": 420,
@@ -118,7 +118,7 @@
     },
     {
       "type": "text",
-      "text": "PRIDE IS MORE\nTHAN      A\nCELEBRATION_ \nIT’S A MOVEMENT!",
+      "text": "PRIDE IS MORE THAN      A CELEBRATION_  IT’S A MOVEMENT!",
       "x": 75,
       "y": 1032,
       "width": 264,
@@ -135,7 +135,7 @@
     },
     {
       "type": "text",
-      "text": "123 ANYWHERE\nST,\nANY CITY, ST\n12345",
+      "text": "123 ANYWHERE ST, ANY CITY, ST 12345",
       "x": 535,
       "y": 1030,
       "width": 212,
@@ -152,7 +152,7 @@
     },
     {
       "type": "text",
-      "text": "MORE INFO:\n+123 - 456 -\n7890",
+      "text": "MORE INFO: +123 - 456 - 7890",
       "x": 945,
       "y": 1042,
       "width": 165,

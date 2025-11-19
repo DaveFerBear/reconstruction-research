@@ -96,7 +96,7 @@
     },
     {
       "type": "text",
-      "text": "12\nOCT",
+      "text": "12 OCT",
       "x": 397,
       "y": 789,
       "width": 117,
@@ -113,7 +113,7 @@
     },
     {
       "type": "text",
-      "text": "FREE\nENTRY",
+      "text": "FREE ENTRY",
       "x": 539,
       "y": 787,
       "width": 180,
@@ -130,7 +130,7 @@
     },
     {
       "type": "text",
-      "text": "2:00\nPM",
+      "text": "2:00 PM",
       "x": 757,
       "y": 789,
       "width": 147,

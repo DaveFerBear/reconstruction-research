@@ -52,7 +52,7 @@
     },
     {
       "type": "text",
-      "text": "DE\nJUNIO",
+      "text": "DE JUNIO",
       "x": 192,
       "y": 789,
       "width": 260,
@@ -103,7 +103,7 @@
     },
     {
       "type": "text",
-      "text": "VEN A DISFRUTAR DE UN DÍA AL AIRE LIBRE CON\nBUENA COMIDA, JUEGOS Y LA MEJOR COMPAÑÍA.",
+      "text": "VEN A DISFRUTAR DE UN DÍA AL AIRE LIBRE CON BUENA COMIDA, JUEGOS Y LA MEJOR COMPAÑÍA.",
       "x": 195,
       "y": 970,
       "width": 900,
@@ -120,7 +120,7 @@
     },
     {
       "type": "text",
-      "text": "Te esperamos en el Parque \"La Sierra\"\nen Calle Cualquiera 123, Cualquier Lugar",
+      "text": "Te esperamos en el Parque \"La Sierra\" en Calle Cualquiera 123, Cualquier Lugar",
       "x": 381,
       "y": 1116,
       "width": 586,
