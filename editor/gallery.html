@@ -94,6 +94,48 @@
             gap: 20px;
         }
 
+        .gallery.grouped {
+            display: block;
+        }
+
+        .edit-group {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .edit-group:last-child {
+            border-bottom: none;
+        }
+
+        .group-header {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #aaa;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .group-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .render-card.original {
+            border-color: #4a90e2;
+        }
+
+        .render-card.original .render-info::before {
+            content: "ORIGINAL";
+            display: block;
+            font-size: 10px;
+            color: #4a90e2;
+            font-weight: 600;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
         .render-card {
             background: #1a1a1a;
             border: 1px solid #333;
@@ -301,7 +343,19 @@
                 return;
             }
 
-            gallery.innerHTML = filteredRenders.map(render => `
+            // If showing edits only, group by template ID
+            if (filterType === 'edits') {
+                renderGroupedEdits(filteredRenders);
+            } else {
+                renderGrid(filteredRenders);
+            }
+        }
+
+        function renderGrid(renders) {
+            const gallery = document.getElementById('gallery');
+            gallery.className = 'gallery';
+
+            gallery.innerHTML = renders.map(render => `
                 <div class="render-card" onclick="openModal('${render.path}', '${render.name}')">
                     <img class="render-image" src="/render/${encodeURIComponent(render.path)}" alt="${render.name}" loading="lazy">
                     <div class="render-info">
@@ -310,6 +364,62 @@
                     </div>
                 </div>
             `).join('');
+        }
+
+        function renderGroupedEdits(editRenders) {
+            const gallery = document.getElementById('gallery');
+            gallery.className = 'gallery grouped';
+
+            // Extract template ID from edit name (format: templateId_editInfo)
+            // Group edits by template ID
+            const groups = {};
+            editRenders.forEach(render => {
+                const templateId = render.name.split('_')[0];
+                if (!groups[templateId]) {
+                    groups[templateId] = [];
+                }
+                groups[templateId].push(render);
+            });
+
+            // Build HTML for each group
+            let html = '';
+            for (const [templateId, edits] of Object.entries(groups)) {
+                // Find the original spec
+                const originalPath = `datasets/specs/${templateId}/render.png`;
+                const original = allRenders.find(r => r.path === originalPath);
+
+                html += `<div class="edit-group">
+                    <div class="group-header">${templateId}</div>
+                    <div class="group-content">`;
+
+                // Add original first if it exists
+                if (original) {
+                    html += `
+                        <div class="render-card original" onclick="openModal('${original.path}', '${original.name}')">
+                            <img class="render-image" src="/render/${encodeURIComponent(original.path)}" alt="${original.name}" loading="lazy">
+                            <div class="render-info">
+                                <div class="render-name">${original.name}</div>
+                                <div class="render-path">${original.path}</div>
+                            </div>
+                        </div>`;
+                }
+
+                // Add all edits
+                edits.forEach(render => {
+                    html += `
+                        <div class="render-card" onclick="openModal('${render.path}', '${render.name}')">
+                            <img class="render-image" src="/render/${encodeURIComponent(render.path)}" alt="${render.name}" loading="lazy">
+                            <div class="render-info">
+                                <div class="render-name">${render.name}</div>
+                                <div class="render-path">${render.path}</div>
+                            </div>
+                        </div>`;
+                });
+
+                html += `</div></div>`;
+            }
+
+            gallery.innerHTML = html;
         }
 
         function openModal(path, name) {
