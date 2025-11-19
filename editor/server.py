@@ -335,10 +335,70 @@ def list_specs():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+# Get all renders
+@app.route('/api/renders', methods=['GET'])
+def list_renders():
+    try:
+        renders = []
+
+        # Collect renders from specs directory
+        specs_dir = BASE_DIR / 'datasets' / 'specs'
+        if specs_dir.exists():
+            for spec_dir in specs_dir.iterdir():
+                if spec_dir.is_dir() and not spec_dir.name.startswith('.'):
+                    render_path = spec_dir / 'render.png'
+                    if render_path.exists():
+                        # Path relative to BASE_DIR for serving
+                        rel_path = str(render_path.relative_to(BASE_DIR))
+                        renders.append({
+                            'name': spec_dir.name,
+                            'path': rel_path
+                        })
+
+        # Collect renders from edits directory
+        edits_dir = BASE_DIR / 'edits'
+        if edits_dir.exists():
+            for edit_dir in edits_dir.iterdir():
+                if edit_dir.is_dir() and not edit_dir.name.startswith('.'):
+                    render_path = edit_dir / 'render.png'
+                    if render_path.exists():
+                        # Path relative to BASE_DIR for serving
+                        rel_path = str(render_path.relative_to(BASE_DIR))
+                        renders.append({
+                            'name': edit_dir.name,
+                            'path': rel_path
+                        })
+
+        # Sort by name
+        renders.sort(key=lambda x: x['name'])
+
+        return jsonify({'renders': renders})
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
+
+# Serve individual render
+@app.route('/render/<path:render_path>')
+def serve_render(render_path):
+    try:
+        # render_path should be like "datasets/specs/1067w-IQprojiENUA/render.png"
+        full_path = BASE_DIR / render_path
+        if not full_path.exists():
+            return jsonify({'error': 'Render not found'}), 404
+
+        return send_from_directory(full_path.parent, full_path.name)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Serve static files from editor directory
 @app.route('/')
 def index():
     return send_from_directory('.', 'index.html')
+
+@app.route('/gallery')
+def gallery():
+    return send_from_directory('.', 'gallery.html')
 
 @app.route('/<path:path>')
 def static_files(path):

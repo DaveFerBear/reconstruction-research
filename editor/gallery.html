@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .header {
+            max-width: 1800px;
+            margin: 0 auto 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        input[type="text"], select {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            min-width: 200px;
+        }
+
+        input[type="text"]:focus, select:focus {
+            outline: none;
+            border-color: #666;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .stats {
+            font-size: 13px;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .gallery {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .render-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+
+        .render-card:hover {
+            transform: translateY(-4px);
+            border-color: #666;
+        }
+
+        .render-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+            background: #0a0a0a;
+            display: block;
+        }
+
+        .render-info {
+            padding: 12px;
+        }
+
+        .render-name {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #fff;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+
+        .render-path {
+            font-size: 11px;
+            color: #666;
+            font-family: 'Monaco', 'Menlo', monospace;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .error {
+            background: #1a0a0a;
+            border: 1px solid #4a1a1a;
+            color: #ff6b6b;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+            font-size: 14px;
+        }
+
+        /* Modal for fullscreen view */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            background: none;
+            color: white;
+            font-size: 24px;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+        }
+
+        .modal-close:hover {
+            background: #333;
+        }
+
+        .modal-info {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            color: #aaa;
+            font-size: 13px;
+            font-family: 'Monaco', 'Menlo', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Render Gallery</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="search">Search:</label>
+                <input type="text" id="search" placeholder="Filter by name or path...">
+            </div>
+            <div class="control-group">
+                <label for="filter">Filter:</label>
+                <select id="filter">
+                    <option value="all">All Renders</option>
+                    <option value="edits">Edits Only</option>
+                    <option value="specs">Specs Only</option>
+                </select>
+            </div>
+            <button onclick="loadRenders()">Refresh</button>
+        </div>
+        <div class="stats" id="stats">Loading...</div>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="loading">Loading renders...</div>
+    </div>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <img class="modal-image" id="modal-image" src="" alt="">
+            <div class="modal-info" id="modal-info"></div>
+        </div>
+    </div>
+
+    <script>
+        let allRenders = [];
+        let filteredRenders = [];
+
+        async function loadRenders() {
+            const gallery = document.getElementById('gallery');
+            const stats = document.getElementById('stats');
+
+            try {
+                gallery.innerHTML = '<div class="loading">Loading renders...</div>';
+
+                const response = await fetch('/api/renders');
+                if (!response.ok) throw new Error('Failed to load renders');
+
+                const data = await response.json();
+                allRenders = data.renders;
+
+                applyFilters();
+
+            } catch (error) {
+                console.error('Error loading renders:', error);
+                gallery.innerHTML = `<div class="error">Error loading renders: ${error.message}</div>`;
+            }
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const filterType = document.getElementById('filter').value;
+            const gallery = document.getElementById('gallery');
+            const stats = document.getElementById('stats');
+
+            // Apply filters
+            filteredRenders = allRenders.filter(render => {
+                const matchesSearch = render.name.toLowerCase().includes(searchTerm) ||
+                                     render.path.toLowerCase().includes(searchTerm);
+
+                let matchesFilter = true;
+                if (filterType === 'edits') {
+                    matchesFilter = render.path.includes('/edits/');
+                } else if (filterType === 'specs') {
+                    matchesFilter = render.path.includes('/specs/');
+                }
+
+                return matchesSearch && matchesFilter;
+            });
+
+            // Update stats
+            stats.textContent = `Showing ${filteredRenders.length} of ${allRenders.length} renders`;
+
+            // Render gallery
+            if (filteredRenders.length === 0) {
+                gallery.innerHTML = '<div class="loading">No renders found</div>';
+                return;
+            }
+
+            gallery.innerHTML = filteredRenders.map(render => `
+                <div class="render-card" onclick="openModal('${render.path}', '${render.name}')">
+                    <img class="render-image" src="/render/${encodeURIComponent(render.path)}" alt="${render.name}" loading="lazy">
+                    <div class="render-info">
+                        <div class="render-name">${render.name}</div>
+                        <div class="render-path">${render.path}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openModal(path, name) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modal-image');
+            const modalInfo = document.getElementById('modal-info');
+
+            modalImage.src = `/render/${encodeURIComponent(path)}`;
+            modalInfo.textContent = `${name} - ${path}`;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+        }
+
+        // Event listeners
+        document.getElementById('search').addEventListener('input', applyFilters);
+        document.getElementById('filter').addEventListener('change', applyFilters);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Load on page load
+        loadRenders();
+    </script>
+</body>
+</html>
