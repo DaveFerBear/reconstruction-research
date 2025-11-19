@@ -5,17 +5,6 @@
   "nodes": [
     {
       "type": "image",
-      "asset_description": "Uploaded image: Untitled-1.jpg",
-      "filename": "asset-4.png",
-      "x": -45,
-      "y": -3,
-      "width": 4251,
-      "height": 6400,
-      "rotation": 0,
-      "opacity": 1
-    },
-    {
-      "type": "image",
       "asset_description": "A single stem with several green leaves extends diagonally across the frame against a light gray-green background. The leaves are arranged along the stem, with some appearing slightly lighter or darker due to lighting. The stem is smooth and slender, connecting the leaves in a continuous line. No other objects or text are visible in the image.",
       "filename": "asset-1.png",
       "x": 721,
