@@ -284,9 +284,9 @@
 
                 let matchesFilter = true;
                 if (filterType === 'edits') {
-                    matchesFilter = render.path.includes('/edits/');
+                    matchesFilter = render.path.includes('edits/');
                 } else if (filterType === 'specs') {
-                    matchesFilter = render.path.includes('/specs/');
+                    matchesFilter = render.path.includes('specs/');
                 }
 
                 return matchesSearch && matchesFilter;
