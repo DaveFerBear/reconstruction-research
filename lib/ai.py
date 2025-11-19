@@ -11,6 +11,7 @@ load_dotenv()
 FAL_API_KEY = os.getenv("FAL_API_KEY")
 FAL_EDIT_URL = "https://fal.run/fal-ai/nano-banana/edit"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+VLMRUN_API_KEY = os.getenv("VLMRUN_API_KEY")
 
 
 
@@ -433,4 +434,146 @@ def gemini_score_edit(original_image_path: str, edited_image_path: str, instruct
         return min(max(score, 0), 100)
     except (KeyError, IndexError, AttributeError, ValueError) as e:
         print(f"Error parsing Gemini response: {response}")
+        raise e
+
+
+def vlmrun_score_aesthetic(image_path: str | Path, timeout: int = 120) -> float:
+    """
+    Score the aesthetic quality of a design using VLM Run API.
+
+    Args:
+        image_path: Path to the image file.
+        timeout: Max request time in seconds.
+
+    Returns:
+        float: Aesthetic score out of 100.
+    """
+    from openai import OpenAI
+    from vlmrun.client import VLMRun
+
+    if not VLMRUN_API_KEY:
+        raise ValueError("VLMRUN_API_KEY environment variable not set")
+
+    # Set up clients
+    chat_client = OpenAI(api_key=VLMRUN_API_KEY, base_url="https://agent.vlm.run/v1/openai")
+    uploader = VLMRun(api_key=VLMRUN_API_KEY, base_url="https://agent.vlm.run/v1")
+
+    # Upload image to get public URL
+    image_path = Path(image_path)
+    uploaded = uploader.files.upload(file=image_path)
+    image_url = uploaded.public_url
+
+    # Call VLM Run with the same prompt as Gemini
+    response = chat_client.chat.completions.create(
+        model="vlmrun-orion-1:auto",
+        messages=[
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": ENUM_CRITIC_PROMPT},
+                    {"type": "image_url", "image_url": {"url": image_url}},
+                ],
+            }
+        ],
+        max_tokens=2000,
+        temperature=0.0,
+    )
+
+    # Extract score from response (same logic as Gemini)
+    try:
+        text = response.choices[0].message.content.strip()
+        # Try to extract the score (look for "SCORE: X" format first, then fallback to any number)
+        import re
+        match = re.search(r'SCORE:\s*(\d+(?:\.\d+)?)', text, re.IGNORECASE)
+        if not match:
+            # Fallback: extract last number in the text (for backwards compatibility)
+            matches = re.findall(r'\b(\d+(?:\.\d+)?)\b', text)
+            if matches:
+                match = matches[-1]  # Take the last number
+                score = float(match)
+            else:
+                raise ValueError(f"Could not extract score from response: {text}")
+        else:
+            score = float(match.group(1))
+
+        # Ensure score is in 0-100 range
+        return min(max(score, 0), 100)
+    except (KeyError, IndexError, AttributeError, ValueError) as e:
+        print(f"Error parsing VLM Run response: {response}")
+        raise e
+
+
+def gpt5_score_aesthetic(image_path: str | Path, timeout: int = 120) -> float:
+    """
+    Score the aesthetic quality of a design using GPT-5 via litellm.
+
+    Args:
+        image_path: Path to the image file.
+        timeout: Max request time in seconds.
+
+    Returns:
+        float: Aesthetic score out of 100.
+    """
+    import base64
+    from pathlib import Path
+    import litellm
+
+    if not OPENAI_API_KEY:
+        raise ValueError("OPENAI_API_KEY environment variable not set")
+
+    # Read and encode image
+    image_path = Path(image_path)
+    with open(image_path, 'rb') as f:
+        image_data = base64.b64encode(f.read()).decode('utf-8')
+
+    # Determine mime type
+    mime_types = {
+        '.jpg': 'image/jpeg',
+        '.jpeg': 'image/jpeg',
+        '.png': 'image/png',
+        '.webp': 'image/webp',
+    }
+    mime_type = mime_types.get(image_path.suffix.lower(), 'image/jpeg')
+
+    # Call GPT-5 via litellm
+    response = litellm.completion(
+        model="chatgpt-4o-latest",
+        messages=[{
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": ENUM_CRITIC_PROMPT
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{mime_type};base64,{image_data}"}
+                }
+            ]
+        }],
+        api_key=OPENAI_API_KEY,
+        timeout=timeout
+    )
+
+    # Extract score from response
+    try:
+        text = response.choices[0].message.content.strip()
+        # Try to extract the score (look for "SCORE: X" format first, then fallback to any number)
+        import re
+        match = re.search(r'SCORE:\s*(\d+(?:\.\d+)?)', text, re.IGNORECASE)
+        if not match:
+            # Fallback: extract last number in the text (for backwards compatibility)
+            matches = re.findall(r'\b(\d+(?:\.\d+)?)\b', text)
+            if matches:
+                match = matches[-1]  # Take the last number
+                score = float(match)
+            else:
+                raise ValueError(f"Could not extract score from response: {text}")
+        else:
+            score = float(match.group(1))
+
+        # Ensure score is in 0-100 range
+        return min(max(score, 0), 100)
+    except (KeyError, IndexError, AttributeError, ValueError) as e:
+        print(f"Error parsing GPT-5 response: {response}")
         raise e
