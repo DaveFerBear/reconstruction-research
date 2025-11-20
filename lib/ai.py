@@ -437,12 +437,13 @@ def gemini_score_edit(original_image_path: str, edited_image_path: str, instruct
         raise e
 
 
-def vlmrun_score_aesthetic(image_path: str | Path, timeout: int = 120) -> float:
+def vlmrun_score_aesthetic(image_path: str | Path, model: str = "vlmrun-orion-1:auto", timeout: int = 120) -> float:
     """
     Score the aesthetic quality of a design using VLM Run API.
 
     Args:
         image_path: Path to the image file.
+        model: VLM Run model to use (default: "vlmrun-orion-1:auto", or "vlmrun-orion-1:pro")
         timeout: Max request time in seconds.
 
     Returns:
@@ -465,7 +466,7 @@ def vlmrun_score_aesthetic(image_path: str | Path, timeout: int = 120) -> float:
 
     # Call VLM Run with the same prompt as Gemini
     response = chat_client.chat.completions.create(
-        model="vlmrun-orion-1:auto",
+        model=model,
         messages=[
             {
                 "role": "user",
