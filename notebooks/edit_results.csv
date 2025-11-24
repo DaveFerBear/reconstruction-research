@@ -257,7 +257,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1131w-rH9o0IzDWQY,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle centered beneath ""PREMIUM PRODUCT"" reading ""Clean ingredients. Gentle results."" in deep cocoa #3B261B to balance whitespace in the white diamond.",singleshot,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t13_singleshot,../edits/1131w-rH9o0IzDWQY_t13_singleshot/spec.json,../edits/1131w-rH9o0IzDWQY_t13_singleshot/render.png,success
 1131w-tpnRumgzO8o,11,Hierarchy Adjustment,"layout,text,global",Center and enlarge the burger illustration to become the primary focal point.,singleshot,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t11_singleshot,../edits/1131w-tpnRumgzO8o_t11_singleshot/spec.json,../edits/1131w-tpnRumgzO8o_t11_singleshot/render.png,success
 1600w-xCuy4vLKWKc,6,Copy Expansion,"text,layout,global",Replace the button text “Swipe for tips” with: “Swipe for tips and quick steps to start today.”,singleshot,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t6_singleshot,../edits/1600w-xCuy4vLKWKc_t6_singleshot/spec.json,../edits/1600w-xCuy4vLKWKc_t6_singleshot/render.png,success
-1600w-eqZAnXprFhg,2,2-Element Layout Swap,"layout,global","Swap the “Mind Map” headline with the “Explore ideas and information” subheading, placing “Mind Map” top-right and the subheading top-left, aligned to equal top margins.",singleshot,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t2_singleshot,../edits/1600w-eqZAnXprFhg_t2_singleshot/spec.json,../edits/1600w-eqZAnXprFhg_t2_singleshot/render.png,failed: list index out of range
 1600w-IVdkMeHmo04,2,2-Element Layout Swap,"layout,global","Swap the headline “Gala of Hope” with the top-row event details, placing the headline across the top center and the details directly below as a centered row.",singleshot,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t2_singleshot,../edits/1600w-IVdkMeHmo04_t2_singleshot/spec.json,../edits/1600w-IVdkMeHmo04_t2_singleshot/render.png,success
 1131w-50t2MzJLmsM,13,Add Secondary Text Block,"text,layout,local","Add a small italic sans-serif subtitle 'Sip, savor, celebrate.' left-aligned directly below 'OPENING' in #1E4ED8 to fill the upper-left spacing.",singleshot,gemini/gemini-2.5-pro,1131w-50t2MzJLmsM_t13_singleshot,../edits/1131w-50t2MzJLmsM_t13_singleshot/spec.json,../edits/1131w-50t2MzJLmsM_t13_singleshot/render.png,success
 1280w-TgB3qSfKXOY,3,Global Layout Change,"layout,global","Reflow into a two-column grid: left column full-height glass; right column vertically stacks “BORCELLE CAFE”, “craving matcha” title, both badges, arrow, and @reallygreatsite; center elements with generous spacing.",singleshot,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t3_singleshot,../edits/1280w-TgB3qSfKXOY_t3_singleshot/spec.json,../edits/1280w-TgB3qSfKXOY_t3_singleshot/render.png,success
@@ -271,7 +270,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1600w-F-yK2D5pels,14,Theme Restyling,"style,color,global",Retheme for winter holidays: swap lime background for deep forest green (#184D3A); change all black text to white; recolor the top-right button to #C72C41 with white label.,singleshot,gemini/gemini-2.5-pro,1600w-F-yK2D5pels_t14_singleshot,../edits/1600w-F-yK2D5pels_t14_singleshot/spec.json,../edits/1600w-F-yK2D5pels_t14_singleshot/render.png,success
 1600w-gOlznvJ4zdk,9,Accent Recolor,"color,local",Recolor the “Self-Care Jar” title from dark green to warm coral #E86A5A.,singleshot,gemini/gemini-2.5-pro,1600w-gOlznvJ4zdk_t9_singleshot,../edits/1600w-gOlznvJ4zdk_t9_singleshot/spec.json,../edits/1600w-gOlznvJ4zdk_t9_singleshot/render.png,success
 1600w-p1o6ND26wWg,14,Theme Restyling,"style,color,global",Restyle for winter holidays: keep layout; use snow-white background with subtle snowflakes; recolor buttons and headline deep forest green with holly red accents; swap drink for a peppermint latte.,singleshot,gemini/gemini-2.5-pro,1600w-p1o6ND26wWg_t14_singleshot,../edits/1600w-p1o6ND26wWg_t14_singleshot/spec.json,../edits/1600w-p1o6ND26wWg_t14_singleshot/render.png,success
-1131w-120Kpwxx3eY,2,2-Element Layout Swap,"layout,global","Swap positions of the top-left portrait photo and the “Estelle Darcy” headline block, preserving equal margins and left-aligning each element within its new column.",singleshot,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t2_singleshot,../edits/1131w-120Kpwxx3eY_t2_singleshot/spec.json,../edits/1131w-120Kpwxx3eY_t2_singleshot/render.png,failed: list index out of range
 900w-8g4EBLeikgE,7,Image Replacement,"image,layout,local","Replace the taco tray held by hands with a similar close-up of a colorful sushi bento in a paper tray held by hands, maintaining angle and composition.",singleshot,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t7_singleshot,../edits/900w-8g4EBLeikgE_t7_singleshot/spec.json,../edits/900w-8g4EBLeikgE_t7_singleshot/render.png,success
 1131w-tpnRumgzO8o,8,Typography Style Shift,"text,style,global","Switch the “SUMMER” headline to a tall serif, lightweight uppercase for a more elegant tone.",singleshot,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t8_singleshot,../edits/1131w-tpnRumgzO8o_t8_singleshot/spec.json,../edits/1131w-tpnRumgzO8o_t8_singleshot/render.png,success
 1131w-rH9o0IzDWQY,1,Translation,"text,global","Replace 'New' with 'Nuevo', 'PRODUCT' with 'PRODUCTO', and 'PREMIUM PRODUCT' with 'PRODUCTO PREMIUM'.",singleshot,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t1_singleshot,../edits/1131w-rH9o0IzDWQY_t1_singleshot/spec.json,../edits/1131w-rH9o0IzDWQY_t1_singleshot/render.png,success
@@ -327,7 +325,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1131w-Cn6h5Tqrn10,1,Translation,"text,global","Translate 'Daily Motivation' to 'Motivación diaria' and the headline to '“Mantente inspirado, nunca dejes de crear”'.",multishot,gemini/gemini-2.5-pro,1131w-Cn6h5Tqrn10_t1_multishot,../edits/1131w-Cn6h5Tqrn10_t1_multishot/spec.json,../edits/1131w-Cn6h5Tqrn10_t1_multishot/render.png,success
 1600w-NcQMz5zOIyQ,6,Copy Expansion,"text,layout,global","Expand the bottom “YOU ARE INVITED” into: “You’re invited to dance, celebrate, and enjoy tonight!” with wrapping.",multishot,gemini/gemini-2.5-pro,1600w-NcQMz5zOIyQ_t6_multishot,../edits/1600w-NcQMz5zOIyQ_t6_multishot/spec.json,../edits/1600w-NcQMz5zOIyQ_t6_multishot/render.png,success
 1280w-l2k_WnNosUU,7,Image Replacement,"image,layout,local",Replace the colorful starburst day badges and rounded event bars with minimalist monochrome corporate agenda bars and simple circle day markers.,multishot,gemini/gemini-2.5-pro,1280w-l2k_WnNosUU_t7_multishot,../edits/1280w-l2k_WnNosUU_t7_multishot/spec.json,../edits/1280w-l2k_WnNosUU_t7_multishot/render.png,success
-900w-r5rfhPArHDg,6,Copy Expansion,"text,layout,global","Replace the lower-left sentence with: Enjoy our crispy waffle with rich chocolate sauce—freshly baked, wonderfully warm, indulgent and satisfying, perfect for sharing and pairing with coffee or afternoon tea.",multishot,gemini/gemini-2.5-pro,900w-r5rfhPArHDg_t6_multishot,../edits/900w-r5rfhPArHDg_t6_multishot/spec.json,../edits/900w-r5rfhPArHDg_t6_multishot/render.png,failed: list index out of range
 1600w-DVXZyB158ss,9,Accent Recolor,"color,local","Recolor the ""ABOUT ME"" heading to deep forest green #184D3A.",multishot,gemini/gemini-2.5-pro,1600w-DVXZyB158ss_t9_multishot,../edits/1600w-DVXZyB158ss_t9_multishot/spec.json,../edits/1600w-DVXZyB158ss_t9_multishot/render.png,success
 1600w-mQV8WxekDho,9,Accent Recolor,"color,local",Recolor the “DON’T MISS OUT” headline’s yellow outline to crisp white (#FFFFFF).,multishot,gemini/gemini-2.5-pro,1600w-mQV8WxekDho_t9_multishot,../edits/1600w-mQV8WxekDho_t9_multishot/spec.json,../edits/1600w-mQV8WxekDho_t9_multishot/render.png,success
 1600w-jlhsA8F30Lk,4,Object Removal,"layout,local","Remove the megaphone illustration; enlarge and shift the speech bubble slightly left to fill space, keeping “WE ARE OPEN TODAY” centered and the time aligned bottom-right inside.",multishot,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t4_multishot,../edits/1600w-jlhsA8F30Lk_t4_multishot/spec.json,../edits/1600w-jlhsA8F30Lk_t4_multishot/render.png,success
@@ -399,14 +396,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1280w-7NdToF9SL00,1,Translation,"text,global","Translate all visible text to Spanish, setting the headline to 'FIESTA DE MÚSICA Y VINO'.",multishot,gemini/gemini-2.5-pro,1280w-7NdToF9SL00_t1_multishot,../edits/1280w-7NdToF9SL00_t1_multishot/spec.json,../edits/1280w-7NdToF9SL00_t1_multishot/render.png,success
 1280w-2LZs3UZm33E,14,Theme Restyling,"style,color,global","Convert to a cozy winter holiday theme: switch backgrounds to deep forest green and cream, recolor text warm cream, add small gold snowflakes along the curved divider, keeping the layout unchanged.",multishot,gemini/gemini-2.5-pro,1280w-2LZs3UZm33E_t14_multishot,../edits/1280w-2LZs3UZm33E_t14_multishot/spec.json,../edits/1280w-2LZs3UZm33E_t14_multishot/render.png,success
 1131w-02GXIIidf_4,14,Theme Restyling,"style,color,global","Recolor all red and yellow elements (top/bottom bars, reward stamp, highlight) to deep forest green #184D3A and gold #D4AF37 for a winter holiday theme, preserving the layout.",multishot,gemini/gemini-2.5-pro,1131w-02GXIIidf_4_t14_multishot,../edits/1131w-02GXIIidf_4_t14_multishot/spec.json,../edits/1131w-02GXIIidf_4_t14_multishot/render.png,success
-1131w-02GXIIidf_4,8,Typography Style Shift,"text,style,global",Switch the “DONNA” header to title-case tall serif in regular weight to soften the tone.,multishot,gemini/gemini-2.5-pro,1131w-02GXIIidf_4_t8_multishot,../edits/1131w-02GXIIidf_4_t8_multishot/spec.json,../edits/1131w-02GXIIidf_4_t8_multishot/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1280w-GZEFZIEhLE0,2,2-Element Layout Swap,"layout,global","Swap positions of the central portrait image and the “MUSIC PARTY NIGHT” headline, placing the portrait top-right and the headline centered in the main area for balanced hierarchy.",multishot,gemini/gemini-2.5-pro,1280w-GZEFZIEhLE0_t2_multishot,../edits/1280w-GZEFZIEhLE0_t2_multishot/spec.json,../edits/1280w-GZEFZIEhLE0_t2_multishot/render.png,success
 1600w-ROAkphj1zsA,8,Typography Style Shift,"text,style,global",Switch the “Say yes to challenges!” text to a tall sans-serif to make the tone more elegant.,multishot,gemini/gemini-2.5-pro,1600w-ROAkphj1zsA_t8_multishot,../edits/1600w-ROAkphj1zsA_t8_multishot/spec.json,../edits/1600w-ROAkphj1zsA_t8_multishot/render.png,success
 848w-Xal0F5OfysY,0,Color Palette Variation,"color,global","Replace the sky-blue background with warm cream #F6F1E9 and change all white typography to deep forest green #184D3A, leaving the photo unchanged.",multishot,gemini/gemini-2.5-pro,848w-Xal0F5OfysY_t0_multishot,../edits/848w-Xal0F5OfysY_t0_multishot/spec.json,../edits/848w-Xal0F5OfysY_t0_multishot/render.png,success
@@ -492,7 +481,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1600w-qWWXRzbWBOk,0,Color Palette Variation,"color,global",Replace the dominant azure-blue and cream gradient palette with a deep forest green-to-teal twilight gradient; switch text and star accents to warm ivory #FFF4E6 for high contrast.,multishot,gemini/gemini-2.5-pro,1600w-qWWXRzbWBOk_t0_multishot,../edits/1600w-qWWXRzbWBOk_t0_multishot/spec.json,../edits/1600w-qWWXRzbWBOk_t0_multishot/render.png,success
 1600w-NwdmmHkEOxk,2,2-Element Layout Swap,"layout,global","Swap the left panel star icon with the “Together, We Can Make a Difference” headline, placing the headline top-left and the star to its right for a balanced header.",multishot,gemini/gemini-2.5-pro,1600w-NwdmmHkEOxk_t2_multishot,../edits/1600w-NwdmmHkEOxk_t2_multishot/spec.json,../edits/1600w-NwdmmHkEOxk_t2_multishot/render.png,success
 1200w-taPfkpk_5cE,6,Copy Expansion,"text,layout,global","Expand the lower body paragraph to roughly 2–3× length, adding welcoming details about monthly picks, lively discussions, newcomer-friendly vibe, and keeping the address, while maintaining tone and layout balance.",multishot,gemini/gemini-2.5-pro,1200w-taPfkpk_5cE_t6_multishot,../edits/1200w-taPfkpk_5cE_t6_multishot/spec.json,../edits/1200w-taPfkpk_5cE_t6_multishot/render.png,success
-1131w-120Kpwxx3eY,13,Add Secondary Text Block,"text,layout,local","Add a small italic supporting line beneath ""Graphic Designer"" reading ""Creating clean, thoughtful visuals that solve problems"" in muted gray #6B6B6B.",multishot,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t13_multishot,../edits/1131w-120Kpwxx3eY_t13_multishot/spec.json,../edits/1131w-120Kpwxx3eY_t13_multishot/render.png,failed: list index out of range
 1600w-u6z_9iKj-iQ,5,Object Addition,"layout,local",Add a small #F5C542 rangoli icon near the lower-left edge to balance the tiny bottom-right accent.,multishot,gemini/gemini-2.5-pro,1600w-u6z_9iKj-iQ_t5_multishot,../edits/1600w-u6z_9iKj-iQ_t5_multishot/spec.json,../edits/1600w-u6z_9iKj-iQ_t5_multishot/render.png,success
 1131w-zau150HLMWk,12,Contrast & Readability Enhancement,"color,style,local","Apply a subtle dark gray (#333) drop shadow to both ""You're my"" and ""lobster"" text to improve contrast against the light striped background.",multishot,gemini/gemini-2.5-pro,1131w-zau150HLMWk_t12_multishot,../edits/1131w-zau150HLMWk_t12_multishot/spec.json,../edits/1131w-zau150HLMWk_t12_multishot/render.png,success
 1600w-GQFPH6ndGO4,11,Hierarchy Adjustment,"layout,text,global",Shrink the “IMPROVE YOURSELF” headline to body size so the portrait becomes the dominant focal point.,multishot,gemini/gemini-2.5-pro,1600w-GQFPH6ndGO4_t11_multishot,../edits/1600w-GQFPH6ndGO4_t11_multishot/spec.json,../edits/1600w-GQFPH6ndGO4_t11_multishot/render.png,success
@@ -523,7 +511,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1131w-rH9o0IzDWQY,3,Global Layout Change,"layout,global","Rebuild as a single-column poster: use full-bleed hero image on top, stack remaining three images in equal-height stripes below, center the headline and subheadline between hero and stripes.",multishot,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t3_multishot,../edits/1131w-rH9o0IzDWQY_t3_multishot/spec.json,../edits/1131w-rH9o0IzDWQY_t3_multishot/render.png,success
 1600w-7YZFYlcCTPk,8,Typography Style Shift,"text,style,global","Set ""COMING SOON"" in a tall serif for a more elegant tone.",multishot,gemini/gemini-2.5-pro,1600w-7YZFYlcCTPk_t8_multishot,../edits/1600w-7YZFYlcCTPk_t8_multishot/spec.json,../edits/1600w-7YZFYlcCTPk_t8_multishot/render.png,success
 1600w-DVXZyB158ss,3,Global Layout Change,"layout,global",Rebuild layout into two rows: top centered headline; bottom two equal columns with text left and full-height photo right; place signature in bottom-left footer.,multishot,gemini/gemini-2.5-pro,1600w-DVXZyB158ss_t3_multishot,../edits/1600w-DVXZyB158ss_t3_multishot/spec.json,../edits/1600w-DVXZyB158ss_t3_multishot/render.png,success
-1600w-eqZAnXprFhg,2,2-Element Layout Swap,"layout,global","Swap the “Mind Map” headline with the “Explore ideas and information” subheading, placing “Mind Map” top-right and the subheading top-left, aligned to equal top margins.",multishot,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t2_multishot,../edits/1600w-eqZAnXprFhg_t2_multishot/spec.json,../edits/1600w-eqZAnXprFhg_t2_multishot/render.png,failed: list index out of range
 1600w-_HHyJ9eyu3Q,4,Object Removal,"layout,local",Remove the “OUR LOGO” block with icon and text; vertically center “BRAND ASSETS” in the left panel and slightly increase its line spacing to maintain balance.,multishot,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t4_multishot,../edits/1600w-_HHyJ9eyu3Q_t4_multishot/spec.json,../edits/1600w-_HHyJ9eyu3Q_t4_multishot/render.png,success
 1600w-9czv6kB-DXc,0,Color Palette Variation,"color,global","Replace the blue background, white bubble, red/yellow megaphone and labels, and black text with a cool light palette: background #F1F7FF, bubble #FFFFFF, accents #00A3FF/#673AB7, text charcoal #1E1E1E.",multishot,gemini/gemini-2.5-pro,1600w-9czv6kB-DXc_t0_multishot,../edits/1600w-9czv6kB-DXc_t0_multishot/spec.json,../edits/1600w-9czv6kB-DXc_t0_multishot/render.png,success
 1600w-1HZYAUid2AE,14,Theme Restyling,"style,color,global","Restyle to a winter holiday theme: background #0B1A3A with light snowfall, replace emojis with snowflakes and gift icons, recolor CTA to festive red #E31D1D with white text.",multishot,gemini/gemini-2.5-pro,1600w-1HZYAUid2AE_t14_multishot,../edits/1600w-1HZYAUid2AE_t14_multishot/spec.json,../edits/1600w-1HZYAUid2AE_t14_multishot/render.png,success
@@ -772,14 +759,6 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1600w-K18O8e4K488,14,Theme Restyling,"style,color,global","Convert to winter holiday theme by switching orange elements to icy blue #5BC0EB and silver #C0C0C0, adding small snowflake accents, and updating headline to ""WINTER WEBINAR"" while keeping layout.",criticeditor,gemini/gemini-2.5-pro,1600w-K18O8e4K488_t14_criticeditor,../edits/1600w-K18O8e4K488_t14_criticeditor/spec.json,../edits/1600w-K18O8e4K488_t14_criticeditor/render.png,success
 1257w-EN_LTZdAMlw,11,Hierarchy Adjustment,"layout,text,global","Enlarge the bottom watercolor pumpkin-and-sunflower illustration to huge size, making it the primary focal point instead of the headline.",criticeditor,gemini/gemini-2.5-pro,1257w-EN_LTZdAMlw_t11_criticeditor,../edits/1257w-EN_LTZdAMlw_t11_criticeditor/spec.json,../edits/1257w-EN_LTZdAMlw_t11_criticeditor/render.png,success
 900w-r5rfhPArHDg,4,Object Removal,"layout,local",Remove the top 'Rimberio Dessert' line; shift the headline up slightly to center above the waffle while keeping the price and description positions unchanged.,criticeditor,gemini/gemini-2.5-pro,900w-r5rfhPArHDg_t4_criticeditor,../edits/900w-r5rfhPArHDg_t4_criticeditor/spec.json,../edits/900w-r5rfhPArHDg_t4_criticeditor/render.png,success
-1131w-HeJuVR7Avb0,2,2-Element Layout Swap,"layout,global","Swap the top ""POSITANO"" headline with the bottom ""AMALFI COAST"" headline, keeping both centered and maintaining equal top and bottom margins for balance.",criticeditor,gemini/gemini-2.5-pro,1131w-HeJuVR7Avb0_t2_criticeditor,../edits/1131w-HeJuVR7Avb0_t2_criticeditor/spec.json,../edits/1131w-HeJuVR7Avb0_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1131w-w-XME4y3KWk,4,Object Removal,"layout,local",Remove the scattered nuts at bottom-left; shift the “Enjoy 40% Discount” circle slightly down and left to fill the space for balanced spacing.,criticeditor,gemini/gemini-2.5-pro,1131w-w-XME4y3KWk_t4_criticeditor,../edits/1131w-w-XME4y3KWk_t4_criticeditor/spec.json,../edits/1131w-w-XME4y3KWk_t4_criticeditor/render.png,success
 1280w-GZEFZIEhLE0,5,Object Addition,"layout,local","Add a small black-and-white turntable icon in the top-left corner to balance the “MUSIC PARTY NIGHT” block, matching the grayscale palette.",criticeditor,gemini/gemini-2.5-pro,1280w-GZEFZIEhLE0_t5_criticeditor,../edits/1280w-GZEFZIEhLE0_t5_criticeditor/spec.json,../edits/1280w-GZEFZIEhLE0_t5_criticeditor/render.png,success
 1131w-rH9o0IzDWQY,8,Typography Style Shift,"text,style,global","Switch the ""PRODUCT"" headline to tall serif uppercase instead of bold sans-serif.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t8_criticeditor,../edits/1131w-rH9o0IzDWQY_t8_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t8_criticeditor/render.png,success
@@ -787,713 +766,45 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1600w-xCuy4vLKWKc,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle to the right of the headline reading “Practical steps to attract your first 1,000 subscribers,” colored #F5E9DF, vertically aligned with the title.",criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t13_criticeditor,../edits/1600w-xCuy4vLKWKc_t13_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t13_criticeditor/render.png,success
 1280w-TgB3qSfKXOY,0,Color Palette Variation,"color,global","Recolor the design: replace the current deep forest green/cream palette with light mode—background soft warm cream (#FFF6E8), all typography, badges, and starbursts in deep moss green (#184D3A).",criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t0_criticeditor,../edits/1280w-TgB3qSfKXOY_t0_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t0_criticeditor/render.png,success
 1600w-OnW3L3V5tgI,8,Typography Style Shift,"text,style,global",Switch the “HUMAN-GRADE. Dog-approved.” headline to a tall serif font to create an elegant tone.,criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t8_criticeditor,../edits/1600w-OnW3L3V5tgI_t8_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t8_criticeditor/render.png,success
-1600w-K18O8e4K488,7,Image Replacement,"image,layout,local","Replace the circular speaker headshot with a smiling yoga instructor in studio lighting, keeping the same close-up composition, to shift from business webinar to wellness session.",criticeditor,gemini/gemini-2.5-pro,1600w-K18O8e4K488_t7_criticeditor,../edits/1600w-K18O8e4K488_t7_criticeditor/spec.json,../edits/1600w-K18O8e4K488_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1135w-e1BT38mksX0,14,Theme Restyling,"style,color,global","Retheme to cozy Christmas: replace pumpkins/bats/skulls with holly, snowflakes, and ornaments; change palette to deep forest green, cranberry red, and gold; update “Halloween Party” to “Holiday Party.”",criticeditor,gemini/gemini-2.5-pro,1135w-e1BT38mksX0_t14_criticeditor,../edits/1135w-e1BT38mksX0_t14_criticeditor/spec.json,../edits/1135w-e1BT38mksX0_t14_criticeditor/render.png,success
-1600w-3BBdsD4EXsY,7,Image Replacement,"image,layout,local","Swap the central easel-and-canvas illustration for a cafe-style A-frame chalkboard sign, maintaining the centered text area.",criticeditor,gemini/gemini-2.5-pro,1600w-3BBdsD4EXsY_t7_criticeditor,../edits/1600w-3BBdsD4EXsY_t7_criticeditor/spec.json,../edits/1600w-3BBdsD4EXsY_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-qWWXRzbWBOk,14,Theme Restyling,"style,color,global","Transform into a winter holiday theme: switch blue gradient to deep forest green and cranberry, swap stars for snowflakes, and change quote to warm white with gold sparkles.",criticeditor,gemini/gemini-2.5-pro,1600w-qWWXRzbWBOk_t14_criticeditor,../edits/1600w-qWWXRzbWBOk_t14_criticeditor/spec.json,../edits/1600w-qWWXRzbWBOk_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-qWWXRzbWBOk,0,Color Palette Variation,"color,global",Replace the dominant azure-blue and cream gradient palette with a deep forest green-to-teal twilight gradient; switch text and star accents to warm ivory #FFF4E6 for high contrast.,criticeditor,gemini/gemini-2.5-pro,1600w-qWWXRzbWBOk_t0_criticeditor,../edits/1600w-qWWXRzbWBOk_t0_criticeditor/spec.json,../edits/1600w-qWWXRzbWBOk_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1280w-QVxrpF_dKgM,8,Typography Style Shift,"text,style,global",Replace all rounded sans-serif text with a tall serif in regular weight and sentence case to shift the tone from playful to elegant.,criticeditor,gemini/gemini-2.5-pro,1280w-QVxrpF_dKgM_t8_criticeditor,../edits/1280w-QVxrpF_dKgM_t8_criticeditor/spec.json,../edits/1280w-QVxrpF_dKgM_t8_criticeditor/render.png,success
 1280w-7NdToF9SL00,2,2-Element Layout Swap,"layout,global","Swap the “MUSIC AND WINE PARTY” headline with the large turntable illustration, moving the headline to bottom center above the address and centering the turntable at the top.",criticeditor,gemini/gemini-2.5-pro,1280w-7NdToF9SL00_t2_criticeditor,../edits/1280w-7NdToF9SL00_t2_criticeditor/spec.json,../edits/1280w-7NdToF9SL00_t2_criticeditor/render.png,success
 1600w-F-yK2D5pels,2,2-Element Layout Swap,"layout,global","Swap the large “MEDIA KIT” headline with the three-photo gallery strip, moving the headline to the top and the images to the bottom, centered and evenly spaced.",criticeditor,gemini/gemini-2.5-pro,1600w-F-yK2D5pels_t2_criticeditor,../edits/1600w-F-yK2D5pels_t2_criticeditor/spec.json,../edits/1600w-F-yK2D5pels_t2_criticeditor/render.png,success
 1600w-FAqixqKkICk,9,Accent Recolor,"color,local",Recolor the notepad text from dark brown to deep forest green #184D3A.,criticeditor,gemini/gemini-2.5-pro,1600w-FAqixqKkICk_t9_criticeditor,../edits/1600w-FAqixqKkICk_t9_criticeditor/spec.json,../edits/1600w-FAqixqKkICk_t9_criticeditor/render.png,success
 1600w-u6z_9iKj-iQ,6,Copy Expansion,"text,layout,global","Replace the ""FESTIVAL OF LIGHTS"" line with: ""Festival of Lights—celebrating hope, prosperity, and togetherness.""",criticeditor,gemini/gemini-2.5-pro,1600w-u6z_9iKj-iQ_t6_criticeditor,../edits/1600w-u6z_9iKj-iQ_t6_criticeditor/spec.json,../edits/1600w-u6z_9iKj-iQ_t6_criticeditor/render.png,success
 1600w-VLAmdFwJm1I,4,Object Removal,"layout,local",Remove the “VIVID MARKETING” text above the title and vertically center “CAMPAIGN HUB” within the white banner for balanced spacing.,criticeditor,gemini/gemini-2.5-pro,1600w-VLAmdFwJm1I_t4_criticeditor,../edits/1600w-VLAmdFwJm1I_t4_criticeditor/spec.json,../edits/1600w-VLAmdFwJm1I_t4_criticeditor/render.png,success
-1131w-120Kpwxx3eY,2,2-Element Layout Swap,"layout,global","Swap positions of the top-left portrait photo and the “Estelle Darcy” headline block, preserving equal margins and left-aligning each element within its new column.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t2_criticeditor,../edits/1131w-120Kpwxx3eY_t2_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t2_criticeditor/render.png,failed: list index out of range
 1600w-9JTrLkx-Ppg,5,Object Addition,"layout,local",Add a small briefcase icon in #5A3DFF to the left of “Business Consultant” to reinforce the role and subtly balance the left side.,criticeditor,gemini/gemini-2.5-pro,1600w-9JTrLkx-Ppg_t5_criticeditor,../edits/1600w-9JTrLkx-Ppg_t5_criticeditor/spec.json,../edits/1600w-9JTrLkx-Ppg_t5_criticeditor/render.png,success
-1131w-120Kpwxx3eY,14,Theme Restyling,"style,color,global","Restyle to a Lunar New Year theme using #C81D25 and #F2C12E accents, replacing the top doodles with small lantern icons while preserving the layout.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t14_criticeditor,../edits/1131w-120Kpwxx3eY_t14_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-IVdkMeHmo04,4,Object Removal,"layout,local",Remove the “Unity Outreach Network” line; move the title and subheading up slightly to close the gap while maintaining clear spacing below the top event details.,criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t4_criticeditor,../edits/1600w-IVdkMeHmo04_t4_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t4_criticeditor/render.png,success
 1280w-QVxrpF_dKgM,12,Contrast & Readability Enhancement,"color,style,local",Deepen the cream paper’s outer drop shadow with a soft #333 tone to increase edge contrast against the white gingham squares and enhance overall text legibility.,criticeditor,gemini/gemini-2.5-pro,1280w-QVxrpF_dKgM_t12_criticeditor,../edits/1280w-QVxrpF_dKgM_t12_criticeditor/spec.json,../edits/1280w-QVxrpF_dKgM_t12_criticeditor/render.png,success
 1131w-eRlpDg4f0K8,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle, ""Monthly meet-up for book lovers,"" centered beneath ""Book Club!"" in deep navy #1E2B5A, with tight spacing to reduce the gap above the illustration.",criticeditor,gemini/gemini-2.5-pro,1131w-eRlpDg4f0K8_t13_criticeditor,../edits/1131w-eRlpDg4f0K8_t13_criticeditor/spec.json,../edits/1131w-eRlpDg4f0K8_t13_criticeditor/render.png,success
-1600w-CxALar1xspQ,3,Global Layout Change,"layout,global","Rearrange to a centered single-column layout: move full-width photo into a top banner over the green background; stack title, quote, CTA, and contact info below, evenly spaced.",criticeditor,gemini/gemini-2.5-pro,1600w-CxALar1xspQ_t3_criticeditor,../edits/1600w-CxALar1xspQ_t3_criticeditor/spec.json,../edits/1600w-CxALar1xspQ_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-xPTl82ZC-e4,5,Object Addition,"layout,local","Add a small peach-pink retro film reel icon to the right of ""FREE ENTRY"", aligning center with the text to balance the left date/time.",criticeditor,gemini/gemini-2.5-pro,1131w-xPTl82ZC-e4_t5_criticeditor,../edits/1131w-xPTl82ZC-e4_t5_criticeditor/spec.json,../edits/1131w-xPTl82ZC-e4_t5_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-GQFPH6ndGO4,9,Accent Recolor,"color,local","Recolor the ""EVERY DAY"" button background to deep forest green (#184D3A).",criticeditor,gemini/gemini-2.5-pro,1600w-GQFPH6ndGO4_t9_criticeditor,../edits/1600w-GQFPH6ndGO4_t9_criticeditor/spec.json,../edits/1600w-GQFPH6ndGO4_t9_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-IVdkMeHmo04,8,Typography Style Shift,"text,style,global",Set the “Gala of Hope” headline in uppercase.,criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t8_criticeditor,../edits/1600w-IVdkMeHmo04_t8_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t8_criticeditor/render.png,success
-1600w-GQFPH6ndGO4,11,Hierarchy Adjustment,"layout,text,global",Shrink the “IMPROVE YOURSELF” headline to body size so the portrait becomes the dominant focal point.,criticeditor,gemini/gemini-2.5-pro,1600w-GQFPH6ndGO4_t11_criticeditor,../edits/1600w-GQFPH6ndGO4_t11_criticeditor/spec.json,../edits/1600w-GQFPH6ndGO4_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-l2k_WnNosUU,5,Object Addition,"layout,local","Add a small #184D3A calendar icon to the top-right of the ""upcoming EVENTS"" header, aligned vertically with the title, to fill whitespace and balance the layout.",criticeditor,gemini/gemini-2.5-pro,1280w-l2k_WnNosUU_t5_criticeditor,../edits/1280w-l2k_WnNosUU_t5_criticeditor/spec.json,../edits/1280w-l2k_WnNosUU_t5_criticeditor/render.png,failed: list index out of range
 1257w-EN_LTZdAMlw,0,Color Palette Variation,"color,global","Replace the white, brown, orange, sage palette with a twilight scheme: deep navy background, warm ivory text, and illustrations recolored in dusty plum, muted teal, and antique gold.",criticeditor,gemini/gemini-2.5-pro,1257w-EN_LTZdAMlw_t0_criticeditor,../edits/1257w-EN_LTZdAMlw_t0_criticeditor/spec.json,../edits/1257w-EN_LTZdAMlw_t0_criticeditor/render.png,success
-1131w-oRypOitC9EY,12,Contrast & Readability Enhancement,"color,style,local","Switch all small pink text on the teal background (top labels, “BORCELLE PRESENTS,” address, FREE ENTRY, date/time) to white for higher contrast.",criticeditor,gemini/gemini-2.5-pro,1131w-oRypOitC9EY_t12_criticeditor,../edits/1131w-oRypOitC9EY_t12_criticeditor/spec.json,../edits/1131w-oRypOitC9EY_t12_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1200w-taPfkpk_5cE,6,Copy Expansion,"text,layout,global","Expand the lower body paragraph to roughly 2–3× length, adding welcoming details about monthly picks, lively discussions, newcomer-friendly vibe, and keeping the address, while maintaining tone and layout balance.",criticeditor,gemini/gemini-2.5-pro,1200w-taPfkpk_5cE_t6_criticeditor,../edits/1200w-taPfkpk_5cE_t6_criticeditor/spec.json,../edits/1200w-taPfkpk_5cE_t6_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1131w-w2bliFOwlfc,6,Copy Expansion,"text,layout,global","Replace the top-right paragraph with: ""Rediscover the magic of simpler times with this nostalgic rotary phone—celebrating unhurried chats, shared stories, and the satisfying click of each number.""",criticeditor,gemini/gemini-2.5-pro,1131w-w2bliFOwlfc_t6_criticeditor,../edits/1131w-w2bliFOwlfc_t6_criticeditor/spec.json,../edits/1131w-w2bliFOwlfc_t6_criticeditor/render.png,success
 1135w-e1BT38mksX0,12,Contrast & Readability Enhancement,"color,style,local",Recolor the small gray address line under the date to deep black #111111 for stronger contrast on white.,criticeditor,gemini/gemini-2.5-pro,1135w-e1BT38mksX0_t12_criticeditor,../edits/1135w-e1BT38mksX0_t12_criticeditor/spec.json,../edits/1135w-e1BT38mksX0_t12_criticeditor/render.png,success
-900w-8g4EBLeikgE,0,Color Palette Variation,"color,global",Recolor palette: switch beige background to pale mint #E8F7F2; change mustard headline to deep teal #0D7068; set all body/CTA text and icons to charcoal #222222.,criticeditor,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t0_criticeditor,../edits/900w-8g4EBLeikgE_t0_criticeditor/spec.json,../edits/900w-8g4EBLeikgE_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-u6z_9iKj-iQ,5,Object Addition,"layout,local",Add a small #F5C542 rangoli icon near the lower-left edge to balance the tiny bottom-right accent.,criticeditor,gemini/gemini-2.5-pro,1600w-u6z_9iKj-iQ_t5_criticeditor,../edits/1600w-u6z_9iKj-iQ_t5_criticeditor/spec.json,../edits/1600w-u6z_9iKj-iQ_t5_criticeditor/render.png,success
-1600w-ijK0RlZ5JR8-1,5,Object Addition,"layout,local",Add a small #2E7A7B dumbbell icon centered above “QUICK TIPS” inside the circle to fill the top space and complement the headline.,criticeditor,gemini/gemini-2.5-pro,1600w-ijK0RlZ5JR8-1_t5_criticeditor,../edits/1600w-ijK0RlZ5JR8-1_t5_criticeditor/spec.json,../edits/1600w-ijK0RlZ5JR8-1_t5_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-jlhsA8F30Lk,1,Translation,"text,global",Translate text to French: replace 'WE ARE OPEN TODAY' with 'NOUS SOMMES OUVERTS AUJOURD’HUI' and '10AM - 9PM' with '10h00–21h00'.,criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t1_criticeditor,../edits/1600w-jlhsA8F30Lk_t1_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t1_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-eqZAnXprFhg,2,2-Element Layout Swap,"layout,global","Swap the “Mind Map” headline with the “Explore ideas and information” subheading, placing “Mind Map” top-right and the subheading top-left, aligned to equal top margins.",criticeditor,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t2_criticeditor,../edits/1600w-eqZAnXprFhg_t2_criticeditor/spec.json,../edits/1600w-eqZAnXprFhg_t2_criticeditor/render.png,success
 1131w-zau150HLMWk,12,Contrast & Readability Enhancement,"color,style,local","Apply a subtle dark gray (#333) drop shadow to both ""You're my"" and ""lobster"" text to improve contrast against the light striped background.",criticeditor,gemini/gemini-2.5-pro,1131w-zau150HLMWk_t12_criticeditor,../edits/1131w-zau150HLMWk_t12_criticeditor/spec.json,../edits/1131w-zau150HLMWk_t12_criticeditor/render.png,success
-1600w-7YZFYlcCTPk,8,Typography Style Shift,"text,style,global","Set ""COMING SOON"" in a tall serif for a more elegant tone.",criticeditor,gemini/gemini-2.5-pro,1600w-7YZFYlcCTPk_t8_criticeditor,../edits/1600w-7YZFYlcCTPk_t8_criticeditor/spec.json,../edits/1600w-7YZFYlcCTPk_t8_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1131w-sSnAV2dB_qg,8,Typography Style Shift,"text,style,global","Switch the “AGENT” title to a tall serif uppercase to create a more elegant, refined tone.",criticeditor,gemini/gemini-2.5-pro,1131w-sSnAV2dB_qg_t8_criticeditor,../edits/1131w-sSnAV2dB_qg_t8_criticeditor/spec.json,../edits/1131w-sSnAV2dB_qg_t8_criticeditor/render.png,success
-1600w-DVXZyB158ss,3,Global Layout Change,"layout,global",Rebuild layout into two rows: top centered headline; bottom two equal columns with text left and full-height photo right; place signature in bottom-left footer.,criticeditor,gemini/gemini-2.5-pro,1600w-DVXZyB158ss_t3_criticeditor,../edits/1600w-DVXZyB158ss_t3_criticeditor/spec.json,../edits/1600w-DVXZyB158ss_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1280w-2LZs3UZm33E,6,Copy Expansion,"text,layout,global","Expand the small uppercase paragraph below “Guess What?” to 2–3× length with warm, indulgent chocolate-themed copy, preserving tone and centered alignment to test wrapping and overflow.",criticeditor,gemini/gemini-2.5-pro,1280w-2LZs3UZm33E_t6_criticeditor,../edits/1280w-2LZs3UZm33E_t6_criticeditor/spec.json,../edits/1280w-2LZs3UZm33E_t6_criticeditor/render.png,success
-1131w-tpnRumgzO8o,14,Theme Restyling,"style,color,global","Transform to winter fest theme: change palette to icy blues #0EA5E9 and #E0F2FE, replace 'SUMMER' with 'WINTER', swap burger illustration for snowflake cookie, keep layout.",criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t14_criticeditor,../edits/1131w-tpnRumgzO8o_t14_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-e_KkH19ObUk,3,Global Layout Change,"layout,global","Redesign into a split-screen layout: place flowers full-bleed right, stack heading, subtext, and button centered on the left, and move Heavenly Scent to the top-left as a logo.",criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t3_criticeditor,../edits/1600w-e_KkH19ObUk_t3_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-u6z_9iKj-iQ,14,Theme Restyling,"style,color,global","Restyle for Christmas: replace diyas with red-green candles, change headline to uppercase bold 'MERRY CHRISTMAS' and subhead to 'Season of Joy', shift palette to #184D3A and crimson, keep layout.",criticeditor,gemini/gemini-2.5-pro,1600w-u6z_9iKj-iQ_t14_criticeditor,../edits/1600w-u6z_9iKj-iQ_t14_criticeditor/spec.json,../edits/1600w-u6z_9iKj-iQ_t14_criticeditor/render.png,success
-1600w-_HHyJ9eyu3Q,4,Object Removal,"layout,local",Remove the “OUR LOGO” block with icon and text; vertically center “BRAND ASSETS” in the left panel and slightly increase its line spacing to maintain balance.,criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t4_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t4_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t4_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-9cN5biKALLQ,3,Global Layout Change,"layout,global","Rebuild into a two-panel layout: center ""ICE FOR SALE"" as one headline at top, put the price in a bold full-width bottom banner, increase outer margins.",criticeditor,gemini/gemini-2.5-pro,1131w-9cN5biKALLQ_t3_criticeditor,../edits/1131w-9cN5biKALLQ_t3_criticeditor/spec.json,../edits/1131w-9cN5biKALLQ_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1143w-6-Ht1iOh8uw,6,Copy Expansion,"text,layout,global","Expand the address line beneath the date into: ""123 Anywhere St., Any City, ST 12345 — main hall entrance on Maple; enjoy cake, games, and music with friends.""",criticeditor,gemini/gemini-2.5-pro,1143w-6-Ht1iOh8uw_t6_criticeditor,../edits/1143w-6-Ht1iOh8uw_t6_criticeditor/spec.json,../edits/1143w-6-Ht1iOh8uw_t6_criticeditor/render.png,success
-1131w-50t2MzJLmsM,11,Hierarchy Adjustment,"layout,text,global","Enlarge the steaming coffee cup illustration to fill center and shrink the “GRAND” headline, lightening it to #7DA7FF, so the cup becomes the primary focal point.",criticeditor,gemini/gemini-2.5-pro,1131w-50t2MzJLmsM_t11_criticeditor,../edits/1131w-50t2MzJLmsM_t11_criticeditor/spec.json,../edits/1131w-50t2MzJLmsM_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-NwdmmHkEOxk,2,2-Element Layout Swap,"layout,global","Swap the left panel star icon with the “Together, We Can Make a Difference” headline, placing the headline top-left and the star to its right for a balanced header.",criticeditor,gemini/gemini-2.5-pro,1600w-NwdmmHkEOxk_t2_criticeditor,../edits/1600w-NwdmmHkEOxk_t2_criticeditor/spec.json,../edits/1600w-NwdmmHkEOxk_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-GFKaeiEL8R0,2,2-Element Layout Swap,"layout,global","Swap the 3D shape cluster with the “Branding & Design” headline, placing the headline top-center and the shapes centered below it, maintaining equal vertical spacing.",criticeditor,gemini/gemini-2.5-pro,1600w-GFKaeiEL8R0_t2_criticeditor,../edits/1600w-GFKaeiEL8R0_t2_criticeditor/spec.json,../edits/1600w-GFKaeiEL8R0_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-rH9o0IzDWQY,3,Global Layout Change,"layout,global","Rebuild as a single-column poster: use full-bleed hero image on top, stack remaining three images in equal-height stripes below, center the headline and subheadline between hero and stripes.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t3_criticeditor,../edits/1131w-rH9o0IzDWQY_t3_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-9czv6kB-DXc,0,Color Palette Variation,"color,global","Replace the blue background, white bubble, red/yellow megaphone and labels, and black text with a cool light palette: background #F1F7FF, bubble #FFFFFF, accents #00A3FF/#673AB7, text charcoal #1E1E1E.",criticeditor,gemini/gemini-2.5-pro,1600w-9czv6kB-DXc_t0_criticeditor,../edits/1600w-9czv6kB-DXc_t0_criticeditor/spec.json,../edits/1600w-9czv6kB-DXc_t0_criticeditor/render.png,success
-1600w-OnW3L3V5tgI,0,Color Palette Variation,"color,global","Replace the cyan left panel and pink image block with deep forest green #184D3A and terracotta #D96D4C, and change all text to warm cream #FFF5E6 for consistent readability.",criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t0_criticeditor,../edits/1600w-OnW3L3V5tgI_t0_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 900w-8g4EBLeikgE,8,Typography Style Shift,"text,style,global","Replace the handwritten ""Fast, Fresh & Delicious"" script with italic tall serif lettering to shift the tone from playful to elegant.",criticeditor,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t8_criticeditor,../edits/900w-8g4EBLeikgE_t8_criticeditor/spec.json,../edits/900w-8g4EBLeikgE_t8_criticeditor/render.png,success
 1600w-xCuy4vLKWKc,10,Background Replacement,"image,color,global","Replace the terracotta background with a deep navy (#0B1E3A) solid color to create a sleek, professional mood while maintaining strong contrast for the white and light tan text.",criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t10_criticeditor,../edits/1600w-xCuy4vLKWKc_t10_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t10_criticeditor/render.png,success
-1257w-dnPJ18q1Q2E,0,Color Palette Variation,"color,global",Recolor to light mode: background pale blush #F7E5EA; all text deep charcoal #1D1D1D; neutralize red in the figure to warm neutrals.,criticeditor,gemini/gemini-2.5-pro,1257w-dnPJ18q1Q2E_t0_criticeditor,../edits/1257w-dnPJ18q1Q2E_t0_criticeditor/spec.json,../edits/1257w-dnPJ18q1Q2E_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-1EsFpGQoTQo,3,Global Layout Change,"layout,global","Restructure into a split layout: full-bleed image left; right column with vertically centered stacked headline, subhead, and CTA; transform top navigation into a left vertical sidebar; add wide padding.",criticeditor,gemini/gemini-2.5-pro,1280w-1EsFpGQoTQo_t3_criticeditor,../edits/1280w-1EsFpGQoTQo_t3_criticeditor/spec.json,../edits/1280w-1EsFpGQoTQo_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-jlhsA8F30Lk,6,Copy Expansion,"text,layout,global","Expand the speech-bubble headline into: ""We are open today and excited to serve you—drop in for quick pickups, friendly help, and new arrivals throughout the day.""",criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t6_criticeditor,../edits/1600w-jlhsA8F30Lk_t6_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t6_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-DBVzDPV0y5E,9,Accent Recolor,"color,local",Recolor the “SCIENCE LAB” title text to deep indigo #2D3A8C.,criticeditor,gemini/gemini-2.5-pro,1131w-DBVzDPV0y5E_t9_criticeditor,../edits/1131w-DBVzDPV0y5E_t9_criticeditor/spec.json,../edits/1131w-DBVzDPV0y5E_t9_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-D3Vl-1x6STM,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle 'New features launching soon' centered between -STAY TUNED- and the URL, in deep forest green #184D3A.",criticeditor,gemini/gemini-2.5-pro,1600w-D3Vl-1x6STM_t13_criticeditor,../edits/1600w-D3Vl-1x6STM_t13_criticeditor/spec.json,../edits/1600w-D3Vl-1x6STM_t13_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 624w-UZhVzgGhAZA,5,Object Addition,"layout,local",Add a small fork-and-knife icon in deep forest green centered above the address line to reinforce the lunch theme and balance the lower area.,criticeditor,gemini/gemini-2.5-pro,624w-UZhVzgGhAZA_t5_criticeditor,../edits/624w-UZhVzgGhAZA_t5_criticeditor/spec.json,../edits/624w-UZhVzgGhAZA_t5_criticeditor/render.png,success
-1600w-gOlznvJ4zdk,10,Background Replacement,"image,color,global","Replace the green grid with a soft sunset gradient from peach #FFD8C2 to lavender #D8C9FF, keeping the white content box and jar/title edges crisp for readability.",criticeditor,gemini/gemini-2.5-pro,1600w-gOlznvJ4zdk_t10_criticeditor,../edits/1600w-gOlznvJ4zdk_t10_criticeditor/spec.json,../edits/1600w-gOlznvJ4zdk_t10_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1257w-dnPJ18q1Q2E,10,Background Replacement,"image,color,global","Replace the red speckled background with a deep navy twilight sky (#0B1A36) with faint stars, preserving strong contrast behind the beige title and keeping the backlit figure unobstructed.",criticeditor,gemini/gemini-2.5-pro,1257w-dnPJ18q1Q2E_t10_criticeditor,../edits/1257w-dnPJ18q1Q2E_t10_criticeditor/spec.json,../edits/1257w-dnPJ18q1Q2E_t10_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-QVxrpF_dKgM,0,Color Palette Variation,"color,global",Replace the dominant red-and-white gingham and cream paper with mint #A8E6CF/white gingham and crisp white paper; swap tan tape for sunflower yellow #FFC300; keep all text black.,criticeditor,gemini/gemini-2.5-pro,1280w-QVxrpF_dKgM_t0_criticeditor,../edits/1280w-QVxrpF_dKgM_t0_criticeditor/spec.json,../edits/1280w-QVxrpF_dKgM_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-OnW3L3V5tgI,2,2-Element Layout Swap,"layout,global","Swap the dog photo with the ""HUMAN-GRADE. Dog-approved."" headline block, moving the photo left and text right, keeping both vertically centered to maintain balance.",criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t2_criticeditor,../edits/1600w-OnW3L3V5tgI_t2_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-6ODHj5q4uMY,4,Object Removal,"layout,local","Remove both decorative quote marks and corner lines; center the quote text horizontally, keeping it above the wooden surface with ample breathing room.",criticeditor,gemini/gemini-2.5-pro,1600w-6ODHj5q4uMY_t4_criticeditor,../edits/1600w-6ODHj5q4uMY_t4_criticeditor/spec.json,../edits/1600w-6ODHj5q4uMY_t4_criticeditor/render.png,success
 1280w-sqmHAnUAgsI,11,Hierarchy Adjustment,"layout,text,global",Enlarge the bottom-right duo photo to occupy 60% of the layout and move it to the center as the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t11_criticeditor,../edits/1280w-sqmHAnUAgsI_t11_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t11_criticeditor/render.png,success
-1600w-e_KkH19ObUk,8,Typography Style Shift,"text,style,global",Switch the “Blooming with” headline to a tall serif for a more elegant tone.,criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t8_criticeditor,../edits/1600w-e_KkH19ObUk_t8_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t8_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-jlhsA8F30Lk,5,Object Addition,"layout,local","Add a small white clock icon outlined in #FF6B8B to the right of ""10AM - 9PM"" inside the speech bubble to reinforce hours and balance empty space.",criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t5_criticeditor,../edits/1600w-jlhsA8F30Lk_t5_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t5_criticeditor/render.png,success
-1280w-IBJtTP4icf8,7,Image Replacement,"image,layout,local","Replace the café laptop-and-coffee tabletop with a bright kitchen island featuring a water carafe, sliced citrus, and a journal, maintaining similar angle and ample blank space for text.",criticeditor,gemini/gemini-2.5-pro,1280w-IBJtTP4icf8_t7_criticeditor,../edits/1280w-IBJtTP4icf8_t7_criticeditor/spec.json,../edits/1280w-IBJtTP4icf8_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-NEoYkSVC058,7,Image Replacement,"image,layout,local","Replace the left black‑and‑white model portrait with a similarly lit black‑and‑white portrait of a ballet dancer in studio, keeping strong window shadows for a graceful, artistic mood.",criticeditor,gemini/gemini-2.5-pro,1600w-NEoYkSVC058_t7_criticeditor,../edits/1600w-NEoYkSVC058_t7_criticeditor/spec.json,../edits/1600w-NEoYkSVC058_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1143w-ugSBoa9VtEw,11,Hierarchy Adjustment,"layout,text,global",Scale up the product tube by 70% to become the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1143w-ugSBoa9VtEw_t11_criticeditor,../edits/1143w-ugSBoa9VtEw_t11_criticeditor/spec.json,../edits/1143w-ugSBoa9VtEw_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-xCuy4vLKWKc,11,Hierarchy Adjustment,"layout,text,global",Enlarge and center the “Swipe for tips” button with a filled #184D3A background and white uppercase text to make it the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t11_criticeditor,../edits/1600w-xCuy4vLKWKc_t11_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-1HZYAUid2AE,14,Theme Restyling,"style,color,global","Restyle to a winter holiday theme: background #0B1A3A with light snowfall, replace emojis with snowflakes and gift icons, recolor CTA to festive red #E31D1D with white text.",criticeditor,gemini/gemini-2.5-pro,1600w-1HZYAUid2AE_t14_criticeditor,../edits/1600w-1HZYAUid2AE_t14_criticeditor/spec.json,../edits/1600w-1HZYAUid2AE_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-e_KkH19ObUk,2,2-Element Layout Swap,"layout,global","Swap positions of the bouquet image and “Blooming with brilliance” text block, placing the headline left and image right, keeping both vertically centered with equal side margins.",criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t2_criticeditor,../edits/1600w-e_KkH19ObUk_t2_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-J2-prU82nP4,1,Translation,"text,global","Replace the main headline 'DONT THINK TOO MUCH!' with the Spanish translation '¡NO PIENSES DEMASIADO!' in uppercase bold black, preserving layout and size.",criticeditor,gemini/gemini-2.5-pro,1600w-J2-prU82nP4_t1_criticeditor,../edits/1600w-J2-prU82nP4_t1_criticeditor/spec.json,../edits/1600w-J2-prU82nP4_t1_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-xPTl82ZC-e4,0,Color Palette Variation,"color,global","Swap the deep forest green background and salmon-pink elements to a light retro palette: warm cream (#FFF5E6) background, charcoal (#2B2B2B) text, and teal (#1E8A9E) accent details.",criticeditor,gemini/gemini-2.5-pro,1131w-xPTl82ZC-e4_t0_criticeditor,../edits/1131w-xPTl82ZC-e4_t0_criticeditor/spec.json,../edits/1131w-xPTl82ZC-e4_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-xCuy4vLKWKc,6,Copy Expansion,"text,layout,global",Replace the button text “Swipe for tips” with: “Swipe for tips and quick steps to start today.”,criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t6_criticeditor,../edits/1600w-xCuy4vLKWKc_t6_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t6_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-NcQMz5zOIyQ,7,Image Replacement,"image,layout,local",Replace the smiling woman holding a boombox amid star confetti on yellow with a solitary hiker holding a lantern amid drifting leaves on a deep forest green backdrop.,criticeditor,gemini/gemini-2.5-pro,1600w-NcQMz5zOIyQ_t7_criticeditor,../edits/1600w-NcQMz5zOIyQ_t7_criticeditor/spec.json,../edits/1600w-NcQMz5zOIyQ_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-OnW3L3V5tgI,9,Accent Recolor,"color,local",Recolor the “OUR FOOD” button background to vibrant coral #FF6F61.,criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t9_criticeditor,../edits/1600w-OnW3L3V5tgI_t9_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t9_criticeditor/render.png,success
-1600w-_HHyJ9eyu3Q,6,Copy Expansion,"text,layout,global","Expand the bottom-right tagline to: “Functional items for everyday living, thoughtfully designed to organize, carry, and brighten daily routines.”",criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t6_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t6_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t6_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-sqmHAnUAgsI,5,Object Addition,"layout,local",Add a small minimalist sun icon in warm gold #D4A645 to the top-center white gutter above the central photo.,criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t5_criticeditor,../edits/1280w-sqmHAnUAgsI_t5_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t5_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-IVdkMeHmo04,7,Image Replacement,"image,layout,local","Replace the dark, close-up tropical leaves background with a softly blurred candlelit ballroom backdrop, preserving shallow depth and dark vignette for a refined evening ambiance.",criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t7_criticeditor,../edits/1600w-IVdkMeHmo04_t7_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-bU_eCuLHDN8,8,Typography Style Shift,"text,style,global",Change “OUT OF OFFICE” to uppercase tall serif for a more elegant tone.,criticeditor,gemini/gemini-2.5-pro,1600w-bU_eCuLHDN8_t8_criticeditor,../edits/1600w-bU_eCuLHDN8_t8_criticeditor/spec.json,../edits/1600w-bU_eCuLHDN8_t8_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-TgB3qSfKXOY,11,Hierarchy Adjustment,"layout,text,global","Make the matcha glass the dominant focal by scaling it 140% and centering, while reducing “craving” and “maicha” to smaller size with #E9E3D0 at 60% opacity.",criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t11_criticeditor,../edits/1280w-TgB3qSfKXOY_t11_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-TgB3qSfKXOY,3,Global Layout Change,"layout,global","Reflow into a two-column grid: left column full-height glass; right column vertically stacks “BORCELLE CAFE”, “craving matcha” title, both badges, arrow, and @reallygreatsite; center elements with generous spacing.",criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t3_criticeditor,../edits/1280w-TgB3qSfKXOY_t3_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-tpnRumgzO8o,11,Hierarchy Adjustment,"layout,text,global",Center and enlarge the burger illustration to become the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t11_criticeditor,../edits/1131w-tpnRumgzO8o_t11_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t11_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 900w-8g4EBLeikgE,5,Object Addition,"layout,local","Add a tiny taco illustration in warm yellow #F2C94C to the right of the top-right ""Food"" label, right-aligned, to balance the header.",criticeditor,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t5_criticeditor,../edits/900w-8g4EBLeikgE_t5_criticeditor/spec.json,../edits/900w-8g4EBLeikgE_t5_criticeditor/render.png,success
 1280w-TgB3qSfKXOY,5,Object Addition,"layout,local",Add a small cream line-art matcha whisk icon in the top-left negative space to complement the drink and balance the right-side badge.,criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t5_criticeditor,../edits/1280w-TgB3qSfKXOY_t5_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t5_criticeditor/render.png,success
-1131w-50t2MzJLmsM,13,Add Secondary Text Block,"text,layout,local","Add a small italic sans-serif subtitle 'Sip, savor, celebrate.' left-aligned directly below 'OPENING' in #1E4ED8 to fill the upper-left spacing.",criticeditor,gemini/gemini-2.5-pro,1131w-50t2MzJLmsM_t13_criticeditor,../edits/1131w-50t2MzJLmsM_t13_criticeditor/spec.json,../edits/1131w-50t2MzJLmsM_t13_criticeditor/render.png,failed: list index out of range
 1600w-m4qQZp-grvQ,1,Translation,"text,global","Translate the headline ""BRAND PROPOSAL"" to Japanese ""ブランド提案"" and the oval text ""BORCELLE"" to ""ボルセル"".",criticeditor,gemini/gemini-2.5-pro,1600w-m4qQZp-grvQ_t1_criticeditor,../edits/1600w-m4qQZp-grvQ_t1_criticeditor/spec.json,../edits/1600w-m4qQZp-grvQ_t1_criticeditor/render.png,success
 1131w-rH9o0IzDWQY,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle centered beneath ""PREMIUM PRODUCT"" reading ""Clean ingredients. Gentle results."" in deep cocoa #3B261B to balance whitespace in the white diamond.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t13_criticeditor,../edits/1131w-rH9o0IzDWQY_t13_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t13_criticeditor/render.png,success
 1143w-6-Ht1iOh8uw,8,Typography Style Shift,"text,style,global",Replace the “Birthday Party” headline’s script with a tall serif italic to elevate the tone.,criticeditor,gemini/gemini-2.5-pro,1143w-6-Ht1iOh8uw_t8_criticeditor,../edits/1143w-6-Ht1iOh8uw_t8_criticeditor/spec.json,../edits/1143w-6-Ht1iOh8uw_t8_criticeditor/render.png,success
-1280w-sqmHAnUAgsI,14,Theme Restyling,"style,color,global","Restyle to winter-holiday theme: keep layout, switch borders to deep forest green with gold trim, add small snowflake corners, and place uppercase bold 'WINTER COLLECTION' title centered at top.",criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t14_criticeditor,../edits/1280w-sqmHAnUAgsI_t14_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-F-yK2D5pels,14,Theme Restyling,"style,color,global",Retheme for winter holidays: swap lime background for deep forest green (#184D3A); change all black text to white; recolor the top-right button to #C72C41 with white label.,criticeditor,gemini/gemini-2.5-pro,1600w-F-yK2D5pels_t14_criticeditor,../edits/1600w-F-yK2D5pels_t14_criticeditor/spec.json,../edits/1600w-F-yK2D5pels_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-gOlznvJ4zdk,9,Accent Recolor,"color,local",Recolor the “Self-Care Jar” title from dark green to warm coral #E86A5A.,criticeditor,gemini/gemini-2.5-pro,1600w-gOlznvJ4zdk_t9_criticeditor,../edits/1600w-gOlznvJ4zdk_t9_criticeditor/spec.json,../edits/1600w-gOlznvJ4zdk_t9_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-bU_eCuLHDN8,10,Background Replacement,"image,color,global","Replace the black-and-white checkerboard background with a soft peach-to-lavender gradient sky to calm the mood, keeping the lime panel and pink headline fully legible.",criticeditor,gemini/gemini-2.5-pro,1600w-bU_eCuLHDN8_t10_criticeditor,../edits/1600w-bU_eCuLHDN8_t10_criticeditor/spec.json,../edits/1600w-bU_eCuLHDN8_t10_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-IVdkMeHmo04,2,2-Element Layout Swap,"layout,global","Swap the headline “Gala of Hope” with the top-row event details, placing the headline across the top center and the details directly below as a centered row.",criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t2_criticeditor,../edits/1600w-IVdkMeHmo04_t2_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-DB7VCKEjrvU,3,Global Layout Change,"layout,global","Recompose into a two-column layout: left column holds the colorful emblem; right column stacks “LUMA” above “ART SPACE,” both center-aligned, with expanded outer margins and a balanced gutter.",criticeditor,gemini/gemini-2.5-pro,1600w-DB7VCKEjrvU_t3_criticeditor,../edits/1600w-DB7VCKEjrvU_t3_criticeditor/spec.json,../edits/1600w-DB7VCKEjrvU_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-zsrhBwj_J58,3,Global Layout Change,"layout,global",Reflow into a stacked layout: make the statue image the full-width top half; center “RETRO REWIND” mid-page with tagline below; place date-left/location-right band above footer; keep description above URL.,criticeditor,gemini/gemini-2.5-pro,1131w-zsrhBwj_J58_t3_criticeditor,../edits/1131w-zsrhBwj_J58_t3_criticeditor/spec.json,../edits/1131w-zsrhBwj_J58_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 900w-8g4EBLeikgE,7,Image Replacement,"image,layout,local","Replace the taco tray held by hands with a similar close-up of a colorful sushi bento in a paper tray held by hands, maintaining angle and composition.",criticeditor,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t7_criticeditor,../edits/900w-8g4EBLeikgE_t7_criticeditor/spec.json,../edits/900w-8g4EBLeikgE_t7_criticeditor/render.png,success
-1280w-IBJtTP4icf8,3,Global Layout Change,"layout,global",Reformat to a two-column layout: keep the coffee-table photo full-bleed on the left half; add a white right panel housing the current title and handle centered with wide margins.,criticeditor,gemini/gemini-2.5-pro,1280w-IBJtTP4icf8_t3_criticeditor,../edits/1280w-IBJtTP4icf8_t3_criticeditor/spec.json,../edits/1280w-IBJtTP4icf8_t3_criticeditor/render.png,failed: list index out of range
 848w-Xal0F5OfysY,9,Accent Recolor,"color,local","Recolor the ""CREATIVE"" text to deep coral #E4572E for strong contrast with the blue background.",criticeditor,gemini/gemini-2.5-pro,848w-Xal0F5OfysY_t9_criticeditor,../edits/848w-Xal0F5OfysY_t9_criticeditor/spec.json,../edits/848w-Xal0F5OfysY_t9_criticeditor/render.png,success
-848w-x9A8Hm2mD6U,5,Object Addition,"layout,local","Add a small outlined cloud icon in #6EC1E4 to the top-right empty space, right-aligned with the header to balance the hero.",criticeditor,gemini/gemini-2.5-pro,848w-x9A8Hm2mD6U_t5_criticeditor,../edits/848w-x9A8Hm2mD6U_t5_criticeditor/spec.json,../edits/848w-x9A8Hm2mD6U_t5_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-KZpYxSRdMn4,0,Color Palette Variation,"color,global","Recolor the beige background, dark green text/accents, and gold waves to a cool dark-mode palette: background #0F1720, text off-white, accents #2F80ED, secondary highlights silver #C0C7D1.",criticeditor,gemini/gemini-2.5-pro,1600w-KZpYxSRdMn4_t0_criticeditor,../edits/1600w-KZpYxSRdMn4_t0_criticeditor/spec.json,../edits/1600w-KZpYxSRdMn4_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1143w-ugSBoa9VtEw,7,Image Replacement,"image,layout,local","Swap the central skincare tube and lavender silk backdrop for a minimalist ceramic essential-oil diffuser on a pedestal with warm beige linen drape, evoking cozy, spa-like calm.",criticeditor,gemini/gemini-2.5-pro,1143w-ugSBoa9VtEw_t7_criticeditor,../edits/1143w-ugSBoa9VtEw_t7_criticeditor/spec.json,../edits/1143w-ugSBoa9VtEw_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-Cn6h5Tqrn10,6,Copy Expansion,"text,layout,global","Expand the quote to: ""Stay inspired, never stop creating; keep exploring ideas, trust your instincts, and let curiosity guide your craft every day toward meaningful work and steady growth.""",criticeditor,gemini/gemini-2.5-pro,1131w-Cn6h5Tqrn10_t6_criticeditor,../edits/1131w-Cn6h5Tqrn10_t6_criticeditor/spec.json,../edits/1131w-Cn6h5Tqrn10_t6_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-rH9o0IzDWQY,1,Translation,"text,global","Replace 'New' with 'Nuevo', 'PRODUCT' with 'PRODUCTO', and 'PREMIUM PRODUCT' with 'PRODUCTO PREMIUM'.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t1_criticeditor,../edits/1131w-rH9o0IzDWQY_t1_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t1_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-z8zt2gNZe3I,7,Image Replacement,"image,layout,local","Replace the right-side businessman portrait with a similarly framed right-side portrait of a cheerful community volunteer, shifting mood to compassion while retaining the dark teal background.",criticeditor,gemini/gemini-2.5-pro,1600w-z8zt2gNZe3I_t7_criticeditor,../edits/1600w-z8zt2gNZe3I_t7_criticeditor/spec.json,../edits/1600w-z8zt2gNZe3I_t7_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-TgB3qSfKXOY,12,Contrast & Readability Enhancement,"color,style,local",Apply a soft deep forest green (#184D3A) drop shadow to the cream “craving” and “maicha” headlines to boost contrast against the light starbursts and green background.,criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t12_criticeditor,../edits/1280w-TgB3qSfKXOY_t12_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t12_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-tpnRumgzO8o,8,Typography Style Shift,"text,style,global","Switch the “SUMMER” headline to a tall serif, lightweight uppercase for a more elegant tone.",criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t8_criticeditor,../edits/1131w-tpnRumgzO8o_t8_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t8_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-sqmHAnUAgsI,3,Global Layout Change,"layout,global","Rebuild the layout: use a full-bleed hero spanning the top; arrange all remaining images below in a centered 3-column grid with equal gutters, 10% outer margins, and consistent vertical spacing.",criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t3_criticeditor,../edits/1280w-sqmHAnUAgsI_t3_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t3_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1280w-1EsFpGQoTQo,14,Theme Restyling,"style,color,global","Transform into a winter holiday theme by replacing the pool photo with a snowy workspace and changing all outline/button/text accents to forest green #184D3A and cranberry #C61A1A, preserving layout.",criticeditor,gemini/gemini-2.5-pro,1280w-1EsFpGQoTQo_t14_criticeditor,../edits/1280w-1EsFpGQoTQo_t14_criticeditor/spec.json,../edits/1280w-1EsFpGQoTQo_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-m4qQZp-grvQ,5,Object Addition,"layout,local","Add a small minimalist compass icon in #B22222 to the top-right sky area, aligning with the title’s red and balancing the layout.",criticeditor,gemini/gemini-2.5-pro,1600w-m4qQZp-grvQ_t5_criticeditor,../edits/1600w-m4qQZp-grvQ_t5_criticeditor/spec.json,../edits/1600w-m4qQZp-grvQ_t5_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-A9ARWpzo3xk,4,Object Removal,"layout,local",Remove the right-side “SINCE 2025”; move “CREATIVE STUDIO” to center beneath the logo and slightly reduce the gap for balanced spacing.,criticeditor,gemini/gemini-2.5-pro,1600w-A9ARWpzo3xk_t4_criticeditor,../edits/1600w-A9ARWpzo3xk_t4_criticeditor/spec.json,../edits/1600w-A9ARWpzo3xk_t4_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1600w-bU_eCuLHDN8,1,Translation,"text,global","Translate all text to Spanish, changing 'A LITTLE HEADS UP' to 'UN PEQUEÑO AVISO' and 'OUT OF OFFICE' to 'FUERA DE LA OFICINA'.",criticeditor,gemini/gemini-2.5-pro,1600w-bU_eCuLHDN8_t1_criticeditor,../edits/1600w-bU_eCuLHDN8_t1_criticeditor/spec.json,../edits/1600w-bU_eCuLHDN8_t1_criticeditor/render.png,success
 1131w-HeJuVR7Avb0,6,Copy Expansion,"text,layout,global","Replace the vertical “ITALY” with a small sans-serif paragraph in deep forest green: “Italy—sunlit cliffs, pastel villages, lemon groves, steep steps, and salty sea breezes.”",criticeditor,gemini/gemini-2.5-pro,1131w-HeJuVR7Avb0_t6_criticeditor,../edits/1131w-HeJuVR7Avb0_t6_criticeditor/spec.json,../edits/1131w-HeJuVR7Avb0_t6_criticeditor/render.png,success
-1600w-J2-prU82nP4,8,Typography Style Shift,"text,style,global","Switch the headline ""DONT THINK TOO MUCH!"" to a tall serif.",criticeditor,gemini/gemini-2.5-pro,1600w-J2-prU82nP4_t8_criticeditor,../edits/1600w-J2-prU82nP4_t8_criticeditor/spec.json,../edits/1600w-J2-prU82nP4_t8_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-eqZAnXprFhg,12,Contrast & Readability Enhancement,"color,style,local",Set the body text in all pale yellow and beige note boxes to #1A1A1A to improve contrast against the light backgrounds.,criticeditor,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t12_criticeditor,../edits/1600w-eqZAnXprFhg_t12_criticeditor/spec.json,../edits/1600w-eqZAnXprFhg_t12_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-p1o6ND26wWg,14,Theme Restyling,"style,color,global",Restyle for winter holidays: keep layout; use snow-white background with subtle snowflakes; recolor buttons and headline deep forest green with holly red accents; swap drink for a peppermint latte.,criticeditor,gemini/gemini-2.5-pro,1600w-p1o6ND26wWg_t14_criticeditor,../edits/1600w-p1o6ND26wWg_t14_criticeditor/spec.json,../edits/1600w-p1o6ND26wWg_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-3FMwHZotkUM,14,Theme Restyling,"style,color,global","Restyle to winter-holiday theme: change background to snowy #F6FAF2, set headings deep forest green (#184D3A), button crimson (#C41E3A), and overlay small gold star badges on each image; keep layout.",criticeditor,gemini/gemini-2.5-pro,1600w-3FMwHZotkUM_t14_criticeditor,../edits/1600w-3FMwHZotkUM_t14_criticeditor/spec.json,../edits/1600w-3FMwHZotkUM_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-mQV8WxekDho,1,Translation,"text,global","Translate text to French: 'VOTRE LOGO', 'NE MANQUEZ PAS', 'NOTRE PROMOTION EXCLUSIVE EST LÀ !', 'AOÛT - NOV. 2099', '123 RUE ANYWHERE, ANY CITY, ST 12345'; keep handle/URL.",criticeditor,gemini/gemini-2.5-pro,1600w-mQV8WxekDho_t1_criticeditor,../edits/1600w-mQV8WxekDho_t1_criticeditor/spec.json,../edits/1600w-mQV8WxekDho_t1_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-jlhsA8F30Lk,2,2-Element Layout Swap,"layout,global","Swap the megaphone with the speech-bubble headline, placing the bubble left and megaphone right, aligning both vertically centered for balance.",criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t2_criticeditor,../edits/1600w-jlhsA8F30Lk_t2_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t2_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-_HHyJ9eyu3Q,10,Background Replacement,"image,color,global","Replace the maroon and red backgrounds with a deep navy #0B1A33 studio backdrop to create a calmer mood while keeping the white shirts, baskets, and light blue headings readable.",criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t10_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t10_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t10_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1131w-120Kpwxx3eY,0,Color Palette Variation,"color,global","Swap the cobalt blue accents and cream background to a warm desert palette: sand background #F6E7D7, terracotta headings/icons #C1523C, and charcoal body text/lines #2F2F2F.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t0_criticeditor,../edits/1131w-120Kpwxx3eY_t0_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-NwdmmHkEOxk,0,Color Palette Variation,"color,global","Recolor peach, mint, and yellow accents to a cool blue palette: fills #E8F4FF, strokes/icons #1FA3B2, highlights #0B2347; keep black text.",criticeditor,gemini/gemini-2.5-pro,1600w-NwdmmHkEOxk_t0_criticeditor,../edits/1600w-NwdmmHkEOxk_t0_criticeditor/spec.json,../edits/1600w-NwdmmHkEOxk_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-9eXC-dXI0uE,0,Color Palette Variation,"color,global","Recolor background to charcoal #0F1220, convert all purple elements to cyan #00C2D1, switch black text to white, and set button outline cyan with white label",criticeditor,gemini/gemini-2.5-pro,1600w-9eXC-dXI0uE_t0_criticeditor,../edits/1600w-9eXC-dXI0uE_t0_criticeditor/spec.json,../edits/1600w-9eXC-dXI0uE_t0_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-CxALar1xspQ,14,Theme Restyling,"style,color,global","Convert the layout to a winter holiday theme by switching greens to #B30000 and #D4AF37, adding a faint snowflake overlay, and updating the button copy to ""shop holiday services"".",criticeditor,gemini/gemini-2.5-pro,1600w-CxALar1xspQ_t14_criticeditor,../edits/1600w-CxALar1xspQ_t14_criticeditor/spec.json,../edits/1600w-CxALar1xspQ_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
-1600w-laANf5rvLUw,14,Theme Restyling,"style,color,global","Recolor the entire design to a festive holiday palette: background deep forest green #184D3A, furry 2024 rich crimson #B5121B, text warm cream, preserving the layout.",criticeditor,gemini/gemini-2.5-pro,1600w-laANf5rvLUw_t14_criticeditor,../edits/1600w-laANf5rvLUw_t14_criticeditor/spec.json,../edits/1600w-laANf5rvLUw_t14_criticeditor/render.png,"failed: litellm.InternalServerError: litellm.InternalServerError: geminiException - {
-  ""error"": {
-    ""code"": 503,
-    ""message"": ""The model is overloaded. Please try again later."",
-    ""status"": ""UNAVAILABLE""
-  }
-}
-"
 1131w-9cN5biKALLQ,10,Background Replacement,"image,color,global","Replace the plain light blue background with a frosty cracked-ice texture in pale teal gradient (#E6F7FA to #CDEFF4), keeping the dark blue headline and price highly legible.",imageedit,gemini/gemini-2.5-pro,1131w-9cN5biKALLQ_t10_imageedit,../edits/1131w-9cN5biKALLQ_t10_imageedit/spec.json,../edits/1131w-9cN5biKALLQ_t10_imageedit/render.png,success
 1131w-w2bliFOwlfc,4,Object Removal,"layout,local",Remove the red starburst icon left of the phone; slightly enlarge and center the phone to rebalance the layout while keeping the nostalgic tone.,imageedit,gemini/gemini-2.5-pro,1131w-w2bliFOwlfc_t4_imageedit,../edits/1131w-w2bliFOwlfc_t4_imageedit/spec.json,../edits/1131w-w2bliFOwlfc_t4_imageedit/render.png,success
 1600w-m4qQZp-grvQ,12,Contrast & Readability Enhancement,"color,style,local",Add a semi-transparent deep charcoal (#1E1E1E) oval fill inside the existing white outline behind “BORCELLE” to improve contrast against the beige jacket.,imageedit,gemini/gemini-2.5-pro,1600w-m4qQZp-grvQ_t12_imageedit,../edits/1600w-m4qQZp-grvQ_t12_imageedit/spec.json,../edits/1600w-m4qQZp-grvQ_t12_imageedit/render.png,success
@@ -1794,3 +1105,97 @@ design,template_id,template_name,categories,instruction,agent,model,edit_id,edit
 1600w-_HHyJ9eyu3Q,10,Background Replacement,"image,color,global","Replace the maroon and red backgrounds with a deep navy #0B1A33 studio backdrop to create a calmer mood while keeping the white shirts, baskets, and light blue headings readable.",imageedit,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t10_imageedit,../edits/1600w-_HHyJ9eyu3Q_t10_imageedit/spec.json,../edits/1600w-_HHyJ9eyu3Q_t10_imageedit/render.png,success
 1600w-CxALar1xspQ,14,Theme Restyling,"style,color,global","Convert the layout to a winter holiday theme by switching greens to #B30000 and #D4AF37, adding a faint snowflake overlay, and updating the button copy to ""shop holiday services"".",imageedit,gemini/gemini-2.5-pro,1600w-CxALar1xspQ_t14_imageedit,../edits/1600w-CxALar1xspQ_t14_imageedit/spec.json,../edits/1600w-CxALar1xspQ_t14_imageedit/render.png,success
 1600w-J2-prU82nP4,8,Typography Style Shift,"text,style,global","Switch the headline ""DONT THINK TOO MUCH!"" to a tall serif.",imageedit,gemini/gemini-2.5-pro,1600w-J2-prU82nP4_t8_imageedit,../edits/1600w-J2-prU82nP4_t8_imageedit/spec.json,../edits/1600w-J2-prU82nP4_t8_imageedit/render.png,success
+1131w-120Kpwxx3eY,2,2-Element Layout Swap,"layout,global","Swap positions of the top-left portrait photo and the “Estelle Darcy” headline block, preserving equal margins and left-aligning each element within its new column.",singleshot,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t2_singleshot,../edits/1131w-120Kpwxx3eY_t2_singleshot/spec.json,../edits/1131w-120Kpwxx3eY_t2_singleshot/render.png,success
+1131w-02GXIIidf_4,8,Typography Style Shift,"text,style,global",Switch the “DONNA” header to title-case tall serif in regular weight to soften the tone.,multishot,gemini/gemini-2.5-pro,1131w-02GXIIidf_4_t8_multishot,../edits/1131w-02GXIIidf_4_t8_multishot/spec.json,../edits/1131w-02GXIIidf_4_t8_multishot/render.png,success
+900w-r5rfhPArHDg,6,Copy Expansion,"text,layout,global","Replace the lower-left sentence with: Enjoy our crispy waffle with rich chocolate sauce—freshly baked, wonderfully warm, indulgent and satisfying, perfect for sharing and pairing with coffee or afternoon tea.",multishot,gemini/gemini-2.5-pro,900w-r5rfhPArHDg_t6_multishot,../edits/900w-r5rfhPArHDg_t6_multishot/spec.json,../edits/900w-r5rfhPArHDg_t6_multishot/render.png,success
+1600w-eqZAnXprFhg,2,2-Element Layout Swap,"layout,global","Swap the “Mind Map” headline with the “Explore ideas and information” subheading, placing “Mind Map” top-right and the subheading top-left, aligned to equal top margins.",multishot,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t2_multishot,../edits/1600w-eqZAnXprFhg_t2_multishot/spec.json,../edits/1600w-eqZAnXprFhg_t2_multishot/render.png,success
+1131w-120Kpwxx3eY,13,Add Secondary Text Block,"text,layout,local","Add a small italic supporting line beneath ""Graphic Designer"" reading ""Creating clean, thoughtful visuals that solve problems"" in muted gray #6B6B6B.",multishot,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t13_multishot,../edits/1131w-120Kpwxx3eY_t13_multishot/spec.json,../edits/1131w-120Kpwxx3eY_t13_multishot/render.png,success
+1600w-GQFPH6ndGO4,9,Accent Recolor,"color,local","Recolor the ""EVERY DAY"" button background to deep forest green (#184D3A).",criticeditor,gemini/gemini-2.5-pro,1600w-GQFPH6ndGO4_t9_criticeditor,../edits/1600w-GQFPH6ndGO4_t9_criticeditor/spec.json,../edits/1600w-GQFPH6ndGO4_t9_criticeditor/render.png,success
+1131w-oRypOitC9EY,12,Contrast & Readability Enhancement,"color,style,local","Switch all small pink text on the teal background (top labels, “BORCELLE PRESENTS,” address, FREE ENTRY, date/time) to white for higher contrast.",criticeditor,gemini/gemini-2.5-pro,1131w-oRypOitC9EY_t12_criticeditor,../edits/1131w-oRypOitC9EY_t12_criticeditor/spec.json,../edits/1131w-oRypOitC9EY_t12_criticeditor/render.png,success
+1600w-GQFPH6ndGO4,11,Hierarchy Adjustment,"layout,text,global",Shrink the “IMPROVE YOURSELF” headline to body size so the portrait becomes the dominant focal point.,criticeditor,gemini/gemini-2.5-pro,1600w-GQFPH6ndGO4_t11_criticeditor,../edits/1600w-GQFPH6ndGO4_t11_criticeditor/spec.json,../edits/1600w-GQFPH6ndGO4_t11_criticeditor/render.png,success
+1280w-l2k_WnNosUU,5,Object Addition,"layout,local","Add a small #184D3A calendar icon to the top-right of the ""upcoming EVENTS"" header, aligned vertically with the title, to fill whitespace and balance the layout.",criticeditor,gemini/gemini-2.5-pro,1280w-l2k_WnNosUU_t5_criticeditor,../edits/1280w-l2k_WnNosUU_t5_criticeditor/spec.json,../edits/1280w-l2k_WnNosUU_t5_criticeditor/render.png,success
+900w-8g4EBLeikgE,0,Color Palette Variation,"color,global",Recolor palette: switch beige background to pale mint #E8F7F2; change mustard headline to deep teal #0D7068; set all body/CTA text and icons to charcoal #222222.,criticeditor,gemini/gemini-2.5-pro,900w-8g4EBLeikgE_t0_criticeditor,../edits/900w-8g4EBLeikgE_t0_criticeditor/spec.json,../edits/900w-8g4EBLeikgE_t0_criticeditor/render.png,success
+1200w-taPfkpk_5cE,6,Copy Expansion,"text,layout,global","Expand the lower body paragraph to roughly 2–3× length, adding welcoming details about monthly picks, lively discussions, newcomer-friendly vibe, and keeping the address, while maintaining tone and layout balance.",criticeditor,gemini/gemini-2.5-pro,1200w-taPfkpk_5cE_t6_criticeditor,../edits/1200w-taPfkpk_5cE_t6_criticeditor/spec.json,../edits/1200w-taPfkpk_5cE_t6_criticeditor/render.png,success
+1600w-e_KkH19ObUk,3,Global Layout Change,"layout,global","Redesign into a split-screen layout: place flowers full-bleed right, stack heading, subtext, and button centered on the left, and move Heavenly Scent to the top-left as a logo.",criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t3_criticeditor,../edits/1600w-e_KkH19ObUk_t3_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t3_criticeditor/render.png,success
+1257w-dnPJ18q1Q2E,0,Color Palette Variation,"color,global",Recolor to light mode: background pale blush #F7E5EA; all text deep charcoal #1D1D1D; neutralize red in the figure to warm neutrals.,criticeditor,gemini/gemini-2.5-pro,1257w-dnPJ18q1Q2E_t0_criticeditor,../edits/1257w-dnPJ18q1Q2E_t0_criticeditor/spec.json,../edits/1257w-dnPJ18q1Q2E_t0_criticeditor/render.png,success
+1600w-ijK0RlZ5JR8-1,5,Object Addition,"layout,local",Add a small #2E7A7B dumbbell icon centered above “QUICK TIPS” inside the circle to fill the top space and complement the headline.,criticeditor,gemini/gemini-2.5-pro,1600w-ijK0RlZ5JR8-1_t5_criticeditor,../edits/1600w-ijK0RlZ5JR8-1_t5_criticeditor/spec.json,../edits/1600w-ijK0RlZ5JR8-1_t5_criticeditor/render.png,success
+1131w-rH9o0IzDWQY,3,Global Layout Change,"layout,global","Rebuild as a single-column poster: use full-bleed hero image on top, stack remaining three images in equal-height stripes below, center the headline and subheadline between hero and stripes.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t3_criticeditor,../edits/1131w-rH9o0IzDWQY_t3_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t3_criticeditor/render.png,success
+1600w-7YZFYlcCTPk,8,Typography Style Shift,"text,style,global","Set ""COMING SOON"" in a tall serif for a more elegant tone.",criticeditor,gemini/gemini-2.5-pro,1600w-7YZFYlcCTPk_t8_criticeditor,../edits/1600w-7YZFYlcCTPk_t8_criticeditor/spec.json,../edits/1600w-7YZFYlcCTPk_t8_criticeditor/render.png,success
+1131w-HeJuVR7Avb0,2,2-Element Layout Swap,"layout,global","Swap the top ""POSITANO"" headline with the bottom ""AMALFI COAST"" headline, keeping both centered and maintaining equal top and bottom margins for balance.",criticeditor,gemini/gemini-2.5-pro,1131w-HeJuVR7Avb0_t2_criticeditor,../edits/1131w-HeJuVR7Avb0_t2_criticeditor/spec.json,../edits/1131w-HeJuVR7Avb0_t2_criticeditor/render.png,success
+1600w-3BBdsD4EXsY,7,Image Replacement,"image,layout,local","Swap the central easel-and-canvas illustration for a cafe-style A-frame chalkboard sign, maintaining the centered text area.",criticeditor,gemini/gemini-2.5-pro,1600w-3BBdsD4EXsY_t7_criticeditor,../edits/1600w-3BBdsD4EXsY_t7_criticeditor/spec.json,../edits/1600w-3BBdsD4EXsY_t7_criticeditor/render.png,success
+1600w-DVXZyB158ss,3,Global Layout Change,"layout,global",Rebuild layout into two rows: top centered headline; bottom two equal columns with text left and full-height photo right; place signature in bottom-left footer.,criticeditor,gemini/gemini-2.5-pro,1600w-DVXZyB158ss_t3_criticeditor,../edits/1600w-DVXZyB158ss_t3_criticeditor/spec.json,../edits/1600w-DVXZyB158ss_t3_criticeditor/render.png,success
+1600w-jlhsA8F30Lk,1,Translation,"text,global",Translate text to French: replace 'WE ARE OPEN TODAY' with 'NOUS SOMMES OUVERTS AUJOURD’HUI' and '10AM - 9PM' with '10h00–21h00'.,criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t1_criticeditor,../edits/1600w-jlhsA8F30Lk_t1_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t1_criticeditor/render.png,success
+1280w-1EsFpGQoTQo,3,Global Layout Change,"layout,global","Restructure into a split layout: full-bleed image left; right column with vertically centered stacked headline, subhead, and CTA; transform top navigation into a left vertical sidebar; add wide padding.",criticeditor,gemini/gemini-2.5-pro,1280w-1EsFpGQoTQo_t3_criticeditor,../edits/1280w-1EsFpGQoTQo_t3_criticeditor/spec.json,../edits/1280w-1EsFpGQoTQo_t3_criticeditor/render.png,success
+1131w-9cN5biKALLQ,3,Global Layout Change,"layout,global","Rebuild into a two-panel layout: center ""ICE FOR SALE"" as one headline at top, put the price in a bold full-width bottom banner, increase outer margins.",criticeditor,gemini/gemini-2.5-pro,1131w-9cN5biKALLQ_t3_criticeditor,../edits/1131w-9cN5biKALLQ_t3_criticeditor/spec.json,../edits/1131w-9cN5biKALLQ_t3_criticeditor/render.png,success
+1280w-QVxrpF_dKgM,0,Color Palette Variation,"color,global",Replace the dominant red-and-white gingham and cream paper with mint #A8E6CF/white gingham and crisp white paper; swap tan tape for sunflower yellow #FFC300; keep all text black.,criticeditor,gemini/gemini-2.5-pro,1280w-QVxrpF_dKgM_t0_criticeditor,../edits/1280w-QVxrpF_dKgM_t0_criticeditor/spec.json,../edits/1280w-QVxrpF_dKgM_t0_criticeditor/render.png,success
+1600w-_HHyJ9eyu3Q,4,Object Removal,"layout,local",Remove the “OUR LOGO” block with icon and text; vertically center “BRAND ASSETS” in the left panel and slightly increase its line spacing to maintain balance.,criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t4_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t4_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t4_criticeditor/render.png,success
+1280w-1EsFpGQoTQo,14,Theme Restyling,"style,color,global","Transform into a winter holiday theme by replacing the pool photo with a snowy workspace and changing all outline/button/text accents to forest green #184D3A and cranberry #C61A1A, preserving layout.",criticeditor,gemini/gemini-2.5-pro,1280w-1EsFpGQoTQo_t14_criticeditor,../edits/1280w-1EsFpGQoTQo_t14_criticeditor/spec.json,../edits/1280w-1EsFpGQoTQo_t14_criticeditor/render.png,success
+1600w-qWWXRzbWBOk,0,Color Palette Variation,"color,global",Replace the dominant azure-blue and cream gradient palette with a deep forest green-to-teal twilight gradient; switch text and star accents to warm ivory #FFF4E6 for high contrast.,criticeditor,gemini/gemini-2.5-pro,1600w-qWWXRzbWBOk_t0_criticeditor,../edits/1600w-qWWXRzbWBOk_t0_criticeditor/spec.json,../edits/1600w-qWWXRzbWBOk_t0_criticeditor/render.png,success
+1600w-CxALar1xspQ,3,Global Layout Change,"layout,global","Rearrange to a centered single-column layout: move full-width photo into a top banner over the green background; stack title, quote, CTA, and contact info below, evenly spaced.",criticeditor,gemini/gemini-2.5-pro,1600w-CxALar1xspQ_t3_criticeditor,../edits/1600w-CxALar1xspQ_t3_criticeditor/spec.json,../edits/1600w-CxALar1xspQ_t3_criticeditor/render.png,success
+1600w-qWWXRzbWBOk,14,Theme Restyling,"style,color,global","Transform into a winter holiday theme: switch blue gradient to deep forest green and cranberry, swap stars for snowflakes, and change quote to warm white with gold sparkles.",criticeditor,gemini/gemini-2.5-pro,1600w-qWWXRzbWBOk_t14_criticeditor,../edits/1600w-qWWXRzbWBOk_t14_criticeditor/spec.json,../edits/1600w-qWWXRzbWBOk_t14_criticeditor/render.png,success
+1600w-jlhsA8F30Lk,6,Copy Expansion,"text,layout,global","Expand the speech-bubble headline into: ""We are open today and excited to serve you—drop in for quick pickups, friendly help, and new arrivals throughout the day.""",criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t6_criticeditor,../edits/1600w-jlhsA8F30Lk_t6_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t6_criticeditor/render.png,success
+1131w-xPTl82ZC-e4,5,Object Addition,"layout,local","Add a small peach-pink retro film reel icon to the right of ""FREE ENTRY"", aligning center with the text to balance the left date/time.",criticeditor,gemini/gemini-2.5-pro,1131w-xPTl82ZC-e4_t5_criticeditor,../edits/1131w-xPTl82ZC-e4_t5_criticeditor/spec.json,../edits/1131w-xPTl82ZC-e4_t5_criticeditor/render.png,success
+1131w-50t2MzJLmsM,11,Hierarchy Adjustment,"layout,text,global","Enlarge the steaming coffee cup illustration to fill center and shrink the “GRAND” headline, lightening it to #7DA7FF, so the cup becomes the primary focal point.",criticeditor,gemini/gemini-2.5-pro,1131w-50t2MzJLmsM_t11_criticeditor,../edits/1131w-50t2MzJLmsM_t11_criticeditor/spec.json,../edits/1131w-50t2MzJLmsM_t11_criticeditor/render.png,success
+1600w-D3Vl-1x6STM,13,Add Secondary Text Block,"text,layout,local","Add a small sans-serif subtitle 'New features launching soon' centered between -STAY TUNED- and the URL, in deep forest green #184D3A.",criticeditor,gemini/gemini-2.5-pro,1600w-D3Vl-1x6STM_t13_criticeditor,../edits/1600w-D3Vl-1x6STM_t13_criticeditor/spec.json,../edits/1600w-D3Vl-1x6STM_t13_criticeditor/render.png,success
+1131w-DBVzDPV0y5E,9,Accent Recolor,"color,local",Recolor the “SCIENCE LAB” title text to deep indigo #2D3A8C.,criticeditor,gemini/gemini-2.5-pro,1131w-DBVzDPV0y5E_t9_criticeditor,../edits/1131w-DBVzDPV0y5E_t9_criticeditor/spec.json,../edits/1131w-DBVzDPV0y5E_t9_criticeditor/render.png,success
+1280w-IBJtTP4icf8,7,Image Replacement,"image,layout,local","Replace the café laptop-and-coffee tabletop with a bright kitchen island featuring a water carafe, sliced citrus, and a journal, maintaining similar angle and ample blank space for text.",criticeditor,gemini/gemini-2.5-pro,1280w-IBJtTP4icf8_t7_criticeditor,../edits/1280w-IBJtTP4icf8_t7_criticeditor/spec.json,../edits/1280w-IBJtTP4icf8_t7_criticeditor/render.png,success
+1600w-K18O8e4K488,7,Image Replacement,"image,layout,local","Replace the circular speaker headshot with a smiling yoga instructor in studio lighting, keeping the same close-up composition, to shift from business webinar to wellness session.",criticeditor,gemini/gemini-2.5-pro,1600w-K18O8e4K488_t7_criticeditor,../edits/1600w-K18O8e4K488_t7_criticeditor/spec.json,../edits/1600w-K18O8e4K488_t7_criticeditor/render.png,success
+1600w-e_KkH19ObUk,8,Typography Style Shift,"text,style,global",Switch the “Blooming with” headline to a tall serif for a more elegant tone.,criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t8_criticeditor,../edits/1600w-e_KkH19ObUk_t8_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t8_criticeditor/render.png,success
+1600w-NEoYkSVC058,7,Image Replacement,"image,layout,local","Replace the left black‑and‑white model portrait with a similarly lit black‑and‑white portrait of a ballet dancer in studio, keeping strong window shadows for a graceful, artistic mood.",criticeditor,gemini/gemini-2.5-pro,1600w-NEoYkSVC058_t7_criticeditor,../edits/1600w-NEoYkSVC058_t7_criticeditor/spec.json,../edits/1600w-NEoYkSVC058_t7_criticeditor/render.png,success
+1131w-120Kpwxx3eY,14,Theme Restyling,"style,color,global","Restyle to a Lunar New Year theme using #C81D25 and #F2C12E accents, replacing the top doodles with small lantern icons while preserving the layout.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t14_criticeditor,../edits/1131w-120Kpwxx3eY_t14_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t14_criticeditor/render.png,success
+1600w-1HZYAUid2AE,14,Theme Restyling,"style,color,global","Restyle to a winter holiday theme: background #0B1A3A with light snowfall, replace emojis with snowflakes and gift icons, recolor CTA to festive red #E31D1D with white text.",criticeditor,gemini/gemini-2.5-pro,1600w-1HZYAUid2AE_t14_criticeditor,../edits/1600w-1HZYAUid2AE_t14_criticeditor/spec.json,../edits/1600w-1HZYAUid2AE_t14_criticeditor/render.png,success
+1257w-dnPJ18q1Q2E,10,Background Replacement,"image,color,global","Replace the red speckled background with a deep navy twilight sky (#0B1A36) with faint stars, preserving strong contrast behind the beige title and keeping the backlit figure unobstructed.",criticeditor,gemini/gemini-2.5-pro,1257w-dnPJ18q1Q2E_t10_criticeditor,../edits/1257w-dnPJ18q1Q2E_t10_criticeditor/spec.json,../edits/1257w-dnPJ18q1Q2E_t10_criticeditor/render.png,success
+1600w-NcQMz5zOIyQ,7,Image Replacement,"image,layout,local",Replace the smiling woman holding a boombox amid star confetti on yellow with a solitary hiker holding a lantern amid drifting leaves on a deep forest green backdrop.,criticeditor,gemini/gemini-2.5-pro,1600w-NcQMz5zOIyQ_t7_criticeditor,../edits/1600w-NcQMz5zOIyQ_t7_criticeditor/spec.json,../edits/1600w-NcQMz5zOIyQ_t7_criticeditor/render.png,success
+1600w-gOlznvJ4zdk,10,Background Replacement,"image,color,global","Replace the green grid with a soft sunset gradient from peach #FFD8C2 to lavender #D8C9FF, keeping the white content box and jar/title edges crisp for readability.",criticeditor,gemini/gemini-2.5-pro,1600w-gOlznvJ4zdk_t10_criticeditor,../edits/1600w-gOlznvJ4zdk_t10_criticeditor/spec.json,../edits/1600w-gOlznvJ4zdk_t10_criticeditor/render.png,success
+1600w-OnW3L3V5tgI,2,2-Element Layout Swap,"layout,global","Swap the dog photo with the ""HUMAN-GRADE. Dog-approved."" headline block, moving the photo left and text right, keeping both vertically centered to maintain balance.",criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t2_criticeditor,../edits/1600w-OnW3L3V5tgI_t2_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t2_criticeditor/render.png,success
+1143w-ugSBoa9VtEw,11,Hierarchy Adjustment,"layout,text,global",Scale up the product tube by 70% to become the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1143w-ugSBoa9VtEw_t11_criticeditor,../edits/1143w-ugSBoa9VtEw_t11_criticeditor/spec.json,../edits/1143w-ugSBoa9VtEw_t11_criticeditor/render.png,success
+1280w-sqmHAnUAgsI,14,Theme Restyling,"style,color,global","Restyle to winter-holiday theme: keep layout, switch borders to deep forest green with gold trim, add small snowflake corners, and place uppercase bold 'WINTER COLLECTION' title centered at top.",criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t14_criticeditor,../edits/1280w-sqmHAnUAgsI_t14_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t14_criticeditor/render.png,success
+1280w-sqmHAnUAgsI,5,Object Addition,"layout,local",Add a small minimalist sun icon in warm gold #D4A645 to the top-center white gutter above the central photo.,criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t5_criticeditor,../edits/1280w-sqmHAnUAgsI_t5_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t5_criticeditor/render.png,success
+1600w-xCuy4vLKWKc,6,Copy Expansion,"text,layout,global",Replace the button text “Swipe for tips” with: “Swipe for tips and quick steps to start today.”,criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t6_criticeditor,../edits/1600w-xCuy4vLKWKc_t6_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t6_criticeditor/render.png,success
+1131w-xPTl82ZC-e4,0,Color Palette Variation,"color,global","Swap the deep forest green background and salmon-pink elements to a light retro palette: warm cream (#FFF5E6) background, charcoal (#2B2B2B) text, and teal (#1E8A9E) accent details.",criticeditor,gemini/gemini-2.5-pro,1131w-xPTl82ZC-e4_t0_criticeditor,../edits/1131w-xPTl82ZC-e4_t0_criticeditor/spec.json,../edits/1131w-xPTl82ZC-e4_t0_criticeditor/render.png,success
+1600w-e_KkH19ObUk,2,2-Element Layout Swap,"layout,global","Swap positions of the bouquet image and “Blooming with brilliance” text block, placing the headline left and image right, keeping both vertically centered with equal side margins.",criticeditor,gemini/gemini-2.5-pro,1600w-e_KkH19ObUk_t2_criticeditor,../edits/1600w-e_KkH19ObUk_t2_criticeditor/spec.json,../edits/1600w-e_KkH19ObUk_t2_criticeditor/render.png,success
+1600w-J2-prU82nP4,1,Translation,"text,global","Replace the main headline 'DONT THINK TOO MUCH!' with the Spanish translation '¡NO PIENSES DEMASIADO!' in uppercase bold black, preserving layout and size.",criticeditor,gemini/gemini-2.5-pro,1600w-J2-prU82nP4_t1_criticeditor,../edits/1600w-J2-prU82nP4_t1_criticeditor/spec.json,../edits/1600w-J2-prU82nP4_t1_criticeditor/render.png,success
+1600w-bU_eCuLHDN8,8,Typography Style Shift,"text,style,global",Change “OUT OF OFFICE” to uppercase tall serif for a more elegant tone.,criticeditor,gemini/gemini-2.5-pro,1600w-bU_eCuLHDN8_t8_criticeditor,../edits/1600w-bU_eCuLHDN8_t8_criticeditor/spec.json,../edits/1600w-bU_eCuLHDN8_t8_criticeditor/render.png,success
+1131w-tpnRumgzO8o,11,Hierarchy Adjustment,"layout,text,global",Center and enlarge the burger illustration to become the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t11_criticeditor,../edits/1131w-tpnRumgzO8o_t11_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t11_criticeditor/render.png,success
+1131w-50t2MzJLmsM,13,Add Secondary Text Block,"text,layout,local","Add a small italic sans-serif subtitle 'Sip, savor, celebrate.' left-aligned directly below 'OPENING' in #1E4ED8 to fill the upper-left spacing.",criticeditor,gemini/gemini-2.5-pro,1131w-50t2MzJLmsM_t13_criticeditor,../edits/1131w-50t2MzJLmsM_t13_criticeditor/spec.json,../edits/1131w-50t2MzJLmsM_t13_criticeditor/render.png,success
+1600w-_HHyJ9eyu3Q,6,Copy Expansion,"text,layout,global","Expand the bottom-right tagline to: “Functional items for everyday living, thoughtfully designed to organize, carry, and brighten daily routines.”",criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t6_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t6_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t6_criticeditor/render.png,success
+1280w-IBJtTP4icf8,3,Global Layout Change,"layout,global",Reformat to a two-column layout: keep the coffee-table photo full-bleed on the left half; add a white right panel housing the current title and handle centered with wide margins.,criticeditor,gemini/gemini-2.5-pro,1280w-IBJtTP4icf8_t3_criticeditor,../edits/1280w-IBJtTP4icf8_t3_criticeditor/spec.json,../edits/1280w-IBJtTP4icf8_t3_criticeditor/render.png,success
+1280w-TgB3qSfKXOY,3,Global Layout Change,"layout,global","Reflow into a two-column grid: left column full-height glass; right column vertically stacks “BORCELLE CAFE”, “craving matcha” title, both badges, arrow, and @reallygreatsite; center elements with generous spacing.",criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t3_criticeditor,../edits/1280w-TgB3qSfKXOY_t3_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t3_criticeditor/render.png,success
+1600w-gOlznvJ4zdk,9,Accent Recolor,"color,local",Recolor the “Self-Care Jar” title from dark green to warm coral #E86A5A.,criticeditor,gemini/gemini-2.5-pro,1600w-gOlznvJ4zdk_t9_criticeditor,../edits/1600w-gOlznvJ4zdk_t9_criticeditor/spec.json,../edits/1600w-gOlznvJ4zdk_t9_criticeditor/render.png,success
+1600w-DB7VCKEjrvU,3,Global Layout Change,"layout,global","Recompose into a two-column layout: left column holds the colorful emblem; right column stacks “LUMA” above “ART SPACE,” both center-aligned, with expanded outer margins and a balanced gutter.",criticeditor,gemini/gemini-2.5-pro,1600w-DB7VCKEjrvU_t3_criticeditor,../edits/1600w-DB7VCKEjrvU_t3_criticeditor/spec.json,../edits/1600w-DB7VCKEjrvU_t3_criticeditor/render.png,success
+1280w-TgB3qSfKXOY,11,Hierarchy Adjustment,"layout,text,global","Make the matcha glass the dominant focal by scaling it 140% and centering, while reducing “craving” and “maicha” to smaller size with #E9E3D0 at 60% opacity.",criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t11_criticeditor,../edits/1280w-TgB3qSfKXOY_t11_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t11_criticeditor/render.png,success
+1600w-IVdkMeHmo04,2,2-Element Layout Swap,"layout,global","Swap the headline “Gala of Hope” with the top-row event details, placing the headline across the top center and the details directly below as a centered row.",criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t2_criticeditor,../edits/1600w-IVdkMeHmo04_t2_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t2_criticeditor/render.png,success
+1131w-120Kpwxx3eY,0,Color Palette Variation,"color,global","Swap the cobalt blue accents and cream background to a warm desert palette: sand background #F6E7D7, terracotta headings/icons #C1523C, and charcoal body text/lines #2F2F2F.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t0_criticeditor,../edits/1131w-120Kpwxx3eY_t0_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t0_criticeditor/render.png,success
+1600w-KZpYxSRdMn4,0,Color Palette Variation,"color,global","Recolor the beige background, dark green text/accents, and gold waves to a cool dark-mode palette: background #0F1720, text off-white, accents #2F80ED, secondary highlights silver #C0C7D1.",criticeditor,gemini/gemini-2.5-pro,1600w-KZpYxSRdMn4_t0_criticeditor,../edits/1600w-KZpYxSRdMn4_t0_criticeditor/spec.json,../edits/1600w-KZpYxSRdMn4_t0_criticeditor/render.png,success
+1600w-F-yK2D5pels,14,Theme Restyling,"style,color,global",Retheme for winter holidays: swap lime background for deep forest green (#184D3A); change all black text to white; recolor the top-right button to #C72C41 with white label.,criticeditor,gemini/gemini-2.5-pro,1600w-F-yK2D5pels_t14_criticeditor,../edits/1600w-F-yK2D5pels_t14_criticeditor/spec.json,../edits/1600w-F-yK2D5pels_t14_criticeditor/render.png,success
+1131w-tpnRumgzO8o,8,Typography Style Shift,"text,style,global","Switch the “SUMMER” headline to a tall serif, lightweight uppercase for a more elegant tone.",criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t8_criticeditor,../edits/1131w-tpnRumgzO8o_t8_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t8_criticeditor/render.png,success
+848w-x9A8Hm2mD6U,5,Object Addition,"layout,local","Add a small outlined cloud icon in #6EC1E4 to the top-right empty space, right-aligned with the header to balance the hero.",criticeditor,gemini/gemini-2.5-pro,848w-x9A8Hm2mD6U_t5_criticeditor,../edits/848w-x9A8Hm2mD6U_t5_criticeditor/spec.json,../edits/848w-x9A8Hm2mD6U_t5_criticeditor/render.png,success
+1600w-IVdkMeHmo04,7,Image Replacement,"image,layout,local","Replace the dark, close-up tropical leaves background with a softly blurred candlelit ballroom backdrop, preserving shallow depth and dark vignette for a refined evening ambiance.",criticeditor,gemini/gemini-2.5-pro,1600w-IVdkMeHmo04_t7_criticeditor,../edits/1600w-IVdkMeHmo04_t7_criticeditor/spec.json,../edits/1600w-IVdkMeHmo04_t7_criticeditor/render.png,success
+1600w-eqZAnXprFhg,12,Contrast & Readability Enhancement,"color,style,local",Set the body text in all pale yellow and beige note boxes to #1A1A1A to improve contrast against the light backgrounds.,criticeditor,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t12_criticeditor,../edits/1600w-eqZAnXprFhg_t12_criticeditor/spec.json,../edits/1600w-eqZAnXprFhg_t12_criticeditor/render.png,success
+1600w-NwdmmHkEOxk,0,Color Palette Variation,"color,global","Recolor peach, mint, and yellow accents to a cool blue palette: fills #E8F4FF, strokes/icons #1FA3B2, highlights #0B2347; keep black text.",criticeditor,gemini/gemini-2.5-pro,1600w-NwdmmHkEOxk_t0_criticeditor,../edits/1600w-NwdmmHkEOxk_t0_criticeditor/spec.json,../edits/1600w-NwdmmHkEOxk_t0_criticeditor/render.png,success
+1280w-sqmHAnUAgsI,3,Global Layout Change,"layout,global","Rebuild the layout: use a full-bleed hero spanning the top; arrange all remaining images below in a centered 3-column grid with equal gutters, 10% outer margins, and consistent vertical spacing.",criticeditor,gemini/gemini-2.5-pro,1280w-sqmHAnUAgsI_t3_criticeditor,../edits/1280w-sqmHAnUAgsI_t3_criticeditor/spec.json,../edits/1280w-sqmHAnUAgsI_t3_criticeditor/render.png,success
+1131w-rH9o0IzDWQY,1,Translation,"text,global","Replace 'New' with 'Nuevo', 'PRODUCT' with 'PRODUCTO', and 'PREMIUM PRODUCT' with 'PRODUCTO PREMIUM'.",criticeditor,gemini/gemini-2.5-pro,1131w-rH9o0IzDWQY_t1_criticeditor,../edits/1131w-rH9o0IzDWQY_t1_criticeditor/spec.json,../edits/1131w-rH9o0IzDWQY_t1_criticeditor/render.png,success
+1600w-J2-prU82nP4,8,Typography Style Shift,"text,style,global","Switch the headline ""DONT THINK TOO MUCH!"" to a tall serif.",criticeditor,gemini/gemini-2.5-pro,1600w-J2-prU82nP4_t8_criticeditor,../edits/1600w-J2-prU82nP4_t8_criticeditor/spec.json,../edits/1600w-J2-prU82nP4_t8_criticeditor/render.png,success
+1600w-mQV8WxekDho,1,Translation,"text,global","Translate text to French: 'VOTRE LOGO', 'NE MANQUEZ PAS', 'NOTRE PROMOTION EXCLUSIVE EST LÀ !', 'AOÛT - NOV. 2099', '123 RUE ANYWHERE, ANY CITY, ST 12345'; keep handle/URL.",criticeditor,gemini/gemini-2.5-pro,1600w-mQV8WxekDho_t1_criticeditor,../edits/1600w-mQV8WxekDho_t1_criticeditor/spec.json,../edits/1600w-mQV8WxekDho_t1_criticeditor/render.png,success
+1600w-z8zt2gNZe3I,7,Image Replacement,"image,layout,local","Replace the right-side businessman portrait with a similarly framed right-side portrait of a cheerful community volunteer, shifting mood to compassion while retaining the dark teal background.",criticeditor,gemini/gemini-2.5-pro,1600w-z8zt2gNZe3I_t7_criticeditor,../edits/1600w-z8zt2gNZe3I_t7_criticeditor/spec.json,../edits/1600w-z8zt2gNZe3I_t7_criticeditor/render.png,success
+1600w-p1o6ND26wWg,14,Theme Restyling,"style,color,global",Restyle for winter holidays: keep layout; use snow-white background with subtle snowflakes; recolor buttons and headline deep forest green with holly red accents; swap drink for a peppermint latte.,criticeditor,gemini/gemini-2.5-pro,1600w-p1o6ND26wWg_t14_criticeditor,../edits/1600w-p1o6ND26wWg_t14_criticeditor/spec.json,../edits/1600w-p1o6ND26wWg_t14_criticeditor/render.png,success
+1600w-OnW3L3V5tgI,0,Color Palette Variation,"color,global","Replace the cyan left panel and pink image block with deep forest green #184D3A and terracotta #D96D4C, and change all text to warm cream #FFF5E6 for consistent readability.",criticeditor,gemini/gemini-2.5-pro,1600w-OnW3L3V5tgI_t0_criticeditor,../edits/1600w-OnW3L3V5tgI_t0_criticeditor/spec.json,../edits/1600w-OnW3L3V5tgI_t0_criticeditor/render.png,success
+1131w-Cn6h5Tqrn10,6,Copy Expansion,"text,layout,global","Expand the quote to: ""Stay inspired, never stop creating; keep exploring ideas, trust your instincts, and let curiosity guide your craft every day toward meaningful work and steady growth.""",criticeditor,gemini/gemini-2.5-pro,1131w-Cn6h5Tqrn10_t6_criticeditor,../edits/1131w-Cn6h5Tqrn10_t6_criticeditor/spec.json,../edits/1131w-Cn6h5Tqrn10_t6_criticeditor/render.png,success
+1131w-zsrhBwj_J58,3,Global Layout Change,"layout,global",Reflow into a stacked layout: make the statue image the full-width top half; center “RETRO REWIND” mid-page with tagline below; place date-left/location-right band above footer; keep description above URL.,criticeditor,gemini/gemini-2.5-pro,1131w-zsrhBwj_J58_t3_criticeditor,../edits/1131w-zsrhBwj_J58_t3_criticeditor/spec.json,../edits/1131w-zsrhBwj_J58_t3_criticeditor/render.png,success
+1600w-xCuy4vLKWKc,11,Hierarchy Adjustment,"layout,text,global",Enlarge and center the “Swipe for tips” button with a filled #184D3A background and white uppercase text to make it the primary focal point.,criticeditor,gemini/gemini-2.5-pro,1600w-xCuy4vLKWKc_t11_criticeditor,../edits/1600w-xCuy4vLKWKc_t11_criticeditor/spec.json,../edits/1600w-xCuy4vLKWKc_t11_criticeditor/render.png,success
+1600w-_HHyJ9eyu3Q,10,Background Replacement,"image,color,global","Replace the maroon and red backgrounds with a deep navy #0B1A33 studio backdrop to create a calmer mood while keeping the white shirts, baskets, and light blue headings readable.",criticeditor,gemini/gemini-2.5-pro,1600w-_HHyJ9eyu3Q_t10_criticeditor,../edits/1600w-_HHyJ9eyu3Q_t10_criticeditor/spec.json,../edits/1600w-_HHyJ9eyu3Q_t10_criticeditor/render.png,success
+1600w-m4qQZp-grvQ,5,Object Addition,"layout,local","Add a small minimalist compass icon in #B22222 to the top-right sky area, aligning with the title’s red and balancing the layout.",criticeditor,gemini/gemini-2.5-pro,1600w-m4qQZp-grvQ_t5_criticeditor,../edits/1600w-m4qQZp-grvQ_t5_criticeditor/spec.json,../edits/1600w-m4qQZp-grvQ_t5_criticeditor/render.png,success
+1280w-TgB3qSfKXOY,12,Contrast & Readability Enhancement,"color,style,local",Apply a soft deep forest green (#184D3A) drop shadow to the cream “craving” and “maicha” headlines to boost contrast against the light starbursts and green background.,criticeditor,gemini/gemini-2.5-pro,1280w-TgB3qSfKXOY_t12_criticeditor,../edits/1280w-TgB3qSfKXOY_t12_criticeditor/spec.json,../edits/1280w-TgB3qSfKXOY_t12_criticeditor/render.png,success
+1600w-9eXC-dXI0uE,0,Color Palette Variation,"color,global","Recolor background to charcoal #0F1220, convert all purple elements to cyan #00C2D1, switch black text to white, and set button outline cyan with white label",criticeditor,gemini/gemini-2.5-pro,1600w-9eXC-dXI0uE_t0_criticeditor,../edits/1600w-9eXC-dXI0uE_t0_criticeditor/spec.json,../edits/1600w-9eXC-dXI0uE_t0_criticeditor/render.png,success
+1600w-A9ARWpzo3xk,4,Object Removal,"layout,local",Remove the right-side “SINCE 2025”; move “CREATIVE STUDIO” to center beneath the logo and slightly reduce the gap for balanced spacing.,criticeditor,gemini/gemini-2.5-pro,1600w-A9ARWpzo3xk_t4_criticeditor,../edits/1600w-A9ARWpzo3xk_t4_criticeditor/spec.json,../edits/1600w-A9ARWpzo3xk_t4_criticeditor/render.png,success
+1143w-ugSBoa9VtEw,7,Image Replacement,"image,layout,local","Swap the central skincare tube and lavender silk backdrop for a minimalist ceramic essential-oil diffuser on a pedestal with warm beige linen drape, evoking cozy, spa-like calm.",criticeditor,gemini/gemini-2.5-pro,1143w-ugSBoa9VtEw_t7_criticeditor,../edits/1143w-ugSBoa9VtEw_t7_criticeditor/spec.json,../edits/1143w-ugSBoa9VtEw_t7_criticeditor/render.png,success
+1600w-laANf5rvLUw,14,Theme Restyling,"style,color,global","Recolor the entire design to a festive holiday palette: background deep forest green #184D3A, furry 2024 rich crimson #B5121B, text warm cream, preserving the layout.",criticeditor,gemini/gemini-2.5-pro,1600w-laANf5rvLUw_t14_criticeditor,../edits/1600w-laANf5rvLUw_t14_criticeditor/spec.json,../edits/1600w-laANf5rvLUw_t14_criticeditor/render.png,success
+1600w-3FMwHZotkUM,14,Theme Restyling,"style,color,global","Restyle to winter-holiday theme: change background to snowy #F6FAF2, set headings deep forest green (#184D3A), button crimson (#C41E3A), and overlay small gold star badges on each image; keep layout.",criticeditor,gemini/gemini-2.5-pro,1600w-3FMwHZotkUM_t14_criticeditor,../edits/1600w-3FMwHZotkUM_t14_criticeditor/spec.json,../edits/1600w-3FMwHZotkUM_t14_criticeditor/render.png,success
+1131w-tpnRumgzO8o,14,Theme Restyling,"style,color,global","Transform to winter fest theme: change palette to icy blues #0EA5E9 and #E0F2FE, replace 'SUMMER' with 'WINTER', swap burger illustration for snowflake cookie, keep layout.",criticeditor,gemini/gemini-2.5-pro,1131w-tpnRumgzO8o_t14_criticeditor,../edits/1131w-tpnRumgzO8o_t14_criticeditor/spec.json,../edits/1131w-tpnRumgzO8o_t14_criticeditor/render.png,success
+1600w-CxALar1xspQ,14,Theme Restyling,"style,color,global","Convert the layout to a winter holiday theme by switching greens to #B30000 and #D4AF37, adding a faint snowflake overlay, and updating the button copy to ""shop holiday services"".",criticeditor,gemini/gemini-2.5-pro,1600w-CxALar1xspQ_t14_criticeditor,../edits/1600w-CxALar1xspQ_t14_criticeditor/spec.json,../edits/1600w-CxALar1xspQ_t14_criticeditor/render.png,success
+1600w-bU_eCuLHDN8,10,Background Replacement,"image,color,global","Replace the black-and-white checkerboard background with a soft peach-to-lavender gradient sky to calm the mood, keeping the lime panel and pink headline fully legible.",criticeditor,gemini/gemini-2.5-pro,1600w-bU_eCuLHDN8_t10_criticeditor,../edits/1600w-bU_eCuLHDN8_t10_criticeditor/spec.json,../edits/1600w-bU_eCuLHDN8_t10_criticeditor/render.png,success
+1600w-eqZAnXprFhg,2,2-Element Layout Swap,"layout,global","Swap the “Mind Map” headline with the “Explore ideas and information” subheading, placing “Mind Map” top-right and the subheading top-left, aligned to equal top margins.",singleshot,gemini/gemini-2.5-pro,1600w-eqZAnXprFhg_t2_singleshot,../edits/1600w-eqZAnXprFhg_t2_singleshot/spec.json,../edits/1600w-eqZAnXprFhg_t2_singleshot/render.png,failed: list index out of range
+1600w-jlhsA8F30Lk,2,2-Element Layout Swap,"layout,global","Swap the megaphone with the speech-bubble headline, placing the bubble left and megaphone right, aligning both vertically centered for balance.",criticeditor,gemini/gemini-2.5-pro,1600w-jlhsA8F30Lk_t2_criticeditor,../edits/1600w-jlhsA8F30Lk_t2_criticeditor/spec.json,../edits/1600w-jlhsA8F30Lk_t2_criticeditor/render.png,success
+1600w-NwdmmHkEOxk,2,2-Element Layout Swap,"layout,global","Swap the left panel star icon with the “Together, We Can Make a Difference” headline, placing the headline top-left and the star to its right for a balanced header.",criticeditor,gemini/gemini-2.5-pro,1600w-NwdmmHkEOxk_t2_criticeditor,../edits/1600w-NwdmmHkEOxk_t2_criticeditor/spec.json,../edits/1600w-NwdmmHkEOxk_t2_criticeditor/render.png,success
+1600w-GFKaeiEL8R0,2,2-Element Layout Swap,"layout,global","Swap the 3D shape cluster with the “Branding & Design” headline, placing the headline top-center and the shapes centered below it, maintaining equal vertical spacing.",criticeditor,gemini/gemini-2.5-pro,1600w-GFKaeiEL8R0_t2_criticeditor,../edits/1600w-GFKaeiEL8R0_t2_criticeditor/spec.json,../edits/1600w-GFKaeiEL8R0_t2_criticeditor/render.png,success
+1131w-120Kpwxx3eY,2,2-Element Layout Swap,"layout,global","Swap positions of the top-left portrait photo and the “Estelle Darcy” headline block, preserving equal margins and left-aligning each element within its new column.",criticeditor,gemini/gemini-2.5-pro,1131w-120Kpwxx3eY_t2_criticeditor,../edits/1131w-120Kpwxx3eY_t2_criticeditor/spec.json,../edits/1131w-120Kpwxx3eY_t2_criticeditor/render.png,failed: list index out of range
