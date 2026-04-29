@@ -1,0 +1,49 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Quarterly report",
+      "x": 100,
+      "y": 180,
+      "width": 600,
+      "height": 36,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 16,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    },
+    {
+      "type": "text",
+      "text": "Revenue grew by twelve percent this quarter.",
+      "x": 100,
+      "y": 280,
+      "width": 600,
+      "height": 144,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 36,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.3
+    }
+  ]
+}

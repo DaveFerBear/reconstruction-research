@@ -1,0 +1,29 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Light grey on white",
+      "x": 80,
+      "y": 250,
+      "width": 640,
+      "height": 56,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 36,
+      "color": "#111111",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Section A",
+      "x": 80,
+      "y": 240,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 34,
+      "color": "#000000",
+      "text_align": "left",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    },
+    {
+      "type": "text",
+      "text": "Section B",
+      "x": 420,
+      "y": 240,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 34,
+      "color": "#000000",
+      "text_align": "left",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    }
+  ]
+}

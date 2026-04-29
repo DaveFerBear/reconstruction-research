@@ -1,0 +1,49 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "First line",
+      "x": 100,
+      "y": 260,
+      "width": 600,
+      "height": 48,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 30,
+      "color": "#000000",
+      "text_align": "left",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    },
+    {
+      "type": "text",
+      "text": "Second line",
+      "x": 150,
+      "y": 275,
+      "width": 600,
+      "height": 48,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 30,
+      "color": "#000000",
+      "text_align": "left",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    }
+  ]
+}

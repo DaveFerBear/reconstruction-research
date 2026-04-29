@@ -1,0 +1,49 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "This is a title",
+      "x": 100,
+      "y": 180,
+      "width": 600,
+      "height": 62,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 42,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    },
+    {
+      "type": "text",
+      "text": "And this is the first body paragraph.",
+      "x": 100,
+      "y": 280,
+      "width": 600,
+      "height": 72,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 18,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.3
+    }
+  ]
+}

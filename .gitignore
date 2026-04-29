@@ -7,8 +7,7 @@ datasets_secret/
 # Temp for now
 edits/
 
-# Generated eval data
-evals/data/
-evals/data_real/
+# Generated eval data — eval corpora (specs + renders) ARE tracked.
+# Per-run outputs are not.
 evals/results.json
 evals/review.html

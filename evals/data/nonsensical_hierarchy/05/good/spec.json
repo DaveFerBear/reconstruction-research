@@ -1,0 +1,49 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "Conclusion",
+      "x": 100,
+      "y": 180,
+      "width": 600,
+      "height": 58,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 38,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    },
+    {
+      "type": "text",
+      "text": "The experiment failed to reject the null hypothesis.",
+      "x": 100,
+      "y": 280,
+      "width": 600,
+      "height": 64,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 16,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.3
+    }
+  ]
+}

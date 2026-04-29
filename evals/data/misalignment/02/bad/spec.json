@@ -1,0 +1,51 @@
+{
+  "canvas_width": 800,
+  "canvas_height": 600,
+  "background_color": "#FFFFFF",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "svg",
+      "svg_description": "",
+      "filename": "svg-1.svg",
+      "x": 200,
+      "y": 180,
+      "width": 400,
+      "height": 240,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "svg",
+      "svg_description": "",
+      "filename": "svg-2.svg",
+      "x": 240,
+      "y": 300,
+      "width": 160,
+      "height": 100,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "off-center",
+      "x": 240,
+      "y": 300,
+      "width": 160,
+      "height": 100,
+      "rotation": 0,
+      "opacity": 1,
+      "font_family": "Arial",
+      "font_size": 20,
+      "color": "#000000",
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "font_stretch": "normal",
+      "text_decoration": "none",
+      "text_transform": "none",
+      "line_height": 1.2
+    }
+  ]
+}
