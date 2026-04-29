@@ -3,7 +3,7 @@ making it hard to read."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -57,12 +57,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["poor_contrast"]
 MODE = FailureMode(
     id="poor_contrast",
-    name="Poor contrast",
-    description=(
-        "Text is rendered in a color so close to the background color that it is "
-        "very difficult to read."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

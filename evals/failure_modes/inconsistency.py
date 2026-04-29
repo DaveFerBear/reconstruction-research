@@ -3,7 +3,7 @@ font, color, or weight where uniform styling is expected."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -100,13 +100,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["inconsistency"]
 MODE = FailureMode(
     id="inconsistency",
-    name="Inconsistency",
-    description=(
-        "A list or group of related items is rendered with inconsistent typography "
-        "(different fonts, colors, or weights between items) when uniform styling "
-        "would be expected."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

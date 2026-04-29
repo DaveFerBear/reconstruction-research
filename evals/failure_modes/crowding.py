@@ -3,7 +3,7 @@ room between them."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, svg_node, svg_rect_outline, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, svg_node, svg_rect_outline, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -85,12 +85,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["crowding"]
 MODE = FailureMode(
     id="crowding",
-    name="Crowding",
-    description=(
-        "Multiple elements are packed directly against each other with no padding, "
-        "margin, or breathing room separating them."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

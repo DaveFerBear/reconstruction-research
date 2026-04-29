@@ -8,6 +8,7 @@ from evals.common import (
     ICON_PHONE,
     ICON_PIN,
     ICON_WARNING,
+    MODE_DEFINITIONS,
     make_spec,
     svg_node,
     text_node,
@@ -125,13 +126,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["semiotic_mismatch"]
 MODE = FailureMode(
     id="semiotic_mismatch",
-    name="Semiotic mismatch",
-    description=(
-        "An icon is paired with a text label whose semantic meaning does not match "
-        "the icon — e.g., a warning triangle next to a postal address, or a phone "
-        "icon next to an email address."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

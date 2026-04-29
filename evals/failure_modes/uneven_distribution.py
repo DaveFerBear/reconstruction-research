@@ -3,7 +3,7 @@ gap to its neighbor than the others have to theirs."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, svg_node, svg_rect_outline
+from evals.common import MODE_DEFINITIONS, make_spec, svg_node, svg_rect_outline
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -52,13 +52,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["uneven_distribution"]
 MODE = FailureMode(
     id="uneven_distribution",
-    name="Uneven distribution",
-    description=(
-        "Multiple visually similar elements are arranged in a row or grid, but "
-        "one element has a noticeably larger gap to its neighbor than the others, "
-        "breaking the expected even spacing."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

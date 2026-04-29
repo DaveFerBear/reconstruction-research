@@ -9,3 +9,5 @@ edits/
 
 # Generated eval data
 evals/data/
+evals/data_real/
+evals/results.json

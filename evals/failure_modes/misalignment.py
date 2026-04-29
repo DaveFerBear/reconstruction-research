@@ -3,7 +3,7 @@ when visual symmetry would be expected."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, svg_node, svg_rect_outline, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, svg_node, svg_rect_outline, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -121,13 +121,10 @@ def _generate() -> list[Variant]:
     ]
 
 
+_DEF = MODE_DEFINITIONS["misalignment"]
 MODE = FailureMode(
     id="misalignment",
-    name="Misalignment",
-    description=(
-        "An element is nested inside a container where it visually should be "
-        "centered, but it is offset to one side or corner instead of properly "
-        "aligned within the parent."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

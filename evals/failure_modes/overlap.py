@@ -3,7 +3,7 @@ causing one to render on top of the other."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -79,12 +79,10 @@ def _generate() -> list[Variant]:
     ]
 
 
+_DEF = MODE_DEFINITIONS["overlap"]
 MODE = FailureMode(
     id="overlap",
-    name="Undesired overlap",
-    description=(
-        "Two distinct text elements have intersecting bounding boxes, so one "
-        "renders directly on top of the other and obscures it."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

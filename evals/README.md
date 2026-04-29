@@ -8,10 +8,19 @@ failure modes:
 3. Inconsistency (fonts, colors, weights)
 4. Nonsensical scale/hierarchy
 5. Crowding
-6. Semiotic mismatch (icon ≠ label meaning)
+6. Semiotic mismatch (icon ≠ label meaning) — **synthetic only**
 7. Undesired overflow
 8. Poor contrast
 9. Undesired overlap
+
+The eval has **two parallel data sources**:
+
+- **synthetic** — hand-built specs (controlled experiment baseline)
+- **real** — real Canva designs from `datasets/specs/`, programmatically
+  corrupted to inject one isolated failure each (ecological validity)
+
+`semiotic_mismatch` exists only in the synthetic eval; most real specs lack
+swappable icon-label pairs.
 
 ## What this is *not*
 
@@ -24,70 +33,82 @@ metric reported." The expected outcome is *low* judge accuracy on most modes
 
 ```
 evals/
-├── common.py                       # spec / SVG / icon helpers
-├── failure_modes/
-│   ├── base.py                     # FailureMode + Variant dataclasses
-│   ├── __init__.py                 # FAILURE_MODES registry
+├── common.py                       # specs/SVG helpers, MODE_DEFINITIONS, bbox + color utils
+├── failure_modes/                  # SYNTHETIC: hand-built bad/good pairs
+│   ├── base.py                     # FailureMode + Variant
 │   └── <nine modules>.py
-├── generate.py                     # spec.json + svg sidecars → data/
-├── render.py                       # data/.../spec.json → render.png via lib.render
+├── corrupters/                     # REAL: mutators over real spec.json files
+│   ├── base.py                     # Corrupter + Corruption
+│   └── <eight modules>.py          # (no semiotic_mismatch — see above)
+├── generate.py                     # synthetic specs → data/
+├── render.py                       # synthetic data/ → render.png
+├── generate_real.py                # corrupt datasets/specs/ → data_real/
+├── render_real.py                  # data_real/ → render.png (assets read from datasets/specs/)
 ├── judge.py                        # Anthropic SDK vision call → YES/NO
-├── run_eval.py                     # orchestrator + metrics
-└── data/                           # generated, gitignored
-    └── <mode>/<NN>/<bad|good>/{spec.json, render.png, svg-*.svg}
+├── run_eval.py                     # orchestrator + metrics; --source {synthetic,real,both}
+├── data/                           # gitignored — synthetic specs + renders
+└── data_real/                      # gitignored — corrupted specs + renders
 ```
 
-Specs use the existing `lib.types.Spec` schema (no new format). Each failure
-mode emits 5 hand-tuned `(bad, good)` variant pairs.
+Specs use the existing `lib.types.Spec` schema (no new format).
 
-## Usage
-
-### Generate specs and renders (no API key required)
+## Usage — synthetic eval
 
 ```bash
-python -m evals.generate
-python -m evals.render
+python -m evals.generate          # 9 modes × 5 (bad,good) variants = 90 specs
+python -m evals.render            # ~90 PNGs
+
+open evals/data/poor_contrast/01/bad/render.png  # eyeball
 ```
 
-Inspect a few outputs visually:
+## Usage — real-design corruption eval
+
+The good case is the un-modified `datasets/specs/<id>/render.png`; the bad
+case is a programmatic single-mutation of the spec rendered against the same
+asset directory.
 
 ```bash
-open evals/data/poor_contrast/01/bad/render.png
-open evals/data/poor_contrast/01/good/render.png
+python -m evals.generate_real     # apply 8 corrupters across all real specs
+python -m evals.render_real       # render every corrupted spec.json
+
+# Eyeball one mode for one spec
+open evals/data_real/<spec_id>/overflow/render.png datasets/specs/<spec_id>/render.png
 ```
 
-### Run the judge (requires `ANTHROPIC_API_KEY`)
+`generate_real` prints a per-mode applicability summary — corrupters skip
+specs that lack the structure to corrupt cleanly (e.g. a spec with one
+TextNode is skipped by the `overlap` corrupter).
+
+## Run the judge (requires `ANTHROPIC_API_KEY`)
 
 `ANTHROPIC_API_KEY` is read from the project-root `.env` via `python-dotenv`.
 
 ```bash
-# Both models (claude-opus-4-6 + claude-sonnet-4-6), all modes
+# Both sources, both models, all modes
 python -m evals.run_eval
 
-# One mode
-python -m evals.run_eval --mode overflow
+# One source
+python -m evals.run_eval --source real
+python -m evals.run_eval --source synthetic
 
-# One model
+# Scope further
+python -m evals.run_eval --source real --mode overflow
+python -m evals.run_eval --source real --limit 5         # 5 specs/mode for smoke
 python -m evals.run_eval --model claude-sonnet-4-6
-
-# Smoke test (2 variants per mode)
-python -m evals.run_eval --limit 2
 ```
 
-Results land in `evals/data/results.json` keyed by `<model>/<mode>` with
-TP/TN/FP/FN, accuracy, precision, recall, and F1.
+Results land in `evals/results.json` keyed by `<source>/<model>/<mode>` with
+TP/TN/FP/FN, accuracy, precision, recall, and F1. Tables are printed once per
+source.
 
 ## Notes
 
 - **Prompt caching** is wired in (`cache_control` on the system prompt) for
   hygiene, but the per-mode system prompts are well below the 4096-token
-  Opus minimum, so they will silently no-op (`cache_creation_input_tokens`
-  stays at 0). The dominant cost is per-image vision tokens, which are
-  unique per call and never cacheable. Don't expect cache hits.
+  Opus minimum, so they will silently no-op. The dominant cost is per-image
+  vision tokens, which are unique per call and never cacheable.
 - **No thinking.** The judge omits `thinking` to measure visual perception
-  rather than reasoning. Adding thinking would let the model reason about
-  which failure is statistically likely instead of looking at the image —
-  muddying the "VLM blindness" signal.
-- **Volume.** A full run is ~90 renders × 2 models = ~180 API calls. At
-  roughly 2k input + 50 output tokens per call, this is comfortably under
-  any rate-limit or cost concern.
+  rather than reasoning.
+- **Volume.** Synthetic full run: ~90 renders × 2 models = ~180 calls. Real
+  full run: ~300–500 corruptions × 2 (bad+good) × 2 models. Use `--limit` for
+  smoke testing.

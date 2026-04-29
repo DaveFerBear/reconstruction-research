@@ -1,8 +1,13 @@
 """Run the VLM-as-judge eval across all failure modes and models.
 
-For each (mode, variant, label, model) it asks the VLM whether the target
-failure mode is present in the rendered image. Reports per-(mode, model)
-precision / recall / F1 / accuracy, and writes results.json.
+Two data sources:
+  * `synthetic` — hand-built specs under evals/data/<mode>/<NN>/{bad,good}/render.png
+  * `real`      — real Canva specs corrupted in-place: evals/data_real/<spec_id>/<mode>/render.png
+                  paired against the original datasets/specs/<spec_id>/render.png
+
+For each (mode, source, label, model) tuple it asks the VLM whether the target
+failure mode is present. Reports per-(source, mode, model) precision /
+recall / F1 / accuracy and writes results.json.
 
 The expected finding is *low* judge accuracy on most modes — that is the
 demonstration of VLM blindness this benchmark exists to produce.
@@ -24,15 +29,19 @@ import anthropic
 from evals.failure_modes import FAILURE_MODES, FailureMode
 from evals.judge import DEFAULT_MODELS, judge
 
-DATA_DIR = Path(__file__).parent / "data"
-RESULTS_PATH = DATA_DIR / "results.json"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SYNTHETIC_DATA_DIR = Path(__file__).parent / "data"
+REAL_DATA_DIR = Path(__file__).parent / "data_real"
+SOURCE_DIR = REPO_ROOT / "datasets" / "specs"
+RESULTS_PATH = Path(__file__).parent / "results.json"
 
 
 @dataclass
 class Item:
+    source: str          # "synthetic" or "real"
     mode_id: str
-    variant: str  # "01"..."05"
-    label: str  # "bad" or "good"
+    variant: str         # synthetic: "01"-"05"; real: spec_id
+    label: str           # "bad" or "good"
     render_path: Path
 
     @property
@@ -42,19 +51,22 @@ class Item:
 
 @dataclass
 class Result:
+    source: str
     mode_id: str
     variant: str
     label: str
     model: str
-    expected: bool  # True iff label == "bad"
+    expected: bool       # True iff label == "bad"
     predicted: bool
     raw: str
     input_tokens: int
     output_tokens: int
 
 
-def _collect_items(root: Path, only_mode: str | None) -> list[Item]:
+def _collect_synthetic(root: Path, only_mode: str | None) -> list[Item]:
     items: list[Item] = []
+    if not root.exists():
+        return items
     for mode_dir in sorted(root.iterdir()):
         if not mode_dir.is_dir():
             continue
@@ -68,6 +80,7 @@ def _collect_items(root: Path, only_mode: str | None) -> list[Item]:
                 if render.exists():
                     items.append(
                         Item(
+                            source="synthetic",
                             mode_id=mode_dir.name,
                             variant=variant_dir.name,
                             label=label,
@@ -77,11 +90,50 @@ def _collect_items(root: Path, only_mode: str | None) -> list[Item]:
     return items
 
 
+def _collect_real(real_root: Path, source_root: Path, only_mode: str | None) -> list[Item]:
+    items: list[Item] = []
+    if not real_root.exists():
+        return items
+    for spec_dir in sorted(real_root.iterdir()):
+        if not spec_dir.is_dir():
+            continue
+        original_render = source_root / spec_dir.name / "render.png"
+        if not original_render.exists():
+            continue
+        for mode_dir in sorted(spec_dir.iterdir()):
+            if not mode_dir.is_dir():
+                continue
+            if only_mode and mode_dir.name != only_mode:
+                continue
+            corrupted_render = mode_dir / "render.png"
+            if not corrupted_render.exists():
+                continue
+            items.append(
+                Item(
+                    source="real",
+                    mode_id=mode_dir.name,
+                    variant=spec_dir.name,
+                    label="bad",
+                    render_path=corrupted_render,
+                )
+            )
+            items.append(
+                Item(
+                    source="real",
+                    mode_id=mode_dir.name,
+                    variant=spec_dir.name,
+                    label="good",
+                    render_path=original_render,
+                )
+            )
+    return items
+
+
 def _summarize(results: list[Result]) -> dict:
-    """Per-(mode, model) confusion matrix and metrics."""
-    by_key: dict[tuple[str, str], dict[str, int]] = {}
+    """Per-(source, model, mode) confusion matrix and metrics."""
+    by_key: dict[tuple[str, str, str], dict[str, int]] = {}
     for r in results:
-        key = (r.mode_id, r.model)
+        key = (r.source, r.model, r.mode_id)
         bucket = by_key.setdefault(key, {"tp": 0, "tn": 0, "fp": 0, "fn": 0})
         if r.expected and r.predicted:
             bucket["tp"] += 1
@@ -92,14 +144,14 @@ def _summarize(results: list[Result]) -> dict:
         else:
             bucket["fn"] += 1
 
-    summary: dict[str, dict[str, dict]] = {}
-    for (mode_id, model), c in by_key.items():
+    summary: dict[str, dict[str, dict[str, dict]]] = {}
+    for (source, model, mode_id), c in by_key.items():
         n = c["tp"] + c["tn"] + c["fp"] + c["fn"]
         accuracy = (c["tp"] + c["tn"]) / n if n else 0.0
         precision = c["tp"] / (c["tp"] + c["fp"]) if (c["tp"] + c["fp"]) else 0.0
         recall = c["tp"] / (c["tp"] + c["fn"]) if (c["tp"] + c["fn"]) else 0.0
         f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
-        summary.setdefault(model, {})[mode_id] = {
+        summary.setdefault(source, {}).setdefault(model, {})[mode_id] = {
             "n": n,
             "tp": c["tp"], "tn": c["tn"], "fp": c["fp"], "fn": c["fn"],
             "accuracy": round(accuracy, 3),
@@ -110,12 +162,13 @@ def _summarize(results: list[Result]) -> dict:
     return summary
 
 
-def _print_table(summary: dict) -> None:
-    models = sorted(summary)
+def _print_table(summary_for_source: dict, *, source: str) -> None:
+    print(f"\n=== {source.upper()} ===")
+    models = sorted(summary_for_source)
     if not models:
         print("(no results)")
         return
-    mode_ids = sorted({m for model in models for m in summary[model]})
+    mode_ids = sorted({m for model in models for m in summary_for_source[model]})
 
     header = f"{'mode':<26}" + "".join(f"{m + ' acc':<22}" for m in models)
     print()
@@ -124,9 +177,9 @@ def _print_table(summary: dict) -> None:
     for mode_id in mode_ids:
         row = f"{mode_id:<26}"
         for model in models:
-            metrics = summary[model].get(mode_id)
+            metrics = summary_for_source[model].get(mode_id)
             if metrics:
-                cell = f"{metrics['accuracy']:.2f} (F1 {metrics['f1']:.2f})"
+                cell = f"{metrics['accuracy']:.2f} (F1 {metrics['f1']:.2f})  n={metrics['n']}"
             else:
                 cell = "-"
             row += f"{cell:<22}"
@@ -136,6 +189,12 @@ def _print_table(summary: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the VLM-blindness eval")
+    parser.add_argument(
+        "--source",
+        choices=["synthetic", "real", "both"],
+        default="both",
+        help="Which dataset(s) to evaluate (default: both)",
+    )
     parser.add_argument("--mode", help="Restrict to one failure-mode id")
     parser.add_argument(
         "--model",
@@ -145,8 +204,26 @@ def main() -> None:
             f"Default: {', '.join(DEFAULT_MODELS)}"
         ),
     )
-    parser.add_argument("--limit", type=int, help="Cap variants per mode for smoke tests")
-    parser.add_argument("--root", default=str(DATA_DIR), help="Data root")
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="Cap variants/specs per mode for smoke tests (per source)",
+    )
+    parser.add_argument(
+        "--synthetic-root",
+        default=str(SYNTHETIC_DATA_DIR),
+        help=f"Synthetic data root (default: {SYNTHETIC_DATA_DIR})",
+    )
+    parser.add_argument(
+        "--real-root",
+        default=str(REAL_DATA_DIR),
+        help=f"Real corruption data root (default: {REAL_DATA_DIR})",
+    )
+    parser.add_argument(
+        "--source-root",
+        default=str(SOURCE_DIR),
+        help=f"Original specs root (for real-source goods, default: {SOURCE_DIR})",
+    )
     parser.add_argument(
         "--out",
         default=str(RESULTS_PATH),
@@ -160,11 +237,6 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    root = Path(args.root)
-    if not root.exists():
-        print(f"No data at {root}; run generate + render first.", file=sys.stderr)
-        sys.exit(1)
-
     models = tuple(args.model) if args.model else DEFAULT_MODELS
 
     if args.mode:
@@ -175,17 +247,32 @@ def main() -> None:
         modes_in_scope = FAILURE_MODES
     mode_by_id: dict[str, FailureMode] = {m.id: m for m in modes_in_scope}
 
-    items = _collect_items(root, args.mode)
+    items: list[Item] = []
+    if args.source in ("synthetic", "both"):
+        items.extend(_collect_synthetic(Path(args.synthetic_root), args.mode))
+    if args.source in ("real", "both"):
+        items.extend(
+            _collect_real(Path(args.real_root), Path(args.source_root), args.mode)
+        )
+
+    # Drop items whose mode_id isn't in scope (corrupters/failure_modes registries
+    # may differ — e.g. semiotic_mismatch only exists in synthetic).
+    items = [i for i in items if i.mode_id in mode_by_id]
+
     if args.limit:
-        # Keep first N variants per mode (both bad and good).
-        keep_variants = {
-            mid: sorted({i.variant for i in items if i.mode_id == mid})[: args.limit]
-            for mid in mode_by_id
-        }
-        items = [i for i in items if i.variant in keep_variants[i.mode_id]]
+        # Cap variants per (source, mode) to the first N (sorted by variant id).
+        keep: dict[tuple[str, str], list[str]] = {}
+        for i in items:
+            key = (i.source, i.mode_id)
+            keep.setdefault(key, [])
+            if i.variant not in keep[key]:
+                keep[key].append(i.variant)
+        for key in keep:
+            keep[key] = sorted(keep[key])[: args.limit]
+        items = [i for i in items if i.variant in keep[(i.source, i.mode_id)]]
 
     if not items:
-        print("No render.png files found. Did you run `python -m evals.render`?", file=sys.stderr)
+        print("No render.png files found. Did you run generate + render?", file=sys.stderr)
         sys.exit(1)
 
     # The Anthropic SDK's HTTP client is thread-safe; sharing one client across
@@ -207,20 +294,21 @@ def main() -> None:
             v = judge(item.render_path, mode, model, client=client)
         except anthropic.APIStatusError as e:
             print(
-                f"  {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"  {item.source} {model} {item.mode_id}/{item.variant}/{item.label}: "
                 f"API error {e.status_code} — {e.message}",
                 file=sys.stderr,
             )
             return None
         except Exception as e:
             print(
-                f"  {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"  {item.source} {model} {item.mode_id}/{item.variant}/{item.label}: "
                 f"{type(e).__name__}: {e}",
                 file=sys.stderr,
             )
             traceback.print_exc()
             return None
         return Result(
+            source=item.source,
             mode_id=item.mode_id,
             variant=item.variant,
             label=item.label,
@@ -243,7 +331,8 @@ def main() -> None:
             results.append(result)
             ok = "✓" if result.predicted == result.expected else "✗"
             print(
-                f"  [{j}/{total}] {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"  [{j}/{total}] {item.source} {model} "
+                f"{item.mode_id}/{item.variant}/{item.label}: "
                 f"{ok} (said {'YES' if result.predicted else 'NO'})"
             )
 
@@ -251,7 +340,8 @@ def main() -> None:
     print(f"\nDone in {elapsed:.1f}s ({len(results)}/{total} calls succeeded)")
 
     summary = _summarize(results)
-    _print_table(summary)
+    for source in sorted(summary):
+        _print_table(summary[source], source=source)
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

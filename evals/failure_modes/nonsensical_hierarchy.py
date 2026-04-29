@@ -3,7 +3,7 @@ inverting the visual importance hierarchy."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -42,13 +42,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["nonsensical_hierarchy"]
 MODE = FailureMode(
     id="nonsensical_hierarchy",
-    name="Nonsensical scale/hierarchy",
-    description=(
-        "The visual hierarchy is inverted: the title or heading is rendered at a "
-        "smaller size than the body text, so the most important element no longer "
-        "appears most prominent."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )

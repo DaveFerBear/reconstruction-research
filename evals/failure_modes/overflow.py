@@ -3,7 +3,7 @@ container, causing visible overflow or awkward wrapping."""
 
 from __future__ import annotations
 
-from evals.common import make_spec, svg_node, svg_rect_outline, text_node
+from evals.common import MODE_DEFINITIONS, make_spec, svg_node, svg_rect_outline, text_node
 from evals.failure_modes.base import FailureMode, Variant
 
 
@@ -56,13 +56,10 @@ def _generate() -> list[Variant]:
     return variants
 
 
+_DEF = MODE_DEFINITIONS["overflow"]
 MODE = FailureMode(
     id="overflow",
-    name="Undesired overflow",
-    description=(
-        "Text content visibly extends beyond its intended container or wraps in an "
-        "awkward way (such as breaking mid-word) because the container is too small "
-        "to hold the text at the chosen font size."
-    ),
+    name=_DEF["name"],
+    description=_DEF["description"],
     generate=_generate,
 )
