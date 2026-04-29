@@ -77,12 +77,21 @@ def _max_metric(by_model: dict[str, dict], group: str, key: str) -> float:
 
 
 def _suptitle(fig: plt.Figure, source: str, title: str, subtitle: str = "") -> None:
-    fig.suptitle(
-        f"{source.upper()} — {title}",
-        fontsize=14, fontweight="bold", y=0.995,
+    """Render a two-line header (title + optional subtitle) at the top of the figure.
+
+    Caller should pair this with `tight_layout(rect=(0, 0, 1, 0.92))` so the
+    subplots don't collide with the header. Both lines use va="top" with
+    explicit y-coords spaced so they never overlap.
+    """
+    fig.text(
+        0.5, 0.985, f"{source.upper()} — {title}",
+        ha="center", va="top", fontsize=14, fontweight="bold",
     )
     if subtitle:
-        fig.text(0.5, 0.965, subtitle, ha="center", fontsize=10, color="#555", style="italic")
+        fig.text(
+            0.5, 0.945, subtitle,
+            ha="center", va="top", fontsize=10, color="#555", style="italic",
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -137,7 +146,7 @@ def _plot_summary(by_model: dict[str, dict], out_path: Path, source: str) -> Non
         "Balanced accuracy per mode",
         "0.5 = chance · 1.0 = perfect · shaded zone = anti-signal · higher is better",
     )
-    plt.tight_layout(rect=(0, 0, 1, 0.95))
+    plt.tight_layout(rect=(0, 0, 1, 0.92))
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
 
@@ -192,7 +201,7 @@ def _plot_per_mode(by_model: dict[str, dict], out_path: Path, source: str) -> No
     ax_f.set_xticklabels(n_strs, rotation=30, ha="right", fontsize=9)
 
     _suptitle(fig, source, "Diagnostic: recall@3 + FP rate by mode", "")
-    plt.tight_layout(rect=(0, 0, 1, 0.96))
+    plt.tight_layout(rect=(0, 0, 1, 0.92))
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
 
@@ -246,7 +255,7 @@ def _plot_supercategory(by_model: dict[str, dict], out_path: Path, source: str) 
     axes[0].legend(loc="upper right", fontsize=9)
 
     _suptitle(fig, source, "Supercategory comparison (LAYOUT vs VISUAL)", "")
-    plt.tight_layout(rect=(0, 0, 1, 0.94))
+    plt.tight_layout(rect=(0, 0, 1, 0.90))
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
 
@@ -290,7 +299,7 @@ def _plot_aggregate(by_model: dict[str, dict], out_path: Path, source: str) -> N
         "Per-model aggregate (averaged across modes)",
         "Balanced accuracy is the headline; recall + FP rate decompose it.",
     )
-    plt.tight_layout(rect=(0, 0, 1, 0.93))
+    plt.tight_layout(rect=(0, 0, 1, 0.90))
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
 
