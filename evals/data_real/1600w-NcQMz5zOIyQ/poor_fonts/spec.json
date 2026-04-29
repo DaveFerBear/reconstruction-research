@@ -1,0 +1,81 @@
+{
+  "background_color": "#F6B01B",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A woman with curly dark hair and purple sunglasses stands against a bright yellow background. She wears a light brown crocheted bikini top and light blue denim shorts with frayed edges. She holds a vintage-style boombox in her left hand.",
+      "filename": "asset-1.png",
+      "x": 12,
+      "y": -16,
+      "width": 1600,
+      "height": 1341,
+      "rotation": 0
+    },
+    {
+      "type": "image",
+      "asset_description": "A transparent background displays scattered gold and brown star shapes of varying sizes and orientations. The stars are distributed across the image, with some appearing as small specks and others as larger, more defined shapes.",
+      "filename": "asset-2.png",
+      "x": -3,
+      "y": 6,
+      "width": 1604,
+      "height": 1340,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "LETS",
+      "x": 8,
+      "y": 792,
+      "width": 1600,
+      "height": 190,
+      "rotation": 0,
+      "color": "#FF69B4",
+      "font_family": "Brush Script MT",
+      "font_size": 260,
+      "text_align": "center",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "PARTY",
+      "x": 4,
+      "y": 955,
+      "width": 1600,
+      "height": 280,
+      "rotation": 0,
+      "color": "#FF69B4",
+      "font_family": "Brush Script MT",
+      "font_size": 260,
+      "text_align": "center",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "YOU ARE INVITED",
+      "x": 8,
+      "y": 1212,
+      "width": 1600,
+      "height": 80,
+      "rotation": 0,
+      "color": "#FFFFFF",
+      "font_family": "Brush Script MT",
+      "font_size": 64,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}

@@ -1,0 +1,23 @@
+{
+  "description": "recolored 18 TextNodes with clashing palette (#FF00FF, #7FFF00, #FF8C00, #00CED1, #FFD700, #DC143C, #00FF7F)",
+  "changed_node_indices": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ]
+}

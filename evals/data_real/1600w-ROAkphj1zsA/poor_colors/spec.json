@@ -1,0 +1,65 @@
+{
+  "background_color": "#F4EEDB",
+  "has_background_image": true,
+  "background_image_description": "The image shows a cream or off-white background with small, scattered dark specks. The specks are unevenly distributed and vary in size and shape. The background has a slightly textured appearance but is not completely smooth or uniform in color.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A light beige background with small speckles and variations in tone. The speckles are distributed unevenly across the surface, with some areas appearing more concentrated than others. The background has a slightly textured appearance.",
+      "filename": "asset-3.png",
+      "x": -6,
+      "y": -2,
+      "width": 1725,
+      "height": 1310,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A yellow, circular cartoon character with green arms, legs, and white gloves is depicted against a black background. The character has a smiling face with wide eyes and a small red nose.",
+      "filename": "asset-2.png",
+      "x": 786,
+      "y": 202,
+      "width": 820,
+      "height": 811,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "Say yes to",
+      "x": 102,
+      "y": 441,
+      "width": 746,
+      "height": 232,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Georgia",
+      "font_size": 140,
+      "text_align": "left",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "challenges!",
+      "x": 62,
+      "y": 569,
+      "width": 720,
+      "height": 200,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "PT Serif",
+      "font_size": 140,
+      "text_align": "left",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1200
+}

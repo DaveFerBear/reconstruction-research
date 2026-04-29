@@ -1,0 +1,86 @@
+{
+  "background_color": "#63B3E6",
+  "has_background_image": true,
+  "background_image_description": "The image shows a clear blue sky with scattered white clouds. The clouds are primarily fluffy and appear at various heights and shapes. The blue sky dominates the frame, creating a bright and airy atmosphere.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A light blue sky with scattered white clouds of varying shapes and sizes. The clouds are dispersed across the upper portion of the image, with some areas appearing denser and others more wispy. The sky has a slightly textured appearance, possibly due to small particles or dust.",
+      "filename": "asset-3.png",
+      "x": -75,
+      "y": -3,
+      "width": 1358,
+      "height": 1713,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "An open book with cream-colored pages displays dense text in a serif typeface. The pages are numbered and contain footnotes and references. The book is bound in black leather and rests on a dark surface against a dark background.",
+      "filename": "asset-1.png",
+      "x": 261,
+      "y": 351,
+      "width": 719,
+      "height": 957,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "GET TO KNOW GOD",
+      "x": 6,
+      "y": 368,
+      "width": 1280,
+      "height": 72,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Domine",
+      "font_size": 46,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "THROUGH HIS WORD",
+      "x": -6,
+      "y": 1305,
+      "width": 1280,
+      "height": 72,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "Domine",
+      "font_size": 46,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "A white, irregular oval shape is centered on a transparent background. The oval is slightly uneven, with some small variations in thickness along its edges.",
+      "filename": "asset-2.png",
+      "x": 684,
+      "y": 309,
+      "width": 300,
+      "height": 199,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A horizontal white line is centered on a black background. The line is slightly curved and positioned near the center of the image.",
+      "filename": "asset-4.png",
+      "x": 600,
+      "y": 1110,
+      "width": 415,
+      "height": 535,
+      "rotation": -5,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1280,
+  "canvas_height": 1600
+}

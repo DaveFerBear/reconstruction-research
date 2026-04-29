@@ -1,0 +1,93 @@
+{
+  "background_color": "#F4F4F1",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A solid light gray background fills the frame.",
+      "filename": "asset-4.png",
+      "x": -120,
+      "y": -100,
+      "width": 1784,
+      "height": 1528,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A pinkish-red speech bubble shape is centered on a black background. The bubble has a rounded top and a pointed tail extending to the left.",
+      "filename": "asset-2.png",
+      "x": 257,
+      "y": -154,
+      "width": 1468,
+      "height": 1372,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "WE ARE OPEN TODAY",
+      "x": 586,
+      "y": 245,
+      "width": 700,
+      "height": 420,
+      "rotation": -5,
+      "color": "#FF00FF",
+      "font_family": "Comic Relief",
+      "font_size": 150,
+      "text_align": "center",
+      "font_weight": "800",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "10AM - 9PM",
+      "x": 949,
+      "y": 712,
+      "width": 420,
+      "height": 80,
+      "rotation": -5,
+      "color": "#7FFF00",
+      "font_family": "Arial",
+      "font_size": 52,
+      "text_align": "left",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "@reallygreatsite  |  www.reallygreatsite.com",
+      "x": 250,
+      "y": 1210,
+      "width": 1100,
+      "height": 60,
+      "rotation": 0,
+      "color": "#FF8C00",
+      "font_family": "Arial",
+      "font_size": 38,
+      "text_align": "center",
+      "font_weight": "600",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "A pink plastic megaphone with a white inner cone and a pink handle is shown against a white background. The handle is angled slightly downward.",
+      "filename": "asset-3.png",
+      "x": -48,
+      "y": 632,
+      "width": 596,
+      "height": 596,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}

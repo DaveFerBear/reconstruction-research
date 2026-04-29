@@ -1,0 +1,80 @@
+{
+  "background_color": "#000000",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A purple, star-shaped object is positioned slightly to the right and above a cluster of five teal-colored, oval-shaped objects. The objects are arranged somewhat haphazardly, with some overlapping each other. The background is a uniform light gray.",
+      "filename": "asset-1.png",
+      "x": 270,
+      "y": 16,
+      "width": 1044,
+      "height": 594,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "STUDIO \u2726 AGATHO",
+      "x": 636,
+      "y": 70,
+      "width": 328,
+      "height": 36,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Helvetica Neue",
+      "font_size": 28,
+      "text_align": "center",
+      "font_weight": "600",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "Branding",
+      "x": 428,
+      "y": 464,
+      "width": 860,
+      "height": 182,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "DM Sans",
+      "font_size": 170,
+      "text_align": "left",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "&",
+      "x": 432,
+      "y": 612,
+      "width": 120,
+      "height": 170,
+      "rotation": 0,
+      "color": "#FF8C00",
+      "font_family": "Helvetica Neue",
+      "font_size": 170,
+      "text_align": "left",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "The word \"Design\" is displayed in large, three-dimensional, gradient-filled letters on a light gray background. The letters are light purple and appear to cast a soft shadow below them. The background is a uniform, light gray color.",
+      "filename": "asset-2.png",
+      "x": 470,
+      "y": 508,
+      "width": 836,
+      "height": 394,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

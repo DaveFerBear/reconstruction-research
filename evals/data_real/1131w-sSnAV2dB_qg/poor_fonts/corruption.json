@@ -1,0 +1,8 @@
+{
+  "description": "set font_family to 'Papyrus' on 3 TextNodes",
+  "changed_node_indices": [
+    0,
+    1,
+    2
+  ]
+}

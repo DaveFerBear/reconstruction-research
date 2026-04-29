@@ -1,0 +1,10 @@
+{
+  "description": "set font_family to 'Comic Sans MS' on 5 TextNodes",
+  "changed_node_indices": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

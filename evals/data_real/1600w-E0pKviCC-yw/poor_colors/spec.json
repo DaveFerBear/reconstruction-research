@@ -1,0 +1,53 @@
+{
+  "background_color": "#F4F3EE",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "a",
+      "x": 306,
+      "y": 340,
+      "width": 600,
+      "height": 782,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Verdana",
+      "font_size": 950,
+      "text_align": "left",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "A solid dark gray background fills the frame.",
+      "filename": "svg-1.svg",
+      "x": 968,
+      "y": 936,
+      "width": 176,
+      "height": 160,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "NEW YORK ESTD 2030 GALLERY",
+      "x": 940,
+      "y": 580,
+      "width": 220,
+      "height": 110,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "Poppins",
+      "font_size": 30,
+      "text_align": "right",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

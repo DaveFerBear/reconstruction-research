@@ -1,0 +1,64 @@
+{
+  "background_color": "#f4efe8",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A man walks away from the camera across a flat, sandy landscape. He wears a light beige, long-sleeved garment that reaches his ankles, white trousers, and dark shoes. His dark hair is visible under the light-colored garment. The ground is mostly flat and light brown, with small stones and pebbles visible. In the distance, gentle rolling sand dunes are visible against a pale blue sky.",
+      "filename": "asset-1.png",
+      "x": -20,
+      "y": -28,
+      "width": 1624,
+      "height": 692,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "BORCELLE",
+      "x": 560,
+      "y": 308,
+      "width": 480,
+      "height": 48,
+      "rotation": 0,
+      "color": "#ffffff",
+      "font_family": "Papyrus",
+      "font_size": 36,
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "BRAND PROPOSAL",
+      "x": 52,
+      "y": 522,
+      "width": 2272,
+      "height": 384,
+      "rotation": 0,
+      "color": "#b01719",
+      "font_family": "Papyrus",
+      "font_size": 250,
+      "text_align": "left",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "A completely white image with no visible content.",
+      "filename": "asset-2.png",
+      "x": 633,
+      "y": 265,
+      "width": 316,
+      "height": 123,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 900
+}

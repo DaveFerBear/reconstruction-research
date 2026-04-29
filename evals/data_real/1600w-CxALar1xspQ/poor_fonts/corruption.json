@@ -1,0 +1,12 @@
+{
+  "description": "set font_family to 'Brush Script MT' on 7 TextNodes",
+  "changed_node_indices": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10
+  ]
+}

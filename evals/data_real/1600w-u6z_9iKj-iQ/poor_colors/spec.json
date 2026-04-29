@@ -1,0 +1,71 @@
+{
+  "background_color": "#0e2735",
+  "has_background_image": true,
+  "background_image_description": "Five lit diyas (oil lamps) are arranged on a dark surface. The diyas are orange-red in color and emit a warm glow. The background is dark teal with blurred, out-of-focus circular shapes.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "Five lit diyas (small clay lamps) are arranged on a dark surface. The flames are bright and steady, with sparks visible near the center. The background is dark with blurred blue and pinkish-white bokeh effects.",
+      "filename": "asset-1.png",
+      "x": -7,
+      "y": -17,
+      "width": 1624,
+      "height": 1620,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "Happy",
+      "x": 256,
+      "y": 204,
+      "width": 1200,
+      "height": 110,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Dancing Script",
+      "font_size": 120,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "DIWALI",
+      "x": 240,
+      "y": 324,
+      "width": 1200,
+      "height": 260,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "Arial Black",
+      "font_size": 300,
+      "text_align": "center",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "FESTIVAL OF LIGHTS",
+      "x": 232,
+      "y": 608,
+      "width": 1200,
+      "height": 60,
+      "rotation": 0,
+      "color": "#FF8C00",
+      "font_family": "Helvetica",
+      "font_size": 42,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

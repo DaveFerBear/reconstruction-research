@@ -1,0 +1,8 @@
+{
+  "description": "recolored 3 TextNodes with clashing palette (#FF00FF, #7FFF00, #FF8C00)",
+  "changed_node_indices": [
+    4,
+    5,
+    6
+  ]
+}

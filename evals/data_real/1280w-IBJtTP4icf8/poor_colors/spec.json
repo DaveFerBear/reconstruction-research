@@ -1,0 +1,71 @@
+{
+  "background_color": "#000000",
+  "has_background_image": true,
+  "background_image_description": "A dark wooden table holds a black laptop, a dark glass with ice, a wooden tray with cutlery, a light blue chair with a dark cushion, and a white plate with food. The background is a light gray textured wall.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A dark glass cup filled with a brown liquid sits on a wooden table next to a partially visible laptop. A wooden cutting board holds a spoon and a white napkin. A light blue chair is visible to the left of the table. The background is a plain light gray wall.",
+      "filename": "asset-2.png",
+      "x": 3,
+      "y": 0,
+      "width": 1274,
+      "height": 1599,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "Clean girl",
+      "x": 173,
+      "y": 382,
+      "width": 900,
+      "height": 190,
+      "rotation": 0,
+      "color": "#FF00FF",
+      "font_family": "Eurotype BKL",
+      "font_size": 200,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "healthy habits",
+      "x": 172,
+      "y": 561,
+      "width": 900,
+      "height": 150,
+      "rotation": 0,
+      "color": "#7FFF00",
+      "font_family": "Eurotype BKL",
+      "font_size": 120,
+      "text_align": "center",
+      "font_weight": "600",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "@reallygreatsite",
+      "x": 2,
+      "y": 754,
+      "width": 1280,
+      "height": 44,
+      "rotation": 0,
+      "color": "#FF8C00",
+      "font_family": "Helvetica",
+      "font_size": 32,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1280,
+  "canvas_height": 1600
+}
