@@ -460,9 +460,11 @@ def main() -> None:
         )
         if missing_jobs:
             # Reuse _run_judging by reconstructing a (render, model) cross-product
-            # that contains only the pairs we still need.
-            renders_needed = list({r for r, _ in missing_jobs})
-            models_per_render = {r.render_id: set() for r in renders_needed}
+            # that contains only the pairs we still need. Dedupe by render_id
+            # (Render isn't hashable — it has no @dataclass(frozen=True)).
+            renders_by_id: dict[str, Render] = {r.render_id: r for r, _ in missing_jobs}
+            renders_needed = list(renders_by_id.values())
+            models_per_render: dict[str, set[str]] = {rid: set() for rid in renders_by_id}
             for r, m in missing_jobs:
                 models_per_render[r.render_id].add(m)
             # Constraint: _run_judging takes a tuple of models and runs the full cross-product.
