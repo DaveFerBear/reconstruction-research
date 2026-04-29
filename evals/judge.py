@@ -44,7 +44,7 @@ DEFAULT_MODELS: tuple[str, ...] = (
 #
 # qwen3-vl:4b reasoning empirically eats ~4000 tokens per call, so the
 # ollama branch needs an even higher cap than cloud reasoning models.
-MAX_TOKENS_LITELLM = 2048
+MAX_TOKENS_LITELLM = 4096   # gpt-5's reasoning sometimes pushes past 2048
 MAX_TOKENS_OLLAMA  = 8192
 
 OLLAMA_PREFIX = "ollama/"
