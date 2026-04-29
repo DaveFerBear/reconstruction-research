@@ -6,3 +6,6 @@ datasets_secret/
 
 # Temp for now
 edits/
+
+# Generated eval data
+evals/data/
