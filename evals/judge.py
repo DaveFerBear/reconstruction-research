@@ -36,7 +36,13 @@ DEFAULT_MODELS: tuple[str, ...] = (
     "gpt-4o",
     "ollama/qwen3-vl:4b",
 )
-MAX_TOKENS = 300
+# Generous output budget. Reasoning models (gpt-5, qwen3-vl-thinking)
+# consume a chunk of this on internal reasoning before producing visible
+# `content`; with a tight cap (e.g. 300) the JSON output gets truncated
+# and we silently parse an empty issues list. Non-reasoning models still
+# only emit ~50-150 tokens for the actual answer, so the cost overhead
+# of a high cap is negligible.
+MAX_TOKENS = 2048
 
 OLLAMA_PREFIX = "ollama/"
 
@@ -176,6 +182,9 @@ def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
                 "images": [str(render_path.resolve())],
             },
         ],
+        # think=False skips the internal <think> block so all output budget
+        # goes to the JSON answer (qwen3-vl is a reasoning model by default).
+        think=False,
         options={"temperature": 0, "num_predict": MAX_TOKENS},
     )
     raw = (response.message.content or "").strip()
