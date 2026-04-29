@@ -100,9 +100,16 @@ free-text (JSON array). A separate Haiku-backed classifier
 (`evals/classify.py`) maps each issue back onto our 11-mode taxonomy after
 the fact, so scoring is robust to vocabulary differences across providers.
 
-Three models are evaluated by default: `claude-opus-4-6`, `claude-sonnet-4-6`,
-`gpt-4o`. Both `ANTHROPIC_API_KEY` and `OPENAI_API_KEY` are read from the
-project-root `.env`.
+Four models are evaluated by default: `claude-opus-4-6`, `claude-sonnet-4-6`,
+`gpt-4o`, and `ollama/qwen3-vl:4b` (local). Both `ANTHROPIC_API_KEY` and
+`OPENAI_API_KEY` are read from the project-root `.env`. The Ollama model
+needs the Ollama daemon running locally (`ollama serve`) and the weights
+pulled (`ollama pull qwen3-vl:4b`).
+
+Any model string prefixed with `ollama/` is dispatched to the local Ollama
+instance via the `ollama` Python package; everything else goes through
+`litellm.completion`. To swap in a different local vision model, pass it
+explicitly: `--model ollama/<name>:<tag>`.
 
 ### Two granularities of scoring
 

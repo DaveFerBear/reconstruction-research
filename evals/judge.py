@@ -28,8 +28,11 @@ DEFAULT_MODELS: tuple[str, ...] = (
     "claude-opus-4-6",
     "claude-sonnet-4-6",
     "gpt-4o",
+    "ollama/qwen3-vl:4b",
 )
 MAX_TOKENS = 300
+
+OLLAMA_PREFIX = "ollama/"
 
 _SYSTEM_PROMPT = (
     "You are a senior graphic designer reviewing a finished design. Look at "
@@ -109,7 +112,7 @@ def _parse_issues(text: str) -> tuple[list[str], str | None]:
     return [], "no JSON array found in response"
 
 
-def judge(render_path: Path, model: str) -> IssueSet:
+def _judge_litellm(render_path: Path, model: str) -> IssueSet:
     image_b64 = _encode_png(render_path)
     messages = [
         {"role": "system", "content": _SYSTEM_PROMPT},
@@ -138,3 +141,47 @@ def judge(render_path: Path, model: str) -> IssueSet:
         output_tokens=int(getattr(usage, "completion_tokens", 0) or 0),
         parse_error=parse_error,
     )
+
+
+def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
+    """Local Ollama vision model (e.g. qwen3-vl:4b).
+
+    Ollama's chat API takes image *paths* (or bytes) on a top-level `images`
+    field of the user message, not as content blocks — see notebooks/qwen3.ipynb.
+    Thinking output (for reasoning models like qwen3-vl) lands on
+    `response.message.thinking` and is NOT included in `.content`.
+    """
+    from ollama import chat as ollama_chat  # noqa: PLC0415
+
+    response = ollama_chat(
+        model=model,
+        messages=[
+            {"role": "system", "content": _SYSTEM_PROMPT},
+            {
+                "role": "user",
+                "content": "What are the top design issues with this image?",
+                "images": [str(render_path.resolve())],
+            },
+        ],
+        options={"temperature": 0, "num_predict": MAX_TOKENS},
+    )
+    raw = (response.message.content or "").strip()
+    issues, parse_error = _parse_issues(raw)
+    return IssueSet(
+        issues=issues,
+        raw=raw,
+        model=full_name,
+        input_tokens=int(getattr(response, "prompt_eval_count", 0) or 0),
+        output_tokens=int(getattr(response, "eval_count", 0) or 0),
+        parse_error=parse_error,
+    )
+
+
+def judge(render_path: Path, model: str) -> IssueSet:
+    if model.startswith(OLLAMA_PREFIX):
+        return _judge_ollama(
+            render_path,
+            model.removeprefix(OLLAMA_PREFIX),
+            full_name=model,
+        )
+    return _judge_litellm(render_path, model)
