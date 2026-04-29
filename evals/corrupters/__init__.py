@@ -8,12 +8,16 @@ from evals.corrupters.misalignment import CORRUPTER as misalignment
 from evals.corrupters.nonsensical_hierarchy import CORRUPTER as nonsensical_hierarchy
 from evals.corrupters.overflow import CORRUPTER as overflow
 from evals.corrupters.overlap import CORRUPTER as overlap
+from evals.corrupters.poor_colors import CORRUPTER as poor_colors
 from evals.corrupters.poor_contrast import CORRUPTER as poor_contrast
+from evals.corrupters.poor_fonts import CORRUPTER as poor_fonts
 from evals.corrupters.uneven_distribution import CORRUPTER as uneven_distribution
 
 CORRUPTERS: list[Corrupter] = [
     overflow,
     poor_contrast,
+    poor_colors,
+    poor_fonts,
     overlap,
     misalignment,
     nonsensical_hierarchy,

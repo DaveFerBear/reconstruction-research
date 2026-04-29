@@ -26,8 +26,22 @@ from pathlib import Path
 
 import anthropic
 
+from evals.corrupters import CORRUPTERS
 from evals.failure_modes import FAILURE_MODES, FailureMode
 from evals.judge import DEFAULT_MODELS, judge
+
+
+# Canonical mode catalog: union of synthetic FailureMode and real-only Corrupter
+# entries. Both expose .id / .name / .description, which is all the judge needs
+# to build its prompt — duck-typed across the two registries.
+def _build_mode_catalog():
+    catalog = {m.id: m for m in FAILURE_MODES}
+    for c in CORRUPTERS:
+        catalog.setdefault(c.id, c)
+    return catalog
+
+
+ALL_MODES_BY_ID = _build_mode_catalog()
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SYNTHETIC_DATA_DIR = Path(__file__).parent / "data"
@@ -240,12 +254,11 @@ def main() -> None:
     models = tuple(args.model) if args.model else DEFAULT_MODELS
 
     if args.mode:
-        modes_in_scope = [m for m in FAILURE_MODES if m.id == args.mode]
-        if not modes_in_scope:
+        if args.mode not in ALL_MODES_BY_ID:
             raise SystemExit(f"No failure mode with id={args.mode!r}")
+        mode_by_id = {args.mode: ALL_MODES_BY_ID[args.mode]}
     else:
-        modes_in_scope = FAILURE_MODES
-    mode_by_id: dict[str, FailureMode] = {m.id: m for m in modes_in_scope}
+        mode_by_id = dict(ALL_MODES_BY_ID)
 
     items: list[Item] = []
     if args.source in ("synthetic", "both"):

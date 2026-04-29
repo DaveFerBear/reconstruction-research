@@ -239,6 +239,23 @@ MODE_DEFINITIONS: dict[str, dict[str, str]] = {
             "one renders directly on top of the other and obscures it."
         ),
     },
+    "poor_colors": {
+        "name": "Poor colors",
+        "description": (
+            "The design uses a poorly-chosen, uncoordinated, or clashing "
+            "color palette. Text colors fight each other or feel garish "
+            "rather than harmonizing into a cohesive scheme."
+        ),
+    },
+    "poor_fonts": {
+        "name": "Poor fonts",
+        "description": (
+            "The design's typeface choice is tonally inappropriate or "
+            "unprofessional for the content — for example, Comic Sans, "
+            "Papyrus, or a decorative script used on a serious or "
+            "corporate design."
+        ),
+    },
 }
 
 
