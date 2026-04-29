@@ -151,7 +151,14 @@ def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
     Thinking output (for reasoning models like qwen3-vl) lands on
     `response.message.thinking` and is NOT included in `.content`.
     """
-    from ollama import chat as ollama_chat  # noqa: PLC0415
+    try:
+        from ollama import chat as ollama_chat  # noqa: PLC0415
+    except ImportError as e:
+        raise RuntimeError(
+            "The `ollama` Python package is required to evaluate ollama/* models.\n"
+            "Install it with `pip install ollama` (or `pip install -r requirements.txt`),\n"
+            "and ensure the Ollama daemon is running (`ollama serve`)."
+        ) from e
 
     response = ollama_chat(
         model=model,

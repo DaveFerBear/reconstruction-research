@@ -389,6 +389,20 @@ def main() -> None:
 
     models = tuple(args.model) if args.model else DEFAULT_MODELS
 
+    # Fail fast on missing ollama dep so we don't burn through 200 judge calls
+    # discovering it the hard way.
+    if any(m.startswith("ollama/") for m in models):
+        try:
+            import ollama  # noqa: F401, PLC0415
+        except ImportError:
+            print(
+                "Models include ollama/* but the `ollama` package isn't installed.\n"
+                "Run `pip install ollama` (or `pip install -r requirements.txt`),\n"
+                "and make sure the Ollama daemon is running (`ollama serve`).",
+                file=sys.stderr,
+            )
+            sys.exit(2)
+
     renders: list[Render] = []
     if args.source in ("synthetic", "both"):
         renders.extend(_collect_synthetic(Path(args.synthetic_root), args.mode))
