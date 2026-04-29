@@ -376,6 +376,15 @@ def main() -> None:
         help="Read existing results.json instead of re-judging. Reclassifies + recomputes summary.",
     )
     parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help=(
+            "Reuse any cached judgments from results.json; judge only the "
+            "(render, model) pairs that aren't already there. Use this to add "
+            "a new model to a previous run without redoing the old ones."
+        ),
+    )
+    parser.add_argument(
         "--verbose", "-v",
         action="store_true",
         help="Print each judgment's parsed issues alongside the progress bar.",
@@ -417,18 +426,61 @@ def main() -> None:
     out_path = Path(args.out)
 
     judgments: list[Judgment]
-    if args.reuse_judgments and out_path.exists():
+    cached_judgments: list[Judgment] = []
+    if (args.reuse_judgments or args.incremental) and out_path.exists():
         existing = json.loads(out_path.read_text(encoding="utf-8"))
         raw_judgments = existing.get("judgments", [])
-        # Filter to current scope (--source / --mode / --limit)
         valid_render_ids = {r.render_id for r in renders}
         valid_models = set(models)
-        judgments = [
+        cached_judgments = [
             Judgment(**{k: v for k, v in j.items() if k in Judgment.__dataclass_fields__})
             for j in raw_judgments
             if j.get("render_id") in valid_render_ids and j.get("model") in valid_models
         ]
+
+    if args.reuse_judgments:
+        judgments = cached_judgments
         print(f"Reusing {len(judgments)} judgments from {out_path}")
+    elif args.incremental:
+        seen = {(j.render_id, j.model) for j in cached_judgments}
+        missing_renders_models: dict[str, set[str]] = {}
+        for r in renders:
+            for m in models:
+                if (r.render_id, m) not in seen:
+                    missing_renders_models.setdefault(r.render_id, set()).add(m)
+        missing_jobs = [
+            (r, m)
+            for r in renders
+            for m in models
+            if (r.render_id, m) not in seen
+        ]
+        print(
+            f"Incremental: {len(cached_judgments)} cached, "
+            f"{len(missing_jobs)} new (render, model) pairs to judge."
+        )
+        if missing_jobs:
+            # Reuse _run_judging by reconstructing a (render, model) cross-product
+            # that contains only the pairs we still need.
+            renders_needed = list({r for r, _ in missing_jobs})
+            models_per_render = {r.render_id: set() for r in renders_needed}
+            for r, m in missing_jobs:
+                models_per_render[r.render_id].add(m)
+            # Constraint: _run_judging takes a tuple of models and runs the full cross-product.
+            # If different renders need different model subsets, do it per model.
+            new_judgments: list[Judgment] = []
+            for m in models:
+                renders_for_model = [
+                    r for r in renders_needed if m in models_per_render[r.render_id]
+                ]
+                if not renders_for_model:
+                    continue
+                new_judgments.extend(_run_judging(
+                    renders_for_model, (m,),
+                    concurrency=args.concurrency, verbose=args.verbose,
+                ))
+            judgments = cached_judgments + new_judgments
+        else:
+            judgments = cached_judgments
     else:
         judgments = _run_judging(
             renders, models, concurrency=args.concurrency, verbose=args.verbose
