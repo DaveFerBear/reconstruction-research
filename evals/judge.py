@@ -24,6 +24,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Drop provider-unsupported params instead of erroring. Specifically: GPT-5
+# rejects `temperature=0` (only temperature=1 is supported). Without this
+# flag the run dies on the first gpt-5 call. Other models still see
+# temperature=0 and behave deterministically.
+litellm.drop_params = True
+
 DEFAULT_MODELS: tuple[str, ...] = (
     "claude-opus-4-6",
     "claude-sonnet-4-6",
