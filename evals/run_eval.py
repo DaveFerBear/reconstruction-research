@@ -15,6 +15,7 @@ import json
 import sys
 import time
 import traceback
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -151,6 +152,12 @@ def main() -> None:
         default=str(RESULTS_PATH),
         help=f"Path for results JSON (default: {RESULTS_PATH})",
     )
+    parser.add_argument(
+        "--concurrency",
+        type=int,
+        default=8,
+        help="Number of concurrent API calls (default: 8). Set to 1 for serial.",
+    )
     args = parser.parse_args()
 
     root = Path(args.root)
@@ -181,51 +188,63 @@ def main() -> None:
         print("No render.png files found. Did you run `python -m evals.render`?", file=sys.stderr)
         sys.exit(1)
 
+    # The Anthropic SDK's HTTP client is thread-safe; sharing one client across
+    # the pool keeps connection reuse and the SDK's built-in 429/5xx retries.
     client = anthropic.Anthropic()
 
-    results: list[Result] = []
-    total = len(items) * len(models)
-    print(f"Evaluating {len(items)} renders × {len(models)} models = {total} calls")
+    jobs: list[tuple[Item, str]] = [(item, model) for item in items for model in models]
+    total = len(jobs)
+    print(
+        f"Evaluating {len(items)} renders × {len(models)} models = {total} calls "
+        f"(concurrency={args.concurrency})"
+    )
     started = time.time()
 
-    for j, item in enumerate(items, start=1):
+    def _run(job: tuple[Item, str]) -> Result | None:
+        item, model = job
         mode = mode_by_id[item.mode_id]
-        for model in models:
-            try:
-                v = judge(item.render_path, mode, model, client=client)
-            except anthropic.APIStatusError as e:
-                print(
-                    f"  [{j}/{len(items)}] {model} {item.mode_id}/{item.variant}/{item.label}: "
-                    f"API error {e.status_code} — {e.message}",
-                    file=sys.stderr,
-                )
-                continue
-            except Exception as e:
-                print(
-                    f"  [{j}/{len(items)}] {model} {item.mode_id}/{item.variant}/{item.label}: "
-                    f"{type(e).__name__}: {e}",
-                    file=sys.stderr,
-                )
-                traceback.print_exc()
-                continue
-
-            results.append(
-                Result(
-                    mode_id=item.mode_id,
-                    variant=item.variant,
-                    label=item.label,
-                    model=model,
-                    expected=item.is_failure,
-                    predicted=v.verdict,
-                    raw=v.raw,
-                    input_tokens=v.input_tokens,
-                    output_tokens=v.output_tokens,
-                )
-            )
-            ok = "✓" if v.verdict == item.is_failure else "✗"
+        try:
+            v = judge(item.render_path, mode, model, client=client)
+        except anthropic.APIStatusError as e:
             print(
-                f"  [{j}/{len(items)}] {model} {item.mode_id}/{item.variant}/{item.label}: "
-                f"{ok} (said {'YES' if v.verdict else 'NO'})"
+                f"  {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"API error {e.status_code} — {e.message}",
+                file=sys.stderr,
+            )
+            return None
+        except Exception as e:
+            print(
+                f"  {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"{type(e).__name__}: {e}",
+                file=sys.stderr,
+            )
+            traceback.print_exc()
+            return None
+        return Result(
+            mode_id=item.mode_id,
+            variant=item.variant,
+            label=item.label,
+            model=model,
+            expected=item.is_failure,
+            predicted=v.verdict,
+            raw=v.raw,
+            input_tokens=v.input_tokens,
+            output_tokens=v.output_tokens,
+        )
+
+    results: list[Result] = []
+    with ThreadPoolExecutor(max_workers=max(1, args.concurrency)) as pool:
+        futures = {pool.submit(_run, job): job for job in jobs}
+        for j, future in enumerate(as_completed(futures), start=1):
+            item, model = futures[future]
+            result = future.result()
+            if result is None:
+                continue
+            results.append(result)
+            ok = "✓" if result.predicted == result.expected else "✗"
+            print(
+                f"  [{j}/{total}] {model} {item.mode_id}/{item.variant}/{item.label}: "
+                f"{ok} (said {'YES' if result.predicted else 'NO'})"
             )
 
     elapsed = time.time() - started
