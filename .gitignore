@@ -12,3 +12,4 @@ edits/
 evals/results.json
 evals/review.html
 evals/classifier_cache.json
+evals/charts/

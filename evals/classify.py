@@ -21,6 +21,7 @@ from typing import Any
 
 import litellm
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 from evals.common import MODE_DEFINITIONS, SUPERCATEGORIES
 
@@ -195,17 +196,23 @@ def classify_batch(
     results: dict[str, IssueCategory] = {}
     with ThreadPoolExecutor(max_workers=max(1, concurrency)) as pool:
         futures = {pool.submit(_classify_one, t, cache): t for t in unique}
-        done = 0
-        for future in as_completed(futures):
+        bar = tqdm(
+            as_completed(futures),
+            total=len(futures),
+            desc="classifying",
+            unit="issue",
+            disable=not progress,
+        )
+        for future in bar:
             t = futures[future]
             try:
                 results[t] = future.result()
             except Exception as e:
-                print(f"  classifier error on {t!r}: {type(e).__name__}: {e}", file=sys.stderr)
+                tqdm.write(
+                    f"  classifier error on {t!r}: {type(e).__name__}: {e}",
+                    file=sys.stderr,
+                )
                 results[t] = IssueCategory(None, None)
-            done += 1
-            if progress and done % 50 == 0:
-                print(f"  classified {done}/{len(unique)}")
 
     cache.save()
     if progress:

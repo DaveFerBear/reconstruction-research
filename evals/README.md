@@ -134,7 +134,15 @@ python -m evals.run_eval --reuse-judgments
 
 # Skip the classifier entirely; uncached issues map to (None, None):
 python -m evals.run_eval --skip-classifier
+
+# Verbose: print each judgment's parsed issues alongside the tqdm bar
+python -m evals.run_eval -v
+
+# Skip the chart-rendering step at the end
+python -m evals.run_eval --no-charts
 ```
+
+Progress is shown via `tqdm` for both judging and classifying.
 
 Results land in `evals/results.json`:
 
@@ -148,6 +156,22 @@ Results land in `evals/results.json`:
 The classifier persists to `evals/classifier_cache.json` (SHA256-keyed) so
 re-runs that add new (model, render) pairs cost nearly zero classifier API
 spend.
+
+### Charts
+
+After judging + classifying, `run_eval.py` automatically renders bar charts
+to `evals/charts/<source>_*.png`:
+
+- `<source>_per_mode.png` — recall@3 + FP rate per mode, grouped by model
+- `<source>_supercategory.png` — recall@3 + FP rate per layout/visual
+- `<source>_aggregate.png` — per-model mean recall@3 + mean FP rate
+
+Re-render charts without re-running anything:
+
+```bash
+python -m evals.make_charts                        # reads evals/results.json
+python -m evals.make_charts --out /tmp/charts      # different output dir
+```
 
 ### Volume + cost
 

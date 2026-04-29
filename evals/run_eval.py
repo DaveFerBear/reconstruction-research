@@ -20,6 +20,8 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
+from tqdm import tqdm
+
 from evals.classify import IssueCategory, classify_batch
 from evals.common import MODE_DEFINITIONS, SUPERCATEGORIES
 from evals.judge import DEFAULT_MODELS, IssueSet, judge
@@ -259,6 +261,8 @@ def _run_judging(
     renders: list[Render],
     models: tuple[str, ...],
     concurrency: int,
+    *,
+    verbose: bool = False,
 ) -> list[Judgment]:
     jobs: list[tuple[Render, str]] = [(r, m) for r in renders for m in models]
     total = len(jobs)
@@ -269,7 +273,10 @@ def _run_judging(
         try:
             result: IssueSet = judge(render.render_path, model)
         except Exception as e:
-            print(f"  judge failed: {model} {render.render_id}: {type(e).__name__}: {e}", file=sys.stderr)
+            tqdm.write(
+                f"judge failed: {model} {render.render_id}: {type(e).__name__}: {e}",
+                file=sys.stderr,
+            )
             traceback.print_exc()
             return None
         return Judgment(
@@ -291,18 +298,20 @@ def _run_judging(
     started = time.time()
     with ThreadPoolExecutor(max_workers=max(1, concurrency)) as pool:
         futures = {pool.submit(_go, j): j for j in jobs}
-        for i, future in enumerate(as_completed(futures), start=1):
+        bar = tqdm(as_completed(futures), total=total, desc="judging", unit="img")
+        for future in bar:
             r, model = futures[future]
             j = future.result()
             if j is None:
                 continue
             judgments.append(j)
-            issue_summary = "; ".join(s[:50] for s in j.issues) or "(no issues)"
-            if j.parse_error:
-                issue_summary = f"PARSE ERR: {j.parse_error}"
-            print(f"  [{i}/{total}] {model} {r.render_id}: {issue_summary[:120]}")
+            if verbose:
+                summary = "; ".join(s[:50] for s in j.issues) or "(no issues)"
+                if j.parse_error:
+                    summary = f"PARSE ERR: {j.parse_error}"
+                tqdm.write(f"  {model} {r.render_id}: {summary[:120]}")
     elapsed = time.time() - started
-    print(f"\nJudging done in {elapsed:.1f}s ({len(judgments)}/{total} succeeded)")
+    print(f"Judging done in {elapsed:.1f}s ({len(judgments)}/{total} succeeded)")
     return judgments
 
 
@@ -348,6 +357,16 @@ def main() -> None:
         action="store_true",
         help="Read existing results.json instead of re-judging. Reclassifies + recomputes summary.",
     )
+    parser.add_argument(
+        "--verbose", "-v",
+        action="store_true",
+        help="Print each judgment's parsed issues alongside the progress bar.",
+    )
+    parser.add_argument(
+        "--no-charts",
+        action="store_true",
+        help="Skip the chart-rendering step at the end.",
+    )
     args = parser.parse_args()
 
     models = tuple(args.model) if args.model else DEFAULT_MODELS
@@ -379,7 +398,9 @@ def main() -> None:
         ]
         print(f"Reusing {len(judgments)} judgments from {out_path}")
     else:
-        judgments = _run_judging(renders, models, concurrency=args.concurrency)
+        judgments = _run_judging(
+            renders, models, concurrency=args.concurrency, verbose=args.verbose
+        )
 
     # Classify every unique issue string (cached by SHA256 across runs)
     all_issues = [text for j in judgments for text in j.issues]
@@ -423,6 +444,12 @@ def main() -> None:
     }
     out_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print(f"Wrote {out_path}")
+
+    if not args.no_charts:
+        from evals.make_charts import make_charts  # noqa: PLC0415
+
+        chart_dir = out_path.parent / "charts"
+        make_charts(payload["summary"], chart_dir)
 
 
 if __name__ == "__main__":
