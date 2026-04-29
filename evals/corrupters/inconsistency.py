@@ -1,50 +1,53 @@
-"""Inconsistency: find a uniform-styled group of TextNodes and reskin one of them."""
+"""Inconsistency: change ONE axis on one item of a uniform-styled group.
+
+Either the font OR the color, never both. When color is the axis, we shift
+along the same hue rather than swapping to an unrelated color — visible but
+realistic-looking inconsistency."""
 
 from __future__ import annotations
 
 from collections import defaultdict
 from typing import Any
 
-from evals.common import MODE_DEFINITIONS, normalize_spec
+from evals.common import MODE_DEFINITIONS, normalize_spec, parse_hex, to_hex
 from evals.corrupters.base import Corrupter, Corruption
 
 
-# Map current font to a visibly different one. Default is Comic Sans for
-# anything we don't recognize — it'll always read as "wrong".
+# Same-family swaps within either serif or sans-serif so the change is
+# obvious as a typeface difference but doesn't read as a wholly alien font.
 FONT_SWAP: dict[str, str] = {
-    "Arial": "Georgia",
-    "Helvetica": "Courier New",
-    "Helvetica Neue": "Courier New",
-    "Times New Roman": "Comic Sans MS",
-    "Georgia": "Courier New",
-    "Poppins": "Times New Roman",
-    "Roboto": "Georgia",
-    "Open Sans": "Times New Roman",
-    "Inter": "Georgia",
-    "Montserrat": "Times New Roman",
-    "Lato": "Georgia",
-    "Playfair Display": "Courier New",
+    "Arial": "Helvetica",
+    "Helvetica": "Arial",
+    "Helvetica Neue": "Arial",
+    "Roboto": "Arial",
+    "Open Sans": "Arial",
+    "Inter": "Arial",
+    "Montserrat": "Arial",
+    "Lato": "Arial",
+    "Poppins": "Arial",
+    "Times New Roman": "Georgia",
+    "Georgia": "Times New Roman",
+    "Playfair Display": "Georgia",
 }
 
 
-def _swap_font(font_family: str) -> str:
-    return FONT_SWAP.get(font_family, "Comic Sans MS")
+def _swap_font(font_family: str) -> str | None:
+    if font_family in FONT_SWAP:
+        return FONT_SWAP[font_family]
+    return None
 
 
-def _swap_color(color: str) -> str:
-    """Return a new color visibly different from `color`. Picks from a small
-    palette, avoiding the input color itself."""
-    palette = ["#C62828", "#1565C0", "#2E7D32", "#6A1B9A", "#EF6C00"]
-    norm = color.upper()
-    for c in palette:
-        if c != norm:
-            return c
-    return "#C62828"
+def _shift_color_subtly(color: str) -> str:
+    """Push the color toward darker (if currently light) or lighter (if dark)
+    along the same hue. Roughly equivalent to ±35 luminance."""
+    r, g, b = parse_hex(color)
+    luminance = 0.299 * r + 0.587 * g + 0.114 * b
+    delta = -45 if luminance > 128 else +45
+    return to_hex((r + delta, g + delta, b + delta))
 
 
 def _apply(spec_dict: dict[str, Any]) -> Corruption | None:
     spec = normalize_spec(spec_dict)
-    # Group TextNodes by exact (font_family, font_size, color, font_weight) tuple.
     groups: dict[tuple, list[int]] = defaultdict(list)
     for i, node in enumerate(spec.get("nodes", [])):
         if node.get("type") != "text":
@@ -57,32 +60,38 @@ def _apply(spec_dict: dict[str, Any]) -> Corruption | None:
         )
         groups[key].append(i)
 
-    # Need a group of 3+ uniformly-styled siblings to corrupt one.
     candidate_indices: list[int] = []
-    for key, indices in groups.items():
+    for indices in groups.values():
         if len(indices) >= 3:
             candidate_indices = indices
             break
     if not candidate_indices:
         return None
 
-    # Pick the middle item — least likely to be a category header that's "supposed"
-    # to look different anyway.
     target_idx = candidate_indices[len(candidate_indices) // 2]
     node = spec["nodes"][target_idx]
     old_font = node.get("font_family", "Arial")
     old_color = node.get("color", "#000000")
+
+    # Prefer font swap when the current font has a clean swap target;
+    # otherwise shift the color along the same hue. Single-axis only.
     new_font = _swap_font(old_font)
-    new_color = _swap_color(old_color)
-    spec["nodes"][target_idx] = {**node, "font_family": new_font, "color": new_color}
-    return Corruption(
-        spec=spec,
-        description=(
-            f"node[{target_idx}] (one of {len(candidate_indices)} siblings): "
-            f"font {old_font}->{new_font}, color {old_color}->{new_color}"
-        ),
-        changed_node_indices=[target_idx],
-    )
+    if new_font:
+        spec["nodes"][target_idx] = {**node, "font_family": new_font}
+        desc = (
+            f"node[{target_idx}] (1 of {len(candidate_indices)} siblings): "
+            f"font {old_font} -> {new_font}"
+        )
+    else:
+        new_color = _shift_color_subtly(old_color)
+        if new_color.upper() == old_color.upper():
+            return None
+        spec["nodes"][target_idx] = {**node, "color": new_color}
+        desc = (
+            f"node[{target_idx}] (1 of {len(candidate_indices)} siblings): "
+            f"color {old_color} -> {new_color}"
+        )
+    return Corruption(spec=spec, description=desc, changed_node_indices=[target_idx])
 
 
 _DEF = MODE_DEFINITIONS["inconsistency"]

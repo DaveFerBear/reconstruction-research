@@ -1,4 +1,9 @@
-"""Crowding: collapse the vertical gap between an adjacent pair of nodes."""
+"""Crowding: collapse the vertical gaps in a stack of adjacent nodes.
+
+Walks down a chain of vertically adjacent, horizontally-overlapping nodes,
+collapsing each gap to zero. A 3+ node chain produces a visibly crammed
+section; a 2-node fallback collapses the single pair.
+"""
 
 from __future__ import annotations
 
@@ -8,8 +13,47 @@ from evals.common import MODE_DEFINITIONS, bbox, intersects, normalize_spec
 from evals.corrupters.base import Corrupter, Corruption
 
 
-GAP_MIN = 20
-GAP_MAX = 220
+GAP_MIN = 12
+GAP_MAX = 260
+
+
+def _h_overlap(a: tuple[int, int, int, int], b: tuple[int, int, int, int]) -> bool:
+    ax, _, aw, _ = a
+    bx, _, bw, _ = b
+    return ax < bx + bw and ax + aw > bx
+
+
+def _build_chain(nodes: list[dict], start: int) -> list[int]:
+    """Return indices of a vertical chain starting at `start`. Each subsequent
+    node sits below the previous, horizontally overlaps it, and is GAP_MIN..MAX
+    pixels away."""
+    chain = [start]
+    cur = nodes[start]
+    while True:
+        cur_box = bbox(cur)
+        cur_bottom = cur_box[1] + cur_box[3]
+        # Find the nearest node strictly below the current one with horizontal overlap
+        # and a gap inside the threshold band.
+        best: int | None = None
+        best_gap = None
+        for i, n in enumerate(nodes):
+            if i in chain:
+                continue
+            nb = bbox(n)
+            gap = nb[1] - cur_bottom
+            if not (GAP_MIN <= gap <= GAP_MAX):
+                continue
+            if not _h_overlap(cur_box, nb):
+                continue
+            if intersects(cur_box, nb):
+                continue
+            if best is None or gap < best_gap:
+                best, best_gap = i, gap
+        if best is None:
+            break
+        chain.append(best)
+        cur = nodes[best]
+    return chain
 
 
 def _apply(spec_dict: dict[str, Any]) -> Corruption | None:
@@ -18,37 +62,40 @@ def _apply(spec_dict: dict[str, Any]) -> Corruption | None:
     if len(nodes) < 2:
         return None
 
-    # Order by top edge, then look for a vertically-adjacent pair separated
-    # by GAP_MIN..GAP_MAX with horizontal overlap (so the gap is *meaningful*
-    # — not just whitespace beside a column).
-    ordered = sorted(enumerate(nodes), key=lambda kv: (int(kv[1]["y"]), int(kv[1]["x"])))
-    for k in range(len(ordered) - 1):
-        ai, a = ordered[k]
-        bi, b = ordered[k + 1]
-        ax, ay, aw, ah = bbox(a)
-        bx, by, bw, bh = bbox(b)
-        gap = by - (ay + ah)
-        if not (GAP_MIN <= gap <= GAP_MAX):
-            continue
-        # Require horizontal overlap so collapsing the gap is visually meaningful.
-        if not (ax < bx + bw and ax + aw > bx):
-            continue
-        # Don't collapse pairs that already intersect (shouldn't happen, but defensive).
-        if intersects(bbox(a), bbox(b)):
-            continue
-        new_y = ay + ah  # touching, no breathing room
-        old_y = b["y"]
-        spec["nodes"][bi] = {**b, "y": new_y}
-        return Corruption(
-            spec=spec,
-            description=(
-                f"node[{bi}] moved up: y {old_y}->{new_y} (collapsed {gap}px gap "
-                f"below node[{ai}])"
-            ),
-            changed_node_indices=[bi],
-        )
+    # Try every possible starting node; keep the longest chain we find.
+    best_chain: list[int] = []
+    for i in range(len(nodes)):
+        chain = _build_chain(nodes, i)
+        if len(chain) > len(best_chain):
+            best_chain = chain
 
-    return None
+    if len(best_chain) < 2:
+        return None
+
+    # Collapse every gap in the chain to zero.
+    changed: list[int] = []
+    for k in range(len(best_chain) - 1):
+        upper_idx = best_chain[k]
+        lower_idx = best_chain[k + 1]
+        upper = spec["nodes"][upper_idx]
+        lower = spec["nodes"][lower_idx]
+        ux, uy, uw, uh = bbox(upper)
+        new_y = uy + uh
+        if int(lower["y"]) != new_y:
+            spec["nodes"][lower_idx] = {**lower, "y": new_y}
+            changed.append(lower_idx)
+
+    if not changed:
+        return None
+
+    return Corruption(
+        spec=spec,
+        description=(
+            f"collapsed {len(changed)} vertical gap(s) in a chain of "
+            f"{len(best_chain)} nodes ({' -> '.join(str(i) for i in best_chain)})"
+        ),
+        changed_node_indices=changed,
+    )
 
 
 _DEF = MODE_DEFINITIONS["crowding"]
