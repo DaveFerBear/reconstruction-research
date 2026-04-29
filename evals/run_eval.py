@@ -158,9 +158,13 @@ def _summarize(
                 negatives = [j for j in sm if not j.is_bad]
                 tp = sum(1 for j in positives if any(c.mode_id == mode_id for c in cats_for(j)))
                 fp = sum(1 for j in negatives if any(c.mode_id == mode_id for c in cats_for(j)))
+                recall = tp / len(positives) if positives else None
+                fp_rate = fp / len(negatives) if negatives else None
+                ba = ((recall + (1 - fp_rate)) / 2) if (recall is not None and fp_rate is not None) else None
                 mode_metrics[mode_id] = {
-                    "recall_at_3": round(tp / len(positives), 3) if positives else None,
-                    "fp_rate":     round(fp / len(negatives), 3) if negatives else None,
+                    "recall_at_3":       round(recall, 3) if recall is not None else None,
+                    "fp_rate":           round(fp_rate, 3) if fp_rate is not None else None,
+                    "balanced_accuracy": round(ba, 3) if ba is not None else None,
                     "n_pos": len(positives),
                     "n_neg": len(negatives),
                     "tp": tp, "fp": fp,
@@ -179,19 +183,25 @@ def _summarize(
                     1 for j in negatives
                     if any(c.supercategory == super_name for c in cats_for(j))
                 )
+                recall = tp / len(positives) if positives else None
+                fp_rate = fp / len(negatives) if negatives else None
+                ba = ((recall + (1 - fp_rate)) / 2) if (recall is not None and fp_rate is not None) else None
                 super_metrics[super_name] = {
-                    "recall_at_3": round(tp / len(positives), 3) if positives else None,
-                    "fp_rate":     round(fp / len(negatives), 3) if negatives else None,
+                    "recall_at_3":       round(recall, 3) if recall is not None else None,
+                    "fp_rate":           round(fp_rate, 3) if fp_rate is not None else None,
+                    "balanced_accuracy": round(ba, 3) if ba is not None else None,
                     "n_pos": len(positives),
                     "n_neg": len(negatives),
                     "tp": tp, "fp": fp,
                 }
 
             recalls = [m["recall_at_3"] for m in mode_metrics.values() if m["recall_at_3"] is not None]
-            fps = [m["fp_rate"] for m in mode_metrics.values() if m["fp_rate"] is not None]
+            fps     = [m["fp_rate"]     for m in mode_metrics.values() if m["fp_rate"]     is not None]
+            bas     = [m["balanced_accuracy"] for m in mode_metrics.values() if m["balanced_accuracy"] is not None]
             aggregate = {
-                "mean_recall_at_3": round(sum(recalls) / len(recalls), 3) if recalls else None,
-                "mean_fp_rate":     round(sum(fps) / len(fps), 3) if fps else None,
+                "mean_recall_at_3":        round(sum(recalls) / len(recalls), 3) if recalls else None,
+                "mean_fp_rate":            round(sum(fps) / len(fps), 3) if fps else None,
+                "mean_balanced_accuracy":  round(sum(bas) / len(bas), 3) if bas else None,
                 "n_judgments": len(sm),
             }
             summary[source][model] = {
@@ -209,51 +219,59 @@ def _print_tables(summary: dict, source: str) -> None:
         return
     models = sorted(s.keys())
     print(f"\n========== {source.upper()} ==========\n")
+    print("Cell format: bal_acc / recall@3 / FP rate  (n_pos/n_neg)")
+    print("  bal_acc 0.5 = chance | 1.0 = perfect | <0.5 = anti-signal\n")
 
     # Per-mode table
-    print("Per mode  (recall@3 / FP rate)")
-    header = f"{'mode':<24}" + "".join(f"{m:<24}" for m in models)
+    print("Per mode")
+    header = f"{'mode':<24}" + "".join(f"{m:<28}" for m in models)
     print(header)
     print("-" * len(header))
     for mode_id in MODE_DEFINITIONS:
         row = f"{mode_id:<24}"
         for model in models:
             m = s[model]["mode"][mode_id]
+            ba = m.get("balanced_accuracy")
             r = m["recall_at_3"]
             f = m["fp_rate"]
+            ba_str = f"{ba:.2f}" if ba is not None else "  - "
             r_str = f"{r:.2f}" if r is not None else "  - "
             f_str = f"{f:.2f}" if f is not None else "  - "
-            cell = f"{r_str}/{f_str}  ({m['n_pos']}/{m['n_neg']})"
-            row += f"{cell:<24}"
+            cell = f"{ba_str}/{r_str}/{f_str} ({m['n_pos']}/{m['n_neg']})"
+            row += f"{cell:<28}"
         print(row)
 
     # Per-supercategory table
-    print("\nPer supercategory  (recall@3 / FP rate)")
+    print("\nPer supercategory")
     print(header)
     print("-" * len(header))
     for super_name in ("layout", "visual"):
         row = f"{super_name:<24}"
         for model in models:
             m = s[model]["supercategory"][super_name]
+            ba = m.get("balanced_accuracy")
             r = m["recall_at_3"]
             f = m["fp_rate"]
+            ba_str = f"{ba:.2f}" if ba is not None else "  - "
             r_str = f"{r:.2f}" if r is not None else "  - "
             f_str = f"{f:.2f}" if f is not None else "  - "
-            cell = f"{r_str}/{f_str}  ({m['n_pos']}/{m['n_neg']})"
-            row += f"{cell:<24}"
+            cell = f"{ba_str}/{r_str}/{f_str} ({m['n_pos']}/{m['n_neg']})"
+            row += f"{cell:<28}"
         print(row)
 
     # Aggregate per model
     print("\nAggregate per model")
-    print(f"{'model':<24}{'mean recall@3':<18}{'mean FP rate':<18}{'#judgments':<12}")
-    print("-" * 72)
+    print(f"{'model':<24}{'mean bal_acc':<16}{'mean recall@3':<18}{'mean FP rate':<18}{'#judgments':<12}")
+    print("-" * 90)
     for model in models:
         agg = s[model]["aggregate"]
-        r = agg["mean_recall_at_3"]
-        f = agg["mean_fp_rate"]
-        r_str = f"{r:.3f}" if r is not None else "  - "
-        f_str = f"{f:.3f}" if f is not None else "  - "
-        print(f"{model:<24}{r_str:<18}{f_str:<18}{agg['n_judgments']:<12}")
+        ba = agg.get("mean_balanced_accuracy")
+        r  = agg["mean_recall_at_3"]
+        f  = agg["mean_fp_rate"]
+        ba_s = f"{ba:.3f}" if ba is not None else "  - "
+        r_s  = f"{r:.3f}"  if r  is not None else "  - "
+        f_s  = f"{f:.3f}"  if f  is not None else "  - "
+        print(f"{model:<24}{ba_s:<16}{r_s:<18}{f_s:<18}{agg['n_judgments']:<12}")
     print()
 
 
