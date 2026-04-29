@@ -1,0 +1,6 @@
+{
+  "description": "node[3].text: 16 chars -> 96 chars (container 250x40 @ 28px)",
+  "changed_node_indices": [
+    3
+  ]
+}

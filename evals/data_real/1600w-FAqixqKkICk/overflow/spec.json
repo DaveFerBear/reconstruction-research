@@ -1,0 +1,37 @@
+{
+  "background_color": "#e4d3cc",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A blank, blank, blank spiral-bound notebook with a light brown cover and spiral binding is shown against a white background. The cover has horizontal lines near the bottom edge.",
+      "filename": "asset-2.png",
+      "x": 57,
+      "y": 85,
+      "width": 1491,
+      "height": 1471,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "TODAY IS GOING TO BE A PRODUCTIVE, CONFIDENT, ALL CAPS KINDA DAY. with additional descriptive copy that significantly exceeds the available container width and continues for several lines beyond ",
+      "x": 458,
+      "y": 496,
+      "width": 728,
+      "height": 592,
+      "rotation": 0,
+      "color": "#3f3432",
+      "font_family": "Arimo",
+      "font_size": 95,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

@@ -1,0 +1,8 @@
+{
+  "description": "collapsed 3 vertical gap(s) in a chain of 4 nodes (5 -> 8 -> 10 -> 11)",
+  "changed_node_indices": [
+    8,
+    10,
+    11
+  ]
+}

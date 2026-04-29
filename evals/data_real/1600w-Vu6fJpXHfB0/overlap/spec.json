@@ -1,0 +1,53 @@
+{
+  "background_color": "#f6cf3a",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A black question mark is centered on a yellow background. The question mark casts a shadow below it, and its shape is three-dimensional with rounded edges.",
+      "filename": "asset-1.png",
+      "x": 577,
+      "y": 66,
+      "width": 1262,
+      "height": 1204,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "DID YOU KNOW",
+      "x": 126,
+      "y": 344,
+      "width": 720,
+      "height": 520,
+      "rotation": 0,
+      "color": "#2b2b2b",
+      "font_family": "Anton",
+      "font_size": 220,
+      "text_align": "center",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "Hot water will turn into ice faster than cold water.",
+      "x": 256,
+      "y": 514,
+      "width": 460,
+      "height": 180,
+      "rotation": 0,
+      "color": "#2b2b2b",
+      "font_family": "Arial",
+      "font_size": 42,
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1341
+}

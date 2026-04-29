@@ -1,0 +1,98 @@
+{
+  "background_color": "#3e496d",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A gold-colored square with a stylized, curved, interlocking design is centered on a black background. The design is textured and appears slightly rough or speckled.",
+      "filename": "asset-2.png",
+      "x": 617,
+      "y": 463,
+      "width": 672,
+      "height": 696,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A horizontal pink bar is centered on a black background. The bar is solid and uniform in color, with no visible texture or pattern.",
+      "filename": "asset-6.png",
+      "x": 460,
+      "y": 628,
+      "width": 460,
+      "height": 572,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "LUMA",
+      "x": 599,
+      "y": 975,
+      "width": 360,
+      "height": 120,
+      "rotation": 0,
+      "color": "#f3e6d4",
+      "font_family": "Cabin",
+      "font_size": 70,
+      "text_align": "center",
+      "font_weight": "100",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "ART SPACE",
+      "x": 602,
+      "y": 1126,
+      "width": 436,
+      "height": 54,
+      "rotation": 0,
+      "color": "#f29ab0",
+      "font_family": "Helvetica",
+      "font_size": 70,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "image",
+      "asset_description": "A blue, wavy, three-dimensional shape resembling a stylized letter \"M\" sits on a black background. A yellow, rectangular block is positioned to the right of the blue shape, partially overlapping it.",
+      "filename": "asset-3.png",
+      "x": 433,
+      "y": 447,
+      "width": 584,
+      "height": 572,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A pinkish-red, textured arch shape with a rounded top and a smaller, rounded base is centered on a black background. A small blue area is visible at the bottom left corner of the arch.",
+      "filename": "asset-4.png",
+      "x": 608,
+      "y": 192,
+      "width": 704,
+      "height": 704,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A stylized eye icon is centered on a black background. The eye is light beige with darker speckles and features two circular pupils surrounded by radiating lines.",
+      "filename": "asset-5.png",
+      "x": 365,
+      "y": 215,
+      "width": 628,
+      "height": 552,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

@@ -1,0 +1,6 @@
+{
+  "description": "node[10].font_size: 140 -> 34 (title shrunk to body size)",
+  "changed_node_indices": [
+    10
+  ]
+}

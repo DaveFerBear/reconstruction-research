@@ -1,0 +1,64 @@
+{
+  "background_color": "#CFEFF2",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A solid white circle is centered on a black background. The circle is uniform in shape and size, with no visible texture or pattern.",
+      "filename": "asset-1.png",
+      "x": -69,
+      "y": -47,
+      "width": 1716,
+      "height": 1696,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "QUICK TIPS",
+      "x": 334,
+      "y": 340,
+      "width": 900,
+      "height": 90,
+      "rotation": 0,
+      "color": "#4F8F94",
+      "font_family": "Helvetica",
+      "font_size": 64,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "MAKE THE MOST OF YOUR WORKOUTS",
+      "x": 667,
+      "y": 169,
+      "width": 1056,
+      "height": 560,
+      "rotation": 0,
+      "color": "#FF7EBC",
+      "font_family": "Antonio",
+      "font_size": 200,
+      "text_align": "center",
+      "font_weight": "800",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "svg",
+      "svg_description": "A solid orange arrow points to the right against a white background. The arrow is straight and uniform in color.",
+      "filename": "svg-2.svg",
+      "x": 592,
+      "y": 1120,
+      "width": 420,
+      "height": 380,
+      "rotation": 0
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

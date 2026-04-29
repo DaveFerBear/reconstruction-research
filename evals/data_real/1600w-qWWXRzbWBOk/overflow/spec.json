@@ -1,0 +1,64 @@
+{
+  "background_color": "#f5f2e6",
+  "has_background_image": true,
+  "background_image_description": "A blue gradient fills the left side of the image, transitioning from dark blue at the top to lighter blue at the bottom. The right side is white, with no visible objects or text present.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A light blue gradient background transitions from pale cream at the top to deeper blue towards the bottom. Two white star shapes are positioned near the top left and bottom right of the oval shape. A thin white line outlines the oval, extending from the top left and curving slightly towards the center.",
+      "filename": "asset-1.png",
+      "x": -7,
+      "y": -5,
+      "width": 1636,
+      "height": 1628,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "Every day is with additional descriptive copy that significantly exceeds the available conta",
+      "x": 200,
+      "y": 590,
+      "width": 1200,
+      "height": 200,
+      "rotation": 0,
+      "color": "#ffffff",
+      "font_family": "Georgia",
+      "font_size": 150,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "a new chance",
+      "x": 200,
+      "y": 760,
+      "width": 1200,
+      "height": 180,
+      "rotation": 0,
+      "color": "#ffffff",
+      "font_family": "Georgia",
+      "font_size": 130,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "svg",
+      "svg_description": "A completely white image with no visible content.",
+      "filename": "svg-2.svg",
+      "x": 1083,
+      "y": 275,
+      "width": 748,
+      "height": 668,
+      "rotation": 20
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

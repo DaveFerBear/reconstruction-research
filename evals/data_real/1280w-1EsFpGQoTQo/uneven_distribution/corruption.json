@@ -1,0 +1,6 @@
+{
+  "description": "row of 3 image nodes \u2014 shifted node[3].x: 900 -> 958",
+  "changed_node_indices": [
+    3
+  ]
+}

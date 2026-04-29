@@ -1,0 +1,71 @@
+{
+  "background_color": "#f2f2f2",
+  "has_background_image": true,
+  "background_image_description": "A gray sky filled with white clouds. The clouds vary in size and shape, with some areas appearing denser and darker gray, while others are lighter and brighter. The image is predominantly white and gray, with no visible blue sky or distinct horizon.",
+  "nodes": [
+    {
+      "type": "text",
+      "text": "AGENT",
+      "x": 0,
+      "y": 120,
+      "width": 1131,
+      "height": 170,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Antonio",
+      "font_size": 225,
+      "text_align": "center",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "A FILM BY NEIL TRAN",
+      "x": 0,
+      "y": 175,
+      "width": 1131,
+      "height": 60,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Antonio",
+      "font_size": 45,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "LARS PEETERS  |  DREW FEIG  |  SAMIRA HADID",
+      "x": -3,
+      "y": 395,
+      "width": 1131,
+      "height": 50,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Antonio",
+      "font_size": 40,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "A man wearing sunglasses and a gray jacket stands with his right hand clenched, facing left. Behind him, a cityscape is visible at sunset, with a bright orange glow emanating from behind him. Dark, fragmented pieces are scattered across the transparent background, primarily concentrated behind and to the right of the man.",
+      "filename": "asset-2.png",
+      "x": 144,
+      "y": 418,
+      "width": 997,
+      "height": 1183,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

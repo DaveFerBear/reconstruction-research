@@ -1,0 +1,80 @@
+{
+  "background_color": "#f5f5f2",
+  "has_background_image": true,
+  "background_image_description": "A solid light gray background fills the frame. The surface appears uniform and featureless, with no discernible texture, patterns, or objects.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A single stem with several green leaves extends diagonally across the frame against a light gray-green background. The leaves are arranged along the stem, with some appearing slightly lighter or darker due to lighting. The stem is smooth and slender, connecting the leaves in a continuous line. No other objects or text are visible in the image.",
+      "filename": "asset-1.png",
+      "x": 721,
+      "y": -140,
+      "width": 405,
+      "height": 895,
+      "rotation": -60
+    },
+    {
+      "type": "image",
+      "asset_description": "A single green plant stem with leaves extends diagonally across a light green-to-white gradient background. The leaves are elongated and slightly pointed, with visible veins. The stem has small, light green buds or shoots growing from it.",
+      "filename": "asset-2.png",
+      "x": -90,
+      "y": 1118,
+      "width": 600,
+      "height": 510,
+      "rotation": 90
+    },
+    {
+      "type": "text",
+      "text": "Daily Motivation",
+      "x": 276,
+      "y": 321,
+      "width": 600,
+      "height": 48,
+      "rotation": 0,
+      "color": "#24382d",
+      "font_family": "Georgia",
+      "font_size": 34,
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "\"Stay inspired never stop creating\"",
+      "x": 340,
+      "y": 369,
+      "width": 507,
+      "height": 643,
+      "rotation": 0,
+      "color": "#24382d",
+      "font_family": "Natalic",
+      "font_size": 130,
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "\u2014@reallygreatsite",
+      "x": 295,
+      "y": 1012,
+      "width": 590,
+      "height": 44,
+      "rotation": 0,
+      "color": "#24382d",
+      "font_family": "Georgia",
+      "font_size": 32,
+      "text_align": "center",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

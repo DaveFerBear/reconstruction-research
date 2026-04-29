@@ -1,0 +1,64 @@
+{
+  "background_color": "#f3f2ee",
+  "has_background_image": true,
+  "background_image_description": "The image displays a pattern of vertical stripes in alternating shades of gray and white. The stripes are of equal width and run perfectly vertically from top to bottom of the image, creating a continuous, repeating pattern. The background color is a light, neutral gray that provides a subtle contrast to the white stripes. There are no other elements, texts, or objects visible in the image. The image is purely a depiction of vertical stripes in a monochromatic color scheme.",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A background of vertical gray stripes on a white gradient. The stripes are evenly spaced and run from top to bottom. The image is uniform in color and texture.",
+      "filename": "asset-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 1131,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "text",
+      "text": "You're my",
+      "x": 241,
+      "y": 132,
+      "width": 620,
+      "height": 120,
+      "rotation": 0,
+      "color": "#1f3f9a",
+      "font_family": "Brush Script MT",
+      "font_size": 150,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "lobster",
+      "x": 311,
+      "y": 122,
+      "width": 480,
+      "height": 140,
+      "rotation": 0,
+      "color": "#1f3f9a",
+      "font_family": "Brush Script MT",
+      "font_size": 150,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "image",
+      "asset_description": "A blue ink drawing of a lobster on a white oval plate with dotted blue dots. The lobster is positioned diagonally, with its claws raised and body angled slightly to the right.",
+      "filename": "asset-3.png",
+      "x": 9,
+      "y": 249,
+      "width": 1110,
+      "height": 1065,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1131,
+  "canvas_height": 1600
+}

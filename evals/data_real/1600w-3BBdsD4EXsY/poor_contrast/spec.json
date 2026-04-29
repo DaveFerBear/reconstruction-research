@@ -1,0 +1,37 @@
+{
+  "background_color": "#F5D8B2",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A reddish-brown easel with a blank rectangular canvas attached stands on three legs. The easel has a small hole at the top for hanging. The background is a light beige color.",
+      "filename": "asset-1.png",
+      "x": 229,
+      "y": 191,
+      "width": 1120,
+      "height": 1320,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "DO THINGS AT YOUR OWN PACE. LIFE'S NOT A RACE.",
+      "x": 420,
+      "y": 556,
+      "width": 760,
+      "height": 260,
+      "rotation": 0,
+      "color": "#E7CAA6",
+      "font_family": "Comic Sans MS",
+      "font_size": 56,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

@@ -1,0 +1,109 @@
+{
+  "background_color": "#EFE6DD",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A pair of light blue jeans with distressed detailing, including rips and fading, are shown against a black background. The jeans are positioned with the legs slightly apart and the waistband visible at the top. The image is isolated, with no other objects or background elements present.",
+      "filename": "asset-2.png",
+      "x": 58,
+      "y": 402,
+      "width": 1336,
+      "height": 1342,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A pair of light tan, lace-up shoes with black soles and thick, chunky soles are shown against a white background. The shoes are positioned slightly angled, with the toe pointing toward the bottom right corner of the image. The soles are textured with small bumps, and the laces are black. The shoes appear to be made of a smooth material.",
+      "filename": "asset-3.png",
+      "x": 23,
+      "y": 858,
+      "width": 742,
+      "height": 808,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A white handbag with gold-colored hardware is shown against a black background. The bag has a rectangular shape with rounded edges and features two top handles connected by gold-colored metal hardware. The front panel of the bag is white with visible stitching and subtle texture.",
+      "filename": "asset-4.png",
+      "x": 1,
+      "y": 576,
+      "width": 733,
+      "height": 739,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A blue denim jacket hangs on a metal hanger against a black background. The jacket features two chest pockets, two front pockets, and long sleeves with buttoned cuffs. The denim material appears slightly faded or worn in places.",
+      "filename": "asset-5.png",
+      "x": -112,
+      "y": 126,
+      "width": 922,
+      "height": 943,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A pair of tortoiseshell sunglasses with gradient lenses, dark frames, and gold accents are centered against a black background. The lenses transition from a lighter shade at the top to a darker shade at the bottom.",
+      "filename": "asset-7.png",
+      "x": 284,
+      "y": 159,
+      "width": 448,
+      "height": 493,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A short-sleeved polo shirt with horizontal orange and white stripes is shown against a black background. The shirt has a white collar and short sleeves.",
+      "filename": "asset-6.png",
+      "x": 220,
+      "y": 87,
+      "width": 1000,
+      "height": 1000,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "FASHIONABLE WARDROBE",
+      "x": 0,
+      "y": 161,
+      "width": 1067,
+      "height": 92,
+      "rotation": 0,
+      "color": "#0E0E0E",
+      "font_family": "Didot",
+      "font_size": 32,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "@reallygreatsite",
+      "x": 0,
+      "y": 1472,
+      "width": 1067,
+      "height": 44,
+      "rotation": 0,
+      "color": "#1A1A1A",
+      "font_family": "Arial",
+      "font_size": 32,
+      "text_align": "center",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1067,
+  "canvas_height": 1600
+}

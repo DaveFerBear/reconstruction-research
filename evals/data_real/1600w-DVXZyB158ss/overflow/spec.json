@@ -1,0 +1,82 @@
+{
+  "background_color": "#cfc3b5",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A statue of a woman wearing a head covering and light-colored clothing is shown against a white background. The statue\u2019s head is turned slightly to the right, and the right side of its face is visible. The background is uniformly white.",
+      "filename": "asset-2.png",
+      "x": 17,
+      "y": 3,
+      "width": 1596,
+      "height": 1600,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A woman with shoulder-length blonde hair sits against a black background. She wears a white long-sleeved shirt and light-colored pants. Her right hand rests on her cheek, and her left arm is bent, with her hand near her head. She looks directly at the camera.",
+      "filename": "asset-3.png",
+      "x": 4,
+      "y": -176,
+      "width": 1868,
+      "height": 1820,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "ABOUT ME with additional descriptive copy that significantly exceeds the available conta",
+      "x": 960,
+      "y": 436,
+      "width": 436,
+      "height": 140,
+      "rotation": 0,
+      "color": "#5a4a45",
+      "font_family": "Antonio",
+      "font_size": 120,
+      "text_align": "left",
+      "font_weight": "800",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Aliquam viverra nibh varius, condimentum elit eget, bibendum mi.Proin vitae nibh in quam euismod luctus. Nullam justo justo, elementum elementum pharetra nec, dapibus id nisi",
+      "x": 824,
+      "y": 642,
+      "width": 708,
+      "height": 620,
+      "rotation": 0,
+      "color": "#4f4a49",
+      "font_family": "Helvetica",
+      "font_size": 50,
+      "text_align": "left",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    },
+    {
+      "type": "text",
+      "text": "Olivia Wilson",
+      "x": 1236,
+      "y": 1311,
+      "width": 288,
+      "height": 66,
+      "rotation": -15,
+      "color": "#4a4a4a",
+      "font_family": "Great Vibes",
+      "font_size": 55,
+      "text_align": "left",
+      "font_weight": "400",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "none"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

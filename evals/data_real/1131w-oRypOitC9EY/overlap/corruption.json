@@ -1,0 +1,6 @@
+{
+  "description": "node[2] moved (426,46) -> (14,44) to overlap node[1]",
+  "changed_node_indices": [
+    2
+  ]
+}

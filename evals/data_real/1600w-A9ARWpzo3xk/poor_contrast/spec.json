@@ -1,0 +1,54 @@
+{
+  "background_color": "#f4f3ee",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "The image features the letters \"GO\" in a stylized, cursive font. The letters are black and have a thick, rounded appearance. They are set against a plain white background. The design is symmetrical, with each letter mirroring its counterpart on the other side. The letters are connected by a decorative flourish extending from the top right, resembling a flourish or decorative element.",
+      "filename": "asset-1.png",
+      "x": 185,
+      "y": 127,
+      "width": 1232,
+      "height": 1188,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "text",
+      "text": "CREATIVE STUDIO",
+      "x": 362,
+      "y": 1146,
+      "width": 220,
+      "height": 70,
+      "rotation": 0,
+      "color": "#E1E0DC",
+      "font_family": "Arial",
+      "font_size": 35,
+      "text_align": "left",
+      "font_weight": "500",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "SINCE 2025",
+      "x": 1210,
+      "y": 1146,
+      "width": 124,
+      "height": 66,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Arial",
+      "font_size": 35,
+      "text_align": "right",
+      "font_weight": "500",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

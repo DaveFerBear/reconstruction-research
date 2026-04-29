@@ -1,0 +1,6 @@
+{
+  "description": "node[3].color: #FFFFFF -> #141414 on bg #000000",
+  "changed_node_indices": [
+    3
+  ]
+}

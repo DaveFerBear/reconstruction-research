@@ -1,0 +1,90 @@
+{
+  "background_color": "#ffcc00",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A woman with long blonde hair wears a green shirt with a dotted pattern. She is smiling and making an \"OK\" hand gesture with her right hand against a pink and yellow gradient background.",
+      "filename": "asset-1.png",
+      "x": 0,
+      "y": 0,
+      "width": 1600,
+      "height": 1600,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "A black horizontal bar is centered on a white background. The bar is uniformly black and spans the width of the image.",
+      "filename": "svg-1.svg",
+      "x": 592,
+      "y": 1392,
+      "width": 628,
+      "height": 110,
+      "rotation": 0
+    },
+    {
+      "type": "svg",
+      "svg_description": "A black triangle is centered on a white background. The triangle is oriented with its apex pointing to the right.",
+      "filename": "svg-2.svg",
+      "x": 1240,
+      "y": 1310,
+      "width": 220,
+      "height": 184,
+      "rotation": 180
+    },
+    {
+      "type": "text",
+      "text": "HOW TO",
+      "x": 1100,
+      "y": 860,
+      "width": 360,
+      "height": 90,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Montserrat",
+      "font_size": 72,
+      "text_align": "left",
+      "font_weight": "600",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "IMPROVE YOURSELF",
+      "x": 400,
+      "y": 950,
+      "width": 1060,
+      "height": 360,
+      "rotation": 0,
+      "color": "#111111",
+      "font_family": "Montserrat",
+      "font_size": 190,
+      "text_align": "right",
+      "font_weight": "900",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    },
+    {
+      "type": "text",
+      "text": "EVERY DAY",
+      "x": 690,
+      "y": 1420,
+      "width": 460,
+      "height": 64,
+      "rotation": 0,
+      "color": "#ffffff",
+      "font_family": "Montserrat",
+      "font_size": 62,
+      "text_align": "center",
+      "font_weight": "700",
+      "font_style": "normal",
+      "text_decoration": "none",
+      "text_transform": "uppercase"
+    }
+  ],
+  "canvas_width": 1600,
+  "canvas_height": 1600
+}

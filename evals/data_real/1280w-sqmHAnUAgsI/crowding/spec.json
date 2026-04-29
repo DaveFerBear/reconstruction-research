@@ -1,0 +1,86 @@
+{
+  "background_color": "#ffffff",
+  "has_background_image": false,
+  "background_image_description": "",
+  "nodes": [
+    {
+      "type": "image",
+      "asset_description": "A woman with dark hair pulled back wears large, light beige-framed sunglasses and a white collared shirt. She is looking directly at the camera with a neutral expression. The background is blurred, showing a street with traffic lights and trees, suggesting an outdoor setting during daylight.",
+      "filename": "asset-5.png",
+      "x": 0,
+      "y": 3,
+      "width": 318,
+      "height": 520,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A woman with short brown hair and sunglasses reclines on a light gray tiled surface. She wears a white short-sleeved collared shirt and light beige or khaki pants. Her right arm rests near her left hand, and her head is turned to the right. The background is dark and out of focus.",
+      "filename": "asset-6.png",
+      "x": 966,
+      "y": 520,
+      "width": 315,
+      "height": 526,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A woman with long brown hair sits on a stone surface, wearing a white sleeveless top and white pants with cuffed ankles. She wears light-colored sunglasses with brown frames and has a ring on her left ring finger. Her gaze is directed upward and to the right. The background is blurred and dark.",
+      "filename": "asset-7.png",
+      "x": -3,
+      "y": 534,
+      "width": 321,
+      "height": 529,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Close-up of a woman's right shoulder and upper arm. She is wearing a white tank top with a scoop neckline. Her skin is tanned and appears smooth. The background is blurred and light-colored.",
+      "filename": "asset-8.png",
+      "x": 966,
+      "y": 3,
+      "width": 312,
+      "height": 517,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A man and a woman stand side by side on a sidewalk. The woman wears a white sleeveless crop top and white wide-leg pants, accessorized with sunglasses and a thin gold necklace. Her hair is shoulder-length and brown. The man wears a white short-sleeved button-down shirt over a white undershirt, khaki shorts, and brown sandals. He wears sunglasses and has short, dark hair. Behind them are red brick buildings, and blurred figures are visible in the background.",
+      "filename": "asset-9.png",
+      "x": 333,
+      "y": 6,
+      "width": 615,
+      "height": 1057,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "A woman and a man stand side by side in front of a glass wall. The woman wears a white sleeveless top and white trousers with pleats at the front, and white sunglasses. Her dark hair is pulled back. The man wears a light gray short-sleeved shirt with a small geometric pattern, light gray shorts, and dark sunglasses. His dark hair is short and styled.",
+      "filename": "asset-10.png",
+      "x": 0,
+      "y": 1074,
+      "width": 646,
+      "height": 604,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "type": "image",
+      "asset_description": "Two individuals stand in front of a large glass window. The woman on the left wears a white sleeveless crop top and light beige trousers, with her hands in her pockets. She has dark hair and is wearing clear-framed sunglasses. The man on the right wears a light gray patterned short-sleeved shirt and matching shorts, with dark sunglasses and short dark hair. Both are looking directly at the camera.",
+      "filename": "asset-11.png",
+      "x": 660,
+      "y": 1046,
+      "width": 652,
+      "height": 625,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "canvas_width": 1280,
+  "canvas_height": 1600
+}

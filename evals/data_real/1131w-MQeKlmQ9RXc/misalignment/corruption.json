@@ -1,0 +1,6 @@
+{
+  "description": "node[12] shifted (457,1424) -> (757,1366) inside parent node[4]",
+  "changed_node_indices": [
+    12
+  ]
+}
