@@ -145,7 +145,7 @@ def _plot_summary(by_model: dict[str, dict], out_path: Path, source: str) -> Non
     _suptitle(
         fig, source,
         "Balanced accuracy per mode",
-        "0.5 = chance · 1.0 = perfect · shaded zone = anti-signal · higher is better",
+        "0.5 = chance · 1.0 = perfect · shaded zone = anti-signal",
     )
     plt.tight_layout(rect=(0, 0, 1, 0.92))
     plt.savefig(out_path, dpi=150, bbox_inches="tight")
@@ -185,13 +185,13 @@ def _plot_per_mode(by_model: dict[str, dict], out_path: Path, source: str) -> No
 
     ax_r.set_ylim(0, 1.05)
     ax_r.set_ylabel("recall@3 (TP / pos)")
-    ax_r.set_title("Per-mode recall@3 — did the VLM flag the injected mode in its top 3?  (higher = better)")
+    ax_r.set_title("Per-mode recall@3 — did the VLM flag the injected mode in its top 3?")
     ax_r.grid(axis="y", alpha=0.3)
     ax_r.legend(loc="upper right", fontsize=9)
 
     ax_f.set_ylim(0, fp_max)
     ax_f.set_ylabel("FP rate (FP / neg)")
-    ax_f.set_title("Per-mode FP rate — did the VLM flag this mode on a clean original?  (lower = better)")
+    ax_f.set_title("Per-mode FP rate — did the VLM flag this mode on a clean original?")
     ax_f.grid(axis="y", alpha=0.3)
 
     ax_f.set_xticks(x)
@@ -226,9 +226,9 @@ def _plot_supercategory(by_model: dict[str, dict], out_path: Path, source: str) 
     fp_max = max(0.6, _max_metric(by_model, "supercategory", "fp_rate") * 1.15 + 0.05)
 
     panels = [
-        (ax_ba, "balanced_accuracy", "balanced accuracy", 1.05, "0.5 = chance · higher is better"),
-        (ax_r,  "recall_at_3",       "recall@3",          1.05, "higher is better"),
-        (ax_f,  "fp_rate",           "FP rate on originals", fp_max, "lower is better"),
+        (ax_ba, "balanced_accuracy", "balanced accuracy", 1.05, "0.5 = chance"),
+        (ax_r,  "recall_at_3",       "recall@3",          1.05, ""),
+        (ax_f,  "fp_rate",           "FP rate on originals", fp_max, ""),
     ]
     for i, model in enumerate(models):
         offset = (i - (n_models - 1) / 2) * bar_width
@@ -248,7 +248,8 @@ def _plot_supercategory(by_model: dict[str, dict], out_path: Path, source: str) 
         ax.set_xticklabels(cats)
         ax.set_ylim(0, ymax)
         ax.set_ylabel(ylabel)
-        ax.set_title(f"{ylabel}\n{sub}", fontsize=10)
+        title = f"{ylabel}\n{sub}" if sub else ylabel
+        ax.set_title(title, fontsize=10)
         ax.grid(axis="y", alpha=0.3)
         if key == "balanced_accuracy":
             ax.axhline(CHANCE, color="#888", linestyle="--", linewidth=1)
