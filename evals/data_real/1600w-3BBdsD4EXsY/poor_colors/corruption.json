@@ -1,5 +1,5 @@
 {
-  "description": "recolored 1 TextNodes with clashing palette (#FF00FF)",
+  "description": "recolored 1 TextNodes with clashing pair #FFD700 / #00CED1",
   "changed_node_indices": [
     1
   ]
