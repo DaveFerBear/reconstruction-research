@@ -36,13 +36,16 @@ DEFAULT_MODELS: tuple[str, ...] = (
     "gpt-4o",
     "ollama/qwen3-vl:4b",
 )
-# Generous output budget. Reasoning models (gpt-5, qwen3-vl-thinking)
-# consume a chunk of this on internal reasoning before producing visible
-# `content`; with a tight cap (e.g. 300) the JSON output gets truncated
-# and we silently parse an empty issues list. Non-reasoning models still
-# only emit ~50-150 tokens for the actual answer, so the cost overhead
-# of a high cap is negligible.
-MAX_TOKENS = 2048
+# Generous output budget. Reasoning models consume a chunk of this on
+# internal reasoning before producing visible `content`; with a tight
+# cap (e.g. 300) the JSON output gets truncated and we silently parse
+# an empty issues list. Non-reasoning models still only emit ~50-150
+# tokens for the actual answer.
+#
+# qwen3-vl:4b reasoning empirically eats ~4000 tokens per call, so the
+# ollama branch needs an even higher cap than cloud reasoning models.
+MAX_TOKENS_LITELLM = 2048
+MAX_TOKENS_OLLAMA  = 8192
 
 OLLAMA_PREFIX = "ollama/"
 
@@ -139,8 +142,13 @@ def _judge_litellm(render_path: Path, model: str) -> IssueSet:
     response = litellm.completion(
         model=model,
         messages=messages,
-        max_tokens=MAX_TOKENS,
+        max_tokens=MAX_TOKENS_LITELLM,
         temperature=0,
+        # Without an explicit timeout the SDK will block on a stuck
+        # streaming/network call indefinitely. 120s per call is generous
+        # for vision + reasoning, and any hang gets surfaced as an error
+        # the runner can record + skip rather than hanging the entire eval.
+        timeout=120,
     )
     raw = response.choices[0].message.content or ""
     issues, parse_error = _parse_issues(raw)
@@ -164,7 +172,7 @@ def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
     `response.message.thinking` and is NOT included in `.content`.
     """
     try:
-        from ollama import chat as ollama_chat  # noqa: PLC0415
+        from ollama import Client  # noqa: PLC0415
     except ImportError as e:
         raise RuntimeError(
             "The `ollama` Python package is required to evaluate ollama/* models.\n"
@@ -172,7 +180,9 @@ def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
             "and ensure the Ollama daemon is running (`ollama serve`)."
         ) from e
 
-    response = ollama_chat(
+    # Per-call timeout: a stuck local request can otherwise wedge forever.
+    client = Client(timeout=180)
+    response = client.chat(
         model=model,
         messages=[
             {"role": "system", "content": _SYSTEM_PROMPT},
@@ -182,10 +192,11 @@ def _judge_ollama(render_path: Path, model: str, *, full_name: str) -> IssueSet:
                 "images": [str(render_path.resolve())],
             },
         ],
-        # think=False skips the internal <think> block so all output budget
-        # goes to the JSON answer (qwen3-vl is a reasoning model by default).
-        think=False,
-        options={"temperature": 0, "num_predict": MAX_TOKENS},
+        # NOTE: do NOT pass `think=False` here. Empirically, qwen3-vl:4b
+        # produces *empty* content when thinking is suppressed. Letting it
+        # think is required; reasoning tokens land on `response.message.thinking`
+        # (which we discard) and the JSON answer lands on `.content`.
+        options={"temperature": 0, "num_predict": MAX_TOKENS_OLLAMA},
     )
     raw = (response.message.content or "").strip()
     issues, parse_error = _parse_issues(raw)
