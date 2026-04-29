@@ -43,7 +43,12 @@ class Render:
 
     @property
     def render_id(self) -> str:
-        return f"{self.source}::{self.spec_id}::{'bad' if self.is_bad else 'good'}"
+        # Must include injected_mode so different per-mode corruptions of the
+        # same spec don't collapse to the same key. Otherwise --incremental
+        # treats "the OVERFLOW corruption of spec X" and "the OVERLAP
+        # corruption of spec X" as the same render and silently skips.
+        mode = self.injected_mode or "original"
+        return f"{self.source}::{self.spec_id}::{mode}"
 
 
 @dataclass
