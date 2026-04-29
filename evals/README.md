@@ -79,6 +79,19 @@ open evals/data_real/<spec_id>/overflow/render.png datasets/specs/<spec_id>/rend
 specs that lack the structure to corrupt cleanly (e.g. a spec with one
 TextNode is skipped by the `overlap` corrupter).
 
+### Eyeball the corruptions in a browser
+
+```bash
+python -m evals.build_review     # writes evals/review.html
+python -m http.server            # from the repo root
+# open http://localhost:8000/evals/review.html
+```
+
+Side-by-side original vs corrupted with the corruption description, filter
+by mode, rate good/bad/skip with `1`/`2`/`0` (persisted in localStorage),
+navigate with `j`/`k`. "Export bad list" downloads a JSON of corruptions
+flagged as bad — useful for diagnosing which corrupters need tuning.
+
 ## Run the judge (requires `ANTHROPIC_API_KEY`)
 
 `ANTHROPIC_API_KEY` is read from the project-root `.env` via `python-dotenv`.
