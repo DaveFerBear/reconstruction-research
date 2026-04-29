@@ -1,16 +1,11 @@
-"""Run the VLM-as-judge eval across all failure modes and models.
+"""Run the open-ended VLM-as-judge eval across failure modes and models.
 
-Two data sources:
-  * `synthetic` — hand-built specs under evals/data/<mode>/<NN>/{bad,good}/render.png
-  * `real`      — real Canva specs corrupted in-place: evals/data_real/<spec_id>/<mode>/render.png
-                  paired against the original datasets/specs/<spec_id>/render.png
-
-For each (mode, source, label, model) tuple it asks the VLM whether the target
-failure mode is present. Reports per-(source, mode, model) precision /
-recall / F1 / accuracy and writes results.json.
-
-The expected finding is *low* judge accuracy on most modes — that is the
-demonstration of VLM blindness this benchmark exists to produce.
+For each rendered design, ask each VLM to list its top-3 design issues
+(free-text, no taxonomy primer). Then classify every emitted issue against
+our 11-mode taxonomy via a Haiku classifier. Score each (model, mode) by
+recall@3 (did the VLM flag the injected mode in its top-3?) and FP rate
+(did it flag the mode on a known-clean original?). Roll modes up into two
+supercategories — `layout` and `visual` — for a coarser-grained view.
 """
 
 from __future__ import annotations
@@ -21,27 +16,13 @@ import sys
 import time
 import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
+from typing import Any
 
-import anthropic
-
-from evals.corrupters import CORRUPTERS
-from evals.failure_modes import FAILURE_MODES, FailureMode
-from evals.judge import DEFAULT_MODELS, judge
-
-
-# Canonical mode catalog: union of synthetic FailureMode and real-only Corrupter
-# entries. Both expose .id / .name / .description, which is all the judge needs
-# to build its prompt — duck-typed across the two registries.
-def _build_mode_catalog():
-    catalog = {m.id: m for m in FAILURE_MODES}
-    for c in CORRUPTERS:
-        catalog.setdefault(c.id, c)
-    return catalog
-
-
-ALL_MODES_BY_ID = _build_mode_catalog()
+from evals.classify import IssueCategory, classify_batch
+from evals.common import MODE_DEFINITIONS, SUPERCATEGORIES
+from evals.judge import DEFAULT_MODELS, IssueSet, judge
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SYNTHETIC_DATA_DIR = Path(__file__).parent / "data"
@@ -51,36 +32,39 @@ RESULTS_PATH = Path(__file__).parent / "results.json"
 
 
 @dataclass
-class Item:
-    source: str          # "synthetic" or "real"
-    mode_id: str
-    variant: str         # synthetic: "01"-"05"; real: spec_id
-    label: str           # "bad" or "good"
+class Render:
+    source: str             # "synthetic" | "real"
+    spec_id: str            # synthetic: "<mode>/<NN>"; real: spec dir name
     render_path: Path
+    is_bad: bool            # True iff a corruption was injected
+    injected_mode: str | None  # mode_id if bad, None otherwise
 
     @property
-    def is_failure(self) -> bool:
-        return self.label == "bad"
+    def render_id(self) -> str:
+        return f"{self.source}::{self.spec_id}::{'bad' if self.is_bad else 'good'}"
 
 
 @dataclass
-class Result:
+class Judgment:
+    render_id: str
     source: str
-    mode_id: str
-    variant: str
-    label: str
+    spec_id: str
+    is_bad: bool
+    injected_mode: str | None
+    render_path: str
     model: str
-    expected: bool       # True iff label == "bad"
-    predicted: bool
+    issues: list[str]
     raw: str
-    input_tokens: int
-    output_tokens: int
+    parse_error: str | None = None
+    input_tokens: int = 0
+    output_tokens: int = 0
+    classifications: list[dict[str, Any]] = field(default_factory=list)
 
 
-def _collect_synthetic(root: Path, only_mode: str | None) -> list[Item]:
-    items: list[Item] = []
+def _collect_synthetic(root: Path, only_mode: str | None) -> list[Render]:
+    out: list[Render] = []
     if not root.exists():
-        return items
+        return out
     for mode_dir in sorted(root.iterdir()):
         if not mode_dir.is_dir():
             continue
@@ -89,281 +73,356 @@ def _collect_synthetic(root: Path, only_mode: str | None) -> list[Item]:
         for variant_dir in sorted(mode_dir.iterdir()):
             if not variant_dir.is_dir():
                 continue
-            for label in ("bad", "good"):
-                render = variant_dir / label / "render.png"
-                if render.exists():
-                    items.append(
-                        Item(
-                            source="synthetic",
-                            mode_id=mode_dir.name,
-                            variant=variant_dir.name,
-                            label=label,
-                            render_path=render,
-                        )
-                    )
-    return items
+            bad = variant_dir / "bad" / "render.png"
+            good = variant_dir / "good" / "render.png"
+            spec_id = f"{mode_dir.name}/{variant_dir.name}"
+            if bad.exists():
+                out.append(Render(
+                    source="synthetic", spec_id=spec_id,
+                    render_path=bad, is_bad=True, injected_mode=mode_dir.name,
+                ))
+            if good.exists():
+                out.append(Render(
+                    source="synthetic", spec_id=spec_id,
+                    render_path=good, is_bad=False, injected_mode=None,
+                ))
+    return out
 
 
-def _collect_real(real_root: Path, source_root: Path, only_mode: str | None) -> list[Item]:
-    items: list[Item] = []
+def _collect_real(real_root: Path, source_root: Path, only_mode: str | None) -> list[Render]:
+    out: list[Render] = []
     if not real_root.exists():
-        return items
+        return out
+    seen_originals: set[str] = set()
     for spec_dir in sorted(real_root.iterdir()):
         if not spec_dir.is_dir():
             continue
-        original_render = source_root / spec_dir.name / "render.png"
-        if not original_render.exists():
-            continue
+        original = source_root / spec_dir.name / "render.png"
         for mode_dir in sorted(spec_dir.iterdir()):
             if not mode_dir.is_dir():
                 continue
             if only_mode and mode_dir.name != only_mode:
                 continue
-            corrupted_render = mode_dir / "render.png"
-            if not corrupted_render.exists():
-                continue
-            items.append(
-                Item(
-                    source="real",
-                    mode_id=mode_dir.name,
-                    variant=spec_dir.name,
-                    label="bad",
-                    render_path=corrupted_render,
+            corrupted = mode_dir / "render.png"
+            if corrupted.exists():
+                out.append(Render(
+                    source="real", spec_id=spec_dir.name,
+                    render_path=corrupted, is_bad=True, injected_mode=mode_dir.name,
+                ))
+        if original.exists() and spec_dir.name not in seen_originals:
+            seen_originals.add(spec_dir.name)
+            out.append(Render(
+                source="real", spec_id=spec_dir.name,
+                render_path=original, is_bad=False, injected_mode=None,
+            ))
+    return out
+
+
+def _apply_limit(renders: list[Render], limit: int) -> list[Render]:
+    """Keep the first `limit` distinct spec_ids per (source, injected_mode), so
+    `--limit 5` becomes a small but still-balanced smoke test."""
+    keep: dict[tuple[str, str | None], list[str]] = {}
+    for r in renders:
+        key = (r.source, r.injected_mode)
+        keep.setdefault(key, [])
+        if r.spec_id not in keep[key]:
+            keep[key].append(r.spec_id)
+    for key in keep:
+        keep[key] = keep[key][:limit]
+    return [r for r in renders if r.spec_id in keep[(r.source, r.injected_mode)]]
+
+
+def _summarize(
+    judgments: list[Judgment],
+    classifications: dict[str, IssueCategory],
+) -> dict:
+    """Build per-(source, model, mode) and per-(source, model, supercategory)
+    recall@3 + FP rate. Aggregates per (source, model)."""
+
+    def cats_for(j: Judgment) -> list[IssueCategory]:
+        return [classifications.get(t, IssueCategory(None, None)) for t in j.issues]
+
+    sources = sorted({j.source for j in judgments})
+    models = sorted({j.model for j in judgments})
+    summary: dict[str, dict[str, dict[str, Any]]] = {}
+
+    for source in sources:
+        summary[source] = {}
+        for model in models:
+            sm = [j for j in judgments if j.source == source and j.model == model]
+            mode_metrics: dict[str, dict[str, Any]] = {}
+            for mode_id in MODE_DEFINITIONS:
+                positives = [j for j in sm if j.is_bad and j.injected_mode == mode_id]
+                negatives = [j for j in sm if not j.is_bad]
+                tp = sum(1 for j in positives if any(c.mode_id == mode_id for c in cats_for(j)))
+                fp = sum(1 for j in negatives if any(c.mode_id == mode_id for c in cats_for(j)))
+                mode_metrics[mode_id] = {
+                    "recall_at_3": round(tp / len(positives), 3) if positives else None,
+                    "fp_rate":     round(fp / len(negatives), 3) if negatives else None,
+                    "n_pos": len(positives),
+                    "n_neg": len(negatives),
+                    "tp": tp, "fp": fp,
+                }
+
+            super_metrics: dict[str, dict[str, Any]] = {}
+            for super_name in ("layout", "visual"):
+                modes_in = {m for m, s in SUPERCATEGORIES.items() if s == super_name}
+                positives = [j for j in sm if j.is_bad and j.injected_mode in modes_in]
+                negatives = [j for j in sm if not j.is_bad]
+                tp = sum(
+                    1 for j in positives
+                    if any(c.supercategory == super_name for c in cats_for(j))
                 )
-            )
-            items.append(
-                Item(
-                    source="real",
-                    mode_id=mode_dir.name,
-                    variant=spec_dir.name,
-                    label="good",
-                    render_path=original_render,
+                fp = sum(
+                    1 for j in negatives
+                    if any(c.supercategory == super_name for c in cats_for(j))
                 )
-            )
-    return items
+                super_metrics[super_name] = {
+                    "recall_at_3": round(tp / len(positives), 3) if positives else None,
+                    "fp_rate":     round(fp / len(negatives), 3) if negatives else None,
+                    "n_pos": len(positives),
+                    "n_neg": len(negatives),
+                    "tp": tp, "fp": fp,
+                }
 
-
-def _summarize(results: list[Result]) -> dict:
-    """Per-(source, model, mode) confusion matrix and metrics."""
-    by_key: dict[tuple[str, str, str], dict[str, int]] = {}
-    for r in results:
-        key = (r.source, r.model, r.mode_id)
-        bucket = by_key.setdefault(key, {"tp": 0, "tn": 0, "fp": 0, "fn": 0})
-        if r.expected and r.predicted:
-            bucket["tp"] += 1
-        elif not r.expected and not r.predicted:
-            bucket["tn"] += 1
-        elif not r.expected and r.predicted:
-            bucket["fp"] += 1
-        else:
-            bucket["fn"] += 1
-
-    summary: dict[str, dict[str, dict[str, dict]]] = {}
-    for (source, model, mode_id), c in by_key.items():
-        n = c["tp"] + c["tn"] + c["fp"] + c["fn"]
-        accuracy = (c["tp"] + c["tn"]) / n if n else 0.0
-        precision = c["tp"] / (c["tp"] + c["fp"]) if (c["tp"] + c["fp"]) else 0.0
-        recall = c["tp"] / (c["tp"] + c["fn"]) if (c["tp"] + c["fn"]) else 0.0
-        f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
-        summary.setdefault(source, {}).setdefault(model, {})[mode_id] = {
-            "n": n,
-            "tp": c["tp"], "tn": c["tn"], "fp": c["fp"], "fn": c["fn"],
-            "accuracy": round(accuracy, 3),
-            "precision": round(precision, 3),
-            "recall": round(recall, 3),
-            "f1": round(f1, 3),
-        }
+            recalls = [m["recall_at_3"] for m in mode_metrics.values() if m["recall_at_3"] is not None]
+            fps = [m["fp_rate"] for m in mode_metrics.values() if m["fp_rate"] is not None]
+            aggregate = {
+                "mean_recall_at_3": round(sum(recalls) / len(recalls), 3) if recalls else None,
+                "mean_fp_rate":     round(sum(fps) / len(fps), 3) if fps else None,
+                "n_judgments": len(sm),
+            }
+            summary[source][model] = {
+                "mode": mode_metrics,
+                "supercategory": super_metrics,
+                "aggregate": aggregate,
+            }
     return summary
 
 
-def _print_table(summary_for_source: dict, *, source: str) -> None:
-    print(f"\n=== {source.upper()} ===")
-    models = sorted(summary_for_source)
-    if not models:
-        print("(no results)")
+def _print_tables(summary: dict, source: str) -> None:
+    s = summary.get(source)
+    if not s:
+        print(f"(no data for source={source})")
         return
-    mode_ids = sorted({m for model in models for m in summary_for_source[model]})
+    models = sorted(s.keys())
+    print(f"\n========== {source.upper()} ==========\n")
 
-    header = f"{'mode':<26}" + "".join(f"{m + ' acc':<22}" for m in models)
-    print()
+    # Per-mode table
+    print("Per mode  (recall@3 / FP rate)")
+    header = f"{'mode':<24}" + "".join(f"{m:<24}" for m in models)
     print(header)
     print("-" * len(header))
-    for mode_id in mode_ids:
-        row = f"{mode_id:<26}"
+    for mode_id in MODE_DEFINITIONS:
+        row = f"{mode_id:<24}"
         for model in models:
-            metrics = summary_for_source[model].get(mode_id)
-            if metrics:
-                cell = f"{metrics['accuracy']:.2f} (F1 {metrics['f1']:.2f})  n={metrics['n']}"
-            else:
-                cell = "-"
-            row += f"{cell:<22}"
+            m = s[model]["mode"][mode_id]
+            r = m["recall_at_3"]
+            f = m["fp_rate"]
+            r_str = f"{r:.2f}" if r is not None else "  - "
+            f_str = f"{f:.2f}" if f is not None else "  - "
+            cell = f"{r_str}/{f_str}  ({m['n_pos']}/{m['n_neg']})"
+            row += f"{cell:<24}"
         print(row)
+
+    # Per-supercategory table
+    print("\nPer supercategory  (recall@3 / FP rate)")
+    print(header)
+    print("-" * len(header))
+    for super_name in ("layout", "visual"):
+        row = f"{super_name:<24}"
+        for model in models:
+            m = s[model]["supercategory"][super_name]
+            r = m["recall_at_3"]
+            f = m["fp_rate"]
+            r_str = f"{r:.2f}" if r is not None else "  - "
+            f_str = f"{f:.2f}" if f is not None else "  - "
+            cell = f"{r_str}/{f_str}  ({m['n_pos']}/{m['n_neg']})"
+            row += f"{cell:<24}"
+        print(row)
+
+    # Aggregate per model
+    print("\nAggregate per model")
+    print(f"{'model':<24}{'mean recall@3':<18}{'mean FP rate':<18}{'#judgments':<12}")
+    print("-" * 72)
+    for model in models:
+        agg = s[model]["aggregate"]
+        r = agg["mean_recall_at_3"]
+        f = agg["mean_fp_rate"]
+        r_str = f"{r:.3f}" if r is not None else "  - "
+        f_str = f"{f:.3f}" if f is not None else "  - "
+        print(f"{model:<24}{r_str:<18}{f_str:<18}{agg['n_judgments']:<12}")
     print()
+
+
+def _run_judging(
+    renders: list[Render],
+    models: tuple[str, ...],
+    concurrency: int,
+) -> list[Judgment]:
+    jobs: list[tuple[Render, str]] = [(r, m) for r in renders for m in models]
+    total = len(jobs)
+    print(f"Judging {len(renders)} renders × {len(models)} models = {total} calls (concurrency={concurrency})")
+
+    def _go(job: tuple[Render, str]) -> Judgment | None:
+        render, model = job
+        try:
+            result: IssueSet = judge(render.render_path, model)
+        except Exception as e:
+            print(f"  judge failed: {model} {render.render_id}: {type(e).__name__}: {e}", file=sys.stderr)
+            traceback.print_exc()
+            return None
+        return Judgment(
+            render_id=render.render_id,
+            source=render.source,
+            spec_id=render.spec_id,
+            is_bad=render.is_bad,
+            injected_mode=render.injected_mode,
+            render_path=str(render.render_path),
+            model=model,
+            issues=result.issues,
+            raw=result.raw,
+            parse_error=result.parse_error,
+            input_tokens=result.input_tokens,
+            output_tokens=result.output_tokens,
+        )
+
+    judgments: list[Judgment] = []
+    started = time.time()
+    with ThreadPoolExecutor(max_workers=max(1, concurrency)) as pool:
+        futures = {pool.submit(_go, j): j for j in jobs}
+        for i, future in enumerate(as_completed(futures), start=1):
+            r, model = futures[future]
+            j = future.result()
+            if j is None:
+                continue
+            judgments.append(j)
+            issue_summary = "; ".join(s[:50] for s in j.issues) or "(no issues)"
+            if j.parse_error:
+                issue_summary = f"PARSE ERR: {j.parse_error}"
+            print(f"  [{i}/{total}] {model} {r.render_id}: {issue_summary[:120]}")
+    elapsed = time.time() - started
+    print(f"\nJudging done in {elapsed:.1f}s ({len(judgments)}/{total} succeeded)")
+    return judgments
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the VLM-blindness eval")
+    parser = argparse.ArgumentParser(description="Run the open-ended VLM-blindness eval")
     parser.add_argument(
         "--source",
         choices=["synthetic", "real", "both"],
         default="both",
         help="Which dataset(s) to evaluate (default: both)",
     )
-    parser.add_argument("--mode", help="Restrict to one failure-mode id")
+    parser.add_argument(
+        "--mode",
+        help="Restrict to one failure-mode id (filters injected_mode for bads)",
+    )
     parser.add_argument(
         "--model",
         action="append",
-        help=(
-            "Model to evaluate (repeatable). "
-            f"Default: {', '.join(DEFAULT_MODELS)}"
-        ),
+        help=f"Model (repeatable). Default: {', '.join(DEFAULT_MODELS)}",
     )
+    parser.add_argument("--limit", type=int, help="Cap variants/specs per mode for smoke tests")
     parser.add_argument(
-        "--limit",
-        type=int,
-        help="Cap variants/specs per mode for smoke tests (per source)",
-    )
-    parser.add_argument(
-        "--synthetic-root",
-        default=str(SYNTHETIC_DATA_DIR),
+        "--synthetic-root", default=str(SYNTHETIC_DATA_DIR),
         help=f"Synthetic data root (default: {SYNTHETIC_DATA_DIR})",
     )
     parser.add_argument(
-        "--real-root",
-        default=str(REAL_DATA_DIR),
+        "--real-root", default=str(REAL_DATA_DIR),
         help=f"Real corruption data root (default: {REAL_DATA_DIR})",
     )
     parser.add_argument(
-        "--source-root",
-        default=str(SOURCE_DIR),
-        help=f"Original specs root (for real-source goods, default: {SOURCE_DIR})",
+        "--source-root", default=str(SOURCE_DIR),
+        help=f"Original specs root for real-source goods (default: {SOURCE_DIR})",
+    )
+    parser.add_argument("--out", default=str(RESULTS_PATH), help=f"Results JSON path (default: {RESULTS_PATH})")
+    parser.add_argument("--concurrency", type=int, default=8, help="Concurrent API calls (default: 8)")
+    parser.add_argument(
+        "--skip-classifier",
+        action="store_true",
+        help="Don't classify; uncached issues map to (None, None). Useful for table re-renders.",
     )
     parser.add_argument(
-        "--out",
-        default=str(RESULTS_PATH),
-        help=f"Path for results JSON (default: {RESULTS_PATH})",
-    )
-    parser.add_argument(
-        "--concurrency",
-        type=int,
-        default=8,
-        help="Number of concurrent API calls (default: 8). Set to 1 for serial.",
+        "--reuse-judgments",
+        action="store_true",
+        help="Read existing results.json instead of re-judging. Reclassifies + recomputes summary.",
     )
     args = parser.parse_args()
 
     models = tuple(args.model) if args.model else DEFAULT_MODELS
 
-    if args.mode:
-        if args.mode not in ALL_MODES_BY_ID:
-            raise SystemExit(f"No failure mode with id={args.mode!r}")
-        mode_by_id = {args.mode: ALL_MODES_BY_ID[args.mode]}
-    else:
-        mode_by_id = dict(ALL_MODES_BY_ID)
-
-    items: list[Item] = []
+    renders: list[Render] = []
     if args.source in ("synthetic", "both"):
-        items.extend(_collect_synthetic(Path(args.synthetic_root), args.mode))
+        renders.extend(_collect_synthetic(Path(args.synthetic_root), args.mode))
     if args.source in ("real", "both"):
-        items.extend(
-            _collect_real(Path(args.real_root), Path(args.source_root), args.mode)
-        )
-
-    # Drop items whose mode_id isn't in scope (corrupters/failure_modes registries
-    # may differ — e.g. semiotic_mismatch only exists in synthetic).
-    items = [i for i in items if i.mode_id in mode_by_id]
-
+        renders.extend(_collect_real(Path(args.real_root), Path(args.source_root), args.mode))
     if args.limit:
-        # Cap variants per (source, mode) to the first N (sorted by variant id).
-        keep: dict[tuple[str, str], list[str]] = {}
-        for i in items:
-            key = (i.source, i.mode_id)
-            keep.setdefault(key, [])
-            if i.variant not in keep[key]:
-                keep[key].append(i.variant)
-        for key in keep:
-            keep[key] = sorted(keep[key])[: args.limit]
-        items = [i for i in items if i.variant in keep[(i.source, i.mode_id)]]
-
-    if not items:
-        print("No render.png files found. Did you run generate + render?", file=sys.stderr)
+        renders = _apply_limit(renders, args.limit)
+    if not renders:
+        print("No renders found. Did generate + render run?", file=sys.stderr)
         sys.exit(1)
 
-    # The Anthropic SDK's HTTP client is thread-safe; sharing one client across
-    # the pool keeps connection reuse and the SDK's built-in 429/5xx retries.
-    client = anthropic.Anthropic()
+    out_path = Path(args.out)
 
-    jobs: list[tuple[Item, str]] = [(item, model) for item in items for model in models]
-    total = len(jobs)
-    print(
-        f"Evaluating {len(items)} renders × {len(models)} models = {total} calls "
-        f"(concurrency={args.concurrency})"
-    )
-    started = time.time()
+    judgments: list[Judgment]
+    if args.reuse_judgments and out_path.exists():
+        existing = json.loads(out_path.read_text(encoding="utf-8"))
+        raw_judgments = existing.get("judgments", [])
+        # Filter to current scope (--source / --mode / --limit)
+        valid_render_ids = {r.render_id for r in renders}
+        valid_models = set(models)
+        judgments = [
+            Judgment(**{k: v for k, v in j.items() if k in Judgment.__dataclass_fields__})
+            for j in raw_judgments
+            if j.get("render_id") in valid_render_ids and j.get("model") in valid_models
+        ]
+        print(f"Reusing {len(judgments)} judgments from {out_path}")
+    else:
+        judgments = _run_judging(renders, models, concurrency=args.concurrency)
 
-    def _run(job: tuple[Item, str]) -> Result | None:
-        item, model = job
-        mode = mode_by_id[item.mode_id]
-        try:
-            v = judge(item.render_path, mode, model, client=client)
-        except anthropic.APIStatusError as e:
-            print(
-                f"  {item.source} {model} {item.mode_id}/{item.variant}/{item.label}: "
-                f"API error {e.status_code} — {e.message}",
-                file=sys.stderr,
+    # Classify every unique issue string (cached by SHA256 across runs)
+    all_issues = [text for j in judgments for text in j.issues]
+    if args.skip_classifier:
+        # Map only via cache (no API calls)
+        from evals.classify import _Cache, CACHE_PATH  # noqa: PLC0415
+        cache = _Cache(CACHE_PATH)
+        cats: list[IssueCategory] = []
+        for t in all_issues:
+            hit = cache.get(t)
+            cats.append(
+                IssueCategory(mode_id=hit["mode"], supercategory=hit["supercategory"])
+                if hit else IssueCategory(None, None)
             )
-            return None
-        except Exception as e:
-            print(
-                f"  {item.source} {model} {item.mode_id}/{item.variant}/{item.label}: "
-                f"{type(e).__name__}: {e}",
-                file=sys.stderr,
-            )
-            traceback.print_exc()
-            return None
-        return Result(
-            source=item.source,
-            mode_id=item.mode_id,
-            variant=item.variant,
-            label=item.label,
-            model=model,
-            expected=item.is_failure,
-            predicted=v.verdict,
-            raw=v.raw,
-            input_tokens=v.input_tokens,
-            output_tokens=v.output_tokens,
-        )
+    else:
+        cats = classify_batch(all_issues, concurrency=args.concurrency)
 
-    results: list[Result] = []
-    with ThreadPoolExecutor(max_workers=max(1, args.concurrency)) as pool:
-        futures = {pool.submit(_run, job): job for job in jobs}
-        for j, future in enumerate(as_completed(futures), start=1):
-            item, model = futures[future]
-            result = future.result()
-            if result is None:
-                continue
-            results.append(result)
-            ok = "✓" if result.predicted == result.expected else "✗"
-            print(
-                f"  [{j}/{total}] {item.source} {model} "
-                f"{item.mode_id}/{item.variant}/{item.label}: "
-                f"{ok} (said {'YES' if result.predicted else 'NO'})"
-            )
+    by_text: dict[str, IssueCategory] = {}
+    for text, cat in zip(all_issues, cats):
+        by_text.setdefault(text, cat)
 
-    elapsed = time.time() - started
-    print(f"\nDone in {elapsed:.1f}s ({len(results)}/{total} calls succeeded)")
+    # Attach classifications to each judgment for the JSON output
+    for j in judgments:
+        j.classifications = [
+            {"text": t, "mode": by_text[t].mode_id, "supercategory": by_text[t].supercategory}
+            for t in j.issues
+        ]
 
-    summary = _summarize(results)
+    summary = _summarize(judgments, by_text)
     for source in sorted(summary):
-        _print_table(summary[source], source=source)
+        _print_tables(summary, source)
 
-    out = Path(args.out)
-    out.parent.mkdir(parents=True, exist_ok=True)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "summary": summary,
-        "results": [asdict(r) for r in results],
+        "judgments": [asdict(j) for j in judgments],
+        "classifications": {
+            t: {"text": t, "mode": c.mode_id, "supercategory": c.supercategory}
+            for t, c in by_text.items()
+        },
     }
-    out.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    print(f"Wrote {out}")
+    out_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"Wrote {out_path}")
 
 
 if __name__ == "__main__":

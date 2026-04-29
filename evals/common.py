@@ -326,3 +326,24 @@ def normalize_spec(spec_dict: dict[str, Any]) -> dict[str, Any]:
             if "-" in key:
                 node[key.replace("-", "_")] = node.pop(key)
     return spec
+
+
+# Coarse-grained categorization. The judge emits open-ended top-3 issues; an
+# offline classifier maps each free-text issue to a mode_id (one of
+# MODE_DEFINITIONS' keys), and we additionally roll up to one of
+# {"layout", "visual"} for a coarser score.
+#   layout = positional / spatial / sizing failures
+#   visual = typography / color / iconography failures
+SUPERCATEGORIES: dict[str, str] = {
+    "uneven_distribution":   "layout",
+    "misalignment":          "layout",
+    "nonsensical_hierarchy": "layout",
+    "crowding":              "layout",
+    "overflow":              "layout",
+    "overlap":               "layout",
+    "inconsistency":         "visual",
+    "semiotic_mismatch":     "visual",
+    "poor_contrast":         "visual",
+    "poor_colors":           "visual",
+    "poor_fonts":            "visual",
+}

@@ -11,3 +11,4 @@ edits/
 # Per-run outputs are not.
 evals/results.json
 evals/review.html
+evals/classifier_cache.json

@@ -92,36 +92,65 @@ by mode, rate good/bad/skip with `1`/`2`/`0` (persisted in localStorage),
 navigate with `j`/`k`. "Export bad list" downloads a JSON of corruptions
 flagged as bad — useful for diagnosing which corrupters need tuning.
 
-## Run the judge (requires `ANTHROPIC_API_KEY`)
+## Run the judge
 
-`ANTHROPIC_API_KEY` is read from the project-root `.env` via `python-dotenv`.
+The judge is **open-ended**: each VLM is asked "what are the THREE biggest
+design issues in this image?" with no taxonomy primer. Issue strings are
+free-text (JSON array). A separate Haiku-backed classifier
+(`evals/classify.py`) maps each issue back onto our 11-mode taxonomy after
+the fact, so scoring is robust to vocabulary differences across providers.
+
+Three models are evaluated by default: `claude-opus-4-6`, `claude-sonnet-4-6`,
+`gpt-4o`. Both `ANTHROPIC_API_KEY` and `OPENAI_API_KEY` are read from the
+project-root `.env`.
+
+### Two granularities of scoring
+
+Modes roll up into two **supercategories**:
+
+- **layout** (positional / spatial / sizing): uneven_distribution,
+  misalignment, nonsensical_hierarchy, crowding, overflow, overlap
+- **visual** (typography / color / iconography): inconsistency,
+  semiotic_mismatch, poor_contrast, poor_colors, poor_fonts
+
+For each (model, mode) we report **recall@3** (% of corrupted-for-this-mode
+renders where the VLM flagged this mode in its top-3) and **FP rate** (% of
+known-clean originals where the VLM flagged this mode anyway). Same metrics
+at the supercategory level, plus per-model aggregates.
 
 ```bash
-# Both sources, both models, all modes
+# Both sources, all 3 models
 python -m evals.run_eval
 
-# One source
-python -m evals.run_eval --source real
-python -m evals.run_eval --source synthetic
+# One source / one model
+python -m evals.run_eval --source real --model gpt-4o
 
-# Scope further
-python -m evals.run_eval --source real --mode overflow
-python -m evals.run_eval --source real --limit 5         # 5 specs/mode for smoke
-python -m evals.run_eval --model claude-sonnet-4-6
+# Smoke test (5 variants/specs per mode)
+python -m evals.run_eval --source real --limit 5
+
+# Re-render the tables from existing results.json without re-paying judging
+# (good for iterating on the scoring/display logic):
+python -m evals.run_eval --reuse-judgments
+
+# Skip the classifier entirely; uncached issues map to (None, None):
+python -m evals.run_eval --skip-classifier
 ```
 
-Results land in `evals/results.json` keyed by `<source>/<model>/<mode>` with
-TP/TN/FP/FN, accuracy, precision, recall, and F1. Tables are printed once per
-source.
+Results land in `evals/results.json`:
 
-## Notes
+- `judgments[]` — every (render, model) judgment with raw VLM output, parsed
+  issues, and post-classification mode/supercategory tags
+- `classifications{}` — every unique free-text issue string mapped to
+  `{mode, supercategory}`
+- `summary` — confusion matrices + recall@3 + FP rate per (source, model,
+  mode) and per (source, model, supercategory), plus per-model aggregates
 
-- **Prompt caching** is wired in (`cache_control` on the system prompt) for
-  hygiene, but the per-mode system prompts are well below the 4096-token
-  Opus minimum, so they will silently no-op. The dominant cost is per-image
-  vision tokens, which are unique per call and never cacheable.
-- **No thinking.** The judge omits `thinking` to measure visual perception
-  rather than reasoning.
-- **Volume.** Synthetic full run: ~90 renders × 2 models = ~180 calls. Real
-  full run: ~300–500 corruptions × 2 (bad+good) × 2 models. Use `--limit` for
-  smoke testing.
+The classifier persists to `evals/classifier_cache.json` (SHA256-keyed) so
+re-runs that add new (model, render) pairs cost nearly zero classifier API
+spend.
+
+### Volume + cost
+
+Full run is ~3 models × ~900 renders ≈ 2,700 vision-API calls + ~5–7K
+classifier (Haiku) calls. Concurrency 8 → ~10–15 minutes wall clock and
+~$30–40 in API spend (vision dominates). Use `--limit` for cheap smoke tests.

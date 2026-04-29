@@ -1,114 +1,140 @@
-"""VLM-as-judge for design failure modes.
+"""Open-ended VLM judge for design issues.
 
-Sends a rendered design to Claude (via the Anthropic SDK) and asks a yes/no
-question scoped to one specific failure mode. The judge sees only the image —
-no spec metadata, no labels — so its accuracy is interpretable as a measure
-of visual perception.
+Each call asks the VLM to identify the THREE biggest design issues it sees
+in the rendered image, as a JSON array of free-text strings. No taxonomy is
+shown to the VLM — the offline classifier (`evals.classify`) maps the
+free-text issues onto our 11-mode taxonomy after the fact.
 
-A cache_control marker is set on the system prompt for hygiene, but it will
-silently no-op on Claude Opus / Sonnet 4.6 because the system text is well
-below the 4096-token cacheable-prefix minimum.
+Multi-provider via `litellm`: same call site for `claude-opus-4-6`,
+`claude-sonnet-4-6`, and `gpt-4o`. API keys (`ANTHROPIC_API_KEY` and
+`OPENAI_API_KEY`) come from the project-root `.env`.
 """
 
 from __future__ import annotations
 
 import base64
-from dataclasses import dataclass
+import json
+import re
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
 
-import anthropic
+import litellm
 from dotenv import load_dotenv
 
-from evals.failure_modes import FailureMode
-
-# Load ANTHROPIC_API_KEY from the project-root .env (matches the rest of the repo).
 load_dotenv()
 
-DEFAULT_MODELS: tuple[str, ...] = ("claude-opus-4-6", "claude-sonnet-4-6")
-MAX_TOKENS = 128
+DEFAULT_MODELS: tuple[str, ...] = (
+    "claude-opus-4-6",
+    "claude-sonnet-4-6",
+    "gpt-4o",
+)
+MAX_TOKENS = 300
+
+_SYSTEM_PROMPT = (
+    "You are a senior graphic designer reviewing a finished design. Look at "
+    "the image and identify the THREE biggest design issues you see, ranked "
+    "from most to least serious. If you don't see three real issues, list "
+    "fewer; if you see no real issues, output an empty array.\n\n"
+    "Be concrete and specific — name what is wrong, not just that something "
+    "is wrong.\n\n"
+    "Output ONLY a JSON array of short strings. Example:\n"
+    '["text overflows the container at the top right", '
+    '"label and address have mismatched icons", '
+    '"the body copy is larger than the headline"]\n\n'
+    "Do not include any other commentary, markdown code fences, or "
+    "explanation outside the JSON array."
+)
 
 
 @dataclass
-class Verdict:
-    verdict: bool  # True = VLM said YES (failure present)
+class IssueSet:
+    issues: list[str]
     raw: str
+    model: str
     input_tokens: int
     output_tokens: int
-    cache_read_input_tokens: int
-    cache_creation_input_tokens: int
+    parse_error: str | None = None
+    extra: dict[str, Any] = field(default_factory=dict)
 
 
 def _encode_png(path: Path) -> str:
     return base64.standard_b64encode(path.read_bytes()).decode("ascii")
 
 
-def _system_prompt(mode: FailureMode) -> list[dict]:
-    text = (
-        "You are evaluating a graphic design for one specific failure mode.\n\n"
-        f"Failure mode: {mode.name}\n"
-        f"Definition: {mode.description}\n\n"
-        "Look ONLY at the image you are about to be shown. Does the design "
-        "exhibit this specific failure mode?\n\n"
-        "Respond with exactly one of `YES` or `NO` on the first line (no other "
-        "text on that line), then one short sentence of justification on the "
-        "next line."
-    )
-    return [{"type": "text", "text": text, "cache_control": {"type": "ephemeral"}}]
+def _data_url(image_b64: str) -> str:
+    return f"data:image/png;base64,{image_b64}"
 
 
-def _user_content(image_b64: str) -> list[dict]:
-    return [
-        {
-            "type": "image",
-            "source": {
-                "type": "base64",
-                "media_type": "image/png",
-                "data": image_b64,
-            },
-        },
-        {"type": "text", "text": "Evaluate this design."},
-    ]
+def _parse_issues(text: str) -> tuple[list[str], str | None]:
+    """Extract up to 3 issue strings from a VLM response.
+
+    Returns (issues, parse_error). On any JSON failure, falls back to a
+    permissive regex search for a top-level array. On total failure returns
+    ([], "<reason>") so the caller can still record the raw text."""
+    s = text.strip()
+    # Strip markdown fences if the model added them despite instructions.
+    if s.startswith("```"):
+        s = s.split("\n", 1)[1] if "\n" in s else s[3:]
+    if s.endswith("```"):
+        s = s.rsplit("```", 1)[0]
+    s = s.strip()
+
+    def _coerce(data: Any) -> list[str]:
+        if not isinstance(data, list):
+            return []
+        out: list[str] = []
+        for item in data:
+            if isinstance(item, str) and item.strip():
+                out.append(item.strip())
+            elif isinstance(item, dict):
+                # Some models emit [{"issue": "..."}] despite our instructions.
+                for key in ("issue", "description", "text"):
+                    if key in item and isinstance(item[key], str):
+                        out.append(item[key].strip())
+                        break
+        return out[:3]
+
+    try:
+        return _coerce(json.loads(s)), None
+    except json.JSONDecodeError:
+        pass
+    # Fallback: find the first balanced [...] block.
+    match = re.search(r"\[.*\]", s, re.DOTALL)
+    if match:
+        try:
+            return _coerce(json.loads(match.group(0))), None
+        except json.JSONDecodeError as e:
+            return [], f"json fallback failed: {e}"
+    return [], "no JSON array found in response"
 
 
-def _parse_verdict(text: str) -> bool:
-    """Extract a boolean from the first non-blank token of the response."""
-    for line in text.strip().splitlines():
-        token = line.strip().lstrip("`").lstrip("*").strip().split()[:1]
-        if not token:
-            continue
-        head = token[0].rstrip(".,:;").upper()
-        if head.startswith("YES"):
-            return True
-        if head.startswith("NO"):
-            return False
-    raise ValueError(f"Could not parse YES/NO from response: {text!r}")
-
-
-def judge(
-    render_path: Path,
-    mode: FailureMode,
-    model: str,
-    *,
-    client: anthropic.Anthropic | None = None,
-) -> Verdict:
-    if client is None:
-        client = anthropic.Anthropic()
-
+def judge(render_path: Path, model: str) -> IssueSet:
     image_b64 = _encode_png(render_path)
-    response = client.messages.create(
+    messages = [
+        {"role": "system", "content": _SYSTEM_PROMPT},
+        {
+            "role": "user",
+            "content": [
+                {"type": "image_url", "image_url": {"url": _data_url(image_b64)}},
+                {"type": "text", "text": "What are the top design issues with this image?"},
+            ],
+        },
+    ]
+    response = litellm.completion(
         model=model,
+        messages=messages,
         max_tokens=MAX_TOKENS,
-        system=_system_prompt(mode),
-        messages=[{"role": "user", "content": _user_content(image_b64)}],
+        temperature=0,
     )
-    raw = "".join(block.text for block in response.content if block.type == "text")
-    verdict = _parse_verdict(raw)
-    usage = response.usage
-    return Verdict(
-        verdict=verdict,
+    raw = response.choices[0].message.content or ""
+    issues, parse_error = _parse_issues(raw)
+    usage = getattr(response, "usage", None)
+    return IssueSet(
+        issues=issues,
         raw=raw,
-        input_tokens=usage.input_tokens,
-        output_tokens=usage.output_tokens,
-        cache_read_input_tokens=getattr(usage, "cache_read_input_tokens", 0) or 0,
-        cache_creation_input_tokens=getattr(usage, "cache_creation_input_tokens", 0) or 0,
+        model=model,
+        input_tokens=int(getattr(usage, "prompt_tokens", 0) or 0),
+        output_tokens=int(getattr(usage, "completion_tokens", 0) or 0),
+        parse_error=parse_error,
     )
