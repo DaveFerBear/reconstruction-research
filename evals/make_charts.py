@@ -32,6 +32,7 @@ MODEL_COLORS: dict[str, str] = {
     "claude-opus-4-6":     "#1976D2",  # blue
     "claude-sonnet-4-6":   "#F57C00",  # orange
     "gpt-4o":              "#2E7D32",  # green
+    "gpt-5":               "#00838F",  # teal
     "ollama/qwen3-vl:4b":  "#7B1FA2",  # purple
 }
 _FALLBACK_PALETTE = ("#7B1FA2", "#C62828", "#00838F", "#5D4037")
